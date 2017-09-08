@@ -4,7 +4,6 @@ title: Learning Natural Coding Conventions
 authors: M. Allamanis, E. T. Barr, C. Bird, C. Sutton
 conference: FSE
 year: 2014
-featured: false
 bibkey: allamanis2014learning
 additional_links:
    - {name: "ArXiV", url: "http://arxiv.org/abs/1402.4182"}

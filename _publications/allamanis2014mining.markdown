@@ -4,7 +4,6 @@ title: "Mining Idioms from Source Code"
 authors: M. Allamanis, C. Sutton
 conference: FSE
 year: 2014
-featured: false
 bibkey: allamanis2014mining
 additional_links:
    - {name: "ArXiV", url: "http://arxiv.org/abs/1404.0417"}

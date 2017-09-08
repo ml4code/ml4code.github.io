@@ -4,7 +4,6 @@ title: Mining Semantic Loop Idioms from Big Code
 authors: M. Allamanis, E. T. Barr, C. Bird, M. Marron, C. Sutton
 conference: ""
 year: 2017
-featured: false
 bibkey: allamanis2017mining
 additional_links:
    - {name: "MSR Technical Report", url: "https://www.microsoft.com/en-us/research/publication/mining-semantic-loop-idioms-big-code/"}

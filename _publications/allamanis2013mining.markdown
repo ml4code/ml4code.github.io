@@ -4,7 +4,6 @@ title: "Mining Source Code Repositories at Massive Scale Using Language Modeling
 authors: M. Allamanis, C. Sutton
 conference: MSR
 year: 2013
-featured: false
 bibkey: allamanis2013mining
 additional_links:
    - {name: "data", url: "http://groups.inf.ed.ac.uk/cup/javaGithub/"}

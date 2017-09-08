@@ -1,8 +1,3 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-
 # Setup
 title:               Machine Learning for Code
 tagline:             'a literature review'

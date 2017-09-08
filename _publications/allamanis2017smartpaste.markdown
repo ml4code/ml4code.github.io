@@ -4,7 +4,6 @@ title: "SmartPaste: Learning to Adapt Source Code"
 authors: M. Allamanis, M. Brockscmidt
 conference: ""
 year: 2017
-featured: true
 bibkey: allamanis2017smartpaste
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1705.07867"}

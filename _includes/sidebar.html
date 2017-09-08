@@ -9,13 +9,12 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Main Page</a>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">All Papers</a>
+    <a class="sidebar-nav-item{% if page.url == papers.html %} active{% endif %}" href="papers.html">All Papers</a>
 
     {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
+      TODO: Add all taxonomies
     {% endcomment %}
 
     {% assign pages_list = site.pages | sort:"url" %}
@@ -27,8 +26,7 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="">Contributing</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">About this page</a>
+  <a class="sidebar-nav-item{% if page.url == contributing.html %} active{% endif %}" href="contributing.html">Contributing</a>
   </nav>
 
   <div class="sidebar-item">
