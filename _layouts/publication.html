@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <h5>{{ page.authors }}. {{ page.conference }} {{ page.year }}</h5>
+      <p>[<a href="{{site.baseurl}}/publicationfiles/{{page.bibkey}}/{{page.bibkey}}.pdf">pdf</a>]
+      {% for additional_link in page.additional_links %}
+			[<a href="{{ additional_link.url }}">{{ additional_link.name }}</a>]
+      {% endfor %}
+      </p>
+      
+      <p>{{ content }}</p>
+</div>
