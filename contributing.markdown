@@ -6,7 +6,7 @@ title: Contributing
 Contributions of new or missing publications are very welcome. Alternative categorization/taxonomies can also be added to the website. To contribute, please open a pull request [here](https://github.com/ml4code/ml4code.github.io), but first please read the instructions below.
 
 ## Adding a publication
-To add a publication (new or missing), create a file in the `_publications` folder. The name of the file should follow the structure `lastnameYEARfirstword.markdown` where `lastname` is the last name of the first author and `firstword` is the first non-punctuation word of the work's title. Within each file, follow the structure shown in the other files.
+To add a publication (new or missing), create a file in the `_publications` folder. The name of the file should follow the structure `lastnameYEARfirstword.markdown` where `lastname` is the last name of the first author and `firstword` is the first non-punctuation word of the work's title. Within each file, follow the structure shown in the other files. Once the file is added, the work will appear in the "All Papers" section.
 <pre>
 ---
 layout: publication

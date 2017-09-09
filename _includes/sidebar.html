@@ -11,22 +11,13 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
-    <a class="sidebar-nav-item{% if page.url == papers.html %} active{% endif %}" href="papers.html">All Papers</a>
+    <a class="sidebar-nav-item{% if page.url == papers.html %} active{% endif %}" href="/papers.html">All Papers</a>
 
-    {% comment %}
-      TODO: Add all taxonomies
-    {% endcomment %}
+   <a class="sidebar-nav-item" href="/base-taxonomy">Core Taxonomy</a>
 
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "taxonomy" %} {% comment %} Change this to taxonomies. {% endcomment %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
 
-  <a class="sidebar-nav-item{% if page.url == contributing.html %} active{% endif %}" href="contributing.html">Contributing</a>
+
+  <a class="sidebar-nav-item{% if page.url == contributing.html %} active{% endif %}" href="/contributing.html">Contributing</a>
   </nav>
 
   <div class="sidebar-item">
