@@ -28,3 +28,8 @@ The `additional_links` are optional and arbitrary and they will appear on the pa
 ## Adding a new categorization
 No single taxonomy or categorization can fit everyone. It is easy to contribute a new categorization to be shown in this website. TODO TODO
 
+Add a data file describing your hierarchy. This can be a JSON, YAML or CSV file as described [here](https://jekyllrb.com/docs/datafiles/).
+
+## Reusing the website structure
+In principle, the structure of this website can be used for other literature reviews. Feel free to clone it!
+
