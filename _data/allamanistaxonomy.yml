@@ -52,6 +52,38 @@
 - {bibkey: yadid2016extracting, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Information Extraction}
 - {bibkey: yin2017syntactic, categories: [generative], type: Multimodal, representation: Syntax , model: NN (Seq2seq) , application: Synthesis}
 
+# Representational Models
+- {bibtex: allamanis2015suggesting, categories: [representational], input_rep: Token Context , modeled_target: Identifier Name , intermediate_rep: Distributed , application: Naming  }
+- {bibtex: allamanis2016convolutional, categories: [representational], input_rep: Tokens , modeled_target: Method Name , intermediate_rep: Distributed , application: Naming }
+- {bibtex: allamanis2017smartpaste, categories: [representational], input_rep: Data Flow , modeled_target: Variable Allocation , intermediate_rep: Distributed , application: Contextualization }
+- {bibtex: bichsel2016statistical, categories: [representational], input_rep: Dependency Net , modeled_target: Identifier Name , intermediate_rep: CRF (GM) , application: Deobfuscation  }
+- {bibtex: bruch2009learning, categories: [representational], input_rep: Partial Object Use , modeled_target: Invoked Method , intermediate_rep: Localized , application: Code Completion }
+- {bibtex: chae2016automatically, categories: [representational], input_rep: Data Flow Graph , modeled_target: Static Analysis , intermediate_rep: Localized , application: Program Analysis }
+- {bibtex: corley2015exploring, categories: [representational], input_rep: Tokens , modeled_target: Feature Location , intermediate_rep: Distributed , application: Feature Location }
+- {bibtex: cummins2017end, categories: [representational], input_rep: Tokens , modeled_target: Optimization Flags , intermediate_rep: Distributed , application: Optimization Heuristics }
+- {bibtex: green2017learning, categories: [representational], input_rep: Statements, modeled_target: Alignment , intermediate_rep: Distributed , application: Decompiling }
+- {bibtex: gu2016deep, categories: [representational], input_rep: Natural Language , modeled_target: API Calls , intermediate_rep: Distributed , application: API Search }
+- {bibtex: guo2017semantically, categories: [representational], input_rep: Tokens , modeled_target: Traceability link , intermediate_rep: Distributed , application: Traceability }
+- {bibtex: gupta2016deepfix, categories: [representational], input_rep: Tokens , modeled_target: Code Fix , intermediate_rep: Distributed , application: Code Fixing }
+- {bibtex: hu2017codesum, categories: [representational], input_rep: Linearized AST , modeled_target: Natural Language , intermediate_rep: Distributed , application: Summarization }
+- {bibtex: iyer2016summarizing, categories: [representational], input_rep: Tokens , modeled_target: Natural Language , intermediate_rep: Distributed , application: Summarization }
+- {bibtex: jiang2017automatically, categories: [representational], input_rep: Tokens (Diff) , modeled_target: Natural Language , intermediate_rep: Distributed , application: Commit Message }
+- {bibtex: koc2017learning, categories: [representational], input_rep: Bytecode , modeled_target: False Positives , intermediate_rep: Distributed , application: Program Analysis }
+- {bibtex: kremenek2007factor, categories: [representational], input_rep: Partial PDG , modeled_target: Ownership , intermediate_rep: Factor (GM) , application: Pointer Ownership }
+- {bibtex: loyola2017neural, categories: [representational], input_rep: Tokens (Diff) , modeled_target: Natural Language , intermediate_rep: Distributed , application: Explain code changes }
+- {bibtex: li2015gated, categories: [representational], input_rep: Memory Heap , modeled_target: Separation Logic , intermediate_rep: Distributed , application: Verification }
+- {bibtex: mangal2015user, categories: [representational], input_rep: Logic + Feedback , modeled_target: Prob. Analysis , intermediate_rep: MaxSAT , application: Program Analysis }
+- {bibtex: movshovitz2013natural, categories: [representational], input_rep: Tokens , modeled_target: Code Comments , intermediate_rep: Directed GM , application: Comment Prediction }
+- {bibtex: mou2016convolutional, categories: [representational], input_rep: Syntax , modeled_target: Classification , intermediate_rep: Distributed , application: Task Classification }
+- {bibtex: nguyen2016mapping, categories: [representational], input_rep: API Calls , modeled_target: API Calls , intermediate_rep: Distributed , application: Migration }
+- {bibtex: omar2013structured, categories: [representational], input_rep: Syntactic Context , modeled_target: Expressions , intermediate_rep: Directed GM , application: Code Completion }
+- {bibtex: oh2015learning, categories: [representational], input_rep: Features , modeled_target: Analysis Params , intermediate_rep: Static Analysis , application: Program Analysis }
+- {bibtex: piech2015learning, categories: [representational], input_rep: Syntax + State , modeled_target: Student Feedback , intermediate_rep: Distributed , application: Student Feedback }
+- {bibtex: proksch2015intelligent, categories: [representational], input_rep: Inc. Object Usage , modeled_target: Object Usage , intermediate_rep: Directed GM , application: Code Completion }
+- {bibtex: raychev2015predicting, categories: [representational], input_rep: Dependency Net , modeled_target: Types + Names , intermediate_rep: CRF (GM) , application: Types + Names }
+- {bibtex: wang2016bugram, categories: [representational], input_rep: Tokens , modeled_target: Defects , intermediate_rep: LM (\ngram) , application: Bug Detection }
+- {bibtex: zaremba2014learning, categories: [representational], input_rep: Characters , modeled_target: Execution Trace , intermediate_rep: Distributed , application: --- }
+
 # Pattern Models
 - {bibtex: allamanis2016mining, categories: [pattern], representation: Abstracted AST , pattern_type: Graphical Model , application: Semantic Idiom Mining }
 - {bibtex: fowkes2015parameter, categories: [pattern], representation: API Call Sequences , pattern_type: Graphical Model , application: API Mining }
