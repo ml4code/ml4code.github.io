@@ -1,9 +1,16 @@
+# In multiple categories
+- {bibkey: allamanis2015bimodal, categories: [generative, representational], type: Multimodal, representation: Syntax, input_rep: Natural language, modeled_target: Language Model, intermediate_rep: Distributed, model: Grammar (NN-LBL), application: Code Search/Synthesis}
+- {bibkey: dam2016deep, categories: [generative, representational], type: Language Model, representation: Token , input_rep: Token Context, modeled_target: LM (Tokens), intermediate_rep: Distributed, model: NN (LSTM), application: ---}
+- {bibkey: maddison2014structured, categories: [generative, representational], type: Language Model, representation: Syntax with scope , input_rep: LM AST Context, modeled_target: Language Model, intermediate_rep: Distributed, model: NN , application: --- }
+- {bibkey: rabinovich2017abstract, categories: [generative, representational], type: Multimodal, representation: Syntax , input_rep: LM AST context, modeled_target: LM (Syntax), intermediate_rep: Distributed, model: NN (LSTM-based), application: Code Synthesis}
+- {bibkey: white2015toward, categories: [generative, representational], type: Language Model, representation: Token , input_rep: Tokens, modeled_target: Language Model, model: NN (RNN) , intermediate_rep: Distributed, application: ---}
+- {bibtex: white2016deep, categories: [representational, pattern], representation: Token + Syntax , pattern_type: Distributed, input_rep: Token + AST, intermediate_rep: Distributed, application: Clone Detection }
+
 # Generative Models
 - {bibkey: aggarwal2015using, categories: [generative], type: Transducer, representation: Token , model: Phrase , application: Migration}
 - {bibkey: allamanis2013mining, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Idiom Mining }
 - {bibkey: allamanis2014learning, categories: [generative], type: Language Model, representation: Token + Location, model: n-gram, application: Coding Conventions}
 - {bibkey: allamanis2014mining, categories: [generative, pattern], type: Language Model, pattern_type: Graphical Model, representation: Syntax , model: Grammar (pTSG) , application: ---}
-- {bibkey: allamanis2015bimodal, categories: [generative], type: Multimodal, representation: Syntax , model: Grammar (NN-LBL), application: Code Search/Synthesis}
 - {bibkey: amodio2017neural, categories: [generative], type: Language Model, representation: Syntax+Constraints , model: RNN , application: ---}
 - {bibkey: barone2017parallel, categories: [generative], type: Multimodal, representation: Token , model: Neural MT , application: Documentation}
 - {bibkey: beltramelli2017pix2code, categories: [generative], type: Multimodal, representation: Token , model: NN (Encoder-Decoder) , application: GUI Code Synthesis}
@@ -13,7 +20,6 @@
 - {bibkey: campbell2014syntax, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Syntax Error Detection }
 - {bibkey: cerulo2015irish, categories: [generative], type: Language Model, representation: Token , model: Graphical Model (HMM) , application: Information Extraction}
 - {bibkey: cummins2017synthesizing, categories: [generative], type: Language Model, representation: Character , model: NN (LSTM) , application: Benchmark Synthesis}
-- {bibkey: dam2016deep, categories: [generative], type: Language Model, representation: Token , model: NN (LSTM), application: ---}
 - {bibkey: gulwani2014nlyze, categories: [generative], type: Multimodal, representation: Syntax , model: Phrase Model , application: Text-to-Code }
 - {bibkey: gvero2015synthesizing, categories: [generative], type: Language Model, representation: Syntax , model: PCFG + Search , application: Code Synthesis}
 - {bibkey: hellendoorn2015will, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Code Review}
@@ -26,7 +32,6 @@
 - {bibkey: karaivanov2014phrase, categories: [generative], type: Transducer, representation: Token , model: Phrase , application: Migration}
 - {bibkey: karpathy2015visualizing, categories: [generative], type: Language Model, representation: Characters , model: RNN (LSTM), application: ---}
 - {bibkey: kushman2013using, categories: [generative], type: Multimodal, representation: Token , model: Grammar (CCG) , application: Code Synthesis}
-- {bibkey: maddison2014structured, categories: [generative], type: Language Model, representation: Syntax with scope , model: NN , application: --- }
 - {bibkey: menon2013machine, categories: [generative], type: Multimodal, representation: Syntax , model: PCFG + annotations , application: Code Synthesis}
 - {bibkey: nguyen2013lexical, categories: [generative], type: Transducer, representation: Token , model: Phrase , application: Migration}
 - {bibkey: nguyen2013statistical, categories: [generative], type: Language Model, representation: Token + parse info , model: n-gram , application: Code Completion}
@@ -36,7 +41,6 @@
 - {bibkey: patra2016learning, categories: [generative], type: Language Model, representation: Syntax , model: Annotated PCFG , application: Fuzz Testing}
 - {bibkey: pham2016learning, categories: [generative], type: Language Model, representation: Bytecode , model: Graphical Model (HMM) , application: Code Completion}
 - {bibkey: pu2016skp, categories: [generative], type: Transducer, representation: Token , model: NN (Seq2seq) , application: Code Fixing}
-- {bibkey: rabinovich2017abstract, categories: [generative], type: Multimodal, representation: Syntax , model: NN (LSTM-based), application: Code Synthesis}
 - {bibkey: raychev2014code, categories: [generative], type: Language Model, representation: Token + Constraints , model: n-gram/ RNN , application: Code Completion}
 - {bibkey: ray2015naturalness, categories: [generative], type: Language Model, representation: Token , model: n-gram (cache) , application: Bug Detection}
 - {bibkey: raychev2016learning, categories: [generative], type: Language Model, representation: Syntax , model: PCFG + annotations , application: Code Completion}
@@ -45,7 +49,6 @@
 - {bibkey: tu2014localness, categories: [generative], type: Language Model, representation: Token , model: n-gram (cache) , application: Code Completion}
 - {bibkey: vasilescu2017recovering, categories: [generative], type: Transducer, representation: Token , model:  , application: Deobfuscation}
 - {bibkey: wang2016neural, categories: [generative], type: Language Model, representation: Syntax , model: NN (LSTM), application: Code Completion }
-- {bibkey: white2015toward, categories: [generative], type: Language Model, representation: Token , model: NN (RNN) , application: ---}
 - {bibkey: yadid2016extracting, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Information Extraction}
 - {bibkey: yin2017syntactic, categories: [generative], type: Multimodal, representation: Syntax , model: NN (Seq2seq) , application: Synthesis}
 
@@ -58,4 +61,3 @@
 - {bibtex: nguyen2017exploring, categories: [pattern], representation: API Usage , pattern_type: Distributed , application: API Mining }
 - {bibtex: fowkes2017autofolding, categories: [pattern], representation: Tokens , pattern_type: Graphical Model , application: Code Summarization }
 - {bibtex: wang2016automatically, categories: [pattern], representation: Serialized ASTs , pattern_type: Distributed , application: Defect Prediction }
-- {bibtex: white2016deep, categories: [pattern], representation: Token + Syntax , pattern_type: Distributed , application: Clone Detection }
