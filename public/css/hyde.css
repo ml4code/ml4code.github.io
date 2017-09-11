@@ -141,6 +141,10 @@ a.sidebar-nav-item:focus {
   }
 }
 
+td {
+  font-size:15px;
+}
+
 
 /*
  * Reverse layout

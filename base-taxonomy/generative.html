@@ -1,0 +1,21 @@
+---
+layout: default
+title: Code-Generating Models
+---
+<h2>Code-Generating Models</h2>
+
+{% assign publicationsList = site.data.allamanistaxonomy | order_by:"bibkey" %}
+<table>
+<tr><th>Name</th><th>Type</th><th>Representation</th><th>Model</th><th>Application</th></tr>
+{% for publication in publicationsList %}{% if publication.categories contains "generative" %}
+    {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
+    
+      <tr>
+          <td><a href="/publications/{{ publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td>{{publication.type}}</td>
+          <td>{{publication.representation}}</td>
+          <td>{{publication.model}}</td>
+          <td>{{publication.application}}</td>
+      </tr>
+{% endif %}{% endfor %}
+</table>
