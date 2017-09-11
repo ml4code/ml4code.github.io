@@ -1,7 +1,8 @@
+# Generative Models
 - {bibkey: aggarwal2015using, categories: [generative], type: Transducer, representation: Token , model: Phrase , application: Migration}
-- {bibkey: allamanis2013mining, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: --- }
+- {bibkey: allamanis2013mining, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Idiom Mining }
 - {bibkey: allamanis2014learning, categories: [generative], type: Language Model, representation: Token + Location, model: n-gram, application: Coding Conventions}
-- {bibkey: allamanis2014mining, categories: [generative], type: Language Model, representation: Syntax , model: Grammar (pTSG) , application: ---}
+- {bibkey: allamanis2014mining, categories: [generative, pattern], type: Language Model, pattern_type: Graphical Model, representation: Syntax , model: Grammar (pTSG) , application: ---}
 - {bibkey: allamanis2015bimodal, categories: [generative], type: Multimodal, representation: Syntax , model: Grammar (NN-LBL), application: Code Search/Synthesis}
 - {bibkey: amodio2017neural, categories: [generative], type: Language Model, representation: Syntax+Constraints , model: RNN , application: ---}
 - {bibkey: barone2017parallel, categories: [generative], type: Multimodal, representation: Token , model: Neural MT , application: Documentation}
@@ -47,3 +48,14 @@
 - {bibkey: white2015toward, categories: [generative], type: Language Model, representation: Token , model: NN (RNN) , application: ---}
 - {bibkey: yadid2016extracting, categories: [generative], type: Language Model, representation: Token , model: n-gram , application: Information Extraction}
 - {bibkey: yin2017syntactic, categories: [generative], type: Multimodal, representation: Syntax , model: NN (Seq2seq) , application: Synthesis}
+
+# Pattern Models
+- {bibtex: allamanis2016mining, categories: [pattern], representation: Abstracted AST , pattern_type: Graphical Model , application: Semantic Idiom Mining }
+- {bibtex: fowkes2015parameter, categories: [pattern], representation: API Call Sequences , pattern_type: Graphical Model , application: API Mining }
+- {bibtex: murali2017bayesian, categories: [pattern], representation: Sketch Synthesis , pattern_type: Graphical Model , application: Sketch Mining }
+- {bibtex: murali2017finding, categories: [pattern], representation: API Usage Errors , pattern_type: Graphical Model , application: Defect Prediction }
+- {bibtex: movshovitz2015kb, categories: [pattern], representation: Tokens , pattern_type: Graphical Model , application: Knowledge-Base Mining }
+- {bibtex: nguyen2017exploring, categories: [pattern], representation: API Usage , pattern_type: Distributed , application: API Mining }
+- {bibtex: fowkes2017autofolding, categories: [pattern], representation: Tokens , pattern_type: Graphical Model , application: Code Summarization }
+- {bibtex: wang2016automatically, categories: [pattern], representation: Serialized ASTs , pattern_type: Distributed , application: Defect Prediction }
+- {bibtex: white2016deep, categories: [pattern], representation: Token + Syntax , pattern_type: Distributed , application: Clone Detection }
