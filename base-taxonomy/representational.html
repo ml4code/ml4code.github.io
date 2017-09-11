@@ -4,7 +4,7 @@ title: Representational Models
 ---
 <h2>Representational Models</h2>
 
-{% assign publicationsList = site.data.allamanistaxonomy | order_by:"bibkey" %}
+{% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
 <table>
 <tr><th>Name</th><th>Input Code Representation</th><th>Target</th><th>Intermediate Representation</th><th>Application</th></tr>
 {% for publication in publicationsList %}{% if publication.categories contains "representational" %}
