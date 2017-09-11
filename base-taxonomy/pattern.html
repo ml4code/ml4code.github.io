@@ -11,7 +11,7 @@ title: Pattern-Mining Models
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
-          <td><a href="/publications/{{ publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.pattern_type}}</td>
           <td>{{publication.representation}}</td>
           <td>{{publication.application}}</td>

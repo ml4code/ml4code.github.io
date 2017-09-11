@@ -5,7 +5,6 @@ title: Code-Generating Models
 <h2>Code-Generating Models</h2>
 
 {% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
-
 <table>
 <tr><th>Name</th><th>Type</th><th>Representation</th><th>Model</th><th>Application</th></tr>
 {% for publication in publicationsList %}{% if publication.categories contains "generative" %}

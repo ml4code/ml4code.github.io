@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-{% assign publicationsByYear = site.publications | group_by:"year" %}
+{% assign publicationsByYear = site.publications | sort: "year" | group_by: "year" %}
 {% for year in publicationsByYear reversed %}
   <h3>{{ year.name }}</h3>
     <ul style="none">

@@ -11,7 +11,7 @@ title: Representational Models
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
-          <td><a href="/publications/{{ publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.input_rep}}</td>
           <td>{{publication.modeled_target}}</td>
           <td>{{publication.intermediate_rep}}</td>
