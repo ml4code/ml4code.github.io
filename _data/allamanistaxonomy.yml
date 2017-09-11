@@ -1,63 +1,9 @@
----
-  bibkey: allamanis2013mining
-  categories: [generative]
-  type: lm
-  representation: Tokens
-  model: n-gram LM
-
----
-  bibkey: allamanis2014learning
-  categories: [generative]
-  type: lm
-  representation: Tokens
-  model: n-gram LM
-  application: Coding Conventions
-
----
-  bibkey: allamanis2014mining
-  categories: [generative, pattern]
-  type: lm
-  representation: AST
-  model: pTSG
-  application: Idiom Mining
-
----
-  bibkey: allamanis2015bimodal
-  categories: [generative]
-  type: multimodal
-  representation: AST
-  model: Neural LM
-  application: Code Search/Synthesis
-
----
-  bibkey: allamanis2015suggesting
-  categories: [representational]
-  representation: distributed
-  application: Naming Conventions
-  input_rep: Token Context
-  target_rep: Identifier Name
-
----
-  bibkey: allamanis2016convolutional
-  categories: [representational]
-  representation: Tokens
-  application: Method Naming Conventions
-  input_rep: Token
-  target_rep: Method Name
-
----
-  bibkey: allamanis2017mining
-  categories: [generative, pattern]
-  type: lm
-  representation: AST
-  model: pTSG
-  application: Idiom Mining
-
----
-  bibkey: allamanis2017smartpaste
-  categories: [representational]
-  representation: Distributed
-  application: Code Contextualization and Bug Finding
-  input_rep: Data Flow
-  target_rep: Variable Allocation
+- {bibkey: allamanis2013mining, categories: [generative], type: lm, representation: Tokens, model: n-gram LM}
+- {bibkey: allamanis2014learning, categories: [generative], type: lm, representation: Tokens, model: n-gram LM, application: Coding Conventions}
+- {bibkey: allamanis2014mining, categories: [generative, pattern], type: lm, representation: AST, model: pTSG, application: Idiom Mining}
+- {bibkey: allamanis2015bimodal, categories: [generative], type: multimodal, representation: AST, model: Neural LM, application: Code Search/Synthesis}
+- {bibkey: allamanis2015suggesting, categories: [representational], representation: distributed, application: Naming Conventions, input_rep: Token Context, target_rep: Identifier Name}
+- {bibkey: allamanis2016convolutional, categories: [representational], representation: Tokens, application: Method Naming Conventions, input_rep: Token, target_rep: Method Name}
+- {bibkey: allamanis2017mining, categories: [generative, pattern], type: lm, representation: AST, model: pTSG, application: Idiom Mining}
+- {bibkey: allamanis2017smartpaste, categories: [representational], representation: Distributed, application: Code Contextualization and Bug Finding, input_rep: Data Flow, target_rep: Variable Allocation}
 
