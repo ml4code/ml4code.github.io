@@ -86,7 +86,7 @@
 
 # Pattern Models
 - {bibtex: allamanis2016mining, categories: [pattern], representation: Abstracted AST , pattern_type: Graphical Model , application: Semantic Idiom Mining }
-- {bibtex: fowkes2015parameter, categories: [pattern], representation: API Call Sequences , pattern_type: Graphical Model , application: API Mining }
+- {bibtex: fowkes2016parameter, categories: [pattern], representation: API Call Sequences , pattern_type: Graphical Model , application: API Mining }
 - {bibtex: murali2017bayesian, categories: [pattern], representation: Sketch Synthesis , pattern_type: Graphical Model , application: Sketch Mining }
 - {bibtex: murali2017finding, categories: [pattern], representation: API Usage Errors , pattern_type: Graphical Model , application: Defect Prediction }
 - {bibtex: movshovitz2015kb, categories: [pattern], representation: Tokens , pattern_type: Graphical Model , application: Knowledge-Base Mining }
