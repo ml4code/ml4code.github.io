@@ -4,7 +4,7 @@ title: "KB-LDA: Jointly Learning a Knowledge Base of Hierarchy, Relations, and F
 authors: D. Movshovitz-Attias, W. W. Cohen
 conference: ACL
 year: 2015
-bibkey: movshovitz2015kblda
+bibkey: movshovitz2015kb
 ---
 Many existing knowledge bases (KBs), including Freebase, Yago, and NELL, rely
 on a fixed ontology, given as an input

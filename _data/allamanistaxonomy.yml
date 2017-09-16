@@ -85,7 +85,7 @@
 - {bibkey: zaremba2014learning, categories: [representational], input_rep: Characters , modeled_target: Execution Trace , intermediate_rep: Distributed , application: --- }
 
 # Pattern Models
-- {bibkey: allamanis2016mining, categories: [pattern], representation: Abstracted AST , pattern_type: Graphical Model , application: Semantic Idiom Mining }
+- {bibkey: allamanis2017mining, categories: [pattern], representation: Abstracted AST , pattern_type: Graphical Model , application: Semantic Idiom Mining }
 - {bibkey: fowkes2016parameter, categories: [pattern], representation: API Call Sequences , pattern_type: Graphical Model , application: API Mining }
 - {bibkey: murali2017bayesian, categories: [pattern], representation: Sketch Synthesis , pattern_type: Graphical Model , application: Sketch Mining }
 - {bibkey: murali2017finding, categories: [pattern], representation: API Usage Errors , pattern_type: Graphical Model , application: Defect Prediction }
