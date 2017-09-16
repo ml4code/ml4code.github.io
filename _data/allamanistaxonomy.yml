@@ -61,17 +61,17 @@
 - {bibkey: chae2016automatically, categories: [representational], input_rep: Data Flow Graph , modeled_target: Static Analysis , intermediate_rep: Localized , application: Program Analysis }
 - {bibkey: corley2015exploring, categories: [representational], input_rep: Tokens , modeled_target: Feature Location , intermediate_rep: Distributed , application: Feature Location }
 - {bibkey: cummins2017end, categories: [representational], input_rep: Tokens , modeled_target: Optimization Flags , intermediate_rep: Distributed , application: Optimization Heuristics }
-- {bibkey: green2017learning, categories: [representational], input_rep: Statements, modeled_target: Alignment , intermediate_rep: Distributed , application: Decompiling }
 - {bibkey: gu2016deep, categories: [representational], input_rep: Natural Language , modeled_target: API Calls , intermediate_rep: Distributed , application: API Search }
 - {bibkey: guo2017semantically, categories: [representational], input_rep: Tokens , modeled_target: Traceability link , intermediate_rep: Distributed , application: Traceability }
-- {bibkey: gupta2016deepfix, categories: [representational], input_rep: Tokens , modeled_target: Code Fix , intermediate_rep: Distributed , application: Code Fixing }
+- {bibkey: gupta2017deepfix, categories: [representational], input_rep: Tokens , modeled_target: Code Fix , intermediate_rep: Distributed , application: Code Fixing }
 - {bibkey: hu2017codesum, categories: [representational], input_rep: Linearized AST , modeled_target: Natural Language , intermediate_rep: Distributed , application: Summarization }
 - {bibkey: iyer2016summarizing, categories: [representational], input_rep: Tokens , modeled_target: Natural Language , intermediate_rep: Distributed , application: Summarization }
 - {bibkey: jiang2017automatically, categories: [representational], input_rep: Tokens (Diff) , modeled_target: Natural Language , intermediate_rep: Distributed , application: Commit Message }
 - {bibkey: koc2017learning, categories: [representational], input_rep: Bytecode , modeled_target: False Positives , intermediate_rep: Distributed , application: Program Analysis }
 - {bibkey: kremenek2007factor, categories: [representational], input_rep: Partial PDG , modeled_target: Ownership , intermediate_rep: Factor (GM) , application: Pointer Ownership }
-- {bibkey: loyola2017neural, categories: [representational], input_rep: Tokens (Diff) , modeled_target: Natural Language , intermediate_rep: Distributed , application: Explain code changes }
+- {bibkey: levy2017learning, categories: [representational], input_rep: Statements, modeled_target: Alignment , intermediate_rep: Distributed , application: Decompiling }
 - {bibkey: li2015gated, categories: [representational], input_rep: Memory Heap , modeled_target: Separation Logic , intermediate_rep: Distributed , application: Verification }
+- {bibkey: loyola2017neural, categories: [representational], input_rep: Tokens (Diff) , modeled_target: Natural Language , intermediate_rep: Distributed , application: Explain code changes }
 - {bibkey: mangal2015user, categories: [representational], input_rep: Logic + Feedback , modeled_target: Prob. Analysis , intermediate_rep: MaxSAT , application: Program Analysis }
 - {bibkey: movshovitz2013natural, categories: [representational], input_rep: Tokens , modeled_target: Code Comments , intermediate_rep: Directed GM , application: Comment Prediction }
 - {bibkey: mou2016convolutional, categories: [representational], input_rep: Syntax , modeled_target: Classification , intermediate_rep: Distributed , application: Task Classification }
