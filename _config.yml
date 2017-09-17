@@ -1,6 +1,6 @@
 # Setup
-title:               Probabilistic Models of Code
-tagline:             'a literature review'
+title:               Machine Learning for Big Code and Naturalness
+tagline:             'a survey'
 description:         'A survey of academic research on machine learning models for source code.'
 url:                 http://todo.com
 baseurl:             ''

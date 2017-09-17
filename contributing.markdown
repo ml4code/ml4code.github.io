@@ -5,7 +5,7 @@ title: Contributing
 
 Contributions of new or missing publications are very welcome. Alternative categorization/taxonomies can also be added to the website. To contribute, please open a pull request [here](https://github.com/ml4code/ml4code.github.io), but first please read the instructions below.
 
-## Adding a publication
+### Adding a publication
 To add a publication (new or missing), create a file in the `_publications` folder. The name of the file should follow the structure `lastnameYEARfirstword.markdown` where `lastname` is the last name of the first author and `firstword` is the first non-punctuation word of the work's title. Within each file, follow the structure shown in the other files. Once the file is added, the work will appear in the "All Papers" section.
 <pre>
 ---
@@ -23,13 +23,14 @@ additional_links:
 text-of-abstract
 </pre>
 
-The `additional_links` are optional and arbitrary and they will appear on the page refering to this work. Feel free to add as many additional links as needed.
+The `additional_links` are optional and arbitrary and they will appear on the page referring to this work. Feel free to add as many additional links as needed.
 
-## Adding a new categorization
-No single taxonomy or categorization can fit everyone. It is easy to contribute a new categorization to be shown in this website. TODO TODO
+### Adding a new categorization
+No single taxonomy or categorization can fit everyone. It is easy to contribute a new categorization to be shown in this website. First, create a data file, similar to those in the `_data` file describing your taxonomy.
+This can be a JSON, YAML or CSV file as described [here](https://jekyllrb.com/docs/datafiles/).
+Then, create a folder and a page (or pages) that describe your taxonomy. Finally, submit a pull
+request to get this merged into the website.
 
-Add a data file describing your hierarchy. This can be a JSON, YAML or CSV file as described [here](https://jekyllrb.com/docs/datafiles/).
-
-## Reusing the website structure
+### Reusing the website structure
 In principle, the structure of this website can be used for other literature reviews. Feel free to clone it!
 

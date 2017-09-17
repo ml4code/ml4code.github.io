@@ -2,7 +2,7 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.baseurl }}">
+        <a href="/">
           {{ site.title }}
         </a>
       </h1>
@@ -10,8 +10,6 @@
     </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
-
     <a class="sidebar-nav-item{% if page.url == papers.html %} active{% endif %}" href="/papers.html">All Papers</a>
 
    <a class="sidebar-nav-item" href="/base-taxonomy">Core Taxonomy</a>
@@ -22,8 +20,8 @@
   </nav>
 
   <div class="sidebar-item">
-    <p>
-      Powered by <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
+    <p style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
     </p>
   </div>
 </div></div>
