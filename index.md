@@ -15,14 +15,13 @@ research is inherently interdisciplinary, uniting the machine learning and
 natural language processing communities with software engineering
 and programming language communities. We present a [taxonomy](\taxnomomy)
 based on the underlying design principles of each model and use it to navigate
-the literature. The full survey text can be found [here]().
+the literature. The full survey pre-print can be found [here]().
 
 
 Please cite as
 <pre>
 TODO
 </pre>
-Regarding this review or website, please contact [Miltos Allamanis](https://miltos.allamanis.com).
 
 ### Contributing
 

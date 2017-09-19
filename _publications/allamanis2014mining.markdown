@@ -6,6 +6,7 @@ conference: FSE
 year: 2014
 bibkey: allamanis2014mining
 additional_links:
+   - {name: "PDF", url: "http://homepages.inf.ed.ac.uk/csutton/publications/idioms.pdf"}
    - {name: "ArXiV", url: "http://arxiv.org/abs/1404.0417"}
    - {name: "data", url: "http://groups.inf.ed.ac.uk/cup/idioms/haggisClassUsersDataset.zip"}
 ---

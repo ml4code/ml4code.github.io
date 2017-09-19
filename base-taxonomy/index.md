@@ -11,7 +11,7 @@ distribution and their inputs and outputs. Some models fall into multiple catego
 because decompositions of their equations fall into different categories.
 
 
- * [**Code-generating Models**](generative.html) generate code by
+ * [**Code-generating Models**](generative.html) define a probability distribution over code by 
     stochastically modeling the generation of smaller and simpler parts of code, _e.g._
     tokens or AST nodes.
 

@@ -91,6 +91,11 @@ html {
   display: block;
   line-height: 1.75;
 }
+.sidebar-nav-item-small {
+  display: block;
+  font-size: .8rem;
+  padding-left: 1rem;
+}
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: underline;

@@ -6,6 +6,7 @@ conference: FSE
 year: 2014
 bibkey: allamanis2014learning
 additional_links:
+   - {name: "PDF", url: "http://homepages.inf.ed.ac.uk/csutton/publications/naturalize.pdf"}
    - {name: "ArXiV", url: "http://arxiv.org/abs/1402.4182"}
    - {name: "website", url: "http://groups.inf.ed.ac.uk/naturalize/"}
    - {name: "code", url: "https://github.com/mast-group/naturalize"}
