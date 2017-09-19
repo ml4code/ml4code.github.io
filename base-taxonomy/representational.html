@@ -10,17 +10,23 @@ The resulting model yields a conditional probability distribution over code
 element properties, like the types of variables, and can predict them.
 
 {% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
-<table>
-<tr><th>Name</th><th>Input Code Representation</th><th>Target</th><th>Intermediate Representation</th><th>Application</th></tr>
+<table id="reprModelTable">
+<thead><th>Name</th><th>Input Code Representation</th><th>Target</th><th>Intermediate Representation</th><th>Application</th></thead><tbody>
 {% for publication in publicationsList %}{% if publication.categories contains "representational" %}
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
-          <td><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td data-order="{{publication.bibkey}}"><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.input_rep}}</td>
           <td>{{publication.modeled_target}}</td>
           <td>{{publication.intermediate_rep}}</td>
           <td>{{publication.application}}</td>
       </tr>
 {% endif %}{% endfor %}
-</table>
+</tbody></table>
+
+<script>
+$(document).ready( function () {
+    $('#reprModelTable').DataTable({paging: false,});
+} );
+</script>

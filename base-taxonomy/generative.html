@@ -9,17 +9,23 @@ eling the generation of smaller and simpler parts of code, e.g.
 tokens or AST nodes.
 
 {% assign publicationsList = site.data.allamanistaxonomy | sort: "bibkey" %}
-<table>
-<tr><th>Name</th><th>Type</th><th>Representation</th><th>Model</th><th>Application</th></tr>
+<table id="genModelTable">
+<thead><th>Name</th><th>Type</th><th>Representation</th><th>Model</th><th>Application</th></thead><tbody>
 {% for publication in publicationsList %}{% if publication.categories contains "generative" %}
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
-          <td><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td data-order="{{publication.bibkey}}"><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.type}}</td>
           <td>{{publication.representation}}</td>
           <td>{{publication.model}}</td>
           <td>{{publication.application}}</td>
       </tr>
 {% endif %}{% endfor %}
-</table>
+</tbody></table>
+
+<script>
+$(document).ready( function () {
+    $('#genModelTable').DataTable({paging: false,});
+} );
+</script>
