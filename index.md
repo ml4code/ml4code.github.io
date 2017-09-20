@@ -26,10 +26,15 @@ you explore the navigate the literautre in this area, by
 following a [taxonomy](\taxnomomy)
 based on the underlying design principles of each model.
 
-The full survey is available [as a research paper]().
+The full survey is available [as a research paper](https://arxiv.org/abs/1709.06182).
 Please cite as
 <pre>
-TODO
+@article{allamanis2017survey,
+  title={A Survey of Machine Learning for Big Code and Naturalness},
+  author={Allamanis, Miltiadis and Brockschmidt, Marc},
+  journal={arXiv preprint arXiv:1709.06182},
+  year={2017}
+}
 </pre>
 
 ### Contributing
@@ -40,3 +45,7 @@ Anyone can add a paper to this web site, essentially by creating one Markdown fi
  To contribute, open a pull request in GitHub, by following [these instructions 
 for contributing](contributing.html).
 
+### Datasets and Other Resources
+Some resources about Big Code and Naturalness can be found at [learnbigcode.github.io](http://learnbigcode.github.io).
+A list of datasets used in this area can be found at the appendix of the
+[survey](https://arxiv.org/abs/1709.06182) and at [learnbigcode.github.io](http://learnbigcode.github.io/datasets/).
