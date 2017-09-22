@@ -5,6 +5,8 @@ authors: V.J. Hellendoorn, P. Devanbu, A. Bacchelli
 conference: MSR
 year: 2015
 bibkey: hellendoorn2015will
+additional_links:
+   - {name: "Paper", url: "http://vhellendoorn.github.io/PDF/msr2015.pdf"}
 ---
 Popular open-source software projects receive and
 review contributions from a diverse array of developers, many
