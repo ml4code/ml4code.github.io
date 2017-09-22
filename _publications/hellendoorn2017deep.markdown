@@ -5,6 +5,10 @@ authors: V. J. Hellendoorn, P. Devanbu
 conference: FSE 
 year: 2017
 bibkey: hellendoorn2017deep
+additional_links:
+   - {name: "Paper", url: "http://vhellendoorn.github.io/PDF/fse2017.pdf"}
+   - {name: "Slides", url: "http://vhellendoorn.github.io/PPT/FSE17Presentation.pptx"}
+   - {name: "Code", url: "https://github.com/SLP-Team/SLP-Core"}
 ---
 Current statistical language modeling techniques, including deep-learning based models, have proven to be quite effective for source
 code. We argue here that the special properties of source code can
