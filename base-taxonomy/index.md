@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Taxonomy
+description: A taxonomy of machine learning models of source code.
 ---
 A probabilistic model of source code is a probability distribution 
 over code artifacts. To group these family of models

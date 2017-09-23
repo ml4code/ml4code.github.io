@@ -9,3 +9,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

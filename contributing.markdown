@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contributing
+description: How to contribute to this website.
 ---
 
 Contributions of new or missing publications are very welcome. Alternative categorization/taxonomies can also be added to the website. To contribute, please open a pull request [here](https://github.com/ml4code/ml4code.github.io), but first please read the instructions below.
