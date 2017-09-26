@@ -31,7 +31,7 @@ Please cite as
 <pre>
 @article{allamanis2017survey,
   title={A Survey of Machine Learning for Big Code and Naturalness},
-  author={Allamanis, Miltiadis and Brockschmidt, Marc},
+  author={Allamanis, Miltiadis and Barr, Earl T. and Devanbu, Premkumar and Sutton, Charles},
   journal={arXiv preprint arXiv:1709.06182},
   year={2017}
 }
