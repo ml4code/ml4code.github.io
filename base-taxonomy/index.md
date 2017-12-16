@@ -12,17 +12,17 @@ distribution and their inputs and outputs. Some models fall into multiple catego
 because decompositions of their equations fall into different categories.
 
 
- * [**Code-generating Models**](generative.html) define a probability distribution over code by 
+ * [**Code-generating Models**]({% link base-taxonomy/generative.html %}) define a probability distribution over code by 
     stochastically modeling the generation of smaller and simpler parts of code, _e.g._
     tokens or AST nodes.
 
- * [**Representational Models of Code**](representational.html) take an abstract
+ * [**Representational Models of Code**]({% link base-taxonomy/representational.html %}) take an abstract
     representation of 
     code as input.  Example representations include token contexts or data flow.
     The resulting model yields a conditional probability distribution over code
     element properties, like the types of variables, and can predict them.
 
- * [**Pattern Mining Models**](pattern.html) infer, without supervision, a likely latent
+ * [**Pattern Mining Models**]({% link base-taxonomy/pattern.html %}) infer, without supervision, a likely latent
     structure within code. These models are an instantiation of clustering
     in the code domain; they can find reusable and human-interpretable patterns.
 

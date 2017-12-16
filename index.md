@@ -23,7 +23,7 @@ natural language processing communities with software engineering
 and programming language communities. 
 
 This site is an experiment: a living literature review that allows
-you explore and navigate the literature in this area, by
+you explore, [search and navigate]({% link papers.html %}) the literature in this area, by
 following a [taxonomy]({% link base-taxonomy/index.md %})
 based on the underlying design principles of each model.
 The full survey is available [as a research paper](https://arxiv.org/abs/1709.06182).

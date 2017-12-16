@@ -10,17 +10,17 @@
     </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == papers.html %} active{% endif %}" href="/papers.html">Searchable List of Papers</a>
+    <a class="sidebar-nav-item{% if page.url == "/papers.html" %} active{% endif %}" href="{% link papers.html %}">Searchable List of Papers</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy">Core Taxonomy</a>
-   <a class="sidebar-nav-item-small" href="/base-taxonomy/generative.html">Code Generating Models</a>
-   <a class="sidebar-nav-item-small" href="/base-taxonomy/representational.html">Representational Models</a>
-   <a class="sidebar-nav-item-small" href="/base-taxonomy/pattern.html">Pattern Mining Models</a></ul>
-   </li>
+   <a class="sidebar-nav-item{% if page.url == "/base-taxonomy/" %} active{% endif %}" href="{% link base-taxonomy/index.md %}">Core Taxonomy</a>
+   <a class="sidebar-nav-item-small" href="{% link base-taxonomy/generative.html %}">Code Generating Models</a>
+   <a class="sidebar-nav-item-small" href="{% link base-taxonomy/representational.html %}">Representational Models</a>
+   <a class="sidebar-nav-item-small" href="{% link base-taxonomy/pattern.html %}">Pattern Mining Models</a>
 
-  <a class="sidebar-nav-item{% if page.url == resources.html %} active{% endif %}" href="/resources.html">Other Resources</a>
-  <a class="sidebar-nav-item{% if page.url == contributing.html %} active{% endif %}" href="/contributing.html">Contributing</a>
-  <a class="sidebar-nav-item{% if page.url == contributors.html %} active{% endif %}" href="/contributors.html">Contributors</a>
+
+  <a class="sidebar-nav-item{% if page.url == "/resources.html" %} active{% endif %}" href="{% link resources.md %}">Other Resources</a>
+  <a class="sidebar-nav-item{% if page.url == "/contributing.html" %} active{% endif %}" href="{% link contributing.markdown %}">Contributing</a>
+  <a class="sidebar-nav-item{% if page.url == "/contributors.html" %} active{% endif %}" href="{% link contributors.md %}">Contributors</a>
   </nav>
 
   <div class="sidebar-item">
