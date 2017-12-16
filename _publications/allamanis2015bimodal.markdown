@@ -6,7 +6,7 @@ conference: ICML
 year: 2015
 bibkey: allamanis2015bimodal
 additional_links:
-   - {name: "Supplementary Material", url: "/publicationfiles/allamanis2015bimodal/supplementary.pdf"}
+   - {name: "Supplementary Material", url: "https://miltos.allamanis.com/publicationfiles/allamanis2015bimodal/supplementary.pdf"}
    - {name: "Presentation Video", url: "http://videolectures.net/icml2015_allamanis_natural_language/"}
 ---
 We consider the problem of building probabilistic models that jointly 

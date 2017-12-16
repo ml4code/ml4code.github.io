@@ -13,7 +13,7 @@ the information of existing papers or adding new work.
 {% for year in publicationsByYear reversed %}
 {% for publication in year.items %}
 <tr>
-	<td>{{ publication.year }} {{publication.date}} </td>
+	<td>{{ publication.year }}</td>
 	<td><a href="{{ publication.url | prepend: site.baseurl }}">{{publication.title}}</a></td>
 	<td>{{ publication.authors }}</td>
 	<td>{{ publication.conference }}</td>
