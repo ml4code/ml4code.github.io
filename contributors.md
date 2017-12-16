@@ -9,10 +9,10 @@ The core survey and the original taxonomy was created by
 * [Prem Devanbu](http://web.cs.ucdavis.edu/~devanbu/) University of California, Davis, USA
 * [Charles Sutton](http://homepages.inf.ed.ac.uk/csutton/) University of Edinburgh and The Alan Turing Institute, UK
 
-#### External Contributors
+#### Contributors to the website
 This website accepts external [contributions](/contributing.html).
 Please, feel free to add your name below, once you contribute to this
-website.
+website. A comprehensive list can be found [here](https://github.com/ml4code/ml4code.github.io/graphs/contributors).
 
 * Contributor 1
 * Contributor 2

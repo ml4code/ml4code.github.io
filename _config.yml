@@ -1,7 +1,7 @@
 # Setup
 title:               Machine Learning for Big Code and Naturalness
 tagline:             'a survey'
-description:         'A survey of academic research on machine learning models for source code.'
+description:         'A survey of research on machine learning for source code.'
 url:                 https://ml4code.github.io
 baseurl:             ''
 

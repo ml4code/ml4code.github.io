@@ -80,7 +80,7 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 /* Sidebar nav */
@@ -256,4 +256,13 @@ td {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+#pubslist {
+  font-size: 0.8rem;
+}
+
+#pubslist ul {
+  padding-left: 0;
+  list-style-type: square;
 }

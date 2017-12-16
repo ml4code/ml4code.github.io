@@ -1,21 +1,40 @@
 ---
 layout: default
-title: List of Publications
+title: Search all Publications on Machine Learning for Source Code
 description: A list of research papers for machine learning models for source code.
 ---
-Below there is a list of related papers within this area, sorted by year. 
-Please consider <a href="/contributing.html">contributing</a> to this list by adding
-additional information to existing papers or adding new work.
+Search across all paper titles, abstracts, authors by using the search field.
+Please consider <a href="/contributing.html">contributing</a> by updating
+the information of existing papers or adding new work.
 
+<table id="allPapers">
+<thead><th>Year</th><th>Title</th><th>Authors</th><th>Venue</th><th>Abstract</th></thead><tbody>
 {% assign publicationsByYear = site.publications | sort: "year" | group_by: "year" %}
 {% for year in publicationsByYear reversed %}
-  <h3>{{ year.name }}</h3>
-    <ul style="none">
-      {% for publication in year.items %}
-      <li>
-          <a href="{{ publication.url | prepend: site.baseurl }}">{{publication.title}}</a>. {{ publication.authors }}. {{publication.conference}}.
-      </li>
-    {% endfor %}
-    </ul>
+{% for publication in year.items %}
+<tr>
+	<td>{{ publication.year }} {{publication.date}} </td>
+	<td><a href="{{ publication.url | prepend: site.baseurl }}">{{publication.title}}</a></td>
+	<td>{{ publication.authors }}</td>
+	<td>{{ publication.conference }}</td>
+	<td>{{ publication.content }}</td>
+</tr>
 {% endfor %}
+{% endfor %}
+</tbody></table>
+
+<script>
+$(document).ready( function () {
+    $('#allPapers').DataTable({
+		paging: false,
+		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
+		columnDefs: [
+			{
+				targets: [3, 4],
+				visible: false,
+				searchable: true
+			}]
+		});
+});
+</script>
 
