@@ -7,6 +7,7 @@ year: 2017
 bibkey: allamanis2017learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1711.00740"}
+   - {name: "GGNN Code", url: "https://github.com/Microsoft/gated-graph-neural-network-samples"}
 ---
 Learning tasks on source code (i.e., formal languages) have been considered recently, but most work has tried to transfer natural language methods and does not capitalize on the unique opportunities offered by code's known syntax. For example, long-range dependencies induced by using the same variable or function in distant locations are often not considered. We propose to use graphs to represent both the syntactic and semantic structure of code and use graph-based deep learning methods to learn to reason over program structures.
 
