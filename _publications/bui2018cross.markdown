@@ -12,8 +12,7 @@ Towards the vision of translating code that implements an algorithm from one pro
 paper  proposes  an  approach  for  automated  program  classification using
 bilateral tree-based convolutional neural networks
 (BiTBCNNs).  It  is  layered  on  top  of  two  tree-based
-convolutional neural networks (TBCNNs), each of which recognizes the algorithm of code written in an individual pro-
-gramming language. The combination layer of the networks
+convolutional neural networks (TBCNNs), each of which recognizes the algorithm of code written in an individual programming language. The combination layer of the networks
 recognizes the similarities and differences among code in different programming languages. The BiTBCNNs are trained
 using  the  source  code  in  different  languages  but  known  to
 implement  the  same  algorithms  and/or  functionalities.  For
