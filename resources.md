@@ -18,3 +18,12 @@ Please, feel free to submit a pull request to adding more links in this page.
 ### Other Collections of Related Work
 [Source{d}](https://sourced.tech/) has collected a set of links and
 papers in the area. You can access the list [here](https://github.com/src-d/awesome-machine-learning-on-source-code).
+
+### Workshops and Other Academic Events
+The last few years a few workshops have been organized in this area. Please, feel free to add any missing or future workshops here.
+
+* [Machine Learning for Programming](http://ml4p.org/) 18–19 July 2018, Oxford, UK
+* [Workshop on NLP for Software Engineering](https://nl4se.github.io/) 4 February 2018, New Orleans, LA, USA
+* [The 55th CREST Open Workshop - Bimodal Program Analysis](http://crest.cs.ucl.ac.uk/cow/55/) 30-31 October 2017, London, UK
+* [Workshop on NLP for Software Engineering](https://nlse-fse.github.io/) 13 November 2016, Seattle, WA, USA
+* [Programming with "Big Code"](http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=15472) 15-18 November 2015, Dagstuhl, Germany
