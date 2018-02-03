@@ -266,3 +266,11 @@ td {
   padding-left: 0;
   list-style-type: square;
 }
+
+tr:hover .externallinks {
+  display: inline;
+}
+
+.externallinks {
+  display: none;
+}
