@@ -20,7 +20,7 @@ the naturalness of software employs statistical modeling over big code to
 reason about rich variety of programs developers write.  This new line of
 research is inherently interdisciplinary, uniting the machine learning and 
 natural language processing communities with software engineering
-and programming language communities. 
+and programming language communities.
 
 This site is an experiment: a living literature review that allows
 you explore, [search and navigate]({% link papers.html %}) the literature in this area, by
