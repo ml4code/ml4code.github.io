@@ -5,10 +5,15 @@ layout: default
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
   <h5>{{ page.authors }}. {{ page.conference }} {{ page.year }}</h5>
-      {% for additional_link in page.additional_links %}
-			[<a href="{{ additional_link.url }}">{{ additional_link.name }}</a>]
-      {% endfor %}
-      </p>
+  <p>
+    {% for additional_link in page.additional_links %}
+      [<a href="{{ additional_link.url }}" target="_blank">{{ additional_link.name }}</a>]
+    {% endfor %}
+    &nbsp;<a href='http://scholar.google.com/scholar?q={{ page.title }}' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q={{ page.title }}' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq={{ page.title | uri_escape }}' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+  </p>
+      
       
       <p>{{ content }}</p>
 </div>
