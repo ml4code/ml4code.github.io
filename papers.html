@@ -33,7 +33,7 @@ the information of existing papers or adding new work.
 var datatable;
 
 function searchTable() {
-    var hash = window.location.hash.substr(1);
+    var hash = decodeURIComponent(window.location.hash.substr(1));
     datatable.search(hash).draw();
 }
 
