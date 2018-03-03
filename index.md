@@ -2,7 +2,6 @@
 layout: default
 title: A Survey of Machine Learning for Big Code and Naturalness
 ---
-
 ### Machine Learning on Source Code
 
 The billions of lines of source code that have been written contain 

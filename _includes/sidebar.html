@@ -6,11 +6,12 @@
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <p class="lead">{{ site.description }}</p>      
     </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == "/papers.html" %} active{% endif %}" href="{% link papers.html %}">Searchable List of Papers</a>
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item{% if page.url == "/papers.html" %} active{% endif %}" href="{% link papers.html %}">List of Papers</a>
 
    <a class="sidebar-nav-item{% if page.url == "/base-taxonomy/" %} active{% endif %}" href="{% link base-taxonomy/index.md %}">Core Taxonomy</a>
    <a class="sidebar-nav-item-small" href="{% link base-taxonomy/generative.html %}">Code Generating Models</a>
@@ -18,7 +19,7 @@
    <a class="sidebar-nav-item-small" href="{% link base-taxonomy/pattern.html %}">Pattern Mining Models</a>
 
 
-  <a class="sidebar-nav-item{% if page.url == "/resources.html" %} active{% endif %}" href="{% link resources.md %}">Other Resources</a>
+  <a class="sidebar-nav-item{% if page.url == "/resources.html" %} active{% endif %}" href="{% link resources.md %}">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item{% if page.url == "/contributing.html" %} active{% endif %}" href="{% link contributing.markdown %}">Contributing</a>
   <a class="sidebar-nav-item{% if page.url == "/contributors.html" %} active{% endif %}" href="{% link contributors.md %}">Contributors</a>
   </nav>
@@ -30,3 +31,19 @@
     </span></p>
   </div>
 </div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "{% link papers.html %}#" + $("#searchTarget").val();
+  }
+}
+</script>

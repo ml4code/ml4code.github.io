@@ -30,8 +30,16 @@ the information of existing papers or adding new work.
 </tbody></table>
 
 <script>
+var datatable;
+
+function searchTable() {
+    var hash = window.location.hash.substr(1);
+    datatable.search(hash).draw();
+}
+
+
 $(document).ready( function () {
-    $('#allPapers').DataTable({
+    datatable = $('#allPapers').DataTable({
 		paging: false,
 		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
 		columnDefs: [
@@ -41,6 +49,11 @@ $(document).ready( function () {
 				searchable: true
 			}]
 		});
+    searchTable();
+});
+
+$(window).on('hashchange', function() {
+  searchTable();
 });
 </script>
 
