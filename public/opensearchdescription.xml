@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>ML4Code</ShortName>
+ <Description>Search Papers in Machine Learning for Source Code</Description>
+ <Tags>ml4code </Tags>
+ <Url type="text/html"
+      template="https://ml4code.github.io/papers.html#{searchTerms}"/>
+ <Image height="64" width="64" type="image/png">https://ml4code.github.io/public/favicon.svg</Image>
+</OpenSearchDescription>
