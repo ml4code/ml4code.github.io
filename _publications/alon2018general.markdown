@@ -2,7 +2,7 @@
 layout: publication
 title: "A General Path-Based Representation for Predicting Program Properties"
 authors: U. Alon, M. Zilberstein, O. Levy, E. Yahav
-conference: (will be published at) PLDI 2018
+conference: PLDI
 year: 2018
 bibkey: alon2018general
 additional_links:
