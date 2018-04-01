@@ -83,6 +83,7 @@
 - {bibkey: raychev2015predicting, categories: [representational], input_rep: Dependency Net , modeled_target: Types + Names , intermediate_rep: CRF (GM) , application: Types + Names }
 - {bibkey: wang2016bugram, categories: [representational], input_rep: Tokens , modeled_target: Defects , intermediate_rep: LM (\ngram) , application: Bug Detection }
 - {bibkey: zaremba2014learning, categories: [representational], input_rep: Characters , modeled_target: Execution Trace , intermediate_rep: Distributed , application: --- }
+- {bibkey: alon2018general, categories: [representational], input_rep: AST Paths , modeled_target: General-Purpose , intermediate_rep: Localized+Distributed , application: General-Purpose}
 
 # Pattern Models
 - {bibkey: allamanis2017mining, categories: [pattern], representation: Abstracted AST , pattern_type: Graphical Model , application: Semantic Idiom Mining }
