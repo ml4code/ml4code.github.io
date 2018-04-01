@@ -14,5 +14,4 @@ This website accepts external [contributions](/contributing.html).
 Please, feel free to add your name below, once you contribute to this
 website. A comprehensive list can be found [here](https://github.com/ml4code/ml4code.github.io/graphs/contributors).
 
-* Contributor 1
-* Contributor 2
+* [Uri Alon](http://www.cs.technion.ac.il/~urialon/) Technion, Israel
