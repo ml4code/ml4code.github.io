@@ -4,7 +4,7 @@ title: "Polyglot Semantic Parsing in APIs"
 authors: Kyle Richardson, Jonathan Berant, Jonas Kuhn
 conference: NAACL
 year: 2018
-bibkey: richardson2017learning
+bibkey: richardson2018polyglot
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1803.06966"}
 ---
