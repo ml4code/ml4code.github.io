@@ -21,7 +21,7 @@ The last few years a few workshops have been organized in this area. Please, fee
 * [Machine Learning for Programming](http://ml4p.org/) 18–19 July 2018, Oxford, UK
 * [International Workshop on Machine Learning techniques for Programming Languages](https://conf.researchr.org/track/ecoop-issta-2018/ML4PL-2018-papers) 16 - 21 July 2018 Amsterdam, Netherlands
 * [Workshop on Machine Learning and Programming Languages](https://pldi18.sigplan.org/track/mapl-2018-papers) in PLDI 18 - 22 June 2018, Philadelphia, PA, USA
-* [Tutorial: Modelling Natural Language, Programs, and their Intersection](http://naacl2018.org/tutorial.html) in NAACL HLT 2018, 1 June 2018, New Orleans, LA, USA [[slides](https://github.com/neubig/naacl18tutorial)]
+* [Tutorial: Modelling Natural Language, Programs, and their Intersection](http://naacl2018.org/tutorial.html) in NAACL HLT 2018, 1 June 2018, New Orleans, LA, USA [[slides](https://github.com/neubig/naacl18tutorial)] [[video](https://vimeo.com/channels/naacl2018/279154278)]
 * [Workshop on NLP for Software Engineering](https://nl4se.github.io/) 4 February 2018, New Orleans, LA, USA
 * [The 55th CREST Open Workshop - Bimodal Program Analysis](http://crest.cs.ucl.ac.uk/cow/55/) 30-31 October 2017, London, UK
 * [Workshop on NLP for Software Engineering](https://nlse-fse.github.io/) 13 November 2016, Seattle, WA, USA
