@@ -28,11 +28,15 @@ based on the underlying design principles of each model.
 The full survey is available [as a research paper](https://arxiv.org/abs/1709.06182).
 Please cite as
 <pre>
-@article{allamanis2017survey,
-  title={A Survey of Machine Learning for Big Code and Naturalness},
-  author={Allamanis, Miltiadis and Barr, Earl T. and Devanbu, Premkumar and Sutton, Charles},
-  journal={arXiv preprint arXiv:1709.06182},
-  year={2017}
+@article{allamanis2018survey,
+  title={A survey of machine learning for big code and naturalness},
+  author={Allamanis, Miltiadis and Barr, Earl T and Devanbu, Premkumar and Sutton, Charles},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={51},
+  number={4},
+  pages={81},
+  year={2018},
+  publisher={ACM}
 }
 </pre>
 
