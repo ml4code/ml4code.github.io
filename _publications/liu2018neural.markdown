@@ -1,0 +1,9 @@
+---
+layout: publication
+title: "Neural-Machine-Translation-Based Commit Message Generation: How Far Are We?"
+authors: Z. Liu, X. Xia, A.E. Hassan, D. Lo, Z. Xing, X. Wang
+conference: ASE
+year: 2018
+bibkey: liu2018neural
+---
+Commit messages can be regarded as the documentation of software changes. These messages describe the content and purposes of changes, hence are useful for program comprehension and software maintenance. However, due to the lack of time and direct motivation, commit messages sometimes are neglected by developers. To address this problem, Jiang et al. proposed an approach (we refer to it as NMT), which leverages a neural machine translation algorithm to automatically generate short commit messages from code. The reported performance of their approach is promising, however, they did not explore why their approach performs well. Thus, in this paper, we first perform an in-depth analysis of their experimental results. We find that (1) Most of the test <pre>diffs</pre> from which NMT can generate high-quality messages are similar to one or more training <pre>diffs</pre> at the token level. (2) About 16% of the commit messages in Jiang et al.’s dataset are noisy due to being automatically generated or due to them describing repetitive trivial changes. (3) The performance of NMT declines by a large amount after removing such noisy commit messages. In addition, NMT is complicated and time-consuming. Inspired by our first finding, we proposed a simpler and faster approach, named NNGen (Nearest Neighbor Generator), to generate concise commit messages using the nearest neighbor algorithm. Our experimental results show that NNGen is over 2,600 times faster than NMT, and outperforms NMT in terms of BLEU (an accuracy measure that is widely used to evaluate machine translation systems) by 21%. Finally, we also discuss some observations for the road ahead for automated commit message generation to inspire other researchers.
