@@ -21,7 +21,7 @@ research is inherently interdisciplinary, uniting the machine learning and
 natural language processing communities with software engineering
 and programming language communities.
 
-This site is an experiment: a living literature review that allows
+This site is an experiment: a [living literature review](https://en.wikipedia.org/wiki/Living_review) that allows
 you explore, [search and navigate]({% link papers.html %}) the literature in this area, by
 following a [taxonomy]({% link base-taxonomy/index.md %})
 based on the underlying design principles of each model.
