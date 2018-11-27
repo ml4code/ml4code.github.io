@@ -1,0 +1,25 @@
+---
+layout: publication
+title: "Content Aware Source Code Change Description Generation"
+authors: P. Loyola, E. Marrese-Taylor, J.A. Balazs, Y. Matsuo, F. Satoh
+conference: International Natural Language Generation Conference
+year: 2018
+bibkey: loyola2018content
+---
+We propose to study the generation of descriptions from source code changes by integrating  the  messages  included  on  code
+commits and the intra-code documentation
+inside the source in the form of docstrings.
+Our hypothesis is that although both types
+of descriptions are not directly aligned in
+semantic terms —one explaining a change
+and  the  other  the  actual  functionality  of
+the code being modified— there could be
+certain common ground that is useful for
+the  generation.   To  this  end,  we  propose
+an architecture that uses the source code-docstring relationship to guide the description generation.  We discuss the results of
+the approach comparing against a baseline
+based  on  a  sequence-to-sequence  model,
+using standard automatic natural language
+generation metrics as well as with a human
+study, thus offering a comprehensive view
+of the feasibility of the approach.
