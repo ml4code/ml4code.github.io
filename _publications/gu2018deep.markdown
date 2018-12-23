@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Deep code search"
+title: "Deep Code Search"
 authors: X. Gu, H. Zhang, S. Kim
 conference: ICSE
 year: 2018
