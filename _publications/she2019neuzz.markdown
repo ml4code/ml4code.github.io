@@ -1,0 +1,11 @@
+---
+layout: publication
+title: "NEUZZ: Efficient Fuzzing with Neural Program Smoothing"
+authors: D. She, K. Pei, D. Epstein, J. Yang, B. Ray, S. Jana
+conference: "IEEE S&P"
+year: 2019
+bibkey: she2019neuzz
+additional_links:
+   - {name: "Code", url: "https://github.com/Dongdongshe/neuzz"}
+---
+Fuzzing has become the de facto standard technique for finding software vulnerabilities. However, even state-of-the-art fuzzers are not very efficient at finding hard-to-trigger software bugs. Most popular fuzzers use evolutionary guidance to generate inputs that can trigger different bugs. Such evolutionary algorithms, while fast and simple to implement, often get stuck in fruitless sequences of random mutations. Gradient-guided optimization presents a promising alternative to evolutionary guidance. Gradient-guided techniques have been shown to significantly outperform evolutionary algorithms at solving high-dimensional structured optimization problems in domains like machine learning by efficiently utilizing gradients or higher-order derivatives of the underlying function. However, gradient-guided approaches are not directly applicable to fuzzing as real-world program behaviors contain many discontinuities, plateaus, and ridges where the gradient-based methods often get stuck. We observe that this problem can be addressed by creating a smooth surrogate function approximating the discrete branching behavior of target program. In this paper, we propose a novel program smoothing technique using surrogate neural network models that can incrementally learn smooth approximations of a complex, real-world program's branching behaviors. We further demonstrate that such neural network models can be used together with gradient-guided input generation schemes to significantly improve the fuzzing efficiency. Our extensive evaluations demonstrate that NEUZZ significantly outperforms 10 state-of-the-art graybox fuzzers on 10 real-world programs both at finding new bugs and achieving higher edge coverage. NEUZZ found 31 unknown bugs that other fuzzers failed to find in 10 real world programs and achieved 3X more edge coverage than all of the tested graybox fuzzers for 24 hours running.
