@@ -6,7 +6,7 @@ conference:
 year: 2017
 bibkey: bavishi2017context2name
 additional_links:
-   - {name: "PDF", url: "http://mp.binaervarianz.de/Context2Name_TR_Nov2017.pdf"}
+   - {name: "ArXiV", url: "https://arxiv.org/pdf/1809.05193.pdf"}
 ---
 Most of the JavaScript code deployed in the wild has been minified, a process in which identifier names are replaced
 with short, arbitrary and meaningless names. Minified code occupies less space, but also makes the code extremely difficult to manually inspect and understand. This paper presents Context2Name, a deep learning-based technique that partially reverses the effect of minification by predicting natural
