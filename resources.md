@@ -18,6 +18,7 @@ A few university courses are been taught covering aspects of machine learning fo
 * [Analyzing Software using Deep Learning](https://www.sola.tu-darmstadt.de/de/software-lab/teaching/summer-2017/analyzing-software-using-deep-learning/analyzing-software-using-deep-learning-summer-semester-2017/) in T.U. Darmstadt
 * [Seminars on Applications of Deep Learning in Software Engineering and Programming Languages](https://sites.google.com/view/mlplse-sp18/) in U.C. Berkeley
 * [Machine learning for programming](https://www.cl.cam.ac.uk/teaching/1819/R252/) in the University of Cambridge, UK
+* [Deep Learning for Symbolic Reasoning](http://tiarkrompf.github.io/cs590/2018/) in Purdue University
 
 Please, feel free to submit a pull request to adding more links in this page.
 
