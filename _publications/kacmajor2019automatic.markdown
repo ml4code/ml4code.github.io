@@ -1,0 +1,9 @@
+---
+layout: publication
+title: "Automatic Acquisition of Annotated Training Corpora for Test-Code Generation "
+authors: M. Kacmajor, J. D. Kelleher
+conference: Information
+year: 2019
+bibkey: kacmajor2019automatic
+---
+Open software repositories make large amounts of source code publicly available. Potentially, this source code could be used as training data to develop new, machine learning-based programming tools. For many applications, however, raw code scraped from online repositories does not constitute an adequate training dataset. Building on the recent and rapid improvements in machine translation (MT), one possibly very interesting application is code generation from natural language descriptions. One of the bottlenecks in developing these MT-inspired systems is the acquisition of parallel text-code corpora required for training code-generative models. This paper addresses the problem of automatically synthetizing parallel text-code corpora in the software testing domain. Our approach is based on the observation that self-documentation through descriptive method names is widely adopted in test automation, in particular for unit testing. Therefore, we propose synthesizing parallel corpora comprised of parsed test function names serving as code descriptions, aligned with the corresponding function bodies. We present the results of applying one of the state-of-the-art MT methods on such a generated dataset. Our experiments show that a neural MT model trained on our dataset can generate syntactically correct and semantically relevant short Java functions from quasi-natural language descriptions of functionality.
