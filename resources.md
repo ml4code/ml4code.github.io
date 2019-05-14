@@ -25,6 +25,7 @@ Please, feel free to submit a pull request to adding more links in this page.
 ### Workshops and Other Academic Events
 The last few years a few workshops have been organized in this area. Please, feel free to add any missing or future workshops here.
 
+* [ML on Code devroom at FOSDEM19](https://fosdem.org/2019/schedule/track/ml_on_code/)2-3 February 2019, Brussels, EU [[videos](https://video.fosdem.org/2019/H.2213/)]
 * [Machine Learning for Programming](http://ml4p.org/) 18–19 July 2018, Oxford, UK [[videos](https://www.youtube.com/watch?v=dQaAp9wdFtQ&list=PLMPy362FkW9pd96bwh0BuCGMo6fdMQ2aw)]
 * [International Workshop on Machine Learning techniques for Programming Languages](https://conf.researchr.org/track/ecoop-issta-2018/ML4PL-2018-papers) 16 - 21 July 2018 Amsterdam, Netherlands
 * [Workshop on Machine Learning and Programming Languages](https://pldi18.sigplan.org/track/mapl-2018-papers) in PLDI 18 - 22 June 2018, Philadelphia, PA, USA
