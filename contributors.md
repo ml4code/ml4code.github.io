@@ -15,3 +15,4 @@ Please, feel free to add your name below, once you contribute to this
 website. A comprehensive list can be found [here](https://github.com/ml4code/ml4code.github.io/graphs/contributors).
 
 * [Uri Alon](http://www.cs.technion.ac.il/~urialon/) Technion, Israel
+* [Nghi D. Q. Bui](https://bdqnghi.github.io/) Singapore Management University, Singapore
