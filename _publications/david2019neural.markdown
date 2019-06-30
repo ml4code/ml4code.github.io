@@ -7,6 +7,7 @@ year: 2019
 bibkey: david2019neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1902.09122"}
+tags: ["naming", "deobfuscation"]
 ---
 We address the problem of predicting procedure names in stripped executables which contain no debug information.
 Predicting procedure names can dramatically ease the task of reverse engineering, saving precious time and human effort. 

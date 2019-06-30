@@ -5,6 +5,7 @@ authors: L. Cerulo, M. Di Penta, A. Bacchelli, M, Ceccarelli, G. Canfora
 conference: Science of Computer Programming
 year: 2015
 bibkey: cerulo2015irish
+tags: ["information extraction"]
 ---
 Developers’ communication, as contained in emails, issue trackers, and forums, is a precious source of information to support the development process. For example, it can
 be used to capture knowledge about development practice or about a software project itself. Thus, extracting the content of developers’ communication can be useful to support

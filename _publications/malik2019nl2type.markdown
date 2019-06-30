@@ -5,6 +5,7 @@ authors: R.S. Malik, J. Patra, M. Pradel
 conference: ICSE
 year: 2019
 bibkey: malik2019nl2type
+tags: ["bimodal", "types"]
 ---
 JavaScript is dynamically typed and hence lacks thetype safety  of  statically  typed  languages,
 leading  to  suboptimal IDE support, difficult to understand APIs, and unexpected run-time behavior.

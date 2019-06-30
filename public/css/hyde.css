@@ -274,3 +274,16 @@ tr:hover .externallinks {
 .externallinks {
   display: none;
 }
+
+
+tag {
+  padding: .15rem .3rem;
+  font-size: 70%;
+  color: #fff;
+  background-color: #f3f3f3;
+  border-radius: .15rem;
+}
+
+tag > a {
+  color: #fff;
+}

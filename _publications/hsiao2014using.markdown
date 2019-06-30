@@ -5,6 +5,7 @@ authors: C. Hsiao, M. Cafarella, S. Narayanasamy
 conference: OOPSLA
 year: 2014
 bibkey: hsiao2014using
+tags: ["defect"]
 ---
 Several program analysis tools—such as plagiarism detection and bug finding—rely on knowing a piece of code’s
 relative semantic importance. For example, a plagiarism detector should not bother reporting two programs that have

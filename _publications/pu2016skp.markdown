@@ -5,6 +5,7 @@ authors: Y. Pu, K. Narasimhan, A. Solar-Lezama, R. Barzilay
 conference: SPLASH 
 year: 2016
 bibkey: pu2016skp
+tags: ["repair"]
 ---
 We present a novel technique for automatic program correction in MOOCs, capable of fixing both syntactic and semantic errors without manual, problem specific correction strategies. Given an incorrect student program, it generates candidate programs from a distribution of likely corrections, and checks each candidate for correctness against a test suite.
 

@@ -7,6 +7,7 @@ year: 2017
 bibkey: pradel2017deep
 additional_links:
    - {name: "PDF", url: "http://mp.binaervarianz.de/DeepBugs_TR_Nov2017.pdf"}
+tags: ["defect", "program analysis"]
 ---
 Automated bug detection, e.g., through pattern-based static
 analysis, is an increasingly popular technique to find programming errors and other code quality issues. Traditionally,

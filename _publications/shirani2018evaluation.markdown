@@ -7,6 +7,7 @@ year: 2018
 bibkey: shirani2018evaluation
 additional_links:
    - {name: "PDF", url: "https://alipourm.github.io/pub/nl4se18.pdf"}
+tags: ["information extraction"]
 ---
 Type information plays an important role in the success of information retrieval and recommendation systems in software
 engineering. Thus, the absence of types in dynamically-typed

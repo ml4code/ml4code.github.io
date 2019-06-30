@@ -5,6 +5,7 @@ authors: A. Hindle, E. T. Barr, Z. Su, M. Gabel, P. Devanbu
 conference: ICSE
 year: 2012
 bibkey: hindle2012naturalness
+tags: ["language model", "autocomplete"]
 ---
 Natural languages like English are rich, complex,
 and powerful. The highly creative and graceful use of languages

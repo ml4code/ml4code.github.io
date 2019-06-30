@@ -5,6 +5,7 @@ authors: Z. Sun, Q. Zhu, L. Mou, Y. Xiong, G. Li, L. Zhang
 conference: AAAI
 year: 2019
 bibkey: sun2019grammar
+tags: ["generation", "grammar"]
 ---
 Code  generation  maps  a  program  description  to  executable
 source code in a programming language. Existing approaches
@@ -13,8 +14,7 @@ more tokens than a natural language sentence, and thus it may
 be inappropriate for RNN to capture such a long sequence. In
 this paper, we propose a grammar-based structural convolutional neural network (CNN) for code generation. Our model
 generates a program by predicting the grammar rules of the
-programming language; we design several CNN modules, in-
-cluding the tree-based convolution and pre-order convolution,
+programming language; we design several CNN modules, including the tree-based convolution and pre-order convolution,
 whose information is further aggregated by dedicated attentive pooling layers. Experimental results on the HearthStone
 benchmark dataset show that our CNN code generator significantly outperforms the previous state-of-the-art method by 5
 percentage points; additional experiments on several semantic parsing tasks demonstrate the robustness of our model. We

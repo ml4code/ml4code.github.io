@@ -5,6 +5,7 @@ authors: B. Ray, V. Hellendoorn, S. Godhane, Z. Tu, A. Bacchelli, P. Devanbu
 conference: ICSE
 year: 2015
 bibkey: ray2015naturalness
+tags: ["defect"]
 ---
 Real software, the kind working programmers produce by the kLOC
 to solve real-world problems, tends to be “natural”, like speech or

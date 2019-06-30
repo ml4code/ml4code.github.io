@@ -5,6 +5,7 @@ authors: S. Yadid, E. Yahav
 conference: Onward!
 year: 2016
 bibkey: yadid2016extracting
+tags: ["information extraction"]
 ---
 The number of programming tutorial videos on the web
 increases daily. Video hosting sites such as YouTube host

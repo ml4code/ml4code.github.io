@@ -8,6 +8,7 @@ bibkey: lin2017program
 additional_links:
    - {name: "PDF", url: "http://victorialin.net/pubs/tellina_tr180201.pdf"}
    - {name: "Tool", url: "http://tellina.rocks/"}
+tags: ["bimodal", "generation"]
 ---
 Oftentimes, a programmer may have difficulty implementing a
 desired operation. Even when the programmer can describe her

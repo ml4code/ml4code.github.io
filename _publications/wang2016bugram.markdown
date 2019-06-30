@@ -5,6 +5,7 @@ authors: S. Wang, D. Chollak, D. Movshovitz-Attias, L. Tan
 conference: ASE
 year: 2016
 bibkey: wang2016bugram
+tags: ["defect", "representation"]
 ---
 
 To improve software reliability, many rule-based techniques have been proposed to infer programming rules and detect violations of these rules as bugs. These rule-based approaches often rely on the highly frequent appearances of certain patterns in a project to infer rules. It is known that if a pattern does not appear frequently enough, rules are not learned, thus missing many bugs.

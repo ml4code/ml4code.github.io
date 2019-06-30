@@ -5,6 +5,7 @@ authors: C. Liu, X. Wang, R. Shin, J.E. Gonzalez, D. Song
 conference: 
 year: 2016
 bibkey: wang2016neural
+tags: ["autocomplete"]
 ---
 Code completion, an essential part of modern software development, yet can be
 challenging for dynamically typed programming languages. In this paper we explore the use of neural network techniques to automatically learn code completion

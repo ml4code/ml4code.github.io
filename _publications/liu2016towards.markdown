@@ -5,6 +5,7 @@ authors: H. Liu
 conference: ICSE
 year: 2016
 bibkey: liu2016towards
+tags: ["deobfuscation"]
 ---
 As a common practice in software development, program
 obfuscation aims at deterring reverse engineering and malicious attacks on released source or binary code. Owning ample obfuscation techniques, we have relatively little
@@ -17,4 +18,3 @@ for JavaScript programs and developed the Closure tool.
 Compared to the well-known Google Closure Compiler, Closure outperforms its default setting by 26%. For programs
 which have already been well obfuscated, Closure can still
 outperform by 22%.
-

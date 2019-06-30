@@ -5,6 +5,7 @@ authors: J. Patra, M. Pradel
 conference: 
 year: 2016
 bibkey: patra2016learning
+tags: ["fuzzing"]
 ---
 Fuzzing is a popular technique to create test inputs for software that processes structured data. It has been successfully
 applied in various domains, ranging from compilers and interpreters over program analyses to rendering engines, image manipulation tools, and word processors. Existing fuzz

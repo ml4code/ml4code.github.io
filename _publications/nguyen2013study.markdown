@@ -5,6 +5,7 @@ authors: H.A. Nguyen, A.T. Nguyen, T.T. Nguyen, T.N. Nguyen, H. Rajan
 conference: ASE
 year: 2013
 bibkey: nguyen2013study
+tags: ["edit"]
 ---
 In this paper, we present a large-scale study of
 repetitiveness of code changes in software evolution. We collected

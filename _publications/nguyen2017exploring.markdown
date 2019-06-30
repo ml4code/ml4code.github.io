@@ -5,6 +5,7 @@ authors: T.D. Nguyen, A.T. Nguyen, H.D. Phan, T.N. Nguyen
 conference: ICSE
 year: 2017
 bibkey: nguyen2017exploring
+tags: ["API", "representation"]
 ---
 Word2Vec is a class of neural network models that
 as being trained from a large corpus of texts, they can produce for

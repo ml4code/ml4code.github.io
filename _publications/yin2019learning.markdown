@@ -8,6 +8,7 @@ bibkey: yin2019learning
 additional_links:
    - {name: "data extraction", url: "https://github.com/Microsoft/msrc-dpu-learning-to-represent-edits"}
    - {name: "code edit data", url: "http://www.cs.cmu.edu/~pengchey/githubedits.zip"}
+tags: ["edit"]
 ---
 We introduce the problem of learning distributed representations of edits. By combining a
 "neural editor" with an "edit encoder", our models learn to represent the salient

@@ -5,6 +5,7 @@ authors: B. Theeten, F. Vandeputte, T.Van Cutsem
 conference: MSR
 year: 2019
 bibkey: theeten2019import2vec
+tags: ["representation"]
 ---
 We consider the problem of developing suitable learning representations (embeddings) for library packages that capture semantic similarity among libraries. Such representations are known to improve the performance of downstream learning tasks (e.g. classification) or applications such as contextual search and analogical reasoning.
 

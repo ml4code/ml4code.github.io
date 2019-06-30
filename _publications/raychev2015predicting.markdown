@@ -5,6 +5,7 @@ authors: V. Raychev, M. Vechev, A. Krause
 conference: POPL
 year: 2015
 bibkey: raychev2015predicting
+tags: ["program analysis", "naming", "types", "deobfuscation"]
 ---
 We present a new approach for predicting program properties from
 massive codebases (aka “Big Code”). Our approach first learns a

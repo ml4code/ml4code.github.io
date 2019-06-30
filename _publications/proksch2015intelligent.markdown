@@ -5,6 +5,7 @@ authors: S. Proksch, J. Lerch, M. Mezini
 conference: TSE
 year: 2015
 bibkey: proksch2015intelligent
+tags: ["autocomplete"]
 ---
 Code completion is an integral part of modern Integrated Development Environments (IDEs). Developers
 often use it to explore Application Programming Interfaces (APIs). It is also useful to reduce the required

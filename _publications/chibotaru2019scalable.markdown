@@ -5,6 +5,7 @@ authors: V. Chibotaru, B. Bichsel, V. Raychev, M. Vechev
 conference: PLDI
 year: 2019
 bibkey: chibotaru2019scalable
+tags: ["defect", "program analysis"]
 ---
 We present a new scalable, semi-supervised method for inferring
 taint analysis specifications by learning from a large dataset of programs.

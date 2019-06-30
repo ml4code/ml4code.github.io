@@ -5,6 +5,7 @@ authors: V. Murali, S. Chaudhuri, C. Jermaine
 conference: arXiv preprint 1703.01370
 year: 2017
 bibkey: murali2017finding
+tags: ["program analysis", "API"]
 ---
 We present a Bayesian framework for learning probabilistic specifications from large, unstructured code corpora, and
 a method to use this framework to statically detect anomalous, hence likely buggy, program behavior. The distinctive

@@ -5,6 +5,7 @@ authors: A. K. Menon, O. Tamuz, S. Gulwani, B. Lampson, A.T. Kalai
 conference: ICML
 year: 2013
 bibkey: menon2013machine
+tags: ["generation"]
 ---
 Learning programs is a timely and interesting challenge. In Programming by Example
 (PBE), a system attempts to infer a program

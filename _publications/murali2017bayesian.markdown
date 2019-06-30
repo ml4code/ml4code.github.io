@@ -5,6 +5,7 @@ authors: V. Murali, S. Chaudhuri, C. Jermaine
 conference: arXiv preprint 1703.05698
 year: 2017
 bibkey: murali2017bayesian
+tags: ["generation", "API"]
 ---
 We present a Bayesian statistical approach to the problem of automatic program synthesis. Our synthesizer starts
 by learning, offline and from an existing corpus, a probabilistic model of real-world programs. During synthesis,

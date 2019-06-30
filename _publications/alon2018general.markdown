@@ -7,6 +7,7 @@ year: 2018
 bibkey: alon2018general
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1803.09544"}
+tags: ["naming", "representation"]
 ---
 Predicting program properties such as names or expression types has a wide range of applications. It can ease the task of programming and increase programmer productivity. A major challenge when learning from programs is how to represent programs in a way that facilitates effective learning. 
 We present a general path-based representation for learning from programs. Our representation is purely syntactic and extracted automatically. The main idea is to represent a program using paths in its abstract syntax tree (AST). This allows a learning model to leverage the structured nature of code rather than treating it as a flat sequence of tokens. 

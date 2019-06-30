@@ -9,6 +9,7 @@ additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1704.00135"}
    - {name: "website", url: "https://blog.sourced.tech/post/github_topic_modeling"}
    - {name: "code", url: "https://github.com/src-d/ast2vec/blob/master/topic_modeling.md"}
+tags: ["topic modeling", "pattern mining"]
 ---
  Programming languages themselves have a limited number of reserved keywords and character based tokens that
 define the language specification. However, programmers have a rich use of natural language within their code

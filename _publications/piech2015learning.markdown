@@ -5,6 +5,7 @@ authors: C. Piech, J. Huang, A. Nguyen, M. Phulsuksombati, M, Sahami, L. Guibas
 conference: ICML
 year: 2015
 bibkey: piech2015learning
+tags: ["representation", "repair", "education"]
 ---
 Providing feedback, both assessing final work
 and giving hints to stuck students, is difficult

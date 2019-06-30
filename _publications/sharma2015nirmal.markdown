@@ -5,6 +5,7 @@ authors: A. Sharma, Y. Tian, D. Lo
 conference: SANER
 year: 2015
 bibkey: sharma2015nirmal
+tags: ["information extraction"]
 ---
 Twitter is one of the most widely used social media
 platforms today. It enables users to share and view short 140-character messages called “tweets”. About 284 million active

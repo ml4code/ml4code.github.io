@@ -5,6 +5,7 @@ authors: A. T. Nguyen, T. T. Nguyen, T. N. Nguyen
 conference: FSE
 year: 2013
 bibkey: nguyen2013lexical
+tags: ["migration", "API"]
 ---
 Prior research has shown that source code also exhibits naturalness, i.e. it is written by humans and is likely to be
 repetitive. The researchers also showed that the n-gram language model is useful in predicting the next token in a source

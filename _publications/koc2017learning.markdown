@@ -5,6 +5,7 @@ authors: U. Koc, P. Saadatpanah, J. S. Foster, A. A. Porter
 conference: MAPL
 year: 2017
 bibkey: koc2017learning
+tags: ["static analysis"]
 ---
 The large scale and high complexity of modern software systems
 make perfectly precise static code analysis (SCA) infeasible. Therefore SCA tools often over-approximate, so not to miss any real

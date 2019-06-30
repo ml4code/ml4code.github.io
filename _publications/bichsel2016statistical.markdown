@@ -5,6 +5,7 @@ authors: B. Bichsel, V. Raychev, P. Tsankov, M. Vechev
 conference: CCS
 year: 2016
 bibkey: bichsel2016statistical
+tags: ["deobfuscation", "naming"]
 ---
 This work presents a new approach for deobfuscating Android APKs based on probabilistic learning of large code bases (termed "Big Code"). The key idea is to learn a probabilistic model over thousands of non-obfuscated Android applications and to use this probabilistic model to deobfuscate new, unseen Android APKs. The concrete focus of the paper is on reversing layout obfuscation, a popular transformation which renames key program elements such as classes, packages, and methods, thus making it difficult to understand what the program does. Concretely, the paper: (i) phrases the layout deobfuscation problem of Android APKs as structured prediction in a probabilistic graphical model, (ii) instantiates this model with a rich set of features and constraints that capture the Android setting, ensuring both semantic equivalence and high prediction accuracy, and (iii) shows how to leverage powerful inference and learning algorithms to achieve overall precision and scalability of the probabilistic predictions.
 

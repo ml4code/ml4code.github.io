@@ -5,6 +5,7 @@ authors: S. Wang, T. Liu, L. Tan
 conference: ICSE
 year: 2016
 bibkey: wang2016automatically
+tags: ["defect", "representation"]
 ---
 Software defect prediction, which predicts defective code regions, can help developers find bugs and prioritize their testing efforts. To build accurate prediction models, previous
 studies focus on manually designing features that encode the

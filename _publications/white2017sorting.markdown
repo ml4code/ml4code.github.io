@@ -5,6 +5,7 @@ authors: M. White, M. Tufano, M. Martínez, M. Monperrus, D. Poshyvanyk
 conference: 
 year: 2017
 bibkey: white2017sorting
+tags: ["repair"]
 ---
 In  the  field  of  automated  program  repair,  the  redundancy  assumption  claims  large  programs  contain  the  seeds
 of  their  own  repair.  However,  most  redundancy-based  program

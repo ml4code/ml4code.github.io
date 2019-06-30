@@ -5,6 +5,7 @@ authors: M. White, C. Vendome, M. Linares-Vásquez, D. Poshyvanyk
 conference: MSR
 year: 2015
 bibkey: white2015toward
+tags: ["representation"]
 ---
 Deep learning subsumes algorithms that automatically learn compositional representations. The ability of these
 models to generalize well has ushered in tremendous advances

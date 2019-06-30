@@ -7,6 +7,7 @@ year: 2018
 bibkey: si2018learning
 additional_links:
    - {name: "Preprint", url: "https://www.cis.upenn.edu/~mhnaik/papers/nips18.pdf"}
+tags: ["program analysis", "verification"]
 ---
 A fundamental problem in program verification concerns inferring loop invariants.
 The problem is undecidable and even practical instances are challenging. Inspired

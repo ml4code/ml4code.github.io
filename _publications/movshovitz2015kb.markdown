@@ -5,6 +5,7 @@ authors: D. Movshovitz-Attias, W. W. Cohen
 conference: ACL
 year: 2015
 bibkey: movshovitz2015kb
+tags: ["pattern mining"]
 ---
 Many existing knowledge bases (KBs), including Freebase, Yago, and NELL, rely
 on a fixed ontology, given as an input

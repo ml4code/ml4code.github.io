@@ -10,6 +10,6 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-plugins:
+plugins_dir:
   - jekyll-sitemap
   - jekyll-seo-tag

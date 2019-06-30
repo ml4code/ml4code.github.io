@@ -7,6 +7,7 @@ year: 2017
 bibkey: allamanis2017smartpaste
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1705.07867"}
+tags: ["representation", "variable misuse"]
 ---
 Deep Neural Networks have been shown to succeed at a range of natural
 language tasks such as machine translation and text summarization.

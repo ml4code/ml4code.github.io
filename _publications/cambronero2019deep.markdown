@@ -7,6 +7,7 @@ year: 2019
 bibkey: cambronero2019deep
 additional_links:
 - {name: "ArXiV", url: "https://arxiv.org/abs/1905.03813"}
+tags: ["search"]
 ---
 There have been multiple recent proposals on using deep neural networks for code search using natural language. Common across these proposals is the idea of embedding code and natural language queries, into real vectors and then using vector distance to approximate semantic correlation between code and the query. Multiple approaches exist for learning these embeddings, including unsupervised techniques, which rely only on a corpus of code examples, and supervised techniques, which use an aligned corpus of paired code and natural language descriptions. The goal of this supervision is to produce embeddings that are more similar for a query and the corresponding desired code snippet.
 

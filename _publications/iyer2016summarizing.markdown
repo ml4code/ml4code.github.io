@@ -5,6 +5,7 @@ authors: S. Iyer, I. Konstas, A. Cheung, L. Zettlemoyer
 conference: ACL
 year: 2016
 bibkey: iyer2016summarizing
+tags: ["summarization", "bimodal"]
 ---
 High quality source code is often paired
 with high level summaries of the computation it performs, for example in code

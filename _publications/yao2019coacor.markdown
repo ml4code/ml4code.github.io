@@ -5,6 +5,7 @@ authors: Z Yao, JR Peddamail, H. Sun
 conference: 
 year: 2019
 bibkey: yao2019coacor
+tags: ["search"]
 ---
 To accelerate software development, much research has been performed
 to help people understand and reuse the huge amount of available code

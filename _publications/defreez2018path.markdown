@@ -5,6 +5,7 @@ authors: D. DeFreez, A. V. Thakur, C. Rubio-González
 conference: ICSE
 year: 2018
 bibkey: defreez2018path
+tags: ["program analysis", "representation"]
 ---
 Identifying the relationships among program elements is useful
 for program understanding, debugging, and analysis. One such

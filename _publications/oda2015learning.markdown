@@ -5,6 +5,7 @@ authors: Y. Oda, H. Fudaba, G. Neubig, H. Hata, S. Sakti, T. Toda, and S. Nakamu
 conference: ASE
 year: 2015
 bibkey: oda2015learning
+tags: ["representation", "bimodal", "AST"]
 ---
 Pseudo-code written in natural language can aid
 the comprehension of source code in unfamiliar programming

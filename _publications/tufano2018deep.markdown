@@ -5,6 +5,7 @@ authors: M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk
 conference: MSR
 year: 2018
 bibkey: tufano2018deep
+tags: ["representation", "clone"]
 ---
 Assessing the similarity between code components plays a pivotal
 role in a number of Software Engineering (SE) tasks, such as clone
@@ -13,7 +14,7 @@ Code similarity is generally measured by relying on manually defined or hand-cra
 features,  e.g.,  by analyzing the overlap among identifiers or comparing the Abstract Syntax Trees of two code components. These
 features represent a  best guess at what SE researchers can utilize to
 exploit and reliably assess code similarity for a given task. Recent
-work has shown, when using a stream of identifiers to represent 
+work has shown, when using a stream of identifiers to represent
 the code, that Deep Learning (DL) can effectively replace manual
 feature engineering for the task of clone detection. However, source
 code can be represented at different levels of abstraction: identifiers, Abstract Syntax Trees, Control Flow Graphs, and Bytecode.

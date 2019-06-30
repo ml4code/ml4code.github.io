@@ -5,6 +5,7 @@ authors: C. Omar
 conference: SPLASH
 year: 2013
 bibkey: omar2013structured
+tags: ["language model", "AST"]
 ---
 Statistical models of source code can be used to improve
 code completion systems, assistive interfaces, and code

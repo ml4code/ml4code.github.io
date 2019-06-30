@@ -7,6 +7,7 @@ year: 2019
 bibkey: alon2019code2vec
 additional_links:
    - {name: "Code", url: "https://github.com/tech-srl/code2vec"}
+tags: ["naming", "summarization", "representation"]
 ---
 We present a neural model for representing snippets of code as continuous distributed vectors ("code embeddings").
  The main idea is to represent a code snippet as a single fixed-length

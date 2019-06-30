@@ -5,6 +5,7 @@ authors: V. J. Hellendoorn, C. Bird, E. T. Barr, M. Allamanis
 conference: FSE 
 year: 2018
 bibkey: hellendoorn2018deep
+tags: ["representation", "types"]
 ---
 Dynamically typed languages such as JavaScript and Python are
 increasingly popular, yet static typing has not been totally eclipsed:

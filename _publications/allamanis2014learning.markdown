@@ -10,6 +10,7 @@ additional_links:
    - {name: "ArXiV", url: "http://arxiv.org/abs/1402.4182"}
    - {name: "website", url: "http://groups.inf.ed.ac.uk/naturalize/"}
    - {name: "code", url: "https://github.com/mast-group/naturalize"}
+tags: ["naming", "language model", "style"]
 ---
 Every programmer has a characteristic style, ranging from preferences
 about identifier naming to preferences about object relationships and

@@ -5,6 +5,7 @@ authors: A. Gupta, N. Sundaresan
 conference: KDD
 year: 2018
 bibkey: gupta2018intelligent
+tags: ["representation", "review"]
 ---
 Peer code review is a best practice in Software Engineering where source code is reviewed manually by one or more peers(reviewers) of the code author. It is widely acceptable both in industry and open-source software (OSS) systems as a process for early detection and reduction of software defects. A larger chunk of reviews given during peer reviews are related to common issues such as coding style, documentations, and best practices. This makes the code review process less effective as reviewers focus less on finding important defects. Hence, there is a need to automatically find such common issues and help reviewers perform focused code reviews. Some of this is solved by rule based systems called linters but they are rigid and needs a lot of manual effort to adapt them for a new issue.
 

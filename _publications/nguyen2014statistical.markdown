@@ -5,6 +5,7 @@ authors: A.T. Nguyen, H.A. Nguyen, T.T. Nguyen, T.N. Nguyen
 conference: ASE
 year: 2014
 bibkey: nguyen2014statistical
+tags: ["migration", "API"]
 ---
 The same software product nowadays could appear in multiple platforms and devices. To address business needs, software companies
 develop a software product in a programming language and then

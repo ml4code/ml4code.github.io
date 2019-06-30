@@ -5,6 +5,7 @@ authors: Y. Li, R. Zemel, M. Brockschmidt, D. Tarlow
 conference: ICLR
 year: 2016
 bibkey: li2016gated
+tags: ["GNN", "program analysis"]
 ---
 Graph-structured data appears frequently in domains including chemistry, natural
 language semantics, social networks, and knowledge bases. In this work, we study

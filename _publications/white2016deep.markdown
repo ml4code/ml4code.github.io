@@ -5,6 +5,7 @@ authors: M. White, M. Tufano, C. Vendome, D. Poshyvanyk
 conference: ASE
 year: 2016
 bibkey: white2016deep
+tags: ["clone"]
 ---
 Code clone detection is an important problem for software
 maintenance and evolution. Many approaches consider either structure or identifiers, but none of the existing detection techniques model both sources of information. These

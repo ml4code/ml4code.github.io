@@ -5,6 +5,7 @@ authors: A.T. Nguyen, T.N. Nguyen
 conference: ICSE
 year: 2015
 bibkey: nguyen2015graph
+tags: ["representation", "language model", "autocomplete"]
 ---
 n-gram statistical language model has been successfully applied to capture programming patterns to support code
 completion and suggestion. However, the approaches using n-gram face challenges in capturing the patterns at higher levels

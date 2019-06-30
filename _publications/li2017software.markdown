@@ -5,6 +5,7 @@ authors: J. Li, P. He, J. Zhu, and M. R. Lyu
 conference: QRS
 year: 2017
 bibkey: li2017software
+tags: ["defect"]
 ---
 To improve software reliability, software defect prediction is utilized to assist developers in finding potential bugs
 and allocating their testing efforts. Traditional defect prediction

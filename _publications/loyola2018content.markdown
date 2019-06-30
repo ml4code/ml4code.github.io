@@ -5,6 +5,7 @@ authors: P. Loyola, E. Marrese-Taylor, J.A. Balazs, Y. Matsuo, F. Satoh
 conference: International Natural Language Generation Conference
 year: 2018
 bibkey: loyola2018content
+tags: ["edit", "summarization"]
 ---
 We propose to study the generation of descriptions from source code changes by integrating  the  messages  included  on  code
 commits and the intra-code documentation

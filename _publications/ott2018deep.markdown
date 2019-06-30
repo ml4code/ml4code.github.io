@@ -5,6 +5,7 @@ authors: J. Ott, A. Atchison, P. Harnack, A. Bergh, E. Linstead
 conference: MSR
 year: 2018
 bibkey: ott2018deep
+tags: ["information extraction"]
 ---
 While substantial progress has been made in mining code on an
 Internet scale, efforts to date have been overwhelmingly focused on

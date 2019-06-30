@@ -5,6 +5,7 @@ authors: T. Kremenek, A.Y. Ng, D. Engler
 conference: IJCAI
 year: 2007
 bibkey: kremenek2007factor
+tags: ["program analysis"]
 ---
 Automatic tools for finding software errors require
 knowledge of the rules a program must obey, or

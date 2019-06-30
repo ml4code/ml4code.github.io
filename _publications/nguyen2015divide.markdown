@@ -5,6 +5,7 @@ authors: A.T. Nguyen, T.T. Nguyen, T.N. Nguyen
 conference: ASE
 year: 2014
 bibkey: nguyen2015divide
+tags: ["migration"]
 ---
 Prior research shows that directly applying phrase-based SMT on lexical tokens to migrate Java to C# produces
 much semantically incorrect code. A key limitation is the use of

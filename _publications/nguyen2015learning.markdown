@@ -5,6 +5,7 @@ authors: T.T. Nguyen, H.V. Pham, P.M. Vu, T.T. Nguyen
 conference: ICSE
 year: 2015
 bibkey: nguyen2015learning
+tags: ["representation", "API"]
 ---
 When developing mobile apps, programmers rely
 heavily on standard API frameworks and libraries. However,

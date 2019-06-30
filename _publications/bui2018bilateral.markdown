@@ -7,6 +7,7 @@ year: 2018
 bibkey: bui2018bilateral
 additional_links:
    - {name: "TR", url: "http://oro.open.ac.uk/58410/1/bui19saner.pdf"}
+tags: ["representation"]
 ---
 Algorithm  classification  is  to  automatically  identify
 the  classes  of  a  program  based  on  the  algorithm(s)  and/or  data

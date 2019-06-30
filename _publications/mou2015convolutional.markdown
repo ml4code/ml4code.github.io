@@ -5,6 +5,7 @@ authors: L. Mou, G. Li, L. Zhang, T. Wang, Z. Jin
 conference: AAAI
 year: 2015
 bibkey: mou2015convolutional
+tags: ["representation", "AST"]
 ---
 Programming language processing (similar to natural
 language processing) is a hot research topic in the field

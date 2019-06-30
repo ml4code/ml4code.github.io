@@ -5,6 +5,7 @@ authors: J. Lanchantin, J. Gao
 conference: 
 year: 2018
 bibkey: lanchantin2018exploring
+tags: ["language model", "defect"]
 ---
 Statistical   language   models   are   powerful   tools
 which  have  been  used  for  many  tasks  within  natural language processing. Recently, they have been

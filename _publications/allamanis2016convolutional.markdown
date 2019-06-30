@@ -11,6 +11,7 @@ additional_links:
    - {name: "proceedings", url: "http://jmlr.org/proceedings/papers/v48/allamanis16.pdf"}
    - {name: "presentation video", url: "http://techtalks.tv/talks/a-convolutional-attention-network-for-extreme-summarization-of-source-code/62461/"}
    - {name: "GitXiV", url: "http://gitxiv.com/posts/A6HFFyK7CmNLaSjG7/a-convolutional-attention-network-for-extreme-summarization"}
+tags: ["naming", "summarization"]
 ---
 Attention mechanisms in neural networks have proved useful for problems in which
 the input and output do not have fixed dimension. Often there exist features that

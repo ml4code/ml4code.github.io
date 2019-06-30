@@ -5,6 +5,7 @@ authors: O. Katz, Y. Olshaker, Y. Goldberg, E. Yahav
 conference:
 year: 2019
 bibkey: katz2019towards
+tags: ["decompilation"]
 ---
 We address the problem of automatic decompilation, converting a program in low-level representation back to a higher-level human-readable programming language. The problem of decompilation is extremely important for security researchers. Finding vulnerabilities and understanding how malware operates is much easier when done over source code.
 

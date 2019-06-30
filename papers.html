@@ -24,6 +24,7 @@ the information of existing papers or adding new work.
 	<td>{{ publication.authors }}</td>
 	<td>{{ publication.conference }}</td>
 	<td>{{ publication.content }}</td>
+	<td>{% for tag in publication.tags %}{{ tag }} {% endfor %}</td>
 </tr>
 {% endfor %}
 {% endfor %}
@@ -44,7 +45,7 @@ $(document).ready( function () {
 		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
 		columnDefs: [
 			{
-				targets: [3, 4],
+				targets: [3, 4, 5],
 				visible: false,
 				searchable: true
 			}]

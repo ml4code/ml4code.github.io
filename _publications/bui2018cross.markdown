@@ -7,6 +7,7 @@ year: 2018
 bibkey: bui2018cross
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1710.06159"}
+tags: ["representation", "grammar"]
 ---
 Towards the vision of translating code that implements an algorithm from one programming language into another, this
 paper  proposes  an  approach  for  automated  program  classification using

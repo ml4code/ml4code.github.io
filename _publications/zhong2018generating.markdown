@@ -7,6 +7,7 @@ year: 2018
 bibkey: zhong2018generating
 additional_links:
    - {name: "PDF", url: "http://taoxie.cs.illinois.edu/publications/nl4se18-regex.pdf"}
+tags: ["bimodal", "generation"]
 ---
 Recent  state-of-the-art  approaches  automatically  generate
 regular  expressions  from  natural  language  specifications.

@@ -7,6 +7,7 @@ year: 2019
 bibkey: alon2018code2seq
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1808.01400"}
+tags: ["naming", "summarization", "representation"]
 ---
 The ability to generate natural language sequences from source code snippets has a variety of applications such as code summarization, documentation, and retrieval. Sequence-to-sequence (seq2seq) models, adopted from neural machine translation (NMT), have achieved state-of-the-art performance on these tasks by treating source code as a sequence of tokens. We present code2seq: an alternative approach that leverages the syntactic structure of programming languages to better encode source code. Our model represents a code snippet as the set of compositional paths in its abstract syntax tree (AST) and uses attention to select the relevant paths while decoding.
 
