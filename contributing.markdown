@@ -20,8 +20,9 @@ additional_links:
    - {name: "ArXiV", url: "http://arxiv.org/abs/XXXX.YYYY"}
    - {name: "website", url: "http://paperwebsite.com"}
    - {name: "code", url: "https://github.com/path-to/code"}
+tags: ["tag1", "tag2"]
 ---
-text-of-abstract
+Text of abstract goes here.
 </pre>
 
 The `additional_links` are optional and arbitrary and they will appear on the page referring to this work. Feel free to add as many additional links as needed.
