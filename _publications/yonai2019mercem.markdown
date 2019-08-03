@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Mercem: Method Name Recommendation Based on Call Graph Embedding
+title: "Mercem: Method Name Recommendation Based on Call Graph Embedding"
 authors: H. Yonai, Y. Hayase, H. Kitagawa
 conference: 
 year: 2019
