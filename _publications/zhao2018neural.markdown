@@ -4,7 +4,7 @@ title: "Neural-Augumented Static Analysis of Android Communication"
 authors: J. Zhao, A. Albarghouthi, V. Rastogi, S. Jha, D. Octeau
 conference: FSE
 year: 2018
-bibkey: zhoao2018neural
+bibkey: zhao2018neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1809.04059"}
 tags: ["program analysis"]
