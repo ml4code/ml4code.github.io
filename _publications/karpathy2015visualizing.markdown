@@ -4,7 +4,7 @@ title: "Visualizing and Understanding Recurrent Networks"
 authors: A. Karpathy, J. Johnson, L. Fei-Fei
 conference: "arXiv preprint arXiv:1506.02078"
 year: 2015
-bibkey: 
+bibkey: karpathy2015visualizing
 tags: ["language model", "generation"]
 ---
 Recurrent Neural Networks (RNNs), and specifically a variant with Long Short-Term Memory (LSTM), are enjoying renewed interest as a result of successful
