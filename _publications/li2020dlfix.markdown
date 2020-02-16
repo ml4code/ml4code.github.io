@@ -2,7 +2,7 @@
 layout: publication
 title: "DLFix: Context-based Code Transformation Learning for Automated Program Repair"
 authors: Y. Li, S. Wang, T. N. Nguyen
-conference: ICSE 2020
+conference: ICSE
 year: 2020
 bibkey: li2020dlfix
 tags: ["edit", "repair", "AST"]
