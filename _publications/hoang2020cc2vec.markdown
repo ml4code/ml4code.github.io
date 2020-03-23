@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: CC2Vec: Distributed Representations of Code Changes
+title: "CC2Vec: Distributed Representations of Code Changes"
 authors: T. Hoang, H. J. Kang, J. Lawall, D. Lo
 conference: ICSE
 year: 2020
