@@ -5,7 +5,7 @@ authors: A. Svyatkovskiy, Y. Zhao, S. Fu, Neel Sundaresan
 conference: KDD
 year: 2019
 bibkey: svyatkovskiy2019pythia
-tags: ["autocompletion", "language model"]
+tags: ["autocomplete", "language model"]
 ---
 
 In this paper, we propose a novel end-to-end approach for AI-assisted code completion called Pythia. It generates ranked lists of method and API recommendations which can be used by software developers at edit time. The system is currently deployed as part of Intellicode extension in Visual Studio Code IDE. Pythia exploits state-of-the-art large-scale deep learning models trained on code contexts extracted from abstract syntax trees. It is designed to work at a high throughput predicting the best matching code completions on the order of 100 ms.
