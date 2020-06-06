@@ -17,7 +17,7 @@ A list of datasets used in this area can be found at the appendix of the
 A few university courses are been taught covering aspects of machine learning for code, big code or naturalnness of code. Below there are a few that have publicly available material.
 * [Analyzing Software using Deep Learning](http://software-lab.org/teaching/summer2020/asdl/) in T.U. Darmstadt [[videos](https://www.youtube.com/playlist?list=PLBmY8PAxzwIHIKq4tYLws25KqGvUM4iFD)]
 * [Seminars on Applications of Deep Learning in Software Engineering and Programming Languages](https://sites.google.com/view/mlplse-sp18/) in U.C. Berkeley
-* [Machine learning for programming](https://www.cl.cam.ac.uk/teaching/1920/R252/) in the University of Cambridge, UK
+* [Machine learning for programming](https://www.cl.cam.ac.uk/teaching/1819/R252/) in the University of Cambridge, UK
 * [Deep Learning for Symbolic Reasoning](http://tiarkrompf.github.io/cs590/2018/) in Purdue University
 * [Machine Learning for Software Engineering](http://gousios.org/courses/ml4se/) in TU Delft
 
