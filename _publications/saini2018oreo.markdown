@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Oreo: detection of clones in the twilight zone
+title: "Oreo: detection of clones in the twilight zone"
 authors: V. Saini, F. Farmahinifarahani, Y. Lu, P. Baldi, C. Lopes
 conference: ESEC/FSE
 year: 2018
