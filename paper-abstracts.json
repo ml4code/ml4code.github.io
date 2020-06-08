@@ -1,0 +1,9 @@
+---
+layout:
+title:
+---
+[
+{% for publication in site.publications %}{"key": "{{ publication.bibkey }}", "year": {{ publication.year }}, "title":{{ publication.title | jsonify }}, "abstract": {{ publication.content | jsonify }} }{% if forloop.rindex0 > 0 %},{% endif %}
+{% endfor %}
+]
+
