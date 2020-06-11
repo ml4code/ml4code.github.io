@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     np.random.seed(args.seed)
     all_embeddings = np.array(all_embeddings)
-    out = sklearn.manifold.TSNE(n_components=2).fit_transform(all_embeddings)
+    out = sklearn.manifold.TSNE(n_components=2, metric="cosine").fit_transform(all_embeddings)
 
     for i, paper_info in enumerate(data):
         paper_info['tsne_embedding'] = out[i].tolist()

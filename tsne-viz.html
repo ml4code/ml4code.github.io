@@ -1,0 +1,105 @@
+---
+layout: default
+title: Visualization of Publications on Machine Learning for Source Code
+description: A tSNE visualization of all the ML4Code papers
+---
+<h2>2D Map of Papers</h2>
+Each dot represents one paper in this survey. Hover your mouse over each point to look
+at the details. Click on a point to go to the paper information page.
+<div id="paperviz"></div>
+
+Please consider <a href="/contributing.html">contributing</a> by updating
+the information of existing papers or adding new work.
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tippy.js@6/dist/tippy.umd.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 30, bottom: 30, left: 60},
+    width = 600 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var svg = d3.select("#paperviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom);
+
+//Read the data
+d3.json("./etc/tsne.json", function(data) {
+  // Add X axis
+  var x = d3.scaleLinear()
+    .domain([-15, 15])
+    .range([ 0, width ]);
+
+  // Add Y axisB
+  var y = d3.scaleLinear()
+    .domain([-15, 15])
+    .range([height, 0]);
+
+  // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
+  // Its opacity is set to 0: we don't see it by default.
+  var tooltip = d3.select("#paperviz")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "rgb(81, 81, 81)")
+    .style("width", "450px")
+    .style("height", "120px")
+    .style("color", "white")
+    .style("border-width", "0px")
+    .style("border-radius", "10px")
+    .style("padding", "10px")
+    .style("position", "absolute");
+
+  // A function that change this tooltip when the user hover a point.
+  // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+  var mouseover = function(d) {
+    tooltip
+      .style("opacity", 1)
+  }
+
+  var mousemove = function(d) {
+    tags = ""
+    for (i=0; i<d.tags.length; i++) {
+        tags += "<tag>" + d.tags[i] + "</tag>&nbsp;"
+    }
+    tooltip
+      .html("<p>" + d.title + " " + tags + "</p>")
+      .style("left", (d3.mouse(this)[0]+40) + "px")
+      .style("top", (d3.mouse(this)[1]) + "px");
+   d3.selectAll("circle").filter(dd => dd.key == d.key).style("fill", "#000");
+  }
+
+  var mouseleave = function(d) {
+    //tooltip
+    // .transition()
+    // .duration(300)
+    // .style("opacity", 0)
+   d3.selectAll("circle").filter(dd => dd.key == d.key).style("fill", "#69b3a2");
+  }
+
+  var click_link = function(d) {
+      window.location.href = "/publications/" + d.key + "/";
+  }
+
+  // Add dots
+  svg.append('g')
+    .selectAll("dot")
+    .data(data) 
+    .enter()
+    .append("circle")
+      .attr("cx", function (d) { return x(d.tsne_embedding[0]); } )
+      .attr("cy", function (d) { return y(d.tsne_embedding[1]); } )
+      .attr("r", 8)
+      .style("fill", "#69b3a2")
+      .style("opacity", 0.4)
+      .style("stroke", "white")
+    .on("mouseover", mouseover )
+    .on("mousemove", mousemove )
+    .on("mouseleave", mouseleave )
+    .on("click", click_link)
+
+});
+</script>
