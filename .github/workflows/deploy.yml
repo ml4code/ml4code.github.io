@@ -1,0 +1,29 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - uses: actions/checkout@v2
+    - name: Compute tSNE Embeddings
+      uses: actions/setup-python@v2
+      with:
+          python-version: '3.7'
+          architecture: x64
+    - run: |
+          python -m pip install transformers sklearn numpy
+          python -m pip install pip install torch==1.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+          python ${{ github.workspace }}/etc/compute_embeddings.py ${{ github.workspace }}/_site/papers-abstracts.json ${{ github.workspace }}/_site/tsne.json

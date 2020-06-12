@@ -11,6 +11,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="TSNE Visualization of Papers in ML4Code")
 
     parser.add_argument("json", default=False, help="the path the json containing all papers.")
+    parser.add_argument("outpath", default=False, help="the target path of the visualizations papers.")
     parser.add_argument("--seed", default=0, help="The seed for TSNE.", type=int)
     return parser.parse_args()
 
@@ -40,5 +41,5 @@ if __name__ == "__main__":
     for i, paper_info in enumerate(data):
         paper_info['tsne_embedding'] = out[i].tolist()
 
-    with open('tsne.json', 'w') as f:
+    with open(args.outpath, 'w') as f:
         json.dump(data, f)
