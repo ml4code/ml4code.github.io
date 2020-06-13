@@ -16,11 +16,6 @@ jobs:
       run: |
         rm ${{ github.workspace }}/_publications/template
         docker run -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-    - uses: actions/upload-artifact@v2
-      name: Upload intermmediate
-      with:
-         name: site
-         path: ${{ github.workspace }}/_site/
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
@@ -35,4 +30,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ github.workspace }}/_site
+          publish_dir: ./_site
