@@ -27,7 +27,7 @@ var svg = d3.select("#paperviz")
     .attr("height", height + margin.top + margin.bottom);
 
 //Read the data
-d3.json("./etc/tsne.json", function(data) {
+d3.json("./tsne.json", function(data) {
   // Add X axis
   var x = d3.scaleLinear()
     .domain([-15, 15])
@@ -73,10 +73,6 @@ d3.json("./etc/tsne.json", function(data) {
   }
 
   var mouseleave = function(d) {
-    //tooltip
-    // .transition()
-    // .duration(300)
-    // .style("opacity", 0)
    d3.selectAll("circle").filter(dd => dd.key == d.key).style("fill", "#69b3a2");
   }
 
