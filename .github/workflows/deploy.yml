@@ -18,7 +18,7 @@ jobs:
         docker run -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site2:/srv/jekyll/_site jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"        
     - name: Copy Built Artifacts
       run: |
-        mkdir ${{ github.workspace }}/_site
+        mkdir -p ${{ github.workspace }}/_site
         cp -r ${{ github.workspace }}/_site2/* ${{ github.workspace }}/_site/
     - uses: actions/upload-artifact@v2
       name: Upload intermmediate
