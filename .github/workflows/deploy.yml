@@ -15,11 +15,15 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         rm ${{ github.workspace }}/_publications/template
-        mkdir ${{ github.workspace }}/_site
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site2:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
         cp -r ${{ github.workspace }}/_site2 ${{ github.workspace }}/_site
+    - uses: actions/upload-artifact@v2
+      name: Upload intermmediate
+      with:
+         name: site
+         path: ${{ github.workspace }}/_site/
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
@@ -30,10 +34,6 @@ jobs:
           python -m pip install transformers sklearn numpy
           python -m pip install torch==1.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
           python ${{ github.workspace }}/etc/compute_embeddings.py ${{ github.workspace }}/_site/paper-abstracts.json ${{ github.workspace }}/_site/tsne.json
-    - uses: actions/upload-artifact@v2
-      with:
-         name: site
-         path: ${{ github.workspace }}/_site/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
