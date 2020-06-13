@@ -14,6 +14,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the site in the jekyll/builder container
       run: |
+        rm ${{ github.workspace }}/_publications/template
         mkdir ${{ github.workspace }}/_site
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site2:/srv/jekyll/_site \
