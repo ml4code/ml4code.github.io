@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      NL2Type: Inferring JavaScript Function Types from Natural Language Information &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">NL2Type: Inferring JavaScript Function Types from Natural Language Information</h1>
+  <h5>R.S. Malik, J. Patra, M. Pradel. ICSE 2019</h5>
+  <p>
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=NL2Type: Inferring JavaScript Function Types from Natural Language Information' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=NL2Type: Inferring JavaScript Function Types from Natural Language Information' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=NL2Type:%20Inferring%20JavaScript%20Function%20Types%20from%20Natural%20Language%20Information' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#bimodal">bimodal</a></tag>
+    
+      <tag><a href="/tags.html#types">types</a></tag>
+    
+  </p>
+      
+      
+      <p><p>JavaScript is dynamically typed and hence lacks thetype safety  of  statically  typed  languages,
+leading  to  suboptimal IDE support, difficult to understand APIs, and unexpected run-time behavior.
+Several gradual type systems have been proposed, e.g., Flow and TypeScript, but they rely on developers
+to annotatecode with types. This paper presents NL2Type, a learning-based approach for predicting likely
+type signatures of JavaScript functions. The key idea is to exploit natural language information in
+source code, such as comments, function names, and parameternames,  a  rich  source  of  knowledge
+that  is  typically  ignored by  type  inference  algorithms.  We  formulate  the  problem  of predicting
+types as a classification problem and train a recurrent, LSTM-based neural model that, after learning
+from an annotatedcode  base,  predicts  function  types  for  unannotated  code.  We evaluate   the 
+approach   with   a   corpus   of   162,673   JavaScript files  from  real-world  projects. 
+NL2Type  predicts  types  with  aprecision of 84.1% and a recall of 78.9% when considering only
+the  top-most  suggestion,  and  with  a  precision  of  95.5%  and  arecall  of  89.6%  when
+considering  the  top-5  suggestions.  The
+approach  outperforms  both  JSNice,  a  state-of-the-art  approach that  analyzes  implementations 
+of  functions  instead  of  natural language  information,  and  DeepTyper,  a  recent  type  prediction
+approach that is also based on deep learning. Beyond predicting types,  NL2Type  serves  as  a
+consistency  checker  for  existing type  annotations.  We  show  that  it  discovers  39  inconsistencies
+that  deserve  developer  attention  (from  a  manual  analysis  of  50 warnings), most of which 
+are due to incorrect type annotations.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

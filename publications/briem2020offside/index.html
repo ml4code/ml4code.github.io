@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      OffSide: Learning to Identify Mistakes in Boundary Conditions &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">OffSide: Learning to Identify Mistakes in Boundary Conditions</h1>
+  <h5>J. A. Briem, J. Smit, H. Sellik, P. Rapoport, G. Gousios, M. Aniche. 2nd Workshop on Testing for Deep Learning and Deep Learning for Testing 2020</h5>
+  <p>
+    
+      [<a href="https://pure.tudelft.nl/portal/files/71196834/deeptest_2020.pdf" target="_blank">Preprint</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=OffSide: Learning to Identify Mistakes in Boundary Conditions' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=OffSide: Learning to Identify Mistakes in Boundary Conditions' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=OffSide:%20Learning%20to%20Identify%20Mistakes%20in%20Boundary%20Conditions' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#defect">defect</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Mistakes in boundary conditions are the cause of many bugs in software.
+These mistakes happen when, e.g., developers make use of <code class="highlighter-rouge">&lt;</code> or <code class="highlighter-rouge">&gt;</code> in cases
+where they should have used <code class="highlighter-rouge">&lt;=</code> or <code class="highlighter-rouge">&gt;=</code>. Mistakes in boundary conditions
+are often hard to find and manually detecting them might be very time-consuming
+for developers. While researchers have been proposing techniques to cope with
+mistakes in the boundaries for a long time, the automated detection of such bugs still
+remains a challenge. We conjecture that, for a tool to be able to precisely identify mistakes
+in boundary conditions, it should be able to capture the overall context of the source code
+under analysis. In this work, we propose a deep learning model that learn mistakes in boundary
+conditions and, later, is able to identifythem in unseen code snippets. We train and test a
+model on over 1.5 million code snippets, with and without mistakes in different boundary conditions.
+Our model shows an accuracy from 55% up to 87%. The model is also able to detect 24 out of 41
+real-world bugs;however, with a high false positive rate. The existing state-of-the-practice linter
+tools are not able to detect any of the bugs. We hope this paper can pave the road towards deep
+learning models that will be able to support developers in detecting mistakes in boundary conditions.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

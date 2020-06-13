@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Sorting and Transforming Program Repair Ingredients via Deep Learning Code Similarities &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Sorting and Transforming Program Repair Ingredients via Deep Learning Code Similarities</h1>
+  <h5>M. White, M. Tufano, M. Martínez, M. Monperrus, D. Poshyvanyk.  2017</h5>
+  <p>
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Sorting and Transforming Program Repair Ingredients via Deep Learning Code Similarities' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Sorting and Transforming Program Repair Ingredients via Deep Learning Code Similarities' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Sorting%20and%20Transforming%20Program%20Repair%20Ingredients%20via%20Deep%20Learning%20Code%20Similarities' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#repair">repair</a></tag>
+    
+  </p>
+      
+      
+      <p><p>In  the  field  of  automated  program  repair,  the  redundancy  assumption  claims  large  programs  contain  the  seeds
+of  their  own  repair.  However,  most  redundancy-based  program
+repair  techniques  do  not  reason  about  the  repair  ingredients—the code that is reused to craft a patch. We aim to reason about
+the repair ingredients by using code similarities to prioritize and
+transform  statements  in  a  codebase  for  patch  generation.  Our
+approach,  DeepRepair,  relies  on  deep  learning  to  reason  about
+code  similarities.  Code  fragments  at  well-defined  levels  of  granularity in a codebase can be sorted according to their similarity
+to suspicious elements (i.e., code elements that contain suspicious
+statements) and statements can be transformed by mapping out-of-scope  identifiers  to  similar  identifiers  in  scope.  We  examined
+these new search strategies for patch generation with respect to
+effectiveness  from  the  viewpoint  of  a  software  maintainer.  Our
+comparative experiments were executed on six open-source Java
+projects  including  374  buggy  program  revisions  and  consisted
+of  19,949  trials  spanning  2,616  days  of  computation  time.  DeepRepair’s  search  strategy  using  code  similarities  generally  found
+compilable  ingredients  faster  than  the  baseline,  jGenProg,  but
+this improvement neither yielded test-adequate patches in fewer
+attempts (on average) nor found significantly more patches than
+the  baseline.  Although  the  patch  counts  were  not  statistically
+different,  there  were  notable  differences  between  the  nature  of
+DeepRepair  patches  and  baseline  patches.  The  results  demonstrate that our learning-based approach finds patches that cannot
+be  found  by  existing  redundancy-based  repair  techniques</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

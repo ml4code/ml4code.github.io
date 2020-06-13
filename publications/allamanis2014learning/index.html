@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Learning Natural Coding Conventions &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Learning Natural Coding Conventions</h1>
+  <h5>M. Allamanis, E. T. Barr, C. Bird, C. Sutton. FSE 2014</h5>
+  <p>
+    
+      [<a href="http://homepages.inf.ed.ac.uk/csutton/publications/naturalize.pdf" target="_blank">PDF</a>]
+    
+      [<a href="http://arxiv.org/abs/1402.4182" target="_blank">ArXiV</a>]
+    
+      [<a href="http://groups.inf.ed.ac.uk/naturalize/" target="_blank">website</a>]
+    
+      [<a href="https://github.com/mast-group/naturalize" target="_blank">code</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Learning Natural Coding Conventions' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Learning Natural Coding Conventions' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Learning%20Natural%20Coding%20Conventions' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#naming">naming</a></tag>
+    
+      <tag><a href="/tags.html#language model">language model</a></tag>
+    
+      <tag><a href="/tags.html#style">style</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Every programmer has a characteristic style, ranging from preferences
+about identifier naming to preferences about object relationships and
+design patterns. Coding conventions define a consistent syntactic style,
+fostering readability and hence maintainability. When collaborating,
+programmers strive to obey a project’s coding conventions. However,
+one third of reviews of changes contain feedback about coding conventions,
+indicating that programmers do not always follow them and that project
+members care deeply about adherence. Unfortunately, programmers are
+often unaware of coding conventions because inferring them requires a
+global view, one that aggregates the many local decisions programmers
+make and identifies emergent consensus on style. We present Naturalize,
+a framework that learns the style of a codebase, and suggests revisions
+to improve stylistic consistency. Naturalize builds on recent work in
+applying statistical natural language processing to source code. We
+apply Naturalize to suggest natural identifier names and formatting
+conventions. We present four tools focused on ensuring natural code
+during development and release management, including code review.
+Naturalize achieves 94% accuracy in its top suggestions for identifier
+names. We used Naturalize to generate 18 patches for 5 open source
+projects: 14 were accepted.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      TypeWriter: Neural Type Prediction with Search-based Validation &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">TypeWriter: Neural Type Prediction with Search-based Validation</h1>
+  <h5>M. Pradel, G. Gousios, J. Liu, S. Chandra.  2019</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/1912.03768" target="_blank">ArXiV</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=TypeWriter: Neural Type Prediction with Search-based Validation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=TypeWriter: Neural Type Prediction with Search-based Validation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=TypeWriter:%20Neural%20Type%20Prediction%20with%20Search-based%20Validation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#types">types</a></tag>
+    
+      <tag><a href="/tags.html#bimodal">bimodal</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Maintaining large code bases written in dynamically typed languages, such as JavaScript or Python, can be challenging: simple data compatibility errors proliferate, IDE support is lacking and APIs are harder to comprehend. Recent work attempts to address those issues through either static analysis or probabilistic type inference. Unfortunately, static type inference for dynamic languages is inherently limited, while probabilistic approaches suffer from imprecision. This paper presents TypeWriter, the first combination of probabilistic prediction with search-based refinement of predicted types. TypeWriter’s predictor learns to infer the return and argument types for functions from partially annotated code bases by combining the natural language properties of code with programming language-level information. To validate predicted types, TypeWriter invokes a gradual type checker with different combinations of the predicted types, while navigating the space of possible type combinations in a feedback-directed manner. We implement the TypeWriter approach for Python and evaluate it on two code corpora: a multi-million line code base at Facebook and a collection of 500 popular open-source projects. We show that TypeWriter’s type predictor achieves a precision of 64% (91%) and a recall of 52% (68%) in the top-1 (top-5) predictions, and demonstrate that usage contexts are a helpful addition to neural type predictors. By combining predictions with search-based validation, TypeWriter can fully annotate between 42% to 64% of the files in a randomly selected corpus, while ensuring type correctness. A comparison with a static type inference tool shows that TypeWriter adds many more non-trivial types. Overall, TypeWriter provides developers with an effective way to help with the transition to fully type-annotated code.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

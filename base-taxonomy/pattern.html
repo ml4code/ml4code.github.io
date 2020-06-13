@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Pattern-Mining Models &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <h2>Pattern Mining Models</h2>
+
+<b>Pattern mining models</b> infer, without supervision, a likely latent
+structure within code. These models are an instantiation of clustering
+in the code domain; they can find reusable and human-interpretable patterns.
+
+
+<table id="patternModelTable">
+<thead><th>Name</th><th>Type</th><th>Representation</th><th>Application</th><th>Abstract</th></thead>
+<tbody>
+
+    
+    
+      <tr>
+          <td data-order="allamanis2014mining"><a href="/publications/allamanis2014mining">M. Allamanis, C. Sutton, 2014.</a> Mining Idioms from Source Code</td>
+          <td>Graphical Model</td>
+          <td>Syntax</td>
+          <td>---</td>
+          <td><p>We present the first method for automatically mining code idioms from a corpus of previously written, idiomatic software projects. We take the view that a code idiom is a syntactic fragment that recurs across projects and has a single semantic purpose. Idioms may have metavariables, such as the body of a for loop. Modern IDEs commonly provide facilities for manually defining idioms and inserting them on demand, but this does not help programmers to write idiomatic code in languages or using libraries with which they are unfamiliar. We present Haggis, a system for mining code idioms that builds on recent advanced techniques from statistical natural language processing, namely, nonparametric Bayesian probabilistic tree substitution grammars. We apply Haggis to several of the most popular open source projects from GitHub. We present a wide range of evidence that the resulting idioms are semantically meaningful, demonstrating that they do indeed recur across software projects and that they occur more frequently in illustrative code examples collected from a Q&amp;A site. Manual examination of the most common idioms indicate that they describe important program concepts, including object creation, exception handling, and resource management.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="allamanis2017mining"><a href="/publications/allamanis2017mining">M. Allamanis, E. T. Barr, C. Bird, M. Marron, C. Sutton, 2017.</a> Mining Semantic Loop Idioms from Big Code</td>
+          <td>Graphical Model</td>
+          <td>Abstracted AST</td>
+          <td>Semantic Idiom Mining</td>
+          <td><p>During maintenance, developers spend a lot of time transforming existing code: refactoring, optimizing, and adding checks to make it more robust. Much of this work is the drudgery of identifying and replacing specific patterns, yet it resists automation, because of meaningful patterns are hard to automatically find. We present a technique for mining loop idioms, surprisingly probable semantic patterns that occur in loops, from big code to find meaningful patterns. First, we show that automatically identifiable patterns exist, in great numbers, with a large scale empirical study of loop over 25 MLOC. We find that loops in this corpus are simple and predictable: 90% of them have fewer than 15LOC and 90% have no nesting and very simple control structure. Encouraged by this result, we coil loops to abstract away syntactic diversity to define information rich loop idioms. We show that only 50 loop idioms cover 50% of the concrete loops. We show how loop idioms can help a tool developers identify and prioritize refactorings. We also show how our framework opens the door to data-driven tool and language design discovering opportunities to introduce new API calls and language constructs: loop idioms show that LINQ would benefit from an Enumerate operator, a result confirmed by the fact that precisely this feature is one of the most requested features on StackOverflow with 197 votes and 95k views.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="fowkes2016parameter"><a href="/publications/fowkes2016parameter">J. Fowkes, C. Sutton, 2016.</a> Parameter-Free Probabilistic API Mining across GitHub</td>
+          <td>Graphical Model</td>
+          <td>API Call Sequences</td>
+          <td>API Mining</td>
+          <td><p>Existing API mining algorithms can be difficult to use as they require expensive parameter tuning and the returned set of API calls can be large, highly redundant and difficult to understand. To address this, we present PAM (Probabilistic API Miner), a near parameter-free probabilistic algorithm for mining the most interesting API call patterns. We show that PAM significantly outperforms both MAPO and UPMiner, achieving 69% test-set precision, at retrieving relevant API call sequences from GitHub. Moreover, we focus on libraries for which the developers have explicitly provided code examples, yielding over 300,000 LOC of hand-written API example code from the 967 client projects in the data set. This evaluation suggests that the hand-written examples actually have limited coverage of real API usages.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="fowkes2017autofolding"><a href="/publications/fowkes2017autofolding">J. Fowkes, R. Ranca, M. Allamanis, M. Lapata, C. Sutton, 2017.</a> Autofolding for Source Code Summarization</td>
+          <td>Graphical Model</td>
+          <td>Tokens</td>
+          <td>Code Summarization</td>
+          <td><p>Developers spend much of their time reading and browsing source code, raising new opportunities for summarization methods. Indeed, modern code editors provide code folding, which allows one to selectively hide blocks of code. However this is impractical to use as folding decisions must be made manually or based on simple rules. We introduce the
+autofolding problem, which is to automatically create a code summary by folding less informative code regions. We present a novel solution by formulating the problem as a sequence of AST folding decisions, leveraging a scoped topic model for code tokens. On an annotated set of popular open source projects, we show that our summarizer outperforms simpler baselines, yielding a 28% error reduction. Furthermore, we find through a case study that our summarizer is strongly preferred by experienced developers. More broadly, we hope this work will aid program comprehension by turning code folding into a usable and valuable tool.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="movshovitz2015kb"><a href="/publications/movshovitz2015kb">D. Movshovitz-Attias, W. W. Cohen, 2015.</a> KB-LDA: Jointly Learning a Knowledge Base of Hierarchy, Relations, and Facts</td>
+          <td>Graphical Model</td>
+          <td>Tokens</td>
+          <td>Knowledge-Base Mining</td>
+          <td><p>Many existing knowledge bases (KBs), including Freebase, Yago, and NELL, rely
+on a fixed ontology, given as an input
+to the system, which defines the data to
+be cataloged in the KB, i.e., a hierarchy of categories and relations between
+them. The system then extracts facts that
+match the predefined ontology. We propose an unsupervised model that jointly
+learns a latent ontological structure of an
+input corpus, and identifies facts from the
+corpus that match the learned structure.
+Our approach combines mixed membership stochastic block models and topic
+models to infer a structure by jointly modeling text, a latent concept hierarchy, and
+latent semantic relationships among the
+entities mentioned in the text. As a case
+study, we apply the model to a corpus
+of Web documents from the software domain, and evaluate the accuracy of the various components of the learned ontology.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="murali2017bayesian"><a href="/publications/murali2017bayesian">V. Murali, S. Chaudhuri, C. Jermaine, 2017.</a> Bayesian Sketch Learning for Program Synthesis</td>
+          <td>Graphical Model</td>
+          <td>Sketch Synthesis</td>
+          <td>Sketch Mining</td>
+          <td><p>We present a Bayesian statistical approach to the problem of automatic program synthesis. Our synthesizer starts
+by learning, offline and from an existing corpus, a probabilistic model of real-world programs. During synthesis,
+it is provided some ambiguous and incomplete evidence about the nature of the programming task that the user
+wants automated, for example sets of API calls or data types that are relevant for the task. Given this input, the
+synthesizer infers a posterior distribution over type-safe programs that assigns higher likelihood to programs
+that, according to the learned model, are more likely to match the evidence.</p>
+
+<p>We realize this approach using two key ideas. First, our learning techniques operate not over code but
+syntactic abstractions, or sketches, of programs. During synthesis, we infer a posterior distribution over sketches,
+then concretize samples from this distribution into type-safe programs using combinatorial techniques. Second,
+our statistical model explicitly models the full intent behind a synthesis task as a latent variable. To infer
+sketches, we first estimate a posterior distribution on the intent, then use samples from this posterior to generate
+a distribution over possible sketches. We show that our model can be implemented effectively using the new
+neural architecture of Bayesian encoder-decoders, which can be trained with stochastic gradient descent and
+yields a simple inference procedure.</p>
+
+<p>We implement our ideas in a system, called BAYOU , for the synthesis of API-heavy Java methods. We train
+BAYOU on a large corpus of Android apps, and find that the trained system can often synthesize complex
+methods given just a few API method names or data types as evidence. The experiments also justify the design
+choice of using a latent intent variable and the levels of abstraction at which sketches and evidence are defined.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="murali2017finding"><a href="/publications/murali2017finding">V. Murali, S. Chaudhuri, C. Jermaine, 2017.</a> Finding Likely Errors with Bayesian Specifications</td>
+          <td>Graphical Model</td>
+          <td>API Usage Errors</td>
+          <td>Defect Prediction</td>
+          <td><p>We present a Bayesian framework for learning probabilistic specifications from large, unstructured code corpora, and
+a method to use this framework to statically detect anomalous, hence likely buggy, program behavior. The distinctive
+insight here is to build a statistical model that correlates all
+specifications hidden inside a corpus with the syntax and
+observed behavior of programs that implement these specifications. During the analysis of a particular program, this
+model is conditioned into a posterior distribution that prioritizes specifications that are relevant to this program. This
+allows accurate program analysis even if the corpus is highly
+heterogeneous. The problem of finding anomalies is now
+framed quantitatively, as a problem of computing a distance
+between a “reference distribution” over program behaviors
+that our model expects from the program, and the distribution over behaviors that the program actually produces.</p>
+
+<p>We present a concrete embodiment of our framework that
+combines a topic model and a neural network model to learn
+specifications, and queries the learned models to compute
+anomaly scores. We evaluate this implementation on the
+task of detecting anomalous usage of Android APIs. Our
+encouraging experimental results show that the method can
+automatically discover subtle errors in Android applications
+in the wild, and has high precision and recall compared to
+competing probabilistic approaches.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="nguyen2017exploring"><a href="/publications/nguyen2017exploring">T.D. Nguyen, A.T. Nguyen, H.D. Phan, T.N. Nguyen, 2017.</a> Exploring API Embedding for API Usages and Applications</td>
+          <td>Distributed</td>
+          <td>API Usage</td>
+          <td>API Mining</td>
+          <td><p>Word2Vec is a class of neural network models that
+as being trained from a large corpus of texts, they can produce for
+each unique word a corresponding vector in a continuous space in
+which linguistic contexts of words can be observed. In this work,
+we study the characteristics of Word2Vec vectors, called API 2 VEC
+or API embeddings, for the API elements within the API sequences in source code. Our empirical study shows that the close
+proximity of the API 2 VEC vectors for API elements reflects the
+similar usage contexts containing the surrounding APIs of those
+API elements. Moreover, API 2 VEC can capture several similar
+semantic relations between API elements in API usages via vector
+offsets. We demonstrate the usefulness of API 2 VEC vectors for
+API elements in three applications. First, we build a tool that mines the pairs of API elements that share the same usage relations
+among them. The other applications are in the code migration
+domain. We develop API 2 API , a tool to automatically learn the
+API mappings between Java and C# using a characteristic of the
+API 2 VEC vectors for API elements in the two languages: semantic
+relations among API elements in their usages are observed in the
+two vector spaces for the two languages as similar geometric
+arrangements among their API 2 VEC vectors. Our empirical
+evaluation shows that API 2 API relatively improves 22.6% and
+40.1% top-1 and top-5 accuracy over a state-of-the-art mining
+approach for API mappings. Finally, as another application in
+code migration, we are able to migrate equivalent API usages
+from Java to C# with up to 90.6% recall and 87.2% precision.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="wang2016automatically"><a href="/publications/wang2016automatically">S. Wang, T. Liu, L. Tan, 2016.</a> Automatically Learning Semantic Features for Defect Prediction</td>
+          <td>Distributed</td>
+          <td>Serialized ASTs</td>
+          <td>Defect Prediction</td>
+          <td><p>Software defect prediction, which predicts defective code regions, can help developers find bugs and prioritize their testing efforts. To build accurate prediction models, previous
+studies focus on manually designing features that encode the
+characteristics of programs and exploring different machine
+learning algorithms. Existing traditional features often fail
+to capture the semantic differences of programs, and such a
+capability is needed for building accurate prediction models.</p>
+
+<p>To bridge the gap between programs’ semantics and
+defect prediction features, this paper proposes to leverage a
+powerful representation-learning algorithm, deep learning,
+to learn semantic representation of programs automatically
+from source code. Specifically, we leverage Deep Belief
+Network (DBN) to automatically learn semantic features
+from token vectors extracted from programs’ Abstract
+Syntax Trees (ASTs).</p>
+
+<p>Our evaluation on ten open source projects shows that
+our automatically learned semantic features significantly improve both within-project defect prediction (WPDP) and
+cross-project defect prediction (CPDP) compared to traditional features. Our semantic features improve WPDP on
+average by 14.7% in precision, 11.5% in recall, and 14.2%
+in F1. For CPDP, our semantic features based approach
+outperforms the state-of-the-art technique TCA+ with traditional features by 8.9% in F1.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="white2016deep"><a href="/publications/white2016deep">M. White, M. Tufano, C. Vendome, D. Poshyvanyk, 2016.</a> Deep Learning Code Fragments for Code Clone Detection</td>
+          <td>Distributed</td>
+          <td>Token + Syntax</td>
+          <td>Clone Detection</td>
+          <td><p>Code clone detection is an important problem for software
+maintenance and evolution. Many approaches consider either structure or identifiers, but none of the existing detection techniques model both sources of information. These
+techniques also depend on generic, handcrafted features to
+represent code fragments. We introduce learning-based detection techniques where everything for representing terms
+and fragments in source code is mined from the repository.
+Our code analysis supports a framework, which relies on
+deep learning, for automatically linking patterns mined at
+the lexical level with patterns mined at the syntactic level.
+We evaluated our novel learning-based approach for code
+clone detection with respect to feasibility from the point
+of view of software maintainers. We sampled and manually
+evaluated 398 file- and 480 method-level pairs across eight
+real-world Java systems; 93% of the file- and method-level
+samples were evaluated to be true positives. Among the true
+positives, we found pairs mapping to all four clone types. We
+compared our approach to a traditional structure-oriented
+technique and found that our learning-based approach detected clones that were either undetected or suboptimally
+reported by the prominent tool Deckard. Our results affirm
+that our learning-based approach is suitable for clone detection and a tenable technique for researchers.</p>
+</td>
+      </tr>
+
+</tbody></table>
+
+<script>
+$(document).ready( function () {
+    $('#patternModelTable').DataTable({
+		paging: false,
+		columnDefs: [
+			{
+				targets: [4],
+				visible: false,
+				searchable: true
+			}]
+	});
+} );
+</script>
+
+    </div>
+
+  </body>
+</html>

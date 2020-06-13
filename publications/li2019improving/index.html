@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks</h1>
+  <h5>Y. Li, S. Wang, T. N. Nguyen, S. V. Nguyen. OOPSLA 2019 2019</h5>
+  <p>
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Improving%20Bug%20Detection%20via%20Context-Based%20Code%20Representation%20Learning%20and%20Attention-Based%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#representation">representation</a></tag>
+    
+      <tag><a href="/tags.html#defect">defect</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Bug detection has been shown to be an effective way to help developers in detecting bugs early, thus, saving much effort and time in software development process. Recently, deep learning-based bug detection approaches have gained successes over the traditional machine learning-based approaches, the rule-based program analysis approaches, and mining-based approaches. However, they are still limited in detecting bugs that involve multiple methods and suffer high rate of false positives. In this paper, we propose a combination approach with the use of contexts and attention neural network to overcome those limitations. We propose to use as the global context the Program Dependence Graph (PDG) and Data Flow Graph (DFG) to connect the method under investigation with the other relevant methods that might contribute to the buggy code. The global context is complemented by the local context extracted from the path on the AST built from the method’s body. The use of PDG and DFG enables our model to reduce the false positive rate, while to complement for the potential reduction in recall, we make use of the attention neural network mechanism to put more weights on the buggy paths in the source code. That is, the paths that are similar to the buggy paths will be ranked higher, thus, improving the recall of our model. We have conducted several experiments to evaluate our approach on a very large dataset with +4.973M methods in 92 different project versions. The results show that our tool can have a relative improvement up to 160% on F-score when comparing with the state-of-the-art bug detection approaches. Our tool can detect 48 true bugs in the list of top 100 reported bugs, which is 24 more true bugs when comparing with the baseline approaches. We also reported that our representation is better suitable for bug detection and relatively improves over the other representations up to 206% in accuracy.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Code-Generating Models &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <h2>Code-Generating Models</h2>
+
+<b>Code-generating models</b> define a probability distribution over code by stochastically mod-
+eling the generation of smaller and simpler parts of code, e.g.
+tokens or AST nodes.
+
+
+<table id="genModelTable">
+<thead><th>Name</th><th>Type</th><th>Representation</th><th>Model</th><th>Application</th><th>Abstract</th></thead><tbody>
+
+    
+    
+      <tr>
+          <td data-order="aggarwal2015using"><a href="/publications/aggarwal2015using">K. Aggarwal, M. Salameh, and A. Hindle, 2015.</a> Using Machine Translation for Converting Python 2 to Python 3 Code</td>
+          <td>Transducer</td>
+          <td>Token</td>
+          <td>Phrase</td>
+          <td>Migration</td>
+          <td><p>In this paper, we have tried to use Statistical machine translation in order to convert Python 2 code to Python 3 code. We use data from two projects and achieve a high BLEU score. We also investigate the cross-project training and testing to analyze the errors so as to ascertain differences with previous case. We have described a pilot study on modeling programming languages as natural language to build translation models on the lines of natural languages. This can be further worked on to translate between versions of a programming language or cross-programming-languages code translation.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="allamanis2013mining"><a href="/publications/allamanis2013mining">M. Allamanis, C. Sutton, 2013.</a> Mining Source Code Repositories at Massive Scale Using Language Modeling </td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Idiom Mining</td>
+          <td><p>The tens of thousands of high-quality open source software projects on the Internet raise the exciting possibility of studying software development by finding patterns across truly large source code repositories. This could enable new tools for developing code, encouraging reuse, and navigating large projects. In this paper, we build the first giga-token probabilistic language model of source code, based on 352 million lines of Java. This is 100 times the scale of the pioneering work by Hindle et al. The giga-token model is significantly better at the code suggestion task than previous models. More broadly, our approach provides a new “lens” for analyzing software projects, enabling new complexity metrics based on statistical analysis of large corpora. We call these metrics data-driven complexity metrics. We propose new metrics that measure the complexity of a code module and the topical centrality of a module to a software project. In particular, it is possible to distinguish reusable utility classes from classes that are part of a program’s core logic based solely on general information theoretic criteria.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="allamanis2014learning"><a href="/publications/allamanis2014learning">M. Allamanis, E. T. Barr, C. Bird, C. Sutton, 2014.</a> Learning Natural Coding Conventions</td>
+          <td>Language Model</td>
+          <td>Token + Location</td>
+          <td>n-gram</td>
+          <td>Coding Conventions</td>
+          <td><p>Every programmer has a characteristic style, ranging from preferences
+about identifier naming to preferences about object relationships and
+design patterns. Coding conventions define a consistent syntactic style,
+fostering readability and hence maintainability. When collaborating,
+programmers strive to obey a project’s coding conventions. However,
+one third of reviews of changes contain feedback about coding conventions,
+indicating that programmers do not always follow them and that project
+members care deeply about adherence. Unfortunately, programmers are
+often unaware of coding conventions because inferring them requires a
+global view, one that aggregates the many local decisions programmers
+make and identifies emergent consensus on style. We present Naturalize,
+a framework that learns the style of a codebase, and suggests revisions
+to improve stylistic consistency. Naturalize builds on recent work in
+applying statistical natural language processing to source code. We
+apply Naturalize to suggest natural identifier names and formatting
+conventions. We present four tools focused on ensuring natural code
+during development and release management, including code review.
+Naturalize achieves 94% accuracy in its top suggestions for identifier
+names. We used Naturalize to generate 18 patches for 5 open source
+projects: 14 were accepted.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="allamanis2014mining"><a href="/publications/allamanis2014mining">M. Allamanis, C. Sutton, 2014.</a> Mining Idioms from Source Code</td>
+          <td>Language Model</td>
+          <td>Syntax</td>
+          <td>Grammar (pTSG)</td>
+          <td>---</td>
+          <td><p>We present the first method for automatically mining code idioms from a corpus of previously written, idiomatic software projects. We take the view that a code idiom is a syntactic fragment that recurs across projects and has a single semantic purpose. Idioms may have metavariables, such as the body of a for loop. Modern IDEs commonly provide facilities for manually defining idioms and inserting them on demand, but this does not help programmers to write idiomatic code in languages or using libraries with which they are unfamiliar. We present Haggis, a system for mining code idioms that builds on recent advanced techniques from statistical natural language processing, namely, nonparametric Bayesian probabilistic tree substitution grammars. We apply Haggis to several of the most popular open source projects from GitHub. We present a wide range of evidence that the resulting idioms are semantically meaningful, demonstrating that they do indeed recur across software projects and that they occur more frequently in illustrative code examples collected from a Q&amp;A site. Manual examination of the most common idioms indicate that they describe important program concepts, including object creation, exception handling, and resource management.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="allamanis2015bimodal"><a href="/publications/allamanis2015bimodal">M. Allamanis, D. Tarlow, A. D. Gordon, Y. Wei, 2015.</a> A Bimodal Modelling of Source Code and Natural Language</td>
+          <td>Multimodal</td>
+          <td>Syntax</td>
+          <td>Grammar (NN-LBL)</td>
+          <td>Code Search/Synthesis</td>
+          <td><p>We consider the problem of building probabilistic models that jointly 
+model short natural language utterances and source code snippets. The
+aim is to bring together recent work on statistical modelling of source
+code and work on bimodal models of images and natural language. The
+resulting models are useful for a variety of tasks that involve natural
+language and source code. We demonstrate their performance on two
+retrieval tasks: retrieving source code snippets given a natural language
+query, and retrieving natural language descriptions given a source code
+query (i.e., source code captioning). Experiments show there to be
+promise in this direction, and that modelling the structure of source
+code improves performance.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="amodio2017neural"><a href="/publications/amodio2017neural">M. Amodio, S. Chaudhuri, T. Reps, 2017.</a> Neural Attribute Machines for Program Generation</td>
+          <td>Language Model</td>
+          <td>Syntax+Constraints</td>
+          <td>RNN</td>
+          <td>---</td>
+          <td><p>Recurrent neural networks have achieved remarkable success at generating sequences with complex structures, thanks to advances that include richer embeddings of input and cures for vanishing gradients. Trained only on sequences from a known grammar, though, they can still struggle to learn rules and constraints of the grammar. Neural Attribute Machines (NAMs) are equipped with a logical machine that represents the underlying grammar, which is used to teach the constraints to the neural machine by (i) augmenting the input sequence, and (ii) optimizing a custom loss function. Unlike traditional RNNs, NAMs are exposed to the grammar, as well as samples from the language of the grammar. During generation, NAMs make significantly fewer violations of the constraints of the underlying grammar than RNNs trained only on samples from the language of the grammar.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="barone2017parallel"><a href="/publications/barone2017parallel">A.V.M. Barone, R. Sennrich, 2017.</a> A parallel corpus of Python functions and documentation strings for automated code documentation and code generation</td>
+          <td>Multimodal</td>
+          <td>Token</td>
+          <td>Neural MT</td>
+          <td>Documentation</td>
+          <td><p>Automated documentation of programming source code and automated code generation from natural language are challenging tasks of both practical and scientific interest. Progress in these areas has been limited by the low availability of parallel corpora of code and natural language descriptions, which tend to be small and constrained to specific domains.</p>
+
+<p>In this work we introduce a large and diverse parallel corpus of a hundred thousands Python functions with their documentation strings (“docstrings”) generated by scraping open source repositories on GitHub. We describe baseline results for the code documentation and code generation tasks obtained by neural machine translation. We also experiment with 
+data augmentation techniques to further increase the amount of training data.</p>
+
+<p>We release our datasets and processing scripts in order to stimulate research in these areas.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="beltramelli2017pix2code"><a href="/publications/beltramelli2017pix2code">T. Beltramelli, 2017.</a> pix2code: Generating Code from a Graphical User Interface Screenshot</td>
+          <td>Multimodal</td>
+          <td>Token</td>
+          <td>NN (Encoder-Decoder)</td>
+          <td>GUI Code Synthesis</td>
+          <td><p>Transforming a graphical user interface screenshot created by a designer into computer code is a typical task conducted by a developer in order to build customized software, websites and mobile applications. In this paper, we show that Deep Learning techniques can be leveraged to automatically generate code given a graphical user interface screenshot as input. Our model is able to generate code targeting three different platforms (i.e. iOS, Android and web-based technologies) from a single input image with over 77% of accuracy.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="bhatia2016automated"><a href="/publications/bhatia2016automated">S. Bhatia, R. Singh, 2016.</a> Automated Correction for Syntax Errors in Programming Assignments using Recurrent Neural Networks</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>RNN (LSTM)</td>
+          <td>Syntax Error Correction</td>
+          <td><p>We present a method for automatically generating repair feedback for syntax errors for introductory programming problems. Syntax errors constitute one of the largest classes of errors (34%) in our dataset of student submissions obtained from a MOOC course on edX. The previous techniques for generating automated feedback on programming assignments have focused on functional correctness and style considerations of student programs. These techniques analyze the program AST of the program and then perform some dynamic and symbolic analyses to compute repair feedback. Unfortunately, it is not possible to generate ASTs for student programs with syntax errors and therefore the previous feedback techniques are not applicable in repairing syntax errors. We present a technique for providing feedback on syntax errors that uses Recurrent neural networks (RNNs) to model syntactically valid token sequences. Our approach is inspired from the recent work on learning language models from Big Code (large code corpus). For a given programming assignment, we first learn an RNN to model all valid token sequences using the set of syntactically correct student submissions. Then, for a student submission with
+syntax errors, we query the learnt RNN model with the prefix token sequence to predict token sequences that can fix the error by either replacing or inserting the predicted token sequence at the error location. We evaluate our technique on over 14, 000 student submissions with syntax errors. Our technique can completely repair 31.69% (4501/14203) of submissions with syntax errors and in addition partially correct 6.39% (908/14203) of the submissions.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="bhoopchand2016learning"><a href="/publications/bhoopchand2016learning">A. Bhoopchand, T. Rocktäschel, E.T. Barr, S. Riedel, 2016.</a> Learning Python Code Suggestion with a Sparse Pointer Network</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>NN (Pointer Net)</td>
+          <td>Code Completion</td>
+          <td><p>To enhance developer productivity, all modern integrated development environments (IDEs) include code suggestion functionality that proposes likely next tokens at the cursor. While current IDEs work well for statically-typed languages, their reliance on type annotations means that they do not provide the same level of support for dynamic programming languages as for statically-typed languages. Moreover, suggestion engines in modern IDEs do not propose expressions or multi-statement idiomatic code. Recent work has shown that language models can improve code suggestion systems by learning from software repositories. This paper introduces a neural language model with a sparse pointer network aimed at capturing very long-range dependencies. We release a large-scale code suggestion corpus of 41M lines of Python code crawled from GitHub. On this corpus, we found standard neural language models to perform well at suggesting local phenomena, but struggle to refer to identifiers that are introduced many tokens in the past. By augmenting a neural language model with a pointer network specialized in referring to predefined classes of identifiers, we obtain a much lower perplexity and a 5 percentage points increase in accuracy for code suggestion compared to an LSTM baseline. In fact, this increase in code suggestion accuracy is due to a 13 times more accurate prediction of identifiers. Furthermore, a qualitative analysis shows this model indeed captures interesting long-range dependencies, like referring to a class member defined over 60 tokens in the past.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="bielik2016phog"><a href="/publications/bielik2016phog">P. Bielik, V. Raychev, M. Vechev, 2016.</a> PHOG: Probabilistic Model for Code</td>
+          <td>Language Model</td>
+          <td>Syntax</td>
+          <td>PCFG + annotations</td>
+          <td>Code Completion</td>
+          <td><p>We introduce a new generative model for code called probabilistic higher order grammar (PHOG). PHOG generalizes probabilistic context free grammars (PCFGs) by allowing conditioning of a production rule beyond the parent non-terminal, thus capturing rich contexts relevant to programs. Even though PHOG is more powerful than a PCFG, it can be learned from data just as efficiently. We trained a PHOG model on a large JavaScript code corpus and show that it is more precise than existing models, while similarly fast. As a result, PHOG can immediately benefit existing programming tools based on probabilistic models of code.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="campbell2014syntax"><a href="/publications/campbell2014syntax">J. C. Campbell, A. Hindle, J. N. Amaral, 2014.</a> Syntax Errors Just Aren’t Natural: Improving Error Reporting with Language Models</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Syntax Error Detection</td>
+          <td><p>A frustrating aspect of software development is that compiler error messages often fail to locate the actual cause of a syntax error. An errant semicolon or brace can result in
+many errors reported throughout the file. We seek to find the actual source of these syntax errors by relying on the consistency of software: valid source code is usually repetitive and unsurprising. We exploit this consistency by constructing a simple N-gram language model of lexed source code tokens. We implemented an automatic Java syntax-error locator using the corpus of the project itself and evaluated its performance on mutated source code from several projects. Our tool, trained on the past versions of a project, can effectively augment the syntax error locations produced by the native compiler. Thus we provide a methodology and tool that exploits the naturalness of software source code to detect syntax errors alongside the parser.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="cerulo2015irish"><a href="/publications/cerulo2015irish">L. Cerulo, M. Di Penta, A. Bacchelli, M, Ceccarelli, G. Canfora, 2015.</a> Irish: A Hidden Markov Model to detect coded information islands in free text</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>Graphical Model (HMM)</td>
+          <td>Information Extraction</td>
+          <td><p>Developers’ communication, as contained in emails, issue trackers, and forums, is a precious source of information to support the development process. For example, it can
+be used to capture knowledge about development practice or about a software project itself. Thus, extracting the content of developers’ communication can be useful to support
+several software engineering tasks, such as program comprehension, source code analysis, and software analytics. However, automating the extraction process is challenging, due to the unstructured nature of free text, which mixes different coding languages (e.g., source code, stack dumps, and log traces) with natural language parts.</p>
+
+<p>We conduct an extensive evaluation of Irish (InfoRmation ISlands Hmm), an approach we proposed to extract islands of coded information from free text at token granularity, with respect to the state of art approaches based on island parsing or island parsing combined with machine learners. The evaluation considers a wide set of natural language documents (e.g., textbooks, forum discussions, and development emails) taken from different contexts and encompassing different coding languages. Results indicate an F-measure of Irish between 74% and 99%; this is in line with existing approaches which, differently from Irish, require specific expertise for the definition of regular expressions or grammars.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="cummins2017synthesizing"><a href="/publications/cummins2017synthesizing">C. Cummin, P. Petoumenos, Z. Wang, H. Leather, 2017.</a> Synthesizing benchmarks for predictive modeling</td>
+          <td>Language Model</td>
+          <td>Character</td>
+          <td>NN (LSTM)</td>
+          <td>Benchmark Synthesis</td>
+          <td><p>Predictive modeling using machine learning is an effective method for building compiler heuristics, but there is a shortage of benchmarks. Typical machine learning experiments outside of the compilation field train over thousands or millions of examples. In machine learning for compilers, however, there are typically only a few dozen common benchmarks available. This limits the quality of learned models, as they have very sparse training data for what are often high-dimensional feature spaces. What is needed is a way to generate an unbounded number of training programs that finely cover the feature space. At the same time the generated programs must be similar to the types of programs that human developers actually write, otherwise the learning will target the wrong parts of the feature space. We mine open source repositories for program fragments and apply deep learning techniques to automatically construct models for how humans write programs. We sample these models to generate an unbounded number of runnable training programs. The quality of the programs is such that even human developers struggle to distinguish our generated programs from hand-written code. We use our generator for OpenCL programs, CLgen, to automatically synthesize thousands of programs and show that learning over these improves the performance of a state of the art predictive model by 1.27x. In addition, the fine covering of the feature space automatically exposes weaknesses in the feature design which are invisible with the sparse training examples from existing benchmark suites. Correcting these weaknesses further increases performance by 4.30x.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="dam2016deep"><a href="/publications/dam2016deep">H. K. Dam, T. Tran, T. Pham, 2016.</a> A deep language model for software code</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>NN (LSTM)</td>
+          <td>---</td>
+          <td><p>Existing language models such as n-grams for software code often fail to capture a long context where dependent code elements scatter far apart. In this paper, we propose a novel approach to build a language model for software code to address this particular issue. Our language model, partly inspired by human memory, is built upon the powerful deep learning-based Long Short Term Memory architecture that is capable of learning long-term dependencies which occur frequently in software code. Results from our intrinsic evaluation on a corpus of Java projects have demonstrated the effectiveness of our language model. This work contributes to realizing our vision for DeepSoft, an end-to-end, generic deep learning-based framework for modeling software and its development process.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="gulwani2014nlyze"><a href="/publications/gulwani2014nlyze">S. Gulwani, M. Marron, 2014.</a> NLyze: Interactive Programming by Natural Language for SpreadSheet Data Analysis and Manipulation</td>
+          <td>Multimodal</td>
+          <td>Syntax</td>
+          <td>Phrase Model</td>
+          <td>Text-to-Code</td>
+          <td><p>Millions of computer end users need to perform tasks over tabular spreadsheet data, yet lack the programming knowledge to do such tasks automatically. This paper describes
+the design and implementation of a robust natural language
+based interface to spreadsheet programming. Our methodology involves designing a typed domain-specific language
+(DSL) that supports an expressive algebra of map, filter, reduce, join, and formatting capabilities at a level of abstraction appropriate for non-expert users. The key algorithmic
+component of our methodology is a translation algorithm
+for converting a natural language specification in the context of a given spreadsheet to a ranked set of likely programs
+in the DSL. The translation algorithm leverages the spreadsheet spatial and temporal context to assign interpretations
+to specifications with implicit references, and is thus robust
+to a variety of ways in which end users can express the same
+task. The translation algorithm builds over ideas from keyword programming and semantic parsing to achieve both
+high precision and high recall. We implemented the system
+as an Excel add-in called NLyze that supports a rich user
+interaction model including annotating the user’s natural
+language specification and explaining the synthesized DSL
+programs by paraphrasing them into structured English. We
+collected a total of 3570 English descriptions for 40 spreadsheet tasks and our system was able to generate the intended
+interpretation as the top candidate for 94% (97% for the top
+3) of those instances.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="gvero2015synthesizing"><a href="/publications/gvero2015synthesizing">T. Gvero, V. Kuncak, 2015.</a> Synthesizing Java expressions from free-form queries</td>
+          <td>Language Model</td>
+          <td>Syntax</td>
+          <td>PCFG + Search</td>
+          <td>Code Synthesis</td>
+          <td><p>We present a new code assistance tool for integrated development environments. Our system accepts as input free-form queries containing a mixture of English and Java, and produces Java code expressions that take the query into account and respect syntax, types, and scoping rules of Java, as well as statistical usage patterns. In contrast to solutions based on code search, the results returned by our tool need not directly correspond to any previously seen code fragment. As part of our system we have constructed a probabilistic context free grammar for Java constructs and library invocations, as well as an algorithm that uses a customized natural language processing tool chain to extract information from free-form text queries. We present the results on a number of examples showing that our technique (1) often produces the expected code fragments, (2) tolerates much of the flexibility of natural language, and (3) can repair incorrect Java expressions that use, for example, the wrong syntax or missing arguments.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="hellendoorn2015will"><a href="/publications/hellendoorn2015will">V.J. Hellendoorn, P. Devanbu, A. Bacchelli, 2015.</a> Will they like this? Evaluating Code Contributions With Language Models</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Code Review</td>
+          <td><p>Popular open-source software projects receive and
+review contributions from a diverse array of developers, many
+of whom have little to no prior involvement with the project. A
+recent survey reported that reviewers consider conformance to
+the project’s code style to be one of the top priorities when evaluating code contributions on Github. We propose to quantitatively
+evaluate the existence and effects of this phenomenon. To this aim
+we use language models, which were shown to accurately capture
+stylistic aspects of code. We find that rejected changesets do
+contain code significantly less similar to the project than accepted
+ones; furthermore, the less similar changesets are more likely
+to be subject to thorough review. Armed with these results we
+further investigate whether new contributors learn to conform to
+the project style and find that experience is positively correlated
+with conformance to the project’s code style.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="hellendoorn2017deep"><a href="/publications/hellendoorn2017deep">V. J. Hellendoorn, P. Devanbu, 2017.</a> Are Deep Neural Networks the Best Choice for Modeling Source Code?</td>
+          <td>Language Model</td>
+          <td>token</td>
+          <td>n-gram (cache)</td>
+          <td>--</td>
+          <td><p>Current statistical language modeling techniques, including deep-learning based models, have proven to be quite effective for source
+code. We argue here that the special properties of source code can
+be exploited for further improvements. In this work, we enhance
+established language modeling approaches to handle the special
+challenges of modeling source code, such as: frequent changes,
+larger, changing vocabularies, deeply nested scopes, etc. We present
+a fast, nested language modeling toolkit specifically designed for
+software, with the ability to add &amp; remove text, and mix &amp; swap out
+many models. Specifically, we improve upon prior cache-modeling
+work and present a model with a much more expansive, multi-level
+notion of locality that we show to be well-suited for modeling
+software. We present results on varying corpora in comparison
+with traditional N -gram, as well as RNN, and LSTM deep-learning
+language models, and release all our source code for public use.
+Our evaluations suggest that carefully adapting N-gram models for
+source code can yield performance that surpasses even RNN and
+LSTM based deep-learning models.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="hindle2012naturalness"><a href="/publications/hindle2012naturalness">A. Hindle, E. T. Barr, Z. Su, M. Gabel, P. Devanbu, 2012.</a> On the Naturalness of Software</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Code Completion</td>
+          <td><p>Natural languages like English are rich, complex,
+and powerful. The highly creative and graceful use of languages
+like English and Tamil, by masters like Shakespeare and
+Avvaiyar, can certainly delight and inspire. But in practice,
+given cognitive constraints and the exigencies of daily life, most
+human utterances are far simpler and much more repetitive
+and predictable. In fact, these utterances can be very usefully
+modeled using modern statistical methods. This fact has led
+to the phenomenal success of statistical approaches to speech
+recognition, natural language translation, question-answering,
+and text mining and comprehension.</p>
+
+<p>We begin with the conjecture that most software is also
+natural, in the sense that it is created by humans at work,
+with all the attendant constraints and limitations—and thus,
+like natural language, it is also likely to be repetitive and
+predictable. We then proceed to ask whether a) code can
+be usefully modeled by statistical language models and b)
+such models can be leveraged to support software engineers.
+Using the widely adopted n-gram model, we provide empirical
+evidence supportive of a positive answer to both these questions.
+We show that code is also very repetitive, and in fact even more
+so than natural languages. As an example use of the model,
+we have developed a simple code completion engine for Java
+that, despite its simplicity, already improves Eclipse’s built-in
+completion capability. We conclude the paper by laying out a
+vision for future research in this area.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="hsiao2014using"><a href="/publications/hsiao2014using">C. Hsiao, M. Cafarella, S. Narayanasamy, 2014.</a> Using Web Corpus Statistics for Program Analysis</td>
+          <td>Language Model</td>
+          <td>PDG</td>
+          <td>n-gram</td>
+          <td>Program Analysis</td>
+          <td><p>Several program analysis tools—such as plagiarism detection and bug finding—rely on knowing a piece of code’s
+relative semantic importance. For example, a plagiarism detector should not bother reporting two programs that have
+an identical simple loop counter test, but should report programs that share more distinctive code. Traditional program
+analysis techniques (e.g., finding data and control dependencies) are useful, but do not say how surprising or common
+a line of code is. Natural language processing researchers
+have encountered a similar problem and addressed it using
+an n-gram model of text frequency, derived from statistics
+computed over text corpora.</p>
+
+<p>We propose and compute an n-gram model for programming languages, computed over a corpus of 2.8 million
+JavaScript programs we downloaded from the Web. In contrast to previous techniques, we describe a code n-gram as
+a subgraph of the program dependence graph that contains
+all nodes and edges reachable in n steps from the statement.
+We can count n-grams in a program and count the frequency
+of n-grams in the corpus, enabling us to compute tf-idf-style
+measures that capture the differing importance of different
+lines of code. We demonstrate the power of this approach by
+implementing a plagiarism detector with accuracy that beats
+previous techniques, and a bug-finding tool that discovered
+over a dozen previously unknown bugs in a collection of real
+deployed programs.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="karaivanov2014phrase"><a href="/publications/karaivanov2014phrase">S. Karaivanov, V. Raychev, M. Vechev, 2014.</a> Phrase-Based Statistical Translation of Programming Languages</td>
+          <td>Transducer</td>
+          <td>Token</td>
+          <td>Phrase</td>
+          <td>Migration</td>
+          <td><p>Phrase-based statistical machine translation approaches have been
+highly successful in translating between natural languages and are
+heavily used by commercial systems (e.g. Google Translate).</p>
+
+<p>The main objective of this work is to investigate the applicability of
+these approaches for translating between programming languages.
+Towards that, we investigated several variants of the phrase-based
+translation approach: i) a direct application of the approach to
+programming languages, ii) a novel modification of the approach
+to incorporate the grammatical structure of the target programming
+language (so to avoid generating target programs which do not
+parse), and iii) a combination of ii) with custom rules added to
+improve the quality of the translation.</p>
+
+<p>To experiment with the above systems, we investigated machine
+translation from C# to Java. For the training, which takes about
+60 hours, we used a parallel corpus of 20, 499 C#-to-Java method
+translations. We then evaluated each of the three systems above by
+translating 1,000 C# methods. Our experimental results indicate
+that with the most advanced system, about 60% of the translated
+methods compile (the top ranked) and out of a random sample of 50
+correctly compiled methods, 68% (34 methods) were semantically
+equivalent to the reference solution.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="karpathy2015visualizing"><a href="/publications/karpathy2015visualizing">A. Karpathy, J. Johnson, L. Fei-Fei, 2015.</a> Visualizing and Understanding Recurrent Networks</td>
+          <td>Language Model</td>
+          <td>Characters</td>
+          <td>RNN (LSTM)</td>
+          <td>---</td>
+          <td><p>Recurrent Neural Networks (RNNs), and specifically a variant with Long Short-Term Memory (LSTM), are enjoying renewed interest as a result of successful
+applications in a wide range of machine learning problems that involve sequential
+data. However, while LSTMs provide exceptional results in practice, the source
+of their performance and their limitations remain rather poorly understood. Using character-level language models as an interpretable testbed, we aim to bridge
+this gap by providing an analysis of their representations, predictions and error
+types. In particular, our experiments reveal the existence of interpretable cells that
+keep track of long-range dependencies such as line lengths, quotes and brackets.
+Moreover, our comparative analysis with finite horizon n-gram models traces the
+source of the LSTM improvements to long-range structural dependencies. Finally,
+we provide analysis of the remaining errors and suggests areas for further study.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="kushman2013using"><a href="/publications/kushman2013using">N. Kushman, R. Barzilay, 2013.</a> Using Semantic Unification to Generate Regular Expressions from Natural Language</td>
+          <td>Multimodal</td>
+          <td>Token</td>
+          <td>Grammar (CCG)</td>
+          <td>Code Synthesis</td>
+          <td><p>We consider the problem of translating natural language text queries into regular expressions which represent their meaning. The mismatch in the level of abstraction between the natural language representation and the regular expression representation make this a novel and challenging problem. However, a given regular expression can be written in many semantically equivalent forms, and we exploit this flexibility to facilitate translation by finding a form which more directly corresponds to the natural language. We evaluate our technique on a set of natural language queries and their associated regular expressions which we gathered from Amazon Mechanical Turk. Our model substantially outperforms a state-of-the-art semantic parsing baseline, yielding a 29% absolute improvement in accuracy.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="lin2017program"><a href="/publications/lin2017program">X.V. Lin, C. Wang, D. Pang, K. Vu, L. Zettlemoyer, M.D. Ernst, 2017.</a> Program Synthesis from Natural Language Using Recurrent Neural Networks</td>
+          <td>Multimodal</td>
+          <td>Tokens</td>
+          <td>NN (Seq2seq)</td>
+          <td>Synthesis</td>
+          <td><p>Oftentimes, a programmer may have difficulty implementing a
+desired operation. Even when the programmer can describe her
+goal in English, it can be difficult to translate into code. Existing
+resources, such as question-and-answer websites, tabulate specific
+operations that someone has wanted to perform in the past, but
+they are not effective in generalizing to new tasks, to compound
+tasks that require combining previous questions, or sometimes even
+to variations of listed tasks.</p>
+
+<p>Our goal is to make programming easier and more productive by
+letting programmers use their own words and concepts to express
+the intended operation, rather than forcing them to accommodate
+the machine by memorizing its grammar. We have built a system
+that lets a programmer describe a desired operation in natural language, then automatically translates it to a programming language
+for review and approval by the programmer. Our system, Tellina,
+does the translation using recurrent neural networks (RNNs), a
+state-of-the-art natural language processing technique that we augmented with slot (argument) filling and other enhancements.</p>
+
+<p>We evaluated Tellina in the context of shell scripting. We trained
+Tellina’s RNNs on textual descriptions of file system operations
+and bash one-liners, scraped from the web. Although recovering
+completely correct commands is challenging, Tellina achieves top-3
+accuracy of 80% for producing the correct command structure. In a
+controlled study, programmers who had access to Tellina outperformed those who did not, even when Tellina’s predictions were
+not completely correct, to a statistically significant degree.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="ling2016latent"><a href="/publications/ling2016latent">W. Ling, E. Grefenstette, K. M. Hermann, T. Kocisky, A. Senior, F. Wang, P. Blunsom, 2016.</a> Latent Predictor Networks for Code Generation</td>
+          <td>Multimodal</td>
+          <td>Token</td>
+          <td>RNN + Attention</td>
+          <td>Code Synthesis</td>
+          <td><p>Many  language  generation  tasks  require
+the production of text conditioned on both
+structured  and  unstructured  inputs.
+We present  a  novel  neural  network  architecture  which  generates  an  output  sequence
+conditioned on an arbitrary number of input  functions.
+Crucially,  our  approach
+allows  both  the  choice  of  conditioning
+context and the granularity of generation,
+for  example  characters  or  tokens,  to  be
+marginalised, thus permitting scalable and
+effective training.  Using this framework,
+we address the problem of generating programming code from a mixed natural language  and  structured  specification.
+We create two new data sets for this paradigm
+derived  from  the  collectible  trading  card
+games  Magic  the  Gathering  and  Hearthstone.   On  these,  and  a  third  preexisting
+corpus,  we  demonstrate  that  marginalising multiple predictors allows our model
+to outperform strong benchmarks.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="liu2016towards"><a href="/publications/liu2016towards">H. Liu, 2016.</a> Towards Better Program Obfuscation: Optimization via Language Models</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Obfuscation</td>
+          <td><p>As a common practice in software development, program
+obfuscation aims at deterring reverse engineering and malicious attacks on released source or binary code. Owning ample obfuscation techniques, we have relatively little
+knowledge on how to most effectively use them. The biggest
+challenge lies in identifying the most useful combination of
+these techniques. We propose a unified framework to automatically generate and optimize obfuscation based on an
+obscurity language model and a Monte Carlo Markov Chain
+(MCMC) based search algorithm. We further instantiate it
+for JavaScript programs and developed the Closure tool.
+Compared to the well-known Google Closure Compiler, Closure outperforms its default setting by 26%. For programs
+which have already been well obfuscated, Closure can still
+outperform by 22%.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="maddison2014structured"><a href="/publications/maddison2014structured">C.J. Maddison, D. Tarlow, 2014.</a> Structured Generative Models of Natural Source Code</td>
+          <td>Language Model</td>
+          <td>Syntax with scope</td>
+          <td>NN</td>
+          <td>---</td>
+          <td><p>We study the problem of building generative
+models of natural source code (NSC); that is,
+source code written by humans and meant to
+be understood by humans. Our primary con-
+tribution is to describe new generative models
+that are tailored to NSC. The models are based
+on probabilistic context free grammars (PCFGs)
+and neuro-probabilistic language models (Mnih
+&amp; Teh, 2012), which are extended to incorporate
+additional source code-specific structure. These
+models can be efficiently trained on a corpus
+of source code and outperform a variety of less
+structured baselines in terms of predictive log
+likelihoods on held-out data.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="menon2013machine"><a href="/publications/menon2013machine">A. K. Menon, O. Tamuz, S. Gulwani, B. Lampson, A.T. Kalai, 2013.</a> A Machine Learning Framework for Programming by Example</td>
+          <td>Multimodal</td>
+          <td>Syntax</td>
+          <td>PCFG + annotations</td>
+          <td>Code Synthesis</td>
+          <td><p>Learning programs is a timely and interesting challenge. In Programming by Example
+(PBE), a system attempts to infer a program
+from input and output examples alone, by
+searching for a composition of some set of
+base functions. We show how machine learning can be used to speed up this seemingly
+hopeless search problem, by learning weights
+that relate textual features describing the
+provided input-output examples to plausible
+sub-components of a program. This generic
+learning framework lets us address problems
+beyond the scope of earlier PBE systems.
+Experiments on a prototype implementation
+show that learning improves search and ranking on a variety of text processing tasks found
+on help forums.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="nguyen2013lexical"><a href="/publications/nguyen2013lexical">A. T. Nguyen, T. T. Nguyen, T. N. Nguyen, 2013.</a> Lexical Statistical Machine Translation for Language Migration</td>
+          <td>Transducer</td>
+          <td>Token</td>
+          <td>Phrase</td>
+          <td>Migration</td>
+          <td><p>Prior research has shown that source code also exhibits naturalness, i.e. it is written by humans and is likely to be
+repetitive. The researchers also showed that the n-gram language model is useful in predicting the next token in a source
+file given a large corpus of existing source code. In this paper, we investigate how well statistical machine translation
+(SMT) models for natural languages could help in migrating source code from one programming language to another.
+We treat source code as a sequence of lexical tokens and
+apply a phrase-based SMT model on the lexemes of those
+tokens. Our empirical evaluation on migrating two Java
+projects into C# showed that lexical, phrase-based SMT
+could achieve high lexical translation accuracy ( BLEU from
+81.3-82.6%). Users would have to manually edit only 11.9-15.8% of the total number of tokens in the resulting code to
+correct it. However, a high percentage of total translation
+methods (49.5-58.6%) is syntactically incorrect. Therefore,
+our result calls for a more program-oriented SMT model that
+is capable of better integrating the syntactic and semantic
+information of a program to support language migration.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="nguyen2013statistical"><a href="/publications/nguyen2013statistical">T.T. Nguyen, A.T. Nguyen, H.A. Nguyen, T.N. Nguyen, 2013.</a> A Statistical Semantic Language Model for Source Code</td>
+          <td>Language Model</td>
+          <td>Token + parse info</td>
+          <td>n-gram</td>
+          <td>Code Completion</td>
+          <td><p>Recent research has successfully applied the statistical n-gram language model to show that source code exhibits a
+good level of repetition. The n-gram model is shown to have
+good predictability in supporting code suggestion and completion. However, the state-of-the-art n-gram approach to
+capture source code regularities/patterns is based only on
+the lexical information in a local context of the code units.
+To improve predictability, we introduce SLAMC, a novel statistical semantic language model for source code. It incorporates semantic information into code tokens and models the
+regularities/patterns of such semantic annotations, called sememes, rather than their lexemes. It combines the local context in semantic n-grams with the global technical concerns/functionality into an n-gram topic model, together with pairwise associations of program elements. Based on SLAMC,
+we developed a new code suggestion method, which is empirically evaluated on several projects to have relatively 18–68%
+higher accuracy than the state-of-the-art approach.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="nguyen2015divide"><a href="/publications/nguyen2015divide">A.T. Nguyen, T.T. Nguyen, T.N. Nguyen, 2014.</a> Divide-and-Conquer Approach for Multi-phase Statistical Migration for Source Code</td>
+          <td>Transducer</td>
+          <td>Token + parse info</td>
+          <td>Phrase SMT</td>
+          <td>Migration</td>
+          <td><p>Prior research shows that directly applying phrase-based SMT on lexical tokens to migrate Java to C# produces
+much semantically incorrect code. A key limitation is the use of
+sequences in phrase-based SMT to model and translate source
+code with well-formed structures. We propose mppSMT, a divideand-conquer technique to address that with novel training and migration algorithms using phrase-based SMT in three phases. First,
+mppSMT treats a program as a sequence of syntactic units and
+maps/translates such sequences in two languages to one another.
+Second, with a syntax-directed fashion, it deals with the tokens
+within syntactic units by encoding them with semantic symbols to
+represent their data and token types. This encoding via semantic
+symbols helps better migration of API usages. Third, the lexical
+tokens corresponding to each sememe are mapped or migrated.
+The resulting sequences of tokens are merged together to form
+the final migrated code. Such divide-and-conquer and syntax-direction strategies enable phrase-based SMT to adapt well to
+syntactical structures in source code, thus, improving migration
+accuracy. Our empirical evaluation on several real-world systems
+shows that 84.8–97.9% and 70–83% of the migrated methods are
+syntactically and semantically correct, respectively. 26.3–51.2%
+of total migrated methods are exactly matched to the human-written C# code in the oracle. Compared to Java2CSharp, a rule-based migration tool, it achieves higher semantic accuracy from
+6.6–57.7% relatively. Importantly, it does not require manual
+labeling for training data or manual definition of rules.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="nguyen2015graph"><a href="/publications/nguyen2015graph">A.T. Nguyen, T.N. Nguyen, 2015.</a> Graph-based Statistical Language Model for Code</td>
+          <td>Language Model</td>
+          <td>Partial PDG</td>
+          <td>n-gram</td>
+          <td>Code Completion</td>
+          <td><p>n-gram statistical language model has been successfully applied to capture programming patterns to support code
+completion and suggestion. However, the approaches using n-gram face challenges in capturing the patterns at higher levels
+of abstraction due to the mismatch between the sequence nature
+in n-grams and the structure nature of syntax and semantics
+in source code. This paper presents GraLan, a graph-based
+statistical language model and its application in code suggestion. GraLan can learn from a source code corpus and compute
+the appearance probabilities of any graphs given the observed
+(sub)graphs. We use GraLan to develop an API suggestion
+engine and an AST-based language model, ASTLan. ASTLan
+supports the suggestion of the next valid syntactic template
+and the detection of common syntactic templates. Our empirical
+evaluation on a large corpus of open-source projects has shown
+that our engine is more accurate in API code suggestion than
+the state-of-the-art approaches, and in 75% of the cases, it can
+correctly suggest the API with only five candidates. ASTLan also
+has high accuracy in suggesting the next syntactic template and
+is able to detect many useful and common syntactic templates.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="oda2015learning"><a href="/publications/oda2015learning">Y. Oda, H. Fudaba, G. Neubig, H. Hata, S. Sakti, T. Toda, and S. Nakamura, 2015.</a> Learning to Generate Pseudo-code from Source Code using Statistical Machine Translation</td>
+          <td>Transducer</td>
+          <td>Syntax + Token</td>
+          <td>Tree-to-String + Phrase</td>
+          <td>Pseudocode Generation</td>
+          <td><p>Pseudo-code written in natural language can aid
+the comprehension of source code in unfamiliar programming
+languages. However, the great majority of source code has no
+corresponding pseudo-code, because pseudo-code is redundant
+and laborious to create. If pseudo-code could be generated
+automatically and instantly from given source code, we could
+allow for on-demand production of pseudo-code without human
+effort. In this paper, we propose a method to automatically
+generate pseudo-code from source code, specifically adopting the
+statistical machine translation (SMT) framework. SMT, which
+was originally designed to translate between two natural languages, allows us to automatically learn the relationship between
+source code/pseudo-code pairs, making it possible to create a
+pseudo-code generator with less human effort. In experiments,
+we generated English or Japanese pseudo-code from Python
+statements using SMT, and find that the generated pseudo-code
+is largely accurate, and aids code understanding.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="patra2016learning"><a href="/publications/patra2016learning">J. Patra, M. Pradel, 2016.</a> Learning to Fuzz: Application-Independent Fuzz Testing with Probabilistic, Generative Models of Input Data</td>
+          <td>Language Model</td>
+          <td>Syntax</td>
+          <td>Annotated PCFG</td>
+          <td>Fuzz Testing</td>
+          <td><p>Fuzzing is a popular technique to create test inputs for software that processes structured data. It has been successfully
+applied in various domains, ranging from compilers and interpreters over program analyses to rendering engines, image manipulation tools, and word processors. Existing fuzz
+testing techniques are tailored for a particular purpose and
+rely on a carefully crafted model of the data to be generated.
+This paper presents TreeFuzz, a generic approach for generating structured data without an a priori known model. The
+key idea is to exploit a given corpus of example data to au-
+tomatically infer probabilistic, generative models that create
+new data with properties similar to the corpus. To support a
+wide range of different properties, TreeFuzz is designed as a
+framework with an extensible set of techniques to infer generative models. We apply the idea to JavaScript programs
+and HTML documents and show that the approach generates mostly valid data for both of them: 96.3% of the generated JavaScript programs are syntactically valid and there are
+only 2.06 validation errors per kilobyte of generated HTML.
+The performance of both learning and generation scales linearly w.r.t. the size of the corpus. Using TreeFuzz-generated
+JavaScript programs for differential testing of JavaScript engines exposes various inconsistencies among browsers, including browser bugs and unimplemented language features.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="pham2016learning"><a href="/publications/pham2016learning">, .</a> </td>
+          <td>Language Model</td>
+          <td>Bytecode</td>
+          <td>Graphical Model (HMM)</td>
+          <td>Code Completion</td>
+          <td></td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="pu2016skp"><a href="/publications/pu2016skp">Y. Pu, K. Narasimhan, A. Solar-Lezama, R. Barzilay, 2016.</a> sk_p: a neural program corrector for MOOCs</td>
+          <td>Transducer</td>
+          <td>Token</td>
+          <td>NN (Seq2seq)</td>
+          <td>Code Fixing</td>
+          <td><p>We present a novel technique for automatic program correction in MOOCs, capable of fixing both syntactic and semantic errors without manual, problem specific correction strategies. Given an incorrect student program, it generates candidate programs from a distribution of likely corrections, and checks each candidate for correctness against a test suite.</p>
+
+<p>The key observation is that in MOOCs many programs share similar code fragments, and the seq2seq neural network model, used in the natural-language processing task of machine translation, can be modified and trained to recover these fragments.</p>
+
+<p>Experiment shows our scheme can correct 29% of all incorrect submissions and out-performs state of the art approach which requires manual, problem specific correction strategies.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="rabinovich2017abstract"><a href="/publications/rabinovich2017abstract">M. Rabinovich, M. Stern, D. Klein, 2017.</a> Abstract Syntax Networks for Code Generation and Semantic Parsing</td>
+          <td>Multimodal</td>
+          <td>Syntax</td>
+          <td>NN (LSTM-based)</td>
+          <td>Code Synthesis</td>
+          <td><p>Tasks like code generation and semantic parsing require mapping unstructured (or partially structured) inputs to well-formed, executable outputs. We introduce abstract syntax networks, a modeling framework for these problems. The outputs are represented as abstract syntax trees (ASTs) and constructed by a decoder with a dynamically-determined modular structure paralleling the structure of the output tree. On the benchmark Hearthstone dataset for code generation, our model obtains 79.2 BLEU and 22.7% exact match accuracy, compared to previous state-of-the-art values of 67.1 and 6.1%. Furthermore, we perform competitively on the Atis, Jobs, and Geo semantic parsing datasets with no task-specific engineering.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="ray2015naturalness"><a href="/publications/ray2015naturalness">B. Ray, V. Hellendoorn, S. Godhane, Z. Tu, A. Bacchelli, P. Devanbu, 2015.</a> On the “Naturalness” of Buggy Code</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram (cache)</td>
+          <td>Bug Detection</td>
+          <td><p>Real software, the kind working programmers produce by the kLOC
+to solve real-world problems, tends to be “natural”, like speech or
+natural language; it tends to be highly repetitive and predictable.
+Researchers have captured this naturalness of software through statistical models and used them to good effect in suggestion engines,
+porting tools, coding standards checkers, and idiom miners. This
+suggests that code that appears improbable, or surprising, to a good
+statistical language model is “unnatural” in some sense, and thus
+possibly suspicious. In this paper, we investigate this hypothesis. We consider a large corpus of bug fix commits (ca. 8,296),
+from 10 different Java projects, and we focus on its language statistics, evaluating the naturalness of buggy code and the corresponding fixes. We find that code with bugs tends to be more entropic
+(i.e. unnatural), becoming less so as bugs are fixed. Focusing on
+highly entropic lines is similar in cost-effectiveness to some well-known static bug finders (PMD, FindBugs) and ordering warnings
+from these bug finders using an entropy measure improves the cost-effectiveness of inspecting code implicated in warnings. This suggests that entropy may be a valid language-independent and simple
+way to complement the effectiveness of PMD or FindBugs, and
+that search-based bug-fixing methods may benefit from using entropy both for fault-localization and searching for fixes.</p>
+
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="raychev2014code"><a href="/publications/raychev2014code">V. Raychev, M. Vechev, E. Yahav, 2014.</a> Code Completion with Statistical Language Models</td>
+          <td>Language Model</td>
+          <td>Token + Constraints</td>
+          <td>n-gram/ RNN</td>
+          <td>Code Completion</td>
+          <td><p>We address the problem of synthesizing code completions for programs using APIs. Given a program with holes, we synthesize completions for holes with the most likely sequences of method calls.</p>
+
+<p>Our main idea is to reduce the problem of code completion to
+a natural-language processing problem of predicting probabilities
+of sentences. We design a simple and scalable static analysis that
+extracts sequences of method calls from a large codebase, and
+index these into a statistical language model. We then employ
+the language model to find the highest ranked sentences, and use
+them to synthesize a code completion. Our approach is able to
+synthesize sequences of calls across multiple objects together with
+their arguments.</p>
+
+<p>Experiments show that our approach is fast and effective. Virtually all computed completions typecheck, and the desired completion appears in the top 3 results in 90% of the cases.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="raychev2016learning"><a href="/publications/raychev2016learning">V. Raychev, P. Bielik, M. Vechev, A. Krause, 2016.</a> Learning Programs from Noisy Data</td>
+          <td>Language Model</td>
+          <td>Syntax</td>
+          <td>PCFG + annotations</td>
+          <td>Code Completion</td>
+          <td><p>We present a new approach for learning programs from noisy
+datasets. Our approach is based on two new concepts: a regularized
+program generator which produces a candidate program based on a
+small sample of the entire dataset while avoiding overfitting, and a
+dataset sampler which carefully samples the dataset by leveraging
+the candidate program’s score on that dataset. The two components
+are connected in a continuous feedback-directed loop.</p>
+
+<p>We show how to apply this approach to two settings: one where
+the dataset has a bound on the noise, and another without a noise
+bound. The second setting leads to a new way of performing
+approximate empirical risk minimization on hypotheses classes
+formed by a discrete search space.</p>
+
+<p>We then present two new kinds of program synthesizers which
+target the two noise settings. First, we introduce a novel regularized
+bitstream synthesizer that successfully generates programs even in
+the presence of incorrect examples. We show that the synthesizer
+can detect errors in the examples while combating overfitting –
+a major problem in existing synthesis techniques. We also show
+how the approach can be used in a setting where the dataset grows
+dynamically via new examples (e.g., provided by a human).</p>
+
+<p>Second, we present a novel technique for constructing statistical
+code completion systems. These are systems trained on massive
+datasets of open source programs, also known as “Big Code”. The
+key idea is to introduce a domain specific language (DSL) over
+trees and to learn functions in that DSL directly from the dataset.
+These learned functions then condition the predictions made by the
+system. This is a flexible and powerful technique which generalizes
+several existing works as we no longer need to decide a priori on
+what the prediction should be conditioned (another benefit is that
+the learned functions are a natural mechanism for explaining the
+prediction). As a result, our code completion system surpasses the
+prediction capabilities of existing, hard-wired systems.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="saraiva2015products"><a href="/publications/saraiva2015products">C. Saraiva, C. Bird, T. Zimmermann, 2015.</a> Products, Developers, and Milestones: How Should I Build My N-Gram Language Model</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>---</td>
+          <td><p>Recent work has shown that although programming languages en-
+able source code to be rich and complex, most code tends to be
+repetitive and predictable. The use of natural language processing
+(NLP) techniques applied to source code such as n-gram language
+models show great promise in areas such as code completion, aiding impaired developers, and code search. In this paper, we address
+three questions related to different methods of constructing lan-
+guage models in an industrial context. Specifically, we ask: (1) Do
+application specific, but smaller language models perform better
+than language models across applications? (2) Are developer specific language models effective and do they differ depending on
+what parts of the codebase a developer is working in? (3) Finally,
+do language models change over time, i.e., does a language model
+from early development model change later on in development?
+The answers to these questions enable techniques that make use of
+programming language models in development to choose the model
+training corpus more effectively.</p>
+
+<p>We evaluate these questions by building 28 language models across
+developers, time periods, and applications within Microsoft Office
+and present the results in this paper. We find that developer and
+application specific language models perform better than models
+from the entire codebase, but that temporality has little to no effect
+on language model performance.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="sharma2015nirmal"><a href="/publications/sharma2015nirmal">A. Sharma, Y. Tian, D. Lo, 2015.</a> NIRMAL: Automatic Identification of Software Relevant Tweets Leveraging Language Model</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Information Extraction</td>
+          <td><p>Twitter is one of the most widely used social media
+platforms today. It enables users to share and view short 140-character messages called “tweets”. About 284 million active
+users generate close to 500 million tweets per day. Such rapid
+generation of user generated content in large magnitudes results
+in the problem of information overload. Users who are interested
+in information related to a particular domain have limited means
+to filter out irrelevant tweets and tend to get lost in the huge
+amount of data they encounter. A recent study by Singer et
+al. found that software developers use Twitter to stay aware of
+industry trends, to learn from others, and to network with other
+developers. However, Singer et al. also reported that developers
+often find Twitter streams to contain too much noise which is a
+barrier to the adoption of Twitter. In this paper, to help developers
+cope with noise, we propose a novel approach named NIRMAL,
+which automatically identifies software relevant tweets from a
+collection or stream of tweets. Our approach is based on language
+modeling which learns a statistical model based on a training
+corpus (i.e., set of documents). We make use of a subset of posts
+from StackOverflow, a programming question and answer site, as
+a training corpus to learn a language model. A corpus of tweets
+was then used to test the effectiveness of the trained language
+model. The tweets were sorted based on the rank the model
+assigned to each of the individual tweets. The top 200 tweets
+were then manually analyzed to verify whether they are software
+related or not, and then an accuracy score was calculated. The
+results show that decent accuracy scores can be achieved by
+various variants of NIRMAL, which indicates that NIRMAL can
+effectively identify software related tweets from a huge corpus of
+tweets.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="tu2014localness"><a href="/publications/tu2014localness">Z. Tu, Z. Su, P. Devanbu, 2014.</a> On the Localness of Software</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram (cache)</td>
+          <td>Code Completion</td>
+          <td><p>The n-gram language model, which has its roots in statistical natural
+language processing, has been shown to successfully capture the
+repetitive and predictable regularities (“naturalness”) of source code,
+and help with tasks such as code suggestion, porting, and designing
+assistive coding devices. However, we show in this paper that this
+natural-language-based model fails to exploit a special property of
+source code: localness. We find that human-written programs are
+localized: they have useful local regularities that can be captured
+and exploited. We introduce a novel cache language model that
+consists of both an n-gram and an added “cache” component to
+exploit localness. We show empirically that the additional cache
+component greatly improves the n-gram approach by capturing
+the localness of software, as measured by both cross-entropy and
+suggestion accuracy. Our model’s suggestion accuracy is actually
+comparable to a state-of-the-art, semantically augmented language
+model; but it is simpler and easier to implement. Our cache language
+model requires nothing beyond lexicalization, and thus is applicable
+to all programming languages.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="vasilescu2017recovering"><a href="/publications/vasilescu2017recovering">B. Vasilescu, C. Casalnuovo, P. Devanbu, 2017.</a> Recovering Clear, Natural Identifiers from Obfuscated JS Names</td>
+          <td>Transducer</td>
+          <td>Token</td>
+          <td></td>
+          <td>Deobfuscation</td>
+          <td><p>Well-chosen variable names are critical to source code readability, reusability, and maintainability. Unfortunately, in deployed JavaScript code (which is ubiquitous on the web) the identifier names are frequently minified and overloaded. This is done both for efficiency and also to protect potentially proprietary intellectual property. In this paper, we describe an approach based on statistical machine translation (SMT) that recovers some of the original names from the JavaScript programs minified by the very popular UglifyJS. This simple tool, Autonym, performs comparably to the best currently available deobfuscator for JavaScript, JSNice, which uses sophisticated static analysis. In fact, Autonym is quite complementary to JSNice, performing well when it does not, and vice versa. We also introduce a new tool, JSNaughty, which blends Autonym and JSNice, and significantly outperforms both at identifier name recovery, while remaining just as easy to use as JSNice. JSNaughty is available online at http://jsnaughty.org.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="wang2016neural"><a href="/publications/wang2016neural">C. Liu, X. Wang, R. Shin, J.E. Gonzalez, D. Song, 2016.</a> Neural Code Completion</td>
+          <td>Language Model</td>
+          <td>Syntax</td>
+          <td>NN (LSTM)</td>
+          <td>Code Completion</td>
+          <td><p>Code completion, an essential part of modern software development, yet can be
+challenging for dynamically typed programming languages. In this paper we explore the use of neural network techniques to automatically learn code completion
+from a large corpus of dynamically typed JavaScript code. We show different
+neural networks that leverage not only token level information but also structural
+information, and evaluate their performance on different prediction tasks. We
+demonstrate that our models can outperform the state-of-the-art approach, which
+is based on decision tree techniques, on both next non-terminal and next terminal
+prediction tasks by 3.8 points and 0.5 points respectively. We believe that neural
+network techniques can play a transformative role in helping software developers
+manage the growing complexity of software systems, and we see this work as a
+first step in that direction.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="white2015toward"><a href="/publications/white2015toward">M. White, C. Vendome, M. Linares-Vásquez, D. Poshyvanyk, 2015.</a> Toward Deep Learning Software Repositories</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>NN (RNN)</td>
+          <td>---</td>
+          <td><p>Deep learning subsumes algorithms that automatically learn compositional representations. The ability of these
+models to generalize well has ushered in tremendous advances
+in many fields such as natural language processing (NLP).
+Recent research in the software engineering (SE) community
+has demonstrated the usefulness of applying NLP techniques to
+software corpora. Hence, we motivate deep learning for software
+language modeling, highlighting fundamental differences between
+state-of-the-practice software language models and connectionist
+models. Our deep learning models are applicable to source
+code files (since they only require lexically analyzed source
+code written in any programming language) and other types
+of artifacts. We show how a particular deep learning model
+can remember its state to effectively model sequential data,
+e.g., streaming software tokens, and the state is shown to be
+much more expressive than discrete tokens in a prefix. Then we
+instantiate deep learning models and show that deep learning
+induces high-quality models compared to n-grams and cache-based n-grams on a corpus of Java projects. We experiment
+with two of the models’ hyperparameters, which govern their
+capacity and the amount of context they use to inform predictions,
+before building several committees of software language models
+to aid generalization. Then we apply the deep learning models to
+code suggestion and demonstrate their effectiveness at a real SE
+task compared to state-of-the-practice models. Finally, we propose
+avenues for future work, where deep learning can be brought to
+bear to support model-based testing, improve software lexicons,
+and conceptualize software artifacts. Thus, our work serves as
+the first step toward deep learning software repositories.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="yadid2016extracting"><a href="/publications/yadid2016extracting">S. Yadid, E. Yahav, 2016.</a> Extracting Code from Programming Tutorial Videos</td>
+          <td>Language Model</td>
+          <td>Token</td>
+          <td>n-gram</td>
+          <td>Information Extraction</td>
+          <td><p>The number of programming tutorial videos on the web
+increases daily. Video hosting sites such as YouTube host
+millions of video lectures, with many programming tutorials for various languages and platforms. These videos contain a wealth of valuable information, including code that
+may be of interest. However, two main challenges have so
+far prevented the effective indexing of programming tutorial
+videos: (i) code in tutorials is typically written on-the-fly,
+with only parts of the code visible in each frame, and (ii) optical character recognition (OCR) is not precise enough to
+produce quality results from videos.</p>
+
+<p>We present a novel approach for extracting code from
+videos that is based on: (i) consolidating code across frames,
+and (ii) statistical language models for applying corrections
+at different levels, allowing us to make corrections by choosing the most likely token, combination of tokens that form a
+likely line structure, and combination of lines that lead to
+a likely code fragment in a particular language. We implemented our approach in a tool called ACE , and used it to extract code from 40 Android video tutorials on YouTube . Our
+evaluation shows that ACE extracts code with high accuracy,
+enabling deep indexing of video tutorials.</p>
+</td>
+      </tr>
+
+    
+    
+      <tr>
+          <td data-order="yin2017syntactic"><a href="/publications/yin2017syntactic">P. Yin, G. Neubig, 2017.</a> A Syntactic Neural Model for General-Purpose Code Generation</td>
+          <td>Multimodal</td>
+          <td>Syntax</td>
+          <td>NN (Seq2seq)</td>
+          <td>Synthesis</td>
+          <td><p>We consider the problem of parsing natural language descriptions into source code
+written in a general-purpose programming
+language like Python. Existing data-driven methods treat this problem as a language generation task without considering
+the underlying syntax of the target programming language. Informed by previous work in semantic parsing, in this paper we propose a novel neural architecture
+powered by a grammar model to explicitly
+capture the target syntax as prior knowledge. Experiments find this an effective
+way to scale up to generation of complex
+programs from natural language descriptions, achieving state-of-the-art results that
+well outperform previous code generation
+and semantic parsing approaches.</p>
+</td>
+      </tr>
+
+</tbody></table>
+
+<script>
+$(document).ready( function () {
+    $('#genModelTable').DataTable({
+		paging: false,
+		columnDefs: [
+			{
+				targets: [5],
+				visible: false,
+				searchable: true
+			}]
+		});
+});
+</script>
+
+    </div>
+
+  </body>
+</html>
