@@ -241,6 +241,22 @@ learning models that will be able to support developers in detecting mistakes in
 
 <tr>
 	<td>2020</td>
+	<td><a href="/publications/wang2020cocogum/">CoCoGUM: Contextual Code Summarization with Multi-Relational GNN on UMLs</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=CoCoGUM: Contextual Code Summarization with Multi-Relational GNN on UMLs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=CoCoGUM: Contextual Code Summarization with Multi-Relational GNN on UMLs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=CoCoGUM:%20Contextual%20Code%20Summarization%20with%20Multi-Relational%20GNN%20on%20UMLs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Yanlin Wang, Lun Du, Ensheng Shi, Yuxuan Hu, Shi Han, Dongmei Zhang</td>
+	<td></td>
+	<td><p>Code summaries are short natural language (NL) descriptions of code snippets that help developers better understand and maintain source code. Due to the pivotal role of code summaries in software development and maintenance, there is a surge of works on automatic code summarization to reduce the heavy burdens of developers. However, contemporary approaches only leverage the information within the boundary of the method being summarized (i.e., local context), and ignore that using broader context could assist with code summarization. In this paper, we explore two global context information, namely intra-class and inter-class context information, and propose the model CoCoGUM: Contextual Code Summarization with Multi-Relational Graph Neural Networks on UMLs. CoCoGUM first incorporates class names as the intra-class context, which is further fed to a Transformer-based sentence embedding model to extract the class lexical embeddings. Then, relevant Unified Modeling Language (UML) class diagrams are extracted as inter-class context and we use a Multi-Relational Graph Neural Network (MR-GNN) to encode the class relational embeddings. Class lexical embeddings and class relational embeddings, together with the outputs from code token encoder and AST encoder, are passed to the decoder armed with a two-level attention mechanism to generate high-quality context-aware code summaries. We conduct extensive experiments to evaluate our approach and compare it with other automatic code summarization models. The experimental results show that CoCoGUM outperforms state-of-the-art methods.</p>
+</td>
+	<td>summarization </td>
+</tr>
+
+<tr>
+	<td>2020</td>
 	<td><a href="/publications/wang2020trans/">TranS^3: A Transformer-based Framework for Unifying Code Summarization and Code Search</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=TranS^3: A Transformer-based Framework for Unifying Code Summarization and Code Search' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -1322,18 +1338,18 @@ https://github.com/tech-srl/code2vec.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/vasic2019neural/">Neural Program Repair by Jointly Learning to Localize and Repair</a>
+	<td><a href="/publications/kacmajor2019automatic/">Automatic Acquisition of Annotated Training Corpora for Test-Code Generation </a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Program%20Repair%20by%20Jointly%20Learning%20to%20Localize%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Automatic%20Acquisition%20of%20Annotated%20Training%20Corpora%20for%20Test-Code%20Generation%20' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>M. Vasic, A. Kanade, P. Maniatis, D. Bieber, R. Singh</td>
-	<td>ICLR</td>
-	<td><p>Due to its potential to improve programmer productivity and software quality, automated program repair has been an active topic of research. Newer techniques harness neural networks to learn directly from examples of buggy programs and their fixes. In this work, we consider a recently identified class of bugs called variable-misuse bugs. The state-of-the-art solution for variable misuse enumerates potential fixes for all possible bug locations in a program, before selecting the best prediction. We show that it is beneficial to train a model that jointly and directly localizes and repairs variable-misuse bugs. We present multi-headed pointer networks for this purpose, with one head each for localization and repair. The experimental results show that the joint model significantly outperforms an enumerative solution that uses a pointer based model for repair alone.</p>
+	<td>M. Kacmajor, J. D. Kelleher</td>
+	<td>Information</td>
+	<td><p>Open software repositories make large amounts of source code publicly available. Potentially, this source code could be used as training data to develop new, machine learning-based programming tools. For many applications, however, raw code scraped from online repositories does not constitute an adequate training dataset. Building on the recent and rapid improvements in machine translation (MT), one possibly very interesting application is code generation from natural language descriptions. One of the bottlenecks in developing these MT-inspired systems is the acquisition of parallel text-code corpora required for training code-generative models. This paper addresses the problem of automatically synthetizing parallel text-code corpora in the software testing domain. Our approach is based on the observation that self-documentation through descriptive method names is widely adopted in test automation, in particular for unit testing. Therefore, we propose synthesizing parallel corpora comprised of parsed test function names serving as code descriptions, aligned with the corresponding function bodies. We present the results of applying one of the state-of-the-art MT methods on such a generated dataset. Our experiments show that a neural MT model trained on our dataset can generate syntactically correct and semantically relevant short Java functions from quasi-natural language descriptions of functionality.</p>
 </td>
-	<td>repair program analysis variable misuse </td>
+	<td></td>
 </tr>
 
 <tr>
@@ -1908,18 +1924,18 @@ the predictions made by our model are much more accurate and informative.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/wang2019learning/">Learning Scalable and Precise Representation of Program Semantics</a>
+	<td><a href="/publications/vasic2019neural/">Neural Program Repair by Jointly Learning to Localize and Repair</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Learning%20Scalable%20and%20Precise%20Representation%20of%20Program%20Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Program%20Repair%20by%20Jointly%20Learning%20to%20Localize%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>K. Wang</td>
-	<td></td>
-	<td><p>Neural program embedding has shown potential in aiding the analysis of large-scale, complicated software. Newly proposed deep neural architectures pride themselves on learning program semantics rather than superficial syntactic features. However, by considering the source code only, the vast majority of neural networks do not capture a deep, precise representation of program semantics. In this paper, we present \dypro, a novel deep neural network that learns from program execution traces. Compared to the prior dynamic models, not only is \dypro capable of generalizing across multiple executions for learning a program’s dynamic semantics in its entirety, but \dypro is also more efficient when dealing with programs yielding long execution traces. For evaluation, we task \dypro with semantic classification (i.e. categorizing programs based on their semantics) and compared it against two prominent static models: Gated Graph Neural Network and TreeLSTM. We find that \dypro achieves the highest prediction accuracy among all models. To further reveal the capacity of all aforementioned deep neural architectures, we examine if the models can learn to detect deeper semantic properties of a program. In particular given a task of recognizing loop invariants, we show \dypro beats all static models by a wide margin.</p>
+	<td>M. Vasic, A. Kanade, P. Maniatis, D. Bieber, R. Singh</td>
+	<td>ICLR</td>
+	<td><p>Due to its potential to improve programmer productivity and software quality, automated program repair has been an active topic of research. Newer techniques harness neural networks to learn directly from examples of buggy programs and their fixes. In this work, we consider a recently identified class of bugs called variable-misuse bugs. The state-of-the-art solution for variable misuse enumerates potential fixes for all possible bug locations in a program, before selecting the best prediction. We show that it is beneficial to train a model that jointly and directly localizes and repairs variable-misuse bugs. We present multi-headed pointer networks for this purpose, with one head each for localization and repair. The experimental results show that the joint model significantly outperforms an enumerative solution that uses a pointer based model for repair alone.</p>
 </td>
-	<td>representation dynamic </td>
+	<td>repair program analysis variable misuse </td>
 </tr>
 
 <tr>
@@ -2282,18 +2298,18 @@ component of our model.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/kacmajor2019automatic/">Automatic Acquisition of Annotated Training Corpora for Test-Code Generation </a>
+	<td><a href="/publications/wang2019learning/">Learning Scalable and Precise Representation of Program Semantics</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Automatic%20Acquisition%20of%20Annotated%20Training%20Corpora%20for%20Test-Code%20Generation%20' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Learning%20Scalable%20and%20Precise%20Representation%20of%20Program%20Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>M. Kacmajor, J. D. Kelleher</td>
-	<td>Information</td>
-	<td><p>Open software repositories make large amounts of source code publicly available. Potentially, this source code could be used as training data to develop new, machine learning-based programming tools. For many applications, however, raw code scraped from online repositories does not constitute an adequate training dataset. Building on the recent and rapid improvements in machine translation (MT), one possibly very interesting application is code generation from natural language descriptions. One of the bottlenecks in developing these MT-inspired systems is the acquisition of parallel text-code corpora required for training code-generative models. This paper addresses the problem of automatically synthetizing parallel text-code corpora in the software testing domain. Our approach is based on the observation that self-documentation through descriptive method names is widely adopted in test automation, in particular for unit testing. Therefore, we propose synthesizing parallel corpora comprised of parsed test function names serving as code descriptions, aligned with the corresponding function bodies. We present the results of applying one of the state-of-the-art MT methods on such a generated dataset. Our experiments show that a neural MT model trained on our dataset can generate syntactically correct and semantically relevant short Java functions from quasi-natural language descriptions of functionality.</p>
-</td>
+	<td>K. Wang</td>
 	<td></td>
+	<td><p>Neural program embedding has shown potential in aiding the analysis of large-scale, complicated software. Newly proposed deep neural architectures pride themselves on learning program semantics rather than superficial syntactic features. However, by considering the source code only, the vast majority of neural networks do not capture a deep, precise representation of program semantics. In this paper, we present \dypro, a novel deep neural network that learns from program execution traces. Compared to the prior dynamic models, not only is \dypro capable of generalizing across multiple executions for learning a program’s dynamic semantics in its entirety, but \dypro is also more efficient when dealing with programs yielding long execution traces. For evaluation, we task \dypro with semantic classification (i.e. categorizing programs based on their semantics) and compared it against two prominent static models: Gated Graph Neural Network and TreeLSTM. We find that \dypro achieves the highest prediction accuracy among all models. To further reveal the capacity of all aforementioned deep neural architectures, we examine if the models can learn to detect deeper semantic properties of a program. In particular given a task of recognizing loop invariants, we show \dypro beats all static models by a wide margin.</p>
+</td>
+	<td>representation dynamic </td>
 </tr>
 
 
