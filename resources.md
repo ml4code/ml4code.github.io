@@ -40,8 +40,9 @@ The last few years a few workshops have been organized in this area. Please, fee
 * [Sofware Analysis](http://rightingcode.org/) in Univ. of Pennsylvania. It is a great introduction to Program Analysis [[videos](https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543
 
 ### Competitions
-
-* [CodRep: Machine Learning on Source Code Competition](https://github.com/KTH/CodRep-competition) by KTH. Starts on April 14th 2018.
+* [CodeSearchNet Challenge: Evaluating the State of Semantic Code Search](https://github.com/github/CodeSearchNet) by Github. Starts Sep 2019.
+* [CodRep 2019: Machine Learning on Source Code Competition](https://github.com/KTH/codrep-2019) by KTH. Starts on April 25th 2019.
+* [CodRep 2018: Machine Learning on Source Code Competition](https://github.com/KTH/CodRep-competition) by KTH. Starts on April 14th 2018.
 
 ### Other Collections of Related Work
 [Source{d}](https://sourced.tech/) has collected a set of links and
