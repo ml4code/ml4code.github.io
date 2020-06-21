@@ -37,7 +37,7 @@ The last few years a few workshops have been organized in this area. Please, fee
 
 ### Courses on Important Relevant Background
 
-* [Sofware Analysis](http://rightingcode.org/) in Univ. of Pennsylvania. It is a great introduction to Program Analysis [[videos](https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543
+* [Sofware Analysis](http://rightingcode.org/) in Univ. of Pennsylvania. It is a great introduction to Program Analysis [[videos](https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543)]
 
 ### Competitions
 * [CodeSearchNet Challenge: Evaluating the State of Semantic Code Search](https://github.com/github/CodeSearchNet) by Github. Starts Sep 2019.
