@@ -45,5 +45,8 @@ The last few years a few workshops have been organized in this area. Please, fee
 * [CodRep 2018: Machine Learning on Source Code Competition](https://github.com/KTH/CodRep-competition) by KTH. Starts on April 14th 2018.
 
 ### Other Collections of Related Work
-[Source{d}](https://sourced.tech/) has collected a set of links and
+* [source{d}](https://sourced.tech/) has collected a set of links and
 papers in the area. You can access the list [here](https://github.com/src-d/awesome-machine-learning-on-source-code).
+* [Autormated Program Repair](https://www.monperrus.net/martin/automatic-software-repair)
+has a curated list of pointers for helping newcomers to understan the field,
+maintained by [Martin Monperrus](www.monperrus.net).
