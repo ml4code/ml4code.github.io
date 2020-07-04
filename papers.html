@@ -195,6 +195,22 @@ Our best model yields an average edit similarity of 86.7% and a perplexity of 1.
 
 <tr>
 	<td>2020</td>
+	<td><a href="/publications/compton2020embedding/">Embedding Java Classes with code2vec: Improvements from Variable Obfuscation</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Embedding Java Classes with code2vec: Improvements from Variable Obfuscation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Embedding Java Classes with code2vec: Improvements from Variable Obfuscation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Embedding%20Java%20Classes%20with%20code2vec:%20Improvements%20from%20Variable%20Obfuscation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>R. Compton, E. Frank, P. Patros, A. Koay</td>
+	<td>MSR</td>
+	<td><p>Automatic source code analysis in key areas of software engineering, such as code security, can benefit from Machine Learning (ML). However, many standard ML approaches require a numeric representation of data and cannot be applied directly to source code. Thus, to enable ML, we need to embed source code into numeric feature vectors while maintaining the semantics of the code as much as possible. code2vec is a recently released embedding approach that uses the proxy task of method name prediction to map Java methods to feature vectors. However, experimentation with code2vec shows that it learns to rely on variable names for prediction, causing it to be easily fooled by typos or adversarial attacks. Moreover, it is only able to embed individual Java methods and cannot embed an entire collection of methods such as those present in a typical Java class, making it difficult to perform predictions at the class level (e.g., for the identification of malicious Java classes). Both shortcomings are addressed in the research presented in this paper. We investigate the effect of obfuscating variable names during the training of a code2vec model to force it to rely on the structure of the code rather than specific names and consider a simple approach to creating class-level embeddings by aggregating sets of method embeddings. Our results, obtained on a challenging new collection of source-code classification problems, indicate that obfuscating variable names produces an embedding model that is both impervious to variable naming and more accurately reflects code semantics. The datasets, models, and code are shared for further ML research on source code.</p>
+</td>
+	<td>naming adversarial </td>
+</tr>
+
+<tr>
+	<td>2020</td>
 	<td><a href="/publications/briem2020offside/">OffSide: Learning to Identify Mistakes in Boundary Conditions</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=OffSide: Learning to Identify Mistakes in Boundary Conditions' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -225,18 +241,18 @@ learning models that will be able to support developers in detecting mistakes in
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/compton2020embedding/">Embedding Java Classes with code2vec: Improvements from Variable Obfuscation</a>
+	<td><a href="/publications/dinella2020hoppity/">Hoppity: Learning Bug Detection and Repair</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Embedding Java Classes with code2vec: Improvements from Variable Obfuscation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Embedding Java Classes with code2vec: Improvements from Variable Obfuscation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Embedding%20Java%20Classes%20with%20code2vec:%20Improvements%20from%20Variable%20Obfuscation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Hoppity: Learning Bug Detection and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Hoppity: Learning Bug Detection and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Hoppity:%20Learning%20Bug%20Detection%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>R. Compton, E. Frank, P. Patros, A. Koay</td>
-	<td>MSR</td>
-	<td><p>Automatic source code analysis in key areas of software engineering, such as code security, can benefit from Machine Learning (ML). However, many standard ML approaches require a numeric representation of data and cannot be applied directly to source code. Thus, to enable ML, we need to embed source code into numeric feature vectors while maintaining the semantics of the code as much as possible. code2vec is a recently released embedding approach that uses the proxy task of method name prediction to map Java methods to feature vectors. However, experimentation with code2vec shows that it learns to rely on variable names for prediction, causing it to be easily fooled by typos or adversarial attacks. Moreover, it is only able to embed individual Java methods and cannot embed an entire collection of methods such as those present in a typical Java class, making it difficult to perform predictions at the class level (e.g., for the identification of malicious Java classes). Both shortcomings are addressed in the research presented in this paper. We investigate the effect of obfuscating variable names during the training of a code2vec model to force it to rely on the structure of the code rather than specific names and consider a simple approach to creating class-level embeddings by aggregating sets of method embeddings. Our results, obtained on a challenging new collection of source-code classification problems, indicate that obfuscating variable names produces an embedding model that is both impervious to variable naming and more accurately reflects code semantics. The datasets, models, and code are shared for further ML research on source code.</p>
+	<td>E. Dinella, H. Dai, Z. Li, M. Naik, L. Song, K. Wang</td>
+	<td>ICLR</td>
+	<td><p>We present a learning-based approach to detect and fix a broad range of bugs in Javascript programs. We frame the problem in terms of learning a sequence of graph transformations: given a buggy program modeled by a graph structure, our model makes a sequence of predictions including the position of bug nodes and corresponding graph edits to produce a fix. Unlike previous works that use deep neural networks, our approach targets bugs that are more complex and semantic in nature (i.e.~bugs that require adding or deleting statements to fix). We have realized our approach in a tool called HOPPITY. By training on 338,877 Javascript code change commits on Github, HOPPITY correctly detects and fixes bugs in 9,612 out of 42,365 programs in an end-to-end fashion. Given the bug location and type of the fix, HOPPITY also outperforms the baseline approach by a wide margin.</p>
 </td>
-	<td>naming adversarial </td>
+	<td>edit repair </td>
 </tr>
 
 <tr>
@@ -273,22 +289,6 @@ learning models that will be able to support developers in detecting mistakes in
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/dinella2020hoppity/">Hoppity: Learning Bug Detection and Repair</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Hoppity: Learning Bug Detection and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Hoppity: Learning Bug Detection and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Hoppity:%20Learning%20Bug%20Detection%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>E. Dinella, H. Dai, Z. Li, M. Naik, L. Song, K. Wang</td>
-	<td>ICLR</td>
-	<td><p>We present a learning-based approach to detect and fix a broad range of bugs in Javascript programs. We frame the problem in terms of learning a sequence of graph transformations: given a buggy program modeled by a graph structure, our model makes a sequence of predictions including the position of bug nodes and corresponding graph edits to produce a fix. Unlike previous works that use deep neural networks, our approach targets bugs that are more complex and semantic in nature (i.e.~bugs that require adding or deleting statements to fix). We have realized our approach in a tool called HOPPITY. By training on 338,877 Javascript code change commits on Github, HOPPITY correctly detects and fixes bugs in 9,612 out of 42,365 programs in an end-to-end fashion. Given the bug location and type of the fix, HOPPITY also outperforms the baseline approach by a wide margin.</p>
-</td>
-	<td>edit repair </td>
-</tr>
-
-<tr>
-	<td>2020</td>
 	<td><a href="/publications/feng2020codebert/">CodeBERT: A Pre-Trained Model for Programming and Natural Languages</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=CodeBERT: A Pre-Trained Model for Programming and Natural Languages' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -301,6 +301,24 @@ learning models that will be able to support developers in detecting mistakes in
 	<td><p>We present CodeBERT, a bimodal pre-trained model for programming language (PL) and nat-ural language (NL). CodeBERT learns general-purpose representations that support downstream NL-PL applications such as natural language codesearch, code documentation generation, etc. We develop CodeBERT with Transformer-based neural architecture, and train it with a hybrid objective function that incorporates the pre-training task of replaced token detection, which is to detect plausible alternatives sampled from generators. This enables us to utilize both bimodal data of NL-PL pairs and unimodal data, where the former provides input tokens for model training while the latter helps to learn better generators. We evaluate CodeBERT on two NL-PL applications by fine-tuning model parameters. Results show that CodeBERT achieves state-of-the-art performance on both natural language code search and code documentation generation tasks. Furthermore, to investigate what type of knowledge is learned in CodeBERT, we construct a dataset for NL-PL probing, and evaluate in a zero-shot setting where parameters of pre-trained models are fixed. Results show that CodeBERT performs better than previous pre-trained models on NL-PL probing.</p>
 </td>
 	<td>pretraining </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/ramakrishnan2020semantic/">Semantic Robustness of Models of Source Code</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Semantic Robustness of Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Semantic Robustness of Models of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Semantic%20Robustness%20of%20Models%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>G. Ramakrishnan, J. Henkel, Z. Wang, A. Albarghouthi, S. Jha, T. Reps</td>
+	<td></td>
+	<td><p>Deep neural networks are vulnerable to adversarial examples - small input perturbations that result in incorrect predictions. We study this problem in the context of models of source code, where we want the network to be robust to source-code modifications that preserve code functionality. We define a natural notion of robustness, k-transformation robustness, in which an adversary performs up to k semantics-preserving transformations to an input program. We show how to train robust models using an adversarial training objective inspired by that of Madry et al. (2018) for continuous domains.</p>
+
+<p>We implement an extensible framework for adversarial training over source code, and conduct a thorough evaluation on a number of datasets and two different architectures. Our results show (1) the increase in robustness following adversarial training, (2) the ability of training on weak adversaries to provide robustness to attacks by stronger adversaries, and (3) the shift in attribution focus of adversarially trained models towards semantic vs. syntactic features.</p>
+</td>
+	<td>adversarial naming </td>
 </tr>
 
 <tr>
@@ -337,20 +355,18 @@ learning models that will be able to support developers in detecting mistakes in
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/ramakrishnan2020semantic/">Semantic Robustness of Models of Source Code</a>
+	<td><a href="/publications/hellendoorn2020global/">Global Relational Models of Source Code</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Semantic Robustness of Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Semantic Robustness of Models of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Semantic%20Robustness%20of%20Models%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Global Relational Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Global Relational Models of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Global%20Relational%20Models%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>G. Ramakrishnan, J. Henkel, Z. Wang, A. Albarghouthi, S. Jha, T. Reps</td>
-	<td></td>
-	<td><p>Deep neural networks are vulnerable to adversarial examples - small input perturbations that result in incorrect predictions. We study this problem in the context of models of source code, where we want the network to be robust to source-code modifications that preserve code functionality. We define a natural notion of robustness, k-transformation robustness, in which an adversary performs up to k semantics-preserving transformations to an input program. We show how to train robust models using an adversarial training objective inspired by that of Madry et al. (2018) for continuous domains.</p>
-
-<p>We implement an extensible framework for adversarial training over source code, and conduct a thorough evaluation on a number of datasets and two different architectures. Our results show (1) the increase in robustness following adversarial training, (2) the ability of training on weak adversaries to provide robustness to attacks by stronger adversaries, and (3) the shift in attribution focus of adversarially trained models towards semantic vs. syntactic features.</p>
+	<td>V.J. Hellendoorn, C. Sutton, R. Singh, P. Maniatis, D. Bieber</td>
+	<td>ICLR</td>
+	<td><p>Models of code can learn distributed representations of a program’s syntax and semantics to predict many non-trivial properties of a program. Recent state-of-the-art models leverage highly structured representations of programs, such as trees, graphs and paths therein (e.g. data-flow relations), which are precise and abundantly available for code. This provides a strong inductive bias towards semantically meaningful relations, yielding more generalizable representations than classical sequence-based models. Unfortunately, these models primarily rely on graph-based message passing to represent relations in code, which makes them de facto local due to the high cost of message-passing steps, quite in contrast to modern, global sequence-based models, such as the Transformer. In this work, we bridge this divide between global and structured models by introducing two new hybrid model families that are both global and incorporate structural bias: Graph Sandwiches, which wrap traditional (gated) graph message-passing layers in sequential message-passing layers; and Graph Relational Embedding Attention Transformers (GREAT for short), which bias traditional Transformers with relational information from graph edge types. By studying a popular, non-trivial program repair task, variable-misuse identification, we explore the relative merits of traditional and hybrid model families for code representation. Starting with a  graph-based model that already improves upon the prior state-of-the-art for this task by 20%, we show that our proposed hybrid models improve an additional 10-15%, while training both faster and using fewer parameters.</p>
 </td>
-	<td>adversarial naming </td>
+	<td>variable misuse defect GNN </td>
 </tr>
 
 <tr>
@@ -371,22 +387,6 @@ learning models that will be able to support developers in detecting mistakes in
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/hellendoorn2020global/">Global Relational Models of Source Code</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Global Relational Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Global Relational Models of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Global%20Relational%20Models%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>V.J. Hellendoorn, C. Sutton, R. Singh, P. Maniatis, D. Bieber</td>
-	<td>ICLR</td>
-	<td><p>Models of code can learn distributed representations of a program’s syntax and semantics to predict many non-trivial properties of a program. Recent state-of-the-art models leverage highly structured representations of programs, such as trees, graphs and paths therein (e.g. data-flow relations), which are precise and abundantly available for code. This provides a strong inductive bias towards semantically meaningful relations, yielding more generalizable representations than classical sequence-based models. Unfortunately, these models primarily rely on graph-based message passing to represent relations in code, which makes them de facto local due to the high cost of message-passing steps, quite in contrast to modern, global sequence-based models, such as the Transformer. In this work, we bridge this divide between global and structured models by introducing two new hybrid model families that are both global and incorporate structural bias: Graph Sandwiches, which wrap traditional (gated) graph message-passing layers in sequential message-passing layers; and Graph Relational Embedding Attention Transformers (GREAT for short), which bias traditional Transformers with relational information from graph edge types. By studying a popular, non-trivial program repair task, variable-misuse identification, we explore the relative merits of traditional and hybrid model families for code representation. Starting with a  graph-based model that already improves upon the prior state-of-the-art for this task by 20%, we show that our proposed hybrid models improve an additional 10-15%, while training both faster and using fewer parameters.</p>
-</td>
-	<td>variable misuse defect GNN </td>
-</tr>
-
-<tr>
-	<td>2020</td>
 	<td><a href="/publications/hoang2020cc2vec/">CC2Vec: Distributed Representations of Code Changes</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=CC2Vec: Distributed Representations of Code Changes' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -401,6 +401,22 @@ learning models that will be able to support developers in detecting mistakes in
 <p>To evaluate if CC2Vec can produce a distributed representation of code changes that is general and useful for multiple tasks on software patches, we use the vectors produced by CC2Vec for three tasks: log message generation, bug fixing patch identification, and just-in-time defect prediction. In all tasks, the models using CC2Vec outperform the state-of-the-art techniques.</p>
 </td>
 	<td>edit </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/panthaplackel2020learning/">Learning to Update Natural Language Comments Based on Code Changes</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning to Update Natural Language Comments Based on Code Changes' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Learning to Update Natural Language Comments Based on Code Changes' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Learning%20to%20Update%20Natural%20Language%20Comments%20Based%20on%20Code%20Changes' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>S. Panthaplackel, P.Nie, M. Gligoric, J. J. Li, R. J. Mooney</td>
+	<td>ACL</td>
+	<td><p>We formulate the novel task of automatically updating an existing natural language comment based on changes in the body of code it accompanies. We propose an approach that learns to correlate changes across two distinct language representations, to generate a sequence of edits that are applied to the existing comment to reflect the source code modifications. We train and evaluate our model using a dataset that we collected from commit histories of open-source software projects, with each example consisting of a concurrent update to a method and its corresponding comment. We compare our approach against multiple baselines using both automatic metrics and human evaluation. Results reflect the challenge of this task and that our model outperforms baselines with respect to making edits.</p>
+</td>
+	<td>bimodal edit documentation </td>
 </tr>
 
 <tr>
@@ -763,18 +779,18 @@ problem and in guiding comment generation.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/li2019neural/">Neural Code Search Evaluation Dataset</a>
+	<td><a href="/publications/li2019using/">Using GGNN to recommend log statement level</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Code Search Evaluation Dataset' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Neural Code Search Evaluation Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Code%20Search%20Evaluation%20Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Using GGNN to recommend log statement level' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Using GGNN to recommend log statement level' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Using%20GGNN%20to%20recommend%20log%20statement%20level' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>H. Li, S. Kim, S. Chandra</td>
+	<td>M. Li, J. Pei, J. He, K. Song, F. Che, Y. Huang, C. Wang</td>
 	<td></td>
-	<td><p>There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work.</p>
+	<td><p>In software engineering, log statement is an important part because programmers can’t access to users’ program and they can only rely on log message to find the root of bugs. The mechanism of “log level” allows developers and users to specify the appropriate amount of logs to print during the execution of the software. And 26\% of the log statement modification is to modify the level. We tried to use ML method to predict the suitable level of log statement. The specific model is GGNN(gated graph neural network) and we have drawn lessons from Microsoft’s research. In this work, we apply Graph Neural Networks to predict the usage of log statement level of some open source java projects from github. Given the good performance of GGNN in this task, we are confident that GGNN is an excellent choice for processing source code. We envision this model can play an important role in applying AI/ML technique for Software Development Life Cycle more broadly.</p>
 </td>
-	<td>dataset search </td>
+	<td>GNN logging </td>
 </tr>
 
 <tr>
@@ -989,22 +1005,6 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/li2019using/">Using GGNN to recommend log statement level</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Using GGNN to recommend log statement level' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Using GGNN to recommend log statement level' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Using%20GGNN%20to%20recommend%20log%20statement%20level' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>M. Li, J. Pei, J. He, K. Song, F. Che, Y. Huang, C. Wang</td>
-	<td></td>
-	<td><p>In software engineering, log statement is an important part because programmers can’t access to users’ program and they can only rely on log message to find the root of bugs. The mechanism of “log level” allows developers and users to specify the appropriate amount of logs to print during the execution of the software. And 26\% of the log statement modification is to modify the level. We tried to use ML method to predict the suitable level of log statement. The specific model is GGNN(gated graph neural network) and we have drawn lessons from Microsoft’s research. In this work, we apply Graph Neural Networks to predict the usage of log statement level of some open source java projects from github. Given the good performance of GGNN in this task, we are confident that GGNN is an excellent choice for processing source code. We envision this model can play an important role in applying AI/ML technique for Software Development Life Cycle more broadly.</p>
-</td>
-	<td>GNN logging </td>
-</tr>
-
-<tr>
-	<td>2019</td>
 	<td><a href="/publications/lu2019program/">Program Classification Using Gated Graph Attention Neural Network for Online Programming Service</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Program Classification Using Gated Graph Attention Neural Network for Online Programming Service' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -1017,6 +1017,22 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 	<td><p>The online programing services, such as Github, TopCoder, and EduCoder, have promoted a lot of social interactions among the service users. However, the existing social interactions is rather limited and inefficient due to the rapid increasing of source-code repositories, which is difficult to explore manually. The emergence of source-code mining provides a promising way to analyze those source codes, so that those source codes can be relatively easy to understand and share among those service users. Among all the source-code mining attempts,program classification lays a foundation for various tasks related to source-code understanding, because it is impossible for a machine to understand a computer program if it cannot classify the program correctly. Although numerous machine learning models, such as the Natural Language Processing (NLP) based models and the Abstract Syntax Tree (AST) based models, have been proposed to classify computer programs based on their corresponding source codes, the existing works cannot fully characterize the source codes from the perspective of both the syntax and semantic information. To address this problem, we proposed a Graph Neural Network (GNN) based model, which integrates data flow and function call information to the AST,and applies an improved GNN model to the integrated graph, so as to achieve the state-of-art program classification accuracy. The experiment results have shown that the proposed work can classify programs with accuracy over 97%.</p>
 </td>
 	<td>GNN representation </td>
+</tr>
+
+<tr>
+	<td>2019</td>
+	<td><a href="/publications/li2019neural/">Neural Code Search Evaluation Dataset</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Code Search Evaluation Dataset' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Neural Code Search Evaluation Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Code%20Search%20Evaluation%20Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>H. Li, S. Kim, S. Chandra</td>
+	<td></td>
+	<td><p>There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work.</p>
+</td>
+	<td>dataset search </td>
 </tr>
 
 <tr>
@@ -1338,18 +1354,18 @@ https://github.com/tech-srl/code2vec.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/kacmajor2019automatic/">Automatic Acquisition of Annotated Training Corpora for Test-Code Generation </a>
+	<td><a href="/publications/tufano2019learning/">On Learning Meaningful Code Changes via Neural Machine Translation</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Automatic%20Acquisition%20of%20Annotated%20Training%20Corpora%20for%20Test-Code%20Generation%20' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=On Learning Meaningful Code Changes via Neural Machine Translation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=On Learning Meaningful Code Changes via Neural Machine Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=On%20Learning%20Meaningful%20Code%20Changes%20via%20Neural%20Machine%20Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>M. Kacmajor, J. D. Kelleher</td>
-	<td>Information</td>
-	<td><p>Open software repositories make large amounts of source code publicly available. Potentially, this source code could be used as training data to develop new, machine learning-based programming tools. For many applications, however, raw code scraped from online repositories does not constitute an adequate training dataset. Building on the recent and rapid improvements in machine translation (MT), one possibly very interesting application is code generation from natural language descriptions. One of the bottlenecks in developing these MT-inspired systems is the acquisition of parallel text-code corpora required for training code-generative models. This paper addresses the problem of automatically synthetizing parallel text-code corpora in the software testing domain. Our approach is based on the observation that self-documentation through descriptive method names is widely adopted in test automation, in particular for unit testing. Therefore, we propose synthesizing parallel corpora comprised of parsed test function names serving as code descriptions, aligned with the corresponding function bodies. We present the results of applying one of the state-of-the-art MT methods on such a generated dataset. Our experiments show that a neural MT model trained on our dataset can generate syntactically correct and semantically relevant short Java functions from quasi-natural language descriptions of functionality.</p>
+	<td>M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk</td>
+	<td>ICSE</td>
+	<td><p>Recent years have seen the rise of Deep Learning (DL) techniques applied to source code. Researchers have exploited DL to automate several development and maintenance tasks, such as writing commit messages, generating comments and detecting vulnerabilities among others. One of the long lasting dreams of applying DL to code is the possibility to automate non-trivial coding activities. While some steps in this direction have been taken (e.g., learning how to fix bugs), there is still a lack of empirical evidence on the types of code changes that can be learned and automatically applied by DL. Our goal is to make this first step by quantitatively and qualitatively investigating the ability of a Neural Machine Translation (NMT) model to learn how to automatically apply code changes implemented by developers during pull requests. We train and experiment with the NMT model on a set of 236k pairs of code components before and after the implementation of the changes provided in the pull requests. We show that, when applied in a narrow enough context (i.e., small/medium-sized pairs of methods before/after the pull request changes), NMT can automatically replicate the changes implemented by developers during pull requests in up to 36% of the cases. Moreover, our qualitative analysis shows that the model is capable of learning and replicating a wide variety of meaningful code changes, especially refactorings and bug-fixing activities. Our results pave the way to novel research in the area of DL on code, such as the automatic learning and applications of refactoring.</p>
 </td>
-	<td></td>
+	<td>repair edit </td>
 </tr>
 
 <tr>
@@ -1420,6 +1436,22 @@ the performance of existing code retrieval models significantly.</p>
 	<td><p>We address the problem of Any-Code Generation (AnyGen) - generating code without any restriction on the vocabulary or structure. The state-of-the-art in this problem is the sequence-to-sequence (seq2seq) approach, which treats code as a sequence and does not leverage any structural information. We introduce a new approach to AnyGen that leverages the strict syntax of programming languages to model a code snippet as a tree - structural language modeling (SLM). SLM estimates the probability of the program’s abstract syntax tree (AST) by decomposing it into a product of conditional probabilities over its nodes. We present a neural model that computes these conditional probabilities by considering all AST paths leading to a target node. Unlike previous structural techniques that have severely restricted the kinds of expressions that can be generated, our approach can generate arbitrary expressions in any programming language. Our model significantly outperforms both seq2seq and a variety of existing structured approaches in generating Java and C# code. We make our code, datasets, and models available online.</p>
 </td>
 	<td>generation </td>
+</tr>
+
+<tr>
+	<td>2019</td>
+	<td><a href="/publications/xu2019method/">Method name suggestion with hierarchical attention networks</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Method name suggestion with hierarchical attention networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Method name suggestion with hierarchical attention networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Method%20name%20suggestion%20with%20hierarchical%20attention%20networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>S. Xu, S. Zhang, W. Wang, X. Cao, C. Guo, J. Xu</td>
+	<td>PEPM</td>
+	<td><p>Method Rename has been a widely used refactoring operation that improves program comprehension and maintenance. Descriptive method names that summarize functionalities of source code can facilitate program comprehension. Much research has been done to suggest method names through source code summarization. However, unlike natural language, a code snippet consists of basic blocks organized by complicated structures. In this work, we observe a hierarchical structure — tokens form basic blocks and basic blocks form a code snippet. Based on this observation, we exploit a hierarchical attention network to learn the representation of methods. Specifically, we apply two-level attention mechanism to learn the importance of each token in a basic block and that of a basic block in a method respectively. We evaluated our approach on 10 open source repositories and compared it against three state-of-the-art approaches. The results on these open-source data show the superiority of our hierarchical attention networks in terms of effectiveness.</p>
+</td>
+	<td>naming </td>
 </tr>
 
 <tr>
@@ -1508,22 +1540,6 @@ the performance of existing code retrieval models significantly.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/xu2019method/">Method name suggestion with hierarchical attention networks</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Method name suggestion with hierarchical attention networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Method name suggestion with hierarchical attention networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Method%20name%20suggestion%20with%20hierarchical%20attention%20networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>S. Xu, S. Zhang, W. Wang, X. Cao, C. Guo, J. Xu</td>
-	<td>PEPM</td>
-	<td><p>Method Rename has been a widely used refactoring operation that improves program comprehension and maintenance. Descriptive method names that summarize functionalities of source code can facilitate program comprehension. Much research has been done to suggest method names through source code summarization. However, unlike natural language, a code snippet consists of basic blocks organized by complicated structures. In this work, we observe a hierarchical structure — tokens form basic blocks and basic blocks form a code snippet. Based on this observation, we exploit a hierarchical attention network to learn the representation of methods. Specifically, we apply two-level attention mechanism to learn the importance of each token in a basic block and that of a basic block in a method respectively. We evaluated our approach on 10 open source repositories and compared it against three state-of-the-art approaches. The results on these open-source data show the superiority of our hierarchical attention networks in terms of effectiveness.</p>
-</td>
-	<td>naming </td>
-</tr>
-
-<tr>
-	<td>2019</td>
 	<td><a href="/publications/xu2019commit/">Commit Message Generation for Source Code Changes</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Commit Message Generation for Source Code Changes' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -1548,6 +1564,22 @@ mitigate  the  out-of-vocabulary  issue.   Experimental  evaluations  on  real  
 the  proposed  approach  significantly  outperforms the state-of-the-art in terms of accurately generating the commit messages.</p>
 </td>
 	<td>edit summarization </td>
+</tr>
+
+<tr>
+	<td>2019</td>
+	<td><a href="/publications/bavishi2019autopandas/">AutoPandas: neural-backed generators for program synthesis</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=AutoPandas: neural-backed generators for program synthesis' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=AutoPandas: neural-backed generators for program synthesis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=AutoPandas:%20neural-backed%20generators%20for%20program%20synthesis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>R. Bavishi, C. Lemieux, R. Fox, K. Sen, I. Stoica</td>
+	<td>OOPSLA</td>
+	<td><p>Developers nowadays have to contend with a growing number of APIs. While in the long-term they are very useful to developers, many modern APIs have an incredibly steep learning curve, due to their hundreds of functions handling many arguments, obscure documentation, and frequently changing semantics. For APIs that perform data transformations, novices can often provide an I/O example demonstrating the desired transformation, but may be stuck on how to translate it to the API. A programming-by-example synthesis engine that takes such I/O examples and directly produces programs in the target API could help such novices. Such an engine presents unique challenges due to the breadth of real-world APIs, and the often-complex constraints over function arguments. We present a generator-based synthesis approach to contend with these problems. This approach uses a program candidate generator, which encodes basic constraints on the space of programs. We introduce neural-backed operators which can be seamlessly integrated into the program generator. To improve the efficiency of the search, we simply use these operators at non-deterministic decision points, instead of relying on domain-specific heuristics. We implement this technique for the Python pandas library in AutoPandas. AutoPandas supports 119 pandas dataframe transformation functions. We evaluate AutoPandas on 26 real-world benchmarks and find it solves 17 of them.</p>
+</td>
+	<td>synthesis GNN API </td>
 </tr>
 
 <tr>
@@ -1600,18 +1632,18 @@ the  proposed  approach  significantly  outperforms the state-of-the-art in term
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/bavishi2019autopandas/">AutoPandas: neural-backed generators for program synthesis</a>
+	<td><a href="/publications/wei2019code/">Code Generation as a Dual Task of Code Summarization</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=AutoPandas: neural-backed generators for program synthesis' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=AutoPandas: neural-backed generators for program synthesis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=AutoPandas:%20neural-backed%20generators%20for%20program%20synthesis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Code Generation as a Dual Task of Code Summarization' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Code Generation as a Dual Task of Code Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Code%20Generation%20as%20a%20Dual%20Task%20of%20Code%20Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>R. Bavishi, C. Lemieux, R. Fox, K. Sen, I. Stoica</td>
-	<td>OOPSLA</td>
-	<td><p>Developers nowadays have to contend with a growing number of APIs. While in the long-term they are very useful to developers, many modern APIs have an incredibly steep learning curve, due to their hundreds of functions handling many arguments, obscure documentation, and frequently changing semantics. For APIs that perform data transformations, novices can often provide an I/O example demonstrating the desired transformation, but may be stuck on how to translate it to the API. A programming-by-example synthesis engine that takes such I/O examples and directly produces programs in the target API could help such novices. Such an engine presents unique challenges due to the breadth of real-world APIs, and the often-complex constraints over function arguments. We present a generator-based synthesis approach to contend with these problems. This approach uses a program candidate generator, which encodes basic constraints on the space of programs. We introduce neural-backed operators which can be seamlessly integrated into the program generator. To improve the efficiency of the search, we simply use these operators at non-deterministic decision points, instead of relying on domain-specific heuristics. We implement this technique for the Python pandas library in AutoPandas. AutoPandas supports 119 pandas dataframe transformation functions. We evaluate AutoPandas on 26 real-world benchmarks and find it solves 17 of them.</p>
+	<td>B. Wei, G. Li, X. Xia, Z. Fu, Z. Jin</td>
+	<td>NeurIPS</td>
+	<td><p>Code summarization (CS) and code generation (CG) are two crucial tasks in the field of automatic software development. Various neural network-based approaches are proposed to solve these two tasks separately. However, there exists a specific intuitive correlation between CS and CG, which have not been exploited in previous work. In this paper, we apply the relations between two tasks to improve the performance of both tasks. In other words, exploiting the duality between the two tasks, we propose a dual training framework to train the two tasks simultaneously. In this framework, we consider the dualities on probability and attention weights, and design corresponding regularization terms to constrain the duality. We evaluate our approach on two datasets collected from GitHub, and experimental results show that our dual framework can improve the performance of CS and CG tasks over baselines.</p>
 </td>
-	<td>synthesis GNN API </td>
+	<td>generation summarization </td>
 </tr>
 
 <tr>
@@ -1712,18 +1744,18 @@ the  proposed  approach  significantly  outperforms the state-of-the-art in term
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/wei2019code/">Code Generation as a Dual Task of Code Summarization</a>
+	<td><a href="/publications/waunakh2019evaluating/">Evaluating Semantic Representations of Source Code</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Code Generation as a Dual Task of Code Summarization' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Code Generation as a Dual Task of Code Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Code%20Generation%20as%20a%20Dual%20Task%20of%20Code%20Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Evaluating Semantic Representations of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Evaluating Semantic Representations of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Evaluating%20Semantic%20Representations%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>B. Wei, G. Li, X. Xia, Z. Fu, Z. Jin</td>
-	<td>NeurIPS</td>
-	<td><p>Code summarization (CS) and code generation (CG) are two crucial tasks in the field of automatic software development. Various neural network-based approaches are proposed to solve these two tasks separately. However, there exists a specific intuitive correlation between CS and CG, which have not been exploited in previous work. In this paper, we apply the relations between two tasks to improve the performance of both tasks. In other words, exploiting the duality between the two tasks, we propose a dual training framework to train the two tasks simultaneously. In this framework, we consider the dualities on probability and attention weights, and design corresponding regularization terms to constrain the duality. We evaluate our approach on two datasets collected from GitHub, and experimental results show that our dual framework can improve the performance of CS and CG tasks over baselines.</p>
+	<td>Y. Wainakh, M. Rauf, M. Pradel</td>
+	<td></td>
+	<td><p>Learned representations of source code enable various software developer tools, e.g., to detect bugs or to predict program properties. At the core of code representations often are word embeddings of identifier names in source code, because identifiers account for the majority of source code vocabulary and convey important semantic information. Unfortunately, there currently is no generally accepted way of evaluating the quality of word embeddings of identifiers, and current evaluations are biased toward specific downstream tasks. This paper presents IdBench, the first benchmark for evaluating to what extent word embeddings of identifiers represent semantic relatedness and similarity. The benchmark is based on thousands of ratings gathered by surveying 500 software developers. We use IdBench to evaluate state-of-the-art embedding techniques proposed for natural language, an embedding technique specifically designed for source code, and lexical string distance functions, as these are often used in current developer tools. Our results show that the effectiveness of embeddings varies significantly across different embedding techniques and that the best available embeddings successfully represent semantic relatedness. On the downside, no existing embedding provides a satisfactory representation of semantic similarities, e.g., because embeddings consider identifiers with opposing meanings as similar, which may lead to fatal mistakes in downstream developer tools. IdBench provides a gold standard to guide the development of novel embeddings that address the current limitations.</p>
 </td>
-	<td>generation summarization </td>
+	<td>representation </td>
 </tr>
 
 <tr>
@@ -1814,18 +1846,18 @@ improving the results of the points-to analysis and its clients.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/waunakh2019evaluating/">Evaluating Semantic Representations of Source Code</a>
+	<td><a href="/publications/wang2019learning/">Learning Scalable and Precise Representation of Program Semantics</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Evaluating Semantic Representations of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Evaluating Semantic Representations of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Evaluating%20Semantic%20Representations%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Learning%20Scalable%20and%20Precise%20Representation%20of%20Program%20Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Y. Wainakh, M. Rauf, M. Pradel</td>
+	<td>K. Wang</td>
 	<td></td>
-	<td><p>Learned representations of source code enable various software developer tools, e.g., to detect bugs or to predict program properties. At the core of code representations often are word embeddings of identifier names in source code, because identifiers account for the majority of source code vocabulary and convey important semantic information. Unfortunately, there currently is no generally accepted way of evaluating the quality of word embeddings of identifiers, and current evaluations are biased toward specific downstream tasks. This paper presents IdBench, the first benchmark for evaluating to what extent word embeddings of identifiers represent semantic relatedness and similarity. The benchmark is based on thousands of ratings gathered by surveying 500 software developers. We use IdBench to evaluate state-of-the-art embedding techniques proposed for natural language, an embedding technique specifically designed for source code, and lexical string distance functions, as these are often used in current developer tools. Our results show that the effectiveness of embeddings varies significantly across different embedding techniques and that the best available embeddings successfully represent semantic relatedness. On the downside, no existing embedding provides a satisfactory representation of semantic similarities, e.g., because embeddings consider identifiers with opposing meanings as similar, which may lead to fatal mistakes in downstream developer tools. IdBench provides a gold standard to guide the development of novel embeddings that address the current limitations.</p>
+	<td><p>Neural program embedding has shown potential in aiding the analysis of large-scale, complicated software. Newly proposed deep neural architectures pride themselves on learning program semantics rather than superficial syntactic features. However, by considering the source code only, the vast majority of neural networks do not capture a deep, precise representation of program semantics. In this paper, we present \dypro, a novel deep neural network that learns from program execution traces. Compared to the prior dynamic models, not only is \dypro capable of generalizing across multiple executions for learning a program’s dynamic semantics in its entirety, but \dypro is also more efficient when dealing with programs yielding long execution traces. For evaluation, we task \dypro with semantic classification (i.e. categorizing programs based on their semantics) and compared it against two prominent static models: Gated Graph Neural Network and TreeLSTM. We find that \dypro achieves the highest prediction accuracy among all models. To further reveal the capacity of all aforementioned deep neural architectures, we examine if the models can learn to detect deeper semantic properties of a program. In particular given a task of recognizing loop invariants, we show \dypro beats all static models by a wide margin.</p>
 </td>
-	<td>representation </td>
+	<td>representation dynamic </td>
 </tr>
 
 <tr>
@@ -1924,22 +1956,6 @@ the predictions made by our model are much more accurate and informative.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/vasic2019neural/">Neural Program Repair by Jointly Learning to Localize and Repair</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Program%20Repair%20by%20Jointly%20Learning%20to%20Localize%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>M. Vasic, A. Kanade, P. Maniatis, D. Bieber, R. Singh</td>
-	<td>ICLR</td>
-	<td><p>Due to its potential to improve programmer productivity and software quality, automated program repair has been an active topic of research. Newer techniques harness neural networks to learn directly from examples of buggy programs and their fixes. In this work, we consider a recently identified class of bugs called variable-misuse bugs. The state-of-the-art solution for variable misuse enumerates potential fixes for all possible bug locations in a program, before selecting the best prediction. We show that it is beneficial to train a model that jointly and directly localizes and repairs variable-misuse bugs. We present multi-headed pointer networks for this purpose, with one head each for localization and repair. The experimental results show that the joint model significantly outperforms an enumerative solution that uses a pointer based model for repair alone.</p>
-</td>
-	<td>repair program analysis variable misuse </td>
-</tr>
-
-<tr>
-	<td>2019</td>
 	<td><a href="/publications/brockschmidt2019generative/">Generative Code Modeling with Graphs</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Generative Code Modeling with Graphs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -1952,6 +1968,22 @@ the predictions made by our model are much more accurate and informative.</p>
 	<td><p>Generative models forsource code are an interesting structured prediction problem, requiring to reason about both hard syntactic and semantic constraints as well as about natural, likely programs. We present a novel model for this problem that uses a graph to represent the intermediate state of the generated output. Our model generates code by interleaving grammar-driven expansion steps with graph augmentation and neural message passing steps. An experimental evaluation shows that our new model can generate semantically meaningful expressions, outperforming a range of strong baselines.</p>
 </td>
 	<td>grammar generation GNN </td>
+</tr>
+
+<tr>
+	<td>2019</td>
+	<td><a href="/publications/buech2019learning/">Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Learning-based%20Recursive%20Aggregation%20of%20Abstract%20Syntax%20Trees%20for%20Code%20Clone%20Detection' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>L. Büch, A. Andrzejak</td>
+	<td>SANER</td>
+	<td><p>Code clone detection remains a crucial challenge in maintaining software projects. Many classic approaches rely on handcrafted aggregation schemes, while recent work uses supervised or unsupervised learning. In this work, we study several aspects of aggregation schemes for code clone detection based on supervised learning. To this aim, we implement an AST-based Recursive Neural Network. Firstly, our ablation study shows the influence of model choices and hyperparameters. We introduce error scaling as a way to effectively and efficiently address the class imbalance problem arising in code clone detection. Secondly, we study the influence of pretrained embeddings representing nodes in ASTs. We show that simply averaging all node vectors of a given AST yields strong baseline aggregation scheme. Further, learned AST aggregation schemes greatly benefit from pretrained node embeddings. Finally, we show the importance of carefully separating training and test data by clone clusters, to reliably measure generalization of models learned with supervision.</p>
+</td>
+	<td>AST grammar clone </td>
 </tr>
 
 <tr>
@@ -1978,18 +2010,20 @@ the predictions made by our model are much more accurate and informative.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/buech2019learning/">Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection</a>
+	<td><a href="/publications/wan2019multimodal/">Multi-Modal Attention Network Learning for Semantic Source Code Retrieval</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Learning-based%20Recursive%20Aggregation%20of%20Abstract%20Syntax%20Trees%20for%20Code%20Clone%20Detection' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Multi-Modal Attention Network Learning for Semantic Source Code Retrieval' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Multi-Modal Attention Network Learning for Semantic Source Code Retrieval' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Multi-Modal%20Attention%20Network%20Learning%20for%20Semantic%20Source%20Code%20Retrieval' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>L. Büch, A. Andrzejak</td>
-	<td>SANER</td>
-	<td><p>Code clone detection remains a crucial challenge in maintaining software projects. Many classic approaches rely on handcrafted aggregation schemes, while recent work uses supervised or unsupervised learning. In this work, we study several aspects of aggregation schemes for code clone detection based on supervised learning. To this aim, we implement an AST-based Recursive Neural Network. Firstly, our ablation study shows the influence of model choices and hyperparameters. We introduce error scaling as a way to effectively and efficiently address the class imbalance problem arising in code clone detection. Secondly, we study the influence of pretrained embeddings representing nodes in ASTs. We show that simply averaging all node vectors of a given AST yields strong baseline aggregation scheme. Further, learned AST aggregation schemes greatly benefit from pretrained node embeddings. Finally, we show the importance of carefully separating training and test data by clone clusters, to reliably measure generalization of models learned with supervision.</p>
+	<td>Y. Wan, J. Shu, Y. Sui, G. Xu, Z. Zhao, J. Wu, P. S. Yu</td>
+	<td></td>
+	<td><p>Code retrieval techniques and tools have been playing a key role in facilitating software developers to retrieve existing code fragments from available open-source repositories given a user query. Despite the existing efforts in improving the effectiveness of code retrieval, there are still two main issues hindering them from being used to accurately retrieve satisfiable code fragments from large-scale repositories when answering complicated queries. First, the existing approaches only consider shallow features of source code such as method names and code tokens, but ignoring structured features such as abstract syntax trees (ASTs) and control-flow graphs (CFGs) of source code, which contains rich and well-defined semantics of source code. Second, although the deep learning-based approach performs well on the representation of source code, it lacks the explainability, making it hard to interpret the retrieval results and almost impossible to understand which features of source code contribute more to the final results.</p>
+
+<p>To tackle the two aforementioned issues, this paper proposes MMAN, a novel Multi-Modal Attention Network for semantic source code retrieval. A comprehensive multi-modal representation is developed for representing unstructured and structured features of source code, with one LSTM for the sequential tokens of code, a Tree-LSTM for the AST of code and a GGNN (Gated Graph Neural Network) for the CFG of code. Furthermore, a multi-modal attention fusion layer is applied to assign weights to different parts of each modality of source code and then integrate them into a single hybrid representation. Comprehensive experiments and analysis on a large-scale real-world dataset show that our proposed model can accurately retrieve code snippets and outperforms the state-of-the-art methods.</p>
 </td>
-	<td>AST grammar clone </td>
+	<td>search </td>
 </tr>
 
 <tr>
@@ -2098,24 +2132,6 @@ component of our model.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/wan2019multimodal/">Multi-Modal Attention Network Learning for Semantic Source Code Retrieval</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Multi-Modal Attention Network Learning for Semantic Source Code Retrieval' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Multi-Modal Attention Network Learning for Semantic Source Code Retrieval' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Multi-Modal%20Attention%20Network%20Learning%20for%20Semantic%20Source%20Code%20Retrieval' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Y. Wan, J. Shu, Y. Sui, G. Xu, Z. Zhao, J. Wu, P. S. Yu</td>
-	<td></td>
-	<td><p>Code retrieval techniques and tools have been playing a key role in facilitating software developers to retrieve existing code fragments from available open-source repositories given a user query. Despite the existing efforts in improving the effectiveness of code retrieval, there are still two main issues hindering them from being used to accurately retrieve satisfiable code fragments from large-scale repositories when answering complicated queries. First, the existing approaches only consider shallow features of source code such as method names and code tokens, but ignoring structured features such as abstract syntax trees (ASTs) and control-flow graphs (CFGs) of source code, which contains rich and well-defined semantics of source code. Second, although the deep learning-based approach performs well on the representation of source code, it lacks the explainability, making it hard to interpret the retrieval results and almost impossible to understand which features of source code contribute more to the final results.</p>
-
-<p>To tackle the two aforementioned issues, this paper proposes MMAN, a novel Multi-Modal Attention Network for semantic source code retrieval. A comprehensive multi-modal representation is developed for representing unstructured and structured features of source code, with one LSTM for the sequential tokens of code, a Tree-LSTM for the AST of code and a GGNN (Gated Graph Neural Network) for the CFG of code. Furthermore, a multi-modal attention fusion layer is applied to assign weights to different parts of each modality of source code and then integrate them into a single hybrid representation. Comprehensive experiments and analysis on a large-scale real-world dataset show that our proposed model can accurately retrieve code snippets and outperforms the state-of-the-art methods.</p>
-</td>
-	<td>search </td>
-</tr>
-
-<tr>
-	<td>2019</td>
 	<td><a href="/publications/bui2019learning/">SAR: Learning Cross-Language API Mappings with Little Knowledge</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=SAR: Learning Cross-Language API Mappings with Little Knowledge' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -2148,6 +2164,22 @@ component of our model.</p>
 <p>Our evaluation shows that: 1. adding supervision to an existing unsupervised technique can improve performance, though not necessarily by much; 2. simple networks for supervision can be more effective that more sophisticated sequence-based networks for code search; 3. while it is common to use docstrings to carry out supervision, there is a sizeable gap between the effectiveness of docstrings and a more query-appropriate supervision corpus.</p>
 </td>
 	<td>search </td>
+</tr>
+
+<tr>
+	<td>2019</td>
+	<td><a href="/publications/vasic2019neural/">Neural Program Repair by Jointly Learning to Localize and Repair</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Neural Program Repair by Jointly Learning to Localize and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Program%20Repair%20by%20Jointly%20Learning%20to%20Localize%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>M. Vasic, A. Kanade, P. Maniatis, D. Bieber, R. Singh</td>
+	<td>ICLR</td>
+	<td><p>Due to its potential to improve programmer productivity and software quality, automated program repair has been an active topic of research. Newer techniques harness neural networks to learn directly from examples of buggy programs and their fixes. In this work, we consider a recently identified class of bugs called variable-misuse bugs. The state-of-the-art solution for variable misuse enumerates potential fixes for all possible bug locations in a program, before selecting the best prediction. We show that it is beneficial to train a model that jointly and directly localizes and repairs variable-misuse bugs. We present multi-headed pointer networks for this purpose, with one head each for localization and repair. The experimental results show that the joint model significantly outperforms an enumerative solution that uses a pointer based model for repair alone.</p>
+</td>
+	<td>repair program analysis variable misuse </td>
 </tr>
 
 <tr>
@@ -2282,34 +2314,18 @@ component of our model.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/tufano2019learning/">On Learning Meaningful Code Changes via Neural Machine Translation</a>
+	<td><a href="/publications/kacmajor2019automatic/">Automatic Acquisition of Annotated Training Corpora for Test-Code Generation </a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=On Learning Meaningful Code Changes via Neural Machine Translation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=On Learning Meaningful Code Changes via Neural Machine Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=On%20Learning%20Meaningful%20Code%20Changes%20via%20Neural%20Machine%20Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Automatic Acquisition of Annotated Training Corpora for Test-Code Generation ' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Automatic%20Acquisition%20of%20Annotated%20Training%20Corpora%20for%20Test-Code%20Generation%20' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk</td>
-	<td>ICSE</td>
-	<td><p>Recent years have seen the rise of Deep Learning (DL) techniques applied to source code. Researchers have exploited DL to automate several development and maintenance tasks, such as writing commit messages, generating comments and detecting vulnerabilities among others. One of the long lasting dreams of applying DL to code is the possibility to automate non-trivial coding activities. While some steps in this direction have been taken (e.g., learning how to fix bugs), there is still a lack of empirical evidence on the types of code changes that can be learned and automatically applied by DL. Our goal is to make this first step by quantitatively and qualitatively investigating the ability of a Neural Machine Translation (NMT) model to learn how to automatically apply code changes implemented by developers during pull requests. We train and experiment with the NMT model on a set of 236k pairs of code components before and after the implementation of the changes provided in the pull requests. We show that, when applied in a narrow enough context (i.e., small/medium-sized pairs of methods before/after the pull request changes), NMT can automatically replicate the changes implemented by developers during pull requests in up to 36% of the cases. Moreover, our qualitative analysis shows that the model is capable of learning and replicating a wide variety of meaningful code changes, especially refactorings and bug-fixing activities. Our results pave the way to novel research in the area of DL on code, such as the automatic learning and applications of refactoring.</p>
+	<td>M. Kacmajor, J. D. Kelleher</td>
+	<td>Information</td>
+	<td><p>Open software repositories make large amounts of source code publicly available. Potentially, this source code could be used as training data to develop new, machine learning-based programming tools. For many applications, however, raw code scraped from online repositories does not constitute an adequate training dataset. Building on the recent and rapid improvements in machine translation (MT), one possibly very interesting application is code generation from natural language descriptions. One of the bottlenecks in developing these MT-inspired systems is the acquisition of parallel text-code corpora required for training code-generative models. This paper addresses the problem of automatically synthetizing parallel text-code corpora in the software testing domain. Our approach is based on the observation that self-documentation through descriptive method names is widely adopted in test automation, in particular for unit testing. Therefore, we propose synthesizing parallel corpora comprised of parsed test function names serving as code descriptions, aligned with the corresponding function bodies. We present the results of applying one of the state-of-the-art MT methods on such a generated dataset. Our experiments show that a neural MT model trained on our dataset can generate syntactically correct and semantically relevant short Java functions from quasi-natural language descriptions of functionality.</p>
 </td>
-	<td>repair edit </td>
-</tr>
-
-<tr>
-	<td>2019</td>
-	<td><a href="/publications/wang2019learning/">Learning Scalable and Precise Representation of Program Semantics</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Learning Scalable and Precise Representation of Program Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Learning%20Scalable%20and%20Precise%20Representation%20of%20Program%20Semantics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>K. Wang</td>
 	<td></td>
-	<td><p>Neural program embedding has shown potential in aiding the analysis of large-scale, complicated software. Newly proposed deep neural architectures pride themselves on learning program semantics rather than superficial syntactic features. However, by considering the source code only, the vast majority of neural networks do not capture a deep, precise representation of program semantics. In this paper, we present \dypro, a novel deep neural network that learns from program execution traces. Compared to the prior dynamic models, not only is \dypro capable of generalizing across multiple executions for learning a program’s dynamic semantics in its entirety, but \dypro is also more efficient when dealing with programs yielding long execution traces. For evaluation, we task \dypro with semantic classification (i.e. categorizing programs based on their semantics) and compared it against two prominent static models: Gated Graph Neural Network and TreeLSTM. We find that \dypro achieves the highest prediction accuracy among all models. To further reveal the capacity of all aforementioned deep neural architectures, we examine if the models can learn to detect deeper semantic properties of a program. In particular given a task of recognizing loop invariants, we show \dypro beats all static models by a wide margin.</p>
-</td>
-	<td>representation dynamic </td>
 </tr>
 
 
