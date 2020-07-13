@@ -40,6 +40,7 @@ The last few years a few workshops have been organized in this area. Please, fee
 * [Sofware Analysis](http://rightingcode.org/) in Univ. of Pennsylvania. It is a great introduction to Program Analysis [[videos](https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543)]
 
 ### Competitions
+* [nlc2cmd](http://nlc2cmd.us-east.mybluemix.net/#/) in NeurIPS 2020 by Project CLAI. Starts July 2020.
 * [CodeSearchNet Challenge: Evaluating the State of Semantic Code Search](https://github.com/github/CodeSearchNet) by Github. Starts Sep 2019.
 * [CodRep 2019: Machine Learning on Source Code Competition](https://github.com/KTH/codrep-2019) by KTH. Starts on April 25th 2019.
 * [CodRep 2018: Machine Learning on Source Code Competition](https://github.com/KTH/CodRep-competition) by KTH. Starts on April 14th 2018.
