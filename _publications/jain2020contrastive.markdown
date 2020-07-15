@@ -9,7 +9,7 @@ additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2007.04973"}
    - {name: "Website", url: "https://parasj.github.io/contracode/"}
    - {name: "GitHub", url : "https://github.com/parasj/contracode"}
-tags: ["Contrastive Learning"]
+tags: ["representation", "pretraining"]
 ---
 Machine-aided programming tools such as type predictors and code summarizers
 are increasingly learning-based. However, most code representation learning approaches rely on supervised learning with task-specific annotated datasets. We propose Contrastive Code Representation Learning (ContraCode), a self-supervised
