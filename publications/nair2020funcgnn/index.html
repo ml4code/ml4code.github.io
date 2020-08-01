@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      funcGNN: A Graph Neural Network Approach to Program Similarity &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">funcGNN: A Graph Neural Network Approach to Program Similarity</h1>
+  <h5>Aravind Nair, Avijit Roy, Karl Meinke. ESEM 2020</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/2007.13239" target="_blank">ArXiV</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=funcGNN: A Graph Neural Network Approach to Program Similarity' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=funcGNN: A Graph Neural Network Approach to Program Similarity' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=funcGNN:%20A%20Graph%20Neural%20Network%20Approach%20to%20Program%20Similarity' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#GNN">GNN</a></tag>
+    
+      <tag><a href="/tags.html#clone">clone</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Program similarity is a fundamental concept, central to the solution of software engineering tasks such as software plagiarism, clone identification, code refactoring and code search. Accurate similarity estimation between programs requires an in-depth understanding of their structure, semantics and flow. A control flow graph (CFG), is a graphical representation of a program which captures its logical control flow and hence its semantics. A common approach is to estimate program similarity by analysing CFGs using graph similarity measures, e.g. graph edit distance (GED). However, graph edit distance is an NP-hard problem and computationally expensive, making the application of graph similarity techniques to complex software programs impractical. This study intends to examine the effectiveness of graph neural networks to estimate program similarity, by analysing the associated control flow graphs. We introduce funcGNN, which is a graph neural network trained on labeled CFG pairs to predict the GED between unseen program pairs by utilizing an effective embedding vector. To our knowledge, this is the first time graph neural networks have been applied on labeled CFGs for estimating the similarity between high-level language programs. Results: We demonstrate the effectiveness of funcGNN to estimate the GED between programs and our experimental analysis demonstrates how it achieves a lower error rate (0.00194), with faster (23 times faster than the quickest traditional GED approximation method) and better scalability compared with the state of the art methods. funcGNN posses the inductive learning ability to infer program structure and generalise to unseen programs. The graph embedding of a program proposed by our methodology could be applied to several related software engineering problems (such as code plagiarism and clone identification) thus opening multiple research directions.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>
