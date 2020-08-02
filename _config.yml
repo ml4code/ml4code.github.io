@@ -13,3 +13,6 @@ collections:
 plugins_dir:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+sass:
+    style: compressed
