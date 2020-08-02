@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "MISIM: An End-to-End Neural Code Similarity System"
-authors: Fangke Ye and Shengtian Zhou and Anand Venkat and Ryan Marcus and Nesime Tatbul and Jesmin Jahan Tithi and Paul Petersen and Timothy Mattson and Tim Kraska and Pradeep Dubey and Vivek Sarkar and Justin Gottschlich
+authors: Fangke Ye, Shengtian Zhou, Anand Venkat, Ryan Marcus, Nesime Tatbul, Jesmin Jahan Tithi, Paul Petersen, Timothy Mattson, Tim Kraska, Pradeep Dubey, Vivek Sarkar, Justin Gottschlich
 conference:
 year: 2020
 bibkey: ye2020misim 
