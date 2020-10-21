@@ -50,4 +50,4 @@ The last few years a few workshops have been organized in this area. Please, fee
 papers in the area. You can access the list [here](https://github.com/src-d/awesome-machine-learning-on-source-code).
 * [Autormated Program Repair](https://www.monperrus.net/martin/automatic-software-repair)
 has a curated list of pointers for helping newcomers to understan the field,
-maintained by [Martin Monperrus](www.monperrus.net).
+maintained by [Martin Monperrus](https://www.monperrus.net/martin/).
