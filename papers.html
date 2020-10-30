@@ -267,12 +267,11 @@ the information of existing papers or adding new work.
 	</td>
 	<td>Alexey Svyatkovskiy, Shao Kun Deng, Shengyu Fu, Neel Sundaresan</td>
 	<td></td>
-	<td><p>In software development through integrated development environments (IDEs), code completion is one of the most widely used features. Nevertheless, majority of integrated development environments only support completion of methods and APIs, or arguments.</p>
-
-<p>In this paper, we introduce IntelliCode Compose − a general-purpose multilingual code completion tool which is capable of predicting sequences of code tokens of arbitrary types, generating up to entire lines of syntactically correct code. It leverages state-of-the-art generative transformer model trained on 1.2 billion lines of source code in Python, C#, JavaScript and TypeScript programming languages. IntelliCode Compose is deployed as a cloud-based web service. It makes use of client-side tree-based caching, efficient parallel implementation of the beam search decoder, and compute graph optimizations to meet edit-time completion suggestion requirements in the Visual Studio Code IDE and Azure Notebook.
+	<td><p>In software development through integrated development environments (IDEs), code completion is one of the most widely used features. Nevertheless, majority of integrated development environments only support completion of methods and APIs, or arguments.
+In this paper, we introduce IntelliCode Compose − a general-purpose multilingual code completion tool which is capable of predicting sequences of code tokens of arbitrary types, generating up to entire lines of syntactically correct code. It leverages state-of-the-art generative transformer model trained on 1.2 billion lines of source code in Python, C#, JavaScript and TypeScript programming languages. IntelliCode Compose is deployed as a cloud-based web service. It makes use of client-side tree-based caching, efficient parallel implementation of the beam search decoder, and compute graph optimizations to meet edit-time completion suggestion requirements in the Visual Studio Code IDE and Azure Notebook.
 Our best model yields an average edit similarity of 86.7% and a perplexity of 1.82 for Python programming language.</p>
 </td>
-	<td>autocompletion </td>
+	<td>autocompletion generative synthesis language model pretraining pre-training </td>
 </tr>
 
 <tr>
@@ -464,6 +463,38 @@ problem and in guiding comment generation.</p>
 	<td><p>Automatic source code summarization is the task of generating natural language descriptions for source code. Automatic code summarization is a rapidly expanding research area, especially as the community has taken greater advantage of advances in neural network and AI technologies. In general, source code summarization techniques use the source code as input and outputs a natural language description. Yet a strong consensus is developing that using structural information as input leads to improved performance. The first approaches to use structural information flattened the AST into a sequence. Recently, more complex approaches based on random AST paths or graph neural networks have improved on the models using flattened ASTs. However, the literature still does not describe the using a graph neural network together with source code sequence as separate inputs to a model. Therefore, in this paper, we present an approach that uses a graph-based neural architecture that better matches the default structure of the AST to generate these summaries. We evaluate our technique using a data set of 2.1 million Java method-comment pairs and show improvement over four baseline techniques, two from the software engineering literature, and two from machine learning literature.</p>
 </td>
 	<td>summarization </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/tufano2020generating/">Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Generating%20Accurate%20Assert%20Statements%20for%20Unit%20Test%20Cases%20using%20Pretrained%20Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Michele Tufano, Dawn Drain, Alexey Svyatkovskiy, Shao Kun Deng, Neel Sundaresan</td>
+	<td>ICSE</td>
+	<td><p>Unit testing represents the foundational basis of the software testing pyramid, beneath integration and end-to-end testing. Automated software testing researchers have proposed a variety of techniques to assist developers in this time-consuming task. In this paper we present an approach to support developers in writing unit test cases by generating accurate and useful assert statements. Our approach is based on a state-of-the-art transformer model initially pretrained on an English textual corpus. This semantically rich model is then trained in a semi-supervised fashion on a large corpus of source code. Finally, we finetune this model on the task of generating assert statements for unit tests. The resulting model is able to generate accurate assert statements for a given method under test. In our empirical evaluation, the model was able to predict the exact assert statements written by developers in 62% of the cases in the first attempt. The results show 80% relative improvement for top-1 accuracy over the previous RNN-based approach in the literature. We also show the substantial impact of the pretraining process on the performances of our model, as well as comparing it with assert auto-completion task. Finally, we demonstrate how our approach can be used to augment EvoSuite test cases, with additional asserts leading to improved test coverage.</p>
+</td>
+	<td>generative synthesis test generation </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/tufano2020unit/">Unit Test Case Generation with Transformers</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Unit Test Case Generation with Transformers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Unit Test Case Generation with Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Unit%20Test%20Case%20Generation%20with%20Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Michele Tufano, Dawn Drain, Alexey Svyatkovskiy, Shao Kun Deng, Neel Sundaresan</td>
+	<td>ICSE</td>
+	<td><p>Automated Unit Test Case generation has been the focus of extensive literature within the research community. Existing approaches are usually guided by the test coverage criteria, generating synthetic test cases that are often difficult to read or understand for developers. In this paper we propose AthenaTest, an approach that aims at generating unit test cases by learning from real-world, developer-written test cases. Our approach relies on a state-of-the-art sequence-to-sequence transformer model which is able to write useful test cases for a given method under test (i.e., focal method). We also introduce methods2test - the largest publicly available supervised parallel corpus of unit test case methods and corresponding focal methods in Java, which comprises 630k test cases mined from 70k open-source repositories hosted on GitHub. We use this dataset to train a transformer model to translate focal methods into the corresponding test cases. We evaluate the ability of our model in generating test cases using natural language processing as well as code-specific criteria. First, we assess the quality of the translation compared to the target test case, then we analyze properties of the test case such as syntactic correctness and number and variety of testing APIs (e.g., asserts). We execute the test cases, collect test coverage information, and compare them with test cases generated by EvoSuite and GPT-3. Finally, we survey professional developers on their preference in terms of readability, understandability, and testing effectiveness of the generated test cases.</p>
+</td>
+	<td>generative synthesis test generation </td>
 </tr>
 
 <tr>
@@ -964,7 +995,7 @@ the accuracy of existing baselines.</p>
 	<td>EMNLP</td>
 	<td><p>Simultaneously modeling source code and natural language has many exciting applications in automated software development and understanding. Pursuant to achieving such technology, we introduce PyMT5, the Python method text-to-text transfer transformer, which is trained to translate between all pairs of Python method feature combinations: a single model that can both predict whole methods from natural language documentation strings (docstrings) and summarize code into docstrings of any common style. We present an analysis and modeling effort of a large-scale parallel corpus of 26 million Python methods and 7.7 million method-docstring pairs, demonstrating that for docstring and method generation, PyMT5 outperforms similarly-sized auto-regressive language models (GPT2) which were English pre-trained or randomly initialized. On the CodeSearchNet test set, our best model predicts 92.1% syntactically correct method bodies, achieved a BLEU score of 8.59 for method generation and 16.3 for docstring generation (summarization), and achieved a ROUGE-L F-score of 24.8 for method generation and 36.7 for docstring generation.</p>
 </td>
-	<td>bimodal </td>
+	<td>bimodal generative summarization documentation language model pretraining pre-training </td>
 </tr>
 
 <tr>
@@ -1240,18 +1271,18 @@ of DL models-based method for future fully automated source code processing.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/li2019neural/">Neural Code Search Evaluation Dataset</a>
+	<td><a href="/publications/li2019improving/">Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Code Search Evaluation Dataset' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Neural Code Search Evaluation Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Code%20Search%20Evaluation%20Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Improving%20Bug%20Detection%20via%20Context-Based%20Code%20Representation%20Learning%20and%20Attention-Based%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>H. Li, S. Kim, S. Chandra</td>
-	<td></td>
-	<td><p>There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work.</p>
+	<td>Y. Li, S. Wang, T. N. Nguyen, S. V. Nguyen</td>
+	<td>OOPSLA 2019</td>
+	<td><p>Bug detection has been shown to be an effective way to help developers in detecting bugs early, thus, saving much effort and time in software development process. Recently, deep learning-based bug detection approaches have gained successes over the traditional machine learning-based approaches, the rule-based program analysis approaches, and mining-based approaches. However, they are still limited in detecting bugs that involve multiple methods and suffer high rate of false positives. In this paper, we propose a combination approach with the use of contexts and attention neural network to overcome those limitations. We propose to use as the global context the Program Dependence Graph (PDG) and Data Flow Graph (DFG) to connect the method under investigation with the other relevant methods that might contribute to the buggy code. The global context is complemented by the local context extracted from the path on the AST built from the method’s body. The use of PDG and DFG enables our model to reduce the false positive rate, while to complement for the potential reduction in recall, we make use of the attention neural network mechanism to put more weights on the buggy paths in the source code. That is, the paths that are similar to the buggy paths will be ranked higher, thus, improving the recall of our model. We have conducted several experiments to evaluate our approach on a very large dataset with +4.973M methods in 92 different project versions. The results show that our tool can have a relative improvement up to 160% on F-score when comparing with the state-of-the-art bug detection approaches. Our tool can detect 48 true bugs in the list of top 100 reported bugs, which is 24 more true bugs when comparing with the baseline approaches. We also reported that our representation is better suitable for bug detection and relatively improves over the other representations up to 206% in accuracy.</p>
 </td>
-	<td>dataset search </td>
+	<td>representation defect </td>
 </tr>
 
 <tr>
@@ -2673,18 +2704,18 @@ https://github.com/tech-srl/code2vec.</p>
 
 <tr>
 	<td>2019</td>
-	<td><a href="/publications/li2019improving/">Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks</a>
+	<td><a href="/publications/li2019neural/">Neural Code Search Evaluation Dataset</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Improving%20Bug%20Detection%20via%20Context-Based%20Code%20Representation%20Learning%20and%20Attention-Based%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Neural Code Search Evaluation Dataset' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Neural Code Search Evaluation Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Code%20Search%20Evaluation%20Dataset' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Y. Li, S. Wang, T. N. Nguyen, S. V. Nguyen</td>
-	<td>OOPSLA 2019</td>
-	<td><p>Bug detection has been shown to be an effective way to help developers in detecting bugs early, thus, saving much effort and time in software development process. Recently, deep learning-based bug detection approaches have gained successes over the traditional machine learning-based approaches, the rule-based program analysis approaches, and mining-based approaches. However, they are still limited in detecting bugs that involve multiple methods and suffer high rate of false positives. In this paper, we propose a combination approach with the use of contexts and attention neural network to overcome those limitations. We propose to use as the global context the Program Dependence Graph (PDG) and Data Flow Graph (DFG) to connect the method under investigation with the other relevant methods that might contribute to the buggy code. The global context is complemented by the local context extracted from the path on the AST built from the method’s body. The use of PDG and DFG enables our model to reduce the false positive rate, while to complement for the potential reduction in recall, we make use of the attention neural network mechanism to put more weights on the buggy paths in the source code. That is, the paths that are similar to the buggy paths will be ranked higher, thus, improving the recall of our model. We have conducted several experiments to evaluate our approach on a very large dataset with +4.973M methods in 92 different project versions. The results show that our tool can have a relative improvement up to 160% on F-score when comparing with the state-of-the-art bug detection approaches. Our tool can detect 48 true bugs in the list of top 100 reported bugs, which is 24 more true bugs when comparing with the baseline approaches. We also reported that our representation is better suitable for bug detection and relatively improves over the other representations up to 206% in accuracy.</p>
+	<td>H. Li, S. Kim, S. Chandra</td>
+	<td></td>
+	<td><p>There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work.</p>
 </td>
-	<td>representation defect </td>
+	<td>dataset search </td>
 </tr>
 
 <tr>
@@ -3657,22 +3688,6 @@ better perplexity in recipe generation and
 
 <tr>
 	<td>2018</td>
-	<td><a href="/publications/tufano2018empirical/">An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=An%20Empirical%20Study%20on%20Learning%20Bug-Fixing%20Patches%20in%20the%20Wild%20via%20Neural%20Machine%20Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk</td>
-	<td></td>
-	<td><p>Millions of open-source projects with numerous bug fixes are available in code repositories. This proliferation of software development histories can be leveraged to learn how to fix common programming bugs. To explore such a potential, we perform an empirical study to assess the feasibility of using Neural Machine Translation techniques for learning bug-fixing patches for real defects. First, we mine millions of bug-fixes from the change histories of projects hosted on GitHub, in order to extract meaningful examples of such bug-fixes. Next, we abstract the buggy and corresponding fixed code, and use them to train an Encoder-Decoder model able to translate buggy code into its fixed version. In our empirical investigation we found that such a model is able to fix thousands of unique buggy methods in the wild. Overall, this model is capable of predicting fixed patches generated by developers in 9-50% of the cases, depending on the number of candidate patches we allow it to generate. Also, the model is able to emulate a variety of different Abstract Syntax Tree operations and generate candidate patches in a split second.</p>
-</td>
-	<td>repair </td>
-</tr>
-
-<tr>
-	<td>2018</td>
 	<td><a href="/publications/si2018learning/">Learning Loop Invariants for Program Verification</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Loop Invariants for Program Verification' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -3703,6 +3718,22 @@ solving new instances from scratch, the pre-trained agent is more sample efficie
 in finding solutions.</p>
 </td>
 	<td>program analysis verification </td>
+</tr>
+
+<tr>
+	<td>2018</td>
+	<td><a href="/publications/tufano2018empirical/">An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=An%20Empirical%20Study%20on%20Learning%20Bug-Fixing%20Patches%20in%20the%20Wild%20via%20Neural%20Machine%20Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk</td>
+	<td></td>
+	<td><p>Millions of open-source projects with numerous bug fixes are available in code repositories. This proliferation of software development histories can be leveraged to learn how to fix common programming bugs. To explore such a potential, we perform an empirical study to assess the feasibility of using Neural Machine Translation techniques for learning bug-fixing patches for real defects. First, we mine millions of bug-fixes from the change histories of projects hosted on GitHub, in order to extract meaningful examples of such bug-fixes. Next, we abstract the buggy and corresponding fixed code, and use them to train an Encoder-Decoder model able to translate buggy code into its fixed version. In our empirical investigation we found that such a model is able to fix thousands of unique buggy methods in the wild. Overall, this model is capable of predicting fixed patches generated by developers in 9-50% of the cases, depending on the number of candidate patches we allow it to generate. Also, the model is able to emulate a variety of different Abstract Syntax Tree operations and generate candidate patches in a split second.</p>
+</td>
+	<td>repair </td>
 </tr>
 
 <tr>

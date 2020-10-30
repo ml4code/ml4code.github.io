@@ -18,7 +18,7 @@
 
   <title>
     
-      PyMT5: multi-mode translation of natural language and Python code with transformers &middot; Machine Learning for Big Code and Naturalness
+      Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -100,35 +100,27 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">PyMT5: multi-mode translation of natural language and Python code with transformers</h1>
-  <h5>Colin B. Clement, Dawn Drain, Jonathan Timcheck, Alexey Svyatkovskiy, Neel Sundaresan. EMNLP 2020</h5>
+  <h1 class="page-title">Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers</h1>
+  <h5>Michele Tufano, Dawn Drain, Alexey Svyatkovskiy, Shao Kun Deng, Neel Sundaresan. ICSE 2020</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2010.03150" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2009.05634" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=PyMT5: multi-mode translation of natural language and Python code with transformers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=PyMT5: multi-mode translation of natural language and Python code with transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=PyMT5:%20multi-mode%20translation%20of%20natural%20language%20and%20Python%20code%20with%20transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Generating Accurate Assert Statements for Unit Test Cases using Pretrained Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Generating%20Accurate%20Assert%20Statements%20for%20Unit%20Test%20Cases%20using%20Pretrained%20Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
-    
-      <tag><a href="/tags.html#bimodal">bimodal</a></tag>
     
       <tag><a href="/tags.html#generative">generative</a></tag>
     
-      <tag><a href="/tags.html#summarization">summarization</a></tag>
+      <tag><a href="/tags.html#synthesis">synthesis</a></tag>
     
-      <tag><a href="/tags.html#documentation">documentation</a></tag>
-    
-      <tag><a href="/tags.html#language model">language model</a></tag>
-    
-      <tag><a href="/tags.html#pretraining">pretraining</a></tag>
-    
-      <tag><a href="/tags.html#pre-training">pre-training</a></tag>
+      <tag><a href="/tags.html#test generation">test generation</a></tag>
     
   </p>
       
       
-      <p><p>Simultaneously modeling source code and natural language has many exciting applications in automated software development and understanding. Pursuant to achieving such technology, we introduce PyMT5, the Python method text-to-text transfer transformer, which is trained to translate between all pairs of Python method feature combinations: a single model that can both predict whole methods from natural language documentation strings (docstrings) and summarize code into docstrings of any common style. We present an analysis and modeling effort of a large-scale parallel corpus of 26 million Python methods and 7.7 million method-docstring pairs, demonstrating that for docstring and method generation, PyMT5 outperforms similarly-sized auto-regressive language models (GPT2) which were English pre-trained or randomly initialized. On the CodeSearchNet test set, our best model predicts 92.1% syntactically correct method bodies, achieved a BLEU score of 8.59 for method generation and 16.3 for docstring generation (summarization), and achieved a ROUGE-L F-score of 24.8 for method generation and 36.7 for docstring generation.</p>
+      <p><p>Unit testing represents the foundational basis of the software testing pyramid, beneath integration and end-to-end testing. Automated software testing researchers have proposed a variety of techniques to assist developers in this time-consuming task. In this paper we present an approach to support developers in writing unit test cases by generating accurate and useful assert statements. Our approach is based on a state-of-the-art transformer model initially pretrained on an English textual corpus. This semantically rich model is then trained in a semi-supervised fashion on a large corpus of source code. Finally, we finetune this model on the task of generating assert statements for unit tests. The resulting model is able to generate accurate assert statements for a given method under test. In our empirical evaluation, the model was able to predict the exact assert statements written by developers in 62% of the cases in the first attempt. The results show 80% relative improvement for top-1 accuracy over the previous RNN-based approach in the literature. We also show the substantial impact of the pretraining process on the performances of our model, as well as comparing it with assert auto-completion task. Finally, we demonstrate how our approach can be used to augment EvoSuite test cases, with additional asserts leading to improved test coverage.</p>
 </p>
 </div>
 

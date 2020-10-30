@@ -18,7 +18,7 @@
 
   <title>
     
-      PyMT5: multi-mode translation of natural language and Python code with transformers &middot; Machine Learning for Big Code and Naturalness
+      Unit Test Case Generation with Transformers &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -100,35 +100,27 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">PyMT5: multi-mode translation of natural language and Python code with transformers</h1>
-  <h5>Colin B. Clement, Dawn Drain, Jonathan Timcheck, Alexey Svyatkovskiy, Neel Sundaresan. EMNLP 2020</h5>
+  <h1 class="page-title">Unit Test Case Generation with Transformers</h1>
+  <h5>Michele Tufano, Dawn Drain, Alexey Svyatkovskiy, Shao Kun Deng, Neel Sundaresan. ICSE 2020</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2010.03150" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2009.05617" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=PyMT5: multi-mode translation of natural language and Python code with transformers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=PyMT5: multi-mode translation of natural language and Python code with transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=PyMT5:%20multi-mode%20translation%20of%20natural%20language%20and%20Python%20code%20with%20transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Unit Test Case Generation with Transformers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Unit Test Case Generation with Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Unit%20Test%20Case%20Generation%20with%20Transformers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
-    
-      <tag><a href="/tags.html#bimodal">bimodal</a></tag>
     
       <tag><a href="/tags.html#generative">generative</a></tag>
     
-      <tag><a href="/tags.html#summarization">summarization</a></tag>
+      <tag><a href="/tags.html#synthesis">synthesis</a></tag>
     
-      <tag><a href="/tags.html#documentation">documentation</a></tag>
-    
-      <tag><a href="/tags.html#language model">language model</a></tag>
-    
-      <tag><a href="/tags.html#pretraining">pretraining</a></tag>
-    
-      <tag><a href="/tags.html#pre-training">pre-training</a></tag>
+      <tag><a href="/tags.html#test generation">test generation</a></tag>
     
   </p>
       
       
-      <p><p>Simultaneously modeling source code and natural language has many exciting applications in automated software development and understanding. Pursuant to achieving such technology, we introduce PyMT5, the Python method text-to-text transfer transformer, which is trained to translate between all pairs of Python method feature combinations: a single model that can both predict whole methods from natural language documentation strings (docstrings) and summarize code into docstrings of any common style. We present an analysis and modeling effort of a large-scale parallel corpus of 26 million Python methods and 7.7 million method-docstring pairs, demonstrating that for docstring and method generation, PyMT5 outperforms similarly-sized auto-regressive language models (GPT2) which were English pre-trained or randomly initialized. On the CodeSearchNet test set, our best model predicts 92.1% syntactically correct method bodies, achieved a BLEU score of 8.59 for method generation and 16.3 for docstring generation (summarization), and achieved a ROUGE-L F-score of 24.8 for method generation and 36.7 for docstring generation.</p>
+      <p><p>Automated Unit Test Case generation has been the focus of extensive literature within the research community. Existing approaches are usually guided by the test coverage criteria, generating synthetic test cases that are often difficult to read or understand for developers. In this paper we propose AthenaTest, an approach that aims at generating unit test cases by learning from real-world, developer-written test cases. Our approach relies on a state-of-the-art sequence-to-sequence transformer model which is able to write useful test cases for a given method under test (i.e., focal method). We also introduce methods2test - the largest publicly available supervised parallel corpus of unit test case methods and corresponding focal methods in Java, which comprises 630k test cases mined from 70k open-source repositories hosted on GitHub. We use this dataset to train a transformer model to translate focal methods into the corresponding test cases. We evaluate the ability of our model in generating test cases using natural language processing as well as code-specific criteria. First, we assess the quality of the translation compared to the target test case, then we analyze properties of the test case such as syntactic correctness and number and variety of testing APIs (e.g., asserts). We execute the test cases, collect test coverage information, and compare them with test cases generated by EvoSuite and GPT-3. Finally, we survey professional developers on their preference in terms of readability, understandability, and testing effectiveness of the generated test cases.</p>
 </p>
 </div>
 
