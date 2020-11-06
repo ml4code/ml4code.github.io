@@ -18,7 +18,7 @@
 
   <title>
     
-      Global Relational Models of Source Code &middot; Machine Learning for Big Code and Naturalness
+      Empirical Study of Transformers for Source Code &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -100,29 +100,23 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Global Relational Models of Source Code</h1>
-  <h5>V.J. Hellendoorn, C. Sutton, R. Singh, P. Maniatis, D. Bieber. ICLR 2020</h5>
+  <h1 class="page-title">Empirical Study of Transformers for Source Code</h1>
+  <h5>Nadezhda Chirkova, Sergey Troshin.  2020</h5>
   <p>
     
-      [<a href="https://openreview.net/forum?id=B1lnbRNtwr&noteId=B1lnbRNtwr" target="_blank">OpenReview</a>]
+      [<a href="https://arxiv.org/abs/2010.07987" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Global Relational Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Global Relational Models of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Global%20Relational%20Models%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Empirical Study of Transformers for Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Empirical Study of Transformers for Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Empirical%20Study%20of%20Transformers%20for%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
-    
-      <tag><a href="/tags.html#variable misuse">variable misuse</a></tag>
-    
-      <tag><a href="/tags.html#defect">defect</a></tag>
-    
-      <tag><a href="/tags.html#GNN">GNN</a></tag>
     
       <tag><a href="/tags.html#transformers">transformers</a></tag>
     
   </p>
       
       
-      <p><p>Models of code can learn distributed representations of a program’s syntax and semantics to predict many non-trivial properties of a program. Recent state-of-the-art models leverage highly structured representations of programs, such as trees, graphs and paths therein (e.g. data-flow relations), which are precise and abundantly available for code. This provides a strong inductive bias towards semantically meaningful relations, yielding more generalizable representations than classical sequence-based models. Unfortunately, these models primarily rely on graph-based message passing to represent relations in code, which makes them de facto local due to the high cost of message-passing steps, quite in contrast to modern, global sequence-based models, such as the Transformer. In this work, we bridge this divide between global and structured models by introducing two new hybrid model families that are both global and incorporate structural bias: Graph Sandwiches, which wrap traditional (gated) graph message-passing layers in sequential message-passing layers; and Graph Relational Embedding Attention Transformers (GREAT for short), which bias traditional Transformers with relational information from graph edge types. By studying a popular, non-trivial program repair task, variable-misuse identification, we explore the relative merits of traditional and hybrid model families for code representation. Starting with a  graph-based model that already improves upon the prior state-of-the-art for this task by 20%, we show that our proposed hybrid models improve an additional 10-15%, while training both faster and using fewer parameters.</p>
+      <p><p>Initially developed for natural language processing (NLP), Transformers are now widely used for source code processing, due to the format similarity between source code and text. In contrast to natural language, source code is strictly structured, i. e. follows the syntax of the programming language. Several recent works develop Transformer modifications for capturing syntactic information in source code. The drawback of these works is that they do not compare to each other and all consider different tasks. In this work, we conduct a thorough empirical study of the capabilities of Transformers to utilize syntactic information in different tasks. We consider three tasks (code completion, function naming and bug fixing) and re-implement different syntax-capturing modifications in a unified framework. We show that Transformers are able to make meaningful predictions based purely on syntactic information and underline the best practices of taking the syntactic information into account for improving the performance of the model.</p>
 </p>
 </div>
 
