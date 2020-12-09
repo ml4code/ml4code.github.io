@@ -7,7 +7,7 @@ year: 2020
 bibkey: svyatkovskiy2020fast
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.13651"}
-tags: ["autocompletion"]
+tags: ["autocomplete"]
 ---
 Code completion is one of the most widely used features of modern integrated development environments (IDEs). Deep learning has recently made significant progress in the statistical prediction of source code. However, state-of-the-art neural network models consume prohibitively large amounts of memory, causing computational burden to the development environment, especially when deployed in lightweight client devices.
 

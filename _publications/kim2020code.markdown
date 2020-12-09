@@ -8,7 +8,7 @@ bibkey: kim2020code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2003.13848"}
    - {name: "Code", url: "https://github.com/facebookresearch/code-prediction-transformer"}
-tags: ["autocompletion"]
+tags: ["autocomplete"]
 ---
 In this paper, we describe how to leverage Transformer, a recent neural architecture for learning from sequential data (such as text), for code completion. As in the realm of natural language processing, Transformers surpass the prediction accuracy achievable by RNNs; we provide an experimental confirmation of this over a Python dataset.
 
