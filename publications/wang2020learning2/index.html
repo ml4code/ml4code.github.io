@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Learning to Represent Programs with Heterogeneous Graphs &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Learning to Represent Programs with Heterogeneous Graphs</h1>
+  <h5>Wenhan Wang, Kechi Zhang, Ge Li, Zhi Jin.  2020</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/2012.04188" target="_blank">ArXiV</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Learning to Represent Programs with Heterogeneous Graphs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Learning to Represent Programs with Heterogeneous Graphs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Learning%20to%20Represent%20Programs%20with%20Heterogeneous%20Graphs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#GNN">GNN</a></tag>
+    
+      <tag><a href="/tags.html#summarization">summarization</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Program source code contains complex structure information, which can be represented in structured data forms like trees or graphs. To acquire the structural information in source code, most existing researches use abstract syntax trees (AST). A group of works add additional edges to ASTs to convert source code into graphs and use graph neural networks to learn representations for program graphs. Although these works provide additional control or data flow information to ASTs for downstream tasks, they neglect an important aspect of structure information in AST itself: the different types of nodes and edges. In ASTs, different nodes contain different kinds of information like variables or control flow, and the relation between a node and all its children can also be different.</p>
+
+<p>To address the information of node and edge types, we bring the idea of heterogeneous graphs to learning on source code and present a new formula of building heterogeneous program graphs from ASTs with additional type information for nodes and edges. We use the ASDL grammar of programming language to define the node and edge types of program graphs. Then we use heterogeneous graph neural networks to learn on these graphs. We evaluate our approach on two tasks: code comment generation and method naming. Both tasks require reasoning on the semantics of complete code snippets. Experiment results show that our approach outperforms baseline models, including homogeneous graph-based models, showing that leveraging the type information of nodes and edges in program graphs can help in learning program semantics.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>

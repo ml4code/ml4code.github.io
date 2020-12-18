@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      ProGraML: Graph-based Deep Learning for Program Optimization and Analysis &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  <a class="sidebar-nav-item" href="/contributors.html">Contributors</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">ProGraML: Graph-based Deep Learning for Program Optimization and Analysis</h1>
+  <h5>Chris Cummins, Zacharias V. Fisches, Tal Ben-Nun, Torsten Hoefler, Hugh Leather.  2020</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/2003.10536" target="_blank">ArXiV</a>]
+    
+      [<a href="https://zenodo.org/record/4122437" target="_blank">Dataset</a>]
+    
+      [<a href="https://github.com/ChrisCummins/ProGraML" target="_blank">Code</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=ProGraML: Graph-based Deep Learning for Program Optimization and Analysis' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=ProGraML: Graph-based Deep Learning for Program Optimization and Analysis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=ProGraML:%20Graph-based%20Deep%20Learning%20for%20Program%20Optimization%20and%20Analysis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#dataset">dataset</a></tag>
+    
+      <tag><a href="/tags.html#GNN">GNN</a></tag>
+    
+  </p>
+      
+      
+      <p><p>The increasing complexity of computing systems places a tremendous burden on optimizing compilers, requiring ever more accurate and aggressive optimizations. Machine learning offers significant benefits for constructing optimization heuristics but there remains a gap between what state-of-the-art methods achieve and the performance of an optimal heuristic. Closing this gap requires improvements in two key areas: a representation that accurately captures the semantics of programs, and a model architecture with sufficient expressiveness to reason about this representation.</p>
+
+<p>We introduce ProGraML - Program Graphs for Machine Learning - a novel graph-based program representation using a low level, language agnostic, and portable format; and machine learning models capable of performing complex downstream tasks over these graphs. The ProGraML representation is a directed attributed multigraph that captures control, data, and call relations, and summarizes instruction and operand types and ordering. Message Passing Neural Networks propagate information through this structured representation, enabling whole-program or per-vertex classification tasks.</p>
+
+<p>ProGraML provides a general-purpose program representation that equips learnable models to perform the types of program analysis that are fundamental to optimization. To this end, we evaluate the performance of our approach first on a suite of traditional compiler analysis tasks: control flow reachability, dominator trees, data dependencies, variable liveness, and common subexpression detection. On a benchmark dataset of 250k LLVM-IR files covering six source programming languages, ProGraML achieves an average 94.0 F1 score, significantly outperforming the state-of-the-art approaches. We then apply our approach to two high-level tasks - heterogeneous device mapping and program classification - setting new state-of-the-art performance in both.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>
