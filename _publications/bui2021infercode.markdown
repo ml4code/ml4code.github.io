@@ -1,0 +1,12 @@
+---
+layout: publication
+title: "InferCode: Self-Supervised Learning of Code Representations by Predicting Subtrees"
+authors: Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang
+conference: ICSE
+year: 2021
+bibkey: bui2021infercode
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/2012.07023"}
+tags: ["representation"]
+---
+Building deep learning models on source code has found many successful software engineering applications, such as code search, code comment generation, bug detection, code migration, and so on. Current learning techniques, however, have a major drawback that these models are mostly trained on datasets labeled for particular downstream tasks, and code representations may not be suitable for other tasks. While some techniques produce representations from unlabeled code, they are far from satisfactory when applied to downstream tasks. Although certain techniques generate representations from unlabeled code when applied to downstream tasks they are far from satisfactory. This paper proposes InferCode to overcome the limitation by adapting the self-supervised learning mechanism to build source code model. The key novelty lies in training code representations by predicting automatically identified subtrees from the context of the ASTs. Subtrees in ASTs are treated with InferCode as the labels for training code representations without any human labeling effort or the overhead of expensive graph construction, and the trained representations are no longer tied to any specific downstream tasks or code units. We trained an InferCode model instance using the Tree-based CNN as the encoder of a large set of Java code and applied it to downstream unsupervised tasks such as code clustering, code clone detection, cross-language code search or reused under a transfer learning scheme to continue training the model weights for supervised tasks such as code classification and method name prediction. Compared to previous code learning techniques applied to the same downstream tasks, such as Code2Vec, Code2Seq, ASTNN, higher performance results are achieved using our pre-trained InferCode model with a significant margin for most tasks including those involving different programming languages. 
