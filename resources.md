@@ -39,7 +39,7 @@ The last few years a few workshops have been organized in this area. Please, fee
 ### Courses on Important Relevant Background
 
 * [Sofware Analysis](http://rightingcode.org/) at Univ. of Pennsylvania. It is a great introduction to Program Analysis [[videos](https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543)]
-* [Applications of Data Science for Software Engineering 2020](https://www.youtube.com/watch?v=34hcH7Js41I&list=PLmAXH4O57P5_0IflYjLIg8l0IupZPbdlY) at TU Eindhoven.
+* [Applications of Data Science for Software Engineering 2020](https://www.youtube.com/watch?v=34hcH7Js41I&list=PLmAXH4O57P5_0IflYjLIg8l0IupZPbdlY) at Eindhoven University of Technology.
 
 ### Competitions
 * [nlc2cmd](http://nlc2cmd.us-east.mybluemix.net/#/) in NeurIPS 2020 by Project CLAI. Starts July 2020.
