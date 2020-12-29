@@ -18,7 +18,7 @@
 
   <title>
     
-      Evaluating Representation Learning of Code Changes for Predicting Patch Correctness in Program Repair &middot; Machine Learning for Big Code and Naturalness
+      Automating Just-In-Time Comment Updating &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -100,25 +100,21 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Evaluating Representation Learning of Code Changes for Predicting Patch Correctness in Program Repair</h1>
-  <h5>Haoye Tian, Kui Liu, Abdoul Kader Kaboreé, Anil Koyuncu, Li Li, Jacques Klein, Tegawendé F. Bissyandé.  2020</h5>
+  <h1 class="page-title">Automating Just-In-Time Comment Updating</h1>
+  <h5>Zhongxin Liu, Xin Xia, Meng Yan, Shanping Li. ASE 2020</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2008.02944" target="_blank">ArXiV</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Evaluating Representation Learning of Code Changes for Predicting Patch Correctness in Program Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Evaluating Representation Learning of Code Changes for Predicting Patch Correctness in Program Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Evaluating%20Representation%20Learning%20of%20Code%20Changes%20for%20Predicting%20Patch%20Correctness%20in%20Program%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Automating Just-In-Time Comment Updating' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Automating Just-In-Time Comment Updating' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Automating%20Just-In-Time%20Comment%20Updating' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#repair">repair</a></tag>
-    
-      <tag><a href="/tags.html#transformers">transformers</a></tag>
+      <tag><a href="/tags.html#documentation">documentation</a></tag>
     
   </p>
       
       
-      <p><p>A large body of the literature of automated program repair develops approaches where patches are generated to be validated against an oracle (e.g., a test suite). Because such an oracle can be imperfect, the generated patches, although validated by the oracle, may actually be incorrect. While the state of the art explore research directions that require dynamic information or rely on manually-crafted heuristics, we study the benefit of learning code representations to learn deep features that may encode the properties of patch correctness. Our work mainly investigates different representation learning approaches for code changes to derive embeddings that are amenable to similarity computations. We report on findings based on embeddings produced by pre-trained and re-trained neural networks. Experimental results demonstrate the potential of embeddings to empower learning algorithms in reasoning about patch correctness: a machine learning predictor with BERT transformer-based embeddings associated with logistic regression yielded an AUC value of about 0.8 in predicting patch correctness on a deduplicated dataset of 1000 labeled patches. Our study shows that learned representations can lead to reasonable performance when comparing against the state-of-the-art, PATCH-SIM, which relies on dynamic information. These representations may further be complementary to features that were carefully (manually) engineered in the literature.</p>
+      <p><p>Code comments are valuable for program comprehension and software maintenance, and also require maintenance with code evolution. However, when changing code, developers sometimes neglect updating the related comments, bringing in inconsistent or obsolete comments (aka., bad comments). Such comments are detrimental since they may mislead developers and lead to future bugs. Therefore, it is necessary to fix and avoid bad comments. In this work, we argue that bad comments can be reduced and even avoided by automatically performing comment updates with code changes. We refer to this task as “Just-In-Time (JIT) Comment Updating” and propose an approach named CUP (Comment UPdater) to automate this task. CUP can be used to assist developers in updating comments during code changes and can consequently help avoid the introduction of bad comments. Specifically, CUP leverages a novel neural sequence-to-sequence model to learn comment update patterns from extant code-comment co-changes and can automatically generate a new comment based on its corresponding old comment and code change. Several customized enhancements, such as a special tokenizer and a novel co-attention mechanism, are introduced in CUP by us to handle the characteristics of this task. We build a dataset with over 108K comment-code co-change samples and evaluate CUP on it. The evaluation results show that CUP outperforms an information-retrieval-based and a rule-based baselines by substantial margins, and can reduce developers’ edits required for JIT comment updating. In addition, the comments generated by our approach are identical to those updated by developers in 1612 (16.7%) test samples, 7 times more than the best-performing baseline.</p>
 </p>
 </div>
 
