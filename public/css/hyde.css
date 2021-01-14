@@ -287,3 +287,36 @@ tag {
 tag > a {
   color: #fff;
 }
+
+.ribbon {
+  /* positioning */
+  position: fixed;
+  padding: 2px 45px;
+  width: 128px;
+  /* bottom left of the page */
+  bottom: 50px;
+  left: -50px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /* effects with some shadow */
+  box-shadow: 0 0 0 3px #020202, 0 0 20px -3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 0 #e5e5e5, 0 0 5px rgba(0, 0, 0, 0.3);
+  /* looks */
+  background-color: #020202;
+  color: #e5e5e5;
+  font-size: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  /* ribbon effects */
+  /*border: 2px dotted #e5e5e5; */
+  /* webkit antialias fix */
+  -webkit-backface-visibility: hidden;
+  letter-spacing: .5px;
+  
+   z-index:100;
+   box-sizing:unset;
+  
+}
