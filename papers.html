@@ -161,6 +161,22 @@ the information of existing papers or adding new work.
 	<td>autocomplete adversarial </td>
 </tr>
 
+<tr>
+	<td>2021</td>
+	<td><a href="/publications/roziere2021dobf/">DOBF: A Deobfuscation Pre-Training Objective for Programming Languages</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=DOBF: A Deobfuscation Pre-Training Objective for Programming Languages' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=DOBF: A Deobfuscation Pre-Training Objective for Programming Languages' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=DOBF:%20A%20Deobfuscation%20Pre-Training%20Objective%20for%20Programming%20Languages' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Baptiste Roziere, Marie-Anne Lachaux, Marc Szafraniec, Guillaume Lample</td>
+	<td></td>
+	<td><p>Recent advances in self-supervised learning have dramatically improved the state of the art on a wide variety of tasks. However, research in language model pre-training has mostly focused on natural languages, and it is unclear whether models like BERT and its variants provide the best pre-training when applied to other modalities, such as source code. In this paper, we introduce a new pre-training objective, DOBF, that leverages the structural aspect of programming languages and pre-trains a model to recover the original version of obfuscated source code. We show that models pre-trained with DOBF significantly outperform existing approaches on multiple downstream tasks, providing relative improvements of up to 13% in unsupervised code translation, and 24% in natural language code search. Incidentally, we found that our pre-trained model is able to de-obfuscate fully obfuscated source files, and to suggest descriptive variable names.</p>
+</td>
+	<td>pretraining </td>
+</tr>
+
 
 
 <tr>
@@ -177,6 +193,22 @@ the information of existing papers or adding new work.
 	<td><p>Knowledge graphs have proven extremely useful in powering diverse applications in semantic search and natural language understanding. Graph4Code is a knowledge graph about program code that can similarly power diverse applications such as program search, code understanding, refactoring, bug detection, and code automation. The graph uses generic techniques to capture the semantics of Python code: the key nodes in the graph are classes, functions and methods in popular Python modules. Edges indicate function usage (e.g., how data flows through function calls, as derived from program analysis of real code), and documentation about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow). We make extensive use of named graphs in RDF to make the knowledge graph extensible by the community. We describe a set of generic extraction techniques that we applied to over 1.3M Python files drawn from GitHub, over 2,300 Python modules, as well as 47M forum posts to generate a graph with over 2 billion triples. We also provide a number of initial use cases of the knowledge graph in code assistance, enforcing best practices, debugging and type inference. The graph and all its artifacts are available to the community for use.</p>
 </td>
 	<td>dataset </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/zhou2019devign/">Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Devign:%20Effective%20Vulnerability%20Identification%20by%20Learning%20Comprehensive%20Program%20Semantics%20via%20Graph%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Yaqin Zhou, Shangqing Liu, Jingkai Siow, Xiaoning Du, Yang Liu</td>
+	<td>NeurIPS</td>
+	<td><p>Vulnerability identification is crucial to protect the software systems from attacks for cyber security. It is especially important to localize the vulnerable functions among the source code to facilitate the fix. However, it is a challenging and tedious process, and also requires specialized security expertise. Inspired by the work on manually-defined patterns of vulnerabilities from various code representation graphs and the recent advance on graph neural networks, we propose Devign, a general graph neural network based model for graph-level classification through learning on a rich set of code semantic representations. It includes a novel Conv module to efficiently extract useful features in the learned rich node representations for graph-level classification. The model is trained over manually labeled datasets built on 4 diversified large-scale open-source C projects that incorporate high complexity and variety of real source code instead of synthesis code used in previous works. The results of the extensive evaluation on the datasets demonstrate that Devign outperforms the state of the arts significantly with an average of 10.51% higher accuracy and 8.68% F1 score, increases averagely 4.66% accuracy and 6.37% F1 by the Conv module.</p>
+</td>
+	<td>GNN static analysis </td>
 </tr>
 
 <tr>
@@ -263,18 +295,18 @@ the information of existing papers or adding new work.
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/zhou2019devign/">Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks</a>
+	<td><a href="/publications/zhong2020semantic/">Semantic Scaffolds for Pseudocode-to-Code Generation</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Devign:%20Effective%20Vulnerability%20Identification%20by%20Learning%20Comprehensive%20Program%20Semantics%20via%20Graph%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Semantic Scaffolds for Pseudocode-to-Code Generation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Semantic Scaffolds for Pseudocode-to-Code Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Semantic%20Scaffolds%20for%20Pseudocode-to-Code%20Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Yaqin Zhou, Shangqing Liu, Jingkai Siow, Xiaoning Du, Yang Liu</td>
-	<td>NeurIPS</td>
-	<td><p>Vulnerability identification is crucial to protect the software systems from attacks for cyber security. It is especially important to localize the vulnerable functions among the source code to facilitate the fix. However, it is a challenging and tedious process, and also requires specialized security expertise. Inspired by the work on manually-defined patterns of vulnerabilities from various code representation graphs and the recent advance on graph neural networks, we propose Devign, a general graph neural network based model for graph-level classification through learning on a rich set of code semantic representations. It includes a novel Conv module to efficiently extract useful features in the learned rich node representations for graph-level classification. The model is trained over manually labeled datasets built on 4 diversified large-scale open-source C projects that incorporate high complexity and variety of real source code instead of synthesis code used in previous works. The results of the extensive evaluation on the datasets demonstrate that Devign outperforms the state of the arts significantly with an average of 10.51% higher accuracy and 8.68% F1 score, increases averagely 4.66% accuracy and 6.37% F1 by the Conv module.</p>
+	<td>Ruiqi Zhong, Mitchell Stern, Dan Klein</td>
+	<td></td>
+	<td><p>We propose a method for program generation based on semantic scaffolds, lightweight structures representing the high-level semantic and syntactic composition of a program. By first searching over plausible scaffolds then using these as constraints for a beam search over programs, we achieve better coverage of the search space when compared with existing techniques. We apply our hierarchical search method to the SPoC dataset for pseudocode-to-code generation, in which we are given line-level natural language pseudocode annotations and aim to produce a program satisfying execution-based test cases. By using semantic scaffolds during inference, we achieve a 10% absolute improvement in top-100 accuracy over the previous state-of-the-art. Additionally, we require only 11 candidates to reach the top-3000 performance of the previous best approach when tested against unseen problems, demonstrating a substantial improvement in efficiency.</p>
 </td>
-	<td>GNN static analysis </td>
+	<td>generation synthesis </td>
 </tr>
 
 <tr>
@@ -378,18 +410,18 @@ the developer teams agree that our suggested names are more meaningful than the 
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/zhong2020semantic/">Semantic Scaffolds for Pseudocode-to-Code Generation</a>
+	<td><a href="/publications/ahmad2020transformer/">A Transformer-based Approach for Source Code Summarization</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Semantic Scaffolds for Pseudocode-to-Code Generation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Semantic Scaffolds for Pseudocode-to-Code Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Semantic%20Scaffolds%20for%20Pseudocode-to-Code%20Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=A Transformer-based Approach for Source Code Summarization' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=A Transformer-based Approach for Source Code Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=A%20Transformer-based%20Approach%20for%20Source%20Code%20Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Ruiqi Zhong, Mitchell Stern, Dan Klein</td>
-	<td></td>
-	<td><p>We propose a method for program generation based on semantic scaffolds, lightweight structures representing the high-level semantic and syntactic composition of a program. By first searching over plausible scaffolds then using these as constraints for a beam search over programs, we achieve better coverage of the search space when compared with existing techniques. We apply our hierarchical search method to the SPoC dataset for pseudocode-to-code generation, in which we are given line-level natural language pseudocode annotations and aim to produce a program satisfying execution-based test cases. By using semantic scaffolds during inference, we achieve a 10% absolute improvement in top-100 accuracy over the previous state-of-the-art. Additionally, we require only 11 candidates to reach the top-3000 performance of the previous best approach when tested against unseen problems, demonstrating a substantial improvement in efficiency.</p>
+	<td>Wasi Uddin Ahmad, Saikat Chakraborty, Baishakhi Ray, Kai-Wei Chang</td>
+	<td>ACL</td>
+	<td><p>Generating a readable summary that describes the functionality of a program is known as source code summarization. In this task, learning code representation by modeling the pairwise relationship between code tokens to capture their long-range dependencies is crucial. To learn code representation for summarization, we explore the Transformer model that uses a self-attention mechanism and has shown to be effective in capturing long-range dependencies. In this work, we show that despite the approach is simple, it outperforms the state-of-the-art techniques by a significant margin. We perform extensive analysis and ablation studies that reveal several important findings, e.g., the absolute encoding of source code tokens’ position hinders, while relative encoding significantly improves the summarization performance. We have made our code publicly available to facilitate future research.</p>
 </td>
-	<td>generation synthesis </td>
+	<td>summarization </td>
 </tr>
 
 <tr>
@@ -534,18 +566,20 @@ problem and in guiding comment generation.</p>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/allamanis2020typilus/">Typilus: Neural Type Hints</a>
+	<td><a href="/publications/svyatkovskiy2020fast/">Fast and Memory-Efficient Neural Code Completion</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Typilus: Neural Type Hints' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Typilus: Neural Type Hints' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Typilus:%20Neural%20Type%20Hints' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Fast and Memory-Efficient Neural Code Completion' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Fast and Memory-Efficient Neural Code Completion' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Fast%20and%20Memory-Efficient%20Neural%20Code%20Completion' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Miltiadis Allamanis, Earl T. Barr, Soline Ducousso, Zheng Gao</td>
-	<td>PLDI</td>
-	<td><p>Type inference over partial contexts in dynamically typed languages is challenging. In this work, we present a graph neural network model that predicts types by probabilistically reasoning over a program’s structure, names, and patterns. The network uses deep similarity learning to learn a TypeSpace – a continuous relaxation of the discrete space of types – and how to embed the type properties of a symbol (i.e. identifier) into it. Importantly, our model can employ one-shot learning to predict an open vocabulary of types, including rare and user-defined ones. We realise our approach in Typilus for Python that combines the TypeSpace with an optional type checker. We show that Typilus accurately predicts types. Typilus confidently predicts types for 70% of all annotatable symbols; when it predicts a type, that type optionally type checks 95% of the time. Typilus can also find incorrect type annotations; two important and popular open source libraries, fairseq and allennlp, accepted our pull requests that fixed the annotation errors Typilus discovered.</p>
+	<td>Alexey Svyatkovskiy, Sebastian Lee, Anna Hadjitofi, Maik Riechert, Juliana Franco, Miltiadis Allamanis</td>
+	<td></td>
+	<td><p>Code completion is one of the most widely used features of modern integrated development environments (IDEs). Deep learning has recently made significant progress in the statistical prediction of source code. However, state-of-the-art neural network models consume prohibitively large amounts of memory, causing computational burden to the development environment, especially when deployed in lightweight client devices.</p>
+
+<p>In this work, we reframe neural code completion from a generation task to a task of learning to rank the valid completion suggestions computed from static analyses. By doing so, we are able to design and test a variety of deep neural network model configurations. One of our best models consumes 6 MB of RAM, computes a single suggestion in 8 ms, and achieves 90% recall in its top five suggestions. Our models outperform standard language modeling code completion techniques in terms of predictive performance, computational speed, and memory efficiency. Furthermore, they learn about code semantics from the natural language aspects of the code (e.g. identifier names) and can generalize better to previously unseen code.</p>
 </td>
-	<td>types GNN </td>
+	<td>autocomplete </td>
 </tr>
 
 <tr>
@@ -1187,34 +1221,34 @@ the accuracy of existing baselines.</p>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/cai2020tag/">TAG : Type Auxiliary Guiding for Code Comment Generation</a>
+	<td><a href="/publications/arakelyan2020towards/">Towards Learning Representations of Binary Executable Files for Security Tasks</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=TAG : Type Auxiliary Guiding for Code Comment Generation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=TAG : Type Auxiliary Guiding for Code Comment Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=TAG%20:%20Type%20Auxiliary%20Guiding%20for%20Code%20Comment%20Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Towards Learning Representations of Binary Executable Files for Security Tasks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Towards Learning Representations of Binary Executable Files for Security Tasks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Towards%20Learning%20Representations%20of%20Binary%20Executable%20Files%20for%20Security%20Tasks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Ruichu Cai, Zhihao Liang, Boyan Xu, Zijian Li, Yuexing Hao, Yao Chen</td>
-	<td>ACL</td>
-	<td><p>Existing leading code comment generation approaches with the structure-to-sequence framework ignores the type information of the interpretation of the code, e.g., operator, string, etc. However, introducing the type information into the existing framework is non-trivial due to the hierarchical dependence among the type information. In order to address the issues above, we propose a Type Auxiliary Guiding encoder-decoder framework for the code comment generation task which considers the source code as an N-ary tree with type information associated with each node. Specifically, our framework is featured with a Type-associated Encoder and a Type-restricted Decoder which enables adaptive summarization of the source code. We further propose a hierarchical reinforcement learning method to resolve the training difficulties of our proposed framework. Extensive evaluations demonstrate the state-of-the-art performance of our framework with both the auto-evaluated metrics and case studies.</p>
+	<td>S. Arakelyan, C. Hauser, E. Kline, A. Galstyan</td>
+	<td>AAAI</td>
+	<td><p>Tackling binary analysis problems has traditionally implied manually defining rules and heuristics. As an alternative, we are suggesting using machine learning models for learning distributed representations of binaries that can be applicable for a number of downstream tasks. We construct a computational graph from the binary executable and use it with a graph convolutional neural network to learn a high dimensional representation of the program. We show the versatility of this approach by using our representations to solve two semantically different binary analysis tasks – algorithm classification and vulnerability discovery. We compare the proposed approach to our own strong baseline as well as published results and demonstrate improvement on the state of the art methods for both tasks.</p>
 </td>
-	<td>bimodal documentation </td>
+	<td>GNN representation </td>
 </tr>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/ahmad2020transformer/">A Transformer-based Approach for Source Code Summarization</a>
+	<td><a href="/publications/allamanis2020typilus/">Typilus: Neural Type Hints</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=A Transformer-based Approach for Source Code Summarization' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=A Transformer-based Approach for Source Code Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=A%20Transformer-based%20Approach%20for%20Source%20Code%20Summarization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Typilus: Neural Type Hints' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Typilus: Neural Type Hints' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Typilus:%20Neural%20Type%20Hints' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Wasi Uddin Ahmad, Saikat Chakraborty, Baishakhi Ray, Kai-Wei Chang</td>
-	<td>ACL</td>
-	<td><p>Generating a readable summary that describes the functionality of a program is known as source code summarization. In this task, learning code representation by modeling the pairwise relationship between code tokens to capture their long-range dependencies is crucial. To learn code representation for summarization, we explore the Transformer model that uses a self-attention mechanism and has shown to be effective in capturing long-range dependencies. In this work, we show that despite the approach is simple, it outperforms the state-of-the-art techniques by a significant margin. We perform extensive analysis and ablation studies that reveal several important findings, e.g., the absolute encoding of source code tokens’ position hinders, while relative encoding significantly improves the summarization performance. We have made our code publicly available to facilitate future research.</p>
+	<td>Miltiadis Allamanis, Earl T. Barr, Soline Ducousso, Zheng Gao</td>
+	<td>PLDI</td>
+	<td><p>Type inference over partial contexts in dynamically typed languages is challenging. In this work, we present a graph neural network model that predicts types by probabilistically reasoning over a program’s structure, names, and patterns. The network uses deep similarity learning to learn a TypeSpace – a continuous relaxation of the discrete space of types – and how to embed the type properties of a symbol (i.e. identifier) into it. Importantly, our model can employ one-shot learning to predict an open vocabulary of types, including rare and user-defined ones. We realise our approach in Typilus for Python that combines the TypeSpace with an optional type checker. We show that Typilus accurately predicts types. Typilus confidently predicts types for 70% of all annotatable symbols; when it predicts a type, that type optionally type checks 95% of the time. Typilus can also find incorrect type annotations; two important and popular open source libraries, fairseq and allennlp, accepted our pull requests that fixed the annotation errors Typilus discovered.</p>
 </td>
-	<td>summarization </td>
+	<td>types GNN </td>
 </tr>
 
 <tr>
@@ -1476,36 +1510,18 @@ of DL models-based method for future fully automated source code processing.</p>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/arakelyan2020towards/">Towards Learning Representations of Binary Executable Files for Security Tasks</a>
+	<td><a href="/publications/cai2020tag/">TAG : Type Auxiliary Guiding for Code Comment Generation</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Towards Learning Representations of Binary Executable Files for Security Tasks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Towards Learning Representations of Binary Executable Files for Security Tasks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Towards%20Learning%20Representations%20of%20Binary%20Executable%20Files%20for%20Security%20Tasks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=TAG : Type Auxiliary Guiding for Code Comment Generation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=TAG : Type Auxiliary Guiding for Code Comment Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=TAG%20:%20Type%20Auxiliary%20Guiding%20for%20Code%20Comment%20Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>S. Arakelyan, C. Hauser, E. Kline, A. Galstyan</td>
-	<td>AAAI</td>
-	<td><p>Tackling binary analysis problems has traditionally implied manually defining rules and heuristics. As an alternative, we are suggesting using machine learning models for learning distributed representations of binaries that can be applicable for a number of downstream tasks. We construct a computational graph from the binary executable and use it with a graph convolutional neural network to learn a high dimensional representation of the program. We show the versatility of this approach by using our representations to solve two semantically different binary analysis tasks – algorithm classification and vulnerability discovery. We compare the proposed approach to our own strong baseline as well as published results and demonstrate improvement on the state of the art methods for both tasks.</p>
+	<td>Ruichu Cai, Zhihao Liang, Boyan Xu, Zijian Li, Yuexing Hao, Yao Chen</td>
+	<td>ACL</td>
+	<td><p>Existing leading code comment generation approaches with the structure-to-sequence framework ignores the type information of the interpretation of the code, e.g., operator, string, etc. However, introducing the type information into the existing framework is non-trivial due to the hierarchical dependence among the type information. In order to address the issues above, we propose a Type Auxiliary Guiding encoder-decoder framework for the code comment generation task which considers the source code as an N-ary tree with type information associated with each node. Specifically, our framework is featured with a Type-associated Encoder and a Type-restricted Decoder which enables adaptive summarization of the source code. We further propose a hierarchical reinforcement learning method to resolve the training difficulties of our proposed framework. Extensive evaluations demonstrate the state-of-the-art performance of our framework with both the auto-evaluated metrics and case studies.</p>
 </td>
-	<td>GNN representation </td>
-</tr>
-
-<tr>
-	<td>2020</td>
-	<td><a href="/publications/svyatkovskiy2020fast/">Fast and Memory-Efficient Neural Code Completion</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Fast and Memory-Efficient Neural Code Completion' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Fast and Memory-Efficient Neural Code Completion' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Fast%20and%20Memory-Efficient%20Neural%20Code%20Completion' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Alexey Svyatkovskiy, Sebastian Lee, Anna Hadjitofi, Maik Riechert, Juliana Franco, Miltiadis Allamanis</td>
-	<td></td>
-	<td><p>Code completion is one of the most widely used features of modern integrated development environments (IDEs). Deep learning has recently made significant progress in the statistical prediction of source code. However, state-of-the-art neural network models consume prohibitively large amounts of memory, causing computational burden to the development environment, especially when deployed in lightweight client devices.</p>
-
-<p>In this work, we reframe neural code completion from a generation task to a task of learning to rank the valid completion suggestions computed from static analyses. By doing so, we are able to design and test a variety of deep neural network model configurations. One of our best models consumes 6 MB of RAM, computes a single suggestion in 8 ms, and achieves 90% recall in its top five suggestions. Our models outperform standard language modeling code completion techniques in terms of predictive performance, computational speed, and memory efficiency. Furthermore, they learn about code semantics from the natural language aspects of the code (e.g. identifier names) and can generalize better to previously unseen code.</p>
-</td>
-	<td>autocomplete </td>
+	<td>bimodal documentation </td>
 </tr>
 
 
