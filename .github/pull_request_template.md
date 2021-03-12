@@ -1,5 +1,5 @@
 
-Thank you for submitting a PR! Please replace this sentence with a high-level description of the PR. Also ensure the following for new publications:
+Thank you for submitting a PR! Please replace this text with a high-level description of the PR. Also ensure the following for new publications:
 
 
 - [ ] Files for new publications are in the `_publications` folder.
