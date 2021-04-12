@@ -18,7 +18,7 @@
 
   <title>
     
-      CodeSearchNet Challenge: Evaluating the State of Semantic Code Search &middot; Machine Learning for Big Code and Naturalness
+      On the Naturalness and Localness of Software Logs &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,33 +101,39 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">CodeSearchNet Challenge: Evaluating the State of Semantic Code Search</h1>
-  <h5>H. Husain, H. Wu, T. Gazit, M. Allamanis, M. Brockschmidt.  2019</h5>
+  <h1 class="page-title">On the Naturalness and Localness of Software Logs</h1>
+  <h5>Sina Gholamian, Paul A. S. Ward.  2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1909.09436" target="_blank">ArXiV</a>]
-    
-      [<a href="https://github.com/github/CodeSearchNet" target="_blank">Code and other info</a>]
-    
-      [<a href="https://app.wandb.ai/github/codesearchnet/benchmark" target="_blank">Leaderboard</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=CodeSearchNet Challenge: Evaluating the State of Semantic Code Search' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=CodeSearchNet Challenge: Evaluating the State of Semantic Code Search' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CodeSearchNet%20Challenge:%20Evaluating%20the%20State%20of%20Semantic%20Code%20Search' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=On the Naturalness and Localness of Software Logs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=On the Naturalness and Localness of Software Logs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=On%20the%20Naturalness%20and%20Localness%20of%20Software%20Logs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#dataset">dataset</a></tag>
+      <tag><a href="/tags.html#logging">logging</a></tag>
     
-      <tag><a href="/tags.html#search">search</a></tag>
+      <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
       
       
-      <p><p>Semantic code search is the task of retrieving relevant code given a natural language query. While related to other information retrieval tasks, it requires bridging the gap between the language used in code (often abbreviated and highly technical) and natural language more suitable to describe vague concepts and ideas.</p>
-
-<p>To enable evaluation of progress on code search, we are releasing the CodeSearchNet Corpus and are presenting the CodeSearchNet Challenge, which consists of 99 natural language queries with about 4k expert relevance annotations of likely results from CodeSearchNet Corpus. The corpus contains about 6 million functions from open-source code spanning six programming languages (Go, Java, JavaScript, PHP, Python, and Ruby). The CodeSearchNet Corpus also contains automatically generated query-like natural language for 2 million functions, obtained from mechanically scraping and preprocessing associated function documentation. In this article, we describe the methodology used to obtain the corpus and expert labels, as well as a number of simple baseline solutions for the task.</p>
-
-<p>We hope that CodeSearchNet Challenge encourages researchers and practitioners to study this interesting task further and will host a competition and leaderboard to track the progress on the challenge. We are also keen on extending CodeSearchNet Challenge to more queries and programming languages in the future.</p>
+      <p><p>Logs are an essential part  of  the  development  and
+maintenance  of  large  and  complex  software  systems  as  they
+contain rich information pertaining to the dynamic content and
+state  of  the  system.  As  such,  developers  and  practitioners  rely
+heavily  on  the  logs  to  monitor  their  systems.  In  parallel,  the
+increasing  volume  and  scale  of  the  logs,  due  to  the  growing
+complexity  of  modern  software  systems,  renders  the  traditional
+way  of  manual  log  inspection  insurmountable.  Consequently,  to
+handle  large  volumes  of  logs  efficiently  and  effectively,  various
+prior research aims to automate the analysis of log files. Thus, in
+this paper, we begin with the hypothesis that log files are natural
+and local and these attributes can be applied for automating log
+analysis tasks. We guide our research with six research questions
+with regards to the naturalness and localness of the log files, and
+present  a  case  study  on  anomaly  detection  and  introduce  a  tool
+for anomaly detection, called ANALOG, to demonstrate how our
+new  findings  facilitate  the  automated  analysis  of  logs.</p>
 </p>
 </div>
 
