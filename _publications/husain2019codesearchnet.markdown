@@ -9,7 +9,7 @@ additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1909.09436"}
    - {name: "Code and other info", url: "https://github.com/github/CodeSearchNet"}
    - {name: "Leaderboard", url: "https://app.wandb.ai/github/codesearchnet/benchmark"}
-tags: ["dataset", "retrieval", "search"]
+tags: ["dataset", "search"]
 ---
 Semantic code search is the task of retrieving relevant code given a natural language query. While related to other information retrieval tasks, it requires bridging the gap between the language used in code (often abbreviated and highly technical) and natural language more suitable to describe vague concepts and ideas.
 
