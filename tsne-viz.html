@@ -101,8 +101,9 @@ function search() {
 
     <div class="content container">
       <h2>2D Map of Papers</h2>
-Each dot represents one paper in this survey. Hover your mouse over each point to look
-at the details. Click on a point to go to the paper information page.
+<p>Each dot represents one paper in this survey. Hover your mouse over each point to look
+at the details. Click on a point to go to the paper information page.</p>
+<div style="text-align: right;"><label>Search </label><input type="text" spellcheck="false" id="filtermap"/></div>
 <div id="paperviz"></div>
 
 Please consider <a href="/contributing.html">contributing</a> by updating
@@ -166,11 +167,6 @@ d3.json("./tsne.json", function(data) {
       .html("<p>" + d.title + " " + tags + "</p>")
       .style("left", (d3.mouse(this)[0]+30) + "px")
       .style("top", (d3.mouse(this)[1]) + "px");
-   d3.selectAll("circle").filter(dd => dd.key == d.key).style("fill", "#ff0000");
-  }
-
-  var mouseleave = function(d) {
-   d3.selectAll("circle").filter(dd => dd.key == d.key).style("fill", "#69b3a2");
   }
 
   var click_link = function(d) {
@@ -189,10 +185,23 @@ d3.json("./tsne.json", function(data) {
       .style("fill", "#69b3a2")
       .style("opacity", 0.4)
       .style("stroke", "white")
-    .on("mouseover", mouseover )
-    .on("mousemove", mousemove )
-    .on("mouseleave", mouseleave )
-    .on("click", click_link)
+    .on("mouseover", mouseover)
+    .on("mousemove", mousemove)
+    .on("click", click_link);
+
+  var isMatch = function(d, searchTerm) {
+    if (searchTerm.length < 3) return false;
+    var allText = (d.title + " " + d.abstract + " " + d.tags.join(" ")).toLocaleLowerCase();
+    return allText.indexOf(searchTerm) != -1;
+  }
+
+  $("#filtermap").keyup(function (e) {
+    var searchTerm = $("#filtermap").val().toLocaleLowerCase();
+    var allPoints = d3.selectAll("circle");
+    // TODO: This seems quite inefficient...
+    allPoints.filter(dd => !isMatch(dd, searchTerm)).style("fill", "#69b3a2");
+    allPoints.filter(dd => isMatch(dd, searchTerm)).style("fill", "#aa0000");
+  });
 
 });
 </script>
