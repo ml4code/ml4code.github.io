@@ -66,10 +66,16 @@ d3.json("./tsne.json", function(data) {
     for (i=0; i<d.tags.length; i++) {
         tags += "<tag>" + d.tags[i] + "</tag>&nbsp;"
     }
+
+    var boundingRect = document.getElementById("paperviz").getBoundingClientRect();
+    var mousePos = d3.mouse(this);
+    var x = mousePos[0] + boundingRect.x + 20;
+    var y = mousePos[1] + boundingRect.y + 30;
+
     tooltip
       .html("<p>" + d.title + " " + tags + "</p>")
-      .style("left", (d3.mouse(this)[0]+30) + "px")
-      .style("top", (d3.mouse(this)[1]) + "px");
+      .style("left", x + "px")
+      .style("top", y + "px");
   }
 
   var click_link = function(d) {
