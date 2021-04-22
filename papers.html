@@ -245,20 +245,18 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/li2020dlfix/">DLFix: Context-based Code Transformation Learning for Automated Program Repair</a>
+	<td><a href="/publications/li2020learning/">Learning Code-Query Interaction for Enhancing Code Searches</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=DLFix: Context-based Code Transformation Learning for Automated Program Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=DLFix: Context-based Code Transformation Learning for Automated Program Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=DLFix:%20Context-based%20Code%20Transformation%20Learning%20for%20Automated%20Program%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Code-Query Interaction for Enhancing Code Searches' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Learning Code-Query Interaction for Enhancing Code Searches' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Learning%20Code-Query%20Interaction%20for%20Enhancing%20Code%20Searches' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Y. Li, S. Wang, T. N. Nguyen</td>
-	<td>ICSE</td>
-	<td><p>Automated Program Repair (APR) is very useful in helping developers in the process of software development and maintenance. Despite recent advances in deep learning (DL), the DL-based APR approaches still have limitations in learning bug-fixing code changes and the context of the surrounding source code of the bug-fixing code changes. These limitations lead to incorrect fixing locations or fixes. In this paper, we introduce DLFix, a two-tier DL model that treats APR as code transformation learning from the prior bug fixes and the surrounding code contexts of the fixes. The first layer is a tree-based RNN model that learns the contexts of bug fixes and its result is used as an additional weighting input for the second layer designed to learn the bug-fixing code transformations.</p>
-
-<p>We conducted several experiments to evaluate DLFix in two benchmarks: Defect4J and Bugs.jar, and a newly built bug datasets with a total of +20K real-world bugs in eight projects. We compared DLFix against a total of 13 state-of-the-art pattern-based APR tools. Our results show that DLFix can auto-fix more bugs than 11 of them, and is comparable and complementary to the top two pattern-based APR tools in which there are 7 and 11 unique bugs that they cannot detect, respectively, but we can. Importantly, DLFix is fully automated and data-driven, and does not require hard-coding of bug-fixing patterns as in those tools. We compared DLFix against 4 state-of-the-art deep learning based APR models. DLFix is able to fix 2.5 times more bugs than the best performing~baseline.</p>
+	<td>Wei Li, Haozhe Qin, Shuhan Yan, Beijun Shen, Yuting Chen</td>
+	<td>ICSME</td>
+	<td><p>Code search plays an important role in software development and maintenance. In recent years, deep learning (DL) has achieved a great success in this domain-several DL-based code search methods, such as DeepCS and UNIF, have been proposed for exploring deep, semantic correlations between code and queries; each method usually embeds source code and natural language queries into real vectors followed by computing their vector distances representing their semantic correlations. Meanwhile, deep learning-based code search still suffers from three main problems, i.e., the OOV (Out of Vocabulary) problem, the independent similarity matching problem, and the small training dataset problem. To tackle the above problems, we propose CQIL, a novel, deep learning-based code search method. CQIL learns code-query interactions and uses a CNN (Convolutional Neural Network) to compute semantic correlations between queries and code snippets. In particular, CQIL employs a hybrid representation to model code-query correlations, which solves the OOV problem. CQIL also deeply learns the code-query interaction for enhancing code searches, which solves the independent similarity matching and the small training dataset problems. We evaluate CQIL on two datasets (CODEnn and CosBench). The evaluation results show the strengths of CQIL-it achieves the MAP@1 values, 0.694 and 0.574, on CODEnn and CosBench, respectively. In particular, it outperforms DeepCS and UNIF, two state-of-the-art code search methods, by 13.6% and 18.1% in MRR, respectively, when the training dataset is insufficient.</p>
 </td>
-	<td>edit repair AST </td>
+	<td>search </td>
 </tr>
 
 <tr>
@@ -597,22 +595,6 @@ problem and in guiding comment generation.</p>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/li2020learning/">Learning Code-Query Interaction for Enhancing Code Searches</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Learning Code-Query Interaction for Enhancing Code Searches' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Learning Code-Query Interaction for Enhancing Code Searches' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Learning%20Code-Query%20Interaction%20for%20Enhancing%20Code%20Searches' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Wei Li, Haozhe Qin, Shuhan Yan, Beijun Shen, Yuting Chen</td>
-	<td>ICSME</td>
-	<td><p>Code search plays an important role in software development and maintenance. In recent years, deep learning (DL) has achieved a great success in this domain-several DL-based code search methods, such as DeepCS and UNIF, have been proposed for exploring deep, semantic correlations between code and queries; each method usually embeds source code and natural language queries into real vectors followed by computing their vector distances representing their semantic correlations. Meanwhile, deep learning-based code search still suffers from three main problems, i.e., the OOV (Out of Vocabulary) problem, the independent similarity matching problem, and the small training dataset problem. To tackle the above problems, we propose CQIL, a novel, deep learning-based code search method. CQIL learns code-query interactions and uses a CNN (Convolutional Neural Network) to compute semantic correlations between queries and code snippets. In particular, CQIL employs a hybrid representation to model code-query correlations, which solves the OOV problem. CQIL also deeply learns the code-query interaction for enhancing code searches, which solves the independent similarity matching and the small training dataset problems. We evaluate CQIL on two datasets (CODEnn and CosBench). The evaluation results show the strengths of CQIL-it achieves the MAP@1 values, 0.694 and 0.574, on CODEnn and CosBench, respectively. In particular, it outperforms DeepCS and UNIF, two state-of-the-art code search methods, by 13.6% and 18.1% in MRR, respectively, when the training dataset is insufficient.</p>
-</td>
-	<td>search </td>
-</tr>
-
-<tr>
-	<td>2020</td>
 	<td><a href="/publications/ramakrishnan2020semantic/">Semantic Robustness of Models of Source Code</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Semantic Robustness of Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -627,6 +609,24 @@ problem and in guiding comment generation.</p>
 <p>We implement an extensible framework for adversarial training over source code, and conduct a thorough evaluation on a number of datasets and two different architectures. Our results show (1) the increase in robustness following adversarial training, (2) the ability of training on weak adversaries to provide robustness to attacks by stronger adversaries, and (3) the shift in attribution focus of adversarially trained models towards semantic vs. syntactic features.</p>
 </td>
 	<td>adversarial naming </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/li2020dlfix/">DLFix: Context-based Code Transformation Learning for Automated Program Repair</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=DLFix: Context-based Code Transformation Learning for Automated Program Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=DLFix: Context-based Code Transformation Learning for Automated Program Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=DLFix:%20Context-based%20Code%20Transformation%20Learning%20for%20Automated%20Program%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Y. Li, S. Wang, T. N. Nguyen</td>
+	<td>ICSE</td>
+	<td><p>Automated Program Repair (APR) is very useful in helping developers in the process of software development and maintenance. Despite recent advances in deep learning (DL), the DL-based APR approaches still have limitations in learning bug-fixing code changes and the context of the surrounding source code of the bug-fixing code changes. These limitations lead to incorrect fixing locations or fixes. In this paper, we introduce DLFix, a two-tier DL model that treats APR as code transformation learning from the prior bug fixes and the surrounding code contexts of the fixes. The first layer is a tree-based RNN model that learns the contexts of bug fixes and its result is used as an additional weighting input for the second layer designed to learn the bug-fixing code transformations.</p>
+
+<p>We conducted several experiments to evaluate DLFix in two benchmarks: Defect4J and Bugs.jar, and a newly built bug datasets with a total of +20K real-world bugs in eight projects. We compared DLFix against a total of 13 state-of-the-art pattern-based APR tools. Our results show that DLFix can auto-fix more bugs than 11 of them, and is comparable and complementary to the top two pattern-based APR tools in which there are 7 and 11 unique bugs that they cannot detect, respectively, but we can. Importantly, DLFix is fully automated and data-driven, and does not require hard-coding of bug-fixing patterns as in those tools. We compared DLFix against 4 state-of-the-art deep learning based APR models. DLFix is able to fix 2.5 times more bugs than the best performing~baseline.</p>
+</td>
+	<td>edit repair AST </td>
 </tr>
 
 <tr>
@@ -1445,6 +1445,22 @@ of DL models-based method for future fully automated source code processing.</p>
 
 <tr>
 	<td>2020</td>
+	<td><a href="/publications/bui2020efficient/">Efficient Framework for Learning Code Representations through Semantic-Preserving Program Transformations</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Efficient Framework for Learning Code Representations through Semantic-Preserving Program Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Efficient Framework for Learning Code Representations through Semantic-Preserving Program Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Efficient%20Framework%20for%20Learning%20Code%20Representations%20through%20Semantic-Preserving%20Program%20Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Nghi D. Q. Bui</td>
+	<td></td>
+	<td><p>Recent learning techniques for the representation of code depend mostly on human-annotated (labeled) data. In this work, we are proposing Corder, a self-supervised learning system that can learn to represent code without having to label data. The key innovation is that we train the source code model by asking it to recognize similar and dissimilar code snippets through a contrastive learning paradigm. We use a set of semantic-preserving transformation operators to generate snippets that are syntactically diverse but semantically equivalent. The contrastive learning objective, at the same time, maximizes agreement between different views of the same snippets and minimizes agreement between transformed views of different snippets. We train different instances of Corder on 3 neural network encoders, which are Tree-based CNN, ASTNN, and Code2vec over 2.5 million unannotated Java methods mined from GitHub. Our result shows that the Corder pre-training improves code classification and method name prediction with large margins. Furthermore, the code vectors generated by Corder are adapted to code clustering which has been shown to significantly beat the other baselines.</p>
+</td>
+	<td>pretraining </td>
+</tr>
+
+<tr>
+	<td>2020</td>
 	<td><a href="/publications/allamanis2020typilus/">Typilus: Neural Type Hints</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=Typilus: Neural Type Hints' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -1461,22 +1477,6 @@ of DL models-based method for future fully automated source code processing.</p>
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/yan2020are/">Are the Code Snippets What We Are Searching for? A Benchmark and an Empirical Study on Code Search with Natural-Language Queries</a>
-		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Are the Code Snippets What We Are Searching for? A Benchmark and an Empirical Study on Code Search with Natural-Language Queries' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Are the Code Snippets What We Are Searching for? A Benchmark and an Empirical Study on Code Search with Natural-Language Queries' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Are%20the%20Code%20Snippets%20What%20We%20Are%20Searching%20for?%20A%20Benchmark%20and%20an%20Empirical%20Study%20on%20Code%20Search%20with%20Natural-Language%20Queries' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
-		</span>
-	</td>
-	<td>Shuhan Yan, Hang Yu, Yuting Chen, Beijun Shen, Lingxiao Jiang</td>
-	<td>SANER</td>
-	<td><p>Code search methods, especially those that allow programmers to raise queries in a natural language, plays an important role in software development. It helps to improve programmers’ productivity by returning sample code snippets from the Internet and/or source-code repositories for their natural-language queries. Meanwhile, there are many code search methods in the literature that support natural-language queries. Difficulties exist in recognizing the strengths and weaknesses of each method and choosing the right one for different usage scenarios, because (1) the implementations of those methods and the datasets for evaluating them are usually not publicly available, and (2) some methods leverage different training datasets or auxiliary data sources and thus their effectiveness cannot be fairly measured and may be negatively affected in practical uses. To build a common ground for measuring code search methods, this paper builds CosBench, a dataset that consists of 1000 projects, 52 code-independent natural-language queries with ground truths, and a set of scripts for calculating four metrics on code research results. We have evaluated four IR (Information Retrieval)-based and two DL (Deep Learning)-based code search methods on CosBench. The empirical evaluation results clearly show the usefulness of the CosBench dataset and various strengths of each code search method. We found that DL-based methods are more suitable for queries on reusing code, and IR-based ones for queries on resolving bugs and learning API uses.</p>
-</td>
-	<td>search </td>
-</tr>
-
-<tr>
-	<td>2020</td>
 	<td><a href="/publications/brody2020structural/">A Structural Model for Contextual Code Changes</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q=A Structural Model for Contextual Code Changes' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -1489,6 +1489,22 @@ of DL models-based method for future fully automated source code processing.</p>
 	<td><p>We address the problem of predicting edit completions based on a learned model that was trained on past edits. Given a code snippet that is partially edited, our goal is to predict a completion of the edit for the rest of the snippet. We refer to this task as the EditCompletion task and present a novel approach for tackling it. The main idea is to directly represent structural edits. This allows us to model the likelihood of the edit itself, rather than learning the likelihood of the edited code. We represent an edit operation as a path in the program’s Abstract Syntax Tree (AST), originating from the source of the edit to the target of the edit. Using this representation, we present a powerful and lightweight neural model for the EditCompletion task. We conduct a thorough evaluation, comparing our approach to a variety of representation and modeling approaches that are driven by multiple strong models such as LSTMs, Transformers, and neural CRFs. Our experiments show that our model achieves 28% relative gain over state-of-the-art sequential models and 2× higher accuracy than syntactic models that learn to generate the edited code instead of modeling the edits directly. Our code, dataset, and trained models are publicly available at https://github.com/tech-srl/c3po/ .</p>
 </td>
 	<td>edit AST autocomplete </td>
+</tr>
+
+<tr>
+	<td>2020</td>
+	<td><a href="/publications/yang2020survey/">A Survey on Deep Learning for Software Engineering</a>
+		<span class="externallinks">
+			&nbsp;<a href='http://scholar.google.com/scholar?q=A Survey on Deep Learning for Software Engineering' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=A Survey on Deep Learning for Software Engineering' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=A%20Survey%20on%20Deep%20Learning%20for%20Software%20Engineering' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+		</span>
+	</td>
+	<td>Yanming Yang, Xin Xia, David Lo, John Grundy</td>
+	<td></td>
+	<td><p>In 2006, Geoffrey Hinton proposed the concept of training ‘‘Deep Neural Networks (DNNs)’’ and an improved model training method to break the bottleneck of neural network development. More recently, the introduction of AlphaGo in 2016 demonstrated the powerful learning ability of deep learning and its enormous potential. Deep learning has been increasingly used to develop state-of-the-art software engineering (SE) research tools due to its ability to boost performance for various SE tasks. There are many factors, e.g., deep learning model selection, internal structure differences, and model optimization techniques, that may have an impact on the performance of DNNs applied in SE. Few works to date focus on summarizing, classifying, and analyzing the application of deep learning techniques in SE. To fill this gap, we performed a survey to analyse the relevant studies published since 2006. We first provide an example to illustrate how deep learning techniques are used in SE. We then summarize and classify different deep learning techniques used in SE. We analyzed key optimization technologies used in these deep learning models, and finally describe a range of key research topics using DNNs in SE. Based on our findings, we present a set of current challenges remaining to be investigated and outline a proposed research road map highlighting key opportunities for future work.</p>
+</td>
+	<td>survey </td>
 </tr>
 
 <tr>
@@ -1721,18 +1737,18 @@ We assessed our tool on both open-source code and also on Cisco codebase for C a
 
 <tr>
 	<td>2020</td>
-	<td><a href="/publications/bui2020efficient/">Efficient Framework for Learning Code Representations through Semantic-Preserving Program Transformations</a>
+	<td><a href="/publications/yan2020are/">Are the Code Snippets What We Are Searching for? A Benchmark and an Empirical Study on Code Search with Natural-Language Queries</a>
 		<span class="externallinks">
-			&nbsp;<a href='http://scholar.google.com/scholar?q=Efficient Framework for Learning Code Representations through Semantic-Preserving Program Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-			<a href='https://www.semanticscholar.org/search?q=Efficient Framework for Learning Code Representations through Semantic-Preserving Program Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-			<a href='http://academic.microsoft.com/#/search?iq=Efficient%20Framework%20for%20Learning%20Code%20Representations%20through%20Semantic-Preserving%20Program%20Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+			&nbsp;<a href='http://scholar.google.com/scholar?q=Are the Code Snippets What We Are Searching for? A Benchmark and an Empirical Study on Code Search with Natural-Language Queries' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+			<a href='https://www.semanticscholar.org/search?q=Are the Code Snippets What We Are Searching for? A Benchmark and an Empirical Study on Code Search with Natural-Language Queries' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+			<a href='http://academic.microsoft.com/#/search?iq=Are%20the%20Code%20Snippets%20What%20We%20Are%20Searching%20for?%20A%20Benchmark%20and%20an%20Empirical%20Study%20on%20Code%20Search%20with%20Natural-Language%20Queries' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Nghi D. Q. Bui</td>
-	<td></td>
-	<td><p>Recent learning techniques for the representation of code depend mostly on human-annotated (labeled) data. In this work, we are proposing Corder, a self-supervised learning system that can learn to represent code without having to label data. The key innovation is that we train the source code model by asking it to recognize similar and dissimilar code snippets through a contrastive learning paradigm. We use a set of semantic-preserving transformation operators to generate snippets that are syntactically diverse but semantically equivalent. The contrastive learning objective, at the same time, maximizes agreement between different views of the same snippets and minimizes agreement between transformed views of different snippets. We train different instances of Corder on 3 neural network encoders, which are Tree-based CNN, ASTNN, and Code2vec over 2.5 million unannotated Java methods mined from GitHub. Our result shows that the Corder pre-training improves code classification and method name prediction with large margins. Furthermore, the code vectors generated by Corder are adapted to code clustering which has been shown to significantly beat the other baselines.</p>
+	<td>Shuhan Yan, Hang Yu, Yuting Chen, Beijun Shen, Lingxiao Jiang</td>
+	<td>SANER</td>
+	<td><p>Code search methods, especially those that allow programmers to raise queries in a natural language, plays an important role in software development. It helps to improve programmers’ productivity by returning sample code snippets from the Internet and/or source-code repositories for their natural-language queries. Meanwhile, there are many code search methods in the literature that support natural-language queries. Difficulties exist in recognizing the strengths and weaknesses of each method and choosing the right one for different usage scenarios, because (1) the implementations of those methods and the datasets for evaluating them are usually not publicly available, and (2) some methods leverage different training datasets or auxiliary data sources and thus their effectiveness cannot be fairly measured and may be negatively affected in practical uses. To build a common ground for measuring code search methods, this paper builds CosBench, a dataset that consists of 1000 projects, 52 code-independent natural-language queries with ground truths, and a set of scripts for calculating four metrics on code research results. We have evaluated four IR (Information Retrieval)-based and two DL (Deep Learning)-based code search methods on CosBench. The empirical evaluation results clearly show the usefulness of the CosBench dataset and various strengths of each code search method. We found that DL-based methods are more suitable for queries on reusing code, and IR-based ones for queries on resolving bugs and learning API uses.</p>
 </td>
-	<td>pretraining </td>
+	<td>search </td>
 </tr>
 
 
