@@ -21,7 +21,7 @@ research is inherently interdisciplinary, uniting the machine learning and
 natural language processing communities with software engineering
 and programming language communities.
 
-#### Browse Papers by Tag
+#### 🏷 Browse Papers by Tag
 {% assign rawtags = Array.new %}
 {% for publication in site.publications %}
   {% assign ttags = publication.tags  %}  
