@@ -5,6 +5,8 @@ authors: A.V.M. Barone, R. Sennrich
 conference: ArXiV 1707.02275
 year: 2017
 bibkey: barone2017parallel
+additional_links:
+   - {name: "data", url: "https://github.com/EdinburghNLP/code-docstring-corpus"}
 tags: ["documentation", "summarization", "dataset"]
 ---
 Automated documentation of programming source code and automated code generation from natural language are challenging tasks of both practical and scientific interest. Progress in these areas has been limited by the low availability of parallel corpora of code and natural language descriptions, which tend to be small and constrained to specific domains.
