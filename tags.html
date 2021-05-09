@@ -22,7 +22,7 @@ The following tags appear in the publications listed in the review:
 
 {% assign sortedPublications =  site.publications | sort: "authors" | sort: "year"%}
 {% for tag in rawtags %}
-   <h3>{{ tag }} <a id="{{ tag }}"></a></h3>
+   <h3>🏷 {{ tag }} <a id="{{ tag }}"></a></h3>
    <ul>
    {% for publication in sortedPublications %}
      {% if publication.tags contains tag %}
