@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Fix Build Errors with Graph2Diff Neural Networks"
-authors: D. Tarlow, S. Moitra, A. Rcie, Z. Chen, P.A. Manzagol, C. Sutton, E. Aftandilian
+authors: D. Tarlow, S. Moitra, A. Rice, Z. Chen, P.A. Manzagol, C. Sutton, E. Aftandilian
 conference: 
 year: 2019
 bibkey: tarlow2019learning

@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Project CodeNet:A Large-Scale AI for Code Dataset for Learning aDiversity of Coding Tasks"
+title: "Project CodeNet: A Large-Scale AI for Code Dataset for Learning a Diversity of Coding Tasks"
 authors: Ruchir Puri, David S. Kung, Geert Janssen, Wei Zhang, Giacomo Domeniconi, Vladmir Zolotov, Julian Dolby, Jie Chen, Mihir Choudhury, Lindsey Decker, Veronika Thost, Luca Buratti, Saurabh Pujar, Ulrich Finkler
 conference:
 year: 2021
