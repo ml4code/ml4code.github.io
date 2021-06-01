@@ -18,7 +18,7 @@
 
   <title>
     
-      Evaluating Semantic Representations of Source Code &middot; Machine Learning for Big Code and Naturalness
+      Self-Supervised Contrastive Learning for Code Retrieval and Summarization via Semantic-Preserving Transformations &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,23 +101,25 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Evaluating Semantic Representations of Source Code</h1>
-  <h5>Y. Wainakh, M. Rauf, M. Pradel.  2019</h5>
+  <h1 class="page-title">Self-Supervised Contrastive Learning for Code Retrieval and Summarization via Semantic-Preserving Transformations</h1>
+  <h5>Nghi D. Q. Bui, Y. Yu, L. Jiang. SIGIR 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1910.05177" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2009.02731" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Evaluating Semantic Representations of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Evaluating Semantic Representations of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Evaluating%20Semantic%20Representations%20of%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Self-Supervised Contrastive Learning for Code Retrieval and Summarization via Semantic-Preserving Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Self-Supervised Contrastive Learning for Code Retrieval and Summarization via Semantic-Preserving Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Self-Supervised%20Contrastive%20Learning%20for%20Code%20Retrieval%20and%20Summarization%20via%20Semantic-Preserving%20Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#representation">representation</a></tag>
+      <tag><a href="/tags.html#pretraining">pretraining</a></tag>
+    
+      <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
       
       
-      <p><p>Learned representations of source code enable various software developer tools, e.g., to detect bugs or to predict program properties. At the core of code representations often are word embeddings of identifier names in source code, because identifiers account for the majority of source code vocabulary and convey important semantic information. Unfortunately, there currently is no generally accepted way of evaluating the quality of word embeddings of identifiers, and current evaluations are biased toward specific downstream tasks. This paper presents IdBench, the first benchmark for evaluating to what extent word embeddings of identifiers represent semantic relatedness and similarity. The benchmark is based on thousands of ratings gathered by surveying 500 software developers. We use IdBench to evaluate state-of-the-art embedding techniques proposed for natural language, an embedding technique specifically designed for source code, and lexical string distance functions, as these are often used in current developer tools. Our results show that the effectiveness of embeddings varies significantly across different embedding techniques and that the best available embeddings successfully represent semantic relatedness. On the downside, no existing embedding provides a satisfactory representation of semantic similarities, e.g., because embeddings consider identifiers with opposing meanings as similar, which may lead to fatal mistakes in downstream developer tools. IdBench provides a gold standard to guide the development of novel embeddings that address the current limitations.</p>
+      <p><p>We propose Corder, a self-supervised contrastive learning framework for source code model. Corder is designed to alleviate the need of labeled data for code retrieval and code summarization tasks. The pre-trained model of Corder can be used in two ways: (1) it can produce vector representation of code which can be applied to code retrieval tasks that do not have labeled data; (2) it can be used in a fine-tuning process for tasks that might still require label data such as code summarization. The key innovation is that we train the source code model by asking it to recognize similar and dissimilar code snippets through a contrastive learning objective. To do so, we use a set of semantic-preserving transformation operators to generate code snippets that are syntactically diverse but semantically equivalent. Through extensive experiments, we have shown that the code models pretrained by Corder substantially outperform the other baselines for code-to-code retrieval, text-to-code retrieval, and code-to-text summarization tasks.</p>
 </p>
 </div>
 
