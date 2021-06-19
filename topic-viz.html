@@ -1,0 +1,61 @@
+---
+layout: default
+title: Explore ML4Code papers with Topics
+description: A topic model for the papers in the ML4Code survey
+---
+<h2>Topic-based Explorer</h2>
+<p>Using topic-modelling the following topics have been extracted. The top stemmed words apprear below. 
+  Please change the slider to present the papers that mostly related to the appropria topics</p>
+<div id="topicslider">
+</div>
+<p>
+<ul id="toppapers">
+  <li>Please move the sliders to look at the papers.</li>
+</ul>
+</p>
+
+
+
+<script>
+  var all_papers = null;
+  var num_topics = -1;
+
+  $(document).ready(
+    function() {
+      $.getJSON('/topics.json', function(data) {
+        all_papers=data.paper_data;
+        num_topics = data.topics.length;
+        html = "";
+        for (let i=0; i < num_topics; i++) {
+            html += '<tag style="white-space: nowrap;">'+ data.topics[i].join(", ") +' <input type="range" min="0" max="10" value="0" style="width:50px" id="topicSlider'+i+'"></tag> '
+        }
+        $("#topicslider").append(html);
+        for (let i=0; i < num_topics; i++) {
+          $("#topicSlider"+i).on("change", renderPapers);
+        }
+      });
+    });
+
+  function scorePaper(paper_id) {
+    let score = 0;
+    topic_dist = all_papers[paper_id].topic_distr;
+    for (let i=0; i < num_topics; i++) {
+      score += $("#topicSlider"+i).val() * topic_dist[i];
+    }
+    return score;
+  }
+
+  function renderPapers(e, u) {
+    paper_idxs = [];
+    for (let i=0; i < all_papers.length; i++) {
+      paper_idxs.push([i, scorePaper(i)]);
+    }
+    paper_idxs = paper_idxs.sort(function(a,b){return b[1] - a[1]});
+    
+    $("#toppapers").text("");
+    for (let i=0; i < 20; i++) {
+      data = all_papers[paper_idxs[i][0]];
+      $("#toppapers").append("<li><a href='/publications/"+data.key+"'>"+ data.title +"</a>. " + data.year + "</li>");
+    }
+  }
+</script>
