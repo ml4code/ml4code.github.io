@@ -18,7 +18,7 @@
 
   <title>
     
-      Contributors &middot; Machine Learning for Big Code and Naturalness
+      Explore ML4Code papers with Topics &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -65,13 +65,13 @@
    <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
    <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+   <a class="sidebar-nav-item active" href="/topic-viz.html">Topic-based Explorer</a>
 
    <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
 
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
-  <a class="sidebar-nav-item active" href="/contributors.html">Contributors</a>
   </nav>
 
   <div class="sidebar-item">
@@ -100,26 +100,62 @@ function search() {
 
 
     <div class="content container">
-      <p>The core survey and the original taxonomy was created by</p>
-
-<ul>
-  <li><a href="https://miltos.allamanis.com">Miltos Allamanis</a> Microsoft Research, Cambridge, UK</li>
-  <li><a href="http://earlbarr.com">Earl T. Barr</a> University College London, London, UK</li>
-  <li><a href="http://web.cs.ucdavis.edu/~devanbu/">Prem Devanbu</a> University of California, Davis, USA</li>
-  <li><a href="http://homepages.inf.ed.ac.uk/csutton/">Charles Sutton</a> University of Edinburgh and The Alan Turing Institute, UK</li>
+      <h2>Topic-based Explorer</h2>
+<p>Using topic-modelling the following topics have been extracted. The top stemmed words apprear below. 
+  Please change the slider to present the papers that mostly related to the appropria topics</p>
+<div id="topicslider">
+</div>
+<p>
+<ul id="toppapers">
+  <li>Please move the sliders to look at the papers.</li>
 </ul>
+</p>
 
-<h4 id="contributors-to-the-website">Contributors to the website</h4>
-<p>This website accepts external <a href="/contributing.html">contributions</a>.
-Please, feel free to add your name below, once you contribute to this
-website. A comprehensive list can be found <a href="https://github.com/ml4code/ml4code.github.io/graphs/contributors">here</a>.</p>
 
-<ul>
-  <li><a href="http://www.cs.technion.ac.il/~urialon/">Uri Alon</a> Technion, Israel</li>
-  <li><a href="https://shakedbr.cswp.cs.technion.ac.il/">Shaked Brody</a> Technion, Israel</li>
-  <li><a href="https://bdqnghi.github.io/">Nghi D. Q. Bui</a> Singapore Management University, Singapore</li>
-</ul>
 
+<script>
+  var all_papers = null;
+  var num_topics = -1;
+
+  $(document).ready(
+    function() {
+      $.getJSON('/topics.json', function(data) {
+        all_papers=data.paper_data;
+        num_topics = data.topics.length;
+        html = "";
+        for (let i=0; i < num_topics; i++) {
+            html += '<tag style="white-space: nowrap;">'+ data.topics[i].join(", ") +' <input type="range" min="0" max="10" value="0" style="width:50px" id="topicSlider'+i+'"></tag> '
+        }
+        $("#topicslider").append(html);
+        for (let i=0; i < num_topics; i++) {
+          $("#topicSlider"+i).on("change", renderPapers);
+        }
+      });
+    });
+
+  function scorePaper(paper_id) {
+    let score = 0;
+    topic_dist = all_papers[paper_id].topic_distr;
+    for (let i=0; i < num_topics; i++) {
+      score += $("#topicSlider"+i).val() * topic_dist[i];
+    }
+    return score;
+  }
+
+  function renderPapers(e, u) {
+    paper_idxs = [];
+    for (let i=0; i < all_papers.length; i++) {
+      paper_idxs.push([i, scorePaper(i)]);
+    }
+    paper_idxs = paper_idxs.sort(function(a,b){return b[1] - a[1]});
+    
+    $("#toppapers").text("");
+    for (let i=0; i < 20; i++) {
+      data = all_papers[paper_idxs[i][0]];
+      $("#toppapers").append("<li><a href='/publications/"+data.key+"'>"+ data.title +"</a>. " + data.year + "</li>");
+    }
+  }
+</script>
     </div>
 
   </body>
