@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      A Semantic Bug Seeding: A Learning-Based Approach for Creating Realistic Bugs &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <a href='/contributing.html' class='ribbon'>Contribute to ML4Code</a>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+   <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">A Semantic Bug Seeding: A Learning-Based Approach for Creating Realistic Bugs</h1>
+  <h5>Jibesh Patra, Michael Pradel. FSE 2021</h5>
+  <p>
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=A Semantic Bug Seeding: A Learning-Based Approach for Creating Realistic Bugs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=A Semantic Bug Seeding: A Learning-Based Approach for Creating Realistic Bugs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=A%20Semantic%20Bug%20Seeding:%20A%20Learning-Based%20Approach%20for%20Creating%20Realistic%20Bugs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#repair">repair</a></tag>
+    
+      <tag><a href="/tags.html#edit">edit</a></tag>
+    
+  </p>
+      
+      
+      <p><p>When working on techniques to address the wide-spread problem
+of software bugs, one often faces the need for a large number of
+realistic bugs in real-world programs. Such bugs can either help
+evaluate an approach, e.g., in form of a bug benchmark or a suite
+of program mutations, or even help build the technique, e.g., in
+learning-based bug detection. Because gathering a large number ofreal bugs is difficult,
+a common approach is to rely on automatically
+seeded bugs. Prior work seeds bugs based on syntactic transformation patterns,
+which often results in unrealistic bugs and typically 
+cannot introduce new, application-specific code tokens. This paper
+presents SemSeed, a technique for automatically seeding bugs in
+a semantics-aware way. The key idea is to imitate how a given
+real-world bug would look like in other programs by semantically
+adapting the bug pattern to the local context. To reason about the
+semantics of pieces of code, our approach builds on learned token embeddings
+that encode the semantic similarities of identifiers and literals. Our
+evaluation with real-world JavaScript softwares
+hows that the approach effectively reproduces real bugs and clearly
+outperforms a semantics-unaware approach. The seeded bugs are
+useful as training data for learning-based bug detection, where
+they significantly improve the bug detection ability. Moreover, we
+show that SemSeed-created bugs complement existing mutation
+testing operators, and that our approach is efficient enough to seed
+hundreds of thousands of bugs within an hour.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>
