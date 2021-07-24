@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      Leveraging Language to Learn Program Abstractions and Search Heuristics &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <a href='/contributing.html' class='ribbon'>Contribute to ML4Code</a>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+   <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
+
+   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Leveraging Language to Learn Program Abstractions and Search Heuristics</h1>
+  <h5>Catherine Wong, Kevin Ellis, Joshua B. Tenenbaum, Jacob Andreas. Thirty-eighth International Conference on Machine Learning (ICML 2021) 2021</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/2106.11053" target="_blank">ArXiV</a>]
+    
+      [<a href="https://icml.cc/Conferences/2021/ScheduleMultitrack?event=10372" target="_blank">Poster</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Leveraging Language to Learn Program Abstractions and Search Heuristics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Leveraging Language to Learn Program Abstractions and Search Heuristics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Leveraging%20Language%20to%20Learn%20Program%20Abstractions%20and%20Search%20Heuristics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#synthesis">synthesis</a></tag>
+    
+      <tag><a href="/tags.html#search">search</a></tag>
+    
+  </p>
+      
+      
+      <p><p>Inductive program synthesis, or inferring programs from examples of desired behavior, offers a general paradigm for building interpretable, robust, and generalizable machine learning systems. Effective program synthesis depends on two key ingredients: a strong library of functions from which to build programs, and an efficient search strategy for finding programs that solve a given task. We introduce LAPS (Language for Abstraction and Program Search), a technique for using natural language annotations to guide joint learning of libraries and neurally-guided search models for synthesis. When integrated into a state-of-the-art library learning system (DreamCoder), LAPS produces higher-quality libraries and improves search efficiency and generalization on three domains – string editing, image composition, and abstract reasoning about scenes – even when no natural language hints are available at test time.</p>
+</p>
+</div>
+
+    </div>
+
+  </body>
+</html>
