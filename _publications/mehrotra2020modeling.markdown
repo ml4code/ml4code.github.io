@@ -7,7 +7,7 @@ year: 2020
 bibkey: mehrotra2020modeling
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2011.11228"}
-tags: ["cloine", "GNN"]
+tags: ["clone", "GNN"]
 ---
 Code clones are duplicate code fragments that share (nearly) similar syntax or semantics. Code clone detection plays an important role in software maintenance, code refactoring, and reuse. A substantial amount of research has been conducted in the past to detect clones. A majority of these approaches use lexical and syntactic information to detect clones. However, only a few of them target semantic clones. Recently, motivated by the success of deep learning models in other fields, including natural language processing and computer vision, researchers have attempted to adopt deep learning techniques to detect code clones. These approaches use lexical information (tokens) and(or) syntactic structures like abstract syntax trees (ASTs) to detect code clones. However, they do not make sufficient use of the available structural and semantic information hence, limiting their capabilities.
 
