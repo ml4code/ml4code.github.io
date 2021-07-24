@@ -5,7 +5,7 @@ authors: V. Raychev, P. Bielik, M. Vechev, A. Krause
 conference: POPL
 year: 2016
 bibkey: raychev2016learning
-tags: ["generation", "grammar"]
+tags: ["code generation", "grammar"]
 ---
 We present a new approach for learning programs from noisy
 datasets. Our approach is based on two new concepts: a regularized

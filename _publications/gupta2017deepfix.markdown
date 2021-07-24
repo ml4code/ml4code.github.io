@@ -5,7 +5,7 @@ authors: R. Gupta, S. Pal, A. Kanade, S. Shevade
 conference: AAAI
 year: 2017
 bibkey: gupta2017deepfix
-tags: ["repair", "generation"]
+tags: ["repair", "code generation"]
 ---
 The problem of automatically fixing programming errors is a
 very active research topic in software engineering. This is a

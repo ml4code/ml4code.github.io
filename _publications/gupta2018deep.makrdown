@@ -8,7 +8,7 @@ bibkey: gupta2018deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1801.10467"}
    - {name: "Video", url: "https://youtu.be/S4D6MR728zY"}
-tags: ["repair", "generation"]
+tags: ["repair", "code generation"]
 ---
 Novice programmers often struggle with the formal
 syntax of programming languages.  To assist them,

@@ -5,7 +5,7 @@ authors: T. B. Hashimoto, K. Guu, Y. Oren, P. Liang
 conference: NIPS
 year: 2018
 bibkey: hashimoto2018retrieve
-tags: ["bimodal", "search", "generation"]
+tags: ["bimodal", "search", "code generation"]
 ---
 For the task of generating complex outputs such as source code, editing existing
 outputs can be easier than generating complex outputs from scratch.  With this

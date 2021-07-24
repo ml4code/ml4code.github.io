@@ -5,7 +5,7 @@ authors: S. Karaivanov, V. Raychev, M. Vechev
 conference: Onward
 year: 2014
 bibkey: karaivanov2014phrase
-tags: ["migration", "generation"]
+tags: ["migration", "code generation"]
 ---
 Phrase-based statistical machine translation approaches have been
 highly successful in translating between natural languages and are

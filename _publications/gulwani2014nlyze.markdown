@@ -5,7 +5,7 @@ authors: S. Gulwani, M. Marron
 conference: SIGMOD
 year: 2014
 bibkey: gulwani2014nlyze
-tags: ["generation", "bimodal", "synthesis"]
+tags: ["code generation", "bimodal", "synthesis"]
 ---
 Millions of computer end users need to perform tasks over tabular spreadsheet data, yet lack the programming knowledge to do such tasks automatically. This paper describes
 the design and implementation of a robust natural language

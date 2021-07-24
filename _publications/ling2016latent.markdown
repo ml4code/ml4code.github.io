@@ -5,7 +5,7 @@ authors: W. Ling, E. Grefenstette, K. M. Hermann, T. Kocisky, A. Senior, F. Wang
 conference: ACL
 year: 2016
 bibkey: ling2016latent
-tags: ["bimodal", "generation"]
+tags: ["bimodal", "code generation"]
 ---
 Many  language  generation  tasks  require
 the production of text conditioned on both

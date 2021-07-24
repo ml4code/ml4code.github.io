@@ -5,7 +5,7 @@ authors: X. Liu, X. Li, R. Prajapati, D. Wu
 conference: AAAI
 year: 2019
 bibkey: liu2019deepfuzz
-tags: ["fuzzing", "generation"]
+tags: ["fuzzing", "code generation"]
 ---
 Compilers  are among  the  most  fundamental  programming
 tools for building software. However, production compilers

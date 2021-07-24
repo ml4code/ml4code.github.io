@@ -5,7 +5,7 @@ authors: Z. Sun, Q. Zhu, L. Mou, Y. Xiong, G. Li, L. Zhang
 conference: AAAI
 year: 2019
 bibkey: sun2019grammar
-tags: ["generation", "grammar"]
+tags: ["code generation", "grammar"]
 ---
 Code  generation  maps  a  program  description  to  executable
 source code in a programming language. Existing approaches

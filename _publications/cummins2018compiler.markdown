@@ -5,7 +5,7 @@ authors: C. Cummins, P. Petoumenos, H. Leather, A. Murray
 conference: ISSTA
 year: 2018
 bibkey: cummins2018compiler
-tags: ["fuzzing", "generation"]
+tags: ["fuzzing", "code generation"]
 ---
 Random program generation — fuzzing — is an effective technique
 for discovering bugs in compilers but successful fuzzers require
