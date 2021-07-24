@@ -428,7 +428,7 @@ This paper conducts a coding simulation to collect data from code context and di
 	<td>UAI</td>
 	<td><p>Source code can be parsed into the abstract syntax tree (AST) based on defined syntax rules. However, in pre-training, little work has considered the incorporation of tree structure into the learning process. In this paper, we present TreeBERT, a tree-based pre-trained model for improving programming language-oriented generation tasks. To utilize tree structure, TreeBERT represents the AST corresponding to the code as a set of composition paths and introduces node position embedding. The model is trained by tree masked language modeling (TMLM) and node order prediction (NOP) with a hybrid objective. TMLM uses a novel masking strategy designed according to the tree’s characteristics to help the model understand the AST and infer the missing semantics of the AST. With NOP, TreeBERT extracts the syntactical structure by learning the order constraints of nodes in AST. We pre-trained TreeBERT on datasets covering multiple programming languages. On code summarization and code documentation tasks, TreeBERT outperforms other pre-trained models and state-of-the-art models designed for these tasks. Furthermore, TreeBERT performs well when transferred to the pre-trained unseen programming language.</p>
 </td>
-	<td>AST Transformer </td>
+	<td>grammar Transformer </td>
 </tr>
 
 <tr>
@@ -1139,7 +1139,7 @@ problem and in guiding comment generation.</p>
 
 <p>We conducted several experiments to evaluate DLFix in two benchmarks: Defect4J and Bugs.jar, and a newly built bug datasets with a total of +20K real-world bugs in eight projects. We compared DLFix against a total of 13 state-of-the-art pattern-based APR tools. Our results show that DLFix can auto-fix more bugs than 11 of them, and is comparable and complementary to the top two pattern-based APR tools in which there are 7 and 11 unique bugs that they cannot detect, respectively, but we can. Importantly, DLFix is fully automated and data-driven, and does not require hard-coding of bug-fixing patterns as in those tools. We compared DLFix against 4 state-of-the-art deep learning based APR models. DLFix is able to fix 2.5 times more bugs than the best performing~baseline.</p>
 </td>
-	<td>edit repair AST </td>
+	<td>edit repair grammar </td>
 </tr>
 
 <tr>
@@ -1155,7 +1155,7 @@ problem and in guiding comment generation.</p>
 	<td></td>
 	<td><p>With the prevalence of publicly available source code repositories to train deep neural network models, neural program analyzers can do well in source code analysis tasks such as predicting method names in given programs that cannot be easily done by traditional program analyzers. Although such analyzers have been tested on various existing datasets, the extent in which they generalize to unforeseen source code is largely unknown. Since it is impossible to test neural program analyzers on all unforeseen programs, in this paper, we propose to evaluate the generalizability of neural program analyzers with respect to semantic-preserving transformations: a generalizable neural program analyzer should perform equally well on programs that are of the same semantics but of different lexical appearances and syntactical structures. More specifically, we compare the results of various neural program analyzers for the method name prediction task on programs before and after automated semantic-preserving transformations. We use three Java datasets of different sizes and three state-of-the-art neural network models for code, namely code2vec, code2seq, and Gated Graph Neural Networks (GGNN), to build nine such neural program analyzers for evaluation. Our results show that even with small semantically preserving changes to the programs, these neural program analyzers often fail to generalize their performance. Our results also suggest that neural program analyzers based on data and control dependencies in programs generalize better than neural program analyzers based only on abstract syntax trees. On the positive side, we observe that as the size of training dataset grows and diversifies the generalizability of correct predictions produced by the analyzers can be improved too.</p>
 </td>
-	<td>adversarial GNN AST </td>
+	<td>adversarial GNN grammar </td>
 </tr>
 
 <tr>
@@ -1745,7 +1745,7 @@ the developer teams agree that our suggested names are more meaningful than the 
 	<td></td>
 	<td><p>To obtain code snippets for reuse, programmers prefer to search for related documents, e.g., blogs or Q&amp;A, instead of code itself. The major reason is due to the semantic diversity and mismatch between queries and code snippets. Deep learning models have been proposed to address this challenge. Compared with approaches using information retrieval techniques, deep learning models do not suffer from the information loss caused by refining user intention into keywords. However, the performance of previous works is not satisfactory because they ignore the importance of code structure. When the semantics of code (e.g., identifier names, APIs) are ambiguous, code structure may be the only feature for the model to utilize. In that case, previous works relearn the structural information from lexical tokens of code, which is extremely difficult for a model without any domain knowledge. In this work, we propose PSCS, a path-based neural model for semantic code search. Our model encodes both the semantics and structures of code represented by AST paths. We train and evaluate our model over 330k-19k query-function pairs, respectively. The evaluation results demonstrate that PSCS achieves a SuccessRate of 47.6% and a Mean Reciprocal Rank (MRR) of 30.4% when considering the top-10 results with a match. The proposed approach significantly outperforms both DeepCS, the first approach that applies deep learning to code search task, and CARLCS, a state-of-the-art approach that introduces a co-attentive representation learning model on the basis of DeepCS. The importance of code structure is demonstrated with an ablation study on code features, which enlightens model design for further studies.</p>
 </td>
-	<td>AST search </td>
+	<td>grammar search </td>
 </tr>
 
 <tr>
@@ -1890,7 +1890,7 @@ of DL models-based method for future fully automated source code processing.</p>
 	<td>OOPSLA</td>
 	<td><p>We address the problem of predicting edit completions based on a learned model that was trained on past edits. Given a code snippet that is partially edited, our goal is to predict a completion of the edit for the rest of the snippet. We refer to this task as the EditCompletion task and present a novel approach for tackling it. The main idea is to directly represent structural edits. This allows us to model the likelihood of the edit itself, rather than learning the likelihood of the edited code. We represent an edit operation as a path in the program’s Abstract Syntax Tree (AST), originating from the source of the edit to the target of the edit. Using this representation, we present a powerful and lightweight neural model for the EditCompletion task. We conduct a thorough evaluation, comparing our approach to a variety of representation and modeling approaches that are driven by multiple strong models such as LSTMs, Transformers, and neural CRFs. Our experiments show that our model achieves 28% relative gain over state-of-the-art sequential models and 2× higher accuracy than syntactic models that learn to generate the edited code instead of modeling the edits directly. Our code, dataset, and trained models are publicly available at https://github.com/tech-srl/c3po/ .</p>
 </td>
-	<td>edit AST autocomplete </td>
+	<td>edit grammar autocomplete </td>
 </tr>
 
 <tr>
@@ -2102,7 +2102,7 @@ In this paper, we argue that we should use these graph structures instead of wor
 We developed a novel AI-based system which uses the deep representation of Abstract Syntax Tree (AST) created from the source code and also the active feedback loop to identify and alert the potential bugs that could be caused at the time of development itself i.e. as the developer is writing new code (logic and/or function). This tool integrated with IDE as a plugin would work in the background, point out existing similar functions/code-segments and any associated bugs in those functions. The tool would enable the developer to incorporate suggestions right at the time of development, rather than waiting for UT/QA/customer to raise a defect.
 We assessed our tool on both open-source code and also on Cisco codebase for C and C++ programing language. Our results confirm that deep representation of source code and the active feedback loop is an assuring approach for predicting security and other vulnerabilities present in the code.</p>
 </td>
-	<td>AST program analysis static analysis </td>
+	<td>grammar program analysis static analysis </td>
 </tr>
 
 <tr>
@@ -2265,7 +2265,7 @@ The evaluation was conducted on two established datasets. The experimental resul
 	<td>TOSEM</td>
 	<td><p>Learning representation for source code is a foundation of many program analysis tasks. In recent years, neural networks have already shown success in this area, but most existing models did not make full use of the unique structural information of programs. Although abstract syntax tree (AST)-based neural models can handle the tree structure in the source code, they cannot capture the richness of different types of substructure in programs. In this article, we propose a modular tree network that dynamically composes different neural network units into tree structures based on the input AST. Different from previous tree-structural neural network models, a modular tree network can capture the semantic differences between types of AST substructures. We evaluate our model on two tasks: program classification and code clone detection. Our model achieves the best performance compared with state-of-the-art approaches in both tasks, showing the advantage of leveraging more elaborate structure information of the source code.</p>
 </td>
-	<td>AST representation </td>
+	<td>grammar representation </td>
 </tr>
 
 <tr>
@@ -2383,7 +2383,7 @@ The evaluation was conducted on two established datasets. The experimental resul
 	<td></td>
 	<td><p>Programmers typically organize executable source code using high-level coding patterns or idiomatic structures such as nested loops, exception handlers and recursive blocks, rather than as individual code tokens. In contrast, state of the art semantic parsers still map natural language instructions to source code by building the code syntax tree one node at a time. In this paper, we introduce an iterative method to extract code idioms from large source code corpora by repeatedly collapsing most-frequent depth-2 subtrees of their syntax trees, and we train semantic parsers to apply these idioms during decoding. We apply this idiom-based code generation to a recent context-dependent semantic parsing task, and improve the state of the art by 2.2% BLEU score while reducing training time by more than 50%. This improved speed enables us to scale up the model by training on an extended training set that is 5x times larger, to further move up the state of the art by an additional 2.3% BLEU and 0.9% exact match.</p>
 </td>
-	<td>pattern mining code generation AST </td>
+	<td>pattern mining code generation grammar </td>
 </tr>
 
 <tr>
@@ -2438,7 +2438,7 @@ Building the path-based representation involves parsing the code and extracting 
 
 <p>In this paper, we present PathMiner – an open-source library for mining path-based representations of code. PathMiner is fast, flexible, well-tested, and easily extensible to support input code in any common programming language. Preprint [https://doi.org/10.5281/zenodo.2595271]; released tool [https://doi.org/10.5281/zenodo.2595257].</p>
 </td>
-	<td>representation AST </td>
+	<td>representation grammar </td>
 </tr>
 
 <tr>
@@ -2986,7 +2986,7 @@ the  proposed  approach  significantly  outperforms the state-of-the-art in term
 	<td>International Joint Conference on Neural Networks</td>
 	<td><p>Neural machine translation models are used to automatically generate a document from given source code since this can be regarded as a machine translation task. Source code summarization is one of the components for automatic document generation, which generates a summary in natural language from given source code. This suggests that techniques used in neural machine translation, such as Long Short-Term Memory (LSTM), can be used for source code summarization. However, there is a considerable difference between source code and natural language: Source code is essentially structured, having loops and conditional branching, etc. Therefore, there is some obstacle to apply known machine translation models to source code.Abstract syntax trees (ASTs) capture these structural properties and play an important role in recent machine learning studies on source code. Tree-LSTM is proposed as a generalization of LSTMs for tree-structured data. However, there is a critical issue when applying it to ASTs: It cannot handle a tree that contains nodes having an arbitrary number of children and their order simultaneously, which ASTs generally have such nodes. To address this issue, we propose an extension of Tree-LSTM, which we call Multi-way Tree-LSTM and apply it for source code summarization. As a result of computational experiments, our proposal achieved better results when compared with several state-of-the-art techniques.</p>
 </td>
-	<td>summarization AST </td>
+	<td>summarization grammar </td>
 </tr>
 
 <tr>
@@ -3231,7 +3231,7 @@ component of our model.</p>
 	<td>ICSE</td>
 	<td><p>Exploiting machine learning techniques for analyzing programs has attracted much attention. One key problem is how to represent code fragments well for follow-up analysis. Traditional information retrieval based methods often treat programs as natural language texts, which could miss important semantic information of source code. Recently, state-of-the-art studies demonstrate that abstract syntax tree (AST) based neural models can better represent source code. However, the sizes of ASTs are usually large and the existing models are prone to the long-term dependency problem. In this paper, we propose a novel AST-based Neural Network (ASTNN) for source code representation. Unlike existing models that work on entire ASTs, ASTNN splits each large AST into a sequence of small statement trees, and encodes the statement trees to vectors by capturing the lexical and syntactical knowledge of statements. Based on the sequence of statement vectors, a bidirectional RNN model is used to leverage the naturalness of statements and finally produce the vector representation of a code fragment. We have applied our neural network based source code representation method to two common program comprehension tasks: source code classification and code clone detection. Experimental results on the two tasks indicate that our model is superior to state-of-the-art approaches.</p>
 </td>
-	<td>representation AST </td>
+	<td>representation grammar </td>
 </tr>
 
 <tr>
@@ -3470,7 +3470,7 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 	<td>Computing Frontiers</td>
 	<td><p>When deep learning meets big code, a key question is how to efficiently learn a distributed representation for source code that can capture its semantics effectively. We propose to use tree-based convolution over API-enhanced AST. To demonstrate the effectiveness of our approach, we apply it to detect semantic clones—code fragments with similar semantics but dissimilar syntax. Experiment results show that our approach outperforms an existing state-of-the-art approach that uses tree-based LSTM, with an increase of 0.39 and 0.12 in F1-score on OJClone and BigCloneBench respectively. We further propose architectures that incorporate our approach for code search and code summarization.</p>
 </td>
-	<td>AST representation </td>
+	<td>grammar representation </td>
 </tr>
 
 <tr>
@@ -3556,7 +3556,7 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 	<td>SANER</td>
 	<td><p>Code clone detection remains a crucial challenge in maintaining software projects. Many classic approaches rely on handcrafted aggregation schemes, while recent work uses supervised or unsupervised learning. In this work, we study several aspects of aggregation schemes for code clone detection based on supervised learning. To this aim, we implement an AST-based Recursive Neural Network. Firstly, our ablation study shows the influence of model choices and hyperparameters. We introduce error scaling as a way to effectively and efficiently address the class imbalance problem arising in code clone detection. Secondly, we study the influence of pretrained embeddings representing nodes in ASTs. We show that simply averaging all node vectors of a given AST yields strong baseline aggregation scheme. Further, learned AST aggregation schemes greatly benefit from pretrained node embeddings. Finally, we show the importance of carefully separating training and test data by clone clusters, to reliably measure generalization of models learned with supervision.</p>
 </td>
-	<td>AST grammar clone </td>
+	<td>grammar grammar clone </td>
 </tr>
 
 <tr>
@@ -4414,7 +4414,7 @@ those challenging cases and discuss future directions.</p>
 	<td></td>
 	<td><p>The way developers edit day-to-day code tends to be repetitive, often using existing code elements. Many researchers have tried to automate repetitive code changes by learning from specific change templates which are applied to limited scope. The advancement of Neural Machine Translation (NMT) and the availability of vast open-source evolutionary data opens up the possibility of automatically learning those templates from the wild. However, unlike natural languages, for which NMT techniques were originally devised, source code and its changes have certain properties. For instance, compared to natural language, source code vocabulary can be significantly larger. Further, good changes in code do not break its syntactic structure. Thus, deploying state-of-the-art NMT models without adapting the methods to the source code domain yields sub-optimal results. To this end, we propose a novel Tree based NMT system to model source code changes and learn code change patterns from the wild. We realize our model with a change suggestion engine: CODIT and train the model with more than 30k real-world changes and evaluate it on 6k patches. Our evaluation shows the effectiveness of CODIT in learning and suggesting patches.CODIT also shows promise generating bug fix patches.</p>
 </td>
-	<td>grammar AST repair code generation </td>
+	<td>grammar grammar repair code generation </td>
 </tr>
 
 <tr>
@@ -5385,7 +5385,7 @@ to predict a name, on average.</p>
 	<td>ACL</td>
 	<td><p>Tasks like code generation and semantic parsing require mapping unstructured (or partially structured) inputs to well-formed, executable outputs. We introduce abstract syntax networks, a modeling framework for these problems. The outputs are represented as abstract syntax trees (ASTs) and constructed by a decoder with a dynamically-determined modular structure paralleling the structure of the output tree. On the benchmark Hearthstone dataset for code generation, our model obtains 79.2 BLEU and 22.7% exact match accuracy, compared to previous state-of-the-art values of 67.1 and 6.1%. Furthermore, we perform competitively on the Atis, Jobs, and Geo semantic parsing datasets with no task-specific engineering.</p>
 </td>
-	<td>code generation AST </td>
+	<td>code generation grammar </td>
 </tr>
 
 <tr>
@@ -5561,7 +5561,7 @@ programs from natural language descriptions, achieving state-of-the-art results 
 well outperform previous code generation
 and semantic parsing approaches.</p>
 </td>
-	<td>code generation AST bimodal </td>
+	<td>code generation grammar bimodal </td>
 </tr>
 
 <tr>
@@ -5774,7 +5774,7 @@ which a convolution kernel is designed over programs’ abstract syntax trees to
 is a generic architecture for programming language processing; our experiments show its effectiveness in two different program analysis tasks: classifying programs according
 to functionality, and detecting code snippets of certain patterns. TBCNN outperforms baseline methods, including several neural models for NLP.</p>
 </td>
-	<td>representation AST </td>
+	<td>representation grammar </td>
 </tr>
 
 <tr>
@@ -6410,7 +6410,7 @@ we generated English or Japanese pseudo-code from Python
 statements using SMT, and find that the generated pseudo-code
 is largely accurate, and aids code understanding.</p>
 </td>
-	<td>representation bimodal AST </td>
+	<td>representation bimodal grammar </td>
 </tr>
 
 <tr>
@@ -6737,7 +6737,7 @@ query (i.e., source code captioning). Experiments show there to be
 promise in this direction, and that modelling the structure of source
 code improves performance.</p>
 </td>
-	<td>search grammar AST bimodal </td>
+	<td>search grammar grammar bimodal </td>
 </tr>
 
 <tr>
@@ -6996,7 +6996,7 @@ believe deep learning will become an outstanding technique for
 program analysis in the near future.</p>
 
 </td>
-	<td>representation AST </td>
+	<td>representation grammar </td>
 </tr>
 
 <tr>
@@ -7046,7 +7046,7 @@ interpretation as the top candidate for 94% (97% for the top
 	<td>FSE</td>
 	<td><p>We present the first method for automatically mining code idioms from a corpus of previously written, idiomatic software projects. We take the view that a code idiom is a syntactic fragment that recurs across projects and has a single semantic purpose. Idioms may have metavariables, such as the body of a for loop. Modern IDEs commonly provide facilities for manually defining idioms and inserting them on demand, but this does not help programmers to write idiomatic code in languages or using libraries with which they are unfamiliar. We present Haggis, a system for mining code idioms that builds on recent advanced techniques from statistical natural language processing, namely, nonparametric Bayesian probabilistic tree substitution grammars. We apply Haggis to several of the most popular open source projects from GitHub. We present a wide range of evidence that the resulting idioms are semantically meaningful, demonstrating that they do indeed recur across software projects and that they occur more frequently in illustrative code examples collected from a Q&amp;A site. Manual examination of the most common idioms indicate that they describe important program concepts, including object creation, exception handling, and resource management.</p>
 </td>
-	<td>pattern mining grammar AST </td>
+	<td>pattern mining grammar grammar </td>
 </tr>
 
 <tr>
@@ -7111,7 +7111,7 @@ structured baselines in terms of predictive log
 likelihoods on held-out data.</p>
 
 </td>
-	<td>language model code generation grammar AST </td>
+	<td>language model code generation grammar grammar </td>
 </tr>
 
 <tr>
@@ -7309,7 +7309,7 @@ is significantly more accurate than the current state of the
 art, providing initial evidence for our claim that combining
 structural and statistical information is a fruitful strategy.</p>
 </td>
-	<td>language model AST </td>
+	<td>language model grammar </td>
 </tr>
 
 <tr>
