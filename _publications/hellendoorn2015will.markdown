@@ -7,7 +7,7 @@ year: 2015
 bibkey: hellendoorn2015will
 additional_links:
    - {name: "Paper", url: "http://vhellendoorn.github.io/PDF/msr2015.pdf"}
-tags: ["code review", "language model"]
+tags: ["review", "language model"]
 ---
 Popular open-source software projects receive and
 review contributions from a diverse array of developers, many
