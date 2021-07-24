@@ -2,7 +2,7 @@
 layout: publication
 title: "NaturalCC: A Toolkit to Naturalize the Source Code Corpus"
 authors: Yao Wan, Yang He, Jian-Guo Zhang, Yulei Sui, Hai Jin, Guandong Xu, Caiming Xiong, Philip S. Yu
-conference: arXiv
+conference: 
 year: 2020
 bibkey: wan2020naturalcc
 additional_links:
