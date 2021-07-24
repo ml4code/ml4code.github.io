@@ -5,7 +5,7 @@ authors: Y. Li, S. Wang, T. N. Nguyen
 conference: ICSE
 year: 2020
 bibkey: li2020dlfix
-tags: ["edit", "repair", "AST"]
+tags: ["edit", "repair", "grammar"]
 ---
 Automated Program Repair (APR) is very useful in helping developers in the process of software development and maintenance. Despite recent advances in deep learning (DL), the DL-based APR approaches still have limitations in learning bug-fixing code changes and the context of the surrounding source code of the bug-fixing code changes. These limitations lead to incorrect fixing locations or fixes. In this paper, we introduce DLFix, a two-tier DL model that treats APR as code transformation learning from the prior bug fixes and the surrounding code contexts of the fixes. The first layer is a tree-based RNN model that learns the contexts of bug fixes and its result is used as an additional weighting input for the second layer designed to learn the bug-fixing code transformations. 
 

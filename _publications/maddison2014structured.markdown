@@ -5,7 +5,7 @@ authors: C.J. Maddison, D. Tarlow
 conference: ICML
 year: 2014
 bibkey: maddison2014structured
-tags: ["language model", "code generation", "grammar", "AST"]
+tags: ["language model", "code generation", "grammar", "grammar"]
 ---
 We study the problem of building generative
 models of natural source code (NSC); that is,

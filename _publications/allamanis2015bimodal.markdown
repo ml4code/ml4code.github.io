@@ -8,7 +8,7 @@ bibkey: allamanis2015bimodal
 additional_links:
    - {name: "Supplementary Material", url: "https://miltos.allamanis.com/publicationfiles/allamanis2015bimodal/supplementary.pdf"}
    - {name: "Presentation Video", url: "http://videolectures.net/icml2015_allamanis_natural_language/"}
-tags: ["search", "grammar", "AST", "bimodal"]
+tags: ["search", "grammar", "grammar", "bimodal"]
 ---
 We consider the problem of building probabilistic models that jointly 
 model short natural language utterances and source code snippets. The

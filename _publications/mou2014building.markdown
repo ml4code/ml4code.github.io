@@ -5,7 +5,7 @@ authors: L. Mou, G. Li, Y. Liu, H. Peng, Z. Jin, Y. Xu, L. Zhang
 conference: International Conference on Knowledge Science, Engineering and Management
 year: 2014
 bibkey: mou2014building
-tags: ["representation", "AST"]
+tags: ["representation", "grammar"]
 ---
 Deep learning has made significant breakthroughs
 in various fields of artificial intelligence. Advantages of deep

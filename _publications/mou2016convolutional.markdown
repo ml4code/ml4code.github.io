@@ -5,7 +5,7 @@ authors: L. Mou, G. Li, L. Zhang, T. Wang, Z. Jin
 conference: AAAI
 year: 2016
 bibkey: mou2016convolutional
-tags: ["representation", "AST"]
+tags: ["representation", "grammar"]
 ---
 Programming language processing (similar to natural language processing) is a hot research topic in the field of software engineering; it has also aroused growing interest in the
 artificial intelligence community. However, different from a
