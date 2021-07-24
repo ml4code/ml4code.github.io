@@ -260,7 +260,7 @@ that can be readily used as inputs into machine learning models.</p>
 	<td></td>
 	<td><p>We present CoTexT, a transformer-based architecture encoder-decoder pre-trained model that learns the representative context between natural language (NL) and programming language (PL) through multi-task learning. CoTexT is pre-trained, in self-supervised fashion, based on large programming language corpus to learn general-purpose understanding and code-text generation supporting downstream NL-PL task such as code summarizing/documentation, code generation, defect detection, code debugging, etc. We train CoTexT on different combination of available PL corpus including both “bimodal” and “unimodal” data where the former is the combinations of both natural texts and their corresponding code snippets in an input sequence and the latter is merely code snippets. We evaluate multi-task learning CoTexT on different generation and classification tasks on CodeXGLUE and it achieves state-of-the-art on all downstream tasks.</p>
 </td>
-	<td>transformers </td>
+	<td>Transformer </td>
 </tr>
 
 <tr>
@@ -276,7 +276,7 @@ that can be readily used as inputs into machine learning models.</p>
 	<td>ICML</td>
 	<td><p>Semantic understanding of programs is a fundamental problem for programming language processing (PLP). Recent works that learn representations of code based on pre-training techniques in NLP have pushed the frontiers in this direction. However, the semantics of PL and NL have essential differences. These being ignored, we believe it is difficult to build a model to better understand programs, by either directly applying off-the-shelf NLP pre-training techniques to the source code, or adding features to the model by the heuristic. In fact, the semantics of a program can be rigorously defined by formal semantics in PL theory. For example, the operational semantics, describes the meaning of a valid program as updating the environment (i.e., the memory address-value function) through fundamental operations, such as memory I/O and conditional branching. Inspired by this, we propose a novel program semantics learning paradigm, that the model should learn from information composed of (1) the representations which align well with the fundamental operations in operational semantics, and (2) the information of environment transition, which is indispensable for program understanding. To validate our proposal, we present a hierarchical Transformer-based pre-training model called OSCAR to better facilitate the understanding of programs. OSCAR learns from intermediate representation (IR) and an encoded representation derived from static analysis, which are used for representing the fundamental operations and approximating the environment transitions respectively. OSCAR empirically shows the outstanding capability of program semantics understanding on many practical software engineering tasks.</p>
 </td>
-	<td>transformers </td>
+	<td>Transformer </td>
 </tr>
 
 <tr>
@@ -363,7 +363,7 @@ hundreds of thousands of bugs within an hour.</p>
 	<td></td>
 	<td><p>Benchmark datasets have a significant impact on accelerating research in programming language tasks. In this paper, we introduce CodeXGLUE, a benchmark dataset to foster machine learning research for program understanding and generation. CodeXGLUE includes a collection of 10 tasks across 14 datasets and a platform for model evaluation and comparison. CodeXGLUE also features three baseline systems, including the BERT-style, GPT-style, and Encoder-Decoder models, to make it easy for researchers to use the platform. The availability of such data and baselines can help the development and validation of new methods that can be applied to various program understanding and generation problems.</p>
 </td>
-	<td>benchmark transformers </td>
+	<td>benchmark Transformer </td>
 </tr>
 
 <tr>
@@ -380,7 +380,7 @@ hundreds of thousands of bugs within an hour.</p>
 	<td><p>Code completion is widely used by software developers to provide coding suggestions given a partially written code snippet. Apart from the traditional code completion methods, which only support single token completion at minimal positions, recent studies show the ability to provide longer code completion at more flexible positions. However, such frequently triggered and longer completion results reduce the overall precision as they generate more invalid results. Moreover, different studies are mostly incompatible with each other. Thus, it is vital to develop an ensemble framework that can combine results from multiple models to draw merits and offset defects of each model.
 This paper conducts a coding simulation to collect data from code context and different code completion models and then apply the data in two tasks. First, we introduce an acceptance model which can dynamically control whether to display completion results to the developer. It uses simulation features to predict whether correct results exist in the output of these models. Our best model reduces the percentage of false-positive completion from 55.09% to 17.44%. Second, we design a fusion ranking scheme that can automatically identify the priority of the completion results and reorder the candidates from multiple code completion models. This scheme is flexible in dealing with various models, regardless of the type or the length of their completion results. We integrate this ranking scheme with two frequency models and a GPT-2 styled language model, along with the acceptance model to yield 27.80% and 37.64% increase in TOP1 and TOP5 accuracy, respectively. In addition, we propose a new code completion evaluation metric, Benefit-Cost Ratio(BCR), taking into account the benefit of keystrokes saving and hidden cost of completion list browsing, which is closer to real coder experience scenario.</p>
 </td>
-	<td>autocomplete language model optimization transformers </td>
+	<td>autocomplete language model optimization Transformer </td>
 </tr>
 
 <tr>
@@ -396,7 +396,7 @@ This paper conducts a coding simulation to collect data from code context and di
 	<td></td>
 	<td><p>Source code spends most of its time in a broken or incomplete state during software development. This presents a challenge to machine learning for code, since high-performing models typically rely on graph structured representations of programs derived from traditional program analyses. Such analyses may be undefined for broken or incomplete code. We extend the notion of program graphs to work-in-progress code by learning to predict edge relations between tokens, training on well-formed code before transferring to work-in-progress code. We consider the tasks of code completion and localizing and repairing variable misuse in a work-in-process scenario. We demonstrate that training relation-aware models with fine-tuned edges consistently leads to improved performance on both tasks.</p>
 </td>
-	<td>transformers autocomplete repair </td>
+	<td>Transformer autocomplete repair </td>
 </tr>
 
 <tr>
@@ -412,7 +412,7 @@ This paper conducts a coding simulation to collect data from code context and di
 	<td>ACL</td>
 	<td><p>Neural language models can be successfully trained on source code, leading to applications such as code completion. However, their versatile autoregressive self-supervision objective overlooks important global sequence-level features that are present in the data such as syntactic correctness or compilability. In this work, we pose the problem of learning to generate compilable code as constraint satisfaction. We define an Energy-Based Model (EBM) representing a pre-trained generative model with an imposed constraint of generating only compilable sequences. We then use the KL-Adaptive Distributional Policy Gradient algorithm (Khalifa et al., 2021) to train a generative model approximating the EBM. We conduct experiments showing that our proposed approach is able to improve compilability rates without sacrificing diversity and complexity of the generated samples.</p>
 </td>
-	<td>generation </td>
+	<td>code generation </td>
 </tr>
 
 <tr>
@@ -428,7 +428,7 @@ This paper conducts a coding simulation to collect data from code context and di
 	<td>UAI</td>
 	<td><p>Source code can be parsed into the abstract syntax tree (AST) based on defined syntax rules. However, in pre-training, little work has considered the incorporation of tree structure into the learning process. In this paper, we present TreeBERT, a tree-based pre-trained model for improving programming language-oriented generation tasks. To utilize tree structure, TreeBERT represents the AST corresponding to the code as a set of composition paths and introduces node position embedding. The model is trained by tree masked language modeling (TMLM) and node order prediction (NOP) with a hybrid objective. TMLM uses a novel masking strategy designed according to the tree’s characteristics to help the model understand the AST and infer the missing semantics of the AST. With NOP, TreeBERT extracts the syntactical structure by learning the order constraints of nodes in AST. We pre-trained TreeBERT on datasets covering multiple programming languages. On code summarization and code documentation tasks, TreeBERT outperforms other pre-trained models and state-of-the-art models designed for these tasks. Furthermore, TreeBERT performs well when transferred to the pre-trained unseen programming language.</p>
 </td>
-	<td>AST transformers </td>
+	<td>AST Transformer </td>
 </tr>
 
 <tr>
@@ -541,7 +541,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 	<td></td>
 	<td><p>Currently, a growing number of mature natural language processing applications make people’s life more convenient. Such applications are built by source code - the language in software engineering. However, the applications for understanding source code language to ease the software engineering process are under-researched. Simultaneously, the transformer model, especially its combination with transfer learning, has been proven to be a powerful technique for natural language processing tasks. These breakthroughs point out a promising direction for process source code and crack software engineering tasks. This paper describes CodeTrans - an encoder-decoder transformer model for tasks in the software engineering domain, that explores the effectiveness of encoder-decoder transformer models for six software engineering tasks, including thirteen sub-tasks. Moreover, we have investigated the effect of different training strategies, including single-task learning, transfer learning, multi-task learning, and multi-task learning with fine-tuning. CodeTrans outperforms the state-of-the-art models on all the tasks. To expedite future works in the software engineering domain, we have published our pre-trained models of CodeTrans.</p>
 </td>
-	<td>transformers </td>
+	<td>Transformer </td>
 </tr>
 
 <tr>
@@ -573,7 +573,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 	<td></td>
 	<td><p>Detecting and fixing bugs are two of the most important yet frustrating parts of the software development cycle. Existing bug detection tools are based mainly on static analyzers, which rely on mathematical logic and symbolic reasoning about the program execution to detect common types of bugs. Fixing bugs is typically left out to the developer. In this work we introduce DeepDebug: a data-driven program repair approach which learns to detect and fix bugs in Java methods mined from real-world GitHub repositories. We frame bug-patching as a sequence-to-sequence learning task consisting of two steps: (i) denoising pretraining, and (ii) supervised finetuning on the target translation task. We show that pretraining on source code programs improves the number of patches found by 33% as compared to supervised training from scratch, while domain-adaptive pretraining from natural language to code further improves the accuracy by another 32%. We refine the standard accuracy evaluation metric into non-deletion and deletion-only fixes, and show that our best model generates 75% more non-deletion fixes than the previous state of the art. In contrast to prior work, we attain our best results when generating raw code, as opposed to working with abstracted code that tends to only benefit smaller capacity models. Finally, we observe a subtle improvement from adding syntax embeddings along with the standard positional embeddings, as well as with adding an auxiliary task to predict each token’s syntactic class. Despite focusing on Java, our approach is language agnostic, requiring only a general-purpose parser such as tree-sitter.</p>
 </td>
-	<td>transformers repair </td>
+	<td>Transformer repair </td>
 </tr>
 
 <tr>
@@ -589,7 +589,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 	<td></td>
 	<td><p>The joint task of bug localization and program repair is an integral part of the software development process. In this work we present DeepDebug, an approach to automated debugging using large, pretrained transformers. We begin by training a bug-creation model on reversed commit data for the purpose of generating synthetic bugs. We apply these synthetic bugs toward two ends. First, we directly train a backtranslation model on all functions from 200K repositories. Next, we focus on 10K repositories for which we can execute tests, and create buggy versions of all functions in those repositories that are covered by passing tests. This provides us with rich debugging information such as stack traces and print statements, which we use to finetune our model which was pretrained on raw source code. Finally, we strengthen all our models by expanding the context window beyond the buggy function itself, and adding a skeleton consisting of that function’s parent class, imports, signatures, docstrings, and method bodies, in order of priority. On the QuixBugs benchmark, we increase the total number of fixes found by over 50%, while also decreasing the false positive rate from 35% to 5% and decreasing the timeout from six hours to one minute. On our own benchmark of executable tests, our model fixes 68% of all bugs on its first attempt without using traces, and after adding traces it fixes 75% on first attempt. We will open-source our framework and validation set for evaluating on executable tests.</p>
 </td>
-	<td>repair transformers </td>
+	<td>repair Transformer </td>
 </tr>
 
 <tr>
@@ -749,7 +749,7 @@ outperforms existing learning-based approaches.</p>
 	<td></td>
 	<td><p>Machine learning-based program analyses have recently shown the promise of integrating formal and probabilistic reasoning towards aiding software development. However, in the absence of large annotated corpora, training these analyses is challenging. Towards addressing this, we present BugLab, an approach for self-supervised learning of bug detection and repair. BugLab co-trains two models: (1) a detector model that learns to detect and repair bugs in code, (2) a selector model that learns to create buggy code for the detector to use as training data. A Python implementation of BugLab improves by up to 30% upon baseline methods on a test dataset of 2374 real-life bugs and finds 19 previously unknown bugs in open-source software.</p>
 </td>
-	<td>GNN transformers defect repair </td>
+	<td>GNN Transformer defect repair </td>
 </tr>
 
 <tr>
@@ -765,7 +765,7 @@ outperforms existing learning-based approaches.</p>
 	<td>NAACL</td>
 	<td><p>Code summarization and generation empower conversion between programming language (PL) and natural language (NL), while code translation avails the migration of legacy code from one PL to another. This paper introduces PLBART, a sequence-to-sequence model capable of performing a broad spectrum of program and language understanding and generation tasks. PLBART is pre-trained on an extensive collection of Java and Python functions and associated NL text via denoising autoencoding. Experiments on language generation tasks, including code summarization, generation, translation in seven programming languages show that PLBART outperforms or rivals state-of-the-art models. Moreover, experiments on discriminative tasks, e.g., program repair, clone detection, and vulnerable code detection demonstrate PLBART’s effectiveness in program understanding. Furthermore, analysis reveals that PLBART learns program syntax, style (e.g., identifier naming convention), logical flow (e.g., if block inside an else block is equivalent to else if block) that are crucial to program semantics and thus excels even with limited annotations.</p>
 </td>
-	<td>pretraining transformers </td>
+	<td>pretraining Transformer </td>
 </tr>
 
 <tr>
@@ -801,7 +801,7 @@ We conduct experiments to evaluate Recoder on 395 bugs from Defects4J v1.2, 420 
 	<td>ICLR</td>
 	<td><p>Source code (Context) and its parsed abstract syntax tree (AST; Structure) are two complementary representations of the same computer program. Traditionally, designers of machine learning models have relied predominantly either on Structure or Context. We propose a new model, which jointly learns on Context and Structure of source code. In contrast to previous approaches, our model uses only language-agnostic features, i.e., source code and features that can be computed directly from the AST. Besides obtaining state-of-the-art on monolingual code summarization on all five programming languages considered in this work, we propose the first multilingual code summarization model. We show that jointly training on non-parallel data from multiple programming languages improves results on all individual languages, where the strongest gains are on low-resource languages. Remarkably, multilingual training only from Context does not lead to the same improvements, highlighting the benefits of combining Structure and Context for representation learning on code.</p>
 </td>
-	<td>transformers representation </td>
+	<td>Transformer representation </td>
 </tr>
 
 
@@ -969,7 +969,7 @@ We conduct experiments to evaluate Recoder on 395 bugs from Defects4J v1.2, 420 
 
 <p>This paper addresses the problem of semantic code clone detection using program dependency graphs and geometric neural networks, leveraging the structured syntactic and semantic information. We have developed a prototype tool HOLMES, based on our novel approach, and empirically evaluated it on popular code clone benchmarks. Our results show that HOLMES performs considerably better than the other state-of-the-art tool, TBCCD. We also evaluated HOLMES on unseen projects and performed cross dataset experiments to assess the generalizability of HOLMES. Our results affirm that HOLMES outperforms TBCCD since most of the pairs that HOLMES detected were either undetected or suboptimally reported by TBCCD.</p>
 </td>
-	<td>cloine GNN </td>
+	<td>clone GNN </td>
 </tr>
 
 <tr>
@@ -985,7 +985,7 @@ We conduct experiments to evaluate Recoder on 395 bugs from Defects4J v1.2, 420 
 	<td>ACL</td>
 	<td><p>Open-domain code generation aims to generate code in a general-purpose programming language (such as Python) from natural language (NL) intents. Motivated by the intuition that developers usually retrieve resources on the web when writing code, we explore the effectiveness of incorporating two varieties of external knowledge into NL-to-code generation: automatically mined NL-code pairs from the online programming QA forum StackOverflow and programming language API documentation. Our evaluations show that combining the two sources with data augmentation and retrieval-based data re-sampling improves the current state-of-the-art by up to 2.2% absolute BLEU score on the code generation testbed CoNaLa. The code and resources are available at [Open-domain code generation aims to generate code in a general-purpose programming language (such as Python) from natural language (NL) intents. Motivated by the intuition that developers usually retrieve resources on the web when writing code, we explore the effectiveness of incorporating two varieties of external knowledge into NL-to-code generation: automatically mined NL-code pairs from the online programming QA forum StackOverflow and programming language API documentation. Our evaluations show that combining the two sources with data augmentation and retrieval-based data re-sampling improves the current state-of-the-art by up to 2.2% absolute BLEU score on the code generation testbed CoNaLa. The code and resources are available at <a href="https://github.com/neulab/external-knowledge-codegen">https://github.com/neulab/external-knowledge-codegen</a>.</p>
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -1449,7 +1449,7 @@ the accuracy of existing baselines.</p>
 	<td>ICLR</td>
 	<td><p>Models of code can learn distributed representations of a program’s syntax and semantics to predict many non-trivial properties of a program. Recent state-of-the-art models leverage highly structured representations of programs, such as trees, graphs and paths therein (e.g. data-flow relations), which are precise and abundantly available for code. This provides a strong inductive bias towards semantically meaningful relations, yielding more generalizable representations than classical sequence-based models. Unfortunately, these models primarily rely on graph-based message passing to represent relations in code, which makes them de facto local due to the high cost of message-passing steps, quite in contrast to modern, global sequence-based models, such as the Transformer. In this work, we bridge this divide between global and structured models by introducing two new hybrid model families that are both global and incorporate structural bias: Graph Sandwiches, which wrap traditional (gated) graph message-passing layers in sequential message-passing layers; and Graph Relational Embedding Attention Transformers (GREAT for short), which bias traditional Transformers with relational information from graph edge types. By studying a popular, non-trivial program repair task, variable-misuse identification, we explore the relative merits of traditional and hybrid model families for code representation. Starting with a  graph-based model that already improves upon the prior state-of-the-art for this task by 20%, we show that our proposed hybrid models improve an additional 10-15%, while training both faster and using fewer parameters.</p>
 </td>
-	<td>variable misuse defect GNN transformers </td>
+	<td>variable misuse defect GNN Transformer </td>
 </tr>
 
 <tr>
@@ -1713,7 +1713,7 @@ the developer teams agree that our suggested names are more meaningful than the 
 	<td>EMNLP</td>
 	<td><p>Simultaneously modeling source code and natural language has many exciting applications in automated software development and understanding. Pursuant to achieving such technology, we introduce PyMT5, the Python method text-to-text transfer transformer, which is trained to translate between all pairs of Python method feature combinations: a single model that can both predict whole methods from natural language documentation strings (docstrings) and summarize code into docstrings of any common style. We present an analysis and modeling effort of a large-scale parallel corpus of 26 million Python methods and 7.7 million method-docstring pairs, demonstrating that for docstring and method generation, PyMT5 outperforms similarly-sized auto-regressive language models (GPT2) which were English pre-trained or randomly initialized. On the CodeSearchNet test set, our best model predicts 92.1% syntactically correct method bodies, achieved a BLEU score of 8.59 for method generation and 16.3 for docstring generation (summarization), and achieved a ROUGE-L F-score of 24.8 for method generation and 36.7 for docstring generation.</p>
 </td>
-	<td>bimodal generative summarization documentation language model pretraining </td>
+	<td>bimodal code generation summarization documentation language model pretraining </td>
 </tr>
 
 <tr>
@@ -1761,7 +1761,7 @@ the developer teams agree that our suggested names are more meaningful than the 
 	<td></td>
 	<td><p>Initially developed for natural language processing (NLP), Transformers are now widely used for source code processing, due to the format similarity between source code and text. In contrast to natural language, source code is strictly structured, i. e. follows the syntax of the programming language. Several recent works develop Transformer modifications for capturing syntactic information in source code. The drawback of these works is that they do not compare to each other and all consider different tasks. In this work, we conduct a thorough empirical study of the capabilities of Transformers to utilize syntactic information in different tasks. We consider three tasks (code completion, function naming and bug fixing) and re-implement different syntax-capturing modifications in a unified framework. We show that Transformers are able to make meaningful predictions based purely on syntactic information and underline the best practices of taking the syntactic information into account for improving the performance of the model.</p>
 </td>
-	<td>transformers </td>
+	<td>Transformer </td>
 </tr>
 
 <tr>
@@ -1797,7 +1797,7 @@ the developer teams agree that our suggested names are more meaningful than the 
 In this paper, we introduce IntelliCode Compose − a general-purpose multilingual code completion tool which is capable of predicting sequences of code tokens of arbitrary types, generating up to entire lines of syntactically correct code. It leverages state-of-the-art generative transformer model trained on 1.2 billion lines of source code in Python, C#, JavaScript and TypeScript programming languages. IntelliCode Compose is deployed as a cloud-based web service. It makes use of client-side tree-based caching, efficient parallel implementation of the beam search decoder, and compute graph optimizations to meet edit-time completion suggestion requirements in the Visual Studio Code IDE and Azure Notebook.
 Our best model yields an average edit similarity of 86.7% and a perplexity of 1.82 for Python programming language.</p>
 </td>
-	<td>autocomplete generative synthesis language model pretraining </td>
+	<td>autocomplete code generation synthesis language model pretraining </td>
 </tr>
 
 <tr>
@@ -1874,7 +1874,7 @@ of DL models-based method for future fully automated source code processing.</p>
 	<td></td>
 	<td><p>A large body of the literature of automated program repair develops approaches where patches are generated to be validated against an oracle (e.g., a test suite). Because such an oracle can be imperfect, the generated patches, although validated by the oracle, may actually be incorrect. While the state of the art explore research directions that require dynamic information or rely on manually-crafted heuristics, we study the benefit of learning code representations to learn deep features that may encode the properties of patch correctness. Our work mainly investigates different representation learning approaches for code changes to derive embeddings that are amenable to similarity computations. We report on findings based on embeddings produced by pre-trained and re-trained neural networks. Experimental results demonstrate the potential of embeddings to empower learning algorithms in reasoning about patch correctness: a machine learning predictor with BERT transformer-based embeddings associated with logistic regression yielded an AUC value of about 0.8 in predicting patch correctness on a deduplicated dataset of 1000 labeled patches. Our study shows that learned representations can lead to reasonable performance when comparing against the state-of-the-art, PATCH-SIM, which relies on dynamic information. These representations may further be complementary to features that were carefully (manually) engineered in the literature.</p>
 </td>
-	<td>repair transformers </td>
+	<td>repair Transformer </td>
 </tr>
 
 <tr>
@@ -2020,7 +2020,7 @@ In this paper, we argue that we should use these graph structures instead of wor
 	<td>ICSE</td>
 	<td><p>Unit testing represents the foundational basis of the software testing pyramid, beneath integration and end-to-end testing. Automated software testing researchers have proposed a variety of techniques to assist developers in this time-consuming task. In this paper we present an approach to support developers in writing unit test cases by generating accurate and useful assert statements. Our approach is based on a state-of-the-art transformer model initially pretrained on an English textual corpus. This semantically rich model is then trained in a semi-supervised fashion on a large corpus of source code. Finally, we finetune this model on the task of generating assert statements for unit tests. The resulting model is able to generate accurate assert statements for a given method under test. In our empirical evaluation, the model was able to predict the exact assert statements written by developers in 62% of the cases in the first attempt. The results show 80% relative improvement for top-1 accuracy over the previous RNN-based approach in the literature. We also show the substantial impact of the pretraining process on the performances of our model, as well as comparing it with assert auto-completion task. Finally, we demonstrate how our approach can be used to augment EvoSuite test cases, with additional asserts leading to improved test coverage.</p>
 </td>
-	<td>generative synthesis test generation </td>
+	<td>code generation synthesis test generation </td>
 </tr>
 
 <tr>
@@ -2036,7 +2036,7 @@ In this paper, we argue that we should use these graph structures instead of wor
 	<td>ICSE</td>
 	<td><p>Automated Unit Test Case generation has been the focus of extensive literature within the research community. Existing approaches are usually guided by the test coverage criteria, generating synthetic test cases that are often difficult to read or understand for developers. In this paper we propose AthenaTest, an approach that aims at generating unit test cases by learning from real-world, developer-written test cases. Our approach relies on a state-of-the-art sequence-to-sequence transformer model which is able to write useful test cases for a given method under test (i.e., focal method). We also introduce methods2test - the largest publicly available supervised parallel corpus of unit test case methods and corresponding focal methods in Java, which comprises 630k test cases mined from 70k open-source repositories hosted on GitHub. We use this dataset to train a transformer model to translate focal methods into the corresponding test cases. We evaluate the ability of our model in generating test cases using natural language processing as well as code-specific criteria. First, we assess the quality of the translation compared to the target test case, then we analyze properties of the test case such as syntactic correctness and number and variety of testing APIs (e.g., asserts). We execute the test cases, collect test coverage information, and compare them with test cases generated by EvoSuite and GPT-3. Finally, we survey professional developers on their preference in terms of readability, understandability, and testing effectiveness of the generated test cases.</p>
 </td>
-	<td>generative synthesis test generation </td>
+	<td>code generation synthesis test generation </td>
 </tr>
 
 <tr>
@@ -2052,7 +2052,7 @@ In this paper, we argue that we should use these graph structures instead of wor
 	<td></td>
 	<td><p>We propose a method for program generation based on semantic scaffolds, lightweight structures representing the high-level semantic and syntactic composition of a program. By first searching over plausible scaffolds then using these as constraints for a beam search over programs, we achieve better coverage of the search space when compared with existing techniques. We apply our hierarchical search method to the SPoC dataset for pseudocode-to-code generation, in which we are given line-level natural language pseudocode annotations and aim to produce a program satisfying execution-based test cases. By using semantic scaffolds during inference, we achieve a 10% absolute improvement in top-100 accuracy over the previous state-of-the-art. Additionally, we require only 11 candidates to reach the top-3000 performance of the previous best approach when tested against unseen problems, demonstrating a substantial improvement in efficiency.</p>
 </td>
-	<td>generation synthesis </td>
+	<td>code generation synthesis </td>
 </tr>
 
 <tr>
@@ -2215,7 +2215,7 @@ The evaluation was conducted on two established datasets. The experimental resul
 	<td>IEEE International Conference on Software Analysis, Evolution, and Reengineering</td>
 	<td><p>Code clones are semantically similar code fragments pairs that are syntactically similar or different. Detection of code clones can help to reduce the cost of software maintenance and prevent bugs. Numerous approaches of detecting code clones have been proposed previously, but most of them focus on detecting syntactic clones and do not work well on semantic clones with different syntactic features. To detect semantic clones, researchers have tried to adopt deep learning for code clone detection to automatically learn latent semantic features from data. Especially, to leverage grammar information, several approaches used abstract syntax trees (AST) as input and achieved significant progress on code clone benchmarks in various programming languages. However, these AST-based approaches still can not fully leverage the structural information of code fragments, especially semantic information such as control flow and data flow. To leverage control and data flow information, in this paper, we build a graph representation of programs called flow-augmented abstract syntax tree (FA-AST). We construct FA-AST by augmenting original ASTs with explicit control and data flow edges. Then we apply two different types of graph neural networks (GNN) on FA-AST to measure the similarity of code pairs. As far as we have concerned, we are the first to apply graph neural networks on the domain of code clone detection. We apply our FA-AST and graph neural networks on two Java datasets: Google Code Jam and BigCloneBench. Our approach outperforms the state-of-the-art approaches on both Google Code Jam and BigCloneBench tasks.</p>
 </td>
-	<td>clone detection GNN </td>
+	<td>clone GNN </td>
 </tr>
 
 <tr>
@@ -2383,7 +2383,7 @@ The evaluation was conducted on two established datasets. The experimental resul
 	<td></td>
 	<td><p>Programmers typically organize executable source code using high-level coding patterns or idiomatic structures such as nested loops, exception handlers and recursive blocks, rather than as individual code tokens. In contrast, state of the art semantic parsers still map natural language instructions to source code by building the code syntax tree one node at a time. In this paper, we introduce an iterative method to extract code idioms from large source code corpora by repeatedly collapsing most-frequent depth-2 subtrees of their syntax trees, and we train semantic parsers to apply these idioms during decoding. We apply this idiom-based code generation to a recent context-dependent semantic parsing task, and improve the state of the art by 2.2% BLEU score while reducing training time by more than 50%. This improved speed enables us to scale up the model by training on an extended training set that is 5x times larger, to further move up the state of the art by an additional 2.3% BLEU and 0.9% exact match.</p>
 </td>
-	<td>idiom generation AST </td>
+	<td>pattern mining code generation AST </td>
 </tr>
 
 <tr>
@@ -2554,7 +2554,7 @@ Building the path-based representation involves parsing the code and extracting 
 	<td></td>
 	<td><p>Automatic program correction is an active topic of research, which holds the potential of dramatically improving productivity of programmers during the software development process and correctness of software in general. Recent advances in machine learning, deep learning and NLP have rekindled the hope to eventually fully automate the process of repairing programs. A key challenges is ambiguity, as multiple codes – or fixes – can implement the same functionality. In addition, dataset by nature fail to capture the variance introduced by such ambiguities. Therefore, we propose a deep generative model to automatically correct programming errors by learning a distribution of potential fixes. Our model is formulated as a deep conditional variational autoencoder that samples diverse fixes for the given erroneous programs. In order to account for ambiguity and inherent lack of representative datasets, we propose a novel regularizer to encourage the model to generate diverse fixes. Our evaluations on common programming errors show for the first time the generation of diverse fixes and strong improvements over the state-of-the-art approaches by fixing up to 61% of the mistakes.</p>
 </td>
-	<td>repair generation </td>
+	<td>repair code generation </td>
 </tr>
 
 <tr>
@@ -2656,7 +2656,7 @@ Building the path-based representation involves parsing the code and extracting 
 	<td>MAPL</td>
 	<td><p>Good benchmarks are hard to find because they require a substantial effort to keep them representative for the constantly changing challenges of a particular field. Synthetic benchmarks are a common approach to deal with this, and methods from machine learning are natural candidates for synthetic benchmark generation. In this paper we investigate the usefulness of machine learning in the prominent CLgen benchmark generator. We re-evaluate CLgen by comparing the benchmarks generated by the model with the raw data used to train it. This re-evaluation indicates that, for the use case considered, machine learning did not yield additional benefit over a simpler method using the raw data. We investigate the reasons for this and provide further insights into the challenges the problem could pose for potential future generators.</p>
 </td>
-	<td>generation </td>
+	<td>code generation </td>
 </tr>
 
 <tr>
@@ -3013,7 +3013,7 @@ methods  as  well  as  three  types  of  generation  strategies.  Consequently, 
 improved the testing efficacy in regards to the line, function, and branch coverage. In our preliminary
 study, we found and reported 8 bugs of GCC, all of which are actively being addressed by developers.</p>
 </td>
-	<td>fuzzing generation </td>
+	<td>fuzzing code generation </td>
 </tr>
 
 <tr>
@@ -3215,7 +3215,7 @@ percentage points; additional experiments on several semantic parsing tasks demo
 also conduct in-depth ablation test to better understand each
 component of our model.</p>
 </td>
-	<td>generation grammar </td>
+	<td>code generation grammar </td>
 </tr>
 
 <tr>
@@ -3373,7 +3373,7 @@ undetectable without the inferred specifications.</p>
 	<td></td>
 	<td><p>This paper presents a novel end-to-end approach to program repair based on sequence-to-sequence learning. We devise, implement, and evaluate a system, called SequenceR, for fixing bugs based on sequence-to-sequence learning on source code. This approach uses the copy mechanism to overcome the unlimited vocabulary problem that occurs with big code. Our system is data-driven; we train it on 35,578 commits, carefully curated from open-source repositories. We evaluate it on 4,711 independent real bug fixes, as well on the Defects4J benchmark used in program repair research. SequenceR is able to perfectly predict the fixed line for 950/4711 testing samples. It captures a wide range of repair operators without any domain-specific top-down design.</p>
 </td>
-	<td>repair generation </td>
+	<td>repair code generation </td>
 </tr>
 
 <tr>
@@ -3588,7 +3588,7 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 	<td>ICLR</td>
 	<td><p>Generative models forsource code are an interesting structured prediction problem, requiring to reason about both hard syntactic and semantic constraints as well as about natural, likely programs. We present a novel model for this problem that uses a graph to represent the intermediate state of the generated output. Our model generates code by interleaving grammar-driven expansion steps with graph augmentation and neural message passing steps. An experimental evaluation shows that our new model can generate semantically meaningful expressions, outperforming a range of strong baselines.</p>
 </td>
-	<td>grammar generation GNN </td>
+	<td>grammar code generation GNN </td>
 </tr>
 
 <tr>
@@ -3686,7 +3686,7 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 	<td></td>
 	<td><p>We address the problem of Any-Code Generation (AnyGen) - generating code without any restriction on the vocabulary or structure. The state-of-the-art in this problem is the sequence-to-sequence (seq2seq) approach, which treats code as a sequence and does not leverage any structural information. We introduce a new approach to AnyGen that leverages the strict syntax of programming languages to model a code snippet as a tree - structural language modeling (SLM). SLM estimates the probability of the program’s abstract syntax tree (AST) by decomposing it into a product of conditional probabilities over its nodes. We present a neural model that computes these conditional probabilities by considering all AST paths leading to a target node. Unlike previous structural techniques that have severely restricted the kinds of expressions that can be generated, our approach can generate arbitrary expressions in any programming language. Our model significantly outperforms both seq2seq and a variety of existing structured approaches in generating Java and C# code. We make our code, datasets, and models available online.</p>
 </td>
-	<td>generation </td>
+	<td>code generation </td>
 </tr>
 
 <tr>
@@ -3818,7 +3818,7 @@ https://github.com/tech-srl/code2vec.</p>
 	<td>NeurIPS</td>
 	<td><p>Code summarization (CS) and code generation (CG) are two crucial tasks in the field of automatic software development. Various neural network-based approaches are proposed to solve these two tasks separately. However, there exists a specific intuitive correlation between CS and CG, which have not been exploited in previous work. In this paper, we apply the relations between two tasks to improve the performance of both tasks. In other words, exploiting the duality between the two tasks, we propose a dual training framework to train the two tasks simultaneously. In this framework, we consider the dualities on probability and attention weights, and design corresponding regularization terms to constrain the duality. We evaluate our approach on two datasets collected from GitHub, and experimental results show that our dual framework can improve the performance of CS and CG tasks over baselines.</p>
 </td>
-	<td>generation summarization </td>
+	<td>code generation summarization </td>
 </tr>
 
 <tr>
@@ -4055,7 +4055,7 @@ compiler error messages relative to those fixed by
 a state-of-the-art tool, DeepFix, which uses a fully
 supervised neural machine translation approach.
 </td>
-	<td>repair generation </td>
+	<td>repair code generation </td>
 </tr>
 
 <tr>
@@ -4210,7 +4210,7 @@ n-gram model in the buggy line classification task using AUC</p>
 	<td>arXiv:1805.07475</td>
 	<td><p>Motivated by the problem of automated repair of software vulnerabilities, we propose an adversarial learning approach that maps from one discrete source domain to another target domain without requiring paired labeled examples or source and target domains to be bijections. We demonstrate that the proposed adversarial learning approach is an effective technique for repairing software vulnerabilities, performing close to seq2seq approaches that require labeled pairs. The proposed Generative Adversarial Network approach is application-agnostic in that it can be applied to other problems similar to code repair, such as grammar correction or sentiment translation.</p>
 </td>
-	<td>repair generation </td>
+	<td>repair code generation </td>
 </tr>
 
 <tr>
@@ -4236,7 +4236,7 @@ base model. We show that on a new autocomplete task for GitHub Python code
 and the Hearthstone cards benchmark, retrieve-and-edit significantly boosts the
 performance of a vanilla sequence-to-sequence model on both tasks.</p>
 </td>
-	<td>bimodal search generation </td>
+	<td>bimodal search code generation </td>
 </tr>
 
 <tr>
@@ -4252,7 +4252,7 @@ performance of a vanilla sequence-to-sequence model on both tasks.</p>
 	<td></td>
 	<td><p>Bug fixing is generally a manually-intensive task. However, recent work has proposed the idea of automated program repair, which aims to repair (at least a subset of) bugs in different ways such as code mutation, etc. Following in the same line of work as automated bug repair, in this paper we aim to leverage past fixes to propose fixes of current/future bugs. Specifically, we propose Ratchet, a corrective patch generation system using neural machine translation. By learning corresponding pre-correction and post-correction code in past fixes with a neural sequence-to-sequence model, Ratchet is able to generate a fix code for a given bug-prone code query. We perform an empirical study with five open source projects, namely Ambari, Camel, Hadoop, Jetty and Wicket, to evaluate the effectiveness of Ratchet. Our findings show that Ratchet can generate syntactically valid statements 98.7% of the time, and achieve an F1-measure between 0.41-0.83 with respect to the actual fixes adopted in the code base. In addition, we perform a qualitative validation using 20 participants to see whether the generated statements can be helpful in correcting bugs. Our survey showed that Ratchet’s output was considered to be helpful in fixing the bugs on many occasions, even if fix was not 100% correct.</p>
 </td>
-	<td>repair generation </td>
+	<td>repair code generation </td>
 </tr>
 
 <tr>
@@ -4317,7 +4317,7 @@ performance of a vanilla sequence-to-sequence model on both tasks.</p>
 	<td>LREC</td>
 	<td><p>We present new data and semantic parsing methods for the problem of mapping english sentences to Bash commands (NL2Bash). Our long-term goal is to enable any user to easily solve otherwise repetitive tasks (such as file manipulation, search, and application-specific scripting) by simply stating their intents in English. We take a first step in this domain, by providing a large new dataset of challenging but commonly used commands paired with their English descriptions, along with the baseline methods to establish performance levels on this task.</p>
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -4382,7 +4382,7 @@ on  a  model  trained  from  a  synthetic  dataset)  achieves  extremely low eff
 much lower than the effectiveness when evaluated on the synthetic  dataset.  We  also  provide  initial  analysis  on  some  of
 those challenging cases and discuss future directions.</p>
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -4414,7 +4414,7 @@ those challenging cases and discuss future directions.</p>
 	<td></td>
 	<td><p>The way developers edit day-to-day code tends to be repetitive, often using existing code elements. Many researchers have tried to automate repetitive code changes by learning from specific change templates which are applied to limited scope. The advancement of Neural Machine Translation (NMT) and the availability of vast open-source evolutionary data opens up the possibility of automatically learning those templates from the wild. However, unlike natural languages, for which NMT techniques were originally devised, source code and its changes have certain properties. For instance, compared to natural language, source code vocabulary can be significantly larger. Further, good changes in code do not break its syntactic structure. Thus, deploying state-of-the-art NMT models without adapting the methods to the source code domain yields sub-optimal results. To this end, we propose a novel Tree based NMT system to model source code changes and learn code change patterns from the wild. We realize our model with a change suggestion engine: CODIT and train the model with more than 30k real-world changes and evaluate it on 6k patches. Our evaluation shows the effectiveness of CODIT in learning and suggesting patches.CODIT also shows promise generating bug fix patches.</p>
 </td>
-	<td>grammar AST repair generation </td>
+	<td>grammar AST repair code generation </td>
 </tr>
 
 <tr>
@@ -4564,7 +4564,7 @@ We evaluate our approach on the tasks of predicting variable names, method names
 	<td>EMNLP</td>
 	<td><p>Source code is rarely written in isolation. It depends significantly on the programmatic context, such as the class that the code would reside in. To study this phenomenon, we introduce the task of generating class member functions given English documentation and the programmatic context provided by the rest of the class. This task is challenging because the desired code can vary greatly depending on the functionality the class provides (e.g., a sort function may or may not be available when we are asked to “return the smallest element” in a particular member variable list). We introduce CONCODE, a new large dataset with over 100,000 examples consisting of Java classes from online code repositories, and develop a new encoder-decoder architecture that models the interaction between the method documentation and the class environment. We also present a detailed error analysis suggesting that there is significant room for future work on this task.</p>
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -4749,7 +4749,7 @@ code. With 18 lines of code we extended our program generator to
 a second language, uncovering crashes in Solidity compilers in 12
 hours of automated testing.</p>
 </td>
-	<td>fuzzing generation </td>
+	<td>fuzzing code generation </td>
 </tr>
 
 <tr>
@@ -5132,7 +5132,7 @@ to 13% accuracy for an attentional sequence-to-sequence model.</p>
 	<td><p>Recurrent neural networks have achieved remarkable success at generating sequences with complex structures, thanks to advances that include richer embeddings of input and cures for vanishing gradients. Trained only on sequences from a known grammar, though, they can still struggle to learn rules and constraints of the grammar. Neural Attribute Machines (NAMs) are equipped with a logical machine that represents the underlying grammar, which is used to teach the constraints to the neural machine by (i) augmenting the input sequence, and (ii) optimizing a custom loss function. Unlike traditional RNNs, NAMs are exposed to the grammar, as well as samples from the language of the grammar. During generation, NAMs make significantly fewer violations of the constraints of the underlying grammar than RNNs trained only on samples from the language of the grammar.</p>
 
 </td>
-	<td>grammar generation representation </td>
+	<td>grammar code generation representation </td>
 </tr>
 
 <tr>
@@ -5326,7 +5326,7 @@ accuracy of 80% for producing the correct command structure. In a
 controlled study, programmers who had access to Tellina outperformed those who did not, even when Tellina’s predictions were
 not completely correct, to a statistically significant degree.</p>
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -5369,7 +5369,7 @@ to predict a name, on average.</p>
 	<td><p>Transforming a graphical user interface screenshot created by a designer into computer code is a typical task conducted by a developer in order to build customized software, websites and mobile applications. In this paper, we show that Deep Learning techniques can be leveraged to automatically generate code given a graphical user interface screenshot as input. Our model is able to generate code targeting three different platforms (i.e. iOS, Android and web-based technologies) from a single input image with over 77% of accuracy.</p>
 
 </td>
-	<td>generation bimodal </td>
+	<td>code generation bimodal </td>
 </tr>
 
 <tr>
@@ -5385,7 +5385,7 @@ to predict a name, on average.</p>
 	<td>ACL</td>
 	<td><p>Tasks like code generation and semantic parsing require mapping unstructured (or partially structured) inputs to well-formed, executable outputs. We introduce abstract syntax networks, a modeling framework for these problems. The outputs are represented as abstract syntax trees (ASTs) and constructed by a decoder with a dynamically-determined modular structure paralleling the structure of the output tree. On the benchmark Hearthstone dataset for code generation, our model obtains 79.2 BLEU and 22.7% exact match accuracy, compared to previous state-of-the-art values of 67.1 and 6.1%. Furthermore, we perform competitively on the Atis, Jobs, and Geo semantic parsing datasets with no task-specific engineering.</p>
 </td>
-	<td>generation AST </td>
+	<td>code generation AST </td>
 </tr>
 
 <tr>
@@ -5449,7 +5449,7 @@ attention which is trained to predict erroneous program locations along with the
 6971 erroneous C programs written by students for 93 programming tasks, DeepFix could fix 1881 (27%) programs
 completely and 1338 (19%) programs partially.</p>
 </td>
-	<td>repair generation </td>
+	<td>repair code generation </td>
 </tr>
 
 <tr>
@@ -5561,7 +5561,7 @@ programs from natural language descriptions, achieving state-of-the-art results 
 well outperform previous code generation
 and semantic parsing approaches.</p>
 </td>
-	<td>generation AST bimodal </td>
+	<td>code generation AST bimodal </td>
 </tr>
 
 <tr>
@@ -5612,7 +5612,7 @@ BAYOU on a large corpus of Android apps, and find that the trained system can of
 methods given just a few API method names or data types as evidence. The experiments also justify the design
 choice of using a latent intent variable and the levels of abstraction at which sketches and evidence are defined.</p>
 </td>
-	<td>generation API </td>
+	<td>code generation API </td>
 </tr>
 
 <tr>
@@ -5654,7 +5654,7 @@ learn to solve graph problems such as the Traveling Salesman Problem.</p>
 	<td>CGO</td>
 	<td><p>Predictive modeling using machine learning is an effective method for building compiler heuristics, but there is a shortage of benchmarks. Typical machine learning experiments outside of the compilation field train over thousands or millions of examples. In machine learning for compilers, however, there are typically only a few dozen common benchmarks available. This limits the quality of learned models, as they have very sparse training data for what are often high-dimensional feature spaces. What is needed is a way to generate an unbounded number of training programs that finely cover the feature space. At the same time the generated programs must be similar to the types of programs that human developers actually write, otherwise the learning will target the wrong parts of the feature space. We mine open source repositories for program fragments and apply deep learning techniques to automatically construct models for how humans write programs. We sample these models to generate an unbounded number of runnable training programs. The quality of the programs is such that even human developers struggle to distinguish our generated programs from hand-written code. We use our generator for OpenCL programs, CLgen, to automatically synthesize thousands of programs and show that learning over these improves the performance of a state of the art predictive model by 1.27x. In addition, the fine covering of the feature space automatically exposes weaknesses in the feature design which are invisible with the sparse training examples from existing benchmark suites. Correcting these weaknesses further increases performance by 4.30x.</p>
 </td>
-	<td>optimization generation </td>
+	<td>optimization code generation </td>
 </tr>
 
 
@@ -5751,7 +5751,7 @@ corpus,  we  demonstrate  that  marginalising multiple predictors allows our mod
 to outperform strong benchmarks.</p>
 
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -6000,7 +6000,7 @@ outperform by 22%.</p>
 	<td>ICML</td>
 	<td><p>We introduce a new generative model for code called probabilistic higher order grammar (PHOG). PHOG generalizes probabilistic context free grammars (PCFGs) by allowing conditioning of a production rule beyond the parent non-terminal, thus capturing rich contexts relevant to programs. Even though PHOG is more powerful than a PCFG, it can be learned from data just as efficiently. We trained a PHOG model on a large JavaScript code corpus and show that it is more precise than existing models, while similarly fast. As a result, PHOG can immediately benefit existing programming tools based on probabilistic models of code.</p>
 </td>
-	<td>grammar generation language model </td>
+	<td>grammar code generation language model </td>
 </tr>
 
 <tr>
@@ -6048,7 +6048,7 @@ enabling deep indexing of video tutorials.</p>
 	<td>ArXiV 1608.02715</td>
 	<td><p>Existing language models such as n-grams for software code often fail to capture a long context where dependent code elements scatter far apart. In this paper, we propose a novel approach to build a language model for software code to address this particular issue. Our language model, partly inspired by human memory, is built upon the powerful deep learning-based Long Short Term Memory architecture that is capable of learning long-term dependencies which occur frequently in software code. Results from our intrinsic evaluation on a corpus of Java projects have demonstrated the effectiveness of our language model. This work contributes to realizing our vision for DeepSoft, an end-to-end, generic deep learning-based framework for modeling software and its development process.</p>
 </td>
-	<td>language model generation </td>
+	<td>language model code generation </td>
 </tr>
 
 <tr>
@@ -6258,7 +6258,7 @@ the learned functions are a natural mechanism for explaining the
 prediction). As a result, our code completion system surpasses the
 prediction capabilities of existing, hard-wired systems.</p>
 </td>
-	<td>generation grammar </td>
+	<td>code generation grammar </td>
 </tr>
 
 
@@ -6349,7 +6349,7 @@ further investigate whether new contributors learn to conform to
 the project style and find that experience is positively correlated
 with conformance to the project’s code style.</p>
 </td>
-	<td>code review language model </td>
+	<td>review language model </td>
 </tr>
 
 <tr>
@@ -6623,7 +6623,7 @@ In our experiments, Eugene significantly reduces misclassified reports upon prov
 	<td>OOPSLA</td>
 	<td><p>We present a new code assistance tool for integrated development environments. Our system accepts as input free-form queries containing a mixture of English and Java, and produces Java code expressions that take the query into account and respect syntax, types, and scoping rules of Java, as well as statistical usage patterns. In contrast to solutions based on code search, the results returned by our tool need not directly correspond to any previously seen code fragment. As part of our system we have constructed a probabilistic context free grammar for Java constructs and library invocations, as well as an algorithm that uses a customized natural language processing tool chain to extract information from free-form text queries. We present the results on a number of examples showing that our technique (1) often produces the expected code fragments, (2) tolerates much of the flexibility of natural language, and (3) can repair incorrect Java expressions that use, for example, the wrong syntax or missing arguments.</p>
 </td>
-	<td>synthesis generation bimodal </td>
+	<td>synthesis code generation bimodal </td>
 </tr>
 
 <tr>
@@ -6834,7 +6834,7 @@ source of the LSTM improvements to long-range structural dependencies. Finally,
 we provide analysis of the remaining errors and suggests areas for further study.</p>
 
 </td>
-	<td>language model generation </td>
+	<td>language model code generation </td>
 </tr>
 
 <tr>
@@ -6960,7 +6960,7 @@ their arguments.</p>
 
 <p>Experiments show that our approach is fast and effective. Virtually all computed completions typecheck, and the desired completion appears in the top 3 results in 90% of the cases.</p>
 </td>
-	<td>language model autocomplete generation </td>
+	<td>language model autocomplete code generation </td>
 </tr>
 
 <tr>
@@ -7030,7 +7030,7 @@ interpretation as the top candidate for 94% (97% for the top
 3) of those instances.</p>
 
 </td>
-	<td>generation bimodal synthesis </td>
+	<td>code generation bimodal synthesis </td>
 </tr>
 
 <tr>
@@ -7111,7 +7111,7 @@ structured baselines in terms of predictive log
 likelihoods on held-out data.</p>
 
 </td>
-	<td>language model generation grammar AST </td>
+	<td>language model code generation grammar AST </td>
 </tr>
 
 <tr>
@@ -7214,7 +7214,7 @@ methods compile (the top ranked) and out of a random sample of 50
 correctly compiled methods, 68% (34 methods) were semantically
 equivalent to the reference solution.</p>
 </td>
-	<td>migration generation </td>
+	<td>migration code generation </td>
 </tr>
 
 <tr>
@@ -7398,7 +7398,7 @@ higher accuracy than the state-of-the-art approach.</p>
 	<td>NAACL</td>
 	<td><p>We consider the problem of translating natural language text queries into regular expressions which represent their meaning. The mismatch in the level of abstraction between the natural language representation and the regular expression representation make this a novel and challenging problem. However, a given regular expression can be written in many semantically equivalent forms, and we exploit this flexibility to facilitate translation by finding a form which more directly corresponds to the natural language. We evaluate our technique on a set of natural language queries and their associated regular expressions which we gathered from Amazon Mechanical Turk. Our model substantially outperforms a state-of-the-art semantic parsing baseline, yielding a 29% absolute improvement in accuracy.</p>
 </td>
-	<td>bimodal generation </td>
+	<td>bimodal code generation </td>
 </tr>
 
 <tr>
@@ -7479,7 +7479,7 @@ Experiments on a prototype implementation
 show that learning improves search and ranking on a variety of text processing tasks found
 on help forums.</p>
 </td>
-	<td>generation </td>
+	<td>code generation </td>
 </tr>
 
 <tr>
