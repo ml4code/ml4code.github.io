@@ -26,6 +26,7 @@ Please, feel free to submit a pull request to adding more links in this page.
 ### Workshops and Other Academic Events
 The last few years a few workshops have been organized in this area. Please, feel free to add any missing or future workshops here.
 
+* [NLP4Prog Workshop](https://nlp4prog.github.io/2021/) 6 August 2021, ACL 2021, virtual
 * [Workshop on Computer-Assisted Programming](https://capworkshop.github.io/) 12 December 2020, NeurIPS 2020, virtual 
 * [ML on Code devroom at FOSDEM19](https://fosdem.org/2019/schedule/track/ml_on_code/) 2-3 February 2019, Brussels, EU [[videos](https://video.fosdem.org/2019/H.2213/)]
 * [Machine Learning for Programming](http://ml4p.org/) 18–19 July 2018, Oxford, UK [[videos](https://www.youtube.com/watch?v=dQaAp9wdFtQ&list=PLMPy362FkW9pd96bwh0BuCGMo6fdMQ2aw)]
