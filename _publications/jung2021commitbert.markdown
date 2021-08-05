@@ -2,7 +2,7 @@
 layout: publication
 title: "CommitBERT: Commit Message Generation Using Pre-Trained Programming Language Model"
 authors: Tae Hwan Jung
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: jung2021commitbert
 additional_links:

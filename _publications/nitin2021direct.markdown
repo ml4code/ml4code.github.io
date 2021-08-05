@@ -2,7 +2,7 @@
 layout: publication
 title: "DIRECT : A Transformer-based Model for Decompiled Identifier Renaming"
 authors: Vikram Nitin, Anthony Saieva, Baishakhi Ray, Gail Kaiser
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: nitin2021direct
 additional_links:

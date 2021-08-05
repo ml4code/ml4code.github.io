@@ -2,7 +2,7 @@
 layout: publication
 title: "Bag-of-Words Baselines for Semantic Code Search"
 authors: Xinyu Zhang, Ji Xin, Andrew Yates, Jimmy Lin
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: zhang2021bag
 additional_links:
