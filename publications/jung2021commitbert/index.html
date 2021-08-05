@@ -18,7 +18,7 @@
 
   <title>
     
-      Deep Reinforcement Learning for Programming Language Correction &middot; Machine Learning for Big Code and Naturalness
+      CommitBERT: Commit Message Generation Using Pre-Trained Programming Language Model &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,43 +101,27 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Deep Reinforcement Learning for Programming Language Correction</h1>
-  <h5>R. Gupta, A. Kanade, S. Shevade.  2018</h5>
+  <h1 class="page-title">CommitBERT: Commit Message Generation Using Pre-Trained Programming Language Model</h1>
+  <h5>Tae Hwan Jung. NLP4Prog 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1801.10467" target="_blank">ArXiV</a>]
+      [<a href="https://aclanthology.org/2021.nlp4prog-1.3.pdf" target="_blank">PDF</a>]
     
-      [<a href="https://youtu.be/S4D6MR728zY" target="_blank">Video</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Deep%20Reinforcement%20Learning%20for%20Programming%20Language%20Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=CommitBERT: Commit Message Generation Using Pre-Trained Programming Language Model' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=CommitBERT: Commit Message Generation Using Pre-Trained Programming Language Model' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CommitBERT:%20Commit%20Message%20Generation%20Using%20Pre-Trained%20Programming%20Language%20Model' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#repair">repair</a></tag>
+      <tag><a href="/tags.html#dataset">dataset</a></tag>
     
-      <tag><a href="/tags.html#code generation">code generation</a></tag>
+      <tag><a href="/tags.html#language model">language model</a></tag>
+    
+      <tag><a href="/tags.html#Trasnformer">Trasnformer</a></tag>
     
   </p>
       
       
-      <p><p>Novice programmers often struggle with the formal
-syntax of programming languages.  To assist them,
-we design a novel programming language correction  framework  amenable  to  reinforcement  learning.  The framework allows an agent to mimic human  actions  for  text  navigation  and  editing.   We
-demonstrate that the agent can be trained through
-self-exploration directly from the raw input, that is,
-program text itself, without any knowledge of the
-formal syntax of the programming language.   We
-leverage expert demonstrations for one tenth of the
-training data to accelerate training.  The proposed
-technique  is  evaluated  on 6975
-erroneous  C  programs with typographic errors, written by students
-during an introductory programming course.  Our
-technique fixes 14%
-more programs and 29% more
-compiler error messages relative to those fixed by
-a state-of-the-art tool, DeepFix, which uses a fully
-supervised neural machine translation approach.</p>
+      <p><p>Commit message is a document that summarizes source code changes in natural language. A good commit message clearly shows the source code changes, so this enhances collaboration between developers. Therefore, our work is to develop a model that automatically writes the commit message. To this end, we release 345K datasets consisting of code modification and commit messages in six programming languages (Python, PHP, Go, Java, JavaScript, and Ruby). Similar to the neural machine translation (NMT) model, using our dataset, we feed the code modification to the encoder input and the commit message to the decoder input and measure the result of the generated commit message with BLEU-4. Also, we propose the following two training methods to improve the result of generating the commit message: (1) A method of preprocessing the input to feed the code modification to the encoder input. (2) A method that uses an initial weight suitable for the code domain to reduce the gap in contextual representation between programming language (PL) and natural language (NL).</p>
 </p>
 </div>
 

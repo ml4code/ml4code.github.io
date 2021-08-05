@@ -18,7 +18,7 @@
 
   <title>
     
-      Deep Reinforcement Learning for Programming Language Correction &middot; Machine Learning for Big Code and Naturalness
+      ConTest: A Unit Test Completion Benchmark featuring Context &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,43 +101,29 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Deep Reinforcement Learning for Programming Language Correction</h1>
-  <h5>R. Gupta, A. Kanade, S. Shevade.  2018</h5>
+  <h1 class="page-title">ConTest: A Unit Test Completion Benchmark featuring Context</h1>
+  <h5>Johannes Villmow, Jonas Depoix, Adrian Ulges. NLP4Prog 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1801.10467" target="_blank">ArXiV</a>]
+      [<a href="https://aclanthology.org/2021.nlp4prog-1.2.pdf" target="_blank">PDF</a>]
     
-      [<a href="https://youtu.be/S4D6MR728zY" target="_blank">Video</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Deep%20Reinforcement%20Learning%20for%20Programming%20Language%20Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=ConTest: A Unit Test Completion Benchmark featuring Context' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=ConTest: A Unit Test Completion Benchmark featuring Context' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=ConTest:%20A%20Unit%20Test%20Completion%20Benchmark%20featuring%20Context' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#repair">repair</a></tag>
+      <tag><a href="/tags.html#benchmark">benchmark</a></tag>
     
-      <tag><a href="/tags.html#code generation">code generation</a></tag>
+      <tag><a href="/tags.html#dataset">dataset</a></tag>
+    
+      <tag><a href="/tags.html#verification">verification</a></tag>
+    
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
   </p>
       
       
-      <p><p>Novice programmers often struggle with the formal
-syntax of programming languages.  To assist them,
-we design a novel programming language correction  framework  amenable  to  reinforcement  learning.  The framework allows an agent to mimic human  actions  for  text  navigation  and  editing.   We
-demonstrate that the agent can be trained through
-self-exploration directly from the raw input, that is,
-program text itself, without any knowledge of the
-formal syntax of the programming language.   We
-leverage expert demonstrations for one tenth of the
-training data to accelerate training.  The proposed
-technique  is  evaluated  on 6975
-erroneous  C  programs with typographic errors, written by students
-during an introductory programming course.  Our
-technique fixes 14%
-more programs and 29% more
-compiler error messages relative to those fixed by
-a state-of-the-art tool, DeepFix, which uses a fully
-supervised neural machine translation approach.</p>
+      <p><p>We introduce CONTEST, a benchmark for NLP-based unit test completion, the task of predicting a test’s assert statements given its setup and focal method, i.e. the method to be tested. ConTest is large-scale (with 365k datapoints). Besides the test code and tested code, it also features context code called by either. We found context to be crucial for accurately predicting assertions. We also introduce baselines based on transformer encoder-decoders, and study the effects of including syntactic information and context. Overall, our models achieve a BLEU score of 38.2, while only generating unparsable code in 1.92% of cases.</p>
 </p>
 </div>
 

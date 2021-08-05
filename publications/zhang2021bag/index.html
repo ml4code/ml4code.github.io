@@ -18,7 +18,7 @@
 
   <title>
     
-      Deep Reinforcement Learning for Programming Language Correction &middot; Machine Learning for Big Code and Naturalness
+      Bag-of-Words Baselines for Semantic Code Search &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,43 +101,23 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Deep Reinforcement Learning for Programming Language Correction</h1>
-  <h5>R. Gupta, A. Kanade, S. Shevade.  2018</h5>
+  <h1 class="page-title">Bag-of-Words Baselines for Semantic Code Search</h1>
+  <h5>Xinyu Zhang, Ji Xin, Andrew Yates, Jimmy Lin. NLP4Prog 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1801.10467" target="_blank">ArXiV</a>]
+      [<a href="https://aclanthology.org/2021.nlp4prog-1.10.pdf" target="_blank">PDF</a>]
     
-      [<a href="https://youtu.be/S4D6MR728zY" target="_blank">Video</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Deep%20Reinforcement%20Learning%20for%20Programming%20Language%20Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Bag-of-Words Baselines for Semantic Code Search' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Bag-of-Words Baselines for Semantic Code Search' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Bag-of-Words%20Baselines%20for%20Semantic%20Code%20Search' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#repair">repair</a></tag>
-    
-      <tag><a href="/tags.html#code generation">code generation</a></tag>
+      <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
       
       
-      <p><p>Novice programmers often struggle with the formal
-syntax of programming languages.  To assist them,
-we design a novel programming language correction  framework  amenable  to  reinforcement  learning.  The framework allows an agent to mimic human  actions  for  text  navigation  and  editing.   We
-demonstrate that the agent can be trained through
-self-exploration directly from the raw input, that is,
-program text itself, without any knowledge of the
-formal syntax of the programming language.   We
-leverage expert demonstrations for one tenth of the
-training data to accelerate training.  The proposed
-technique  is  evaluated  on 6975
-erroneous  C  programs with typographic errors, written by students
-during an introductory programming course.  Our
-technique fixes 14%
-more programs and 29% more
-compiler error messages relative to those fixed by
-a state-of-the-art tool, DeepFix, which uses a fully
-supervised neural machine translation approach.</p>
+      <p><p>The task of semantic code search is to retrieve code snippets from a source code corpus based on an information need expressed in natural language. The semantic gap between natural language and programming languages has for long been regarded as one of the most significant obstacles to the effectiveness of keyword-based information retrieval (IR) methods. It is a common assumption that “traditional” bag-of-words IR methods are poorly suited for semantic code search: our work empirically investigates this assumption. Specifically, we examine the effectiveness of two traditional IR methods, namely BM25 and RM3, on the CodeSearchNet Corpus, which consists of natural language queries paired with relevant code snippets. We find that the two keyword-based methods outperform several pre-BERT neural models. We also compare several code-specific data pre-processing strategies and find that specialized tokenization improves effectiveness.</p>
 </p>
 </div>
 

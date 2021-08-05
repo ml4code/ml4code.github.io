@@ -18,7 +18,7 @@
 
   <title>
     
-      Deep Reinforcement Learning for Programming Language Correction &middot; Machine Learning for Big Code and Naturalness
+      Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,43 +101,25 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Deep Reinforcement Learning for Programming Language Correction</h1>
-  <h5>R. Gupta, A. Kanade, S. Shevade.  2018</h5>
+  <h1 class="page-title">Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation</h1>
+  <h5>Gabriel Orlanski, Alex Gittens. NLP4Prog 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1801.10467" target="_blank">ArXiV</a>]
+      [<a href="https://aclanthology.org/2021.nlp4prog-1.8.pdf" target="_blank">PDF</a>]
     
-      [<a href="https://youtu.be/S4D6MR728zY" target="_blank">Video</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Deep Reinforcement Learning for Programming Language Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Deep%20Reinforcement%20Learning%20for%20Programming%20Language%20Correction' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Reading%20StackOverflow%20Encourages%20Cheating:%20Adding%20Question%20Text%20Improves%20Extractive%20Code%20Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#repair">repair</a></tag>
+      <tag><a href="/tags.html#dataset">dataset</a></tag>
     
-      <tag><a href="/tags.html#code generation">code generation</a></tag>
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
   </p>
       
       
-      <p><p>Novice programmers often struggle with the formal
-syntax of programming languages.  To assist them,
-we design a novel programming language correction  framework  amenable  to  reinforcement  learning.  The framework allows an agent to mimic human  actions  for  text  navigation  and  editing.   We
-demonstrate that the agent can be trained through
-self-exploration directly from the raw input, that is,
-program text itself, without any knowledge of the
-formal syntax of the programming language.   We
-leverage expert demonstrations for one tenth of the
-training data to accelerate training.  The proposed
-technique  is  evaluated  on 6975
-erroneous  C  programs with typographic errors, written by students
-during an introductory programming course.  Our
-technique fixes 14%
-more programs and 29% more
-compiler error messages relative to those fixed by
-a state-of-the-art tool, DeepFix, which uses a fully
-supervised neural machine translation approach.</p>
+      <p><p>Answering a programming question with only its title is difficult as salient contextual information is left out. To address this, we present a corpus of over 40,000 StackOverflow question texts to be used in conjunction with the corresponding intents from the CoNaLa dataset (Yin et al., 2018). Using both the intent and the question body, we use BART to establish a baseline BLEU score of 34.35 for this new task. We then find further improvements of 2.8% by combining the mined CoNaLa data with the labeled data to achieve a 35.32 BLEU score. We then evaluate the prior state-of-the-art CoNaLa models with this additional data. We find that our proposed method of using the body and mined data beats that of the previous state-of-the-art by a 71.96% BLEU score. Finally, we perform ablations that prove that BART is an unsupervised multimodal learner and examine its extractive behavior.</p>
 </p>
 </div>
 
