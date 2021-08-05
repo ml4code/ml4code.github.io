@@ -2,7 +2,7 @@
 layout: publication
 title: "Text-to-SQL in the Wild: A Naturally-Occurring Dataset Based on Stack Exchange Data"
 authors: Moshe Hazoom, Vibhor Malik, Ben Bogin
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: hazoom2021text
 additional_links:

@@ -2,7 +2,7 @@
 layout: publication
 title: "Shellcode_IA32: A Dataset for Automatic Shellcode Generation"
 authors: Pietro Liguori, Erfan Al-Hossami, Domenico Cotroneo, Roberto Natella, Bojan Cukic, Samira Shaikh
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: liguori2021shellcode_ia32
 additional_links:

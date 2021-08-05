@@ -2,7 +2,7 @@
 layout: publication
 title: "ConTest: A Unit Test Completion Benchmark featuring Context"
 authors: Johannes Villmow, Jonas Depoix, Adrian Ulges
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: villmow2021contest
 additional_links:

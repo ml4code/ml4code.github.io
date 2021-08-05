@@ -2,7 +2,7 @@
 layout: publication
 title: "Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation"
 authors: Gabriel Orlanski, Alex Gittens
-conference: NLP4Prog 2021
+conference: NLP4Prog
 year: 2021
 bibkey: orlanski2021reading
 additional_links:
