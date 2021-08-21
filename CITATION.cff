@@ -1,0 +1,22 @@
+# YAML 1.2
+---
+authors: 
+  -
+    family-names: Allamanis
+    given-names: Miltiadis
+    orcid: "https://orcid.org/0000-0002-5819-9900"
+  -
+    family-names: Barr
+    given-names: "Earl T"
+  -
+    family-names: Devanbu
+    given-names: Premkumar
+  -
+    family-names: Sutton
+    given-names: Charles
+cff-version: "1.1.0"
+doi: "10.1145/3212695"
+message: "For this live survey cite and the associated paper, please cite it as below."
+repository-code: "https://ml4code.github.io/"
+title: "A survey of machine learning for big code and naturalness"
+...
