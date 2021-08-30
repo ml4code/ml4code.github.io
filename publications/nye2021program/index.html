@@ -18,7 +18,7 @@
 
   <title>
     
-      Learning to Represent Programs with Graphs &middot; Machine Learning for Big Code and Naturalness
+      Program Synthesis with Large Language Models &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,37 +101,25 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Learning to Represent Programs with Graphs</h1>
-  <h5>M. Allamanis, M. Brockschmidt, M. Khademi. ICLR 2018</h5>
+  <h1 class="page-title">Program Synthesis with Large Language Models</h1>
+  <h5>Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le, Charles Sutton.  2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1711.00740" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2108.07732" target="_blank">ArXiV</a>]
     
-      [<a href="https://github.com/Microsoft/gated-graph-neural-network-samples" target="_blank">GGNN Code</a>]
-    
-      [<a href="https://aka.ms/iclr18-prog-graphs-dataset" target="_blank">Data</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Learning to Represent Programs with Graphs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Learning to Represent Programs with Graphs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Learning%20to%20Represent%20Programs%20with%20Graphs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Program Synthesis with Large Language Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Program Synthesis with Large Language Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Program%20Synthesis%20with%20Large%20Language%20Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#naming">naming</a></tag>
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
-      <tag><a href="/tags.html#GNN">GNN</a></tag>
-    
-      <tag><a href="/tags.html#representation">representation</a></tag>
-    
-      <tag><a href="/tags.html#variable misuse">variable misuse</a></tag>
-    
-      <tag><a href="/tags.html#defect">defect</a></tag>
+      <tag><a href="/tags.html#synthesis">synthesis</a></tag>
     
   </p>
       
       
-      <p><p>Learning tasks on source code (i.e., formal languages) have been considered recently, but most work has tried to transfer natural language methods and does not capitalize on the unique opportunities offered by code’s known syntax. For example, long-range dependencies induced by using the same variable or function in distant locations are often not considered. We propose to use graphs to represent both the syntactic and semantic structure of code and use graph-based deep learning methods to learn to reason over program structures.</p>
-
-<p>In this work, we present how to construct graphs from source code and how to scale Gated Graph Neural Networks training to such large graphs. We evaluate our method on two tasks: VarNaming, in which a network attempts to predict the name of a variable given its usage, and VarMisuse, in which the network learns to reason about selecting the correct variable that should be used at a given program location. Our comparison to methods that use less structured program representations shows the advantages of modeling known structure, and suggests that our models learn to infer meaningful names and to solve the VarMisuse task in many cases. Additionally, our testing showed that VarMisuse identifies a number of bugs in mature open-source projects.</p>
+      <p><p>This paper explores the limits of the current generation of large language models for program synthesis in general purpose programming languages. We evaluate a collection of such models (with between 244M and 137B parameters) on two new benchmarks, MBPP and MathQA-Python, in both the few-shot and fine-tuning regimes. Our benchmarks are designed to measure the ability of these models to synthesize short Python programs from natural language descriptions. The Mostly Basic Programming Problems (MBPP) dataset contains 974 programming tasks, designed to be solvable by entry-level programmers. The MathQA-Python dataset, a Python version of the MathQA benchmark, contains 23914 problems that evaluate the ability of the models to synthesize code from more complex text. On both datasets, we find that synthesis performance scales log-linearly with model size. Our largest models, even without finetuning on a code dataset, can synthesize solutions to 59.6 percent of the problems from MBPP using few-shot learning with a well-designed prompt. Fine-tuning on a held-out portion of the dataset improves performance by about 10 percentage points across most model sizes. On the MathQA-Python dataset, the largest fine-tuned model achieves 83.8 percent accuracy. Going further, we study the model’s ability to engage in dialog about code, incorporating human feedback to improve its solutions. We find that natural language feedback from a human halves the error rate compared to the model’s initial prediction. Additionally, we conduct an error analysis to shed light on where these models fall short and what types of programs are most difficult to generate. Finally, we explore the semantic grounding of these models by fine-tuning them to predict the results of program execution. We find that even our best models are generally unable to predict the output of a program given a specific input.</p>
 </p>
 </div>
 
