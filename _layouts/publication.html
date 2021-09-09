@@ -30,7 +30,6 @@ layout: default
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/{{ page.bibkey }}.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
