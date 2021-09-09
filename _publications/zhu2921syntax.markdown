@@ -4,7 +4,7 @@ title: "A Syntax-Guided Edit Decoder for Neural Program Repair"
 authors: Qihao Zhu, Zeyu Sun, Yuan-an Xiao, Wenjie Zhang, Kang Yuan, Yingfei Xiong, Lu Zhang
 conference: FSE
 year: 2021
-bibkey: sameAsFilename
+bibkey: zhu2921syntax
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2106.08253"}
 tags: ["edit"]
