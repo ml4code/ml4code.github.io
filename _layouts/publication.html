@@ -17,7 +17,28 @@ layout: default
       <tag><a href="/tags.html#{{ tag }}">{{ tag }}</a></tag>
     {% endfor %}
   </p>
-      
-      
-      <p>{{ content }}</p>
+  <p>{{ content }}</p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/{{ page.bibkey }}.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
