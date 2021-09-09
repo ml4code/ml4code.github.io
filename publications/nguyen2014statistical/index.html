@@ -143,7 +143,6 @@ existing migration tool, could achieve a higher level of accuracy.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/nguyen2014statistical.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

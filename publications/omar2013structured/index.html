@@ -138,7 +138,6 @@ structural and statistical information is a fruitful strategy.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/omar2013structured.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

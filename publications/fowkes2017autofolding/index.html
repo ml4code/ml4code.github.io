@@ -128,7 +128,6 @@ autofolding problem, which is to automatically create a code summary by folding 
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/fowkes2017autofolding.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

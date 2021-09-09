@@ -148,7 +148,6 @@ choice of using a latent intent variable and the levels of abstraction at which 
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/murali2017bayesian.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

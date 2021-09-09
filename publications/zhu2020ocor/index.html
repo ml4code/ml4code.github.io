@@ -130,7 +130,6 @@ The evaluation was conducted on two established datasets. The experimental resul
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/zhu2020ocor.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

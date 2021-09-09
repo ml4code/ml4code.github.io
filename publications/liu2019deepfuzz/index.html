@@ -140,7 +140,6 @@ study, we found and reported 8 bugs of GCC, all of which are actively being addr
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/liu2019deepfuzz.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

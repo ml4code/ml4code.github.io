@@ -133,7 +133,6 @@ function search() {
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/wei2020lambdanet.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

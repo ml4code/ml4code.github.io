@@ -149,7 +149,6 @@ competing probabilistic approaches.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/murali2017finding.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

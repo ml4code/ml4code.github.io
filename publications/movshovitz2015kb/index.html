@@ -141,7 +141,6 @@ of Web documents from the software domain, and evaluate the accuracy of the vari
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/movshovitz2015kb.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

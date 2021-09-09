@@ -129,7 +129,6 @@ function search() {
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/nguyen2019graph.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -141,7 +141,6 @@ In our experiments, Eugene significantly reduces misclassified reports upon prov
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/mangal2015user.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

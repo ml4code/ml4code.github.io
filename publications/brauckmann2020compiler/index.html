@@ -136,7 +136,6 @@ In this paper, we argue that we should use these graph structures instead of wor
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/brauckmann2020compiler.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

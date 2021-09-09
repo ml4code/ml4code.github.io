@@ -145,7 +145,6 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/gholamian2021naturalness.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

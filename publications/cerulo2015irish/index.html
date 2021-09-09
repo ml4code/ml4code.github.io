@@ -132,7 +132,6 @@ several software engineering tasks, such as program comprehension, source code a
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/cerulo2015irish.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

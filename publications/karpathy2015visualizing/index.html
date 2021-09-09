@@ -139,7 +139,6 @@ we provide analysis of the remaining errors and suggests areas for further study
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/karpathy2015visualizing.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

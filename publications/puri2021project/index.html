@@ -151,7 +151,6 @@ that can be readily used as inputs into machine learning models.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/puri2021project.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

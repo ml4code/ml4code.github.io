@@ -151,7 +151,6 @@ without the aid of DeepTyper.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/hellendoorn2018deep.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -144,7 +144,6 @@ which can automatically learn code similarities from different representations.<
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/tufano2018deep.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

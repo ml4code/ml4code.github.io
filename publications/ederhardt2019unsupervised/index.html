@@ -151,7 +151,6 @@ improving the results of the points-to analysis and its clients.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/ederhardt2019unsupervised.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

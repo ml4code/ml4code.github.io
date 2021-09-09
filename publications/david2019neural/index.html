@@ -141,7 +141,6 @@ the predictions made by our model are much more accurate and informative.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/david2019neural.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

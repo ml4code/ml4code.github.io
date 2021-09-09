@@ -142,7 +142,6 @@ into existing software search and mining tools.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/ott2018deep.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

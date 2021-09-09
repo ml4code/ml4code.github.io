@@ -143,7 +143,6 @@ fixing changes could also be useful for automatic program repair.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/nguyen2013study.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

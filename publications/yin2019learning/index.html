@@ -137,7 +137,6 @@ data source will inspire other researchers to work further on this problem.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/yin2019learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

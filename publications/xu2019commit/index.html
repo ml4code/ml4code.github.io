@@ -141,7 +141,6 @@ the  proposed  approach  significantly  outperforms the state-of-the-art in term
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/xu2019commit.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

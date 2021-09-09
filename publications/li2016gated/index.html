@@ -138,7 +138,6 @@ verification, in which subgraphs need to be described as abstract data structure
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/li2016gated.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

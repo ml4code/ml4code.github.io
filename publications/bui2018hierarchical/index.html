@@ -132,7 +132,6 @@ Our preliminary evaluations on about 40,000 Java and C# source files from 9 soft
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/bui2018hierarchical.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

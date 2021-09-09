@@ -147,7 +147,6 @@ likelihoods on held-out data.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/maddison2014structured.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

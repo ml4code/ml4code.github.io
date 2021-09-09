@@ -142,7 +142,6 @@ of DL models-based method for future fully automated source code processing.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/zhang2020generating.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

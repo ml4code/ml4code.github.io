@@ -141,7 +141,6 @@ of the most sophisticated models can be surpassed.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/jesse2021learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

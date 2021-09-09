@@ -151,7 +151,6 @@ equivalent to the reference solution.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/karaivanov2014phrase.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

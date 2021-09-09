@@ -133,7 +133,6 @@ that is, to our knowledge, the first that can propose neologisms, names that hav
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/allamanis2015suggesting.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

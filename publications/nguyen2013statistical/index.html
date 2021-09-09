@@ -136,7 +136,6 @@ higher accuracy than the state-of-the-art approach.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/nguyen2013statistical.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

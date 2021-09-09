@@ -141,7 +141,6 @@ completely and 1338 (19%) programs partially.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/gupta2017deepfix.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

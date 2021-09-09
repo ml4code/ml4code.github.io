@@ -143,7 +143,6 @@ learning models that will be able to support developers in detecting mistakes in
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/briem2020offside.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

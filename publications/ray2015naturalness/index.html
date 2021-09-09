@@ -141,7 +141,6 @@ that search-based bug-fixing methods may benefit from using entropy both for fau
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/ray2015naturalness.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

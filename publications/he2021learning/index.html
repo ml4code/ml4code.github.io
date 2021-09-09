@@ -141,7 +141,6 @@ are not practically effective and achieve low precision in finding naming issues
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/he2021learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

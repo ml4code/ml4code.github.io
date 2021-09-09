@@ -146,7 +146,6 @@ is largely accurate, and aids code understanding.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/oda2015learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

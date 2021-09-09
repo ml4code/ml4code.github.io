@@ -128,7 +128,6 @@ repositories in a different way. We perform a large-scale quantitative evaluatio
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/bruch2009learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -158,7 +158,6 @@ projects: 14 were accepted.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/allamanis2014learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

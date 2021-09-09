@@ -137,7 +137,6 @@ have discovered numerous bugs.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/kremenek2007factor.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -134,7 +134,6 @@ On an important class of tasks, hypotheses in the form of programs provide extre
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/alet2021largescale.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

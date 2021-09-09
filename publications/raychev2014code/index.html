@@ -143,7 +143,6 @@ their arguments.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/raychev2014code.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -162,7 +162,6 @@ semantics  for  code  learning,  mining  and  analysis  tasks</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/bui2018bilateral.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

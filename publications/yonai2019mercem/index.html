@@ -133,7 +133,6 @@ function search() {
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/yonai2019mercem.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

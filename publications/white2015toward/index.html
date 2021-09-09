@@ -153,7 +153,6 @@ the first step toward deep learning software repositories.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/white2015toward.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -135,7 +135,6 @@ We assessed our tool on both open-source code and also on Cisco codebase for C a
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/ashwath2020predicting.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

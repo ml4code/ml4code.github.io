@@ -149,7 +149,6 @@ interpretation as the top candidate for 94% (97% for the top
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/gulwani2014nlyze.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

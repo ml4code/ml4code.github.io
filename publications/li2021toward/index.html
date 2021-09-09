@@ -136,7 +136,6 @@ This paper conducts a coding simulation to collect data from code context and di
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/li2021toward.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

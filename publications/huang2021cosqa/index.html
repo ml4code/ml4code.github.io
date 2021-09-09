@@ -136,7 +136,6 @@ each annotated by at least 3 human annotators. We further introduce a contrastiv
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/huang2021cosqa.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

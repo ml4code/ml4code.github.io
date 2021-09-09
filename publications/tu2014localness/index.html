@@ -144,7 +144,6 @@ to all programming languages.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/tu2014localness.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

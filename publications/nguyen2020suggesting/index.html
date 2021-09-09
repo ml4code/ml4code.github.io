@@ -146,7 +146,6 @@ the developer teams agree that our suggested names are more meaningful than the 
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/nguyen2020suggesting.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

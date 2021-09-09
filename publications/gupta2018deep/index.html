@@ -149,7 +149,6 @@ supervised neural machine translation approach.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/gupta2018deep.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -139,7 +139,6 @@ Our best model yields an average edit similarity of 86.7% and a perplexity of 1.
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/svyatkovskiy2020intellicode.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

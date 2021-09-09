@@ -134,7 +134,6 @@ Building the path-based representation involves parsing the code and extracting 
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/kovalenko2019pathminer.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

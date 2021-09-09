@@ -142,7 +142,6 @@ quality to BMN, while model size and inference speed scale better with large inp
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/proksch2015intelligent.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

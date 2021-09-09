@@ -138,7 +138,6 @@ Therefore, we present ComPy-Learn, a toolbox for conveniently defining, extracti
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/brauckmann2020compy.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

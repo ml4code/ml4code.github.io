@@ -134,7 +134,6 @@ We evaluate our approach on the tasks of predicting variable names, method names
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/alon2018general.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

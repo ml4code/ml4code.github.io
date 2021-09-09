@@ -130,7 +130,6 @@ many errors reported throughout the file. We seek to find the actual source of t
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/campbell2014syntax.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

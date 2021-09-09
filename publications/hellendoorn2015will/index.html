@@ -144,7 +144,6 @@ with conformance to the project’s code style.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/hellendoorn2015will.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

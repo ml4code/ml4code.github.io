@@ -137,7 +137,6 @@ learn to solve graph problems such as the Traveling Salesman Problem.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/levy2017learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

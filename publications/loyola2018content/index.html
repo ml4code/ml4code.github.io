@@ -145,7 +145,6 @@ of the feasibility of the approach.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/loyola2018content.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

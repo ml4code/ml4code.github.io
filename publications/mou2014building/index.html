@@ -149,7 +149,6 @@ program analysis in the near future.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/mou2014building.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

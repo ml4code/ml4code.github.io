@@ -148,7 +148,6 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/mesbah2019deepdelta.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

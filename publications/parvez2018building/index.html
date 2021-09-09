@@ -135,7 +135,6 @@ better perplexity in recipe generation and
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/parvez2018building.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

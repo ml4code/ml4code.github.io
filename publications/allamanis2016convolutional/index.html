@@ -150,7 +150,6 @@ projects showing that it achieves better performance compared to previous attent
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/allamanis2016convolutional.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -146,7 +146,6 @@ comment typing.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/movshovitz2013natural.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

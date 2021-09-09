@@ -157,7 +157,6 @@ not completely correct, to a statistically significant degree.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/lin2017program.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

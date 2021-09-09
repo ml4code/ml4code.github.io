@@ -141,7 +141,6 @@ problem and in guiding comment generation.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/louis2020where.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

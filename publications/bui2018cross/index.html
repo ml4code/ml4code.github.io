@@ -145,7 +145,6 @@ snippet, we achieved over 80% precision.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/bui2018cross.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

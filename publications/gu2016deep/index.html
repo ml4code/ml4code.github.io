@@ -133,7 +133,6 @@ sequence of words in a query and the sequence of associated APIs. DeepAPI adapts
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/gu2016deep.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

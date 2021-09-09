@@ -147,7 +147,6 @@ more of the fully sensitive version.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/oh2015learning.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

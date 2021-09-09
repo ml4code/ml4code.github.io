@@ -154,7 +154,6 @@ detectors have a high accuracy, are very efficient, and reveal
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/pradel2017deep.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

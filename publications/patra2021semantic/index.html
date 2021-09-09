@@ -152,7 +152,6 @@ hundreds of thousands of bugs within an hour.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/patra2021semantic.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

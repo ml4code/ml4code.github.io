@@ -156,7 +156,6 @@ vision for future research in this area.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/hindle2012naturalness.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

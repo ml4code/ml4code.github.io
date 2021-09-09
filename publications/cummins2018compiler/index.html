@@ -151,7 +151,6 @@ hours of automated testing.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/cummins2018compiler.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

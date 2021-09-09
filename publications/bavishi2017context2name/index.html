@@ -139,7 +139,6 @@ to predict a name, on average.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/bavishi2017context2name.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

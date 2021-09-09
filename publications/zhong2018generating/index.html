@@ -142,7 +142,6 @@ those challenging cases and discuss future directions.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/zhong2018generating.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -128,7 +128,6 @@ syntax errors, we query the learnt RNN model with the prefix token sequence to p
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/bhatia2016automated.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

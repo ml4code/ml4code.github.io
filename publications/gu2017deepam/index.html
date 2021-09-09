@@ -127,7 +127,6 @@ function search() {
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/gu2017deepam.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

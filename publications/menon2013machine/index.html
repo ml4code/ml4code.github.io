@@ -140,7 +140,6 @@ on help forums.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/menon2013machine.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

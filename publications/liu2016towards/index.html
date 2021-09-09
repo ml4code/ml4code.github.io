@@ -137,7 +137,6 @@ outperform by 22%.</p>
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/liu2016towards.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

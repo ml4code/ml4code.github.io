@@ -129,7 +129,6 @@ function search() {
     $(document).ready(
       function() {
         $.getJSON('/publications-metadata/aye2020sequence.json', function(data) {
-          alert(data);
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
