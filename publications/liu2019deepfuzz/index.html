@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Compilers  are among  the  most  fundamental  programming
+  <p><p>Compilers  are among  the  most  fundamental  programming
 tools for building software. However, production compilers
 remain  buggy.  Fuzz  testing  is  often  leveraged  with  newly-generated,
 or  mutated  inputs  in  order  to  find  new  bugs  or security vulnerabilities.
@@ -130,6 +128,29 @@ methods  as  well  as  three  types  of  generation  strategies.  Consequently, 
 improved the testing efficacy in regards to the line, function, and branch coverage. In our preliminary
 study, we found and reported 8 bugs of GCC, all of which are actively being addressed by developers.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/liu2019deepfuzz.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

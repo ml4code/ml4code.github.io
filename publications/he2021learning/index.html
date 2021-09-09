@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#repair">repair</a></tag>
     
   </p>
-      
-      
-      <p><p>We introduce a new approach for finding and fixing naming
+  <p><p>We introduce a new approach for finding and fixing naming
 issues in source code. The method is based on a careful
 combination of unsupervised and supervised procedures: (i)
 unsupervised mining of patterns from Big Code that express
@@ -131,6 +129,29 @@ in real world repositories with high precision (∼70%).
 Perhaps surprisingly, we also show that existing deep learning methods
 are not practically effective and achieve low precision in finding naming issues (up to ∼16%).</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/he2021learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

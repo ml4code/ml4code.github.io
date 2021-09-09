@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>Real world applications make heavy use of powerful libraries
+  <p><p>Real world applications make heavy use of powerful libraries
 and frameworks, posing a significant challenge for static analysis
 as the library implementation may be very complex or unavailable.
 Thus, obtaining specifications that summarize the behaviors of
@@ -141,6 +139,29 @@ learn aliasing specifications from millions of source code files.
 USpec learned over 2000 specifications of various Java and Python APIs, in the process
 improving the results of the points-to analysis and its clients.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/ederhardt2019unsupervised.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

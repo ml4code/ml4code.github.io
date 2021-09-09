@@ -121,10 +121,31 @@ function search() {
       <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
   </p>
-      
-      
-      <p><p>In this paper we present a deep learning code completion model for the R language. We introduce several techniques to utilize language modeling based architecture in the code completion task. With these techniques, the model requires low resources, but still achieves high quality. We also present an evaluation dataset for the R language completion task. Our dataset contains multiple autocompletion usage contexts that provides robust validation results. The dataset is publicly available.</p>
+  <p><p>In this paper we present a deep learning code completion model for the R language. We introduce several techniques to utilize language modeling based architecture in the code completion task. With these techniques, the model requires low resources, but still achieves high quality. We also present an evaluation dataset for the R language completion task. Our dataset contains multiple autocompletion usage contexts that provides robust validation results. The dataset is publicly available.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/popov2021time.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

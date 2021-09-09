@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#information extraction">information extraction</a></tag>
     
   </p>
-      
-      
-      <p><p>Type information plays an important role in the success of information retrieval and recommendation systems in software
+  <p><p>Type information plays an important role in the success of information retrieval and recommendation systems in software
 engineering. Thus, the absence of types in dynamically-typed
 languages poses a challenge to adapt these systems to support
 dynamic languages.</p>
@@ -138,6 +136,29 @@ These results suggest that textual cues can be
 complementary
 tools in inferring types for dynamic languages.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/shirani2018evaluation.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

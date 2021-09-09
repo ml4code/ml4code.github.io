@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>The n-gram language model, which has its roots in statistical natural
+  <p><p>The n-gram language model, which has its roots in statistical natural
 language processing, has been shown to successfully capture the
 repetitive and predictable regularities (“naturalness”) of source code,
 and help with tasks such as code suggestion, porting, and designing
@@ -134,6 +132,29 @@ model; but it is simpler and easier to implement. Our cache language
 model requires nothing beyond lexicalization, and thus is applicable
 to all programming languages.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/tu2014localness.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

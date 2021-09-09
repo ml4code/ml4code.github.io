@@ -117,11 +117,32 @@ function search() {
       <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
-      
-      
-      <p><p>Software developers routinely search for code using general-purpose search engines. However, these search engines cannot find code semantically unless it has an accompanying description. We propose a technique for semantic code search: A Convolutional Neural Network approach to code retrieval (CoNCRA). Our technique aims to find the code snippet that most closely matches the developer’s intent, expressed in natural language. We evaluated our approach’s efficacy on a dataset composed of questions and code snippets collected from Stack Overflow. Our preliminary results showed that our technique, which prioritizes local interactions (words nearby), improved the state-of-the-art (SOTA) by 5% on average, retrieving the most relevant code snippets in the top 3 (three) positions by almost 80% of the time. Therefore, our technique is promising and can improve the efficacy of semantic code retrieval.</p>
+  <p><p>Software developers routinely search for code using general-purpose search engines. However, these search engines cannot find code semantically unless it has an accompanying description. We propose a technique for semantic code search: A Convolutional Neural Network approach to code retrieval (CoNCRA). Our technique aims to find the code snippet that most closely matches the developer’s intent, expressed in natural language. We evaluated our approach’s efficacy on a dataset composed of questions and code snippets collected from Stack Overflow. Our preliminary results showed that our technique, which prioritizes local interactions (words nearby), improved the state-of-the-art (SOTA) by 5% on average, retrieving the most relevant code snippets in the top 3 (three) positions by almost 80% of the time. Therefore, our technique is promising and can improve the efficacy of semantic code retrieval.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/derezendemartins2020concra.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

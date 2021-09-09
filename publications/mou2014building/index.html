@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>Deep learning has made significant breakthroughs
+  <p><p>Deep learning has made significant breakthroughs
 in various fields of artificial intelligence. Advantages of deep
 learning include the ability to capture highly complicated features, weak involvement of human engineering, etc. However,
 it is still virtually impossible to use deep learning to analyze
@@ -139,6 +137,29 @@ believe deep learning will become an outstanding technique for
 program analysis in the near future.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/mou2014building.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -121,9 +121,7 @@ function search() {
       <tag><a href="/tags.html#pattern mining">pattern mining</a></tag>
     
   </p>
-      
-      
-      <p><p>Programming languages themselves have a limited number of reserved keywords and character based tokens that
+  <p><p>Programming languages themselves have a limited number of reserved keywords and character based tokens that
 define the language specification. However, programmers have a rich use of natural language within their code
 through comments, text literals and naming entities. The programmer defined names that can be found in source
 code are a rich source of information to build a high level understanding of the project. The goal of this paper
@@ -136,6 +134,29 @@ and fuzzy duplicate repositories using Locality Sensitive Hashing on the bag-of-
 on topic modeling; and finally present the results from our data analysis together with open-access to the source code,
 tools and datasets.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/markovtsev2017topic.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

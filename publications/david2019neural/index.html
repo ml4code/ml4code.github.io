@@ -119,9 +119,7 @@ function search() {
       <tag><a href="/tags.html#GNN">GNN</a></tag>
     
   </p>
-      
-      
-      <p><p>We address the problem of predicting procedure names in stripped executables which contain no debug information.
+  <p><p>We address the problem of predicting procedure names in stripped executables which contain no debug information.
 Predicting procedure names can dramatically ease the task of reverse engineering, saving precious time and human effort. 
 We present a novel approach that leverages static analysis of binaries with encoder-decoder-based neural networks.
 The main idea is to use static analysis to obtain enriched representations of API call sites; encode a set of sequences
@@ -131,6 +129,29 @@ Our model achieves 81.70 precision and 80.12 recall in predicting procedure name
 precision and 51.31 recall in a diverse, cross-package, dataset. Comparing to previous approaches,
 the predictions made by our model are much more accurate and informative.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/david2019neural.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

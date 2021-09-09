@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#defect">defect</a></tag>
     
   </p>
-      
-      
-      <p><p>Several program analysis tools—such as plagiarism detection and bug finding—rely on knowing a piece of code’s
+  <p><p>Several program analysis tools—such as plagiarism detection and bug finding—rely on knowing a piece of code’s
 relative semantic importance. For example, a plagiarism detector should not bother reporting two programs that have
 an identical simple loop counter test, but should report programs that share more distinctive code. Traditional program
 analysis techniques (e.g., finding data and control dependencies) are useful, but do not say how surprising or common
@@ -137,6 +135,29 @@ previous techniques, and a bug-finding tool that discovered
 over a dozen previously unknown bugs in a collection of real
 deployed programs.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/hsiao2014using.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

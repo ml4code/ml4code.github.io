@@ -1,1 +1,1 @@
-["tian2020evaluating", "ye2021neural", "tufano2018empirical", "hoang2020cc2vec"]
+[["tian2020evaluating", "Evaluating Representation Learning of Code Changes for Predicting Patch Correctness in Program Repair"], ["ye2021neural", "Neural Program Repair with Execution-based Backpropagation"], ["tufano2018empirical", "An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation"], ["hoang2020cc2vec", "CC2Vec: Distributed Representations of Code Changes"]]

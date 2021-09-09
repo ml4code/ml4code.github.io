@@ -119,9 +119,7 @@ function search() {
       <tag><a href="/tags.html#deobfuscation">deobfuscation</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a new approach for predicting program properties from
+  <p><p>We present a new approach for predicting program properties from
 massive codebases (aka “Big Code”). Our approach first learns a
 probabilistic model from existing data and then uses this model to
 predict properties of new, unseen programs.</p>
@@ -144,6 +142,29 @@ and inference in this context, our work opens up new possibilities
 for attacking a wide range of difficult problems in the context of
 “Big Code” including invariant generation, de-compilation, synthesis and others.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/raychev2015predicting.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#deobfuscation">deobfuscation</a></tag>
     
   </p>
-      
-      
-      <p><p>As a common practice in software development, program
+  <p><p>As a common practice in software development, program
 obfuscation aims at deterring reverse engineering and malicious attacks on released source or binary code. Owning ample obfuscation techniques, we have relatively little
 knowledge on how to most effectively use them. The biggest
 challenge lies in identifying the most useful combination of
@@ -127,6 +125,29 @@ Compared to the well-known Google Closure Compiler, Closure outperforms its defa
 which have already been well obfuscated, Closure can still
 outperform by 22%.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/liu2016towards.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#defect">defect</a></tag>
     
   </p>
-      
-      
-      <p><p>Real software, the kind working programmers produce by the kLOC
+  <p><p>Real software, the kind working programmers produce by the kLOC
 to solve real-world problems, tends to be “natural”, like speech or
 natural language; it tends to be highly repetitive and predictable.
 Researchers have captured this naturalness of software through statistical models and used them to good effect in suggestion engines,
@@ -131,6 +129,29 @@ way to complement the effectiveness of PMD or FindBugs, and
 that search-based bug-fixing methods may benefit from using entropy both for fault-localization and searching for fixes.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/ray2015naturalness.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

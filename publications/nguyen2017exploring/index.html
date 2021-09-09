@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>Word2Vec is a class of neural network models that
+  <p><p>Word2Vec is a class of neural network models that
 as being trained from a large corpus of texts, they can produce for
 each unique word a corresponding vector in a continuous space in
 which linguistic contexts of words can be observed. In this work,
@@ -142,6 +140,29 @@ approach for API mappings. Finally, as another application in
 code migration, we are able to migrate equivalent API usages
 from Java to C# with up to 90.6% recall and 87.2% precision.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2017exploring.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

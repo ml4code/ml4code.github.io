@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>Programming language processing (similar to natural language processing) is a hot research topic in the field of software engineering; it has also aroused growing interest in the
+  <p><p>Programming language processing (similar to natural language processing) is a hot research topic in the field of software engineering; it has also aroused growing interest in the
 artificial intelligence community. However, different from a
 natural language sentence, a program contains rich, explicit,
 and complicated structural information. Hence, traditional
@@ -126,6 +124,29 @@ which a convolution kernel is designed over programs’ abstract syntax trees to
 is a generic architecture for programming language processing; our experiments show its effectiveness in two different program analysis tasks: classifying programs according
 to functionality, and detecting code snippets of certain patterns. TBCNN outperforms baseline methods, including several neural models for NLP.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/mou2016convolutional.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

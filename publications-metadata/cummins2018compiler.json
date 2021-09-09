@@ -1,1 +1,1 @@
-["brauckmann2020compiler", "liu2019deepfuzz", "patra2021semantic", "she2019neuzz"]
+[["brauckmann2020compiler", "Compiler-based graph representations for deep learning models of code"], ["liu2019deepfuzz", "DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testing"], ["patra2021semantic", "A Semantic Bug Seeding: A Learning-Based Approach for Creating Realistic Bugs"], ["she2019neuzz", "NEUZZ: Efficient Fuzzing with Neural Program Smoothing"]]

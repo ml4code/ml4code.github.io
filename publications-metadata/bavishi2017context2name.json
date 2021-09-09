@@ -1,1 +1,1 @@
-["tran2019recovering", "vasilescu2017recovering", "nguyen2020suggesting", "yonai2019mercem"]
+[["tran2019recovering", "Recovering Variable Names for Minified Code with Usage Contexts"], ["vasilescu2017recovering", "Recovering Clear, Natural Identifiers from Obfuscated JS Names"], ["nguyen2020suggesting", "Suggesting Natural Method Names to Check Name Consistencies"], ["yonai2019mercem", "Mercem: Method Name Recommendation Based on Call Graph Embedding"]]

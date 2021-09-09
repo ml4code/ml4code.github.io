@@ -119,10 +119,31 @@ function search() {
       <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
-      
-      
-      <p><p>There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work.</p>
+  <p><p>There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/li2019neural.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

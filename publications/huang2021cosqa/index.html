@@ -119,13 +119,34 @@ function search() {
       <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
-      
-      
-      <p><p>Finding codes given natural language query is beneficial to the productivity of software developers.
+  <p><p>Finding codes given natural language query is beneficial to the productivity of software developers.
 Future progress towards better semantic matching between query and code requires richer supervised training resources.
 To remedy this, we introduce the CoSQA dataset. It includes 20,604 labels for pairs of natural language queries and codes,
 each annotated by at least 3 human annotators. We further introduce a contrastive learning method dubbed CoCLR to enhance query-code matching, which works as a data augmenter to bring more artificially generated training instances. We show that evaluated on CodeXGLUE with the same CodeBERT model, training on CoSQA improves the accuracy of code question answering by 5.1%, and incorporating CoCLR brings a further improvement of 10.5%.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/huang2021cosqa.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

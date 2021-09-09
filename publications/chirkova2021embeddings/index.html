@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
     
   </p>
-      
-      
-      <p><p>Source code processing heavily relies on the methods widely used in natural language processing (NLP), but involves specifics that need to be taken into account to achieve higher quality. An example of this specificity is that the semantics of a variable is defined not only by its name but also by the contexts in which the variable occurs. In this work, we develop dynamic embeddings, a recurrent mechanism that adjusts the learned semantics of the variable when it obtains more information about the variable’s role in the program. We show that using the proposed dynamic embeddings significantly improves the performance of the recurrent neural network, in code completion and bug fixing tasks.</p>
+  <p><p>Source code processing heavily relies on the methods widely used in natural language processing (NLP), but involves specifics that need to be taken into account to achieve higher quality. An example of this specificity is that the semantics of a variable is defined not only by its name but also by the contexts in which the variable occurs. In this work, we develop dynamic embeddings, a recurrent mechanism that adjusts the learned semantics of the variable when it obtains more information about the variable’s role in the program. We show that using the proposed dynamic embeddings significantly improves the performance of the recurrent neural network, in code completion and bug fixing tasks.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/chirkova2021embeddings.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

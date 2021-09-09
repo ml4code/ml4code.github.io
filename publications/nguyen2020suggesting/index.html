@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#naming">naming</a></tag>
     
   </p>
-      
-      
-      <p><p>Misleading names of the methods in a project or the APIs in a software library confuse developers about program functionality
+  <p><p>Misleading names of the methods in a project or the APIs in a software library confuse developers about program functionality
 and API usages, leading to API misuses and defects. In this paper,we introduce MNire, a machine learning approach to check the
 consistency between the name of a given method and its implementation. MNire first generates a candidate name and compares the
 current name against it. If the two names are sufficiently similar, we consider the method as consistent. To generate the method name,
@@ -136,6 +134,29 @@ we used it to detect inconsistent methods and suggest new names in several activ
 42 responses. Among them, five PRs were merged into the main branch, and 13 were approved for later merging. In total, in 31/42 cases,
 the developer teams agree that our suggested names are more meaningful than the current names, showing MNire’s usefulness.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2020suggesting.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

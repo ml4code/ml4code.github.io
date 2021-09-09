@@ -1,1 +1,1 @@
-["guo2020graphcodebert", "zugner2021language", "parvez2018building", "ling2016latent"]
+[["guo2020graphcodebert", "GraphCodeBERT: Pre-training Code Representations with Data Flow"], ["zugner2021language", "Language-Agnostic Representation Learning of Source Code from Structure and Context"], ["parvez2018building", "Building Language Models for Text with Named Entities"], ["ling2016latent", "Latent Predictor Networks for Code Generation"]]

@@ -125,9 +125,7 @@ function search() {
       <tag><a href="/tags.html#style">style</a></tag>
     
   </p>
-      
-      
-      <p><p>Every programmer has a characteristic style, ranging from preferences
+  <p><p>Every programmer has a characteristic style, ranging from preferences
 about identifier naming to preferences about object relationships and
 design patterns. Coding conventions define a consistent syntactic style,
 fostering readability and hence maintainability. When collaborating,
@@ -148,6 +146,29 @@ Naturalize achieves 94% accuracy in its top suggestions for identifier
 names. We used Naturalize to generate 18 patches for 5 open source
 projects: 14 were accepted.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/allamanis2014learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

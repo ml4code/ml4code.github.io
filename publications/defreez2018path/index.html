@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>Identifying the relationships among program elements is useful
+  <p><p>Identifying the relationships among program elements is useful
 for program understanding, debugging, and analysis. One such
 relationship is synonymy. Function synonyms are functions that
 play a similar role in code, e.g. functions that perform initialization
@@ -134,6 +132,29 @@ synonyms in the Linux kernel. Furthermore, we show how function
 synonyms enable mining error-handling specifications with high
 support in Linux file systems and drivers.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/defreez2018path.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

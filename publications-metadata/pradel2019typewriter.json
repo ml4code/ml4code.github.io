@@ -1,1 +1,1 @@
-["mir2021type4py", "wei2020lambdanet", "malik2019nl2type", "hellendoorn2018deep"]
+[["mir2021type4py", "Type4Py: Deep Similarity Learning-Based Type Inference for Python"], ["wei2020lambdanet", "LambdaNet: Probabilistic Type Inference using Graph Neural Networks"], ["malik2019nl2type", "NL2Type: Inferring JavaScript Function Types from Natural Language Information"], ["hellendoorn2018deep", "Deep Learning Type Inference"]]

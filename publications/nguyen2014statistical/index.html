@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#API">API</a></tag>
     
   </p>
-      
-      
-      <p><p>The same software product nowadays could appear in multiple platforms and devices. To address business needs, software companies
+  <p><p>The same software product nowadays could appear in multiple platforms and devices. To address business needs, software companies
 develop a software product in a programming language and then
 migrate it to another one. To support that process, semi-automatic
 migration tools have been proposed. However, they require users
@@ -133,6 +131,29 @@ on several projects shows that StaMiner can detect API usage mappings with highe
 the resulting API mappings mined by StaMiner, Java2CSharp, an
 existing migration tool, could achieve a higher level of accuracy.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2014statistical.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

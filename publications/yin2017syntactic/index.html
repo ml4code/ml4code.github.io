@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#bimodal">bimodal</a></tag>
     
   </p>
-      
-      
-      <p><p>We consider the problem of parsing natural language descriptions into source code
+  <p><p>We consider the problem of parsing natural language descriptions into source code
 written in a general-purpose programming
 language like Python. Existing data-driven methods treat this problem as a language generation task without considering
 the underlying syntax of the target programming language. Informed by previous work in semantic parsing, in this paper we propose a novel neural architecture
@@ -130,6 +128,29 @@ programs from natural language descriptions, achieving state-of-the-art results 
 well outperform previous code generation
 and semantic parsing approaches.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/yin2017syntactic.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

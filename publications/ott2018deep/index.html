@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#information extraction">information extraction</a></tag>
     
   </p>
-      
-      
-      <p><p>While substantial progress has been made in mining code on an
+  <p><p>While substantial progress has been made in mining code on an
 Internet scale, efforts to date have been overwhelmingly focused on
 data sets where source code is represented natively as text. Large
 volumes of source code available online and embedded in technical
@@ -132,6 +130,29 @@ on syntactic and contextual features learned through deep architectures. When co
 a more scalable basis for video indexing that can be incorporated
 into existing software search and mining tools.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/ott2018deep.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

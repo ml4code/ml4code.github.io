@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#migration">migration</a></tag>
     
   </p>
-      
-      
-      <p><p>Prior research shows that directly applying phrase-based SMT on lexical tokens to migrate Java to C# produces
+  <p><p>Prior research shows that directly applying phrase-based SMT on lexical tokens to migrate Java to C# produces
 much semantically incorrect code. A key limitation is the use of
 sequences in phrase-based SMT to model and translate source
 code with well-formed structures. We propose mppSMT, a divideand-conquer technique to address that with novel training and migration algorithms using phrase-based SMT in three phases. First,
@@ -136,6 +134,29 @@ of total migrated methods are exactly matched to the human-written C# code in th
 6.6–57.7% relatively. Importantly, it does not require manual
 labeling for training data or manual definition of rules.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2015divide.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

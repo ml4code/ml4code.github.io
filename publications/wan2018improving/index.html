@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#documentation">documentation</a></tag>
     
   </p>
-      
-      
-      <p><p>Code summarization provides a high level natural language description of the function performed by code, as it can benefit the software maintenance, code categorization and retrieval. To the best of our knowledge, most state-of-the-art approaches follow an encoder-decoder framework which encodes the code into a hidden space and then decode it into natural language space, suffering from two major drawbacks: a) Their encoders only consider the sequential content of code, ignoring the tree structure which is also critical for the task of code summarization; b) Their decoders are typically trained to predict the next word by maximizing the likelihood of next ground-truth word with previous ground-truth word given. However, it is expected to generate the entire sequence from scratch at test time. This discrepancy can cause an exposure bias issue, making the learnt decoder suboptimal. In this paper, we incorporate an abstract syntax tree structure as well as sequential content of code snippets into a deep reinforcement learning framework (i.e., actor-critic network). The actor network provides the confidence of predicting the next word according to current state. On the other hand, the critic network evaluates the reward value of all possible extensions of the current state and can provide global guidance for explorations. We employ an advantage reward composed of BLEU metric to train both networks. Comprehensive experiments on a real-world dataset show the effectiveness of our proposed model when compared with some state-of-the-art methods.</p>
+  <p><p>Code summarization provides a high level natural language description of the function performed by code, as it can benefit the software maintenance, code categorization and retrieval. To the best of our knowledge, most state-of-the-art approaches follow an encoder-decoder framework which encodes the code into a hidden space and then decode it into natural language space, suffering from two major drawbacks: a) Their encoders only consider the sequential content of code, ignoring the tree structure which is also critical for the task of code summarization; b) Their decoders are typically trained to predict the next word by maximizing the likelihood of next ground-truth word with previous ground-truth word given. However, it is expected to generate the entire sequence from scratch at test time. This discrepancy can cause an exposure bias issue, making the learnt decoder suboptimal. In this paper, we incorporate an abstract syntax tree structure as well as sequential content of code snippets into a deep reinforcement learning framework (i.e., actor-critic network). The actor network provides the confidence of predicting the next word according to current state. On the other hand, the critic network evaluates the reward value of all possible extensions of the current state and can provide global guidance for explorations. We employ an advantage reward composed of BLEU metric to train both networks. Comprehensive experiments on a real-world dataset show the effectiveness of our proposed model when compared with some state-of-the-art methods.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/wan2018improving.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

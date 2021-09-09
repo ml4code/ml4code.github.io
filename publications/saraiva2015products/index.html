@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>Recent work has shown that although programming languages en-
+  <p><p>Recent work has shown that although programming languages en-
 able source code to be rich and complex, most code tends to be
 repetitive and predictable. The use of natural language processing
 (NLP) techniques applied to source code such as n-gram language
@@ -138,6 +136,29 @@ application specific language models perform better than models
 from the entire codebase, but that temporality has little to no effect
 on language model performance.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/saraiva2015products.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

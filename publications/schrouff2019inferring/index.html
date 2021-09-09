@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>The recent use of `Big Code’ with state-of-the-art deep learning methods offers promising avenues to ease program source code writing and correction. As a first step towards automatic code repair, we implemented a graph neural network model that predicts token types for Javascript programs. The predictions achieve an accuracy above 90%, which improves on previous similar work.</p>
+  <p><p>The recent use of `Big Code’ with state-of-the-art deep learning methods offers promising avenues to ease program source code writing and correction. As a first step towards automatic code repair, we implemented a graph neural network model that predicts token types for Javascript programs. The predictions achieve an accuracy above 90%, which improves on previous similar work.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/schrouff2019inferring.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

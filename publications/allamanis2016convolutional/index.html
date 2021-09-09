@@ -125,9 +125,7 @@ function search() {
       <tag><a href="/tags.html#summarization">summarization</a></tag>
     
   </p>
-      
-      
-      <p><p>Attention mechanisms in neural networks have proved useful for problems in which
+  <p><p>Attention mechanisms in neural networks have proved useful for problems in which
 the input and output do not have fixed dimension. Often there exist features that
 are locally translation invariant and would be valuable for directing the model’s attention,
 but previous attentional architectures are not constructed to learn such features specifically.
@@ -140,6 +138,29 @@ n the attention weights of the input tokens and another that is able to copy a c
 into the summary. We demonstrate our convolutional attention neural network’s performance on 10 popular Java
 projects showing that it achieves better performance compared to previous attentional mechanisms.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/allamanis2016convolutional.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

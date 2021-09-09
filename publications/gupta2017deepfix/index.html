@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>The problem of automatically fixing programming errors is a
+  <p><p>The problem of automatically fixing programming errors is a
 very active research topic in software engineering. This is a
 challenging problem as fixing even a single error may require
 analysis of the entire program. In practice, a number of errors
@@ -131,6 +129,29 @@ attention which is trained to predict erroneous program locations along with the
 6971 erroneous C programs written by students for 93 programming tasks, DeepFix could fix 1881 (27%) programs
 completely and 1338 (19%) programs partially.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/gupta2017deepfix.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#clone">clone</a></tag>
     
   </p>
-      
-      
-      <p><p>Assessing the similarity between code components plays a pivotal
+  <p><p>Assessing the similarity between code components plays a pivotal
 role in a number of Software Engineering (SE) tasks, such as clone
 detection, impact analysis, refactoring, <em>etc.</em> 
 Code similarity is generally measured by relying on manually defined or hand-crafted
@@ -134,6 +132,29 @@ more reliable detection of similarities in code. In this paper, we
 demonstrate how SE tasks can benefit from a DL-based approach,
 which can automatically learn code similarities from different representations.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/tufano2018deep.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

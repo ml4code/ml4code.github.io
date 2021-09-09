@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#types">types</a></tag>
     
   </p>
-      
-      
-      <p><p>JavaScript is dynamically typed and hence lacks thetype safety  of  statically  typed  languages,
+  <p><p>JavaScript is dynamically typed and hence lacks thetype safety  of  statically  typed  languages,
 leading  to  suboptimal IDE support, difficult to understand APIs, and unexpected run-time behavior.
 Several gradual type systems have been proposed, e.g., Flow and TypeScript, but they rely on developers
 to annotatecode with types. This paper presents NL2Type, a learning-based approach for predicting likely
@@ -137,6 +135,29 @@ consistency  checker  for  existing type  annotations.  We  show  that  it  disc
 that  deserve  developer  attention  (from  a  manual  analysis  of  50 warnings), most of which 
 are due to incorrect type annotations.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/malik2019nl2type.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

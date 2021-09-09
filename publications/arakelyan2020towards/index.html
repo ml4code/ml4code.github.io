@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>Tackling binary analysis problems has traditionally implied manually defining rules and heuristics. As an alternative, we are suggesting using machine learning models for learning distributed representations of binaries that can be applicable for a number of downstream tasks. We construct a computational graph from the binary executable and use it with a graph convolutional neural network to learn a high dimensional representation of the program. We show the versatility of this approach by using our representations to solve two semantically different binary analysis tasks – algorithm classification and vulnerability discovery. We compare the proposed approach to our own strong baseline as well as published results and demonstrate improvement on the state of the art methods for both tasks.</p>
+  <p><p>Tackling binary analysis problems has traditionally implied manually defining rules and heuristics. As an alternative, we are suggesting using machine learning models for learning distributed representations of binaries that can be applicable for a number of downstream tasks. We construct a computational graph from the binary executable and use it with a graph convolutional neural network to learn a high dimensional representation of the program. We show the versatility of this approach by using our representations to solve two semantically different binary analysis tasks – algorithm classification and vulnerability discovery. We compare the proposed approach to our own strong baseline as well as published results and demonstrate improvement on the state of the art methods for both tasks.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/arakelyan2020towards.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

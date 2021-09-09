@@ -119,9 +119,7 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>We study the problem of building generative
+  <p><p>We study the problem of building generative
 models of natural source code (NSC); that is,
 source code written by humans and meant to
 be understood by humans. Our primary con-
@@ -137,6 +135,29 @@ structured baselines in terms of predictive log
 likelihoods on held-out data.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/maddison2014structured.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

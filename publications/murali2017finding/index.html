@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#API">API</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a Bayesian framework for learning probabilistic specifications from large, unstructured code corpora, and
+  <p><p>We present a Bayesian framework for learning probabilistic specifications from large, unstructured code corpora, and
 a method to use this framework to statically detect anomalous, hence likely buggy, program behavior. The distinctive
 insight here is to build a statistical model that correlates all
 specifications hidden inside a corpus with the syntax and
@@ -139,6 +137,29 @@ automatically discover subtle errors in Android applications
 in the wild, and has high precision and recall compared to
 competing probabilistic approaches.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/murali2017finding.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

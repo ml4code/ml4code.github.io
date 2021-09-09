@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>Text  in  many  domains  involves  a  significant amount of named entities.   Predicting the entity names is often challenging
+  <p><p>Text  in  many  domains  involves  a  significant amount of named entities.   Predicting the entity names is often challenging
 for a language model as they appear less
 frequent  on  the  training  corpus.   In  this
 paper,  we  propose  a  novel  and  effective
@@ -125,6 +123,29 @@ programming codes,  on which we evaluate the proposed model.  Experimental resul
 better perplexity in recipe generation and
 22.06% on code generation than the state-of-the-art language models.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/parvez2018building.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

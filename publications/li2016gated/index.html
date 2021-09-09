@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>Graph-structured data appears frequently in domains including chemistry, natural
+  <p><p>Graph-structured data appears frequently in domains including chemistry, natural
 language semantics, social networks, and knowledge bases. In this work, we study
 feature learning techniques for graph-structured inputs. Our starting point is previous work on Graph Neural Networks (Scarselli et al., 2009), which we modify
 to use gated recurrent units and modern optimization techniques and then extend
@@ -128,6 +126,29 @@ then show it achieves state-of-the-art performance on a problem from program
 verification, in which subgraphs need to be described as abstract data structures.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/li2016gated.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

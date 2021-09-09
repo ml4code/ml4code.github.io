@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#fuzzing">fuzzing</a></tag>
     
   </p>
-      
-      
-      <p><p>Fuzzing is a popular technique to create test inputs for software that processes structured data. It has been successfully
+  <p><p>Fuzzing is a popular technique to create test inputs for software that processes structured data. It has been successfully
 applied in various domains, ranging from compilers and interpreters over program analyses to rendering engines, image manipulation tools, and word processors. Existing fuzz
 testing techniques are tailored for a particular purpose and
 rely on a carefully crafted model of the data to be generated.
@@ -130,6 +128,29 @@ only 2.06 validation errors per kilobyte of generated HTML.
 The performance of both learning and generation scales linearly w.r.t. the size of the corpus. Using TreeFuzz-generated
 JavaScript programs for differential testing of JavaScript engines exposes various inconsistencies among browsers, including browser bugs and unimplemented language features.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/patra2016learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

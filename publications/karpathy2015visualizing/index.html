@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Recurrent Neural Networks (RNNs), and specifically a variant with Long Short-Term Memory (LSTM), are enjoying renewed interest as a result of successful
+  <p><p>Recurrent Neural Networks (RNNs), and specifically a variant with Long Short-Term Memory (LSTM), are enjoying renewed interest as a result of successful
 applications in a wide range of machine learning problems that involve sequential
 data. However, while LSTMs provide exceptional results in practice, the source
 of their performance and their limitations remain rather poorly understood. Using character-level language models as an interpretable testbed, we aim to bridge
@@ -129,6 +127,29 @@ source of the LSTM improvements to long-range structural dependencies. Finally,
 we provide analysis of the remaining errors and suggests areas for further study.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/karpathy2015visualizing.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

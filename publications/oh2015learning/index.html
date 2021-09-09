@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>Building a cost-effective static analyser for real-world programs is still regarded an art. One key contributor to this
+  <p><p>Building a cost-effective static analyser for real-world programs is still regarded an art. One key contributor to this
 grim reputation is the difficulty in balancing the cost and the
 precision of an analyser. An ideal analyser should be adap-
 tive to a given analysis task, and avoid using techniques that
@@ -137,6 +135,29 @@ increasing the analysis cost only by 3.3x of the baseline
 flow- and context-insensitive analysis, rather than 40x or
 more of the fully sensitive version.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/oh2015learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

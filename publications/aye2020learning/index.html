@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
     
   </p>
-      
-      
-      <p><p>Code completion is a popular software development tool integrated into all major IDEs. Many neural language models have achieved promising results in completion suggestion prediction on synthetic benchmarks. However, a recent study When Code Completion Fails: a Case Study on Real-World Completions demonstrates that these results may not translate to improvements in real-world performance. To combat this effect, we train models on real-world code completion examples and find that these models outperform models trained on committed source code and working version snapshots by 12.8% and 13.8% accuracy respectively. We observe this improvement across modeling technologies and show through A/B testing that it corresponds to a 6.2% increase in programmers’ actual autocompletion usage. Furthermore, our study characterizes a large corpus of logged autocompletion usages to investigate why training on real-world examples leads to stronger models.</p>
+  <p><p>Code completion is a popular software development tool integrated into all major IDEs. Many neural language models have achieved promising results in completion suggestion prediction on synthetic benchmarks. However, a recent study When Code Completion Fails: a Case Study on Real-World Completions demonstrates that these results may not translate to improvements in real-world performance. To combat this effect, we train models on real-world code completion examples and find that these models outperform models trained on committed source code and working version snapshots by 12.8% and 13.8% accuracy respectively. We observe this improvement across modeling technologies and show through A/B testing that it corresponds to a 6.2% increase in programmers’ actual autocompletion usage. Furthermore, our study characterizes a large corpus of logged autocompletion usages to investigate why training on real-world examples leads to stronger models.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/aye2020learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>Logs are an essential part  of  the  development  and
+  <p><p>Logs are an essential part  of  the  development  and
 maintenance  of  large  and  complex  software  systems  as  they
 contain rich information pertaining to the dynamic content and
 state  of  the  system.  As  such,  developers  and  practitioners  rely
@@ -135,6 +133,29 @@ present  a  case  study  on  anomaly  detection  and  introduce  a  tool
 for anomaly detection, called ANALOG, to demonstrate how our
 new  findings  facilitate  the  automated  analysis  of  logs.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/gholamian2021naturalness.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

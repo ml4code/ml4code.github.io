@@ -1,1 +1,1 @@
-["phan2021cotext", "huang2021cosqa", "ahmad2021unified", "barone2017parallel"]
+[["phan2021cotext", "CoTexT: Multi-task Learning with Code-Text Transformer"], ["huang2021cosqa", "CoSQA: 20,000+ Web Queries for Code Search and Question Answering"], ["ahmad2021unified", "Unified Pre-training for Program Understanding and Generation"], ["barone2017parallel", "A parallel corpus of Python functions and documentation strings for automated code documentation and code generation"]]

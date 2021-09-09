@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#summarization">summarization</a></tag>
     
   </p>
-      
-      
-      <p><p>Commit  messages,  which  summarize  the  source
+  <p><p>Commit  messages,  which  summarize  the  source
 code changes in natural language, are essential for
 program comprehension and software evolution understanding.  Unfortunately, due to the lack of direct
 motivation,  commit  messages  are  sometimes neglected  by  developers,  making  it  necessary  to
@@ -131,6 +129,29 @@ jointly model these two sources of  information  so  as  to  better  learn  the 
 mitigate  the  out-of-vocabulary  issue.   Experimental  evaluations  on  real  data  demonstrate  that
 the  proposed  approach  significantly  outperforms the state-of-the-art in terms of accurately generating the commit messages.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/xu2019commit.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

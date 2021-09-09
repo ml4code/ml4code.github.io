@@ -113,10 +113,31 @@ function search() {
       <tag><a href="/tags.html#dynamic">dynamic</a></tag>
     
   </p>
-      
-      
-      <p><p>Learning neural program embeddings is key to utilizing deep neural networks in program languages research — precise and efficient program representations enable the application of deep models to a wide range of program analysis tasks. Existing approaches predominately learn to embed programs from their source code, and, as a result, they do not capture deep, precise program semantics. On the other hand, models learned from runtime information critically depend on the quality of program executions, thus leading to trained models with highly variant quality. This paper tackles these inherent weaknesses of prior approaches by introducing a new deep neural network, Liger, which learns program representations from a mixture of symbolic and concrete execution traces. We have evaluated Liger on two tasks: method name prediction and semantics classification. Results show that Liger is significantly more accurate than the state-of-the-art static model code2seq in predicting method names, and requires on average around 10x fewer executions covering nearly 4x fewer paths than the state-of-the-art dynamic model DYPRO in both tasks. Liger offers a new, interesting design point in the space of neural program embeddings and opens up this new direction for exploration.</p>
+  <p><p>Learning neural program embeddings is key to utilizing deep neural networks in program languages research — precise and efficient program representations enable the application of deep models to a wide range of program analysis tasks. Existing approaches predominately learn to embed programs from their source code, and, as a result, they do not capture deep, precise program semantics. On the other hand, models learned from runtime information critically depend on the quality of program executions, thus leading to trained models with highly variant quality. This paper tackles these inherent weaknesses of prior approaches by introducing a new deep neural network, Liger, which learns program representations from a mixture of symbolic and concrete execution traces. We have evaluated Liger on two tasks: method name prediction and semantics classification. Results show that Liger is significantly more accurate than the state-of-the-art static model code2seq in predicting method names, and requires on average around 10x fewer executions covering nearly 4x fewer paths than the state-of-the-art dynamic model DYPRO in both tasks. Liger offers a new, interesting design point in the space of neural program embeddings and opens up this new direction for exploration.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/wang2020blended.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

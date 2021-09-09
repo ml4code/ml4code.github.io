@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#dataset">dataset</a></tag>
     
   </p>
-      
-      
-      <p><p>There has been a growing interest in developing machine learning (ML) models for code learning tasks, e.g., comment generation and method naming. Despite substantial increase in the effectiveness of ML models, the evaluation methodologies, i.e., the way people split datasets into training, validation, and testing sets, were not well designed. Specifically, no prior work on the aforementioned topics considered the timestamps of code and comments during evaluation (e.g., examples in the testing set might be from 2010 and examples from the training set might be from 2020). This may lead to evaluations that are inconsistent with the intended use cases of the ML models. In this paper, we formalize a novel time-segmented evaluation methodology, as well as the two methodologies commonly used in the literature: mixed-project and cross-project. We argue that time-segmented methodology is the most realistic. We also describe various use cases of ML models and provide a guideline for using methodologies to evaluate each use case. To assess the impact of methodologies, we collect a dataset of code-comment pairs with timestamps to train and evaluate several recent code learning ML models for the comment generation and method naming tasks. Our results show that different methodologies can lead to conflicting and inconsistent results. We invite the community to adopt the time-segmented evaluation methodology.</p>
+  <p><p>There has been a growing interest in developing machine learning (ML) models for code learning tasks, e.g., comment generation and method naming. Despite substantial increase in the effectiveness of ML models, the evaluation methodologies, i.e., the way people split datasets into training, validation, and testing sets, were not well designed. Specifically, no prior work on the aforementioned topics considered the timestamps of code and comments during evaluation (e.g., examples in the testing set might be from 2010 and examples from the training set might be from 2020). This may lead to evaluations that are inconsistent with the intended use cases of the ML models. In this paper, we formalize a novel time-segmented evaluation methodology, as well as the two methodologies commonly used in the literature: mixed-project and cross-project. We argue that time-segmented methodology is the most realistic. We also describe various use cases of ML models and provide a guideline for using methodologies to evaluate each use case. To assess the impact of methodologies, we collect a dataset of code-comment pairs with timestamps to train and evaluate several recent code learning ML models for the comment generation and method naming tasks. Our results show that different methodologies can lead to conflicting and inconsistent results. We invite the community to adopt the time-segmented evaluation methodology.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nie2021evaluation.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a new scalable, semi-supervised method for inferring
+  <p><p>We present a new scalable, semi-supervised method for inferring
 taint analysis specifications by learning from a large dataset of programs.
 Taint specifications capture the role of library APIs (source, sink, sanitizer)
 and are a critical ingredient of any taint analyzer that aims to detect
@@ -142,6 +140,29 @@ Further,using the learned specifications, our taint analyzer flagged more than
 20,000 violations in open source projects, 97% of which were
 undetectable without the inferred specifications.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/chibotaru2019scalable.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

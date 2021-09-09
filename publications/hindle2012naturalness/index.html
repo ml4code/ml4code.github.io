@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
     
   </p>
-      
-      
-      <p><p>Natural languages like English are rich, complex,
+  <p><p>Natural languages like English are rich, complex,
 and powerful. The highly creative and graceful use of languages
 like English and Tamil, by masters like Shakespeare and
 Avvaiyar, can certainly delight and inspire. But in practice,
@@ -146,6 +144,29 @@ completion capability. We conclude the paper by laying out a
 vision for future research in this area.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/hindle2012naturalness.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

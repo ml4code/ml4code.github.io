@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#pattern mining">pattern mining</a></tag>
     
   </p>
-      
-      
-      <p><p>Existing approaches for detecting repetitive code changes relying on syntactic similarity cannot effectively detect semantic change patterns. In this work, we introduce a novel graph-based mining approach, CPatMiner, which is capable of detecting semantic code change patterns from a large number of open-source repositories by capturing dependencies between fine-grained change elements. We evaluated CPatMiner by mining change patterns in a diverse corpus of 5,000+ open-source projects from GitHub with 170,000+ developers. We use three complementary methods. First, we sent the mined patterns to the authors and received 108 responses. 70% of respondents recognized those patterns as their meaningful frequent changes. 79% of respondents even named the patterns, and 44% wanted IDEs to automate such repetitive changes. The mined patterns belong to various activities: adaptive (9%), perfective (20%), corrective (35%) and preventive (36%). Second, we compared CPatMiner with the state-of-the-art, AST-based technique, and reported that CPatMiner detects 2.1x more meaningful patterns. Third, we used CPatMiner to search for patterns in a corpus of 88 GitHub projects with longer histories consisting of 164M SLOCs. It constructed 322K fine-grained change graphs containing 3M nodes, and detected 17K change patterns which provide unique insights on the practice of change patterns among individuals and teams. We found that a large percentage (75%) of the patterns from individual developers are commonly shared with others, and this holds true for teams. Moreover, we found that the patterns spread widely over time. Thus, we call for a community-based change pattern database to provide important resources in novel applications.</p>
+  <p><p>Existing approaches for detecting repetitive code changes relying on syntactic similarity cannot effectively detect semantic change patterns. In this work, we introduce a novel graph-based mining approach, CPatMiner, which is capable of detecting semantic code change patterns from a large number of open-source repositories by capturing dependencies between fine-grained change elements. We evaluated CPatMiner by mining change patterns in a diverse corpus of 5,000+ open-source projects from GitHub with 170,000+ developers. We use three complementary methods. First, we sent the mined patterns to the authors and received 108 responses. 70% of respondents recognized those patterns as their meaningful frequent changes. 79% of respondents even named the patterns, and 44% wanted IDEs to automate such repetitive changes. The mined patterns belong to various activities: adaptive (9%), perfective (20%), corrective (35%) and preventive (36%). Second, we compared CPatMiner with the state-of-the-art, AST-based technique, and reported that CPatMiner detects 2.1x more meaningful patterns. Third, we used CPatMiner to search for patterns in a corpus of 88 GitHub projects with longer histories consisting of 164M SLOCs. It constructed 322K fine-grained change graphs containing 3M nodes, and detected 17K change patterns which provide unique insights on the practice of change patterns among individuals and teams. We found that a large percentage (75%) of the patterns from individual developers are commonly shared with others, and this holds true for teams. Moreover, we found that the patterns spread widely over time. Thus, we call for a community-based change pattern database to provide important resources in novel applications.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2019graph.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

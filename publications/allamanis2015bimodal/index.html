@@ -123,9 +123,7 @@ function search() {
       <tag><a href="/tags.html#bimodal">bimodal</a></tag>
     
   </p>
-      
-      
-      <p><p>We consider the problem of building probabilistic models that jointly 
+  <p><p>We consider the problem of building probabilistic models that jointly 
 model short natural language utterances and source code snippets. The
 aim is to bring together recent work on statistical modelling of source
 code and work on bimodal models of images and natural language. The
@@ -137,6 +135,29 @@ query (i.e., source code captioning). Experiments show there to be
 promise in this direction, and that modelling the structure of source
 code improves performance.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/allamanis2015bimodal.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

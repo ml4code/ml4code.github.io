@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#API">API</a></tag>
     
   </p>
-      
-      
-      <p><p>Prior research has shown that source code also exhibits naturalness, i.e. it is written by humans and is likely to be
+  <p><p>Prior research has shown that source code also exhibits naturalness, i.e. it is written by humans and is likely to be
 repetitive. The researchers also showed that the n-gram language model is useful in predicting the next token in a source
 file given a large corpus of existing source code. In this paper, we investigate how well statistical machine translation
 (SMT) models for natural languages could help in migrating source code from one programming language to another.
@@ -133,6 +131,29 @@ our result calls for a more program-oriented SMT model that
 is capable of better integrating the syntactic and semantic
 information of a program to support language migration.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2013lexical.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

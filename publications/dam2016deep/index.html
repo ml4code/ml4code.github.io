@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Existing language models such as n-grams for software code often fail to capture a long context where dependent code elements scatter far apart. In this paper, we propose a novel approach to build a language model for software code to address this particular issue. Our language model, partly inspired by human memory, is built upon the powerful deep learning-based Long Short Term Memory architecture that is capable of learning long-term dependencies which occur frequently in software code. Results from our intrinsic evaluation on a corpus of Java projects have demonstrated the effectiveness of our language model. This work contributes to realizing our vision for DeepSoft, an end-to-end, generic deep learning-based framework for modeling software and its development process.</p>
+  <p><p>Existing language models such as n-grams for software code often fail to capture a long context where dependent code elements scatter far apart. In this paper, we propose a novel approach to build a language model for software code to address this particular issue. Our language model, partly inspired by human memory, is built upon the powerful deep learning-based Long Short Term Memory architecture that is capable of learning long-term dependencies which occur frequently in software code. Results from our intrinsic evaluation on a corpus of Java projects have demonstrated the effectiveness of our language model. This work contributes to realizing our vision for DeepSoft, an end-to-end, generic deep learning-based framework for modeling software and its development process.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/dam2016deep.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

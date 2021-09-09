@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#edit">edit</a></tag>
     
   </p>
-      
-      
-      <p><p>Deep learning methods, which have found successful applications in fields like image classification and natural language processing, have recently been applied to source code analysis too, due to the enormous amount of freely available source code (e.g., from open-source software repositories).</p>
+  <p><p>Deep learning methods, which have found successful applications in fields like image classification and natural language processing, have recently been applied to source code analysis too, due to the enormous amount of freely available source code (e.g., from open-source software repositories).</p>
 
 <p>In this work, we elaborate upon a state-of-the-art approach to the representation of source code that uses information about its syntactic structure, and we adapt it to represent source changes (i.e., commits). We use this representation to classify security-relevant commits.</p>
 
@@ -125,6 +123,29 @@ function search() {
 
 <p>Our results indicate that representations that leverage the structural information obtained through code syntax outperform token-based representations. Furthermore, the performance metrics obtained when pre-training on a loosely related pretext task with a very large dataset (&gt;10e6 samples) were surpassed when pretraining on a smaller dataset (&gt;10e4 samples) but for a pretext task that is more closely related to the target task.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/commit2vec2019lozoya.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

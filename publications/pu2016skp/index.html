@@ -113,14 +113,35 @@ function search() {
       <tag><a href="/tags.html#repair">repair</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a novel technique for automatic program correction in MOOCs, capable of fixing both syntactic and semantic errors without manual, problem specific correction strategies. Given an incorrect student program, it generates candidate programs from a distribution of likely corrections, and checks each candidate for correctness against a test suite.</p>
+  <p><p>We present a novel technique for automatic program correction in MOOCs, capable of fixing both syntactic and semantic errors without manual, problem specific correction strategies. Given an incorrect student program, it generates candidate programs from a distribution of likely corrections, and checks each candidate for correctness against a test suite.</p>
 
 <p>The key observation is that in MOOCs many programs share similar code fragments, and the seq2seq neural network model, used in the natural-language processing task of machine translation, can be modified and trained to recover these fragments.</p>
 
 <p>Experiment shows our scheme can correct 29% of all incorrect submissions and out-performs state of the art approach which requires manual, problem specific correction strategies.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/pu2016skp.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>Program analysis tools often produce undesirable output
+  <p><p>Program analysis tools often produce undesirable output
 due to various approximations. We present an approach
 and a system Eugene that allows user feedback to guide
 such approximations towards producing the desired output.
@@ -131,6 +129,29 @@ study involving nine users who employ Eugene to guide an
 information-flow analysis on three Java micro-benchmarks.
 In our experiments, Eugene significantly reduces misclassified reports upon providing limited amounts of feedback.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/mangal2015user.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

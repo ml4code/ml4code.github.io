@@ -115,11 +115,32 @@ function search() {
       <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
-      
-      
-      <p><p>Code retrieval helps developers reuse the code snippet in the open-source projects. Given a natural language description, code retrieval aims to search for the most relevant code among a set of code. Existing state-of-the-art approaches apply neural networks to code retrieval. However, these approaches still fail to capture an important feature: overlaps. The overlaps between different names used by different people indicate that two different names may be potentially related (e.g., “message” and “msg”), and the overlaps between identifiers in code and words in natural language descriptions indicate that the code snippet and the description may potentially be related. To address these problems, we propose a novel neural architecture named OCoR, where we introduce two specifically-designed components to capture overlaps: the first embeds identifiers by character to capture the overlaps between identifiers, and the second introduces a novel overlap matrix to represent the degrees of overlaps between each natural language word and each identifier.
+  <p><p>Code retrieval helps developers reuse the code snippet in the open-source projects. Given a natural language description, code retrieval aims to search for the most relevant code among a set of code. Existing state-of-the-art approaches apply neural networks to code retrieval. However, these approaches still fail to capture an important feature: overlaps. The overlaps between different names used by different people indicate that two different names may be potentially related (e.g., “message” and “msg”), and the overlaps between identifiers in code and words in natural language descriptions indicate that the code snippet and the description may potentially be related. To address these problems, we propose a novel neural architecture named OCoR, where we introduce two specifically-designed components to capture overlaps: the first embeds identifiers by character to capture the overlaps between identifiers, and the second introduces a novel overlap matrix to represent the degrees of overlaps between each natural language word and each identifier.
 The evaluation was conducted on two established datasets. The experimental results show that OCoR significantly outperforms the existing state-of-the-art approaches and achieves 13.1% to 22.3% improvements. Moreover, we also conducted several in-depth experiments to help understand the performance of different components in OCoR.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/zhu2020ocor.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#adversarial">adversarial</a></tag>
     
   </p>
-      
-      
-      <p><p>Automated  processing,  analysis,  and  generation  of  source code are among the key activities
+  <p><p>Automated  processing,  analysis,  and  generation  of  source code are among the key activities
 in software and system life-cycle. To this end, while deep learning (DL) exhibits a certain level
 of capability in handling these tasks, the current state-of-the-art DL models still suffer from
 non-robust issues and can be easily fooled by adversarial attacks.</p>
@@ -132,6 +130,29 @@ effectiveness  of  MHM  in  generating  adversarial  examples of source code. Th
 and performance enhanced through our  adversarial training with MHM further confirms the usefulness
 of DL models-based method for future fully automated source code processing.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/zhang2020generating.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

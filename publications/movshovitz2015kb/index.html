@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#pattern mining">pattern mining</a></tag>
     
   </p>
-      
-      
-      <p><p>Many existing knowledge bases (KBs), including Freebase, Yago, and NELL, rely
+  <p><p>Many existing knowledge bases (KBs), including Freebase, Yago, and NELL, rely
 on a fixed ontology, given as an input
 to the system, which defines the data to
 be cataloged in the KB, i.e., a hierarchy of categories and relations between
@@ -131,6 +129,29 @@ entities mentioned in the text. As a case
 study, we apply the model to a corpus
 of Web documents from the software domain, and evaluate the accuracy of the various components of the learned ontology.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/movshovitz2015kb.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

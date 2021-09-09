@@ -1,1 +1,1 @@
-["liu2019deepfuzz", "cummins2018compiler", "he2019learning", "maddison2014structured"]
+[["liu2019deepfuzz", "DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testing"], ["cummins2018compiler", "Compiler Fuzzing through Deep Learning"], ["he2019learning", "Learning to Fuzz from Symbolic Execution with Application to Smart Contracts"], ["maddison2014structured", "Structured Generative Models of Natural Source Code"]]

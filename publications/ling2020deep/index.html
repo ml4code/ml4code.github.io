@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#GNN">GNN</a></tag>
     
   </p>
-      
-      
-      <p><p>Code retrieval is to find the code snippet from a large corpus of source code repositories that highly matches the query of natural language description. Recent work mainly uses natural language processing techniques to process both query texts (i.e., human natural language) and code snippets (i.e., machine programming language), however neglecting the deep structured features of query texts and source codes, both of which contain rich semantic information. In this paper, we propose an end-to-end deep graph matching and searching (DGMS) model based on graph neural networks for the task of semantic code retrieval. To this end, we first represent both natural language query texts and programming language code snippets with the unified graph-structured data, and then use the proposed graph matching and searching model to retrieve the best matching code snippet. In particular, DGMS not only captures more structural information for individual query texts or code snippets but also learns the fine-grained similarity between them by cross-attention based semantic matching operations. We evaluate the proposed DGMS model on two public code retrieval datasets with two representative programming languages (i.e., Java and Python). Experiment results demonstrate that DGMS significantly outperforms state-of-the-art baseline models by a large margin on both datasets. Moreover, our extensive ablation studies systematically investigate and illustrate the impact of each part of DGMS.</p>
+  <p><p>Code retrieval is to find the code snippet from a large corpus of source code repositories that highly matches the query of natural language description. Recent work mainly uses natural language processing techniques to process both query texts (i.e., human natural language) and code snippets (i.e., machine programming language), however neglecting the deep structured features of query texts and source codes, both of which contain rich semantic information. In this paper, we propose an end-to-end deep graph matching and searching (DGMS) model based on graph neural networks for the task of semantic code retrieval. To this end, we first represent both natural language query texts and programming language code snippets with the unified graph-structured data, and then use the proposed graph matching and searching model to retrieve the best matching code snippet. In particular, DGMS not only captures more structural information for individual query texts or code snippets but also learns the fine-grained similarity between them by cross-attention based semantic matching operations. We evaluate the proposed DGMS model on two public code retrieval datasets with two representative programming languages (i.e., Java and Python). Experiment results demonstrate that DGMS significantly outperforms state-of-the-art baseline models by a large margin on both datasets. Moreover, our extensive ablation studies systematically investigate and illustrate the impact of each part of DGMS.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/ling2020deep.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#static analysis">static analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>The large scale and high complexity of modern software systems
+  <p><p>The large scale and high complexity of modern software systems
 make perfectly precise static code analysis (SCA) infeasible. Therefore SCA tools often over-approximate, so not to miss any real
 problems. This, however, comes at the expense of raising false
 alarms, which, in practice, reduces the usability of these tools.</p>
@@ -136,6 +134,29 @@ led to false positive errors. We believe that SCA developers may be
 able to redesign their methods to address these patterns and reduce
 false positive error reports.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/koc2017learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

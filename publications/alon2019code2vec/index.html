@@ -119,9 +119,7 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a neural model for representing snippets of code as continuous distributed vectors (“code embeddings”).
+  <p><p>We present a neural model for representing snippets of code as continuous distributed vectors (“code embeddings”).
  The main idea is to represent a code snippet as a single fixed-length
 code vector, which can be used to
 predict semantic properties of the snippet. To this end, code is first decomposed to a collection of paths in its
@@ -141,6 +139,29 @@ corpus. Our trained model, visualizations and vector similarities are available 
 http://code2vec.org. The code, data and trained models are available at
 https://github.com/tech-srl/code2vec.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/alon2019code2vec.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

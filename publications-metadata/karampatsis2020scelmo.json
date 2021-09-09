@@ -1,1 +1,1 @@
-["kanade2020pretrained", "chen2019literature", "bui2018hierarchical", "theeten2019import2vec"]
+[["kanade2020pretrained", "Pre-trained Contextual Embedding of Source Code"], ["chen2019literature", "A Literature Study of Embeddings on Source Code"], ["bui2018hierarchical", "Hierarchical Learning of Cross-Language Mappings through Distributed Vector Representations for Code"], ["theeten2019import2vec", "Import2vec - Learning Embeddings for Software Libraries"]]

@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>Popular open-source software projects receive and
+  <p><p>Popular open-source software projects receive and
 review contributions from a diverse array of developers, many
 of whom have little to no prior involvement with the project. A
 recent survey reported that reviewers consider conformance to
@@ -134,6 +132,29 @@ further investigate whether new contributors learn to conform to
 the project style and find that experience is positively correlated
 with conformance to the project’s code style.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/hellendoorn2015will.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

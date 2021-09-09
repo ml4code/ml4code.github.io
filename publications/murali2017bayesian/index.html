@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#API">API</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a Bayesian statistical approach to the problem of automatic program synthesis. Our synthesizer starts
+  <p><p>We present a Bayesian statistical approach to the problem of automatic program synthesis. Our synthesizer starts
 by learning, offline and from an existing corpus, a probabilistic model of real-world programs. During synthesis,
 it is provided some ambiguous and incomplete evidence about the nature of the programming task that the user
 wants automated, for example sets of API calls or data types that are relevant for the task. Given this input, the
@@ -138,6 +136,29 @@ BAYOU on a large corpus of Android apps, and find that the trained system can of
 methods given just a few API method names or data types as evidence. The experiments also justify the design
 choice of using a latent intent variable and the levels of abstraction at which sketches and evidence are defined.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/murali2017bayesian.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

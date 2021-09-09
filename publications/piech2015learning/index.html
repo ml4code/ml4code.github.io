@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#education">education</a></tag>
     
   </p>
-      
-      
-      <p><p>Providing feedback, both assessing final work
+  <p><p>Providing feedback, both assessing final work
 and giving hints to stuck students, is difficult
 for open-ended assignments in massive online
 classes which can range from thousands to millions of students. We introduce a neural network
@@ -129,6 +127,29 @@ to assessments from the Code.org Hour of Code
 and Stanford University’s CS1 course, where we
 propagate human comments on student assignments to orders of magnitude more submissions.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/piech2015learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

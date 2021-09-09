@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#compilation">compilation</a></tag>
     
   </p>
-      
-      
-      <p><p>The phase-ordering problem of modern compilers has received a lot of attention from the research community over the years, yet remains largely unsolved. Various optimization sequences exposed to the user are manually designed by compiler developers. In designing such a sequence developers have to choose the set of optimization passes, their parameters and ordering within a sequence. Resulting sequences usually fall short of achieving optimal runtime for a given source code and may sometimes even degrade the performance when compared to unoptimized version. In this paper, we employ a deep reinforcement learning approach to the phase-ordering problem. Provided with sub-sequences constituting LLVM’s O3 sequence, our agent learns to outperform the O3 sequence on the set of source codes used for training and achieves competitive performance on the validation set, gaining up to 1.32x speedup on previously-unseen programs. Notably, our approach differs from autotuning methods by not depending on one or more test runs of the program for making successful optimization decisions. It has no dependence on any dynamic feature, but only on the statically-attainable intermediate representation of the source code. We believe that the models trained using our approach can be integrated into modern compilers as neural optimization agents, at first to complement, and eventually replace the hand-crafted optimization sequences.</p>
+  <p><p>The phase-ordering problem of modern compilers has received a lot of attention from the research community over the years, yet remains largely unsolved. Various optimization sequences exposed to the user are manually designed by compiler developers. In designing such a sequence developers have to choose the set of optimization passes, their parameters and ordering within a sequence. Resulting sequences usually fall short of achieving optimal runtime for a given source code and may sometimes even degrade the performance when compared to unoptimized version. In this paper, we employ a deep reinforcement learning approach to the phase-ordering problem. Provided with sub-sequences constituting LLVM’s O3 sequence, our agent learns to outperform the O3 sequence on the set of source codes used for training and achieves competitive performance on the validation set, gaining up to 1.32x speedup on previously-unseen programs. Notably, our approach differs from autotuning methods by not depending on one or more test runs of the program for making successful optimization decisions. It has no dependence on any dynamic feature, but only on the statically-attainable intermediate representation of the source code. We believe that the models trained using our approach can be integrated into modern compilers as neural optimization agents, at first to complement, and eventually replace the hand-crafted optimization sequences.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/mammadli2020static.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

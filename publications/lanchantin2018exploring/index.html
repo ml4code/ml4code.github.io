@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#defect">defect</a></tag>
     
   </p>
-      
-      
-      <p><p>Statistical   language   models   are   powerful   tools
+  <p><p>Statistical   language   models   are   powerful   tools
 which  have  been  used  for  many  tasks  within  natural language processing. Recently, they have been
 used for other sequential data such as source code.
 (Ray et al., 2015) showed that it is possible train an
@@ -128,6 +126,29 @@ model.  In this work, we propose using a more advanced language modeling techniq
 source code and classify buggy lines based on entropy.   We  show  that  our  method  slightly  outperforms an
 n-gram model in the buggy line classification task using AUC</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/lanchantin2018exploring.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -121,9 +121,7 @@ function search() {
       <tag><a href="/tags.html#pretraining">pretraining</a></tag>
     
   </p>
-      
-      
-      <p><p>Machine-aided programming tools such as type predictors and code summarizers
+  <p><p>Machine-aided programming tools such as type predictors and code summarizers
 are increasingly learning-based. However, most code representation learning approaches rely on supervised learning with task-specific annotated datasets. We propose Contrastive Code Representation Learning (ContraCode), a self-supervised
 algorithm for learning task-agnostic semantic representations of programs via contrastive learning. Our approach uses no human-provided labels, relying only on
 the raw text of programs. In particular, we design an unsupervised pretext task by
@@ -137,6 +135,29 @@ improves code summarization accuracy by 7.9% over supervised approaches and
 4.8% over RoBERTa pre-training. Moreover, our approach is agnostic to model architecture; for a type inference task, contrastive pre-training consistently improves
 the accuracy of existing baselines.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/jain2020contrastive.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

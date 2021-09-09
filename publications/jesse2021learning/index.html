@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#types">types</a></tag>
     
   </p>
-      
-      
-      <p><p>TypeScript is a widely used optionally-typed language where developers can adopt “pay as you go” typing: they can add types as
+  <p><p>TypeScript is a widely used optionally-typed language where developers can adopt “pay as you go” typing: they can add types as
 desired, and benefit from static typing. The “type annotation tax”
 or manual effort required to annotate new or existing TypeScript
 can be reduced by a variety of automatic methods. Probabilistic
@@ -131,6 +129,29 @@ suggesting that this is the case. We present TypeBert, demonstrating that even w
 BERT-style models and enough data, type-annotation performance
 of the most sophisticated models can be surpassed.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/jesse2021learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

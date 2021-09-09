@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#verification">verification</a></tag>
     
   </p>
-      
-      
-      <p><p>A fundamental problem in program verification concerns inferring loop invariants.
+  <p><p>A fundamental problem in program verification concerns inferring loop invariants.
 The problem is undecidable and even practical instances are challenging. Inspired
 by how human experts construct loop invariants, we propose a reasoning framework
 CODE2INV
@@ -139,6 +137,29 @@ Moreover, the strategy learned can be generalized to new programs: compared to
 solving new instances from scratch, the pre-trained agent is more sample efficient
 in finding solutions.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/si2018learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

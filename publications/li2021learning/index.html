@@ -119,10 +119,31 @@ function search() {
       <tag><a href="/tags.html#repair">repair</a></tag>
     
   </p>
-      
-      
-      <p><p>Source code spends most of its time in a broken or incomplete state during software development. This presents a challenge to machine learning for code, since high-performing models typically rely on graph structured representations of programs derived from traditional program analyses. Such analyses may be undefined for broken or incomplete code. We extend the notion of program graphs to work-in-progress code by learning to predict edge relations between tokens, training on well-formed code before transferring to work-in-progress code. We consider the tasks of code completion and localizing and repairing variable misuse in a work-in-process scenario. We demonstrate that training relation-aware models with fine-tuned edges consistently leads to improved performance on both tasks.</p>
+  <p><p>Source code spends most of its time in a broken or incomplete state during software development. This presents a challenge to machine learning for code, since high-performing models typically rely on graph structured representations of programs derived from traditional program analyses. Such analyses may be undefined for broken or incomplete code. We extend the notion of program graphs to work-in-progress code by learning to predict edge relations between tokens, training on well-formed code before transferring to work-in-progress code. We consider the tasks of code completion and localizing and repairing variable misuse in a work-in-process scenario. We demonstrate that training relation-aware models with fine-tuned edges consistently leads to improved performance on both tasks.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/li2021learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

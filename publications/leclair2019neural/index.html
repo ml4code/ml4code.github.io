@@ -119,10 +119,31 @@ function search() {
       <tag><a href="/tags.html#documentation">documentation</a></tag>
     
   </p>
-      
-      
-      <p><p>Source code summarization – creating natural language descriptions of source code behavior – is a rapidly-growing research topic with applications to automatic documentation generation, program comprehension, and software maintenance. Traditional techniques relied on heuristics and templates built manually by human experts. Recently, data-driven approaches based on neural machine translation have largely overtaken template-based systems. But nearly all of these techniques rely almost entirely on programs having good internal documentation; without clear identifier names, the models fail to create good summaries. In this paper, we present a neural model that combines words from code with code structure from an AST. Unlike previous approaches, our model processes each data source as a separate input, which allows the model to learn code structure independent of the text in code. This process helps our approach provide coherent summaries in many cases even when zero internal documentation is provided. We evaluate our technique with a dataset we created from 2.1m Java methods. We find improvement over two baseline techniques from SE literature and one from NLP literature.</p>
+  <p><p>Source code summarization – creating natural language descriptions of source code behavior – is a rapidly-growing research topic with applications to automatic documentation generation, program comprehension, and software maintenance. Traditional techniques relied on heuristics and templates built manually by human experts. Recently, data-driven approaches based on neural machine translation have largely overtaken template-based systems. But nearly all of these techniques rely almost entirely on programs having good internal documentation; without clear identifier names, the models fail to create good summaries. In this paper, we present a neural model that combines words from code with code structure from an AST. Unlike previous approaches, our model processes each data source as a separate input, which allows the model to learn code structure independent of the text in code. This process helps our approach provide coherent summaries in many cases even when zero internal documentation is provided. We evaluate our technique with a dataset we created from 2.1m Java methods. We find improvement over two baseline techniques from SE literature and one from NLP literature.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/leclair2019neural.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>We present a new approach for learning programs from noisy
+  <p><p>We present a new approach for learning programs from noisy
 datasets. Our approach is based on two new concepts: a regularized
 program generator which produces a candidate program based on a
 small sample of the entire dataset while avoiding overfitting, and a
@@ -153,6 +151,29 @@ the learned functions are a natural mechanism for explaining the
 prediction). As a result, our code completion system surpasses the
 prediction capabilities of existing, hard-wired systems.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/raychev2016learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

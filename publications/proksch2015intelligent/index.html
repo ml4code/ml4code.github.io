@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
     
   </p>
-      
-      
-      <p><p>Code completion is an integral part of modern Integrated Development Environments (IDEs). Developers
+  <p><p>Code completion is an integral part of modern Integrated Development Environments (IDEs). Developers
 often use it to explore Application Programming Interfaces (APIs). It is also useful to reduce the required
 amount of typing and to help avoid typos. Traditional code completion systems propose all type-correct
 methods to the developer. Such a list is often very long with many irrelevant items. More intelligent code
@@ -132,6 +130,29 @@ inference speed.</p>
 for queries that do not contain method calls. We also show that PBN can obtain comparable prediction
 quality to BMN, while model size and inference speed scale better with large input sizes.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/proksch2015intelligent.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

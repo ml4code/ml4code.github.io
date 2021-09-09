@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#decompilation">decompilation</a></tag>
     
   </p>
-      
-      
-      <p><p>We propose a new neural network architecture
+  <p><p>We propose a new neural network architecture
 and use it for the task of statement-by-statement
 alignment of source code and its compiled object code. Our architecture learns the alignment
 between the two sequences – one being the translation of the other – by mapping each statement
@@ -127,6 +125,29 @@ is able to predict the alignment with high accuracy, outperforming known baselin
 demonstrate that our model is general and can
 learn to solve graph problems such as the Traveling Salesman Problem.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/levy2017learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>We present new data and semantic parsing methods for the problem of mapping english sentences to Bash commands (NL2Bash). Our long-term goal is to enable any user to easily solve otherwise repetitive tasks (such as file manipulation, search, and application-specific scripting) by simply stating their intents in English. We take a first step in this domain, by providing a large new dataset of challenging but commonly used commands paired with their English descriptions, along with the baseline methods to establish performance levels on this task.</p>
+  <p><p>We present new data and semantic parsing methods for the problem of mapping english sentences to Bash commands (NL2Bash). Our long-term goal is to enable any user to easily solve otherwise repetitive tasks (such as file manipulation, search, and application-specific scripting) by simply stating their intents in English. We take a first step in this domain, by providing a large new dataset of challenging but commonly used commands paired with their English descriptions, along with the baseline methods to establish performance levels on this task.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/lin2018nl2bash.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

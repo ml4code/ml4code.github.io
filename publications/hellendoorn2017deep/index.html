@@ -119,9 +119,7 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>Current statistical language modeling techniques, including deep-learning based models, have proven to be quite effective for source
+  <p><p>Current statistical language modeling techniques, including deep-learning based models, have proven to be quite effective for source
 code. We argue here that the special properties of source code can
 be exploited for further improvements. In this work, we enhance
 established language modeling approaches to handle the special
@@ -139,6 +137,29 @@ Our evaluations suggest that carefully adapting N-gram models for
 source code can yield performance that surpasses even RNN and
 LSTM based deep-learning models.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/hellendoorn2017deep.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

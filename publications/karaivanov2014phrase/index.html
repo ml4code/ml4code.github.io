@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Phrase-based statistical machine translation approaches have been
+  <p><p>Phrase-based statistical machine translation approaches have been
 highly successful in translating between natural languages and are
 heavily used by commercial systems (e.g. Google Translate).</p>
 
@@ -141,6 +139,29 @@ methods compile (the top ranked) and out of a random sample of 50
 correctly compiled methods, 68% (34 methods) were semantically
 equivalent to the reference solution.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/karaivanov2014phrase.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

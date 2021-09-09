@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Recent  state-of-the-art  approaches  automatically  generate
+  <p><p>Recent  state-of-the-art  approaches  automatically  generate
 regular  expressions  from  natural  language  specifications.
 Given that these approaches use only synthetic data in both
 training datasets and validation/test datasets, a natural question arises: are these approaches effective to address various
@@ -132,6 +130,29 @@ on  a  model  trained  from  a  synthetic  dataset)  achieves  extremely low eff
 much lower than the effectiveness when evaluated on the synthetic  dataset.  We  also  provide  initial  analysis  on  some  of
 those challenging cases and discuss future directions.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/zhong2018generating.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

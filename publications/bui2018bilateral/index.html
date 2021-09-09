@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>Algorithm  classification  is  to  automatically  identify
+  <p><p>Algorithm  classification  is  to  automatically  identify
 the  classes  of  a  program  based  on  the  algorithm(s)  and/or  data
 structure(s)  implemented  in  the  program.  It  can  be  useful  for
 various tasks, such as code reuse, code theft detection, and malware detection. Code similarity metrics, on the basis of features
@@ -152,6 +150,29 @@ points  to  a  possible  future  research  direction  to  tailor  bilateral
 and  multilateral  neural  networks  that  encode  more  relevant
 semantics  for  code  learning,  mining  and  analysis  tasks</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/bui2018bilateral.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

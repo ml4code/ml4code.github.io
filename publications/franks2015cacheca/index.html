@@ -113,10 +113,31 @@ function search() {
       <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-      
-      
-      <p><p>Nearly every Integrated Development Environment includes a form of code completion. The suggested completions (“suggestions”) are typically based on information available at compile time, such as type signatures and variables in scope. A statistical approach, based on estimated models of code patterns in large code corpora, has been demonstrated to be effective at predicting tokens given a context. In this demo, we present CACHECA, an Eclipse plugin that combines the native suggestions with a statistical suggestion regime. We demonstrate that a combination of the two approaches more than doubles Eclipse’s suggestion accuracy. A video demonstration is available at <a href="https://www.youtube.com/watch?v=3INk0N3JNtc">https://www.youtube.com/watch?v=3INk0N3JNtc</a>.</p>
+  <p><p>Nearly every Integrated Development Environment includes a form of code completion. The suggested completions (“suggestions”) are typically based on information available at compile time, such as type signatures and variables in scope. A statistical approach, based on estimated models of code patterns in large code corpora, has been demonstrated to be effective at predicting tokens given a context. In this demo, we present CACHECA, an Eclipse plugin that combines the native suggestions with a statistical suggestion regime. We demonstrate that a combination of the two approaches more than doubles Eclipse’s suggestion accuracy. A video demonstration is available at <a href="https://www.youtube.com/watch?v=3INk0N3JNtc">https://www.youtube.com/watch?v=3INk0N3JNtc</a>.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/franks2015cacheca.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

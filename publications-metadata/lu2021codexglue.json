@@ -1,1 +1,1 @@
-["phan2021cotext", "goens2019case", "huang2021cosqa", "villmow2021contest"]
+[["phan2021cotext", "CoTexT: Multi-task Learning with Code-Text Transformer"], ["goens2019case", "A case study on machine learning for synthesizing benchmarks"], ["huang2021cosqa", "CoSQA: 20,000+ Web Queries for Code Search and Question Answering"], ["villmow2021contest", "ConTest: A Unit Test Completion Benchmark featuring Context"]]

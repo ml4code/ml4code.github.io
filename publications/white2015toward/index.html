@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>Deep learning subsumes algorithms that automatically learn compositional representations. The ability of these
+  <p><p>Deep learning subsumes algorithms that automatically learn compositional representations. The ability of these
 models to generalize well has ushered in tremendous advances
 in many fields such as natural language processing (NLP).
 Recent research in the software engineering (SE) community
@@ -143,6 +141,29 @@ bear to support model-based testing, improve software lexicons,
 and conceptualize software artifacts. Thus, our work serves as
 the first step toward deep learning software repositories.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/white2015toward.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

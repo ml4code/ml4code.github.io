@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#compilation">compilation</a></tag>
     
   </p>
-      
-      
-      <p><p>Programmers spend a substantial amount of time manually repairing
+  <p><p>Programmers spend a substantial amount of time manually repairing
 code that does not compile. We observe that the repairs for
 any particular error class typically follow a pattern and are highly
 mechanical. We propose a novel approach that automatically learns
@@ -138,6 +136,29 @@ namely missing symbols and mismatched methodsignatures, our system called DeepDe
 generates the correct repair changes for 19,314 out of 38,788 (50%) of unseen compilation
 errors. The correct changes are in the top three suggested axes 86% of the time on average.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/mesbah2019deepdelta.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

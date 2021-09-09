@@ -113,10 +113,31 @@ function search() {
       <tag><a href="/tags.html#API">API</a></tag>
     
   </p>
-      
-      
-      <p><p>Computer programs written in one language are often required to be ported to other languages to support multiple devices and environments. When programs use language specific APIs (Application Programming Interfaces), it is very challenging to migrate these APIs to the corresponding APIs written in other languages. Existing approaches mine API mappings from projects that have corresponding versions in two languages. They rely on the sparse availability of bilingual projects, thus producing a limited number of API mappings. In this paper, we propose an intelligent system called DeepAM for automatically mining API mappings from a large-scale code corpus without bilingual projects. The key component of DeepAM is based on the multimodal sequence to sequence learning architecture that aims to learn joint semantic representations of bilingual API sequences from big source code data. Experimental results indicate that DeepAM significantly increases the accuracy of API mappings as well as the number of API mappings, when compared with the state-of-the-art approaches.</p>
+  <p><p>Computer programs written in one language are often required to be ported to other languages to support multiple devices and environments. When programs use language specific APIs (Application Programming Interfaces), it is very challenging to migrate these APIs to the corresponding APIs written in other languages. Existing approaches mine API mappings from projects that have corresponding versions in two languages. They rely on the sparse availability of bilingual projects, thus producing a limited number of API mappings. In this paper, we propose an intelligent system called DeepAM for automatically mining API mappings from a large-scale code corpus without bilingual projects. The key component of DeepAM is based on the multimodal sequence to sequence learning architecture that aims to learn joint semantic representations of bilingual API sequences from big source code data. Experimental results indicate that DeepAM significantly increases the accuracy of API mappings as well as the number of API mappings, when compared with the state-of-the-art approaches.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/gu2017deepam.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -1,1 +1,1 @@
-["mou2016convolutional", "yin2017syntactic", "rabinovich2017abstract", "chen2019capturing"]
+[["mou2016convolutional", "Convolutional Neural Networks over Tree Structures for Programming Language Processing"], ["yin2017syntactic", "A Syntactic Neural Model for General-Purpose Code Generation"], ["rabinovich2017abstract", "Abstract Syntax Networks for Code Generation and Semantic Parsing"], ["chen2019capturing", "Capturing source code semantics via tree-based convolution over API-enhanced AST"]]

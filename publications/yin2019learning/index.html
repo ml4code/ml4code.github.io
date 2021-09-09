@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#edit">edit</a></tag>
     
   </p>
-      
-      
-      <p><p>We introduce the problem of learning distributed representations of edits. By combining a
+  <p><p>We introduce the problem of learning distributed representations of edits. By combining a
 “neural editor” with an “edit encoder”, our models learn to represent the salient
 information of an edit and can be used to apply edits to new inputs.
 We experiment on natural language and source code edit data. Our evaluation yields
@@ -127,6 +125,29 @@ promising results that suggest that our neural network models learn to capture
 the structure and semantics of edits. We hope that this interesting task and
 data source will inspire other researchers to work further on this problem.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/yin2019learning.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

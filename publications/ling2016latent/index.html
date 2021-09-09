@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Many  language  generation  tasks  require
+  <p><p>Many  language  generation  tasks  require
 the production of text conditioned on both
 structured  and  unstructured  inputs.
 We present  a  novel  neural  network  architecture  which  generates  an  output  sequence
@@ -136,6 +134,29 @@ corpus,  we  demonstrate  that  marginalising multiple predictors allows our mod
 to outperform strong benchmarks.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/ling2016latent.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

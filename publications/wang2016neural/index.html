@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
     
   </p>
-      
-      
-      <p><p>Code completion, an essential part of modern software development, yet can be
+  <p><p>Code completion, an essential part of modern software development, yet can be
 challenging for dynamically typed programming languages. In this paper we explore the use of neural network techniques to automatically learn code completion
 from a large corpus of dynamically typed JavaScript code. We show different
 neural networks that leverage not only token level information but also structural
@@ -127,6 +125,29 @@ network techniques can play a transformative role in helping software developers
 manage the growing complexity of software systems, and we see this work as a
 first step in that direction.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/wang2016neural.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

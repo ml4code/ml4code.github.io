@@ -113,10 +113,31 @@ function search() {
       <tag><a href="/tags.html#migration">migration</a></tag>
     
   </p>
-      
-      
-      <p><p>In this paper, we have tried to use Statistical machine translation in order to convert Python 2 code to Python 3 code. We use data from two projects and achieve a high BLEU score. We also investigate the cross-project training and testing to analyze the errors so as to ascertain differences with previous case. We have described a pilot study on modeling programming languages as natural language to build translation models on the lines of natural languages. This can be further worked on to translate between versions of a programming language or cross-programming-languages code translation.</p>
+  <p><p>In this paper, we have tried to use Statistical machine translation in order to convert Python 2 code to Python 3 code. We use data from two projects and achieve a high BLEU score. We also investigate the cross-project training and testing to analyze the errors so as to ascertain differences with previous case. We have described a pilot study on modeling programming languages as natural language to build translation models on the lines of natural languages. This can be further worked on to translate between versions of a programming language or cross-programming-languages code translation.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/aggarwal2015using.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

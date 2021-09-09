@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#repair">repair</a></tag>
     
   </p>
-      
-      
-      <p><p>In  the  field  of  automated  program  repair,  the  redundancy  assumption  claims  large  programs  contain  the  seeds
+  <p><p>In  the  field  of  automated  program  repair,  the  redundancy  assumption  claims  large  programs  contain  the  seeds
 of  their  own  repair.  However,  most  redundancy-based  program
 repair  techniques  do  not  reason  about  the  repair  ingredients—the code that is reused to craft a patch. We aim to reason about
 the repair ingredients by using code similarities to prioritize and
@@ -137,6 +135,29 @@ different,  there  were  notable  differences  between  the  nature  of
 DeepRepair  patches  and  baseline  patches.  The  results  demonstrate that our learning-based approach finds patches that cannot
 be  found  by  existing  redundancy-based  repair  techniques</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/white2017sorting.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

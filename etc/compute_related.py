@@ -44,7 +44,7 @@ if __name__ == "__main__":
     keys = []
 
     for paper_info in data:
-        keys.append(paper_info["key"])
+        keys.append((paper_info["key"], paper_info["title"]))
         text = paper_info["title"] + " " + paper_info["abstract"].replace("<p>", " ").replace("</p>", " ") + " ".join(paper_info["tags"])
         lemmatized_tokens = [lemmatizer.lemmatize(w).lower() for w in nltk.word_tokenize(text) if w.lower() not in stopwords and w.isalpha()]
         tokens_per_paper.append(lemmatized_tokens)
@@ -67,8 +67,8 @@ if __name__ == "__main__":
     sorted_idxs = np.argsort(distances, axis=-1)[:, 1:num_relworks+1]
     
     os.makedirs(args.outdir, exist_ok=True)
-    for i, key in enumerate(keys):
-        with open(os.path.join(args.outdir, key + ".json"), "w") as f:
+    for i, (bibkey, title) in enumerate(keys):
+        with open(os.path.join(args.outdir, bibkey + ".json"), "w") as f:
             json.dump([keys[j] for j in sorted_idxs[i]], f)
 
     

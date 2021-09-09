@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>Deep learning models are a class of neural networks. Relative to n-gram models, deep learning models can capture more complex statistical patterns based on smaller training corpora. In this paper we explore the use of a particular deep learning model, document vectors (DVs), for feature location. DVs seem well suited to use with source code, because they both capture the influence of context on each term in a corpus and map terms into a continuous semantic space that encodes semantic relationships such as synonymy. We present preliminary results that show that a feature location technique (FLT) based on DVs can outperform an analogous FLT based on latent Dirichlet allocation (LDA) and then suggest several directions for future work on the use of deep learning models to improve developer effectiveness in feature location.</p>
+  <p><p>Deep learning models are a class of neural networks. Relative to n-gram models, deep learning models can capture more complex statistical patterns based on smaller training corpora. In this paper we explore the use of a particular deep learning model, document vectors (DVs), for feature location. DVs seem well suited to use with source code, because they both capture the influence of context on each term in a corpus and map terms into a continuous semantic space that encodes semantic relationships such as synonymy. We present preliminary results that show that a feature location technique (FLT) based on DVs can outperform an analogous FLT based on latent Dirichlet allocation (LDA) and then suggest several directions for future work on the use of deep learning models to improve developer effectiveness in feature location.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/corley2015exploring.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
   </p>
-      
-      
-      <p><p>We present CoTexT, a transformer-based architecture encoder-decoder pre-trained model that learns the representative context between natural language (NL) and programming language (PL) through multi-task learning. CoTexT is pre-trained, in self-supervised fashion, based on large programming language corpus to learn general-purpose understanding and code-text generation supporting downstream NL-PL task such as code summarizing/documentation, code generation, defect detection, code debugging, etc. We train CoTexT on different combination of available PL corpus including both “bimodal” and “unimodal” data where the former is the combinations of both natural texts and their corresponding code snippets in an input sequence and the latter is merely code snippets. We evaluate multi-task learning CoTexT on different generation and classification tasks on CodeXGLUE and it achieves state-of-the-art on all downstream tasks.</p>
+  <p><p>We present CoTexT, a transformer-based architecture encoder-decoder pre-trained model that learns the representative context between natural language (NL) and programming language (PL) through multi-task learning. CoTexT is pre-trained, in self-supervised fashion, based on large programming language corpus to learn general-purpose understanding and code-text generation supporting downstream NL-PL task such as code summarizing/documentation, code generation, defect detection, code debugging, etc. We train CoTexT on different combination of available PL corpus including both “bimodal” and “unimodal” data where the former is the combinations of both natural texts and their corresponding code snippets in an input sequence and the latter is merely code snippets. We evaluate multi-task learning CoTexT on different generation and classification tasks on CodeXGLUE and it achieves state-of-the-art on all downstream tasks.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/phan2021cotext.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

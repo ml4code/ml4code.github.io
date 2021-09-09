@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
     
   </p>
-      
-      
-      <p><p>In this paper, we describe how to leverage Transformer, a recent neural architecture for learning from sequential data (such as text), for code completion. As in the realm of natural language processing, Transformers surpass the prediction accuracy achievable by RNNs; we provide an experimental confirmation of this over a Python dataset.</p>
+  <p><p>In this paper, we describe how to leverage Transformer, a recent neural architecture for learning from sequential data (such as text), for code completion. As in the realm of natural language processing, Transformers surpass the prediction accuracy achievable by RNNs; we provide an experimental confirmation of this over a Python dataset.</p>
 
 <p>Furthermore, we show that the way to obtain even better accuracy from Transformers is to expose the syntactic structure of code, which is easily recovered by parsing, to the neural network. This works significantly better than presenting the code as a linear token sequence, which is how Transformers were originally intended to be used.</p>
 
@@ -127,6 +125,29 @@ function search() {
 
 <p>We provide comprehensive experimental evaluation of our proposal, along with alternative design choices, on a standard Python dataset, as well as on a Python corpus internal to Facebook.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/kim2020code.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

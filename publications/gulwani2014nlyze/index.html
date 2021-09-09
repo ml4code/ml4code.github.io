@@ -117,9 +117,7 @@ function search() {
       <tag><a href="/tags.html#synthesis">synthesis</a></tag>
     
   </p>
-      
-      
-      <p><p>Millions of computer end users need to perform tasks over tabular spreadsheet data, yet lack the programming knowledge to do such tasks automatically. This paper describes
+  <p><p>Millions of computer end users need to perform tasks over tabular spreadsheet data, yet lack the programming knowledge to do such tasks automatically. This paper describes
 the design and implementation of a robust natural language
 based interface to spreadsheet programming. Our methodology involves designing a typed domain-specific language
 (DSL) that supports an expressive algebra of map, filter, reduce, join, and formatting capabilities at a level of abstraction appropriate for non-expert users. The key algorithmic
@@ -139,6 +137,29 @@ interpretation as the top candidate for 94% (97% for the top
 3) of those instances.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/gulwani2014nlyze.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

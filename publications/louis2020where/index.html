@@ -119,9 +119,7 @@ function search() {
       <tag><a href="/tags.html#documentation">documentation</a></tag>
     
   </p>
-      
-      
-      <p><p>Programmers should write code comments, but not on every line
+  <p><p>Programmers should write code comments, but not on every line
 of code. We have created a machine learning model that suggests
 locations where a programmer should write a code comment. We
 trained it on existing commented code to learn locations that are
@@ -131,6 +129,29 @@ in new code. Our models achieved precision of 74% and recall of
 opens the door to future work, both in the new where-to-comment
 problem and in guiding comment generation.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/louis2020where.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

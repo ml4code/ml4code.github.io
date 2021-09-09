@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#program analysis">program analysis</a></tag>
     
   </p>
-      
-      
-      <p><p>Automatic tools for finding software errors require
+  <p><p>Automatic tools for finding software errors require
 knowledge of the rules a program must obey, or
 “specifications,” before they can identify bugs. We
 present a method that combines factor graphs and
@@ -127,6 +125,29 @@ specifications are highly accurate and with them we
 have discovered numerous bugs.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/kremenek2007factor.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

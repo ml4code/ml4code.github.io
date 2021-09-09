@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#repair">repair</a></tag>
     
   </p>
-      
-      
-      <p><p>The problem of fixing errors in programs has attracted substantial interest over the years. The
+  <p><p>The problem of fixing errors in programs has attracted substantial interest over the years. The
 key challenge for building an effective code fixing tool is to capture a wide range of errors and
 meanwhile maintain high accuracy. In this paper, we address this challenge and present a new
 learning-based system, called TFix. TFix works
@@ -135,6 +133,29 @@ effective: it is able to synthesize code that fixes
 the error in ∼67 percent of cases and significantly
 outperforms existing learning-based approaches.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/berabi2021tfix.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

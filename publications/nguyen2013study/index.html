@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#edit">edit</a></tag>
     
   </p>
-      
-      
-      <p><p>In this paper, we present a large-scale study of
+  <p><p>In this paper, we present a large-scale study of
 repetitiveness of code changes in software evolution. We collected
 a large data set of 2,841 Java projects, with 1.7 billion source lines
 of code (SLOC) at the latest revisions, 1.8 million code change
@@ -133,6 +131,29 @@ recommendation of over 30% and top-3 of nearly 35%. Repeated
 fixing changes could also be useful for automatic program repair.</p>
 
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/nguyen2013study.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

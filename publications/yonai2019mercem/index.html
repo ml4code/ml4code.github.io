@@ -119,10 +119,31 @@ function search() {
       <tag><a href="/tags.html#refactoring">refactoring</a></tag>
     
   </p>
-      
-      
-      <p><p>Comprehensibility of source code is strongly affected by identifier names, therefore software developers need to give good (e.g. meaningful but short) names to identifiers. On the other hand, giving a good name is sometimes a difficult and time-consuming task even for experienced developers. To support naming identifiers, several techniques for recommending identifier name candidates have been proposed. These techniques, however, still have challenges on the goodness of suggested candidates and limitations on applicable situations. This paper proposes a new approach to recommending method names by applying graph embedding techniques to the method call graph. The evaluation experiment confirms that the proposed technique can suggest more appropriate method name candidates in difficult situations than the state of the art approach.</p>
+  <p><p>Comprehensibility of source code is strongly affected by identifier names, therefore software developers need to give good (e.g. meaningful but short) names to identifiers. On the other hand, giving a good name is sometimes a difficult and time-consuming task even for experienced developers. To support naming identifiers, several techniques for recommending identifier name candidates have been proposed. These techniques, however, still have challenges on the goodness of suggested candidates and limitations on applicable situations. This paper proposes a new approach to recommending method names by applying graph embedding techniques to the method call graph. The evaluation experiment confirms that the proposed technique can suggest more appropriate method name candidates in difficult situations than the state of the art approach.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/yonai2019mercem.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

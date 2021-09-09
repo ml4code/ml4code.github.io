@@ -1,1 +1,1 @@
-["hashimoto2018retrieve", "shido2019automatic", "jain2020contrastive", "chen2019sequencer"]
+[["hashimoto2018retrieve", "A Retrieve-and-Edit Framework for Predicting Structured Outputs"], ["shido2019automatic", "Automatic Source Code Summarization with Extended Tree-LSTM"], ["jain2020contrastive", "Contrastive Code Representation Learning"], ["chen2019sequencer", "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair"]]

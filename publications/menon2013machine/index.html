@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Learning programs is a timely and interesting challenge. In Programming by Example
+  <p><p>Learning programs is a timely and interesting challenge. In Programming by Example
 (PBE), a system attempts to infer a program
 from input and output examples alone, by
 searching for a composition of some set of
@@ -130,6 +128,29 @@ Experiments on a prototype implementation
 show that learning improves search and ranking on a variety of text processing tasks found
 on help forums.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/menon2013machine.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -117,10 +117,31 @@ function search() {
       <tag><a href="/tags.html#defect">defect</a></tag>
     
   </p>
-      
-      
-      <p><p>Continuous embeddings of tokens in computer programs have been used to support a variety of software development tools, including readability, code search, and program repair. Contextual embeddings are common in natural language processing but have not been previously applied in software engineering. We introduce a new set of deep contextualized word representations for computer programs based on language models. We train a set of embeddings using the ELMo (embeddings from language models) framework of Peters et al (2018). We investigate whether these embeddings are effective when fine-tuned for the downstream task of bug detection. We show that even a low-dimensional embedding trained on a relatively small corpus of programs can improve a state-of-the-art machine learning system for bug detection.</p>
+  <p><p>Continuous embeddings of tokens in computer programs have been used to support a variety of software development tools, including readability, code search, and program repair. Contextual embeddings are common in natural language processing but have not been previously applied in software engineering. We introduce a new set of deep contextualized word representations for computer programs based on language models. We train a set of embeddings using the ELMo (embeddings from language models) framework of Peters et al (2018). We investigate whether these embeddings are effective when fine-tuned for the downstream task of bug detection. We show that even a low-dimensional embedding trained on a relatively small corpus of programs can improve a state-of-the-art machine learning system for bug detection.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/karampatsis2020scelmo.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

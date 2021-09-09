@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>Code  generation  maps  a  program  description  to  executable
+  <p><p>Code  generation  maps  a  program  description  to  executable
 source code in a programming language. Existing approaches
 mainly rely on a recurrent neural network (RNN) as the decoder. However, we find that a program contains significantly
 more tokens than a natural language sentence, and thus it may
@@ -131,6 +129,29 @@ percentage points; additional experiments on several semantic parsing tasks demo
 also conduct in-depth ablation test to better understand each
 component of our model.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/sun2019grammar.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

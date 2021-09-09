@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#edit">edit</a></tag>
     
   </p>
-      
-      
-      <p><p>When working on techniques to address the wide-spread problem
+  <p><p>When working on techniques to address the wide-spread problem
 of software bugs, one often faces the need for a large number of
 realistic bugs in real-world programs. Such bugs can either help
 evaluate an approach, e.g., in form of a bug benchmark or a suite
@@ -142,6 +140,29 @@ show that SemSeed-created bugs complement existing mutation
 testing operators, and that our approach is efficient enough to seed
 hundreds of thousands of bugs within an hour.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/patra2021semantic.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

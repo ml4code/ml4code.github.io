@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#search">search</a></tag>
     
   </p>
-      
-      
-      <p><p>Searching code in a large-scale codebase using natural language queries is a common practice during software development. Deep learning-based code search methods demonstrate superior performance if models are trained with large amount of text-code pairs. However, few deep code search models can be easily transferred from one codebase to another. It can be very costly to prepare training data for a new codebase and re-train an appropriate deep learning model. In this paper, we propose AdaCS, an adaptive deep code search method that can be trained once and transferred to new codebases. AdaCS decomposes the learning process into embedding domain-specific words and matching general syntactic patterns. Firstly, an unsupervised word embedding technique is used to construct a matching matrix to represent the lexical similarities. Then, a recurrent neural network is used to capture latent syntactic patterns from these matching matrices in a supervised way. As the supervised task learns general syntactic patterns that exist across domains, AdaCS is transferable to new codebases. Experimental results show that: when extended to new software projects never seen in the training data, AdaCS is more robust and significantly outperforms state-of-the-art deep code search methods.</p>
+  <p><p>Searching code in a large-scale codebase using natural language queries is a common practice during software development. Deep learning-based code search methods demonstrate superior performance if models are trained with large amount of text-code pairs. However, few deep code search models can be easily transferred from one codebase to another. It can be very costly to prepare training data for a new codebase and re-train an appropriate deep learning model. In this paper, we propose AdaCS, an adaptive deep code search method that can be trained once and transferred to new codebases. AdaCS decomposes the learning process into embedding domain-specific words and matching general syntactic patterns. Firstly, an unsupervised word embedding technique is used to construct a matching matrix to represent the lexical similarities. Then, a recurrent neural network is used to capture latent syntactic patterns from these matching matrices in a supervised way. As the supervised task learns general syntactic patterns that exist across domains, AdaCS is transferable to new codebases. Experimental results show that: when extended to new software projects never seen in the training data, AdaCS is more robust and significantly outperforms state-of-the-art deep code search methods.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/ling2020adaptive.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

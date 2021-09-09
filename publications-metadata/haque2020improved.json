@@ -1,1 +1,1 @@
-["allamanis2016convolutional", "wang2020cocogum", "iyer2016summarizing", "leclair2019neural"]
+[["allamanis2016convolutional", "A Convolutional Attention Network for Extreme Summarization of Source Code"], ["wang2020cocogum", "CoCoGUM: Contextual Code Summarization with Multi-Relational GNN on UMLs"], ["iyer2016summarizing", "Summarizing Source Code using a Neural Attention Model"], ["leclair2019neural", "A Neural Model for Generating Natural Language Summaries of Program Subroutines"]]

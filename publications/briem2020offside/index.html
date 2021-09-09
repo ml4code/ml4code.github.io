@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#defect">defect</a></tag>
     
   </p>
-      
-      
-      <p><p>Mistakes in boundary conditions are the cause of many bugs in software.
+  <p><p>Mistakes in boundary conditions are the cause of many bugs in software.
 These mistakes happen when, e.g., developers make use of <code class="language-plaintext highlighter-rouge">&lt;</code> or <code class="language-plaintext highlighter-rouge">&gt;</code> in cases
 where they should have used <code class="language-plaintext highlighter-rouge">&lt;=</code> or <code class="language-plaintext highlighter-rouge">&gt;=</code>. Mistakes in boundary conditions
 are often hard to find and manually detecting them might be very time-consuming
@@ -133,6 +131,29 @@ real-world bugs;however, with a high false positive rate. The existing state-of-
 tools are not able to detect any of the bugs. We hope this paper can pave the road towards deep
 learning models that will be able to support developers in detecting mistakes in boundary conditions.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/briem2020offside.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

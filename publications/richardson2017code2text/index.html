@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#bimodal">bimodal</a></tag>
     
   </p>
-      
-      
-      <p><p>We propose a new shared task for tactical data-to-text generation in the domain of source code libraries. Specifically, we focus on text generation of function descriptions from example software projects. Data is drawn from existing resources used for studying the related problem of semantic parser induction (Richardson and Kuhn, 2017b; Richardson and Kuhn, 2017a), and spans a wide variety of both natural languages and programming languages. In this paper, we describe these existing resources, which will serve as training and development data for the task, and discuss plans for building new independent test sets.</p>
+  <p><p>We propose a new shared task for tactical data-to-text generation in the domain of source code libraries. Specifically, we focus on text generation of function descriptions from example software projects. Data is drawn from existing resources used for studying the related problem of semantic parser induction (Richardson and Kuhn, 2017b; Richardson and Kuhn, 2017a), and spans a wide variety of both natural languages and programming languages. In this paper, we describe these existing resources, which will serve as training and development data for the task, and discuss plans for building new independent test sets.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/richardson2017code2text.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

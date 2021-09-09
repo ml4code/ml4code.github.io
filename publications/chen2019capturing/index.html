@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-      
-      
-      <p><p>When deep learning meets big code, a key question is how to efficiently learn a distributed representation for source code that can capture its semantics effectively. We propose to use tree-based convolution over API-enhanced AST. To demonstrate the effectiveness of our approach, we apply it to detect semantic clones—code fragments with similar semantics but dissimilar syntax. Experiment results show that our approach outperforms an existing state-of-the-art approach that uses tree-based LSTM, with an increase of 0.39 and 0.12 in F1-score on OJClone and BigCloneBench respectively. We further propose architectures that incorporate our approach for code search and code summarization.</p>
+  <p><p>When deep learning meets big code, a key question is how to efficiently learn a distributed representation for source code that can capture its semantics effectively. We propose to use tree-based convolution over API-enhanced AST. To demonstrate the effectiveness of our approach, we apply it to detect semantic clones—code fragments with similar semantics but dissimilar syntax. Experiment results show that our approach outperforms an existing state-of-the-art approach that uses tree-based LSTM, with an increase of 0.39 and 0.12 in F1-score on OJClone and BigCloneBench respectively. We further propose architectures that incorporate our approach for code search and code summarization.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/chen2019capturing.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -1,1 +1,1 @@
-["ray2015naturalness", "tufano2018empirical", "li2019improving", "karpathy2015visualizing"]
+[["ray2015naturalness", "On the \u201cNaturalness\u201d of Buggy Code"], ["tufano2018empirical", "An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation"], ["li2019improving", "Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks"], ["karpathy2015visualizing", "Visualizing and Understanding Recurrent Networks"]]

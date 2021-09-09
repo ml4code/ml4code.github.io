@@ -1,1 +1,1 @@
-["bui2020efficient", "huang2021cosqa", "commit2vec2019lozoya", "drain2021generating"]
+[["bui2020efficient", "Self-Supervised Contrastive Learning for Code Retrieval and Summarization via Semantic-Preserving Transformations"], ["huang2021cosqa", "CoSQA: 20,000+ Web Queries for Code Search and Question Answering"], ["commit2vec2019lozoya", "Commit2Vec: Learning Distributed Representations of Code Changes"], ["drain2021generating", "Generating Bug-Fixes Using Pretrained Transformers"]]

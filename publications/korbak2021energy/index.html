@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#code generation">code generation</a></tag>
     
   </p>
-      
-      
-      <p><p>Neural language models can be successfully trained on source code, leading to applications such as code completion. However, their versatile autoregressive self-supervision objective overlooks important global sequence-level features that are present in the data such as syntactic correctness or compilability. In this work, we pose the problem of learning to generate compilable code as constraint satisfaction. We define an Energy-Based Model (EBM) representing a pre-trained generative model with an imposed constraint of generating only compilable sequences. We then use the KL-Adaptive Distributional Policy Gradient algorithm (Khalifa et al., 2021) to train a generative model approximating the EBM. We conduct experiments showing that our proposed approach is able to improve compilability rates without sacrificing diversity and complexity of the generated samples.</p>
+  <p><p>Neural language models can be successfully trained on source code, leading to applications such as code completion. However, their versatile autoregressive self-supervision objective overlooks important global sequence-level features that are present in the data such as syntactic correctness or compilability. In this work, we pose the problem of learning to generate compilable code as constraint satisfaction. We define an Energy-Based Model (EBM) representing a pre-trained generative model with an imposed constraint of generating only compilable sequences. We then use the KL-Adaptive Distributional Policy Gradient algorithm (Khalifa et al., 2021) to train a generative model approximating the EBM. We conduct experiments showing that our proposed approach is able to improve compilability rates without sacrificing diversity and complexity of the generated samples.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/korbak2021energy.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

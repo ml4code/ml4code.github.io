@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#repair">repair</a></tag>
     
   </p>
-      
-      
-      <p><p>We study the problem of semantic code repair, which can be broadly defined as automatically fixing
+  <p><p>We study the problem of semantic code repair, which can be broadly defined as automatically fixing
 non-syntactic bugs in source code. The majority of past work in semantic code repair assumed access
 to unit tests against which candidate repairs could be validated. In contrast, the goal here is to
 develop a strong statistical model to accurately predict both bug locations and exact fixes without
@@ -134,6 +132,29 @@ our model on a real-world test set gathered from GitHub containing four common c
 Our model is able to predict the exact correct repair 41% of the time with a single guess, compared
 to 13% accuracy for an attentional sequence-to-sequence model.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/devlin2017semantic.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

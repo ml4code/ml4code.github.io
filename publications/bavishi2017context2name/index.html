@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#naming">naming</a></tag>
     
   </p>
-      
-      
-      <p><p>Most of the JavaScript code deployed in the wild has been minified, a process in which identifier names are replaced
+  <p><p>Most of the JavaScript code deployed in the wild has been minified, a process in which identifier names are replaced
 with short, arbitrary and meaningless names. Minified code occupies less space, but also makes the code extremely difficult to manually inspect and understand. This paper presents Context2Name, a deep learning-based technique that partially reverses the effect of minification by predicting natural
 identifier names for minified names. The core idea is to predict from the usage context of a variable a name that captures
 the meaning of the variable. The approach combines a lightweight, token-based static analysis with an auto-encoder
@@ -129,6 +127,29 @@ that our approach predicts 17% and 43% more names than the
 best existing approaches, while taking only 2.6 milliseconds
 to predict a name, on average.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/bavishi2017context2name.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

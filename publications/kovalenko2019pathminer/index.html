@@ -117,13 +117,34 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>One recent, significant advance in modeling source code for machine learning algorithms has been the introduction of path-based representation – an approach consisting in representing a snippet of code as a collection of paths from its syntax tree. Such representation efficiently captures the structure of code, which, in turn, carries its semantics and other information.
+  <p><p>One recent, significant advance in modeling source code for machine learning algorithms has been the introduction of path-based representation – an approach consisting in representing a snippet of code as a collection of paths from its syntax tree. Such representation efficiently captures the structure of code, which, in turn, carries its semantics and other information.
 Building the path-based representation involves parsing the code and extracting the paths from its syntax tree; these steps build up to a substantial technical job. With no common reusable toolkit existing for this task, the burden of mining diverts the focus of researchers from the essential work and hinders newcomers in the field of machine learning on code.</p>
 
 <p>In this paper, we present PathMiner – an open-source library for mining path-based representations of code. PathMiner is fast, flexible, well-tested, and easily extensible to support input code in any common programming language. Preprint [https://doi.org/10.5281/zenodo.2595271]; released tool [https://doi.org/10.5281/zenodo.2595257].</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/kovalenko2019pathminer.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

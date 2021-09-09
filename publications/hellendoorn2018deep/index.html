@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#types">types</a></tag>
     
   </p>
-      
-      
-      <p><p>Dynamically typed languages such as JavaScript and Python are
+  <p><p>Dynamically typed languages such as JavaScript and Python are
 increasingly popular, yet static typing has not been totally eclipsed:
 Python now supports type annotations and languages like TypeScript offer a middle-ground for JavaScript: a strict superset of
 JavaScript, to which it transpiles, coupled with a type system that
@@ -141,6 +139,29 @@ can interact with a compiler to provide more than 4,000 additional
 type annotations with over 95% precision that could not be inferred
 without the aid of DeepTyper.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/hellendoorn2018deep.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

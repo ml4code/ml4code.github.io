@@ -115,10 +115,31 @@ function search() {
       <tag><a href="/tags.html#refactoring">refactoring</a></tag>
     
   </p>
-      
-      
-      <p><p>Software refactoring plays an important role in increasing code quality. One of the most popular refactoring types is the Move Method refactoring. It is usually applied when a method depends more on members of other classes than on its own original class. Several approaches have been proposed to recommend Move Method refactoring automatically. Most of them are based on heuristics and have certain limitations (e.g., they depend on the selection of metrics and manually-defined thresholds). In this paper, we propose an approach to recommend Move Method refactoring based on a path-based representation of code called code2vec that is able to capture the syntactic structure and semantic information of a code fragment. We use this code representation to train a machine learning classifier suggesting to move methods to more appropriate classes. We evaluate the approach on two publicly available datasets: a manually compiled dataset of well-known open-source projects and a synthetic dataset with automatically injected code smell instances. The results show that our approach is capable of recommending accurate refactoring opportunities and outperforms JDeodorant and JMove, which are state of the art tools in this field.</p>
+  <p><p>Software refactoring plays an important role in increasing code quality. One of the most popular refactoring types is the Move Method refactoring. It is usually applied when a method depends more on members of other classes than on its own original class. Several approaches have been proposed to recommend Move Method refactoring automatically. Most of them are based on heuristics and have certain limitations (e.g., they depend on the selection of metrics and manually-defined thresholds). In this paper, we propose an approach to recommend Move Method refactoring based on a path-based representation of code called code2vec that is able to capture the syntactic structure and semantic information of a code fragment. We use this code representation to train a machine learning classifier suggesting to move methods to more appropriate classes. We evaluate the approach on two publicly available datasets: a manually compiled dataset of well-known open-source projects and a synthetic dataset with automatically injected code smell instances. The results show that our approach is capable of recommending accurate refactoring opportunities and outperforms JDeodorant and JMove, which are state of the art tools in this field.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/kurbatova2020recommendation.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

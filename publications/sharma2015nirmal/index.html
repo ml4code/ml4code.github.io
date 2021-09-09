@@ -113,9 +113,7 @@ function search() {
       <tag><a href="/tags.html#information extraction">information extraction</a></tag>
     
   </p>
-      
-      
-      <p><p>Twitter is one of the most widely used social media
+  <p><p>Twitter is one of the most widely used social media
 platforms today. It enables users to share and view short 140-character messages called “tweets”. About 284 million active
 users generate close to 500 million tweets per day. Such rapid
 generation of user generated content in large magnitudes results
@@ -145,6 +143,29 @@ various variants of NIRMAL, which indicates that NIRMAL can
 effectively identify software related tweets from a huge corpus of
 tweets.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/sharma2015nirmal.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>

@@ -115,9 +115,7 @@ function search() {
       <tag><a href="/tags.html#grammar">grammar</a></tag>
     
   </p>
-      
-      
-      <p><p>Statistical models of source code can be used to improve
+  <p><p>Statistical models of source code can be used to improve
 code completion systems, assistive interfaces, and code
 compression engines. We are developing a statistical model
 where programs are represented as syntax trees, rather than
@@ -128,6 +126,29 @@ is significantly more accurate than the current state of the
 art, providing initial evidence for our claim that combining
 structural and statistical information is a fruitful strategy.</p>
 </p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON('/publications-metadata/omar2013structured.json', function(data) {
+          alert(data);
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
 </div>
 
     </div>
