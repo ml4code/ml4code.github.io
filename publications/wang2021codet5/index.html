@@ -18,7 +18,7 @@
 
   <title>
     
-      Oreo: detection of clones in the twilight zone &middot; Machine Learning for Big Code and Naturalness
+      CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,25 +101,23 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Oreo: detection of clones in the twilight zone</h1>
-  <h5>V. Saini, F. Farmahinifarahani, Y. Lu, P. Baldi, C. Lopes. ESEC/FSE 2018</h5>
+  <h1 class="page-title">CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation</h1>
+  <h5>Yue Wang, Weishi Wang, Shafiq Joty, Steven C.H. Hoi. EMNLP 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1806.05837" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2109.00859" target="_blank">ArXiV</a>]
     
-      [<a href="https://dl.acm.org/doi/abs/10.1145/3236024.3236026" target="_blank">website</a>]
+      [<a href="https://github.com/salesforce/CodeT5" target="_blank">Code & Model</a>]
     
-      [<a href="https://github.com/Mondego/oreo-artifact" target="_blank">code</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Oreo: detection of clones in the twilight zone' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Oreo: detection of clones in the twilight zone' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Oreo:%20detection%20of%20clones%20in%20the%20twilight%20zone' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CodeT5:%20Identifier-aware%20Unified%20Pre-trained%20Encoder-Decoder%20Models%20for%20Code%20Understanding%20and%20Generation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#clone">clone</a></tag>
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
   </p>
-  <p><p>Source code clones are categorized into four types of increasing difficulty of detection, ranging from purely textual (Type-1) to purely semantic (Type-4). Most clone detectors reported in the literature work well up to Type-3, which accounts for syntactic differences. In between Type-3 and Type-4, however, there lies a spectrum of clones that, although still exhibiting some syntactic similarities, are extremely hard to detect – the Twilight Zone. Most clone detectors reported in the literature fail to operate in this zone. We present Oreo, a novel approach to source code clone detection that not only detects Type-1 to Type-3 clones accurately, but is also capable of detecting harder-to-detect clones in the Twilight Zone. Oreo is built using a combination of machine learning, information retrieval, and software metrics. We evaluate the recall of Oreo on BigCloneBench, and perform manual evaluation for precision. Oreo has both high recall and precision. More importantly, it pushes the boundary in detection of clones with moderate to weak syntactic similarity in a scalable manner.</p>
+  <p><p>Pre-trained models for Natural Languages (NL) like BERT and GPT have been recently shown to transfer well to Programming Languages (PL) and largely benefit a broad set of code-related tasks. Despite their success, most current methods either rely on an encoder-only (or decoder-only) pre-training that is suboptimal for generation (resp. understanding) tasks or process the code snippet in the same way as NL, neglecting the special characteristics of PL such as token types. We present CodeT5, a unified pre-trained encoder-decoder Transformer model that better leverages the code semantics conveyed from the developer-assigned identifiers. Our model employs a unified framework to seamlessly support both code understanding and generation tasks and allows for multi-task learning. Besides, we propose a novel identifier-aware pre-training task that enables the model to distinguish which code tokens are identifiers and to recover them when they are masked. Furthermore, we propose to exploit the user-written code comments with a bimodal dual generation task for better NL-PL alignment. Comprehensive experiments show that CodeT5 significantly outperforms prior methods on understanding tasks such as code defect detection and clone detection, and generation tasks across various directions including PL-NL, NL-PL, and PL-PL. Further analysis reveals that our model can better capture semantic information from code. Our code and pre-trained models are released at https://github.com/salesforce/CodeT5 .</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -132,7 +130,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/saini2018oreo.json', function(data) {
+        $.getJSON('/publications-metadata/wang2021codet5.json', function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

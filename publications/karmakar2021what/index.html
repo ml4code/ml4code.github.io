@@ -18,7 +18,7 @@
 
   <title>
     
-      Oreo: detection of clones in the twilight zone &middot; Machine Learning for Big Code and Naturalness
+      What do pre-trained code models know about code? &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,25 +101,25 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Oreo: detection of clones in the twilight zone</h1>
-  <h5>V. Saini, F. Farmahinifarahani, Y. Lu, P. Baldi, C. Lopes. ESEC/FSE 2018</h5>
+  <h1 class="page-title">What do pre-trained code models know about code?</h1>
+  <h5>Anjan Karmakar, Romain Robbes.  2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1806.05837" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2108.11308" target="_blank">ArXiV</a>]
     
-      [<a href="https://dl.acm.org/doi/abs/10.1145/3236024.3236026" target="_blank">website</a>]
-    
-      [<a href="https://github.com/Mondego/oreo-artifact" target="_blank">code</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Oreo: detection of clones in the twilight zone' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Oreo: detection of clones in the twilight zone' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Oreo:%20detection%20of%20clones%20in%20the%20twilight%20zone' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=What do pre-trained code models know about code?' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=What do pre-trained code models know about code?' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=What%20do%20pre-trained%20code%20models%20know%20about%20code?' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#clone">clone</a></tag>
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
   </p>
-  <p><p>Source code clones are categorized into four types of increasing difficulty of detection, ranging from purely textual (Type-1) to purely semantic (Type-4). Most clone detectors reported in the literature work well up to Type-3, which accounts for syntactic differences. In between Type-3 and Type-4, however, there lies a spectrum of clones that, although still exhibiting some syntactic similarities, are extremely hard to detect – the Twilight Zone. Most clone detectors reported in the literature fail to operate in this zone. We present Oreo, a novel approach to source code clone detection that not only detects Type-1 to Type-3 clones accurately, but is also capable of detecting harder-to-detect clones in the Twilight Zone. Oreo is built using a combination of machine learning, information retrieval, and software metrics. We evaluate the recall of Oreo on BigCloneBench, and perform manual evaluation for precision. Oreo has both high recall and precision. More importantly, it pushes the boundary in detection of clones with moderate to weak syntactic similarity in a scalable manner.</p>
+  <p><p>Pre-trained models of code built on the transformer architecture have performed well on software engineering (SE) tasks such as predictive code generation, code summarization, among others. However, whether the vector representations from these pre-trained models comprehensively encode characteristics of source code well enough to be applicable to a broad spectrum of downstream tasks remains an open question.</p>
+
+<p>One way to investigate this is with diagnostic tasks called probes. In this paper, we construct four probing tasks (probing for surface-level, syntactic, structural, and semantic information) for pre-trained code models. We show how probes can be used to identify whether models are deficient in (understanding) certain code properties, characterize different model layers, and get insight into the model sample-efficiency.</p>
+
+<p>We probe four models that vary in their expected knowledge of code properties: BERT (pre-trained on English), CodeBERT and CodeBERTa (pre-trained on source code, and natural language documentation), and GraphCodeBERT (pre-trained on source code with dataflow). While GraphCodeBERT performs more consistently overall, we find that BERT performs surprisingly well on some code tasks, which calls for further investigation.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -132,7 +132,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/saini2018oreo.json', function(data) {
+        $.getJSON('/publications-metadata/karmakar2021what.json', function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

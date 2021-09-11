@@ -18,7 +18,7 @@
 
   <title>
     
-      Oreo: detection of clones in the twilight zone &middot; Machine Learning for Big Code and Naturalness
+      CodeBLEU: a Method for Automatic Evaluation of Code Synthesis &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,25 +101,21 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Oreo: detection of clones in the twilight zone</h1>
-  <h5>V. Saini, F. Farmahinifarahani, Y. Lu, P. Baldi, C. Lopes. ESEC/FSE 2018</h5>
+  <h1 class="page-title">CodeBLEU: a Method for Automatic Evaluation of Code Synthesis</h1>
+  <h5>Shuo Ren, Daya Guo, Shuai Lu, Long Zhou, Shujie Liu, Duyu Tang, Neel Sundaresan, Ming Zhou, Ambrosio Blanco, Shuai Ma.  2020</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/1806.05837" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2009.10297" target="_blank">ArXiV</a>]
     
-      [<a href="https://dl.acm.org/doi/abs/10.1145/3236024.3236026" target="_blank">website</a>]
-    
-      [<a href="https://github.com/Mondego/oreo-artifact" target="_blank">code</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Oreo: detection of clones in the twilight zone' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Oreo: detection of clones in the twilight zone' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Oreo:%20detection%20of%20clones%20in%20the%20twilight%20zone' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=CodeBLEU: a Method for Automatic Evaluation of Code Synthesis' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=CodeBLEU: a Method for Automatic Evaluation of Code Synthesis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CodeBLEU:%20a%20Method%20for%20Automatic%20Evaluation%20of%20Code%20Synthesis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#clone">clone</a></tag>
+      <tag><a href="/tags.html#evaluation">evaluation</a></tag>
     
   </p>
-  <p><p>Source code clones are categorized into four types of increasing difficulty of detection, ranging from purely textual (Type-1) to purely semantic (Type-4). Most clone detectors reported in the literature work well up to Type-3, which accounts for syntactic differences. In between Type-3 and Type-4, however, there lies a spectrum of clones that, although still exhibiting some syntactic similarities, are extremely hard to detect – the Twilight Zone. Most clone detectors reported in the literature fail to operate in this zone. We present Oreo, a novel approach to source code clone detection that not only detects Type-1 to Type-3 clones accurately, but is also capable of detecting harder-to-detect clones in the Twilight Zone. Oreo is built using a combination of machine learning, information retrieval, and software metrics. We evaluate the recall of Oreo on BigCloneBench, and perform manual evaluation for precision. Oreo has both high recall and precision. More importantly, it pushes the boundary in detection of clones with moderate to weak syntactic similarity in a scalable manner.</p>
+  <p><p>Evaluation metrics play a vital role in the growth of an area as it defines the standard of distinguishing between good and bad models. In the area of code synthesis, the commonly used evaluation metric is BLEU or perfect accuracy, but they are not suitable enough to evaluate codes, because BLEU is originally designed to evaluate the natural language, neglecting important syntactic and semantic features of codes, and perfect accuracy is too strict thus it underestimates different outputs with the same semantic logic. To remedy this, we introduce a new automatic evaluation metric, dubbed CodeBLEU. It absorbs the strength of BLEU in the n-gram match and further injects code syntax via abstract syntax trees (AST) and code semantics via data-flow. We conduct experiments by evaluating the correlation coefficient between CodeBLEU and quality scores assigned by the programmers on three code synthesis tasks, i.e., text-to-code, code translation, and code refinement. Experimental results show that our proposed CodeBLEU can achieve a better correlation with programmer assigned scores compared with BLEU and accuracy.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -132,7 +128,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/saini2018oreo.json', function(data) {
+        $.getJSON('/publications-metadata/ren2020codebleu.json', function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
