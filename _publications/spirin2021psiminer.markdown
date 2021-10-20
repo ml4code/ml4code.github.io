@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: PSIMiner: A Tool for Mining Rich Abstract Syntax Trees from Code
+title: "PSIMiner: A Tool for Mining Rich Abstract Syntax Trees from Code"
 authors: Egor Spirin, Egor Bogomolov, Vladimir Kovalenko, Timofey Bryksin
 conference: MSR
 year: 2021
