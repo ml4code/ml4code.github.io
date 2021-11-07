@@ -2,7 +2,7 @@
 layout: publication
 title: "Self-Supervised Bug Detection and Repair"
 authors: Miltiadis Allamanis, Henry Jackson-Flux, Marc Brockschmidt
-conference:
+conference: NeurIPS
 year: 2021
 bibkey: allamanis2021self
 additional_links:
