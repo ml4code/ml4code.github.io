@@ -18,7 +18,7 @@
 
   <title>
     
-      Self-Supervised Bug Detection and Repair &middot; Machine Learning for Big Code and Naturalness
+      Neural Program Generation Modulo Static Analysis &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,27 +101,34 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Self-Supervised Bug Detection and Repair</h1>
-  <h5>Miltiadis Allamanis, Henry Jackson-Flux, Marc Brockschmidt. NeurIPS 2021</h5>
+  <h1 class="page-title">Neural Program Generation Modulo Static Analysis</h1>
+  <h5>Rohan Mukherjee, Yeming Wen, Dipak Chaudhari, Thomas W. Reps, Swarat Chaudhuri, Chris Jermaine. NeurIPS 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2105.12787" target="_blank">ArXiV</a>]
+      [<a href="https://www.cs.utexas.edu/~swarat/pubs/neurips21-nsg.pdf" target="_blank">Preprint</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Self-Supervised Bug Detection and Repair' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Self-Supervised Bug Detection and Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Self-Supervised%20Bug%20Detection%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Neural Program Generation Modulo Static Analysis' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Neural Program Generation Modulo Static Analysis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Neural%20Program%20Generation%20Modulo%20Static%20Analysis' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#GNN">GNN</a></tag>
+      <tag><a href="/tags.html#synthesis">synthesis</a></tag>
     
-      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
-    
-      <tag><a href="/tags.html#defect">defect</a></tag>
-    
-      <tag><a href="/tags.html#repair">repair</a></tag>
+      <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-  <p><p>Machine learning-based program analyses have recently shown the promise of integrating formal and probabilistic reasoning towards aiding software development. However, in the absence of large annotated corpora, training these analyses is challenging. Towards addressing this, we present BugLab, an approach for self-supervised learning of bug detection and repair. BugLab co-trains two models: (1) a detector model that learns to detect and repair bugs in code, (2) a selector model that learns to create buggy code for the detector to use as training data. A Python implementation of BugLab improves by up to 30% upon baseline methods on a test dataset of 2374 real-life bugs and finds 19 previously unknown bugs in open-source software.</p>
+  <p><p>State-of-the-art neural models of source code tend to be evaluated on the generation
+of individual expressions and lines of code, and commonly fail on long-horizon
+tasks such as the generation of entire method bodies. We propose to address this
+deficiency using weak supervision from a static program analyzer. Our neurosymbolic method allows a deep generative model to symbolically compute, using calls
+to a static-analysis tool, long-distance semantic relationships in the code that it
+has already generated. During training, the model observes these relationships
+and learns to generate programs conditioned on them. We apply our approach to
+the problem of generating entire Java methods given the remainder of the class
+that contains the method. Our experiments show that the approach substantially
+outperforms state-of-the-art transformers and a model that explicitly tries to learn
+program semantics on this task, both in terms of producing programs free of basic
+semantic errors and in terms of syntactically matching the ground truth.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -134,7 +141,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/allamanis2021self.json', function(data) {
+        $.getJSON('/publications-metadata/mukherjee2021neural.json', function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
