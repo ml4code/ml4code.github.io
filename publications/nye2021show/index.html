@@ -18,7 +18,7 @@
 
   <title>
     
-      Learning to Execute &middot; Machine Learning for Big Code and Naturalness
+      Show Your Work: Scratchpads for Intermediate Computation with Language Models &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,21 +101,23 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Learning to Execute</h1>
-  <h5>W. Zaremba, I. Sutskever. ArXiV 1410.4615 2014</h5>
+  <h1 class="page-title">Show Your Work: Scratchpads for Intermediate Computation with Language Models</h1>
+  <h5>Maxwell Nye, Anders Johan Andreassen, Guy Gur-Ari, Henryk Michalewski, Jacob Austin, David Bieber, David Dohan, Aitor Lewkowycz, Maarten Bosma, David Luan, Charles Sutton, Augustus Odena.  2021</h5>
   <p>
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Learning to Execute' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Learning to Execute' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Learning%20to%20Execute' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+      [<a href="https://arxiv.org/abs/2112.00114" target="_blank">ArXiV</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Show Your Work: Scratchpads for Intermediate Computation with Language Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Show Your Work: Scratchpads for Intermediate Computation with Language Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Show%20Your%20Work:%20Scratchpads%20for%20Intermediate%20Computation%20with%20Language%20Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
+    
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
       <tag><a href="/tags.html#excecution">excecution</a></tag>
     
-      <tag><a href="/tags.html#representation">representation</a></tag>
-    
   </p>
-  <p><p>Recurrent Neural Networks (RNNs) with Long Short-Term Memory units (LSTM) are widely used because they are expressive and are easy to train. Our interest lies in empirically evaluating the expressiveness and the learnability of LSTMs in the sequence-to-sequence regime by training them to evaluate short computer programs, a domain that has traditionally been seen as too complex for neural networks. We consider a simple class of programs that can be evaluated with a single left-to-right pass using constant memory. Our main result is that LSTMs can learn to map the character-level representations of such programs to their correct outputs. Notably, it was necessary to use curriculum learning, and while conventional curriculum learning proved ineffective, we developed a new variant of curriculum learning that improved our networks’ performance in all experimental conditions. The improved curriculum had a dramatic impact on an addition problem, making it possible to train an LSTM to add two 9-digit numbers with 99% accuracy.</p>
+  <p><p>Large pre-trained language models perform remarkably well on tasks that can be done “in one pass”, such as generating realistic text or synthesizing computer programs. However, they struggle with tasks that require unbounded multi-step computation, such as adding integers or executing programs. Surprisingly, we find that these same models are able to perform complex multi-step computations – even in the few-shot regime – when asked to perform the operation “step by step”, showing the results of intermediate computations. In particular, we train transformers to perform multi-step computations by asking them to emit intermediate computation steps into a “scratchpad”. On a series of increasingly complex tasks ranging from long addition to the execution of arbitrary programs, we show that scratchpads dramatically improve the ability of language models to perform multi-step computations.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -128,7 +130,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/zaremba2014learning.json', function(data) {
+        $.getJSON('/publications-metadata/nye2021show.json', function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
