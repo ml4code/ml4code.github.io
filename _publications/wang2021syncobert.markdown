@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: SynCoBERT: Syntax-Guided Multi-Modal Contrastive Pre-Training for Code Representation
+title: "SynCoBERT: Syntax-Guided Multi-Modal Contrastive Pre-Training for Code Representation"
 authors: Xin Wang, Yasheng Wang, Fei Mi, Pingyi Zhou, Yao Wan, Xiao Liu, Li Li, Hao Wu, Jin Liu, Xin Jiang
 conference: arXiv
 year: 2021
