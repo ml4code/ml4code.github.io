@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Fix-Filter-Fix: Intuitively Connect Any Models for Effective Bug Fixing
+title: "Fix-Filter-Fix: Intuitively Connect Any Models for Effective Bug Fixing"
 authors: Haiwen Hong, Jingfeng Zhang, Yin Zhang, Yao Wan, Yulei Sui
 conference: EMNLP
 year: 2021
