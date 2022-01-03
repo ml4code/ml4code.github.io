@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Co-Training for Commit Classification"
-authors: Jian Yi David Lee, Hai Leong Chieu
+authors: Jian Yi, David Lee, Hai Leong Chieu
 conference: EMNLP WNUT
 year: 2021
 bibkey: lee2021cotraining
