@@ -27,7 +27,7 @@ and programming language communities.
   {% assign ttags = publication.tags  %}  
   {% assign rawtags = rawtags | concat: ttags %}  
 {% endfor %}
-{% assign rawtags = rawtags | uniq | sort %}
+{% assign rawtags = rawtags | uniq | sort_natural %}
 {% for tag in rawtags %}<tag><a href="/tags.html#{{ tag }}">{{ tag }}</a></tag> {% endfor %}
 
 ### About This Site
