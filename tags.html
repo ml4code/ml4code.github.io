@@ -8,7 +8,7 @@ description: A list of research papers for machine learning models for source co
   {% assign ttags = publication.tags  %}  
   {% assign rawtags = rawtags | concat: ttags %}  
 {% endfor %}
-{% assign rawtags = rawtags | uniq | sort %}
+{% assign rawtags = rawtags | uniq | sort_natural %}
 
 <h1>Publications by Tag</h1>
 <p>
