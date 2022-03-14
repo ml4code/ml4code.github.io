@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
- <ShortName>ML4Code</ShortName>
- <Description>Search Papers in Machine Learning for Source Code</Description>
- <Tags>ml4code </Tags>
- <Url type="text/html"
-      template="https://ml4code.github.io/papers.html#{searchTerms}"/>
- <Image height="64" width="64" type="image/png">https://ml4code.github.io/public/favicon.svg</Image>
+<OpenSearchDescription>
+<ShortName>ML4Code</ShortName>
+<LongName>ML4Code Survey</LongName>
+<Description></Description>
+<Contact/>
+<Url type="text/html" method="get" template="https://ml4code.github.io/papers.html#{searchTerms}"> </Url>
+<Image height="16" width="16" type="image/svg+xml">https://ml4code.github.io/public/favicon.svg</Image>
+<SyndicationRight>open</SyndicationRight>
+<AdultContent>false</AdultContent>
+<Language>en-us</Language>
+<OutputEncoding>UTF-8</OutputEncoding>
+<InputEncoding>UTF-8</InputEncoding>
 </OpenSearchDescription>
