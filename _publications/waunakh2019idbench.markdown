@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "IdBench: Evaluating Semantic Representations of Identifier Names in Source Code"
-authors: Y. Wainakh, M. Rauf, M. Pradel
+authors: Yaza Wainakh, Moiz Rauf, Michael Pradel
 conference: ICSE
 year: 2021
 bibkey: waunakh2019idbench

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Lexical Statistical Machine Translation for Language Migration"
-authors: A. T. Nguyen, T. T. Nguyen, T. N. Nguyen
+authors: Anh Tuan Nguyen, Tung Thanh Nguyen, Tien N. Nguyen
 conference: FSE
 year: 2013
 bibkey: nguyen2013lexical

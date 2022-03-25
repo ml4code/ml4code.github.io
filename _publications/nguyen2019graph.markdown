@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Graph-based Mining of In-the-Wild, Fine-grained, Semantic Code Change Patterns"
-authors: H. Nguyen, T. Nguyen, D. Dig, S. Nguyen, H. Tran, M. Hilton
+authors: Hoan Anh Nguyen, Tien N. Nguyen, Danny Dig, Son Nguyen, Hieu Tran, and Michael Hilton
 conference: ICSE
 year: 2019
 bibkey: nguyen2019graph

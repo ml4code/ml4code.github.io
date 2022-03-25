@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural query expansion for code search"
-authors: J. Liu, S. Kim, V. Murali, S. Chaudhuri, S. Chandra
+authors: Jason Liu, Seohyun Kim, Vijayaraghavan Murali, Swarat Chaudhuri, Satish Chandra
 conference: MAPL
 year: 2019
 bibkey: liu2019neural

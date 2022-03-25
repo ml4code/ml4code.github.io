@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Grammar-Based Structural CNN Decoder for Code Generation"
-authors: Z. Sun, Q. Zhu, L. Mou, Y. Xiong, G. Li, L. Zhang
+authors: Zeyu Sun, Qihao Zhu, Lili Mou, Yingfei Xiong, Ge Li, Lu Zhang
 conference: AAAI
 year: 2019
 bibkey: sun2019grammar

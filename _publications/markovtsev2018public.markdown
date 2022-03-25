@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Public Git Archive: a Big Code dataset for all"
-authors: V. Markovtsev, W. Long
+authors: Vadim Markovtsev, Waren Long
 conference: MSR
 year: 2018
 bibkey: markovtsev2018public

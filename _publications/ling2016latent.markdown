@@ -1,10 +1,12 @@
 ---
 layout: publication
 title: "Latent Predictor Networks for Code Generation"
-authors: W. Ling, E. Grefenstette, K. M. Hermann, T. Kocisky, A. Senior, F. Wang, P. Blunsom
+authors: Wang Ling, Edward Grefenstette, Karl Moritz Hermann, Tomáš Kočiský, Andrew Senior, Fumin Wang, Phil Blunsom
 conference: ACL
 year: 2016
 bibkey: ling2016latent
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1603.06744"}
 tags: ["bimodal", "code generation"]
 ---
 Many  language  generation  tasks  require

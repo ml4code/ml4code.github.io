@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Sorting and Transforming Program Repair Ingredients via Deep Learning Code Similarities"
-authors: M. White, M. Tufano, M. Martínez, M. Monperrus, D. Poshyvanyk
-conference: 
+authors: Martin White, Michele Tufano, Matias Martinez, Martin Monperrus, Denys Poshyvanyk
+conference: SANER
 year: 2017
 bibkey: white2017sorting
 tags: ["repair"]

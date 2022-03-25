@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Structured Generative Models of Natural Source Code"
-authors: C.J. Maddison, Daniel Tarlow
+authors: Chris J. Maddison, Daniel Tarlow
 conference: ICML
 year: 2014
 bibkey: maddison2014structured

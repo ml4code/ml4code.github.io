@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Graph-based Statistical Language Model for Code"
-authors: A.T. Nguyen, T.N. Nguyen
+authors: Anh Tuan Nguyen, Tien N. Nguyen
 conference: ICSE
 year: 2015
 bibkey: nguyen2015graph

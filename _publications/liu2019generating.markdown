@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Generating commit messages from diffs using pointer-generator network"
-authors: Q. Liu, Z. Liu, H. Zhu, H. Fan, B. Du, Y. Qian
+authors: Qin Liu, Zihe Liu, Hongming Zhu, Hongfei Fan, Bowen Du, Yu Qian. 
 conference: MSR
 year: 2019
 bibkey: liu2019generating

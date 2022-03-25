@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testing"
-authors: X. Liu, X. Li, R. Prajapati, D. Wu
+authors: Xiao Liu, Xiaoting Li, Rupesh Prajapati, Dinghao Wu
 conference: AAAI
 year: 2019
 bibkey: liu2019deepfuzz

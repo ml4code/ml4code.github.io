@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Oreo: detection of clones in the twilight zone"
-authors: V. Saini, F. Farmahinifarahani, Y. Lu, P. Baldi, C. Lopes
+authors: Vaibhav Saini, Farima Farmahinifarahani, Yadong Lu, Pierre Baldi, Cristina Lopes
 conference: ESEC/FSE
 year: 2018
 bibkey: saini2018oreo

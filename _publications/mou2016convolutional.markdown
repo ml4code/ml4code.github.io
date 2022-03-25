@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Convolutional Neural Networks over Tree Structures for Programming Language Processing"
-authors: L. Mou, G. Li, L. Zhang, T. Wang, Z. Jin
+authors: Lili Mou, Ge Li, Lu Zhang, Tao Wang, Zhi Jin
 conference: AAAI
 year: 2016
 bibkey: mou2016convolutional

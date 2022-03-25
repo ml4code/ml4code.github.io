@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Machine Learning Framework for Programming by Example"
-authors: A. K. Menon, O. Tamuz, S. Gulwani, B. Lampson, A.T. Kalai
+authors: Aditya Menon, Omer Tamuz, Sumit Gulwani, Butler Lampson, Adam Kalai
 conference: ICML
 year: 2013
 bibkey: menon2013machine

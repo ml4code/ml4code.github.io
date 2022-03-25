@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Learning Similarities from Different Representations of Source Code"
-authors: M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk
+authors: Michele Tufano, Cody Watson, Gabriele Bavota, Massimiliano Di Penta, Martin White, Denys Poshyvanyk
 conference: MSR
 year: 2018
 bibkey: tufano2018deep

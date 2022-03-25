@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "TranS^3: A Transformer-based Framework for Unifying Code Summarization and Code Search"
-authors: W. Wang, Y. Zhang, Z. Zeng, G. Xu
+authors: Wenhua Wang, Yuqun Zhang, Zhengran Zeng, Guandong Xu
 conference:
 year: 2020
 bibkey: wang2020trans

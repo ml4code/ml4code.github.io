@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Associating Natural Language Comment and Source Code Entities"
-authors: S. Panthaplackel, M. Gligoric, R. J. Mooney, J. J. Li
+authors: Sheena Panthaplackel, Milos Gligoric, Raymond J. Mooney, Junyi Jessy Li
 conference: AAAI
 year: 2020
 bibkey: panthaplackel2020associating

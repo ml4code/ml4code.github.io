@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A User-Guided Approach to Program Analysis"
-authors: R. Mangal, X. Zhang, A. V. Nori, M. Naik
+authors: Ravi Mangal, Xin Zhang, Aditya V. Nori, Mayur Naik
 conference: FSE
 year: 2015
 bibkey: mangal2015user

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Divide-and-Conquer Approach for Multi-phase Statistical Migration for Source Code"
-authors: A.T. Nguyen, T.T. Nguyen, T.N. Nguyen
+authors: Anh Tuan Nguyen, Tung Thanh Nguyen, Tien N. Nguyen
 conference: ASE
 year: 2014
 bibkey: nguyen2015divide

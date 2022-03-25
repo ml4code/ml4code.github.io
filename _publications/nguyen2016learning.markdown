@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning API Usages from Bytecode: A Statistical Approach"
-authors: T.T. Nguyen, H.V. Pham, P.M. Vu, T.T. Nguyen
+authors: Tam The Nguyen, Hung Viet Pham, Phong Minh Vu, Tung Thanh Nguyen
 conference: ICSE
 year: 2016
 bibkey: nguyen2016learning

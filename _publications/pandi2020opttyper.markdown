@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "OptTyper: Probabilistic Type Inference by Optimising Logical and Natural Constraints"
-authors: I. V. Pandi, E.T. Barr, A.D. Gordon, Charles Sutton
+authors: Irene Vlassi Pandi, Earl T. Barr, Andrew D. Gordon, Charles Sutton
 conference: 
 year: 2020
 bibkey: pandi2020opttyper

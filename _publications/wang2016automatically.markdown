@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Automatically Learning Semantic Features for Defect Prediction"
-authors: S. Wang, T. Liu, L. Tan
+authors: Song Wang, Taiyue Liu, Lin Tan
 conference: ICSE
 year: 2016
 bibkey: wang2016automatically

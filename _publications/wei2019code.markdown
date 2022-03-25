@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Code Generation as a Dual Task of Code Summarization"
-authors: B. Wei, G. Li, X. Xia, Z. Fu, Z. Jin
+authors: Bolin Wei, Ge Li, Xin Xia, Zhiyi Fu, Zhi Jin
 conference: NeurIPS
 year: 2019
 bibkey: wei2019code

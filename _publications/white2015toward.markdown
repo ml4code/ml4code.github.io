@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Toward Deep Learning Software Repositories"
-authors: M. White, C. Vendome, M. Linares-Vásquez, D. Poshyvanyk
+authors: Martin White, Christopher Vendome, Mario Linares-Vasquez, Denys Poshyvanyk
 conference: MSR
 year: 2015
 bibkey: white2015toward

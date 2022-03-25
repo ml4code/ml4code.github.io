@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "STYLE-ANALYZER: fixing code style inconsistencies with interpretable unsupervised algorithms"
-authors: V. Markovtsev, W. Long, H. Mougard, K. Slavnov, E. Bulychev
+authors: Vadim Markovtsev, Waren Long, Hugo Mougard, Konstantin Slavnov, Egor Bulychev
 conference: MSR
 year: 2019
 bibkey: markovtsev2019style

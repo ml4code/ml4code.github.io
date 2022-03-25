@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Bayesian Sketch Learning for Program Synthesis"
-authors: V. Murali, S. Chaudhuri, C. Jermaine
-conference: arXiv preprint 1703.05698
-year: 2017
+authors: Vijayaraghavan Murali, Letao Qi, Swarat Chaudhuri, Chris Jermaine
+conference: ICLR
+year: 2018
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1703.05698"}
 bibkey: murali2017bayesian
 tags: ["code generation", "API"]
 ---

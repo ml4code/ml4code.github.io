@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Improving Automatic Source Code Summarization via Deep Reinforcement Learning"
-authors: Y. Wan, Z. Zhao, M. Yang, G. Xu, H. Ying, J. Wu, P.S. Yu
+authors: Yao Wan, Zhou Zhao, Min Yang, Guandong Xu, Haochao Ying, Jian Wu, Philip S. Yu
 conference: ASE
 year: 2018
 bibkey: wan2018improving

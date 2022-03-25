@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Abstract Syntax Networks for Code Generation and Semantic Parsing"
-authors: M. Rabinovich, M. Stern, D. Klein
+authors: Maxim Rabinovich, Mitchell Stern, Dan Klein
 conference: ACL
 year: 2017
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1704.07535"}
 bibkey: rabinovich2017abstract
 tags: ["code generation", "grammar"]
 ---

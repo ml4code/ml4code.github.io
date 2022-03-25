@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Building Program Vector Representations for Deep Learning"
-authors: L. Mou, G. Li, Y. Liu, H. Peng, Z. Jin, Y. Xu, L. Zhang
+authors: Hao Peng, Lili Mou, Ge Li, Yuxuan Liu, Lu Zhang, Zhi Jin. 
 conference: International Conference on Knowledge Science, Engineering and Management
 year: 2014
 bibkey: mou2014building

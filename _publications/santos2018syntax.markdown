@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Syntax and Sensibility: Using language models to detect and correct syntax errors"
-authors: E. A. Santos, J. C. Campbell, D. Patel, A. Hindle, J. N. Amaral
+authors: Eddie Antonio Santos, Joshua Charles Campbell, Dhvani Patel, Abram Hindle, José Nelson Amaral
 conference: SANER
 year: 2018
 bibkey: santos2018syntax

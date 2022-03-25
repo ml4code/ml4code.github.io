@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Recovering Variable Names for Minified Code with Usage Contexts"
-authors: H. Tran, N. Tran, S. Nguyen, H. Nguyen, T. Nguyen
+authors: Hieu Tran, Ngoc Tran, Son Nguyen, Hoan Nguyen, Tien N. Nguyen
 conference: ICSE
 year: 2019
 bibkey: tran2019recovering

@@ -1,8 +1,10 @@
 ---
 layout: publication
 title: "Finding Likely Errors with Bayesian Specifications"
-authors: V. Murali, S. Chaudhuri, C. Jermaine
-conference: arXiv preprint 1703.01370
+authors: Vijayaraghavan Murali, Swarat Chaudhuri, Chris Jermaine
+conference:
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1703.01370"}
 year: 2017
 bibkey: murali2017finding
 tags: ["program analysis", "API"]

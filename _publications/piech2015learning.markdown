@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Program Embeddings to Propagate Feedback on Student Code"
-authors: C. Piech, J. Huang, A. Nguyen, M. Phulsuksombati, M, Sahami, L. Guibas
+authors: Chris Piech, Jonathan Huang, Andy Nguyen, Mike Phulsuksombati, Mehran Sahami, Leonidas Guibas
 conference: ICML
 year: 2015
 bibkey: piech2015learning

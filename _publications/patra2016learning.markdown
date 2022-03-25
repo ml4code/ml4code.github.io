@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Fuzz: Application-Independent Fuzz Testing with Probabilistic, Generative Models of Input Data"
-authors: J. Patra, M. Pradel
+authors: Jibesh Patra, Michael Pradel
 conference: 
 year: 2016
 bibkey: patra2016learning

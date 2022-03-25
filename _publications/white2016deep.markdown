@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Learning Code Fragments for Code Clone Detection"
-authors: M. White, M. Tufano, C. Vendome, D. Poshyvanyk
+authors: Martin White, Michele Tufano, Christopher Vendome, Denys Poshyvanyk.
 conference: ASE
 year: 2016
 bibkey: white2016deep

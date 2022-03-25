@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Searching a Database of Source Codes Using Contextualized Code Search"
-authors: R. Mukherjee, S. Chaudhuri, C. Jermaine
+authors: Rohan Mukherjee, Swarat Chaudhuri, Chris Jermaine
 conference: 
 year: 2020
 bibkey: mukherjee2020searching

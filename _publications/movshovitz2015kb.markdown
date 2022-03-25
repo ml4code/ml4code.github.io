@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "KB-LDA: Jointly Learning a Knowledge Base of Hierarchy, Relations, and Facts"
-authors: D. Movshovitz-Attias, W. W. Cohen
+authors: Dana Movshovitz-Attias, William W. Cohen
 conference: ACL
 year: 2015
 bibkey: movshovitz2015kb

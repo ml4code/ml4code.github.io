@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Structured Statistical Syntax Tree Prediction"
-authors: C. Omar
+authors: Cyrus Omar
 conference: SPLASH
 year: 2013
 bibkey: omar2013structured

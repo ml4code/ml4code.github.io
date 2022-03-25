@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "NIRMAL: Automatic Identification of Software Relevant Tweets Leveraging Language Model"
-authors: A. Sharma, Y. Tian, D. Lo
+authors: Abhishek Sharma, Yuan Tian, and David Lo
 conference: SANER
 year: 2015
 bibkey: sharma2015nirmal

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Bugram: bug detection with n-gram language models"
-authors: S. Wang, D. Chollak, D. Movshovitz-Attias, L. Tan
+authors: Song Wang, Devin Chollak, Dana Movshovitz-Attias, Lin Tan
 conference: ASE
 year: 2016
 bibkey: wang2016bugram

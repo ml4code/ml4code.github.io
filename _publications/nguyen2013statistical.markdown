@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Statistical Semantic Language Model for Source Code"
-authors: T.T. Nguyen, A.T. Nguyen, H.A. Nguyen, T.N. Nguyen
+authors: Tung Thanh Nguyen, Anh Tuan Nguyen, Hoan Anh Nguyen, Tien N. Nguyen
 conference: FSE
 year: 2013
 bibkey: nguyen2013statistical

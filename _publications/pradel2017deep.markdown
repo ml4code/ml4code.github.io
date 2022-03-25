@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Learning to Find Bugs"
-authors: M. Pradel, K. Sen
+authors: Michael Pradel, Koushik Sen
 conference: 
 year: 2017
 bibkey: pradel2017deep

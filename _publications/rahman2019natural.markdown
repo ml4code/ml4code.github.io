@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Natural Software Revisited"
-authors: M. Rahman, D. Palani, P. Rigby
+authors: Musfiqur Rahman, Dharani Palani, Peter C. Rigby
 conference: ICSE
 year: 2019
 bibkey: rahman2019natural

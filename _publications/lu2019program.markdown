@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Program Classification Using Gated Graph Attention Neural Network for Online Programming Service"
-authors: M. Lu, D. Tan, N. Xiong, Z. Chen, H. Li
+authors: Mingming Lu, Dingwu Tan, Naixue Xiong, Zailiang Chen, Haifeng Li
 conference:
 year: 2019
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1903.03804"}
 bibkey: lu2019program
 tags: ["GNN", "representation"]
 ---

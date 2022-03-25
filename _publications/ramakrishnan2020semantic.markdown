@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Semantic Robustness of Models of Source Code"
-authors: G. Ramakrishnan, J. Henkel, Z. Wang, A. Albarghouthi, S. Jha, T. Reps
+authors: Goutham Ramakrishnan, Jordan Henkel, Zi Wang, Aws Albarghouthi, Somesh Jha, Thomas Reps
 conference:
 year: 2020
 bibkey: ramakrishnan2020semantic

@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "On the Feasibility of Transfer-learning Code Smells using Deep Learning"
-authors: T. Sharma, V. Eftathiou, P. Louridas, D. Spinellis
+authors: Tushar Sharma, Vasiliki Efstathiou, Panos Louridas, Diomidis Spinellis
 conference: 
 year: 2019
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1904.03031"}
 bibkey: sharma2019feasibility
 tags: ["representation", "program analysis"]
 ---

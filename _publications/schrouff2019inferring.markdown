@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Inferring Javascript types using Graph Neural Networks"
-authors: J. Schrouff, K. Wohlfahrt, B. Marnette, L. Atkinson
+authors: Jessica Schrouff, Kai Wohlfahrt, Bruno Marnette, Liam Atkinson
 conference: Representation Learning on Graphs and Manifolds ICLR 2019 workshop 
 year: 2019
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1905.06707"}
 bibkey: schrouff2019inferring
 tags: ["GNN", "types", "program analysis"]
 ---

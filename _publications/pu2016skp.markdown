@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "sk_p: a neural program corrector for MOOCs"
-authors: Y. Pu, K. Narasimhan, A. Solar-Lezama, R. Barzilay
+authors: Yewen Pu, Karthik Narasimhan, Armando Solar-Lezama, and Regina Barzilay
 conference: SPLASH 
 year: 2016
 bibkey: pu2016skp

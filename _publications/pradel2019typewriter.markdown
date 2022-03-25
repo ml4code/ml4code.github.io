@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "TypeWriter: Neural Type Prediction with Search-based Validation"
-authors: M. Pradel, G. Gousios, J. Liu, S. Chandra
+authors: Michael Pradel, Georgios Gousios, Jason Liu, Satish Chandra.
 conference:
 year: 2019
 bibkey: pradel2019typewriter

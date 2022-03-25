@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Toward Less Hidden Cost of Code Completion with Acceptance and Ranking Models
-authors: J.Li, R.Huang, W.Li, K.Yao, W.Tan
+authors: Jingxuan Li, Rui Huang, Wei Li, Kai Yao, Weiguo Tan
 conference: ICSME
 year: 2021
 bibkey: li2021toward

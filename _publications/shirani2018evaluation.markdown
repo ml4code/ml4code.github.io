@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Evaluation of Type Inference with Textual Cues"
-authors: A. Shirani, A. P. Lopez-Monroy, F. Gonzalez, T. Solorio, M.A. Alipour
+authors: Amirreza A. Shirani, A. Pastor Lopez-Monroy, Fabio Gonzalez, Thamar Solorio, Mohammad Amin Alipour
 conference: NLSE
 year: 2018
 bibkey: shirani2018evaluation

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Update Natural Language Comments Based on Code Changes"
-authors: S. Panthaplackel, P.Nie, M. Gligoric, J. J. Li, R. J. Mooney
+authors: Sheena Panthaplackel, Milos Gligoric, Raymond J. Mooney, Junyi Jessy Li
 conference: ACL
 year: 2020
 bibkey: panthaplackel2020learning

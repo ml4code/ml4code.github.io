@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "NL2Type: Inferring JavaScript Function Types from Natural Language Information"
-authors: R.S. Malik, J. Patra, M. Pradel
+authors: Rabee Sohail Malik, Jibesh Patra, Michael Pradel
 conference: ICSE
 year: 2019
 bibkey: malik2019nl2type

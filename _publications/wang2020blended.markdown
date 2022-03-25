@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Blended, precise semantic program embeddings"
-authors: Ke  Wang, Zhendong Su
+authors: Ke Wang, Zhendong Su
 conference: PLDI
 year: 2020
 bibkey: wang2020blended

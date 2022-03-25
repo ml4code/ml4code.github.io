@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning a Strategy for Adapting a Program Analysis via Bayesian Optimisation"
-authors: H. Oh, H. Yang, K, Yi
+authors: Hakjoo Oh, Hongseok Yang, Kwangkeun Yi.
 conference: OOPSLA 
 year: 2015
 bibkey: oh2015learning

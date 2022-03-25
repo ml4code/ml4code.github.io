@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Program Synthesis from Natural Language Using Recurrent Neural Networks"
-authors: X.V. Lin, C. Wang, D. Pang, K. Vu, L. Zettlemoyer, M.D. Ernst
+authors: Xi Victoria Lin, Chenglong Wang, Deric Pang, Kevin Vu, Michael D. Ernst
 conference: Technical Report UW-CSE-17-03-01, University of Washington Department of Computer Science and Engineering
 year: 2017
 bibkey: lin2017program

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Sport and Refactor Inconsistent Method Names"
-authors: K. Liu, D. Kim, T. F. Bissyand́e, T. Kim, K. Kim, A. Koyuncu, S. Kim, Y. Le Traon
+authors: Kui Liu, Dongsun Kim, Tegawendé F. Bissyandé, Taeyoung Kim, Kisub Kim, Anil Koyuncu, Suntae Kim, Yves Le Traon
 conference: ICSE
 year: 2019
 bibkey: liu2019learning

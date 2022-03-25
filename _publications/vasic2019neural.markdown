@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Program Repair by Jointly Learning to Localize and Repair"
-authors: M. Vasic, A. Kanade, P. Maniatis, D. Bieber, R. Singh
+authors: Marko Vasic, Aditya Kanade, Petros Maniatis, David Bieber, Rishabh Singh
 conference: ICLR
 year: 2019
 bibkey: vasic2019neural

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural-Machine-Translation-Based Commit Message Generation: How Far Are We?"
-authors: Z. Liu, X. Xia, A.E. Hassan, D. Lo, Z. Xing, X. Wang
+authors: Zhongxin Liu, Xin Xia, Ahmed E. Hassan, David Lo, Zhenchang Xing, Xinyu Wang
 conference: ASE
 year: 2018
 bibkey: liu2018neural

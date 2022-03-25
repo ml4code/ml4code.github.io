@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Question Independent Grading using Machine Learning: The Case of Computer Program Grading"
-authors: G. Singh, S. Srikant, V. Aggarwal
+authors: Gursimran Singh, Shashank Srikant, Varun Aggarwal
 conference: KDD
 year: 2016
 bibkey: singh2016question

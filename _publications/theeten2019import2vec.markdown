@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Import2vec - Learning Embeddings for Software Libraries"
-authors: B. Theeten, F. Vandeputte, T.Van Cutsem
+authors: Bart Theeten, Frederik Vandeputte, Tom Van Cutsem
 conference: MSR
 year: 2019
 bibkey: theeten2019import2vec

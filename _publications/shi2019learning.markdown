@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Execution through Neural Code Fusion"
-authors: Z. Shi, K. Swersky, Daniel Tarlow, P. Ranganathan, M. Hashemi
+authors: Zhan Shi, Kevin Swersky, Daniel Tarlow, Parthasarathy Ranganathan, Milad Hashemi
 conference:
 year: 2019
 bibkey: shi2019learning

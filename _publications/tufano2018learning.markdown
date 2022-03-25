@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning How to Mutate Source Code from Bug-Fixes"
-authors: M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk
+authors: Michele Tufano, Cody Watson, Gabriele Bavota, Massimiliano Di Penta, Martin White, Denys Poshyvanyk
 conference: 
 year: 2018
 bibkey: tufano2018learning

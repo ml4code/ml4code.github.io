@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "DeepDelta: Learning to Repair Compilation Errors"
-authors: A. Mesbah, A. Rice, E. Johnstin, N. Glorioso
+authors: Ali Mesbah, Andrew Rice, Emily Johnston, Nick Glorioso, Edward Aftandilian.
 conference: 
 year: 2019
 bibkey: mesbah2019deepdelta

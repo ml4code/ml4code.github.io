@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "CORE: Automating Review Recommendation for Code Changes"
-authors: J. Siow, C. Gao, L. Fan, S. Chen, Y. Liu
+authors: JingKai Siow, Cuiyun Gao, Lingling Fan, Sen Chen, Yang Liu
 conference: SANER
 year: 2019
 bibkey: siow2019core

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Statistical Learning Approach for Mining API Usage Mappings for Code Migration"
-authors: A.T. Nguyen, H.A. Nguyen, T.T. Nguyen, T.N. Nguyen
+authors: Anh Tuan Nguyen, Hoan Anh Nguyen, Tung Thanh Nguyen, Tien N. Nguyen
 conference: ASE
 year: 2014
 bibkey: nguyen2014statistical

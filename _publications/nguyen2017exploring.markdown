@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Exploring API Embedding for API Usages and Applications"
-authors: T.D. Nguyen, A.T. Nguyen, H.D. Phan, T.N. Nguyen
+authors: Trong Duc Nguyen, Anh Tuan Nguyen, Hung Dang Phan, Tien N. Nguyen
 conference: ICSE
 year: 2017
 bibkey: nguyen2017exploring

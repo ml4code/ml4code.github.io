@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Topic modeling of public repositories at scale using names in source code"
-authors: V. Markovtsev, E. Kant
-conference: ArXiV 1704.00135
+authors: Vadim Markovtsev, Eiso Kant
+conference:
 year: 2017
 bibkey: markovtsev2017topic
 additional_links:

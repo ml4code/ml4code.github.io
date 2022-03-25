@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Where should I comment my code? A dataset and model for predicting locations that need comments"
-authors: A. Louis, S.K. Dash, E.T. Barr, M.D. Ernst, and Charles Sutton
+authors: Annie Louis, Santanu Kumar Dash, Earl T. Barr, Charles Sutton
 conference: International Conference on Software Engineering (ICSE; NIER track)
 year: 2020
 bibkey: louis2020where

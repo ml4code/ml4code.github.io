@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Scalable and Precise Representation of Program Semantics"
-authors: K. Wang
+authors: Ke Wang
 conference:
 year: 2019
 bibkey: wang2019learning

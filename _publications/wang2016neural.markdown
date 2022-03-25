@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Code Completion"
-authors: C. Liu, X. Wang, R. Shin, J.E. Gonzalez, D. Song
+authors: Chang Liu, Xin Wang, Richard Shin, Joseph E. Gonzalez, Dawn Song
 conference: 
 year: 2016
 bibkey: wang2016neural

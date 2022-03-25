@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Towards Better Program Obfuscation: Optimization via Language Models"
-authors: H. Liu
+authors: Han Liu
 conference: ICSE
 year: 2016
 bibkey: liu2016towards

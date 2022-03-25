@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Learning to Detect Redundant Method Comments"
-authors: A. Louis, S. K. Dash, Earl T. Barr, Charles Sutton
+authors: Annie Louis, Santanu Kumar Dash, Earl T. Barr, Charles Sutton
 conference: 
 year: 2018
 bibkey: louis2018deep

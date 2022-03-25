@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "On the Impact of Refactoring Operations on Code Naturalness"
-authors: B. Lin, C. Nagy, G. Bavota, M. Lanza
+authors: Bin Lin, Csaba Nagy, Gabriele Bavota, Michele Lanza
 conference: SANER
 year: 2019
 bibkey: lin2019impact

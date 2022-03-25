@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Automated Vulnerability Detection in Source Code Using Deep Representation Learning"
-authors: R. L. Russell, L. Kim, L. H. Hamilton, T. Lazovich, J. A. Harer, O. Ozdemir, P. M. Ellingwood, M. W. McConley
+authors: Rebecca L. Russell, Louis Kim, Lei H. Hamilton, Tomo Lazovich, Jacob A. Harer, Onur Ozdemir, Paul M. Ellingwood, Marc W. McConley
 conference: 
 year: 2018
 bibkey: russell2018automated

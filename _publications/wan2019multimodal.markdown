@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Multi-Modal Attention Network Learning for Semantic Source Code Retrieval"
-authors: Y. Wan, J. Shu, Y. Sui, G. Xu, Z. Zhao, J. Wu, P. S. Yu
+authors: Yao Wan, Jingdong Shu, Yulei Sui, Guandong Xu, Zhou Zhao, Jian Wu, Philip S. Yu
 conference: 
 year: 2019
 bibkey: wan2019multimodal

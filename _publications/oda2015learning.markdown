@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Generate Pseudo-code from Source Code using Statistical Machine Translation"
-authors: Y. Oda, H. Fudaba, Graham Neubig, H. Hata, S. Sakti, T. Toda, and S. Nakamura
+authors: Yusuke Oda, Hiroyuki Fudaba, Graham Neubig, Hideaki Hata, Sakriani Sakti, Tomoki Toda, Satoshi Nakamura
 conference: ASE
 year: 2015
 bibkey: oda2015learning

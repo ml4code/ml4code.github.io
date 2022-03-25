@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: A Systematic Literature Review on the Use of Deep Learning in Software Engineering Research
-authors: C. Watson, N. Cooper, D. Nader Palacio, K. Moran, D. Poshyvanyk
+authors: Cody Watson, Nathan Cooper, David Nader Palacio, Kevin Moran, Denys Poshyvanyk
 conference: TSE
 year: 2021
 bibkey: watson2021systematic

@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Learning Loop Invariants for Program Verification"
-authors: X. Si, H. Dai, M. Raghothaman, M. Naik, L. Song
-conference: NIPS
+authors: Xujie Si, Hanjun Dai, Mukund Raghothaman, Mayur Naik, Le Song
+conference: NeurIPS
 year: 2018
 bibkey: si2018learning
 additional_links:

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation"
-authors: M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, D. Poshyvanyk
+authors: Michele Tufano, Cody Watson, Gabriele Bavota, Massimiliano Di Penta, Martin White, Denys Poshyvanyk
 conference: 
 year: 2018
 bibkey: tufano2018empirical

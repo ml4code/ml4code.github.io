@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A system to grade computer programming skills using machine learning"
-authors: S. Srikant, V. Aggarwal
+authors: Shashank Srikant, Varun Aggarwal
 conference: KDD
 year: 2014
 bibkey: srikant2014system

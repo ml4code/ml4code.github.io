@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Pythia: AI-assisted Code Completion System"
-authors: A. Svyatkovskiy, Y. Zhao, S. Fu, Neel Sundaresan
+authors: Alexey Svyatkovskiy, Ying Zhao, Shengyu Fu, Neel Sundaresan
 conference: KDD
 year: 2019
 bibkey: svyatkovskiy2019pythia

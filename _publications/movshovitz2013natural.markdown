@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Natural Language Models for Predicting Programming Comments"
-authors: D. Movshovitz-Attias, W.W. Cohen
+authors: Dana Movshovitz-Attias, William W. Cohen
 conference: ACL
 year: 2013
 bibkey: movshovitz2013natural
