@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Structured Neural Summarization"
-authors: P. Fernandes, M. Allamanis, M. Brockschmidt
+authors: P. Fernandes, Miltiadis Allamanis, M. Brockschmidt
 conference: ICLR
 year: 2019
 bibkey: fernandes2019structured

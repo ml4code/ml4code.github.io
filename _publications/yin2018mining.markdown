@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Mine Aligned Code and Natural Language Pairs from Stack Overflow"
-authors: P. Yin, B. Deng, E. Chen, B. Vasilescu, G. Neubig
+authors: Pengcheng Yin, B. Deng, E. Chen, B. Vasilescu, Graham Neubig
 conference: MSR
 year: 2018
 bibkey: yin2018mining

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "The Adverse Effects of Code Duplication in Machine Learning Models of Code"
-authors: M. Allamanis
+authors: Miltiadis Allamanis
 conference:
 year: 2019
 bibkey: allamanis2019adverse

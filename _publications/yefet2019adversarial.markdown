@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Adversarial Examples for Models of Code"
-authors: N. Yefet, U. Alon, E. Yahav
+authors: N. Yefet, Uri Alon, Eran Yahav
 conference:
 year: 2019
 bibkey: yefet2019adversarial

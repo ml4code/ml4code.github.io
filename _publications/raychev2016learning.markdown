@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Programs from Noisy Data"
-authors: V. Raychev, P. Bielik, M. Vechev, A. Krause
+authors: Veselin Raychev, P. Bielik, Martin Vechev, A. Krause
 conference: POPL
 year: 2016
 bibkey: raychev2016learning

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Mining Source Code Repositories at Massive Scale Using Language Modeling "
-authors: M. Allamanis, C. Sutton
+authors: Miltiadis Allamanis, Charles Sutton
 conference: MSR
 year: 2013
 bibkey: allamanis2013mining

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Phrase-Based Statistical Translation of Programming Languages"
-authors: S. Karaivanov, V. Raychev, M. Vechev
+authors: S. Karaivanov, Veselin Raychev, Martin Vechev
 conference: Onward
 year: 2014
 bibkey: karaivanov2014phrase

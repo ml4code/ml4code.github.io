@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Autofolding for Source Code Summarization"
-authors: J. Fowkes, R. Ranca, M. Allamanis, M. Lapata, C. Sutton
+authors: J. Fowkes, R. Ranca, Miltiadis Allamanis, M. Lapata, Charles Sutton
 conference: TSE
 year: 2017
 bibkey: fowkes2017autofolding

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "On the Naturalness of Software"
-authors: A. Hindle, E. T. Barr, Z. Su, M. Gabel, P. Devanbu
+authors: A. Hindle, Earl T. Barr, Z. Su, M. Gabel, Premkumar Devanbu
 conference: ICSE
 year: 2012
 bibkey: hindle2012naturalness

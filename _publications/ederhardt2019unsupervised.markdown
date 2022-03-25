@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Unsupervised Learning of API Aliasing Specifications"
-authors: J. Eberhardt, S. Steffen, V. Raychev, M. Vechev
+authors: J. Eberhardt, S. Steffen, Veselin Raychev, Martin Vechev
 conference: PLDI
 year: 2019
 bibkey: ederhardt2019unsupervised

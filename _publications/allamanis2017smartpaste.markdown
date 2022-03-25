@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "SmartPaste: Learning to Adapt Source Code"
-authors: M. Allamanis, M. Brockscmidt
+authors: Miltiadis Allamanis, M. Brockscmidt
 conference: ""
 year: 2017
 bibkey: allamanis2017smartpaste

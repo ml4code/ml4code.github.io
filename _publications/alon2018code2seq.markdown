@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "code2seq: Generating Sequences from Structured Representations of Code"
-authors: U. Alon, O. Levy, E. Yahav
+authors: Uri Alon, O. Levy, Eran Yahav
 conference: ICLR
 year: 2019
 bibkey: alon2018code2seq

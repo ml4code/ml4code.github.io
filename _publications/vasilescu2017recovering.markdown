@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Recovering Clear, Natural Identifiers from Obfuscated JS Names"
-authors: B. Vasilescu, C. Casalnuovo, P. Devanbu
+authors: B. Vasilescu, C. Casalnuovo, Premkumar Devanbu
 conference: FSE
 year: 2017
 bibkey: vasilescu2017recovering

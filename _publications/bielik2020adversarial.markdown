@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Adversarial Robustness for Code"
-authors: P. Bielik, M. Vechev
+authors: P. Bielik, Martin Vechev
 conference:
 year: 2020
 bibkey: bielik2020adversarial 

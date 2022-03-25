@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Learning Type Inference"
-authors: V. J. Hellendoorn, C. Bird, E. T. Barr, M. Allamanis
+authors: V. J. Hellendoorn, Christian Bird, Earl T. Barr, Miltiadis Allamanis
 conference: FSE 
 year: 2018
 bibkey: hellendoorn2018deep

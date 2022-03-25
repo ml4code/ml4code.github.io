@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Code Completion with Statistical Language Models"
-authors: V. Raychev, M. Vechev, E. Yahav
+authors: Veselin Raychev, Martin Vechev, Eran Yahav
 conference: PLDI
 year: 2014
 bibkey: raychev2014code

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Structural Language Models for Any-Code Generation"
-authors: U. Alon, R. Sadaka, O. Levy, E. Yahav
+authors: Uri Alon, R. Sadaka, O. Levy, Eran Yahav
 conference:
 year: 2019
 bibkey: alond2019structural

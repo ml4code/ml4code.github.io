@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Extracting Code from Programming Tutorial Videos"
-authors: S. Yadid, E. Yahav
+authors: S. Yadid, Eran Yahav
 conference: Onward!
 year: 2016
 bibkey: yadid2016extracting

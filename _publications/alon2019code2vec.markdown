@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "code2vec: Learning Distributed Representations of Code"
-authors: U. Alon, O. Levy, E. Yahav
+authors: Uri Alon, O. Levy, Eran Yahav
 conference: POPL
 year: 2019
 bibkey: alon2019code2vec

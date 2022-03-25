@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "On the Localness of Software"
-authors: Z. Tu, Z. Su, P. Devanbu 
+authors: Z. Tu, Z. Su, Premkumar Devanbu 
 conference: FSE
 year: 2014
 bibkey: tu2014localness

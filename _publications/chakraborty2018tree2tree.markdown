@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "CODIT: Code Editing with Tree-Based Neural Machine Translation"
-authors: S. Chakraborty, M. Allamanis, B. Ray
+authors: Saikat Chakraborty, Miltiadis Allamanis, Baishakhi Ray
 conference: 
 year: 2018
 bibkey: chakraborty2018tree2tree

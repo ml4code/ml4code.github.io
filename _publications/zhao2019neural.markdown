@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Networks for Modeling Source Code Edits"
-authors: R. Zhao, D. Bieber, K. Swersky, D. Tarlow
+authors: R. Zhao, D. Bieber, K. Swersky, Daniel Tarlow
 conference: 
 year: 2019
 bibkey: zhao2019neural

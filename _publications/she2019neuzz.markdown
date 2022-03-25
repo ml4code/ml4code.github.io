@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "NEUZZ: Efficient Fuzzing with Neural Program Smoothing"
-authors: D. She, K. Pei, D. Epstein, J. Yang, B. Ray, S. Jana
+authors: D. She, K. Pei, D. Epstein, J. Yang, Baishakhi Ray, S. Jana
 conference: "IEEE S&P"
 year: 2019
 bibkey: she2019neuzz

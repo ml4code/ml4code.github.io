@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Reverse Engineering of Stripped Binaries"
-authors: Y. David, U. Alon, E. Yahav
+authors: Y. David, Uri Alon, Eran Yahav
 conference: ICLR
 year: 2019
 bibkey: david2019neural

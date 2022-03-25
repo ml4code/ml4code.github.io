@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Products, Developers, and Milestones: How Should I Build My N-Gram Language Model"
-authors: C. Saraiva, C. Bird, T. Zimmermann
+authors: C. Saraiva, Christian Bird, T. Zimmermann
 conference: FSE
 year: 2015
 bibkey: saraiva2015products

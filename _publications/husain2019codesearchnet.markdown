@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "CodeSearchNet Challenge: Evaluating the State of Semantic Code Search"
-authors: H. Husain, H. Wu, T. Gazit, M. Allamanis, M. Brockschmidt
+authors: H. Husain, H. Wu, T. Gazit, Miltiadis Allamanis, M. Brockschmidt
 conference:
 year: 2019
 bibkey: husain2019codesearchnet

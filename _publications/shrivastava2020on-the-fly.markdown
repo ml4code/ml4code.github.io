@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "On-the-Fly Adaptation of Source Code Models using Meta-Learning"
-authors: D. Shrivastava, H. Larochelle, D. Tarlow
+authors: D. Shrivastava, H. Larochelle, Daniel Tarlow
 conference:
 year: 2020
 bibkey: shrivastava2020on-the-fly

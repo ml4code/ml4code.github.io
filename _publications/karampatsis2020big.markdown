@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Big Code != Big Vocabulary: Open-Vocabulary Models for Source Code"
-authors: RM. Karampatsis, H. Babii, R. Robbes, C. Sutton, A. Janes 
+authors: RM. Karampatsis, H. Babii, R. Robbes, Charles Sutton, A. Janes 
 conference: ICSE
 year: 2020
 bibkey: karampatsis2020

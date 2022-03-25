@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Building Language Models for Text with Named Entities"
-authors: M.R. Parvez, S. Chakraborty, B. Ray, KW Chang
+authors: M.R. Parvez, Saikat Chakraborty, Baishakhi Ray, KW Chang
 conference: ACL
 year: 2018
 bibkey: parvez2018building

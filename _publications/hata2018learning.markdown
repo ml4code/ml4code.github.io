@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Generate Corrective Patches using Neural Machine Translation"
-authors: H. Hata, E. Shihab, G. Neubig
+authors: H. Hata, E. Shihab, Graham Neubig
 conference: 
 year: 2018
 bibkey: hata2018learning

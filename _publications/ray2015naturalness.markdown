@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "On the “Naturalness” of Buggy Code"
-authors: B. Ray, V. Hellendoorn, S. Godhane, Z. Tu, A. Bacchelli, P. Devanbu
+authors: Baishakhi Ray, Vincent Hellendoorn, S. Godhane, Z. Tu, A. Bacchelli, Premkumar Devanbu
 conference: ICSE
 year: 2015
 bibkey: ray2015naturalness

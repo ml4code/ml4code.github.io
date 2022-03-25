@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Predicting Program Properties from “Big Code”"
-authors: V. Raychev, M. Vechev, A. Krause
+authors: Veselin Raychev, Martin Vechev, A. Krause
 conference: POPL
 year: 2015
 bibkey: raychev2015predicting

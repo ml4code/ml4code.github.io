@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Generative Code Modeling with Graphs
-authors: M. Brockscmidt, M. Allamanis A. L. Gaunt, O. Polozov
+authors: M. Brockscmidt, Miltiadis Allamanis A. L. Gaunt, O. Polozov
 conference: "ICLR"
 year: 2019
 bibkey: brockschmidt2019generative

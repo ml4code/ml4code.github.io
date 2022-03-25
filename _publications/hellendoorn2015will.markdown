@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Will they like this? Evaluating Code Contributions With Language Models"
-authors: V.J. Hellendoorn, P. Devanbu, A. Bacchelli
+authors: Vincent J. Hellendoorn, Premkumar Devanbu, Alberto Bacchelli
 conference: MSR
 year: 2015
 bibkey: hellendoorn2015will

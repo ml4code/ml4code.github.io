@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Global Relational Models of Source Code"
-authors: V.J. Hellendoorn, C. Sutton, R. Singh, P. Maniatis, D. Bieber
+authors: V.J. Hellendoorn, Charles Sutton, R. Singh, P. Maniatis, D. Bieber
 conference: ICLR
 year: 2020
 bibkey: hellendoorn2020global

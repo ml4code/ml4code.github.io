@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Mining Idioms from Source Code"
-authors: M. Allamanis, C. Sutton
+authors: Miltiadis Allamanis, Charles Sutton
 conference: FSE
 year: 2014
 bibkey: allamanis2014mining

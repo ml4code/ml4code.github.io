@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Gated Graph Sequence Neural Networks"
-authors: Y. Li, R. Zemel, M. Brockschmidt, D. Tarlow
+authors: Y. Li, R. Zemel, M. Brockschmidt, Daniel Tarlow
 conference: ICLR
 year: 2016
 bibkey: li2016gated

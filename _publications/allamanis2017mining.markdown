@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Mining Semantic Loop Idioms from Big Code
-authors: M. Allamanis, E. T. Barr, C. Bird, M. Marron, C. Sutton
+authors: Miltiadis Allamanis, Earl T. Barr, Christian Bird, M. Marron, Charles Sutton
 conference: ""
 year: 2017
 bibkey: allamanis2017mining

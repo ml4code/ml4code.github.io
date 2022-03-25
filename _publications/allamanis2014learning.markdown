@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Learning Natural Coding Conventions
-authors: M. Allamanis, E. T. Barr, C. Bird, C. Sutton
+authors: Miltiadis Allamanis, Earl T. Barr, Christian Bird, Charles Sutton
 conference: FSE
 year: 2014
 bibkey: allamanis2014learning

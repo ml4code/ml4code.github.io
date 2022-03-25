@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Syntactic Neural Model for General-Purpose Code Generation"
-authors: P. Yin, G. Neubig
+authors: Pengcheng Yin, Graham Neubig
 conference: ACL
 year: 2017
 bibkey: yin2017syntactic

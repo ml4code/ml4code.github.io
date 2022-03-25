@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Neural Approach to Decompiled Identifier Renaming"
-authors: J. Lacomis, P. Yin, E.J. Schwartz, M. Allamanis, C. Le Goues, G. Neubig, B. Vasilescu
+authors: J. Lacomis, Pengcheng Yin, E.J. Schwartz, Miltiadis Allamanis, C. Le Goues, Graham Neubig, B. Vasilescu
 conference: ASE
 year: 2019
 bibkey: lacomis2019neural

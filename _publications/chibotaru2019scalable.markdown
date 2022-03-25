@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Scalable Taint Specification Inference with Big Code"
-authors: V. Chibotaru, B. Bichsel, V. Raychev, M. Vechev
+authors: V. Chibotaru, B. Bichsel, Veselin Raychev, Martin Vechev
 conference: PLDI
 year: 2019
 bibkey: chibotaru2019scalable

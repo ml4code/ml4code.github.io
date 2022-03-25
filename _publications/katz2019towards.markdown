@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Towards Neural Decompilation"
-authors: O. Katz, Y. Olshaker, Y. Goldberg, E. Yahav
+authors: O. Katz, Y. Olshaker, Y. Goldberg, Eran Yahav
 conference:
 year: 2019
 bibkey: katz2019towards

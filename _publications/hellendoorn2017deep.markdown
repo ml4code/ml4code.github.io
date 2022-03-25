@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Are Deep Neural Networks the Best Choice for Modeling Source Code?"
-authors: V. J. Hellendoorn, P. Devanbu
+authors: Vincent J. Hellendoorn, Premkumar Devanbu
 conference: FSE 
 year: 2017
 bibkey: hellendoorn2017deep

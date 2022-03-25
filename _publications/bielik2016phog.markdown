@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "PHOG: Probabilistic Model for Code"
-authors: P. Bielik, V. Raychev, M. Vechev
+authors: P. Bielik, Veselin Raychev, Martin Vechev
 conference: ICML
 year: 2016
 bibkey: bielik2016phog
