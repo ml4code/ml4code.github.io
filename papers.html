@@ -1407,7 +1407,7 @@ are not practically effective and achieve low precision in finding naming issues
 			<a href='http://academic.microsoft.com/#/search?iq=Self-Supervised%20Contrastive%20Learning%20for%20Code%20Retrieval%20and%20Summarization%20via%20Semantic-Preserving%20Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Nghi D. Q. Bui, Y. Yu, L. Jiang</td>
+	<td>Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang</td>
 	<td>SIGIR</td>
 	<td><p>We propose Corder, a self-supervised contrastive learning framework for source code model. Corder is designed to alleviate the need of labeled data for code retrieval and code summarization tasks. The pre-trained model of Corder can be used in two ways: (1) it can produce vector representation of code which can be applied to code retrieval tasks that do not have labeled data; (2) it can be used in a fine-tuning process for tasks that might still require label data such as code summarization. The key innovation is that we train the source code model by asking it to recognize similar and dissimilar code snippets through a contrastive learning objective. To do so, we use a set of semantic-preserving transformation operators to generate code snippets that are syntactically diverse but semantically equivalent. Through extensive experiments, we have shown that the code models pretrained by Corder substantially outperform the other baselines for code-to-code retrieval, text-to-code retrieval, and code-to-text summarization tasks.</p>
 </td>
@@ -1599,7 +1599,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=MulCode:%20A%20Multi-task%20Learning%20Approach%20for%20Source%20Code%20Understanding' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>D. Wang, Y. Yu, S. Li, W. Dong, J. Wang, L. Qing</td>
+	<td>Deze Wang, Yue Yu, Shanshan Li, Wei Dong, Ji Wang, Liao Qing</td>
 	<td>SANER</td>
 	<td><p>Recent years have witnessed the significant rise of Deep Learning (DL) techniques applied to source code. Researchers exploit DL for a multitude of tasks and achieve impressive results. However, most tasks are explored separately, resulting in a lack of generalization of the solutions. In this work, we propose MulCode, a multi-task learning approach for source code understanding that learns unified representation space for tasks, with the pre-trained BERT model for the token sequence and the Tree-LSTM model for abstract syntax trees. Furthermore, we integrate two source code views into a hybrid representation via the attention mechanism and set learnable uncertainty parameters to adjust the tasks’ relationship. We train and evaluate MulCode in three downstream tasks: comment classification, author attribution, and duplicate function detection. In all tasks, MulCode outperforms the state-of-theart techniques. Moreover, experiments on three unseen tasks demonstrate the generalization ability of MulCode compared with state-of-the-art embedding methods.</p>
 </td>
@@ -1697,7 +1697,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Hoppity:%20Learning%20Bug%20Detection%20and%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>E. Dinella, H. Dai, Z. Li, M. Naik, L. Song, K. Wang</td>
+	<td>Elizabeth Dinella, Hanjun Dai, Ziyang Li, Mayur Naik, Le Song, Ke Wang</td>
 	<td>ICLR</td>
 	<td><p>We present a learning-based approach to detect and fix a broad range of bugs in Javascript programs. We frame the problem in terms of learning a sequence of graph transformations: given a buggy program modeled by a graph structure, our model makes a sequence of predictions including the position of bug nodes and corresponding graph edits to produce a fix. Unlike previous works that use deep neural networks, our approach targets bugs that are more complex and semantic in nature (i.e.~bugs that require adding or deleting statements to fix). We have realized our approach in a tool called HOPPITY. By training on 338,877 Javascript code change commits on Github, HOPPITY correctly detects and fixes bugs in 9,612 out of 42,365 programs in an end-to-end fashion. Given the bug location and type of the fix, HOPPITY also outperforms the baseline approach by a wide margin.</p>
 </td>
@@ -1729,7 +1729,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=CoNCRA:%20A%20Convolutional%20Neural%20Network%20Code%20Retrieval%20Approach' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Marcelo de Rezende Martins and Marco Aurélio Gerosa</td>
+	<td>Marcelo de Rezende Martins, Marco Aurélio Gerosa</td>
 	<td>SBES '20</td>
 	<td><p>Software developers routinely search for code using general-purpose search engines. However, these search engines cannot find code semantically unless it has an accompanying description. We propose a technique for semantic code search: A Convolutional Neural Network approach to code retrieval (CoNCRA). Our technique aims to find the code snippet that most closely matches the developer’s intent, expressed in natural language. We evaluated our approach’s efficacy on a dataset composed of questions and code snippets collected from Stack Overflow. Our preliminary results showed that our technique, which prioritizes local interactions (words nearby), improved the state-of-the-art (SOTA) by 5% on average, retrieving the most relevant code snippets in the top 3 (three) positions by almost 80% of the time. Therefore, our technique is promising and can improve the efficacy of semantic code retrieval.</p>
 
@@ -1784,7 +1784,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Embedding%20Java%20Classes%20with%20code2vec:%20Improvements%20from%20Variable%20Obfuscation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>R. Compton, E. Frank, P. Patros, A. Koay</td>
+	<td>Rhys Compton, Eibe Frank, Panos Patros, Abigail Koay</td>
 	<td>MSR</td>
 	<td><p>Automatic source code analysis in key areas of software engineering, such as code security, can benefit from Machine Learning (ML). However, many standard ML approaches require a numeric representation of data and cannot be applied directly to source code. Thus, to enable ML, we need to embed source code into numeric feature vectors while maintaining the semantics of the code as much as possible. code2vec is a recently released embedding approach that uses the proxy task of method name prediction to map Java methods to feature vectors. However, experimentation with code2vec shows that it learns to rely on variable names for prediction, causing it to be easily fooled by typos or adversarial attacks. Moreover, it is only able to embed individual Java methods and cannot embed an entire collection of methods such as those present in a typical Java class, making it difficult to perform predictions at the class level (e.g., for the identification of malicious Java classes). Both shortcomings are addressed in the research presented in this paper. We investigate the effect of obfuscating variable names during the training of a code2vec model to force it to rely on the structure of the code rather than specific names and consider a simple approach to creating class-level embeddings by aggregating sets of method embeddings. Our results, obtained on a challenging new collection of source-code classification problems, indicate that obfuscating variable names produces an embedding model that is both impervious to variable naming and more accurately reflects code semantics. The datasets, models, and code are shared for further ML research on source code.</p>
 </td>
@@ -1898,7 +1898,7 @@ new  findings  facilitate  the  automated  analysis  of  logs.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Suggesting%20Comment%20Completions%20for%20Python%20using%20Neural%20Language%20Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>A. Ciurumelea, S. Proksch, H.C. Gall</td>
+	<td>Adelina Ciurumelea; Sebastian Proksch; Harald C. Gall</td>
 	<td>SANER</td>
 	<td><p>Source-code comments are an important communication medium between developers to better understand and maintain software. Current research focuses on auto-generating comments by summarizing the code. However, good comments contain additional details, like important design decisions or required trade-offs, and only developers can decide on the proper comment content. Automated summarization techniques cannot include information that does not exist in the code, therefore fully-automated approaches while helpful, will be of limited use. In our work, we propose to empower developers through a semi-automated system instead. We investigate the feasibility of using neural language models trained on a large corpus of Python documentation strings to generate completion suggestions and obtain promising results. By focusing on confident predictions, we can obtain a top-3 accuracy of over 70%, although this comes at the cost of lower suggestion frequency. Our models can be improved by leveraging context information like the signature and the full body of the method. Additionally, we are able to return good accuracy completions even for new projects, suggesting the generalizability of our approach.</p>
 </td>
@@ -4078,7 +4078,7 @@ errors. The correct changes are in the top three suggested axes 86% of the time 
 			<a href='http://academic.microsoft.com/#/search?iq=When%20Deep%20Learning%20Met%20Code%20Search' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>J. Cambronero, H. Li, S. Kim, K. Sen, S. Chandra</td>
+	<td>Jose Cambronero, Hongyu Li, Seohyun Kim, Koushik Sen, Satish Chandra</td>
 	<td></td>
 	<td><p>There have been multiple recent proposals on using deep neural networks for code search using natural language. Common across these proposals is the idea of embedding code and natural language queries, into real vectors and then using vector distance to approximate semantic correlation between code and the query. Multiple approaches exist for learning these embeddings, including unsupervised techniques, which rely only on a corpus of code examples, and supervised techniques, which use an aligned corpus of paired code and natural language descriptions. The goal of this supervision is to produce embeddings that are more similar for a query and the corresponding desired code snippet.</p>
 
@@ -4206,7 +4206,7 @@ tasks show that UniEmbed outperforms state-of-the-art models in feature learning
 			<a href='http://academic.microsoft.com/#/search?iq=Capturing%20source%20code%20semantics%20via%20tree-based%20convolution%20over%20API-enhanced%20AST' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>L. Chen, W. Ye, S. Zheng</td>
+	<td>Long Chen, Wei Ye, Shikun Zhang</td>
 	<td>Computing Frontiers</td>
 	<td><p>When deep learning meets big code, a key question is how to efficiently learn a distributed representation for source code that can capture its semantics effectively. We propose to use tree-based convolution over API-enhanced AST. To demonstrate the effectiveness of our approach, we apply it to detect semantic clones—code fragments with similar semantics but dissimilar syntax. Experiment results show that our approach outperforms an existing state-of-the-art approach that uses tree-based LSTM, with an increase of 0.39 and 0.12 in F1-score on OJClone and BigCloneBench respectively. We further propose architectures that incorporate our approach for code search and code summarization.</p>
 </td>
@@ -4333,7 +4333,7 @@ study, we found and reported 8 bugs of GCC, all of which are actively being addr
 			<a href='http://academic.microsoft.com/#/search?iq=A%20Literature%20Study%20of%20Embeddings%20on%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Z. Chen, M. Monperrus</td>
+	<td>Zimin Chen, Martin Monperrus</td>
 	<td></td>
 	<td><p>Natural language processing has improved tremendously after the success of word embedding techniques such as word2vec. Recently, the same idea has been applied on source code with encouraging results. In this survey, we aim to collect and discuss the usage of word embedding techniques on programs and source code. The articles in this survey have been collected by asking authors of related work and with an extensive search on Google Scholar. Each article is categorized into five categories: 1. embedding of tokens 2. embedding of functions or methods 3. embedding of sequences or sets of method calls 4. embedding of binary code 5. other embeddings. We also provide links to experimental data and show some remarkable visualization of code embeddings. In summary, word embedding has been successfully applied on different granularities of source code. With access to countless open-source repositories, we see a great potential of applying other data-driven natural language processing techniques on source code in the future.</p>
 </td>
@@ -4365,7 +4365,7 @@ study, we found and reported 8 bugs of GCC, all of which are actively being addr
 			<a href='http://academic.microsoft.com/#/search?iq=Mining%20Likely%20Analogical%20APIs%20across%20Third-Party%20Libraries%20via%20Large-Scale%20Unsupervised%20API%20Semantics%20Embedding' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>C. Chen ; Z. Xing ; Y. Liu, K. L. Xiong Ong</td>
+	<td>Chunyang Chen, Zhenchang Xing, Yang Liu, Kent Ong Long Xiong</td>
 	<td>TSE</td>
 	<td><p>Establishing API mappings between third-party libraries is a prerequisite step for library migration tasks. Manually establishing API mappings is tedious due to the large number of APIs to be examined. Having an automatic technique to create a database of likely API mappings can significantly ease the task. Unfortunately, existing techniques either adopt supervised learning mechanism that requires already-ported or functionality similar applications across major programming languages or platforms, which are difficult to come by for an arbitrary pair of third-party libraries, or cannot deal with lexical gap in the API descriptions of different libraries. To overcome these limitations, we present an unsupervised deep learning based approach to embed both API usage semantics and API description (name and document) semantics into vector space for inferring likely analogical API mappings between libraries. Based on deep learning models trained using tens of millions of API call sequences, method names and comments of 2.8 millions of methods from 135,127 GitHub projects, our approach significantly outperforms other deep learning or traditional information retrieval (IR) methods for inferring likely analogical APIs. We implement a proof-of-concept website which can recommend analogical APIs for 583,501 APIs of 111 pairs of analogical Java libraries with diverse functionalities. This scale of third-party analogical-API database has never been achieved before.</p>
 </td>
@@ -4381,7 +4381,7 @@ study, we found and reported 8 bugs of GCC, all of which are actively being addr
 			<a href='http://academic.microsoft.com/#/search?iq=SequenceR:%20Sequence-to-Sequence%20Learning%20for%20End-to-End%20Program%20Repair' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Z. Chen, S. Kommrusch, M. Tufano, L. Pouchet, D. Poshyvanyk, M. Monperrus</td>
+	<td>Zimin Chen, Steve Kommrusch, Michele Tufano, Louis-Noël Pouchet, Denys Poshyvanyk, Martin Monperrus</td>
 	<td></td>
 	<td><p>This paper presents a novel end-to-end approach to program repair based on sequence-to-sequence learning. We devise, implement, and evaluate a system, called SequenceR, for fixing bugs based on sequence-to-sequence learning on source code. This approach uses the copy mechanism to overcome the unlimited vocabulary problem that occurs with big code. Our system is data-driven; we train it on 35,578 commits, carefully curated from open-source repositories. We evaluate it on 4,711 independent real bug fixes, as well on the Defects4J benchmark used in program repair research. SequenceR is able to perfectly predict the fixed line for 950/4711 testing samples. It captures a wide range of repair operators without any domain-specific top-down design.</p>
 </td>
@@ -4644,7 +4644,7 @@ data source will inspire other researchers to work further on this problem.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Asm2Vec:%20Boosting%20Static%20Representation%20Robustness%20for%20Binary%20Clone%20Search%20against%20Code%20Obfuscation%20and%20Compiler%20Optimization' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>S. H. H. Ding, B. C. M. Fung, P. Charland</td>
+	<td>Steven H. H. Ding, Benjamin C. M. Fung, Philippe Charland</td>
 	<td>IEEE Symposium on Security and Privacy</td>
 	<td><p>Reverse engineering is a manually intensive but necessary technique for understanding the inner workings of new malware, finding vulnerabilities in existing systems, and detecting patent infringements in released software. An assembly clone search engine facilitates the work of reverse engineers by identifying those duplicated or known parts. However, it is challenging to design a robust clone search engine, since there exist various compiler optimization options and code obfuscation techniques that make logically similar assembly functions appear to be very different. A practical clone search engine relies on a robust vector representation of assembly code. However, the existing clone search approaches, which rely on a manual feature engineering process to form a feature vector for an assembly function, fail to consider the relationships between features and identify those unique patterns that can statistically distinguish assembly functions. To address this problem, we propose to jointly learn the lexical semantic relationships and the vector representation of assembly functions based on assembly code. We have developed an assembly code representation learning model \emph{Asm2Vec}. It only needs assembly code as input and does not require any prior knowledge such as the correct mapping between assembly functions. It can find and incorporate rich semantic relationships among tokens appearing in assembly code. We conduct extensive experiments and benchmark the learning model with state-of-the-art static and dynamic clone search approaches. We show that the learned representation is more robust and significantly outperforms existing methods against changes introduced by obfuscation and optimizations.</p>
 </td>
@@ -4696,7 +4696,7 @@ data source will inspire other researchers to work further on this problem.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Commit2Vec:%20Learning%20Distributed%20Representations%20of%20Code%20Changes' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>R. C. Lozoya, A. Baumann, A. Sabetta, M. Bezzi</td>
+	<td>Adelina Ciurumelea; Sebastian Proksch; Harald C. Gall</td>
 	<td></td>
 	<td><p>Deep learning methods, which have found successful applications in fields like image classification and natural language processing, have recently been applied to source code analysis too, due to the enormous amount of freely available source code (e.g., from open-source software repositories).</p>
 
@@ -4718,7 +4718,7 @@ data source will inspire other researchers to work further on this problem.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Neural%20Reverse%20Engineering%20of%20Stripped%20Binaries' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>Y. David, Uri Alon, Eran Yahav</td>
+	<td>Yaniv David, Uri Alon, Eran Yahav</td>
 	<td>ICLR</td>
 	<td><p>We address the problem of predicting procedure names in stripped executables which contain no debug information.
 Predicting procedure names can dramatically ease the task of reverse engineering, saving precious time and human effort. 
@@ -4906,7 +4906,7 @@ of the feasibility of the approach.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Path-Based%20Function%20Embedding%20and%20its%20Application%20to%20Specification%20Mining' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>D. DeFreez, A. V. Thakur, C. Rubio-González</td>
+	<td>Daniel DeFreez, Aditya V. Thakur, Cindy Rubio-González</td>
 	<td>ICSE</td>
 	<td><p>Identifying the relationships among program elements is useful
 for program understanding, debugging, and analysis. One such
@@ -4958,7 +4958,7 @@ support in Linux file systems and drivers.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=RefiNym:%20Using%20Names%20to%20Refine%20Types' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>S. Dash, Miltiadis Allamanis, Earl T. Barr</td>
+	<td>Santanu Dash, Miltiadis Allamanis, Earl T. Barr</td>
 	<td>FSE</td>
 	<td><p>Source code is bimodal: it combines a formal algorithmic channel and a natural language channel of identifiers and comments. In this work, we model the bimodality of code with name lows, an assignment low graph augmented to track identiier names. Conceptual types are logically distinct types that do not always coincide with program types. Passwords and URLs are example conceptual types that can share the program type string. Our tool, RefiNym, is an unsupervised method that mines a lattice of conceptual types from name lows and reiies them into distinct nominal types. For string, RefiNym inds and splits conceptual types originally merged into a single type, reducing the number of same-type variables per scope from 8.7 to 2.2 while eliminating 21.9% of scopes that have more than one same-type variable in scope. This makes the code more self-documenting and frees the type system to prevent a developer from inadvertently assigning data across conceptual types.</p>
 </td>
@@ -4974,7 +4974,7 @@ support in Linux file systems and drivers.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Open%20Vocabulary%20Learning%20on%20Source%20Code%20with%20a%20Graph-Structured%20Cache' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>M. Cvitkovic, B. Singh, A. Anandkumar</td>
+	<td>Milan Cvitkovic, Badal Singh, Anima Anandkumar</td>
 	<td></td>
 	<td><p>Machine learning models that take computer program source code as input typically use Natural Language Processing (NLP) techniques. However, a major challenge is that code is written using an open, rapidly changing vocabulary due to, e.g., the coinage of new variable and method names. Reasoning over such a vocabulary is not something for which most NLP methods are designed. We introduce a Graph-Structured Cache to address this problem; this cache contains a node for each new word the model encounters with edges connecting each word to its occurrences in the code. We find that combining this graph-structured cache strategy with recent Graph-Neural-Network-based models for supervised learning on code improves the models’ performance on a code completion task and a variable naming task — with over 100% relative improvement on the latter — at the cost of a moderate increase in computation time.</p>
 </td>
@@ -4990,7 +4990,7 @@ support in Linux file systems and drivers.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Compiler%20Fuzzing%20through%20Deep%20Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>C. Cummins, P. Petoumenos, H. Leather, A. Murray</td>
+	<td>Chris Cummins, Pavlos Petoumenos, Alastair Murray, Hugh Leather</td>
 	<td>ISSTA</td>
 	<td><p>Random program generation — fuzzing — is an effective technique
 for discovering bugs in compilers but successful fuzzers require
@@ -5143,7 +5143,7 @@ supervised neural machine translation approach.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Hierarchical%20Learning%20of%20Cross-Language%20Mappings%20through%20Distributed%20Vector%20Representations%20for%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>N. D. Q. Bui, L. Jiang</td>
+	<td>Nghi D. Q. Bui, Lingxiao Jiang</td>
 	<td>ICSE</td>
 	<td><p>Translating a program written in one programming language to another can be useful for software development tasks that need functionality implementations in different languages. Although past studies have considered this problem, they may be either specific to the language grammars, or specific to certain kinds of code elements (e.g., tokens, phrases, API uses). This paper proposes a new approach to automatically learn cross-language representations for various kinds of structural code elements that may be used for program translation. Our key idea is two folded: First, we normalize and enrich code token streams with additional structural and semantic information, and train cross-language vector representations for the tokens (a.k.a. shared embeddings based on word2vec, a neural-network-based technique for producing word embeddings; Second, hierarchically from bottom up, we construct shared embeddings for code elements of higher levels of granularity (e.g., expressions, statements, methods) from the embeddings for their constituents, and then build mappings among code elements across languages based on similarities among embeddings. 
 Our preliminary evaluations on about 40,000 Java and C# source files from 9 software projects show that our approach can automatically learn shared embeddings for various code elements in different languages and identify their cross-language mappings with reasonable Mean Average Precision scores. When compared with an existing tool for mapping library API methods, our approach identifies many more mappings accurately. The mapping results and code can be accessed at this https URL. We believe that our idea for learning cross-language vector representations with code structural information can be a useful step towards automated program translation.</p>
@@ -5160,7 +5160,7 @@ Our preliminary evaluations on about 40,000 Java and C# source files from 9 soft
 			<a href='http://academic.microsoft.com/#/search?iq=Cross-Language%20Learning%20for%20Program%20Classification%20using%20Bilateral%20Tree-Based%20Convolutional%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>N. Bui, L. Jiang, Y. Yu</td>
+	<td>Nghi D. Q. Bui, Lingxiao Jiang, Yijun Yu</td>
 	<td>NLSE</td>
 	<td><p>Towards the vision of translating code that implements an algorithm from one programming language into another, this
 paper  proposes  an  approach  for  automated  program  classification using
@@ -5190,7 +5190,7 @@ snippet, we achieved over 80% precision.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Bilateral%20Dependency%20Neural%20Networks%20for%20Cross-Language%20Algorithm%20Classification' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>N. D. Q. Bui, Y. Yu, L. Jiang</td>
+	<td>Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang</td>
 	<td>SANER</td>
 	<td><p>Algorithm  classification  is  to  automatically  identify
 the  classes  of  a  program  based  on  the  algorithm(s)  and/or  data
@@ -5725,7 +5725,7 @@ in finding solutions.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=End-to-end%20Deep%20Learning%20of%20Optimization%20Heuristics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>C. Cummins, P. Petoumenos, Z. Wang, H. Leather</td>
+	<td>Chris Cummins, Pavlos Petoumenos, Zheng Wang, Hugh Leather</td>
 	<td></td>
 	<td><p>Accurate automatic optimization heuristics are necessary for dealing with the complexity and diversity of modern hardware and software. Machine learning is a proven technique for learning such heuristics, but its success is bound by the quality of the features used. These features must be hand crafted by developers through a combination of expert domain knowledge and trial and error. This makes the quality of the final model directly dependent on the skill and available time of the system architect.</p>
 
@@ -5944,7 +5944,7 @@ learn to solve graph problems such as the Traveling Salesman Problem.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Synthesizing%20benchmarks%20for%20predictive%20modeling' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>C. Cummin, P. Petoumenos, Z. Wang, H. Leather</td>
+	<td>Chris Cummins, Pavlos Petoumenos, Zheng Wang, Hugh Leather</td>
 	<td>CGO</td>
 	<td><p>Predictive modeling using machine learning is an effective method for building compiler heuristics, but there is a shortage of benchmarks. Typical machine learning experiments outside of the compilation field train over thousands or millions of examples. In machine learning for compilers, however, there are typically only a few dozen common benchmarks available. This limits the quality of learned models, as they have very sparse training data for what are often high-dimensional feature spaces. What is needed is a way to generate an unbounded number of training programs that finely cover the feature space. At the same time the generated programs must be similar to the types of programs that human developers actually write, otherwise the learning will target the wrong parts of the feature space. We mine open source repositories for program fragments and apply deep learning techniques to automatically construct models for how humans write programs. We sample these models to generate an unbounded number of runnable training programs. The quality of the programs is such that even human developers struggle to distinguish our generated programs from hand-written code. We use our generator for OpenCL programs, CLgen, to automatically synthesize thousands of programs and show that learning over these improves the performance of a state of the art predictive model by 1.27x. In addition, the fine covering of the feature space automatically exposes weaknesses in the feature design which are invisible with the sparse training examples from existing benchmark suites. Correcting these weaknesses further increases performance by 4.30x.</p>
 </td>
@@ -6163,7 +6163,7 @@ LSTM based deep-learning models.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Semantic%20Code%20Repair%20using%20Neuro-Symbolic%20Transformation%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>J. Devlin, J. Uesato, R. Shingh, P. Kohli</td>
+	<td>Jacob Devlin, Jonathan Uesato, Rishabh Singh, Pushmeet Kohli</td>
 	<td></td>
 	<td><p>We study the problem of semantic code repair, which can be broadly defined as automatically fixing
 non-syntactic bugs in source code. The majority of past work in semantic code repair assumed access
@@ -6839,8 +6839,8 @@ syntax errors, we query the learnt RNN model with the prefix token sequence to p
 			<a href='http://academic.microsoft.com/#/search?iq=A%20deep%20language%20model%20for%20software%20code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>H. K. Dam, T. Tran, T. Pham</td>
-	<td>ArXiV 1608.02715</td>
+	<td>Hoa Khanh Dam, Truyen Tran, Trang Pham</td>
+	<td></td>
 	<td><p>Existing language models such as n-grams for software code often fail to capture a long context where dependent code elements scatter far apart. In this paper, we propose a novel approach to build a language model for software code to address this particular issue. Our language model, partly inspired by human memory, is built upon the powerful deep learning-based Long Short Term Memory architecture that is capable of learning long-term dependencies which occur frequently in software code. Results from our intrinsic evaluation on a corpus of Java projects have demonstrated the effectiveness of our language model. This work contributes to realizing our vision for DeepSoft, an end-to-end, generic deep learning-based framework for modeling software and its development process.</p>
 </td>
 	<td>language model code generation </td>
@@ -6875,7 +6875,7 @@ sequence of words in a query and the sequence of associated APIs. DeepAPI adapts
 			<a href='http://academic.microsoft.com/#/search?iq=Automatically%20generating%20features%20for%20learning%20program%20analysis%20heuristics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>K. Chae, H. Oh, K. Heo, H. Yang</td>
+	<td>Kwonsoo Chae, Hakjoo Oh, Kihong Heo, Hongseok Yang</td>
 	<td></td>
 	<td><p>We present a technique for automatically generating features for data-driven program analyses. Recently data-driven approaches for building a program analysis have been proposed, which mine existing codebases and automatically learn heuristics for finding a cost-effective abstraction for a given analysis task. Such approaches reduce the burden of the analysis designers, but they do not remove it completely; they still leave the highly nontrivial task of designing so called features to the hands of the designers. Our technique automates this feature design process. The idea is to use programs as features after reducing and abstracting them. Our technique goes through selected program-query pairs in codebases, and it reduces and abstracts the program in each pair to a few lines of code, while ensuring that the analysis behaves similarly for the original and the new programs with respect to the query. Each reduced program serves as a boolean feature for program-query pairs. This feature evaluates to true for a given program-query pair when (as a program) it is included in the program part of the pair. We have implemented our approach for three real-world program analyses. Our experimental evaluation shows that these analyses with automatically-generated features perform comparably to those with manually crafted features.</p>
 </td>
@@ -7325,7 +7325,7 @@ for attacking a wide range of difficult problems in the context of
 			<a href='http://academic.microsoft.com/#/search?iq=Irish:%20A%20Hidden%20Markov%20Model%20to%20detect%20coded%20information%20islands%20in%20free%20text' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>L. Cerulo, M. Di Penta, A. Bacchelli, M, Ceccarelli, G. Canfora</td>
+	<td>Luigi Cerulo, Michele Ceccarelli, Massimiliano Di Penta, Gerardo Canfora</td>
 	<td>Science of Computer Programming</td>
 	<td><p>Developers’ communication, as contained in emails, issue trackers, and forums, is a precious source of information to support the development process. For example, it can
 be used to capture knowledge about development practice or about a software project itself. Thus, extracting the content of developers’ communication can be useful to support
@@ -7790,7 +7790,7 @@ the first step toward deep learning software repositories.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Exploring%20the%20Use%20of%20Deep%20Learning%20for%20Feature%20Location' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>C.S. Corley, K. Damevski, N.A. Kraft</td>
+	<td>Christopher S. Corley, Kostadin Damevski, Nicholas A. Kraft</td>
 	<td></td>
 	<td><p>Deep learning models are a class of neural networks. Relative to n-gram models, deep learning models can capture more complex statistical patterns based on smaller training corpora. In this paper we explore the use of a particular deep learning model, document vectors (DVs), for feature location. DVs seem well suited to use with source code, because they both capture the influence of context on each term in a corpus and map terms into a continuous semantic space that encodes semantic relationships such as synonymy. We present preliminary results that show that a feature location technique (FLT) based on DVs can outperform an analogous FLT based on latent Dirichlet allocation (LDA) and then suggest several directions for future work on the use of deep learning models to improve developer effectiveness in feature location.</p>
 </td>
@@ -8043,7 +8043,7 @@ labeling for training data or manual definition of rules.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=Syntax%20Errors%20Just%20Aren%E2%80%99t%20Natural:%20Improving%20Error%20Reporting%20with%20Language%20Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>J. C. Campbell, A. Hindle, J. N. Amaral</td>
+	<td>Joshua Charles Campbell, Abram Hindle, José Nelson Amaral</td>
 	<td>MSR</td>
 	<td><p>A frustrating aspect of software development is that compiler error messages often fail to locate the actual cause of a syntax error. An errant semicolon or brace can result in
 many errors reported throughout the file. We seek to find the actual source of these syntax errors by relying on the consistency of software: valid source code is usually repetitive and unsurprising. We exploit this consistency by constructing a simple N-gram language model of lexed source code tokens. We implemented an automatic Java syntax-error locator using the corpus of the project itself and evaluated its performance on mutated source code from several projects. Our tool, trained on the past versions of a project, can effectively augment the syntax error locations produced by the native compiler. Thus we provide a methodology and tool that exploits the naturalness of software source code to detect syntax errors alongside the parser.</p>
@@ -8266,7 +8266,7 @@ higher accuracy than the state-of-the-art approach.</p>
 			<a href='http://academic.microsoft.com/#/search?iq=A%20Hidden%20Markov%20Model%20to%20Detect%20Coded%20Information%20Islands%20in%20Free%20Text' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
 		</span>
 	</td>
-	<td>L. Cerulo, M. Ceccarelli, M. Di Penta, G. Canfora</td>
+	<td>Luigi Cerulo, Michele Ceccarelli, Massimiliano Di Penta, Gerardo Canfora</td>
 	<td>SCAM</td>
 	<td><p>Emails and issue reports capture useful knowledge about development practices, bug fixing, and change activities. Extracting such a content is challenging, due to the mix-up of
 source code and natural language, unstructured text.</p>
