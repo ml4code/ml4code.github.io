@@ -18,7 +18,7 @@
 
   <title>
     
-      Predicting Program Properties from “Big Code” &middot; Machine Learning for Big Code and Naturalness
+      SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -101,46 +101,23 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Predicting Program Properties from “Big Code”</h1>
-  <h5>Veselin Raychev, Martin Vechev, A. Krause. POPL 2015</h5>
+  <h1 class="page-title">SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics</h1>
+  <h5>He Ye, Matias Martinez, Xiapu Luo, Tao Zhang, Martin Monperrus.  2022</h5>
   <p>
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Predicting Program Properties from “Big Code”' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Predicting Program Properties from “Big Code”' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Predicting%20Program%20Properties%20from%20%E2%80%9CBig%20Code%E2%80%9D' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
+      [<a href="https://arxiv.org/abs/2203.12755" target="_blank">ArXiV</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=SelfAPR:%20Self-supervised%20Program%20Repair%20with%20Test%20Execution%20Diagnostics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#program analysis">program analysis</a></tag>
+      <tag><a href="/tags.html#repair">repair</a></tag>
     
-      <tag><a href="/tags.html#naming">naming</a></tag>
-    
-      <tag><a href="/tags.html#types">types</a></tag>
-    
-      <tag><a href="/tags.html#deobfuscation">deobfuscation</a></tag>
+      <tag><a href="/tags.html#execution">execution</a></tag>
     
   </p>
-  <p><p>We present a new approach for predicting program properties from
-massive codebases (aka “Big Code”). Our approach first learns a
-probabilistic model from existing data and then uses this model to
-predict properties of new, unseen programs.</p>
-
-<p>The key idea of our work is to transform the input program into
-a representation which allows us to phrase the problem of inferring program properties as structured prediction in machine learning. This formulation enables us to leverage powerful probabilistic
-graphical models such as conditional random fields (CRFs) in order
-to perform joint prediction of program properties.</p>
-
-<p>As an example of our approach, we built a scalable prediction
-engine called JSNICE 1 for solving two kinds of problems in the
-context of JavaScript: predicting (syntactic) names of identifiers
-and predicting (semantic) type annotations of variables. Experimentally, JSNICE predicts correct names for 63% of name identifiers and its type annotation predictions are correct in 81% of the
-cases. In the first week since its release, JSN ICE was used by more
-than 30,000 developers and in only few months has become a popular tool in the JavaScript developer community.</p>
-
-<p>By formulating the problem of inferring program properties as
-structured prediction and showing how to perform both learning
-and inference in this context, our work opens up new possibilities
-for attacking a wide range of difficult problems in the context of
-“Big Code” including invariant generation, de-compilation, synthesis and others.</p>
+  <p><p>Neural program repair has achieved good results in a recent series of papers. Yet, we observe that the related work fails to repair some bugs because of a lack of knowledge about 1) the program being repaired, and 2) the actual fault being repaired. In this paper, we solve both problems by changing the learning paradigm from supervised training to self-supervised training in an approach called SelfAPR. First, SelfAPR generates and constructs training samples by perturbing a previous version of the program being repaired, enforcing the neural model to capture project-specific knowledge. This is different from all the existing work based on past commits. Second, SelfAPR extracts and encodes test execution diagnostics into the input representation, steering the neural model to fix the specific kind of fault. This is different from the existing studies that only consider static source code in the input. We implement SelfAPR and evaluate it in a systematic manner. We train SelfAPR with 253 411 training samples obtained by perturbing 17 open-source projects. We evaluate SelfAPR on 818 bugs from Defects4J, SelfAPR correctly repairs 112 of them.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -153,7 +130,7 @@ for attacking a wide range of difficult problems in the context of
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/raychev2015predicting.json', function(data) {
+        $.getJSON('/publications-metadata/ye2022selfapr.json', function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
