@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection
-authors: L. Büch, A. Andrzejak
+authors: Lutz Büch, Artur Andrzejak
 conference: SANER
 year: 2019
 bibkey: buech2019learning

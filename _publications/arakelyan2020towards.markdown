@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Towards Learning Representations of Binary Executable Files for Security Tasks"
-authors: S. Arakelyan, C. Hauser, E. Kline, A. Galstyan
+authors: Shushan Arakelyan, Sima Arasteh, Christophe Hauser, Erik Kline, Aram Galstyan
 conference: AAAI
 year: 2020
 bibkey: arakelyan2020towards

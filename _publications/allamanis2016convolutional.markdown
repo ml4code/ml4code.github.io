@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: A Convolutional Attention Network for Extreme Summarization of Source Code
-authors: Miltiadis Allamanis, H. Peng, Charles Sutton
+authors: Miltiadis Allamanis, Hao Peng, Charles Sutton
 conference: ICML
 year: 2016
 bibkey: allamanis2016convolutional

@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Neural Code Comprehension: A Learnable Representation of Code Semantics"
-authors: T. Ben-Nun A. S. Jakobovits, T. Hoefler
-conference: NIPS
+authors: Tal Ben-Nun, Alice Shoshana Jakobovits, Torsten Hoefler
+conference: NeurIPS
 year: 2018
 bibkey: bennun2018neural
 tags: ["representation"]

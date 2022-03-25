@@ -1,11 +1,12 @@
 ---
 layout: publication
 title: "A parallel corpus of Python functions and documentation strings for automated code documentation and code generation"
-authors: A.V.M. Barone, R. Sennrich
-conference: ArXiV 1707.02275
+authors: Antonio Valerio Miceli Barone, Rico Sennrich
+conference:
 year: 2017
 bibkey: barone2017parallel
 additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1707.02275"}
    - {name: "code", url: "https://github.com/EdinburghNLP/code-docstring-corpus"}
 tags: ["documentation", "summarization", "dataset"]
 ---

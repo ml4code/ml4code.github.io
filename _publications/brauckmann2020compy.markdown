@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "ComPy-Learn: A toolbox for exploring machine learning representations for compilers"
-authors: A. Brauckmann, A. Goens, J. Castrillon
+authors: Alexander Brauckmann, Andrés Goens, Jeronimo Castrillon
 conference: FDL
 year: 2020
 bibkey: brauckmann2020compy

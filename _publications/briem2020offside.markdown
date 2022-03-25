@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "OffSide: Learning to Identify Mistakes in Boundary Conditions"
-authors: J. A. Briem, J. Smit, H. Sellik, P. Rapoport, G. Gousios, M. Aniche
+authors: Jón Arnar Briem, Jordi Smit, Hendrig Sellik, Pavel Rapoport, Georgios Gousios, Maurício Aniche.
 conference: "2nd Workshop on Testing for Deep Learning and Deep Learning for Testing"
 year: 2020
 bibkey: briem2020offside

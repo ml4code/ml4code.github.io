@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "AutoPandas: neural-backed generators for program synthesis"
-authors: R. Bavishi, C. Lemieux, R. Fox, K. Sen, I. Stoica
+authors: Rohan Bavishi, Caroline Lemieux, Roy Fox, Koushik Sen, Ion Stoica
 conference: OOPSLA
 year: 2019
 bibkey: bavishi2019autopandas

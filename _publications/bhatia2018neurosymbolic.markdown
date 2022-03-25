@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neuro-symbolic program corrector for introductory programming assignments"
-authors: S. Bhatia, P. Kohli, R. Singh
+authors: Sahil Bhatia, Pushmeet Kohli, Rishabh Singh
 conference: ICSE
 year: 2018
 bibkey: bhatia2018neurosymbolic

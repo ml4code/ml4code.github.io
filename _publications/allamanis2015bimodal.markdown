@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: A Bimodal Modelling of Source Code and Natural Language
-authors: Miltiadis Allamanis, Daniel Tarlow, A. D. Gordon, Y. Wei
+authors: Miltiadis Allamanis, Daniel Tarlow, Andrew Gordon, Yi Wei
 conference: ICML
 year: 2015
 bibkey: allamanis2015bimodal

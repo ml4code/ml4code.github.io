@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "JuICe: A Large Scale Distantly Supervised Dataset for Open Domain Context-based Code Generation"
-authors: R. Agashe, S. Iyer, L. Zettlemoyer
+authors: Rajas Agashe, Srinivasan Iyer, Luke Zettlemoyer
 conference:
 year: 2019
 bibkey: agashe2019julce

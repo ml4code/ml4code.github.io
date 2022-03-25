@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning from Examples to Improve Code Completion Systems"
-authors: M. Bruch, M. Monperrus, and M. Mezini
+authors: Marcel Bruch, Martin Monperrus, Mira Mezini.
 conference: ESEC/FSE 
 year: 2009
 bibkey: bruch2009learning

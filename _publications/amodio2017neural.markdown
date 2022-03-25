@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Attribute Machines for Program Generation"
-authors: M. Amodio, S. Chaudhuri, T. Reps
+authors: Matthew Amodio, Swarat Chaudhuri, Thomas W. Reps
 conference: 
 year: 2017
 bibkey: amodio2017neural

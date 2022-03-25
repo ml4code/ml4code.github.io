@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Learning to Represent Programs with Graphs
-authors: Miltiadis Allamanis, M. Brockschmidt, M. Khademi
+authors: Miltiadis Allamanis, Marc Brockschmidt, Mahmoud Khademi
 conference: "ICLR"
 year: 2018
 bibkey: allamanis2018learning

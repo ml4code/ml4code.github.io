@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Using Machine Translation for Converting Python 2 to Python 3 Code"
-authors: K. Aggarwal, M. Salameh, and A. Hindle
+authors: Karan Aggarwal, Mohammad Salameh, Abram Hindle
 conference: 
 year: 2015
 bibkey: aggarwal2015using

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Statistical Deobfuscation of Android Applications"
-authors: B. Bichsel, Veselin Raychev, P. Tsankov, Martin Vechev
+authors: Benjamin Bichsel, Veselin Raychev, Petar Tsankov, Martin Vechev
 conference: CCS
 year: 2016
 bibkey: bichsel2016statistical

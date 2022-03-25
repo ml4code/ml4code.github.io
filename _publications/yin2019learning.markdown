@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Represent Edits"
-authors: Pengcheng Yin, Graham Neubig, Miltiadis Allamanis, M. Brockschmidt, A. L. Gaunt
+authors: Pengcheng Yin, Graham Neubig, Miltiadis Allamanis, Marc Brockschmidt, A. L. Gaunt
 conference: ICLR
 year: 2019
 bibkey: yin2019learning

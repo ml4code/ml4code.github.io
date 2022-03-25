@@ -1,12 +1,12 @@
 ---
 layout: publication
 title: "Context2Name: A Deep Learning-Based Approach to Infer Natural Variable Names from Usage Contexts"
-authors: R. Bavishi, M. Pradel, K. Sen
+authors: Rohan Bavishi, Michael Pradel, Koushik Sen
 conference: 
 year: 2017
 bibkey: bavishi2017context2name
 additional_links:
-   - {name: "ArXiV", url: "https://arxiv.org/pdf/1809.05193.pdf"}
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1809.05193"}
 tags: ["naming"]
 ---
 Most of the JavaScript code deployed in the wild has been minified, a process in which identifier names are replaced

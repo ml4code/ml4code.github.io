@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Compiler-based graph representations for deep learning models of code"
-authors: A. Brauckmann, A. Goens, S. Ertel, J. Castrillon
+authors: Alexander Brauckmann, Andres Goens, Sebastian Ertel, Jeronimo Castrillon
 conference: CC
 year: 2020
 bibkey: brauckmann2020compiler
