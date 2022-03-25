@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Code to Comment \"Translation\": Data, Metrics, Baselining & Evaluation"
-authors: David Gros, Hariharan Sezhiyan, Prem Devanbu, Zhou Yu
+authors: David Gros, Hariharan Sezhiyan, Premkumar Devanbu, Zhou Yu
 conference:
 year: 2020
 bibkey: gros2020code

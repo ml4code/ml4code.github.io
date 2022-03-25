@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Intelligent code reviews using deep learning"
-authors: A. Gupta, N. Sundaresan
+authors: Anshul Gupta, Neel Sundaresan
 conference: KDD
 year: 2018
 bibkey: gupta2018intelligent

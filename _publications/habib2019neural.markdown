@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Bug Finding: A Study of Opportunities and Challenges"
-authors: A. Habib, M. Pradel
+authors: Andrew Habib, Michael Pradel
 conference: 
 year: 2019
 bibkey: habib2019neural

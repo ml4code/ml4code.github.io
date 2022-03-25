@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Parameter-Free Probabilistic API Mining across GitHub"
-authors: J. Fowkes, Charles Sutton
+authors: Jaroslav Fowkes, Charles Sutton
 conference: FSE
 year: 2016
 bibkey: fowkes2016parameter

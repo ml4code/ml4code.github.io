@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "A Retrieve-and-Edit Framework for Predicting Structured Outputs"
-authors: T. B. Hashimoto, K. Guu, Y. Oren, P. Liang
-conference: NIPS
+authors: Tatsunori B. Hashimoto, Kelvin Guu, Yonatan Oren, Percy S. Liang
+conference: NeurIPS
 year: 2018
 bibkey: hashimoto2018retrieve
 tags: ["bimodal", "search", "code generation"]

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "PathMiner : A Library for Mining of Path-Based Representations of Code"
-authors: V. Kovalenko, E. Bogomolov, A. Bacchelli
+authors: Vladimir Kovalenko, Egor Bogomolov, Timofey Bryksin, Alberto Bacchelli.
 conference: MSR
 year: 2019
 bibkey: kovalenko2019pathminer

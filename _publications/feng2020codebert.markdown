@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "CodeBERT: A Pre-Trained Model for Programming and Natural Languages"
-authors: Z. Feng, D. Guo, D. Tang, N. Duan, X. Feng, M. Gong, L. Shou, B. Qin, T. Liu, D. Jiang, M. Zhou
+authors: Zhangyin Feng, Daya Guo, Duyu Tang, Nan Duan, Xiaocheng Feng, Ming Gong, Linjun Shou, Bing Qin, Ting Liu, Daxin Jiang, Ming Zhou
 conference: 
 year: 2020
 bibkey: feng2020codebert

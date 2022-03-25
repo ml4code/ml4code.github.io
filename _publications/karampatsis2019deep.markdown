@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Maybe Deep Neural Networks are the Best Choice for Modeling Source Code"
-authors: R.M. Karampatsis, Charles Sutton
+authors: Rafael-Michael Karampatsis, Charles Sutton
 conference:
 year: 2019
 bibkey: karampatsis2019deep

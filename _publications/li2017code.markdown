@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Code Completion with Neural Attention and Pointer Networks
-authors: J. Li, Y. Wang, I. King, M. R. Lyu
+authors: Jian Li, Yue Wang, Michael R. Lyu, Irwin King
 conference: 
 year: 2017
 bibkey: li2017code

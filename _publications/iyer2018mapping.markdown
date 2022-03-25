@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Mapping Language to Code in Programmatic Context"
-authors: S. Iyer, I. Konstas, A. Cheung, L. Zettlemoyer
+authors: Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Luke Zettlemoyer
 conference: EMNLP
 year: 2018
 bibkey: iyer2018mapping

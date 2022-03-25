@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Semantically enhanced software traceability using deep learning techniques"
-authors: J. Guo, J. Cheng, J. Cleland-Huang
+authors: Jin Guo, Jinghui Cheng, Jane Cleland-Huang
 conference: ICSE
 year: 2017
 bibkey: guo2017semantically

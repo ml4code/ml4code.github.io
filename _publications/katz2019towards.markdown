@@ -1,10 +1,12 @@
 ---
 layout: publication
 title: "Towards Neural Decompilation"
-authors: O. Katz, Y. Olshaker, Y. Goldberg, Eran Yahav
+authors: Omer Katz, Yuval Olshaker, Yoav Goldberg, Eran Yahav
 conference:
 year: 2019
 bibkey: katz2019towards
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1905.08325"}
 tags: ["decompilation"]
 ---
 We address the problem of automatic decompilation, converting a program in low-level representation back to a higher-level human-readable programming language. The problem of decompilation is extremely important for security researchers. Finding vulnerabilities and understanding how malware operates is much easier when done over source code.

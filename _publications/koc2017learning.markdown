@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning a Classifier for False Positive Error Reports Emitted by Static Code Analysis Tools"
-authors: U. Koc, P. Saadatpanah, J. S. Foster, A. A. Porter
+authors: Ugur Koc, Parsa Saadatpanah, Jeffrey S. Foster, Adam A. Porter.
 conference: MAPL
 year: 2017
 bibkey: koc2017learning

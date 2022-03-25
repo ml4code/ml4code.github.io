@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Factor Graph Model for Software Bug Finding"
-authors: T. Kremenek, A.Y. Ng, D. Engler
+authors: Ted Kremenek, Andrew Y. Ng, Dawson R. Engler. 
 conference: IJCAI
 year: 2007
 bibkey: kremenek2007factor

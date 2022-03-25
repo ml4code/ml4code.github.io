@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Reinforcement Learning for Programming Language Correction"
-authors: R. Gupta, A. Kanade, S. Shevade
+authors: Rahul Gupta, Aditya Kanade, Shirish Shevade
 conference: 
 year: 2018
 bibkey: gupta2018deep

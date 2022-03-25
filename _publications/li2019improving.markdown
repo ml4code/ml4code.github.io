@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: Improving Bug Detection via Context-Based Code Representation Learning and Attention-Based Neural Networks
-authors: Y. Li, S. Wang, T. N. Nguyen, S. V. Nguyen
-conference: OOPSLA 2019
+authors: Yi Li, Shaohua Wang, Tien N. Nguyen, Son Van Nguyen
+conference: OOPSLA
 year: 2019
 bibkey: li2019improving
 tags: ["representation", "defect"]

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep API Learning"
-authors: X. Gu, H. Zhang, D. Zhang, S. Kim
+authors: Xiaodong Gu, Hongyu Zhang, Dongmei Zhang, Sunghun Kim.
 conference: FSE
 year: 2016
 bibkey: gu2016deep

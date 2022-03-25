@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Type Annotation: Is Big Data Enough?"
-authors: Kevin Jesse, Premkumar T. Devanbu, Toufique Ahmed
+authors: Kevin Jesse, Premkumar Devanbu, Toufique Ahmed
 conference: FSE
 year: 2021
 bibkey: jesse2021learning

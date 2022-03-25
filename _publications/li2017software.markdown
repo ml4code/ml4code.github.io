@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Software Defect Prediction via Convolutional Neural Network"
-authors: J. Li, P. He, J. Zhu, and M. R. Lyu
+authors: Jian Li, Pinjia He, Jieming Zhu, Michael R. Lyu
 conference: QRS
 year: 2017
 bibkey: li2017software

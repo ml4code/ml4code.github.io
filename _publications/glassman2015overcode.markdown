@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "OverCode: visualizing variation in student solutions to programming problems at scale"
-authors: E.L. Glassman, J. Scott, R. Singh, P. Guo, and R.C. Miller 
+authors: Elena L. Glassman, Jeremy Scott, Rishabh Singh, Philip J. Guo, Robert C. Miller
 journal: TOCHI
 year: 2015
 bibkey: glassman2015overcode

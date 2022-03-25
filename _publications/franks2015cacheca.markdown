@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "CACHECA: A Cache Language Model Based Code Suggestion Tool"
-authors: C. Franks, Z. Tu, Premkumar Devanbu, Vincent Hellendoorn
+authors: Christine Franks, Zhaopeng Tu, Premkumar Devanbu, Vincent Hellendoorn
 conference: ICSE
 year: 2015
 bibkey: franks2015cacheca

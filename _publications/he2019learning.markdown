@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning to Fuzz from Symbolic Execution with Application to Smart Contracts"
-authors: J. He, M. Balunovic, N. Ambroladze, P. Tsanakov, Martin Vechev
+authors: Jingxuan He, Mislav Balunović, Nodar Ambroladze, Petar Tsankov, Martin Vechev
 conference: CCS
 year: 2019
 bibkey: he2019learning

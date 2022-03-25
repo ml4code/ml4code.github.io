@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Neural-Network Guided Expression Transformation"
-authors: R. Edelmann, V. Kuncak
+authors: Romain Edelmann, Viktor Kunčak
 conference:
 year: 2019
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1902.02194"}
 bibkey: edelmann2019neural
 tags: ["optimization", "grammar"]
 ---

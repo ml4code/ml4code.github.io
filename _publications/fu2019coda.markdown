@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Coda: An End-to-End Neural Program Decompiler"
-authors: C. Fu, H. Chen, H. Liu, X. Chen, Y. Tian, F. Koushanfar, J. Zhao
+authors: Cheng Fu, Huili Chen, Haolan Liu, Xinyun Chen, Yuandong Tian, Farinaz Koushanfar, Jishen Zhao
 conference: NeurIPS
 year: 2019
 bibkey: fu2019coda

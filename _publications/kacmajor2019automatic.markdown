@@ -1,7 +1,7 @@
 ---
 layout: publication
-title: "Automatic Acquisition of Annotated Training Corpora for Test-Code Generation "
-authors: M. Kacmajor, J. D. Kelleher
+title: "Automatic Acquisition of Annotated Training Corpora for Test-Code Generation"
+authors: Magdalena Kacmajor, John D. Kelleher.
 conference: Information
 year: 2019
 bibkey: kacmajor2019automatic

@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Automatically Generating Commit Messages from Diffs using Neural Machine Translation"
-authors: S. Jiang, A. Armaly, C. McMillan 
-conference: ArXiV 1708.09492 
+authors: Siyuan Jiang, Ameer Armaly, Collin McMillan
+conference: ASE
 year: 2017
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1708.09492"}
 bibkey: jiang2017automatically
 tags: ["edit", "bimodal"]
 ---

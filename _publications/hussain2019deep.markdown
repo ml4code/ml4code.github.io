@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Transfer Learning for Source Code Modeling"
-authors: Y. Hussain, Z. Huang, Y. Zhou, S. Wang
+authors: Yasir Hussain, Zhiqiu Huang, Yu Zhou, Senzhang Wang
 conference:
 year: 2019
 bibkey: hussain2019deep

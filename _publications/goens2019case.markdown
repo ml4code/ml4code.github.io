@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A case study on machine learning for synthesizing benchmarks"
-authors: A. Goens, A. Brauckmann, S. Ertel, C. Cummins, H. Leather, J. Castrillon
+authors: Andrés Goens, Alexander Brauckmann, Sebastian Ertel, Chris Cummins, Hugh Leather, Jeronimo Castrillon
 conference: MAPL
 year: 2019
 bibkey: goens2019case

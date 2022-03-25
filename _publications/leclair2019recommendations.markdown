@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Recommendations for Datasets for Source Code Summarization"
-authors: A. LeClair, C. McMillan
+authors: Alexander LeClair, Collin McMillan
 conference: NAACL 2019
 year: 2019
 bibkey: leclair2019recommendations

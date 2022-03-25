@@ -1,10 +1,12 @@
 ---
 layout: publication
 title: "Exploring the Naturalness of Buggy Code with Recurrent Neural Network"
-authors: J. Lanchantin, J. Gao
+authors: Jack Lanchantin, Ji Gao
 conference: 
 year: 2018
 bibkey: lanchantin2018exploring
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1803.08793"}
 tags: ["language model", "defect"]
 ---
 Statistical   language   models   are   powerful   tools

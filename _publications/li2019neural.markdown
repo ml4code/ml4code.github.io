@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Code Search Evaluation Dataset"
-authors: H. Li, S. Kim, S. Chandra
+authors: Hongyu Li, Seohyun Kim, Satish Chandra
 conference:
 year: 2019
 bibkey: li2019neural

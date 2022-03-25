@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "TreeCaps: Tree-Structured Capsule Networks for Program Source Code Processing"
-authors: V. Jayasundara, N. Bui, L. Jiang, D. Lo
+authors: Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Luke Zettlemoyer
 conference:
 year: 2019
 bibkey: jayasundara2019treecaps

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Using Semantic Unification to Generate Regular Expressions from Natural Language"
-authors: N. Kushman, R. Barzilay
+authors: Nate Kushman, Regina Barzilay
 conference: NAACL
 year: 2013
 bibkey: kushman2013using

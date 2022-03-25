@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Programmatic Idioms for Scalable Semantic Parsing"
-authors: S. Iyer, A. Cheung, L. Zettlemoyer
+authors: Srinivasan Iyer, Alvin Cheung, Luke Zettlemoyer
 conference: 
 year: 2019
 bibkey: iyer2019learning

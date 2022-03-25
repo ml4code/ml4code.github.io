@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "SPoC: Search-based Pseudocode to Code"
-authors: S. Kulal, P. Pasupat, K. Chandra, M. Lee, O. Padon, A. Aiken, P. Liang
+authors: Sumith Kulal, Panupong Pasupat, Kartik Chandra, Mina Lee, Oded Padon, Alex Aiken, Percy S. Liang
 conference:
 year: 2019
 bibkey: kulal2019spoc

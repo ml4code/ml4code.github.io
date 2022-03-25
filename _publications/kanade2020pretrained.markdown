@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Pre-trained Contextual Embedding of Source Code"
-authors: A. Kanade, P. Maniatis, G. Balakrishnan, K. Shi
-conference:
+authors: Aditya Kanade, Petros Maniatis, Gogul Balakrishnan, Kensen Shi
+conference: ICML
 year: 2020
 bibkey: kanade2020pretrained
 additional_links:

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Semantic Source Code Models Using Identifier Embeddings"
-authors: V. Efstathiou, D. Spinellis
+authors: Vasiliki Efstathiou, Diomidis Spinellis
 conference: MSR
 year: 2019
 bibkey: efstathiou2019semantic

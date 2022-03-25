@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deep Code Search"
-authors: X. Gu, H. Zhang, S. Kim
+authors: Xiaodong Gu, Hongyu Zhang, Sunghun Kim.
 conference: ICSE
 year: 2018
 bibkey: gu2018deep

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Using GGNN to recommend log statement level"
-authors: M. Li, J. Pei, J. He, K. Song, F. Che, Y. Huang, C. Wang
+authors: Mingzhe Li, Jianrui Pei, Jin He, Kevin Song, Frank Che, Yongfeng Huang, Chitai Wang
 conference:
 year: 2019
 bibkey: li2019using

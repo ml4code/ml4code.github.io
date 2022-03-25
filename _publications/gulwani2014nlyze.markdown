@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "NLyze: Interactive Programming by Natural Language for SpreadSheet Data Analysis and Manipulation"
-authors: S. Gulwani, M. Marron
+authors: Sumit Gulwani, Mark Marron
 conference: SIGMOD
 year: 2014
 bibkey: gulwani2014nlyze

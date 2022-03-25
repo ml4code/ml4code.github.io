@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Neural Model for Method Name Generation from Functional Description"
-authors: S. Gao, C. Chen, Z. Xing, Y. Ma, W. Song, S.W. Lin
+authors: Sa Gao, Chunyang Chen, Zhenchang Xing, Yukun Ma, Wen Song, Shang-Wei Lin
 conference: SANER
 year: 2019
 bibkey: gao2019neural

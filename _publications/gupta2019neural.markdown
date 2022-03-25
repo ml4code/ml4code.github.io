@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural Attribution for Semantic Bug-Localization in Student Programs"
-authors: R. Gupta, A. Kanade, S. Shevade
+authors: Rahul Gupta, Aditya Kanade, Shirish Shevade
 conference: NeurIPS
 year: 2019
 bibkey: gupta2019neural

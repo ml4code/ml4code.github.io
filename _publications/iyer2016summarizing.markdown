@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Summarizing Source Code using a Neural Attention Model"
-authors: S. Iyer, I. Konstas, A. Cheung, L. Zettlemoyer
+authors: Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Luke Zettlemoyer
 conference: ACL
 year: 2016
 bibkey: iyer2016summarizing

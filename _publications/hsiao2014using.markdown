@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Using Web Corpus Statistics for Program Analysis"
-authors: C. Hsiao, M. Cafarella, S. Narayanasamy
+authors: Chun-Hung Hsiao, Michael Cafarella, Satish Narayanasamy
 conference: OOPSLA
 year: 2014
 bibkey: hsiao2014using

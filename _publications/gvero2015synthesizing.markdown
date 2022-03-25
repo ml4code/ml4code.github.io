@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Synthesizing Java expressions from free-form queries"
-authors: T. Gvero, V. Kuncak
+authors: Tihomir Gvero, Viktor Kuncak
 conference: OOPSLA
 year: 2015
 bibkey: gvero2015synthesizing

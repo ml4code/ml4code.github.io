@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Code Prediction by Feeding Trees to Transformers"
-authors: S. Kim, J. Zhao, Y. Tian, S. Chandra
+authors: Seohyun Kim, Jinman Zhao, Yuchi Tian, Satish Chandra
 conference: 
 year: 2020
 bibkey: kim2020code

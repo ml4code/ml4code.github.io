@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Learning to Repair Software Vulnerabilities with Generative Adversarial Networks"
-authors: J. A. Harer, O. Ozdemir, T. Lazovich, C. P. Reale, R. L. Russell, L. Y. Kim
-conference: "arXiv:1805.07475"
+authors: Jacob Harer, Onur Ozdemir, Tomo Lazovich, Christopher P. Reale, Rebecca L. Russell, Louis Y. Kim, Peter Chin
+conference: NeurIPS
 year: 2018
 bibkey: harer2018learning
 additional_links:

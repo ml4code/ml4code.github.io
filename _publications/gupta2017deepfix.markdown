@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "DeepFix: Fixing Common C Language Errors by Deep Learning"
-authors: R. Gupta, S. Pal, A. Kanade, S. Shevade
+authors: Rahul Gupta, Soham Pal, Aditya Kanade, Shirish Shevade
 conference: AAAI
 year: 2017
 bibkey: gupta2017deepfix

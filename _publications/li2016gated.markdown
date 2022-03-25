@@ -1,10 +1,12 @@
 ---
 layout: publication
 title: "Gated Graph Sequence Neural Networks"
-authors: Y. Li, R. Zemel, Marc Brockschmidt, Daniel Tarlow
+authors: Yujia Li, Daniel Tarlow, Marc Brockschmidt, Richard Zemel
 conference: ICLR
 year: 2016
 bibkey: li2016gated
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1511.05493"}
 tags: ["GNN", "program analysis"]
 ---
 Graph-structured data appears frequently in domains including chemistry, natural

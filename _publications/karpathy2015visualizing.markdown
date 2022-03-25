@@ -1,9 +1,11 @@
 ---
 layout: publication
 title: "Visualizing and Understanding Recurrent Networks"
-authors: A. Karpathy, J. Johnson, L. Fei-Fei
-conference: "arXiv preprint arXiv:1506.02078"
+authors: Andrej Karpathy, Justin Johnson, Li Fei-Fei
+conference:
 year: 2015
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1506.02078"}
 bibkey: karpathy2015visualizing
 tags: ["language model", "code generation"]
 ---
