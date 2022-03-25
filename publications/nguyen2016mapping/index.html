@@ -102,7 +102,7 @@ function search() {
     <div class="content container">
       <div class="page">
   <h1 class="page-title">Mapping API Elements for Code Migration with Vector Representations</h1>
-  <h5>T.D. Nguyen, A.T. Nguyen, T.N. Nguyen. ICSE 2016</h5>
+  <h5>Trong Duc Nguyen, Anh Tuan Nguyen, Tien N. Nguyen. ICSE 2016</h5>
   <p>
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Mapping API Elements for Code Migration with Vector Representations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -115,7 +115,7 @@ function search() {
       <tag><a href="/tags.html#API">API</a></tag>
     
   </p>
-  <p>
+  <p><p>Mapping API elements has a significant role in software development, especially in code migration. A manual process of defining the migration is tedious and error-prone while recent approaches to automatically mine API mappings are limited to discover the mappings with textually similar APIs’ names. This leads to the low accuracy in existing migration tools.We propose an approach to automatically mine API mappings which overcomes the lexical mismatch problem. We represent an API by its usages instead of its name.To characterize an API with its context consisting of surrounding APIs in its usages, we take advantage of Word2Vec model to project the APIs of Java JDK and C# .NET into corresponding continuous vector spaces. The semantic relations among APIs will be observed in those continuous space as the geometric arrangements between their representation vectors in two vector spaces.We use a learning approach to derive the linear (e.g., rotating and scaling) transformation function between two vector spaces. Transformation function is trained from human-defined pairs of API mappings from Java to C#. To find the C# API mapping with a given Java API, we use the learned function to compute its transformed vector in the C# vector space. Then, the C# API which has the most similar vector with the transformed vector is considered as the result. Our experiment shows that for just one suggestion, we are able to correctly derive the API in C# in almost 43% of the cases. With 5 suggestions, we can correctly suggest the correct C# API in almost 3 out of 4 cases (73.2%).</p>
 </p>
 
   <h6>Similar Work</h6>
