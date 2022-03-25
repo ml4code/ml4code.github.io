@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Synthesizing benchmarks for predictive modeling"
-authors: C. Cummin, P. Petoumenos, Z. Wang, H. Leather
+authors: Chris Cummins, Pavlos Petoumenos, Zheng Wang, Hugh Leather
 conference: CGO
 year: 2017
 bibkey: cummins2017synthesizing

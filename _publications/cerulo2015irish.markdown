@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Irish: A Hidden Markov Model to detect coded information islands in free text"
-authors: L. Cerulo, M. Di Penta, A. Bacchelli, M, Ceccarelli, G. Canfora
+authors: Luigi Cerulo, Michele Ceccarelli, Massimiliano Di Penta, Gerardo Canfora
 conference: Science of Computer Programming
 year: 2015
 bibkey: cerulo2015irish

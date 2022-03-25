@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Cross-Language Learning for Program Classification using Bilateral Tree-Based Convolutional Neural Networks"
-authors: N. Bui, L. Jiang, Y. Yu
+authors: Nghi D. Q. Bui, Lingxiao Jiang, Yijun Yu
 conference: NLSE
 year: 2018
 bibkey: bui2018cross

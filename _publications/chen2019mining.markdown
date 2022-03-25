@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Mining Likely Analogical APIs across Third-Party Libraries via Large-Scale Unsupervised API Semantics Embedding"
-authors:  C. Chen ; Z. Xing ; Y. Liu, K. L. Xiong Ong 
+authors: Chunyang Chen, Zhenchang Xing, Yang Liu, Kent Ong Long Xiong
 conference: TSE
 year: 2019
 bibkey: chen2019mining

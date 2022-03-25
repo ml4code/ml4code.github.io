@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "When Deep Learning Met Code Search"
-authors: J. Cambronero, H. Li, S. Kim, K. Sen, S. Chandra
+authors: Jose Cambronero, Hongyu Li, Seohyun Kim, Koushik Sen, Satish Chandra
 conference: 
 year: 2019
 bibkey: cambronero2019deep

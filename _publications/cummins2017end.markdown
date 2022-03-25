@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "End-to-end Deep Learning of Optimization Heuristics"
-authors: C. Cummins, P. Petoumenos, Z. Wang, H. Leather
+authors: Chris Cummins, Pavlos Petoumenos, Zheng Wang, Hugh Leather
 conference: 
 year: 2017
 bibkey: cummins2017end

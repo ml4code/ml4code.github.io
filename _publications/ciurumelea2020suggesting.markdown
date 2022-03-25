@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Suggesting Comment Completions for Python using Neural Language Models"
-authors: A. Ciurumelea, S. Proksch, H.C. Gall
+authors: Adelina Ciurumelea; Sebastian Proksch; Harald C. Gall
 conference: SANER
 year: 2020
 bibkey: ciurumelea2020suggesting

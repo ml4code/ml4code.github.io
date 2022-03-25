@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "MulCode: A Multi-task Learning Approach for Source Code Understanding"
-authors: D. Wang, Y. Yu, S. Li, W. Dong, J. Wang, L. Qing
+authors: Deze Wang, Yue Yu, Shanshan Li, Wei Dong, Ji Wang, Liao Qing
 conference: SANER
 year: 2021
 bibkey: deze2021mulcode

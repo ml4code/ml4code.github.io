@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Hidden Markov Model to Detect Coded Information Islands in Free Text"
-authors: L. Cerulo, M. Ceccarelli, M. Di Penta, G. Canfora
+authors: Luigi Cerulo, Michele Ceccarelli, Massimiliano Di Penta, Gerardo Canfora
 conference: SCAM 
 year: 2013
 bibkey: cerulo2013hidden

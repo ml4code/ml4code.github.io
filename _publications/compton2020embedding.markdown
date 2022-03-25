@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Embedding Java Classes with code2vec: Improvements from Variable Obfuscation"
-authors: R. Compton, E. Frank, P. Patros, A. Koay
+authors: Rhys Compton, Eibe Frank, Panos Patros, Abigail Koay
 conference: MSR
 year: 2020
 bibkey: compton2020embedding

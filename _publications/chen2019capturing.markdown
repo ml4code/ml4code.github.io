@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Capturing source code semantics via tree-based convolution over API-enhanced AST"
-authors: L. Chen, W. Ye, S. Zheng
+authors: Long Chen, Wei Ye, Shikun Zhang
 conference: Computing Frontiers
 year: 2019
 bibkey: chen2019capturing

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Syntax Errors Just Aren’t Natural: Improving Error Reporting with Language Models"
-authors: J. C. Campbell, A. Hindle, J. N. Amaral
+authors: Joshua Charles Campbell, Abram Hindle, José Nelson Amaral
 conference: MSR
 year: 2014
 bibkey: campbell2014syntax

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Semantic Code Repair using Neuro-Symbolic Transformation Networks"
-authors: J. Devlin, J. Uesato, R. Shingh, P. Kohli
+authors: Jacob Devlin, Jonathan Uesato, Rishabh Singh, Pushmeet Kohli
 conference:
 year: 2017
 bibkey: devlin2017semantic

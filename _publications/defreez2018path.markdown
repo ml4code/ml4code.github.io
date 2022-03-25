@@ -1,10 +1,12 @@
 ---
 layout: publication
 title: "Path-Based Function Embedding and its Application to Specification Mining"
-authors: D. DeFreez, A. V. Thakur, C. Rubio-González
+authors: Daniel DeFreez, Aditya V. Thakur, Cindy Rubio-González
 conference: ICSE
 year: 2018
 bibkey: defreez2018path
+additional_links:
+   - {name: "ArXiV", url: "https://arxiv.org/abs/1802.07779"}
 tags: ["program analysis", "representation"]
 ---
 Identifying the relationships among program elements is useful

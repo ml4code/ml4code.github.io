@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Hoppity: Learning Bug Detection and Repair"
-authors: E. Dinella, H. Dai, Z. Li, M. Naik, L. Song, K. Wang
+authors: Elizabeth Dinella, Hanjun Dai, Ziyang Li, Mayur Naik, Le Song, Ke Wang
 conference: ICLR
 year: 2020
 bibkey: dinella2020hoppity

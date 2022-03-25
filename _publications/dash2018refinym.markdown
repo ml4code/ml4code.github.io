@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "RefiNym: Using Names to Refine Types"
-authors: S. Dash, Miltiadis Allamanis, Earl T. Barr
+authors: Santanu Dash, Miltiadis Allamanis, Earl T. Barr
 conference: FSE
 year: 2018
 bibkey: dash2018refinym

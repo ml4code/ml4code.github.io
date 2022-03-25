@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Bilateral Dependency Neural Networks for Cross-Language Algorithm Classification"
-authors: N. D. Q. Bui, Y. Yu, L. Jiang
+authors: Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang
 conference: SANER
 year: 2018
 bibkey: bui2018bilateral

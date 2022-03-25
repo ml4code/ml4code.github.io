@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Self-Supervised Contrastive Learning for Code Retrieval and Summarization via Semantic-Preserving Transformations"
-authors: Nghi D. Q. Bui, Y. Yu, L. Jiang
+authors: Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang
 conference: SIGIR
 year: 2021
 bibkey: bui2020efficient

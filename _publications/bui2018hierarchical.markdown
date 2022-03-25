@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Hierarchical Learning of Cross-Language Mappings through Distributed Vector Representations for Code"
-authors: N. D. Q. Bui, L. Jiang
+authors: Nghi D. Q. Bui, Lingxiao Jiang
 conference: ICSE
 year: 2018
 bibkey: bui2018hierarchical

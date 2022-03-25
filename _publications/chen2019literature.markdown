@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Literature Study of Embeddings on Source Code"
-authors: Z. Chen, M. Monperrus
+authors: Zimin Chen, Martin Monperrus
 conference: 
 year: 2019
 bibkey: chen2019literature

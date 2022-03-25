@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Compiler Fuzzing through Deep Learning"
-authors: C. Cummins, P. Petoumenos, H. Leather, A. Murray
+authors: Chris Cummins, Pavlos Petoumenos, Alastair Murray, Hugh Leather
 conference: ISSTA
 year: 2018
 bibkey: cummins2018compiler

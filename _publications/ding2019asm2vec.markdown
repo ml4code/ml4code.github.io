@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Asm2Vec: Boosting Static Representation Robustness for Binary Clone Search against Code Obfuscation and Compiler Optimization"
-authors: S. H. H. Ding, B. C. M. Fung, P. Charland
+authors: Steven H. H. Ding, Benjamin C. M. Fung, Philippe Charland
 conference: IEEE Symposium on Security and Privacy
 year: 2019
 bibkey: ding2019asm2vec

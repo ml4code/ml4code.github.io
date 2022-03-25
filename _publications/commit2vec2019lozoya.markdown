@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Commit2Vec: Learning Distributed Representations of Code Changes"
-authors: R. C. Lozoya, A. Baumann, A. Sabetta, M. Bezzi
+authors: Adelina Ciurumelea; Sebastian Proksch; Harald C. Gall
 conference: 
 year: 2019
 bibkey: commit2vec2019lozoya

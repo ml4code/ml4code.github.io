@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Exploring the Use of Deep Learning for Feature Location"
-authors: C.S. Corley, K. Damevski, N.A. Kraft
+authors: Christopher S. Corley, Kostadin Damevski, Nicholas A. Kraft
 conference: 
 year: 2015
 bibkey: corley2015exploring
