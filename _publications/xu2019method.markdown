@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Method name suggestion with hierarchical attention networks"
-authors: S. Xu, S. Zhang, W. Wang, X. Cao, C. Guo, J. Xu
+authors: Sihan Xu, Sen Zhang, Weijing Wang, Xinya Cao, Chenkai Guo, Jing Xu.
 conference: PEPM
 year: 2019
 bibkey: xu2019method

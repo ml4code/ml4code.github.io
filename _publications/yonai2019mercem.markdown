@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Mercem: Method Name Recommendation Based on Call Graph Embedding"
-authors: H. Yonai, Y. Hayase, H. Kitagawa
+authors: Hiroshi Yonai, Yasuhiro Hayase, Hiroyuki Kitagawa
 conference: 
 year: 2019
 bibkey: yonai2019mercem

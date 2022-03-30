@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: A Language Model for Statements of Software Code
-authors: Y. Yang, Y. Jiang, M. Gu, J. Sun, J. Gao, H. Liu
+authors: Yixiao Yang, Yu Jiang, Ming Gu, Jiaguang Sun, Jian Gao, Han Liu
 conference: ASE
 year: 2017
 bibkey: yang2017language

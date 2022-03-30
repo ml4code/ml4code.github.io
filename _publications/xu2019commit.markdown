@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Commit Message Generation for Source Code Changes"
-authors: S. Xu, Y. Yao, F. Xu, T. Gu, H. Tong, J. Lu
+authors: Shengbin Xu, Yuan Yao, Feng Xu, Tianxiao Gu, Hanghang Tong, Jian Lu
 conference: IJCAI
 year: 2019
 bibkey: xu2019commit

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Learning Uniform Semantic Features for Natural Language and Programming Language Globally, Locally and Sequentially"
-authors: Y. Zhang, W. Zheng, M. Li
+authors: Yudong Zhang, Wenhao Zheng, Ming Li
 conference: AAAI
 year: 2019
 bibkey: zhang2019learning

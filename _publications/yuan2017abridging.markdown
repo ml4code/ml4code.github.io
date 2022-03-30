@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Abridging Source Code
-authors: B. Yuan, V. Murali, C. Jermain
+authors: Binhang Yuan, Vijayaraghavan Murali, Christopher Jermaine
 conference: OOPSLA
 year: 2017
 bibkey: yuan2017abridging

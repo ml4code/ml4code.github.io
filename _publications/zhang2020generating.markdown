@@ -1,12 +1,12 @@
 ---
 layout: publication
 title: "Generating Adversarial Examples for Holding Robustness of Source Code Processing Models"
-authors: H. Zhang, Z. Li, G. Li, L. Ma, Y. Liu, Z. Jin
+authors: Huangzhao Zhang, Zhuo Li, Ge Li, Lei Ma, Yang Liu, Zhi Jin
 conference: AAAI
 year: 2020
 bibkey: zhang2020generating
 additional_links:
-   - {name: "Proceedings", url: "https://www.aaai.org/Papers/AAAI/2020GB/AAAI-ZhangH.6730.pdf"}
+   - {name: "Proceedings", url: "https://ojs.aaai.org/index.php/AAAI/article/view/5469"}
 tags: ["adversarial"]
 ---
 Automated  processing,  analysis,  and  generation  of  source code are among the key activities

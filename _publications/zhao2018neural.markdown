@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Neural-Augumented Static Analysis of Android Communication"
-authors: J. Zhao, A. Albarghouthi, V. Rastogi, S. Jha, D. Octeau
+authors: Jinman Zhao, Aws Albarghouthi, Vaibhav Rastogi, Somesh Jha, Damien Octeau
 conference: FSE
 year: 2018
 bibkey: zhao2018neural

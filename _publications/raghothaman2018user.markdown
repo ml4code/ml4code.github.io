@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "User-guided program reasoning using Bayesian inference"
-authors: Mukund Raghothaman, Sulekha Kulkarni, Kihong Heo, and Mayur Naik
+authors: Mukund Raghothaman, Sulekha Kulkarni, Kihong Heo, Mayur Naik
 conference: PLDI
 year: 2018
 bibkey: raghothaman2018user

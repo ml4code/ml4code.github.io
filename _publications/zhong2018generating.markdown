@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Generating Regular Expressions from Natural Language Specifications: Are We There Yet?"
-authors: Z. Zhong, J. Guo, W. Yang, T. Xie, JG Lou, Y. Liu, D. Zhang
+authors: Zexuan Zhong, Jiaqi Guo, Wei Yang, Tao Xie, Jian-Guang Lou, Ting Liu, Dongmei Zhang
 conference: NLSE 
 year: 2018
 bibkey: zhong2018generating

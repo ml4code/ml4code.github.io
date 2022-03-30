@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A Novel Neural Source Code Representation based on Abstract Syntax Tree"
-authors: J. Zhang, X. Wang, H. Zhang, H Sun, K. Wang, X. Liu
+authors: Jian Zhang, Xu Wang, Hongyu Zhang, Hailong Sun, Kaixuan Wang, Xudong Liu
 conference: ICSE
 year: 2019
 bibkey: zhang2019novel

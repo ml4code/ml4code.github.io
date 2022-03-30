@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Intelligent Code Completion with Bayesian Networks"
-authors: Sebastian Proksch, Johannes Lerch, and Mira Mezini
+authors: Sebastian Proksch, Johannes Lerch, Mira Mezini
 conference: TSE
 year: 2015
 bibkey: proksch2015intelligent

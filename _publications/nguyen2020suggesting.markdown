@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Suggesting Natural Method Names to Check Name Consistencies"
-authors: Son Nguyen, Hung Phan, Trinh Le, and Tien N. Nguyen
+authors: Son Nguyen, Hung Phan, Trinh Le, Tien N. Nguyen
 conference: ICSE
 year: 2020
 bibkey: nguyen2020suggesting

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "CoaCor: Code Annotation for Code Retrieval with Reinforcement Learning"
-authors: Z Yao, JR Peddamail, H. Sun
+authors: Ziyu Yao, Jayavardhan Reddy Peddamail, Huan Sun
 conference: 
 year: 2019
 bibkey: yao2019coacor
