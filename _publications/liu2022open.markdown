@@ -6,7 +6,7 @@ conference:
 year: 2022
 bibkey: liu202open
 additional_links:
-   - {name: "ArXiV", url: "https://arxiv.org/pdf/2203.03716.pdf"}
+   - {name: "ArXiV", url: "https://arxiv.org/abs/2203.03716"}
 tags: ["education", "code generation"]
 ---
 Knowledge tracing refers to the problem of estimating each student’s knowledge component/skill mastery level from their past responses to questions in educational applications. 
