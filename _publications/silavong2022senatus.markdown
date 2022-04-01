@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Senatus - A Fast and Accurate Code-to-Code Recommendation Engine
+title: "Senatus - A Fast and Accurate Code-to-Code Recommendation Engine"
 authors: Fran Silavong, Sean Moran, Antonios Georgiadis, Rohan Saphal, Robert Otter
 conference: MSR
 year: 2022
