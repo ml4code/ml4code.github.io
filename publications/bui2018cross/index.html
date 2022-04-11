@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Cross-Language Learning for Program Classification using Bilateral Tree-Based Convolutional Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Cross-Language Learning for Program Classification using Bilateral Tree-Based Convolutional Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Cross-Language%20Learning%20for%20Program%20Classification%20using%20Bilateral%20Tree-Based%20Convolutional%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#representation">representation</a></tag>
@@ -144,7 +141,7 @@ snippet, we achieved over 80% precision.</p>
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/bui2018cross.json', function(data) {
+        $.getJSON("/publications-metadata/bui2018cross.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Jointly Learning to Repair Code and Generate Commit Message' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Jointly Learning to Repair Code and Generate Commit Message' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Jointly%20Learning%20to%20Repair%20Code%20and%20Generate%20Commit%20Message' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#edit">edit</a></tag>
@@ -130,7 +127,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/bai2021jointly.json', function(data) {
+        $.getJSON("/publications-metadata/bai2021jointly.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

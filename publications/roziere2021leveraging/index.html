@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Leveraging Automated Unit Tests for Unsupervised Code Translation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Leveraging Automated Unit Tests for Unsupervised Code Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Leveraging%20Automated%20Unit%20Tests%20for%20Unsupervised%20Code%20Translation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#migration">migration</a></tag>
@@ -128,7 +125,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/roziere2021leveraging.json', function(data) {
+        $.getJSON("/publications-metadata/roziere2021leveraging.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

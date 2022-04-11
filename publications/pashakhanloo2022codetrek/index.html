@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=CodeTrek: Flexible Modeling of Code using an Extensible Relational Representation' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=CodeTrek: Flexible Modeling of Code using an Extensible Relational Representation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CodeTrek:%20Flexible%20Modeling%20of%20Code%20using%20an%20Extensible%20Relational%20Representation' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#representation">representation</a></tag>
@@ -131,7 +128,7 @@ CodeTrek achieves an accuracy of 91%, 63%, 98%, and 94% on these tasks respectiv
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/pashakhanloo2022codetrek.json', function(data) {
+        $.getJSON("/publications-metadata/pashakhanloo2022codetrek.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

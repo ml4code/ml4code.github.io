@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Code%20to%20Comment%20Translation:%20A%20Comparative%20Study%20on%20Model%20Effectiveness%20&%20Errors' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#survey">survey</a></tag>
@@ -132,7 +129,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/mahmud2021code.json', function(data) {
+        $.getJSON("/publications-metadata/mahmud2021code.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

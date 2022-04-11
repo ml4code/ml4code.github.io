@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -111,7 +109,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Hierarchical Learning of Cross-Language Mappings through Distributed Vector Representations for Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Hierarchical Learning of Cross-Language Mappings through Distributed Vector Representations for Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Hierarchical%20Learning%20of%20Cross-Language%20Mappings%20through%20Distributed%20Vector%20Representations%20for%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#representation">representation</a></tag>
@@ -131,7 +128,7 @@ Our preliminary evaluations on about 40,000 Java and C# source files from 9 soft
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/bui2018hierarchical.json', function(data) {
+        $.getJSON("/publications-metadata/bui2018hierarchical.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

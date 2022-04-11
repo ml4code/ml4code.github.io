@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -107,7 +105,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=CoaCor: Code Annotation for Code Retrieval with Reinforcement Learning' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=CoaCor: Code Annotation for Code Retrieval with Reinforcement Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=CoaCor:%20Code%20Annotation%20for%20Code%20Retrieval%20with%20Reinforcement%20Learning' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#search">search</a></tag>
@@ -144,7 +141,7 @@ the performance of existing code retrieval models significantly.</p>
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/yao2019coacor.json', function(data) {
+        $.getJSON("/publications-metadata/yao2019coacor.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

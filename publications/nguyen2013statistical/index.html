@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -107,7 +105,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=A Statistical Semantic Language Model for Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=A Statistical Semantic Language Model for Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=A%20Statistical%20Semantic%20Language%20Model%20for%20Source%20Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#language model">language model</a></tag>
@@ -135,7 +132,7 @@ higher accuracy than the state-of-the-art approach.</p>
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/nguyen2013statistical.json', function(data) {
+        $.getJSON("/publications-metadata/nguyen2013statistical.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -107,7 +105,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Commit Message Generation for Source Code Changes' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Commit Message Generation for Source Code Changes' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Commit%20Message%20Generation%20for%20Source%20Code%20Changes' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#edit">edit</a></tag>
@@ -140,7 +137,7 @@ the  proposed  approach  significantly  outperforms the state-of-the-art in term
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/xu2019commit.json', function(data) {
+        $.getJSON("/publications-metadata/xu2019commit.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

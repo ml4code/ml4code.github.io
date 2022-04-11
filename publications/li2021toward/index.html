@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Toward Less Hidden Cost of Code Completion with Acceptance and Ranking Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Toward Less Hidden Cost of Code Completion with Acceptance and Ranking Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Toward%20Less%20Hidden%20Cost%20of%20Code%20Completion%20with%20Acceptance%20and%20Ranking%20Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#autocomplete">autocomplete</a></tag>
@@ -135,7 +132,7 @@ This paper conducts a coding simulation to collect data from code context and di
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/li2021toward.json', function(data) {
+        $.getJSON("/publications-metadata/li2021toward.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

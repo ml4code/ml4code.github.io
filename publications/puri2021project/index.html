@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Project CodeNet: A Large-Scale AI for Code Dataset for Learning a Diversity of Coding Tasks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Project CodeNet: A Large-Scale AI for Code Dataset for Learning a Diversity of Coding Tasks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Project%20CodeNet:%20A%20Large-Scale%20AI%20for%20Code%20Dataset%20for%20Learning%20a%20Diversity%20of%20Coding%20Tasks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#dataset">dataset</a></tag>
@@ -150,7 +147,7 @@ that can be readily used as inputs into machine learning models.</p>
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/puri2021project.json', function(data) {
+        $.getJSON("/publications-metadata/puri2021project.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

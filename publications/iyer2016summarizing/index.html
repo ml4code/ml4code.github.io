@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -107,7 +105,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Summarizing Source Code using a Neural Attention Model' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Summarizing Source Code using a Neural Attention Model' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Summarizing%20Source%20Code%20using%20a%20Neural%20Attention%20Model' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#summarization">summarization</a></tag>
@@ -146,7 +143,7 @@ introduced C# benchmark by a large margin.</p>
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/iyer2016summarizing.json', function(data) {
+        $.getJSON("/publications-metadata/iyer2016summarizing.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

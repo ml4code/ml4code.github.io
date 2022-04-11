@@ -67,8 +67,6 @@
    <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
    <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
 
-   <a class="sidebar-nav-item" href="/base-taxonomy/">Core Taxonomy</a>
-
 
   <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
@@ -109,7 +107,6 @@ function search() {
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Automated Correction for Syntax Errors in Programming Assignments using Recurrent Neural Networks' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Automated Correction for Syntax Errors in Programming Assignments using Recurrent Neural Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq=Automated%20Correction%20for%20Syntax%20Errors%20in%20Programming%20Assignments%20using%20Recurrent%20Neural%20Networks' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#repair">repair</a></tag>
@@ -129,7 +126,7 @@ syntax errors, we query the learnt RNN model with the prefix token sequence to p
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/bhatia2016automated.json', function(data) {
+        $.getJSON("/publications-metadata/bhatia2016automated.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
