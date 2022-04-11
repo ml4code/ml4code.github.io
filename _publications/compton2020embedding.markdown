@@ -4,7 +4,6 @@ title: "Embedding Java Classes with code2vec: Improvements from Variable Obfusca
 authors: Rhys Compton, Eibe Frank, Panos Patros, Abigail Koay
 conference: MSR
 year: 2020
-bibkey: compton2020embedding
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.02942"}
 tags: ["naming", "adversarial"]

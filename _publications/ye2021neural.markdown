@@ -4,7 +4,6 @@ title: "Neural Program Repair with Execution-based Backpropagation"
 authors: He Ye, Matias Martinez, Monperrus Martin
 conference:
 year: 2021
-bibkey: ye2021neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.04123"}
 tags: ["repair"]

@@ -4,7 +4,6 @@ title: "An Empirical Cybersecurity Evaluation of GitHub Copilot's Code Contribut
 authors: Hammond Pearce, Baleegh Ahmad, Benjamin Tan, Brendan Dolan-Gavitt, Ramesh Karri
 conference:
 year: 2021
-bibkey: pearce2021empirical
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.09293"}
 tags: ["Transformer", "language model"]

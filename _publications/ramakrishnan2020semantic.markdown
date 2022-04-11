@@ -4,7 +4,6 @@ title: "Semantic Robustness of Models of Source Code"
 authors: Goutham Ramakrishnan, Jordan Henkel, Zi Wang, Aws Albarghouthi, Somesh Jha, Thomas Reps
 conference:
 year: 2020
-bibkey: ramakrishnan2020semantic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.03043"}
 tags: ["adversarial", "naming"]

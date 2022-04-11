@@ -4,7 +4,6 @@ title: "What do pre-trained code models know about code?"
 authors: Anjan Karmakar, Romain Robbes
 conference: 
 year: 2021
-bibkey: karmakar2021what
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.11308"}
 tags: ["Transformer"]

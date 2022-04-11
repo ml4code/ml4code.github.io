@@ -4,7 +4,6 @@ title: Open-ended Knowledge Tracing
 authors: Naiming Liu, Zichao Wang, Richard G. Baraniuk, Andrew Lan
 conference: 
 year: 2022
-bibkey: liu202open
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.03716"}
 tags: ["education", "code generation"]

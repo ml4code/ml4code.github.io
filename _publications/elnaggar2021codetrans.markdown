@@ -4,7 +4,6 @@ title: "CodeTrans: Towards Cracking the Language of Silicon's Code Through Self-
 authors: Ahmed Elnaggar, Wei Ding, Llion Jones, Tom Gibbs, Tamas Feher, Christoph Angerer, Silvia Severini, Florian Matthes, Burkhard Rost
 conference: 
 year: 2021
-bibkey: elnaggar2021codetrans
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2104.02443"}
    - {name: "Code", url: "https://github.com/agemagician/CodeTrans"}

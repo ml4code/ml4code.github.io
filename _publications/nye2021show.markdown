@@ -4,7 +4,6 @@ title: "Show Your Work: Scratchpads for Intermediate Computation with Language M
 authors: Maxwell Nye, Anders Johan Andreassen, Guy Gur-Ari, Henryk Michalewski, Jacob Austin, David Bieber, David Dohan, Aitor Lewkowycz, Maarten Bosma, David Luan, Charles Sutton, Augustus Odena
 conference:
 year: 2021
-bibkey: nye2021show
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2112.00114"}
 tags: ["Transformer", "excecution"]

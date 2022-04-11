@@ -4,7 +4,6 @@ title: "TFix: Learning to Fix Coding Errors with a Text-to-Text Transformer"
 authors: Berkay Berabi, Jingxuan He, Veselin Raychev, Martin Vechev
 conference: ICML
 year: 2021
-bibkey: berabi2021tfix
 additional_links:
    - {name: "Code & Dataset", url: "https://github.com/eth-sri/TFix"}
 tags: ["repair"]

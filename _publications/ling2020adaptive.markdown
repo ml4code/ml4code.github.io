@@ -4,7 +4,6 @@ title: "Adaptive Deep Code Search"
 authors: Chunyang Ling, Zeqi Lin, Yanzhen Zou, Bing Xie
 conference: ICPC
 year: 2020
-bibkey: ling2020adaptive
 additional_links:
   - { name: "ACM", url: "https://dl.acm.org/doi/abs/10.1145/3387904.3389278" }
 tags: ["search"]

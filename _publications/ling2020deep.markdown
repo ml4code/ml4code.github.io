@@ -4,7 +4,6 @@ title: "Deep Graph Matching and Searching for Semantic Code Retrieval"
 authors: Xiang Ling, Lingfei Wu, Saizhuo Wang, Gaoning Pan, Tengfei Ma, Fangli Xu, Alex X. Liu, Chunming Wu, Shouling Ji
 conference: TKDD
 year: 2020
-bibkey: ling2020deep
 additional_links:
   - { name: "ArXiV", url: "https://arxiv.org/abs/2010.12908" }
 tags: ["search", "GNN"]

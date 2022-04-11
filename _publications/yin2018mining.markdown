@@ -4,7 +4,6 @@ title: "Learning to Mine Aligned Code and Natural Language Pairs from Stack Over
 authors: Pengcheng Yin, B. Deng, E. Chen, B. Vasilescu, Graham Neubig
 conference: MSR
 year: 2018
-bibkey: yin2018mining
 additional_links:
    - {name: "data", url: "https://conala-corpus.github.io/"}
 tags: ["dataset"]

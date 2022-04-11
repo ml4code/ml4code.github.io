@@ -4,7 +4,6 @@ title: Disentangled Code Representation Learning for Multiple Programming Langua
 authors: Jingfeng Zhang, Haiwen Hong, Yin Zhang, Yao Wan, Ye Liu, Yulei Sui
 conference: ACL
 year: 2021
-bibkey: zhang2021disentangled
 additional_links:
    - {name: "Proceedings", url: "https://aclanthology.org/2021.findings-acl.391/"}
 tags: ["representation"]

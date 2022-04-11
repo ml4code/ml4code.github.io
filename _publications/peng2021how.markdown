@@ -4,7 +4,6 @@ title: "How could Neural Networks understand Programs?"
 authors: Dinglan Peng, Shuxin Zheng, Yatao Li, Guolin Ke, Di He, Tie-Yan Liu
 conference: ICML
 year: 2021
-bibkey: peng2021how
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.04297"}
 tags: ["Transformer"]

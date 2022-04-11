@@ -4,7 +4,6 @@ title: "Unit Test Case Generation with Transformers"
 authors: Michele Tufano, Dawn Drain, Alexey Svyatkovskiy, Shao Kun Deng, Neel Sundaresan
 conference: ICSE
 year: 2020
-bibkey: tufano2020unit
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.05617"}
 tags: ["code generation", "synthesis", "test generation"]

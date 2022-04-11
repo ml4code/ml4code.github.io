@@ -4,7 +4,6 @@ title: "Empirical Study of Transformers for Source Code"
 authors: Nadezhda Chirkova, Sergey Troshin
 conference:
 year: 2020
-bibkey: chirkova2020empirical
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2010.07987"}
 tags: ["Transformer"]

@@ -4,7 +4,6 @@ title: "On-the-Fly Adaptation of Source Code Models using Meta-Learning"
 authors: Disha Shrivastava, Hugo Larochelle, Daniel Tarlow
 conference:
 year: 2020
-bibkey: shrivastava2020on-the-fly
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2003.11768"}
    - {name: "Code", url: "https://github.com/shrivastavadisha/meta_learn_source_code"}

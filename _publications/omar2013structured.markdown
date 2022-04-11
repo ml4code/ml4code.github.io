@@ -4,7 +4,6 @@ title: "Structured Statistical Syntax Tree Prediction"
 authors: Cyrus Omar
 conference: SPLASH
 year: 2013
-bibkey: omar2013structured
 tags: ["language model", "grammar"]
 ---
 Statistical models of source code can be used to improve

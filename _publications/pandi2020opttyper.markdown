@@ -4,7 +4,6 @@ title: "OptTyper: Probabilistic Type Inference by Optimising Logical and Natural
 authors: Irene Vlassi Pandi, Earl T. Barr, Andrew D. Gordon, Charles Sutton
 conference: 
 year: 2020
-bibkey: pandi2020opttyper
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.00348"}
 tags: ["types", "bimodal"]

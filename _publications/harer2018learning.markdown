@@ -4,7 +4,6 @@ title: "Learning to Repair Software Vulnerabilities with Generative Adversarial 
 authors: Jacob Harer, Onur Ozdemir, Tomo Lazovich, Christopher P. Reale, Rebecca L. Russell, Louis Y. Kim, Peter Chin
 conference: NeurIPS
 year: 2018
-bibkey: harer2018learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1805.07475"}
 tags: ["repair", "code generation"]

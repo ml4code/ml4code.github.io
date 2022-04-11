@@ -4,7 +4,6 @@ title: "Improved Automatic Summarization of Subroutines via Attention to File Co
 authors: Sakib Haque, Alexander LeClair, Lingfei Wu, Collin McMillan
 conference:
 year: 2020
-bibkey: haque2020improved
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.04881"}
 tags: ["summarization"]

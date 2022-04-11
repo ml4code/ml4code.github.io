@@ -4,7 +4,6 @@ title: "A Semantic Bug Seeding: A Learning-Based Approach for Creating Realistic
 authors: Jibesh Patra, Michael Pradel
 conference: FSE
 year: 2021
-bibkey: patra2021semantic
 tags: ["repair", "edit"]
 ---
 When working on techniques to address the wide-spread problem

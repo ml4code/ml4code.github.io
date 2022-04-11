@@ -4,7 +4,6 @@ title: "Learning to Generate Corrective Patches using Neural Machine Translation
 authors: Hideaki Hata, Emad Shihab, Graham Neubig
 conference: 
 year: 2018
-bibkey: hata2018learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1812.07170"}
 tags: ["repair", "code generation"]

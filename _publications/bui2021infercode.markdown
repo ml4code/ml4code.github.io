@@ -4,7 +4,6 @@ title: "InferCode: Self-Supervised Learning of Code Representations by Predictin
 authors: Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang
 conference: ICSE
 year: 2021
-bibkey: bui2021infercode
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2012.07023"}
 tags: ["representation"]

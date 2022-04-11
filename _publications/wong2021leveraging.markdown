@@ -4,7 +4,6 @@ title: "Leveraging Language to Learn Program Abstractions and Search Heuristics"
 authors: Catherine Wong, Kevin Ellis, Joshua B. Tenenbaum, Jacob Andreas
 conference: Thirty-eighth International Conference on Machine Learning (ICML 2021)
 year: 2021
-bibkey: wong2021leveraging
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2106.11053"}
    - {name: "Poster", url: "https://icml.cc/Conferences/2021/ScheduleMultitrack?event=10372"}

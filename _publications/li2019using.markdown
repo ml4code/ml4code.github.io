@@ -4,7 +4,6 @@ title: "Using GGNN to recommend log statement level"
 authors: Mingzhe Li, Jianrui Pei, Jin He, Kevin Song, Frank Che, Yongfeng Huang, Chitai Wang
 conference:
 year: 2019
-bibkey: li2019using
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1912.05097"}
 tags: ["GNN", "logging"]

@@ -4,7 +4,6 @@ title: "Structured Generative Models of Natural Source Code"
 authors: Chris J. Maddison, Daniel Tarlow
 conference: ICML
 year: 2014
-bibkey: maddison2014structured
 tags: ["language model", "code generation", "grammar", "grammar"]
 ---
 We study the problem of building generative

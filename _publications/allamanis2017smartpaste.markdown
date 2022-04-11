@@ -4,7 +4,6 @@ title: "SmartPaste: Learning to Adapt Source Code"
 authors: Miltiadis Allamanis, Marc Brockschmidt
 conference: ""
 year: 2017
-bibkey: allamanis2017smartpaste
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1705.07867"}
 tags: ["representation", "variable misuse"]

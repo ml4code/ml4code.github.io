@@ -4,7 +4,6 @@ title: Code Completion with Neural Attention and Pointer Networks
 authors: Jian Li, Yue Wang, Michael R. Lyu, Irwin King
 conference: 
 year: 2017
-bibkey: li2017code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1711.09573"}
 tags: ["language model", "autocomplete"]

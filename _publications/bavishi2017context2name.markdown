@@ -4,7 +4,6 @@ title: "Context2Name: A Deep Learning-Based Approach to Infer Natural Variable N
 authors: Rohan Bavishi, Michael Pradel, Koushik Sen
 conference: 
 year: 2017
-bibkey: bavishi2017context2name
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1809.05193"}
 tags: ["naming"]

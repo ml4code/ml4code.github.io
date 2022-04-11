@@ -4,7 +4,6 @@ title: "Neural Code Search Revisited: Enhancing Code Snippet Retrieval through N
 authors: Geert Heyman, Tom Van Cutsem
 conference:
 year: 2020
-bibkey: heyman2020neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2008.12193"}
 tags: ["search"]

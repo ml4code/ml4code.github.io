@@ -4,7 +4,6 @@ title: "DeepDelta: Learning to Repair Compilation Errors"
 authors: Ali Mesbah, Andrew Rice, Emily Johnston, Nick Glorioso, Edward Aftandilian.
 conference: 
 year: 2019
-bibkey: mesbah2019deepdelta
 tags: ["repair", "edit", "compilation"]
 ---
 Programmers spend a substantial amount of time manually repairing

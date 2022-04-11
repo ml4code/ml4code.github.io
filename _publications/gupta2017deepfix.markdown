@@ -4,7 +4,6 @@ title: "DeepFix: Fixing Common C Language Errors by Deep Learning"
 authors: Rahul Gupta, Soham Pal, Aditya Kanade, Shirish Shevade
 conference: AAAI
 year: 2017
-bibkey: gupta2017deepfix
 tags: ["repair", "code generation"]
 ---
 The problem of automatically fixing programming errors is a

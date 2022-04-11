@@ -4,7 +4,6 @@ title: "STYLE-ANALYZER: fixing code style inconsistencies with interpretable uns
 authors: Vadim Markovtsev, Waren Long, Hugo Mougard, Konstantin Slavnov, Egor Bulychev
 conference: MSR
 year: 2019
-bibkey: markovtsev2019style
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1904.00935"}
 tags: ["style"]

@@ -4,7 +4,6 @@ title: "A Structural Model for Contextual Code Changes"
 authors: Shaked Brody, Uri Alon, Eran Yahav
 conference: OOPSLA
 year: 2020
-bibkey: brody2020structural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.13209"}
    - {name: "Code", url: "https://github.com/tech-srl/c3po"}

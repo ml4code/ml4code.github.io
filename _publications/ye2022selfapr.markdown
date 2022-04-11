@@ -4,7 +4,6 @@ title: "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics"
 authors: He Ye, Matias Martinez, Xiapu Luo, Tao Zhang, Martin Monperrus
 conference:
 year: 2022
-bibkey: ye2022selfapr
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.12755"}
 tags: ["repair", "execution"]

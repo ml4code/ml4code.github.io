@@ -4,7 +4,6 @@ title: "NL2Bash: A Corpus and Semantic Parser for Natural Language Interface to 
 authors: Xi Victoria Lin, Chenglong Wang, Luke Zettlemoyer, Michael D. Ernst
 conference: LREC 
 year: 2018
-bibkey: lin2018nl2bash
 additional_links:
    - {name: "PDF", url: "http://victorialin.net/pubs/nl2bash.pdf"}
    - {name: "ArXiV", url: "https://arxiv.org/abs/1802.08979"}

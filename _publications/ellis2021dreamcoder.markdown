@@ -4,7 +4,6 @@ title: "DreamCoder: bootstrapping inductive program synthesis with wake-sleep li
 authors: Kevin Ellis, Catherine Wong, Maxwell Nye, Mathias Sable-Meyer, Luc Cary, Lucas Morales, Luke Hewitt, Armando Solar-Lezama, Joshua B. Tenenbaum
 conference: 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI 2021)
 year: 2021
-bibkey: ellis2021dreamcoder
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2006.08381"}
    - {name: "Paper", url: "https://dl.acm.org/doi/10.1145/3453483.3454080"}

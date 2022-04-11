@@ -4,7 +4,6 @@ title: "You Autocomplete Me: Poisoning Vulnerabilities in Neural Code Completion
 authors: Roei Schuster, Congzheng Song, Eran Tromer, Vitaly Shmatikov
 conference: USENIX Security
 year: 2021
-bibkey:  schuster2021you
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2007.02220"}
 tags: ["autocomplete", "adversarial"]

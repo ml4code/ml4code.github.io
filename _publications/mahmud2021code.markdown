@@ -4,7 +4,6 @@ title: "Code to Comment Translation: A Comparative Study on Model Effectiveness 
 authors: Junayed Mahmud, Fahim Faisal, Raihan Islam Arnob, Antonios Anastasopoulos, Kevin Moran
 conference: NLP4Prog
 year: 2021
-bibkey: mahmud2021code
 additional_links:
    - {name: "PDF", url: "https://aclanthology.org/2021.nlp4prog-1.1.pdf"}
 tags: ["survey", "summarization", "Transformer"]

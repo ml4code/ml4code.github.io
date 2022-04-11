@@ -4,7 +4,6 @@ title: "A Retrieve-and-Edit Framework for Predicting Structured Outputs"
 authors: Tatsunori B. Hashimoto, Kelvin Guu, Yonatan Oren, Percy S. Liang
 conference: NeurIPS
 year: 2018
-bibkey: hashimoto2018retrieve
 tags: ["bimodal", "search", "code generation"]
 ---
 For the task of generating complex outputs such as source code, editing existing

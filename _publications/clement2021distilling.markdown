@@ -4,7 +4,6 @@ title: "Distilling Transformers for Neural Cross-Domain Search"
 authors: Colin B. Clement, Chen Wu, Dawn Drain, Neel Sundaresan
 conference:
 year: 2021
-bibkey: clement2021distilling
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.03322"}
 tags: ["search", "Transformer"]

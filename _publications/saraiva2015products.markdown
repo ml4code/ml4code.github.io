@@ -4,7 +4,6 @@ title: "Products, Developers, and Milestones: How Should I Build My N-Gram Langu
 authors: Juliana Saraiva, Christian Bird, Thomas Zimmermann
 conference: FSE
 year: 2015
-bibkey: saraiva2015products
 tags: ["language model"]
 ---
 Recent work has shown that although programming languages en-

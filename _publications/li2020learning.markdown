@@ -4,7 +4,6 @@ title: "Learning Code-Query Interaction for Enhancing Code Searches"
 authors: Wei Li, Haozhe Qin, Shuhan Yan, Beijun Shen, Yuting Chen
 conference: ICSME
 year: 2020
-bibkey: li2020learning
 additional_links:
   - { name: "IEEE", url: "https://ieeexplore.ieee.org/document/9240627" }
 tags: ["search"]

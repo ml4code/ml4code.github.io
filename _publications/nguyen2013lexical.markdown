@@ -4,7 +4,6 @@ title: "Lexical Statistical Machine Translation for Language Migration"
 authors: Anh Tuan Nguyen, Tung Thanh Nguyen, Tien N. Nguyen
 conference: FSE
 year: 2013
-bibkey: nguyen2013lexical
 tags: ["migration", "API"]
 ---
 Prior research has shown that source code also exhibits naturalness, i.e. it is written by humans and is likely to be

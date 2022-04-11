@@ -4,7 +4,6 @@ title: "Neural Software Analysis"
 authors: Michael Pradel, Satish Chandra
 conference:
 year: 2020
-bibkey: pradel2020neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2011.07986"}
 tags: ["program analysis", "survey"]

@@ -4,7 +4,6 @@ title: "On the Localness of Software"
 authors: Zhaopeng Tu, Zhendong Su, Premkumar Devanbu
 conference: FSE
 year: 2014
-bibkey: tu2014localness
 tags: ["language model"]
 ---
 The n-gram language model, which has its roots in statistical natural

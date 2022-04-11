@@ -4,7 +4,6 @@ title: "DeepMerge: Learning to Merge Programs"
 authors: Elizabeth Dinella, Todd Mytkowicz, Alexey Svyatkovskiy, Christian Bird, Mayur Naik, Shuvendu K. Lahiri
 conference:
 year: 2021
-bibkey: dinella2021deepmerge
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.07569"}
 tags: ["edit", "repair"]

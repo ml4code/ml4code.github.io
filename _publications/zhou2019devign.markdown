@@ -4,7 +4,6 @@ title: "Devign: Effective Vulnerability Identification by Learning Comprehensive
 authors: Yaqin Zhou, Shangqing Liu, Jingkai Siow, Xiaoning Du, Yang Liu
 conference: NeurIPS
 year: 2020
-bibkey: zhou2019devign
 additional_links:
    - {name: "Paper", url: "http://papers.nips.cc/paper/9209-devign-effective-vulnerability-identification-by-learning-comprehensive-program-semantics-via-graph-neural-networks"}
 tags: ["GNN", "static analysis"]

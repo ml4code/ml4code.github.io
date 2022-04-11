@@ -4,7 +4,6 @@ title: "Learning to Update Natural Language Comments Based on Code Changes"
 authors: Sheena Panthaplackel, Milos Gligoric, Raymond J. Mooney, Junyi Jessy Li
 conference: ACL
 year: 2020
-bibkey: panthaplackel2020learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.12169"}
 tags: ["bimodal", "edit", "documentation"]

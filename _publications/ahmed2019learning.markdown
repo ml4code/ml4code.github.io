@@ -4,7 +4,6 @@ title: "Learning Lenient Parsing & Typing via Indirect Supervision"
 authors: Toufique Ahmed, Vincent Hellendoorn, Premkumar Devanbu
 conference:
 year: 2019
-bibkey: ahmed2019learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1910.05879"}
 tags: ["types"]

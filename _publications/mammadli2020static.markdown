@@ -4,7 +4,6 @@ title: "Static Neural Compiler Optimization via Deep Reinforcement Learning"
 authors: Rahim Mammadli, Ali Jannesari, Felix Wolf
 conference:
 year: 2020
-bibkey: mammadli2020static
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2008.08951"}
 tags: ["compilation"]

@@ -3,7 +3,6 @@ layout: publication
 title: "A Neural Architecture for Generating Natural Language Descriptions from Source Code Changes"
 authors: Pablo Loyola, Edison Marrese-Taylor, Yutaka Matsuo
 year: 2017
-bibkey: loyola2017neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1704.04856"}
 tags: ["edit", "summarization"]

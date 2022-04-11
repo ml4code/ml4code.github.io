@@ -4,7 +4,6 @@ title: "UniXcoder: Unified Cross-Modal Pre-training for Code Representation"
 authors: Daya Guo, Shuai Lu, Nan Duan, Yanlin Wang, Ming Zhou, Jian Yin
 conference:
 year: 2022
-bibkey: guo2022unixcoder
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.03850"}
 tags: ["Transformer"]

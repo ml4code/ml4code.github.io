@@ -4,7 +4,6 @@ title: "Megadiff: A Dataset of 600k Java Source Code Changes Categorized by Diff
 authors: Martin Monperrus, Matias Martinez, He Ye, Fernanda Madeiral, Thomas Durieux, Zhongxing Yu
 conference:
 year: 2021
-bibkey: monperrus2021megadiff
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.04631"}
    - {name: "Dataset", url: "https://zenodo.org/record/5013515"}

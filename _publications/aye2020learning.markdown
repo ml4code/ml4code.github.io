@@ -4,7 +4,6 @@ title: "Learning Autocompletion from Real-World Datasets"
 authors: Gareth Ari Aye, Seohyun Kim, Hongyu Li
 conference: 
 year: 2020
-bibkey: aye2020learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2011.04542"}
 tags: ["autocomplete"]

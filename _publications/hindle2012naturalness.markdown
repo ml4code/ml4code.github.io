@@ -4,7 +4,6 @@ title: "On the Naturalness of Software"
 authors: Abram Hindle, Earl T. Barr, Mark Gabel, Zhendong Su, Premkumar Devanbu
 conference: ICSE
 year: 2012
-bibkey: hindle2012naturalness
 tags: ["language model", "autocomplete"]
 ---
 Natural languages like English are rich, complex,

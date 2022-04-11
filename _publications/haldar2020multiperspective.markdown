@@ -4,7 +4,6 @@ title: "A Multi-Perspective Architecture for Semantic Code Search"
 authors: Rajarshi Haldar, Lingfei Wu, Jinjun Xiong, Julia Hockenmaier
 conference: ACL
 year: 2020
-bibkey: haldar2020multiperspective
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.06980"}
 tags: ["search"]

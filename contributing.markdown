@@ -15,7 +15,6 @@ title: The title of the Publication
 authors: F. M. LastName, F. M. LastName, ...
 conference: AbbreviatedNameOfConference
 year: YEAR
-bibkey: lastnameYEARfirstword
 additional_links:
    - {name: "ArXiV", url: "http://arxiv.org/abs/XXXX.YYYY"}
    - {name: "website", url: "http://paperwebsite.com"}

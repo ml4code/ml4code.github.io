@@ -4,7 +4,6 @@ title: "Divide-and-Conquer Approach for Multi-phase Statistical Migration for So
 authors: Anh Tuan Nguyen, Tung Thanh Nguyen, Tien N. Nguyen
 conference: ASE
 year: 2014
-bibkey: nguyen2015divide
 tags: ["migration"]
 ---
 Prior research shows that directly applying phrase-based SMT on lexical tokens to migrate Java to C# produces

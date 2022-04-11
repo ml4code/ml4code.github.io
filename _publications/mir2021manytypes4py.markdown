@@ -4,7 +4,6 @@ title: "ManyTypes4Py: A Benchmark Python Dataset for Machine Learning-based Type
 authors: Amir M. Mir, Evaldas Latoskinas, Georgios Gousios
 conference: MSR
 year: 2021
-bibkey: mir2021manytypes4py
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2104.04706"}
    - {name: "Dataset", url: "https://zenodo.org/record/4479714"}

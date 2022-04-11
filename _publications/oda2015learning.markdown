@@ -4,7 +4,6 @@ title: "Learning to Generate Pseudo-code from Source Code using Statistical Mach
 authors: Yusuke Oda, Hiroyuki Fudaba, Graham Neubig, Hideaki Hata, Sakriani Sakti, Tomoki Toda, Satoshi Nakamura
 conference: ASE
 year: 2015
-bibkey: oda2015learning
 tags: ["representation", "bimodal", "grammar"]
 ---
 Pseudo-code written in natural language can aid

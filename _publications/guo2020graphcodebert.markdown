@@ -3,7 +3,6 @@ layout: publication
 title: "GraphCodeBERT: Pre-training Code Representations with Data Flow"
 authors: Daya Guo, Shuo Ren, Shuai Lu, Zhangyin Feng, Duyu Tang, Shujie Liu, Long Zhou, Nan Duan, Jian Yin, Daxin Jiang, Ming Zhou
 year: 2020
-bibkey: guo2020graphcodebert
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.08366"}
 tags: ["pretraining"]

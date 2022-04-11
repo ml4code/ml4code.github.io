@@ -4,7 +4,6 @@ title: "CoCoGUM: Contextual Code Summarization with Multi-Relational GNN on UMLs
 authors: Yanlin Wang, Lun Du, Ensheng Shi, Yuxuan Hu, Shi Han, Dongmei Zhang 
 conference:
 year: 2020
-bibkey: wang2020cocogum
 additional_links:
    - {name: "TR", url: "https://www.microsoft.com/en-us/research/publication/cocogum-contextual-code-summarization-with-multi-relational-gnn-on-umls/"}
 tags: ["summarization"]

@@ -4,7 +4,6 @@ title: "Learning a Strategy for Adapting a Program Analysis via Bayesian Optimis
 authors: Hakjoo Oh, Hongseok Yang, Kwangkeun Yi.
 conference: OOPSLA 
 year: 2015
-bibkey: oh2015learning
 tags: ["program analysis"]
 ---
 Building a cost-effective static analyser for real-world programs is still regarded an art. One key contributor to this

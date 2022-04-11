@@ -4,7 +4,6 @@ title: "Hierarchical Learning of Cross-Language Mappings through Distributed Vec
 authors: Nghi D. Q. Bui, Lingxiao Jiang
 conference: ICSE
 year: 2018
-bibkey: bui2018hierarchical
 additional_links:
    - {name: "PDF", url: "https://arxiv.org/abs/1803.04715"}
    - {name: "code", url: "https://github.com/bdqnghi/hierarchical-programming-language-mapping"}

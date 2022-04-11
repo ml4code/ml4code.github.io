@@ -11,7 +11,6 @@ layout: default
     {% endfor %}
     &nbsp;<a href='http://scholar.google.com/scholar?q={{ page.title }}' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q={{ page.title }}' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
-    &nbsp;<a href='http://academic.microsoft.com/#/search?iq={{ page.title | uri_escape }}' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/ms-academic.png"/></a>
     <br/>
     {% for tag in page.tags %}
       <tag><a href="/tags.html#{{ tag }}">{{ tag }}</a></tag>
@@ -29,7 +28,7 @@ layout: default
   <script>  
     $(document).ready(
       function() {
-        $.getJSON('/publications-metadata/{{ page.bibkey }}.json', function(data) {
+        $.getJSON("/publications-metadata/{{ page.path | replace_first: '_publications/', '' | replace: '.markdown', '' }}.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

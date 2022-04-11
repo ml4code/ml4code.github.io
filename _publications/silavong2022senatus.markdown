@@ -4,7 +4,6 @@ title: "Senatus - A Fast and Accurate Code-to-Code Recommendation Engine"
 authors: Fran Silavong, Sean Moran, Antonios Georgiadis, Rohan Saphal, Robert Otter
 conference: MSR
 year: 2022
-bibkey: silavong2022senatus
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2111.04473"}
 tags: ["code similarity", "search"]

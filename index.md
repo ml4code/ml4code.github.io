@@ -33,9 +33,7 @@ and programming language communities.
 ### About This Site
 
 This site is an experiment: a [living literature review](https://en.wikipedia.org/wiki/Living_review) that allows
-you explore, [search and navigate]({% link papers.html %}) the literature in this area, by
-following a [taxonomy]({% link base-taxonomy/index.md %})
-based on the underlying design principles of each model.
+you explore, [search and navigate]({% link papers.html %}) the literature in this area.
 The full survey is available [as a research paper](https://arxiv.org/abs/1709.06182).
 Please cite as
 <pre>

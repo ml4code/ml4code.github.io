@@ -4,7 +4,6 @@ title: "Recommendation of Move Method Refactoring Using Path-Based Representatio
 authors: Zarina Kurbatova, Ivan Veselov, Yaroslav Golubev, Timofey Bryksin
 conference:
 year: 2020
-bibkey: kurbatova2020recommendation
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.06392"}
 tags: ["refactoring"]

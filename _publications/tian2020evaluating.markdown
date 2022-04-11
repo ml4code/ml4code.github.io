@@ -4,7 +4,6 @@ title: "Evaluating Representation Learning of Code Changes for Predicting Patch 
 authors: Haoye Tian, Kui Liu, Abdoul Kader Kaboreé, Anil Koyuncu, Li Li, Jacques Klein, Tegawendé F. Bissyandé
 conference:
 year: 2020
-bibkey: tian2020evaluating
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2008.02944"}
 tags: ["repair", "Transformer"]

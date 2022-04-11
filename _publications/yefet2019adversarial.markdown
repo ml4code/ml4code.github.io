@@ -4,7 +4,6 @@ title: "Adversarial Examples for Models of Code"
 authors: Noam Yefet, Uri Alon, Eran Yahav
 conference:
 year: 2019
-bibkey: yefet2019adversarial
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1910.07517"}
 tags: ["adversarial"]

@@ -4,7 +4,6 @@ title: "OCoR: An Overlapping-Aware Code Retriever"
 authors: Qihao Zhu, Zeyu Sun, Xiran Liang, Yingfei Xiong, Lu Zhang
 conference: ASE
 year: 2020
-bibkey: zhu2020ocor
 additional_links:
   - { name: "ArXiV", url: "https://arxiv.org/abs/2008.05201" }
 tags: ["search"]

@@ -6,7 +6,6 @@ conference: ICLR
 year: 2018
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1703.05698"}
-bibkey: murali2017bayesian
 tags: ["code generation", "API"]
 ---
 We present a Bayesian statistical approach to the problem of automatic program synthesis. Our synthesizer starts

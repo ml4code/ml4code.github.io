@@ -3,7 +3,6 @@ layout: publication
 title: "A deep language model for software code"
 authors: Hoa Khanh Dam, Truyen Tran, Trang Pham
 year: 2016
-bibkey: dam2016deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1608.02715"}
 tags: ["language model", "code generation"]

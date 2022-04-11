@@ -4,7 +4,6 @@ title: "Automatically Learning Semantic Features for Defect Prediction"
 authors: Song Wang, Taiyue Liu, Lin Tan
 conference: ICSE
 year: 2016
-bibkey: wang2016automatically
 tags: ["defect", "representation"]
 ---
 Software defect prediction, which predicts defective code regions, can help developers find bugs and prioritize their testing efforts. To build accurate prediction models, previous

@@ -4,7 +4,6 @@ title: "Towards Better Program Obfuscation: Optimization via Language Models"
 authors: Han Liu
 conference: ICSE
 year: 2016
-bibkey: liu2016towards
 tags: ["deobfuscation"]
 ---
 As a common practice in software development, program

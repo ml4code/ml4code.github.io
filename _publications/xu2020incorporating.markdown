@@ -4,7 +4,6 @@ title: "Incorporating External Knowledge through Pre-training for Natural Langua
 authors: Frank F. Xu, Zhengbao Jiang, Pengcheng Yin, Bogdan Vasilescu, Graham Neubig
 conference: ACL
 year: 2020
-bibkey: xu2020incorporating
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.09015"}
    - {name: "Code", url: "https://github.com/neulab/external-knowledge-codegen"}

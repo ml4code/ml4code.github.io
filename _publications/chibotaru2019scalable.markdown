@@ -4,7 +4,6 @@ title: "Scalable Taint Specification Inference with Big Code"
 authors: V. Chibotaru, B. Bichsel, Veselin Raychev, Martin Vechev
 conference: PLDI
 year: 2019
-bibkey: chibotaru2019scalable
 tags: ["defect", "program analysis"]
 ---
 We present a new scalable, semi-supervised method for inferring

@@ -4,7 +4,6 @@ title: "Mercem: Method Name Recommendation Based on Call Graph Embedding"
 authors: Hiroshi Yonai, Yasuhiro Hayase, Hiroyuki Kitagawa
 conference: 
 year: 2019
-bibkey: yonai2019mercem
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1907.05690"}
 tags: ["naming", "representation", "refactoring"]

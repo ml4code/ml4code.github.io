@@ -4,7 +4,6 @@ title: "The Code2Text Challenge: Text Generation in Source Code Libraries"
 authors: Kyle Richardson, Sina Zarrieß, Jonas Kuhn
 conference: INLG
 year: 2017
-bibkey: richardson2017code2text
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1708.00098"}
 tags: ["bimodal"]

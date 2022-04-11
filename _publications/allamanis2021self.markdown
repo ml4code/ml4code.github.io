@@ -4,7 +4,6 @@ title: "Self-Supervised Bug Detection and Repair"
 authors: Miltiadis Allamanis, Henry Jackson-Flux, Marc Brockschmidt
 conference: NeurIPS
 year: 2021
-bibkey: allamanis2021self
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.12787"}
 tags: ["GNN", "Transformer", "defect", "repair"]

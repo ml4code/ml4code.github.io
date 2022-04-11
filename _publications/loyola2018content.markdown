@@ -4,7 +4,6 @@ title: "Content Aware Source Code Change Description Generation"
 authors: Pablo Loyola, Edison Marrese-Taylor, Jorge Balazs, Yutaka Matsuo, Fumiko Satoh
 conference: International Natural Language Generation Conference
 year: 2018
-bibkey: loyola2018content
 tags: ["edit", "summarization"]
 ---
 We propose to study the generation of descriptions from source code changes by integrating  the  messages  included  on  code

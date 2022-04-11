@@ -4,7 +4,6 @@ title: "CodeBLEU: a Method for Automatic Evaluation of Code Synthesis"
 authors: Shuo Ren, Daya Guo, Shuai Lu, Long Zhou, Shujie Liu, Duyu Tang, Neel Sundaresan, Ming Zhou, Ambrosio Blanco, Shuai Ma
 conference:
 year: 2020
-bibkey: ren2020codebleu
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.10297"}
 tags: ["evaluation"]

@@ -4,7 +4,6 @@ title: "CoNCRA: A Convolutional Neural Network Code Retrieval Approach"
 authors: Marcelo de Rezende Martins, Marco Aurélio Gerosa
 conference: SBES '20
 year: 2020
-bibkey: derezendemartins2020concra
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.01959"}
    - {name: "code", url: "https://github.com/mrezende/concra"}

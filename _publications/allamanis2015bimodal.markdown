@@ -4,7 +4,6 @@ title: A Bimodal Modelling of Source Code and Natural Language
 authors: Miltiadis Allamanis, Daniel Tarlow, Andrew Gordon, Yi Wei
 conference: ICML
 year: 2015
-bibkey: allamanis2015bimodal
 additional_links:
    - {name: "Supplementary Material", url: "https://miltos.allamanis.com/publicationfiles/allamanis2015bimodal/supplementary.pdf"}
    - {name: "Presentation Video", url: "http://videolectures.net/icml2015_allamanis_natural_language/"}

@@ -4,7 +4,6 @@ title: "Evaluation of Type Inference with Textual Cues"
 authors: Amirreza A. Shirani, A. Pastor Lopez-Monroy, Fabio Gonzalez, Thamar Solorio, Mohammad Amin Alipour
 conference: NLSE
 year: 2018
-bibkey: shirani2018evaluation
 additional_links:
    - {name: "PDF", url: "https://alipourm.github.io/pub/nl4se18.pdf"}
 tags: ["information extraction"]

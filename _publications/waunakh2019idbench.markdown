@@ -4,7 +4,6 @@ title: "IdBench: Evaluating Semantic Representations of Identifier Names in Sour
 authors: Yaza Wainakh, Moiz Rauf, Michael Pradel
 conference: ICSE
 year: 2021
-bibkey: waunakh2019idbench
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1910.05177"}
 tags: ["representation"]

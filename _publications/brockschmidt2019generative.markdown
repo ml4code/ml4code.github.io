@@ -4,7 +4,6 @@ title: Generative Code Modeling with Graphs
 authors: Marc Brockschmidt, Miltiadis Allamanis, Alexander L. Gaunt, Oleksandr Polozov
 conference: ICLR
 year: 2019
-bibkey: brockschmidt2019generative
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1805.08490"}
    - {name: "OpenReview", url: "https://openreview.net/forum?id=Bke4KsA5FX"}

@@ -4,7 +4,6 @@ title: "Commit Message Generation for Source Code Changes"
 authors: Shengbin Xu, Yuan Yao, Feng Xu, Tianxiao Gu, Hanghang Tong, Jian Lu
 conference: IJCAI
 year: 2019
-bibkey: xu2019commit
 tags: ["edit", "summarization"]
 ---
 Commit  messages,  which  summarize  the  source

@@ -4,7 +4,6 @@ title: "Graph4Code: A Machine Interpretable Knowledge Graph for Code"
 authors: Ibrahim Abdelaziz, Julian Dolby, James P. McCusker, Kavitha Srinivas
 conference:
 year: 2020
-bibkey: abdelaziz2020graph4code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.09440"}
    - {name: "Website", url: "https://wala.github.io/graph4code/"}

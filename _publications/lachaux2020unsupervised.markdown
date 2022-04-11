@@ -4,7 +4,6 @@ title: "Unsupervised Translation of Programming Languages"
 authors: Marie-Anne Lachaux, Baptiste Roziere, Lowik Chanussot, Guillaume Lample
 conference:
 year: 2020
-bibkey: lachaux2020unsupervised
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2006.03511"}
    - {name: "GitHub", url: "https://github.com/facebookresearch/TransCoder"}

@@ -4,7 +4,6 @@ title: "Learning Uniform Semantic Features for Natural Language and Programming 
 authors: Yudong Zhang, Wenhao Zheng, Ming Li
 conference: AAAI
 year: 2019
-bibkey: zhang2019learning
 tags: ["representation", "bimodal"]
 ---
 Semantic feature learning for natural language and programming language is a preliminary step in addressing many software mining tasks. Many existing methods leverage

@@ -4,7 +4,6 @@ title: "Neural query expansion for code search"
 authors: Jason Liu, Seohyun Kim, Vijayaraghavan Murali, Swarat Chaudhuri, Satish Chandra
 conference: MAPL
 year: 2019
-bibkey: liu2019neural
 tags: ["search"]
 ---
 Searching repositories of existing source code for code snippets is a key task in software engineering. Over the years, many approaches to this problem have been proposed. One recent tool called NCS, takes in a natural language query and outputs relevant code snippets, often being able to correctly answer Stack Overflow questions. But what happens when the developer doesn’t provide a query with a clear intent? What if shorter queries are used to demonstrate a more vague intent? 

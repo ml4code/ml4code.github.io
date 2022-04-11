@@ -4,7 +4,6 @@ title: Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Cl
 authors: Lutz Büch, Artur Andrzejak
 conference: SANER
 year: 2019
-bibkey: buech2019learning
 additional_links:
    - {name: "IEEEexplore", url: "https://ieeexplore.ieee.org/document/8668039"}
    - {name: "website_pdf", url: "https://pvs.ifi.uni-heidelberg.de/publications/"}

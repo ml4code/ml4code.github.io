@@ -4,7 +4,6 @@ title: "Neural Program Generation Modulo Static Analysis"
 authors: Rohan Mukherjee, Yeming Wen, Dipak Chaudhari, Thomas W. Reps, Swarat Chaudhuri, Chris Jermaine
 conference: NeurIPS
 year: 2021
-bibkey: mukherjee2021neural
 additional_links:
    - {name: "Preprint", url: "https://www.cs.utexas.edu/~swarat/pubs/neurips21-nsg.pdf"}
 tags: ["synthesis", "language model"]

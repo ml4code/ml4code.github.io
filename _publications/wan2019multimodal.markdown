@@ -4,7 +4,6 @@ title: "Multi-Modal Attention Network Learning for Semantic Source Code Retrieva
 authors: Yao Wan, Jingdong Shu, Yulei Sui, Guandong Xu, Zhou Zhao, Jian Wu, Philip S. Yu
 conference: 
 year: 2019
-bibkey: wan2019multimodal
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1909.13516"}
 tags: ["search"]

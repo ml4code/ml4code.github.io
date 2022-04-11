@@ -4,7 +4,6 @@ title: A large-scale benchmark for few-shot program induction and synthesis
 authors: Ferran Alet, Javier Lopez-Contreras,  James Koppel,  Maxwell Nye,   Armando Solar-Lezama,  Tomas Lozano-Perez,  Leslie Kaelbling, Joshua Tenenbaum
 conference: ICML
 year: 2021
-bibkey: alet2021largescale
 additional_links:
    - {name: "PMLR", url: "http://proceedings.mlr.press/v139/alet21a.html"}
    - {name: "website", url: "https://lis.csail.mit.edu/progres"}

@@ -4,7 +4,6 @@ title: "A Neural Model for Generating Natural Language Summaries of Program Subr
 authors: Alexander LeClair, Siyuan Jiang, Collin McMillan
 conference: ICSE
 year: 2019
-bibkey: leclair2019neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1902.01954"}
    - {name: "Code and Data", url: "https://s3.us-east-2.amazonaws.com/icse2018/index.html"}

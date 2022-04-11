@@ -4,7 +4,6 @@ title: "SynCoBERT: Syntax-Guided Multi-Modal Contrastive Pre-Training for Code R
 authors: Xin Wang, Yasheng Wang, Fei Mi, Pingyi Zhou, Yao Wan, Xiao Liu, Li Li, Hao Wu, Jin Liu, Xin Jiang
 conference:
 year: 2021
-bibkey: wang2021syncobert
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.04556"}
 tags: ["pretraining"]

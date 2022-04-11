@@ -4,7 +4,6 @@ title: "PSCS: A Path-based Neural Model for Semantic Code Search"
 authors: Zhensu Sun, Yan Liu, Chen Yang, Yu Qian
 conference: 
 year: 2020
-bibkey: sun2020pscs
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2008.03042"}
 tags: ["grammar", "search"]

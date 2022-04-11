@@ -4,7 +4,6 @@ title: "SAR: Learning Cross-Language API Mappings with Little Knowledge"
 authors: N. D. Q. Bui, Y. Yu, L. Jiang
 conference: FSE
 year: 2019
-bibkey: bui2019learning
 additional_links:
    - {name: "PDF", url: "https://bdqnghi.github.io/files/FSE_2019.pdf"}
    - {name: "code", url: "https://github.com/bdqnghi/SAR_API_mapping"}

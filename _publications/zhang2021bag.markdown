@@ -4,7 +4,6 @@ title: "Bag-of-Words Baselines for Semantic Code Search"
 authors: Xinyu Zhang, Ji Xin, Andrew Yates, Jimmy Lin
 conference: NLP4Prog
 year: 2021
-bibkey: zhang2021bag
 additional_links:
    - {name: "PDF", url: "https://aclanthology.org/2021.nlp4prog-1.10.pdf"}
 tags: ["search"]

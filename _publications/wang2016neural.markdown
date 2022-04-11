@@ -4,7 +4,6 @@ title: "Neural Code Completion"
 authors: Chang Liu, Xin Wang, Richard Shin, Joseph E. Gonzalez, Dawn Song
 conference: 
 year: 2016
-bibkey: wang2016neural
 tags: ["autocomplete"]
 ---
 Code completion, an essential part of modern software development, yet can be

@@ -4,7 +4,6 @@ title: "On the Naturalness and Localness of Software Logs"
 authors: Sina Gholamian, Paul A. S. Ward
 conference:
 year: 2021
-bibkey: gholamian2021naturalness
 tags: ["logging", "language model"]
 ---
 Logs are an essential part  of  the  development  and

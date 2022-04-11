@@ -4,7 +4,6 @@ title: "Static Prediction of Runtime Errors by Learning to Execute Programs with
 authors: David Bieber, Rishab Goel, Daniel Zheng, Hugo Larochelle, Daniel Tarlow
 conference:
 year: 2022
-bibkey: bieber2022static
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.03771"}
    - {name: "Dataset", url: "https://github.com/google-research/runtime-error-prediction"}

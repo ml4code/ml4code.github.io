@@ -4,7 +4,6 @@ title: "Sequence Model Design for Code Completion in the Modern IDE"
 authors: Gareth Ari Aye, Gail E. Kaiser
 conference: Optional
 year: 2020
-bibkey: aye2020sequence
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.05249"}
 tags: ["autocomplete"]

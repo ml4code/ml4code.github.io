@@ -4,7 +4,6 @@ title: "Extracting Code from Programming Tutorial Videos"
 authors: Shir Yadid, Eran Yahav
 conference: Onward!
 year: 2016
-bibkey: yadid2016extracting
 tags: ["information extraction"]
 ---
 The number of programming tutorial videos on the web

@@ -4,7 +4,6 @@ title: "Synchromesh: Reliable code generation from pre-trained language models"
 authors: Gabriel Poesia, Oleksandr Polozov, Vu Le, Ashish Tiwari, Gustavo Soares, Christopher Meek, Sumit Gulwani
 conference: ICLR
 year: 2022
-bibkey: poesia2022synchromesh
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2201.11227"}
 tags: ["Transformer", "language model"]

@@ -4,7 +4,6 @@ title: "A Statistical Semantic Language Model for Source Code"
 authors: Tung Thanh Nguyen, Anh Tuan Nguyen, Hoan Anh Nguyen, Tien N. Nguyen
 conference: FSE
 year: 2013
-bibkey: nguyen2013statistical
 tags: ["language model"]
 ---
 Recent research has successfully applied the statistical n-gram language model to show that source code exhibits a

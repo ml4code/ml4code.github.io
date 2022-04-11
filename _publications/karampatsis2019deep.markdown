@@ -4,7 +4,6 @@ title: "Maybe Deep Neural Networks are the Best Choice for Modeling Source Code"
 authors: Rafael-Michael Karampatsis, Charles Sutton
 conference:
 year: 2019
-bibkey: karampatsis2019deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1903.05734"}
    - {name: "Code", url: "https://github.com/mast-group/OpenVocabCodeNLM"}

@@ -4,7 +4,6 @@ title: "DOBF: A Deobfuscation Pre-Training Objective for Programming Languages"
 authors: Baptiste Roziere, Marie-Anne Lachaux, Marc Szafraniec, Guillaume Lample
 conference:
 year: 2021
-bibkey: roziere2021dobf
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2102.07492"}
 tags: ["pretraining"]

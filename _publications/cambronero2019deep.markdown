@@ -4,7 +4,6 @@ title: "When Deep Learning Met Code Search"
 authors: Jose Cambronero, Hongyu Li, Seohyun Kim, Koushik Sen, Satish Chandra
 conference: 
 year: 2019
-bibkey: cambronero2019deep
 additional_links:
 - {name: "ArXiV", url: "https://arxiv.org/abs/1905.03813"}
 tags: ["search"]

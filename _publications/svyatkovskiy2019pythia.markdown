@@ -4,7 +4,6 @@ title: "Pythia: AI-assisted Code Completion System"
 authors: Alexey Svyatkovskiy, Ying Zhao, Shengyu Fu, Neel Sundaresan
 conference: KDD
 year: 2019
-bibkey: svyatkovskiy2019pythia
 tags: ["autocomplete", "language model"]
 ---
 

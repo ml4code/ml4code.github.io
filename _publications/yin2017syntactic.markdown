@@ -4,7 +4,6 @@ title: "A Syntactic Neural Model for General-Purpose Code Generation"
 authors: Pengcheng Yin, Graham Neubig
 conference: ACL
 year: 2017
-bibkey: yin2017syntactic
 tags: ["code generation", "grammar", "bimodal"]
 ---
 We consider the problem of parsing natural language descriptions into source code

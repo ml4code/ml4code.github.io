@@ -4,7 +4,6 @@ title: "A Neural Approach to Decompiled Identifier Renaming"
 authors: Jeremy Lacomis, Pengcheng Yin, Edward J. Schwartz, Miltiadis Allamanis, Claire Le Goues, Graham Neubig, Bogdan Vasilescu
 conference: ASE
 year: 2019
-bibkey: lacomis2019neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1909.09029"}
    - {name: "Code and Data", url: "https://github.com/pcyin/dire"}

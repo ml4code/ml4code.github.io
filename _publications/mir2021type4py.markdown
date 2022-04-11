@@ -4,7 +4,6 @@ title: "Type4Py: Deep Similarity Learning-Based Type Inference for Python"
 authors: Amir M. Mir, Evaldas Latoskinas, Sebastian Proksch, Georgios Gousios
 conference:
 year: 2021
-bibkey: mir2021type4py
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2101.04470"}
    - {name: "GitHub", url: "https://github.com/saltudelft/type4py"}

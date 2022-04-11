@@ -4,7 +4,6 @@ title: A Systematic Literature Review on the Use of Deep Learning in Software En
 authors: Cody Watson, Nathan Cooper, David Nader Palacio, Kevin Moran, Denys Poshyvanyk
 conference: TSE
 year: 2021
-bibkey: watson2021systematic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.06520"}
    - {name: "website", url: "https://wm-semeru.github.io/dl4se/"}

@@ -4,7 +4,6 @@ title: "NLyze: Interactive Programming by Natural Language for SpreadSheet Data 
 authors: Sumit Gulwani, Mark Marron
 conference: SIGMOD
 year: 2014
-bibkey: gulwani2014nlyze
 tags: ["code generation", "bimodal", "synthesis"]
 ---
 Millions of computer end users need to perform tasks over tabular spreadsheet data, yet lack the programming knowledge to do such tasks automatically. This paper describes

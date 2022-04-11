@@ -4,7 +4,6 @@ title: "Code and Named Entity Recognition in StackOverflow"
 authors: Jeniya Tabassum, Mounica Maddela, Wei Xu, Alan Ritter
 conference: ACL
 year: 2020
-bibkey: tabassum2020code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.01634"}
    - {name: "Code", url: "https://github.com/jeniyat/StackOverflowNER/"}

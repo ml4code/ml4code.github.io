@@ -4,7 +4,6 @@ title: "ReACC: A Retrieval-Augmented Code Completion Framework"
 authors: Shuai Lu, Nan Duan, Hojae Han, Daya Guo, Seung-won Hwang, Alexey Svyatkovskiy
 conference:
 year: 2022
-bibkey: lu2022reacc
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.07722"}
 tags: ["Transformer", "autocomplete"]

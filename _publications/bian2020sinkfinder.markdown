@@ -4,7 +4,6 @@ title: "SinkFinder: harvesting hundreds of unknown interesting function pairs wi
 authors: Pan Bian, Bin Liang, Jianjun Huang, Wenchang Shi, Xidong Wang, Jian Zhang
 conference: FSE
 year: 2020
-bibkey: bian2020sinkfinder
 tags: ["program analysis"]
 ---
 Mastering the knowledge about security-sensitive functions that can potentially result in bugs is valuable to detect them. However, identifying this kind of functions is not a trivial task. Introducing machine learning-based techniques to do the task is a natural choice. Unfortunately, the approach also requires considerable prior knowledge, e.g., sufficient labelled training samples. In practice, the requirement is often hard to meet.

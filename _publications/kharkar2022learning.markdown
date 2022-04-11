@@ -4,7 +4,6 @@ title: "Learning to Reduce False Positives in Analytic Bug Detectors"
 authors: Anant Kharkar, Roshanak Zilouchian Moghaddam, Matthew Jin, Xiaoyu Liu, Xin Shi, Colin Clement, Neel Sundaresan
 conference: ICSE
 year: 2022
-bibkey: kharkar2022learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.09907"}
 tags: ["Transformer", "static analysis"]

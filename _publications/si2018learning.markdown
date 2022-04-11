@@ -4,7 +4,6 @@ title: "Learning Loop Invariants for Program Verification"
 authors: Xujie Si, Hanjun Dai, Mukund Raghothaman, Mayur Naik, Le Song
 conference: NeurIPS
 year: 2018
-bibkey: si2018learning
 additional_links:
    - {name: "Preprint", url: "https://www.cis.upenn.edu/~mhnaik/papers/nips18.pdf"}
 tags: ["program analysis", "verification"]

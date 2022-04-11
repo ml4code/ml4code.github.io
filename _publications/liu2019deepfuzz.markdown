@@ -4,7 +4,6 @@ title: "DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testi
 authors: Xiao Liu, Xiaoting Li, Rupesh Prajapati, Dinghao Wu
 conference: AAAI
 year: 2019
-bibkey: liu2019deepfuzz
 tags: ["fuzzing", "code generation"]
 ---
 Compilers  are among  the  most  fundamental  programming

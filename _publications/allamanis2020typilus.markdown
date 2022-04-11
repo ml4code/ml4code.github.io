@@ -4,7 +4,6 @@ title: "Typilus: Neural Type Hints"
 authors: Miltiadis Allamanis, Earl T. Barr, Soline Ducousso, Zheng Gao
 conference: PLDI
 year: 2020
-bibkey: allamanis2020typilus
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.10657"}
    - {name: "Dataset", url: "https://github.com/typilus/typilus"}

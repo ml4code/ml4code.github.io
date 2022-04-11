@@ -4,7 +4,6 @@ title: "Towards Neural Decompilation"
 authors: Omer Katz, Yuval Olshaker, Yoav Goldberg, Eran Yahav
 conference:
 year: 2019
-bibkey: katz2019towards
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1905.08325"}
 tags: ["decompilation"]

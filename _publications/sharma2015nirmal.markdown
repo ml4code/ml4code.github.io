@@ -4,7 +4,6 @@ title: "NIRMAL: Automatic Identification of Software Relevant Tweets Leveraging 
 authors: Abhishek Sharma, Yuan Tian, David Lo
 conference: SANER
 year: 2015
-bibkey: sharma2015nirmal
 tags: ["information extraction"]
 ---
 Twitter is one of the most widely used social media

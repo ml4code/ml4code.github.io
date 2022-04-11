@@ -4,7 +4,6 @@ title: "Deep Learning Type Inference"
 authors: V. J. Hellendoorn, Christian Bird, Earl T. Barr, Miltiadis Allamanis
 conference: FSE 
 year: 2018
-bibkey: hellendoorn2018deep
 tags: ["representation", "types"]
 ---
 Dynamically typed languages such as JavaScript and Python are

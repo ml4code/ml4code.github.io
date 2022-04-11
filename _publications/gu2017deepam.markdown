@@ -4,7 +4,6 @@ title: "DeepAM: Migrate APIs with Multi-modal Sequence to Sequence Learning"
 authors: Xiaodong Gu, Hongyu Zhang, Dongmei Zhang, Sunghun Kim
 conference: IJCAI
 year: 2017
-bibkey: gu2017deepam
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1704.07734"}
 tags: ["API"]

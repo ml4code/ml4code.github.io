@@ -4,7 +4,6 @@ title: "What Do They Capture? -- A Structural Analysis of Pre-Trained Language M
 authors: Yao Wan, Wei Zhao, Hongyu Zhang, Yulei Sui, Guandong Xu, Hai Jin
 conference: ICSE
 year: 2022
-bibkey: wan2022what
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2202.06840"}
    - {name: "Code", url: "https://github.com/CGCL-codes/naturalcc"}

@@ -4,7 +4,6 @@ title: "Natural Language Models for Predicting Programming Comments"
 authors: Dana Movshovitz-Attias, William W. Cohen
 conference: ACL
 year: 2013
-bibkey: movshovitz2013natural
 tags: ["bimodal", "documentation", "summarization"]
 ---
 Statistical language models have successfully been used to describe and analyze

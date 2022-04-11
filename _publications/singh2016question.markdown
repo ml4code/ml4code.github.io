@@ -4,7 +4,6 @@ title: "Question Independent Grading using Machine Learning: The Case of Compute
 authors: Gursimran Singh, Shashank Srikant, Varun Aggarwal
 conference: KDD
 year: 2016
-bibkey: singh2016question
 additional_links:
    - {name: "PDF", url: "https://dl.acm.org/citation.cfm?id=2939696"}
    - {name: "website", url: "http://research.aspiringminds.com/"}

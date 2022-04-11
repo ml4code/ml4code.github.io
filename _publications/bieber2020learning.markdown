@@ -4,7 +4,6 @@ title: "Learning to Execute Programs with Instruction Pointer Attention Graph Ne
 authors: David Bieber, Charles Sutton, Hugo Larochelle, Daniel Tarlow
 conference: NeurIPS
 year: 2020
-bibkey: bieber2020learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2010.12621"}
 tags: ["representation", "dynamic"]

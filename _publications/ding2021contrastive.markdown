@@ -4,7 +4,6 @@ title: "Contrastive Learning for Source Code with Structural and Functional Prop
 authors: Yangruibo Ding, Luca Buratti, Saurabh Pujar, Alessandro Morari, Baishakhi Ray, Saikat Chakraborty
 conference: 
 year: 2021
-bibkey: ding2021contrastive
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2110.03868"}
 tags: ["representation", "pretraining", "Transformer"]

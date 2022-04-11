@@ -4,7 +4,6 @@ title: "On Multi-Modal Learning of Editing Source Code"
 authors: Saikat Chakraborty, Baishakhi Ray
 conference: 
 year: 2021
-bibkey: chakraborty2021multimodal
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.06645"}
 tags: ["Transformer", "edit"]

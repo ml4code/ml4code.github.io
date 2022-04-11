@@ -4,7 +4,6 @@ title: "End-to-end Deep Learning of Optimization Heuristics"
 authors: Chris Cummins, Pavlos Petoumenos, Zheng Wang, Hugh Leather
 conference: 
 year: 2017
-bibkey: cummins2017end
 tags: ["optimization"]
 ---
 Accurate automatic optimization heuristics are necessary for dealing with the complexity and diversity of modern hardware and software. Machine learning is a proven technique for learning such heuristics, but its success is bound by the quality of the features used. These features must be hand crafted by developers through a combination of expert domain knowledge and trial and error. This makes the quality of the final model directly dependent on the skill and available time of the system architect.

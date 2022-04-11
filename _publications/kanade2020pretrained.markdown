@@ -4,7 +4,6 @@ title: "Pre-trained Contextual Embedding of Source Code"
 authors: Aditya Kanade, Petros Maniatis, Gogul Balakrishnan, Kensen Shi
 conference: ICML
 year: 2020
-bibkey: kanade2020pretrained
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2001.00059"}
 tags: ["pretraining"]

@@ -4,7 +4,6 @@ title: "SampleFix: Learning to Correct Programs by Sampling Diverse Fixes"
 authors: Hossein Hajipour, Apratim Bhattacharyya, Cristian-Alexandru Staicu, Mario Fritz
 conference: 
 year: 2019
-bibkey: hajipour2019samplefix
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1906.10502"}
 tags: ["repair", "code generation"]

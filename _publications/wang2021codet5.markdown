@@ -4,7 +4,6 @@ title: "CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for 
 authors: Yue Wang, Weishi Wang, Shafiq Joty, Steven C.H. Hoi
 conference: EMNLP
 year: 2021
-bibkey: wang2021codet5
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2109.00859"}
    - {name: "Code & Model", url: "https://github.com/salesforce/CodeT5"}

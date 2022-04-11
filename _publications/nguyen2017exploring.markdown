@@ -4,7 +4,6 @@ title: "Exploring API Embedding for API Usages and Applications"
 authors: Trong Duc Nguyen, Anh Tuan Nguyen, Hung Dang Phan, Tien N. Nguyen
 conference: ICSE
 year: 2017
-bibkey: nguyen2017exploring
 tags: ["API", "representation"]
 ---
 Word2Vec is a class of neural network models that

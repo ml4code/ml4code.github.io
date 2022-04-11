@@ -4,7 +4,6 @@ title: "A Hidden Markov Model to Detect Coded Information Islands in Free Text"
 authors: Luigi Cerulo, Michele Ceccarelli, Massimiliano Di Penta, Gerardo Canfora
 conference: SCAM 
 year: 2013
-bibkey: cerulo2013hidden
 tags: ["information extraction"]
 ---
 Emails and issue reports capture useful knowledge about development practices, bug fixing, and change activities. Extracting such a content is challenging, due to the mix-up of

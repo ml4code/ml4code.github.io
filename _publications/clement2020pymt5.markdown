@@ -4,7 +4,6 @@ title: "PyMT5: multi-mode translation of natural language and Python code with t
 authors: Colin B. Clement, Dawn Drain, Jonathan Timcheck, Alexey Svyatkovskiy, Neel Sundaresan
 conference: EMNLP
 year: 2020
-bibkey: clement2020pymt5
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2010.03150"}
 tags: ["bimodal", "code generation", "summarization", "documentation", "language model", "pretraining"]

@@ -4,7 +4,6 @@ title: "TranS^3: A Transformer-based Framework for Unifying Code Summarization a
 authors: Wenhua Wang, Yuqun Zhang, Zhengran Zeng, Guandong Xu
 conference:
 year: 2020
-bibkey: wang2020trans
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2003.03238"}
 tags: ["search", "documentation"]

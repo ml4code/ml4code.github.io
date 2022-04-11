@@ -4,7 +4,6 @@ title: "Capturing Structural Locality in Non-parametric Language Models"
 authors: Frank F. Xu, Junxian He, Graham Neubig, Vincent J. Hellendoorn
 conference:
 year: 2021
-bibkey: xu2021capturing
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2110.02870"}
 tags: ["language model"]

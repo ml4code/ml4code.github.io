@@ -4,7 +4,6 @@ title: "A Transformer-based Approach for Source Code Summarization"
 authors: Wasi Uddin Ahmad, Saikat Chakraborty, Baishakhi Ray, Kai-Wei Chang
 conference: ACL
 year: 2020
-bibkey: ahmad2020transformer
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.00653"}
    - {name: "Code", url: "https://github.com/wasiahmad/NeuralCodeSum"}

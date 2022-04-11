@@ -4,7 +4,6 @@ title: "SCELMo: Source Code Embeddings from Language Models"
 authors: Rafael-Michael Karampatsis, Charles Sutton
 conference:
 year: 2020
-bibkey: karampatsis2020scelmo
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.13214"}
 tags: ["pretraining", "defect"]

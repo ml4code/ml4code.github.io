@@ -4,7 +4,6 @@ title: Multimodal Representation for Neural Code Search
 authors: Jian Gu, Zimin Chen, Martin Monperrus
 conference: ICSME
 year: 2021
-bibkey: jian2021multimodal
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2107.00992"}
    - {name: "code", url: "https://github.com/jianguda/mrncs"}

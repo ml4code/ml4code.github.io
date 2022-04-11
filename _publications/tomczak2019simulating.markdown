@@ -4,7 +4,6 @@ title: "Simulating Execution Time of Tensor Programs using Graph Neural Networks
 authors: Jakub M. Tomczak, Romain Lepert, Auke Wiggers
 conference: Representation Learning on Graphs and Manifolds at ICLR
 year: 2019
-bibkey: tomczak2019simulating
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1904.11876"}
 tags: ["GNN"]

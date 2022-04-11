@@ -4,7 +4,6 @@ title: "Building Language Models for Text with Named Entities"
 authors: M.R. Parvez, Saikat Chakraborty, Baishakhi Ray, KW Chang
 conference: ACL
 year: 2018
-bibkey: parvez2018building
 tags: ["language model"]
 ---
 Text  in  many  domains  involves  a  significant amount of named entities.   Predicting the entity names is often challenging

@@ -4,7 +4,6 @@ title: "CodeTrek: Flexible Modeling of Code using an Extensible Relational Repre
 authors: Pardis Pashakhanloo, Aaditya Naik, Yuepeng Wang, Hanjun Dai, Petros Maniatis, Mayur Naik
 conference: ICLR
 year: 2022
-bibkey: pashakhanloo2022codetrek
 additional_links:
    - {name: "OpenReview", url: "https://openreview.net/forum?id=WQc075jmBmf"}
 tags: ["representation", "variable misuse"]

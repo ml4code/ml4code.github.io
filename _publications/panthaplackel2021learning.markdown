@@ -4,7 +4,6 @@ title: "Learning to Describe Solutions for Bug Reports Based on Developer Discus
 authors: Sheena Panthaplackel, Junyi Jessy Li, Milos Gligoric, Raymond J. Mooney
 conference:
 year: 2021
-bibkey: panthaplackel2021learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2110.04353"}
 tags: ["summarization", "documentation"]

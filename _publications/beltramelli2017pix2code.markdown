@@ -4,7 +4,6 @@ title: "pix2code: Generating Code from a Graphical User Interface Screenshot"
 authors: Tony Beltramelli
 conference:
 year: 2017
-bibkey: beltramelli2017pix2code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1705.07962"}
 tags: ["code generation", "bimodal"]

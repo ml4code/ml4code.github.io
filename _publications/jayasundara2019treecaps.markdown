@@ -4,7 +4,6 @@ title: "TreeCaps: Tree-Structured Capsule Networks for Program Source Code Proce
 authors: Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Luke Zettlemoyer
 conference:
 year: 2019
-bibkey: jayasundara2019treecaps
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1910.12306"}
 tags: ["representation"]

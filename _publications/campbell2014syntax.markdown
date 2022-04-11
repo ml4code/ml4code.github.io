@@ -4,7 +4,6 @@ title: "Syntax Errors Just Aren’t Natural: Improving Error Reporting with Lang
 authors: Joshua Charles Campbell, Abram Hindle, José Nelson Amaral
 conference: MSR
 year: 2014
-bibkey: campbell2014syntax
 tags: ["repair", "language model"]
 ---
 A frustrating aspect of software development is that compiler error messages often fail to locate the actual cause of a syntax error. An errant semicolon or brace can result in

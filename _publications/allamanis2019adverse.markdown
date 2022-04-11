@@ -4,7 +4,6 @@ title: "The Adverse Effects of Code Duplication in Machine Learning Models of Co
 authors: Miltiadis Allamanis
 conference:
 year: 2019
-bibkey: allamanis2019adverse
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1812.06469"}
    - {name: "Dataset Errata", url: "https://dpupublicdata.blob.core.windows.net/duplicates/errata.zip"}

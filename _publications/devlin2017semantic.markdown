@@ -4,7 +4,6 @@ title: "Semantic Code Repair using Neuro-Symbolic Transformation Networks"
 authors: Jacob Devlin, Jonathan Uesato, Rishabh Singh, Pushmeet Kohli
 conference:
 year: 2017
-bibkey: devlin2017semantic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1710.11054"}
 tags: ["repair"]

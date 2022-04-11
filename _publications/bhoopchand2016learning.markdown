@@ -4,7 +4,6 @@ title: "Learning Python Code Suggestion with a Sparse Pointer Network"
 authors: Avishkar Bhoopchand, Tim Rocktaschel, Earl Barr, Sebastian Riedel
 conference:
 year: 2016
-bibkey: bhoopchand2016learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/pdf/1611.08307.pdf"}
 tags: ["language model", "autocomplete"]

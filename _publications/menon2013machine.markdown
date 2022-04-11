@@ -4,7 +4,6 @@ title: "A Machine Learning Framework for Programming by Example"
 authors: Aditya Menon, Omer Tamuz, Sumit Gulwani, Butler Lampson, Adam Kalai
 conference: ICML
 year: 2013
-bibkey: menon2013machine
 tags: ["code generation"]
 ---
 Learning programs is a timely and interesting challenge. In Programming by Example

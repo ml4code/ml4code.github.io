@@ -4,7 +4,6 @@ title: "Automatic Source Code Summarization with Extended Tree-LSTM"
 authors: Yusuke Shido, Yasuaki Kobayashi, Akihiro Yamamoto, Atsushi Miyamoto, Tadayuki Matsumura
 conference: International Joint Conference on Neural Networks
 year: 2019
-bibkey: shido2019automatic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1906.08094"}
    - {name: "Dataset", url: "https://github.com/xing-hu/DeepCom"}

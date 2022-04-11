@@ -4,7 +4,6 @@ title: "TreeBERT: A Tree-Based Pre-Trained Model for Programming Language"
 authors: Xue Jiang, Zhuoran Zheng, Chen Lyu, Liang Li, Lei Lyu
 conference: UAI
 year: 2021
-bibkey: jiang2021treebert
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.12485"}
 tags: ["grammar", "Transformer"]

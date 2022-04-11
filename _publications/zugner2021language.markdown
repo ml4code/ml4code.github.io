@@ -4,7 +4,6 @@ title: "Language-Agnostic Representation Learning of Source Code from Structure 
 authors: Daniel Zügner, Tobias Kirschstein, Michele Catasta, Jure Leskovec, Stephan Günnemann
 conference: ICLR
 year: 2021
-bibkey: zugner2021language
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2103.11318"}
 tags: ["Transformer", "representation"]

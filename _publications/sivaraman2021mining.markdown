@@ -4,7 +4,6 @@ title: "Mining Idioms in the Wild"
 authors: Aishwarya Sivaraman, Rui Abreu, Andrew Scott, Tobi Akomolede, Satish Chandra
 conference: 
 year: 2021
-bibkey: sivaraman2021mining
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2107.06402"}
 tags: ["pattern mining", "refactoring"]

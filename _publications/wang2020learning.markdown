@@ -4,7 +4,6 @@ title: "Learning Semantic Program Embeddings with Graph Interval Neural Network"
 authors: Yu Wang, Fengjuan Gao, Linzhang Wang, Ke Wang
 conference:
 year: 2020
-bibkey: wang2020learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.09997"}
 tags: ["GNN", "defect"]

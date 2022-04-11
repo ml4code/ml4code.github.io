@@ -4,7 +4,6 @@ title: "ProGraML: Graph-based Deep Learning for Program Optimization and Analysi
 authors: Chris Cummins, Zacharias V. Fisches, Tal Ben-Nun, Torsten Hoefler, Hugh Leather
 conference:
 year: 2020
-bibkey: cummins2020programl
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2003.10536"}
    - {name: "Dataset", url: "https://zenodo.org/record/4122437"}

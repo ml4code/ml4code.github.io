@@ -4,7 +4,6 @@ title: Learning to Represent Programs with Graphs
 authors: Miltiadis Allamanis, Marc Brockschmidt, Mahmoud Khademi
 conference: "ICLR"
 year: 2018
-bibkey: allamanis2018learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1711.00740"}
    - {name: "GGNN Code", url: "https://github.com/Microsoft/gated-graph-neural-network-samples"}

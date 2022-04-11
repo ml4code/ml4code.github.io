@@ -6,7 +6,6 @@ conference:
 year: 2019
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1904.03031"}
-bibkey: sharma2019feasibility
 tags: ["representation", "program analysis"]
 ---
 **Context**: A substantial amount of work has been done to detect smells in source code using metrics-based and heuristics-based methods. Machine learning methods have been recently applied to detect source code smells; however, the current practices are considered far from mature.

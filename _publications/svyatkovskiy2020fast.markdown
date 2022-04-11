@@ -4,7 +4,6 @@ title: "Fast and Memory-Efficient Neural Code Completion"
 authors: Alexey Svyatkovskiy, Sebastian Lee, Anna Hadjitofi, Maik Riechert, Juliana Franco, Miltiadis Allamanis
 conference:
 year: 2020
-bibkey: svyatkovskiy2020fast
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.13651"}
 tags: ["autocomplete"]

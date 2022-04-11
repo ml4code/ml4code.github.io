@@ -4,7 +4,6 @@ title: "Reading StackOverflow Encourages Cheating: Adding Question Text Improves
 authors: Gabriel Orlanski, Alex Gittens
 conference: NLP4Prog
 year: 2021
-bibkey: orlanski2021reading
 additional_links:
    - {name: "PDF", url: "https://aclanthology.org/2021.nlp4prog-1.8.pdf"}
 tags: ["dataset", "Transformer"]

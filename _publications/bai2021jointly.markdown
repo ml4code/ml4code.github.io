@@ -4,7 +4,6 @@ title: "Jointly Learning to Repair Code and Generate Commit Message"
 authors: Jiaqi Bai, Long Zhou, Ambrosio Blanco, Shujie Liu, Furu Wei, Ming Zhou, Zhoujun Li
 conference: 
 year: 2021
-bibkey: bai2021jointly
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2109.12296"}
 tags: ["edit", "Transformer"]

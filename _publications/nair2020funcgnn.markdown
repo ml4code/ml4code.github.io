@@ -4,7 +4,6 @@ title: "funcGNN: A Graph Neural Network Approach to Program Similarity"
 authors: Aravind Nair, Avijit Roy, Karl Meinke
 conference: ESEM 
 year: 2020
-bibkey: nair2020funcgnn
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2007.13239"}
 tags: ["GNN", "clone"]

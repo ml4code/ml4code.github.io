@@ -4,7 +4,6 @@ title: "Will they like this? Evaluating Code Contributions With Language Models"
 authors: Vincent J. Hellendoorn, Premkumar Devanbu, Alberto Bacchelli
 conference: MSR
 year: 2015
-bibkey: hellendoorn2015will
 additional_links:
    - {name: "Paper", url: "http://vhellendoorn.github.io/PDF/msr2015.pdf"}
 tags: ["review", "language model"]

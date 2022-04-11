@@ -4,7 +4,6 @@ title: "Summarizing Source Code using a Neural Attention Model"
 authors: Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Luke Zettlemoyer
 conference: ACL
 year: 2016
-bibkey: iyer2016summarizing
 tags: ["summarization", "bimodal"]
 ---
 High quality source code is often paired

@@ -4,7 +4,6 @@ title: "CodeSearchNet Challenge: Evaluating the State of Semantic Code Search"
 authors: Hamel Husain, Ho-Hsiang Wu, Tiferet Gazit, Miltiadis Allamanis, Marc Brockschmidt
 conference:
 year: 2019
-bibkey: husain2019codesearchnet
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1909.09436"}
    - {name: "Code and other info", url: "https://github.com/github/CodeSearchNet"}

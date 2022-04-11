@@ -4,7 +4,6 @@ title: "Where should I comment my code? A dataset and model for predicting locat
 authors: Annie Louis, Santanu Kumar Dash, Earl T. Barr, Charles Sutton
 conference: International Conference on Software Engineering (ICSE; NIER track)
 year: 2020
-bibkey: louis2020where
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1806.04616"}
    - {name: "Data", url: "http://groups.inf.ed.ac.uk/cup/comment-locator"}

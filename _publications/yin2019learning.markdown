@@ -4,7 +4,6 @@ title: "Learning to Represent Edits"
 authors: Pengcheng Yin, Graham Neubig, Miltiadis Allamanis, Marc Brockschmidt, Alexander L. Gaunt
 conference: ICLR
 year: 2019
-bibkey: yin2019learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1810.13337"}
    - {name: "data extraction", url: "https://github.com/Microsoft/msrc-dpu-learning-to-represent-edits"}

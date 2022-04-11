@@ -4,7 +4,6 @@ title: "Bugram: bug detection with n-gram language models"
 authors: Song Wang, Devin Chollak, Dana Movshovitz-Attias, Lin Tan
 conference: ASE
 year: 2016
-bibkey: wang2016bugram
 tags: ["defect", "representation"]
 ---
 

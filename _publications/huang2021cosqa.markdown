@@ -4,7 +4,6 @@ title: "CoSQA: 20,000+ Web Queries for Code Search and Question Answering"
 authors: Junjie Huang, Duyu Tang, Linjun Shou, Ming Gong, Ke Xu, Daxin Jiang, Ming Zhou, Nan Duan
 conference: ACL
 year: 2021
-bibkey: huang2021cosqa
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.13239"}
    - {name: "Code", url: "https://github.com/Jun-jie-Huang/CoCLR"}

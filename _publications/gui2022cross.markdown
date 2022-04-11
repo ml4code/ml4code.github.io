@@ -4,7 +4,6 @@ title: "Cross-Language Binary-Source Code Matching with Intermediate Representat
 authors: Yi Gui, Yao Wan, Hongyu Zhang, Huifang Huang, Yulei Sui, Guandong Xu, Zhiyuan Shao, Hai Jin
 conference: SANER
 year: 2022
-bibkey: gui2022cross
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2201.07420"}
    - {name: "Code", url: "https://github.com/CGCL-codes/naturalcc"}

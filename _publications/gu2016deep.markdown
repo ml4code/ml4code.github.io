@@ -4,7 +4,6 @@ title: "Deep API Learning"
 authors: Xiaodong Gu, Hongyu Zhang, Dongmei Zhang, Sunghun Kim.
 conference: FSE
 year: 2016
-bibkey: gu2016deep
 tags: ["API", "search"]
 ---
 Developers often wonder how to implement a certain functionality (e.g., how to parse XML files) using APIs. Obtaining an API usage sequence based on an API-related natural language query is very helpful in this regard. Given a query, existing approaches utilize information retrieval models to search for matching API sequences. These approaches treat queries and APIs as bag-of-words (i.e., keyword matching or word-to-word alignment) and lack a deep understanding of the semantics of the query.

@@ -4,7 +4,6 @@ title: "Learning to Extend Program Graphs to Work-in-Progress Code"
 authors: Xuechen Li, Chris J. Maddison, Daniel Tarlow
 conference:
 year: 2021
-bibkey: li2021learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.14038"}
 tags: ["Transformer", "autocomplete", "repair"]

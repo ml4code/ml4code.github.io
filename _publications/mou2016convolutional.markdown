@@ -4,7 +4,6 @@ title: "Convolutional Neural Networks over Tree Structures for Programming Langu
 authors: Lili Mou, Ge Li, Lu Zhang, Tao Wang, Zhi Jin
 conference: AAAI
 year: 2016
-bibkey: mou2016convolutional
 tags: ["representation", "grammar"]
 ---
 Programming language processing (similar to natural language processing) is a hot research topic in the field of software engineering; it has also aroused growing interest in the

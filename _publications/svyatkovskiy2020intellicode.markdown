@@ -3,7 +3,6 @@ layout: publication
 title: "IntelliCode Compose: Code Generation Using Transformer"
 authors: Alexey Svyatkovskiy, Shao Kun Deng, Shengyu Fu, Neel Sundaresan
 year: 2020
-bibkey: svyatkovskiy2020intellicode
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.08025"}
 tags: ["autocomplete", "code generation", "synthesis", "language model", "pretraining"]

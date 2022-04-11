@@ -4,7 +4,6 @@ title: "A Systematic Evaluation of Large Language Models of Code"
 authors: Frank F. Xu, Uri Alon, Graham Neubig, Vincent J. Hellendoorn
 conference: 
 year: 2022
-bibkey: xu2022systematic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2202.13169"}
 tags: ["Transformer", "language model"]

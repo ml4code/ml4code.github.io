@@ -4,7 +4,6 @@ title: "Self-Supervised Contrastive Learning for Code Retrieval and Summarizatio
 authors: Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang
 conference: SIGIR
 year: 2021
-bibkey: bui2020efficient
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.02731"}
 tags: ["pretraining", "search"]

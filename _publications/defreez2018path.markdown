@@ -4,7 +4,6 @@ title: "Path-Based Function Embedding and its Application to Specification Minin
 authors: Daniel DeFreez, Aditya V. Thakur, Cindy Rubio-González
 conference: ICSE
 year: 2018
-bibkey: defreez2018path
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1802.07779"}
 tags: ["program analysis", "representation"]

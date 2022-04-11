@@ -4,7 +4,6 @@ title: "Global Relational Models of Source Code"
 authors: Vincent J. Hellendoorn, Charles Sutton, Rishab Singh, Petros Maniatis, David Bieber
 conference: ICLR
 year: 2020
-bibkey: hellendoorn2020global
 additional_links:
    - {name: "OpenReview", url: "https://openreview.net/forum?id=B1lnbRNtwr&noteId=B1lnbRNtwr"}
 tags: ["variable misuse", "defect", "GNN", "Transformer"]

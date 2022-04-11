@@ -4,7 +4,6 @@ title: "Deep Learning Similarities from Different Representations of Source Code
 authors: Michele Tufano, Cody Watson, Gabriele Bavota, Massimiliano Di Penta, Martin White, Denys Poshyvanyk
 conference: MSR
 year: 2018
-bibkey: tufano2018deep
 tags: ["representation", "clone"]
 ---
 Assessing the similarity between code components plays a pivotal

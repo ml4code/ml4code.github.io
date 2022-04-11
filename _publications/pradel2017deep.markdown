@@ -4,7 +4,6 @@ title: "Deep Learning to Find Bugs"
 authors: Michael Pradel, Koushik Sen
 conference: 
 year: 2017
-bibkey: pradel2017deep
 additional_links:
    - {name: "PDF", url: "http://mp.binaervarianz.de/DeepBugs_TR_Nov2017.pdf"}
 tags: ["defect", "program analysis"]

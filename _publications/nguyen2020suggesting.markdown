@@ -4,7 +4,6 @@ title: "Suggesting Natural Method Names to Check Name Consistencies"
 authors: Son Nguyen, Hung Phan, Trinh Le, Tien N. Nguyen
 conference: ICSE
 year: 2020
-bibkey: nguyen2020suggesting
 additional_links:
    - {name: "Preprint", url: "https://sonvnguyen.github.io/publications/icse20-final.pdf"}
 tags: ["naming"]

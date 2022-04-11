@@ -4,7 +4,6 @@ title: Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstra
 authors: Wenhan Wang, Ge Li, Bo Ma, Xin Xia, Zhi Jin
 conference: IEEE International Conference on Software Analysis, Evolution, and Reengineering
 year: 2020
-bibkey: wang2020detecting
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.08653"}
 tags: ["clone", "GNN"]

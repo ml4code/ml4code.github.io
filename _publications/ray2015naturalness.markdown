@@ -4,7 +4,6 @@ title: "On the “Naturalness” of Buggy Code"
 authors: Baishakhi Ray, Vincent Hellendoorn, Saheel Godhane, Zhaopeng Tu, Alberto Bacchelli, Premkumar Devanbu
 conference: ICSE
 year: 2015
-bibkey: ray2015naturalness
 tags: ["defect"]
 ---
 Real software, the kind working programmers produce by the kLOC

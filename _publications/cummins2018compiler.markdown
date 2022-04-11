@@ -4,7 +4,6 @@ title: "Compiler Fuzzing through Deep Learning"
 authors: Chris Cummins, Pavlos Petoumenos, Alastair Murray, Hugh Leather
 conference: ISSTA
 year: 2018
-bibkey: cummins2018compiler
 tags: ["fuzzing", "code generation"]
 ---
 Random program generation — fuzzing — is an effective technique

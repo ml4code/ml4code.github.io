@@ -4,7 +4,6 @@ title: "Learning Program Embeddings to Propagate Feedback on Student Code"
 authors: Chris Piech, Jonathan Huang, Andy Nguyen, Mike Phulsuksombati, Mehran Sahami, Leonidas Guibas
 conference: ICML
 year: 2015
-bibkey: piech2015learning
 tags: ["representation", "repair", "education"]
 ---
 Providing feedback, both assessing final work

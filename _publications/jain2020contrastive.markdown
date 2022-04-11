@@ -4,7 +4,6 @@ title: "Contrastive Code Representation Learning"
 authors: Paras Jain, Ajay Jain, Tianjun Zhang, Pieter Abbeel, Joseph E. Gonzalez, Ion Stoica
 conference: 
 year: 2020
-bibkey: jain2020contrastive
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2007.04973"}
    - {name: "Website", url: "https://parasj.github.io/contracode/"}

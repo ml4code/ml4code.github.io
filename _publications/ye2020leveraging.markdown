@@ -4,7 +4,6 @@ title: "Leveraging Code Generation to Improve Code Retrieval and Summarization v
 authors: Wei Ye, Rui Xie, Jinglei Zhang, Tianxiang Hu, Xiaoyin Wang, Shikun Zhang
 conference: WWW
 year: 2020
-bibkey: ye2020leveraging
 additional_links:
   - { name: "ArXiV", url: "https://arxiv.org/abs/2002.10198" }
 tags: ["search", "summarization"]

@@ -4,7 +4,6 @@ title: "Automatically generating features for learning program analysis heuristi
 authors: Kwonsoo Chae, Hakjoo Oh, Kihong Heo, Hongseok Yang
 conference: 
 year: 2016
-bibkey: chae2016automatically
 additional_links:
 - {name: "ArXiV", url: "https://arxiv.org/abs/1612.09394"}
 tags: ["representation"]

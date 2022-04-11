@@ -4,7 +4,6 @@ title: "NL2Type: Inferring JavaScript Function Types from Natural Language Infor
 authors: Rabee Sohail Malik, Jibesh Patra, Michael Pradel
 conference: ICSE
 year: 2019
-bibkey: malik2019nl2type
 tags: ["bimodal", "types"]
 ---
 JavaScript is dynamically typed and hence lacks thetype safety  of  statically  typed  languages,

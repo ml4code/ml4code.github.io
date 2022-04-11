@@ -4,7 +4,6 @@ title: "Syntax and Sensibility: Using language models to detect and correct synt
 authors: Eddie Antonio Santos, Joshua Charles Campbell, Dhvani Patel, Abram Hindle, José Nelson Amaral
 conference: SANER
 year: 2018
-bibkey: santos2018syntax
 additional_links:
    - {name: "PDF", url: "http://softwareprocess.es/pubs/santos2018SANER-syntax.pdf"}
    - {name: "code", url: "https://github.com/naturalness/sensibility"}

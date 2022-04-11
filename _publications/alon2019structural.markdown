@@ -4,7 +4,6 @@ title: "Structural Language Models for Any-Code Generation"
 authors: Uri Alon, Roy Sadaka, Omer Levy, Eran Yahav
 conference:
 year: 2019
-bibkey: alond2019structural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1910.00577"}
 tags: ["code generation"]

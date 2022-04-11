@@ -4,7 +4,6 @@ title: "Memorization and Generalization in Neural Code Intelligence Models"
 authors: Md Rafiqul Islam Rabin, Aftab Hussain, Vincent J. Hellendoorn, Mohammad Amin Alipour
 conference: FSE
 year: 2021
-bibkey: rabin2021memorization
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2106.08704"}
 tags: ["summarization"]

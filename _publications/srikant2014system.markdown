@@ -4,7 +4,6 @@ title: "A system to grade computer programming skills using machine learning"
 authors: Shashank Srikant, Varun Aggarwal
 conference: KDD
 year: 2014
-bibkey: srikant2014system
 additional_links:
    - {name: "PDF", url: "https://dl.acm.org/citation.cfm?id=2623377"}
    - {name: "website", url: "http://research.aspiringminds.com/"}

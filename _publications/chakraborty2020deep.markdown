@@ -4,7 +4,6 @@ title: "Deep Learning based Vulnerability Detection: Are We There Yet?"
 authors: Saikat Chakraborty, Rahul Krishna, Yangruibo Ding, Baishakhi Ray
 conference: TSE
 year: 2021
-bibkey: chakraborty2020deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.07235"}
 tags: ["defect", "survey"]

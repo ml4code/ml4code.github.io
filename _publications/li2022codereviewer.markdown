@@ -4,7 +4,6 @@ title: "CodeReviewer: Pre-Training for Automating Code Review Activities"
 authors: Zhiyu Li, Shuai Lu, Daya Guo, Nan Duan, Shailesh Jannu, Grant Jenks, Deep Majumder, Jared Green, Alexey Svyatkovskiy, Shengyu Fu, Neel Sundaresan
 conference: 
 year: 2022
-bibkey: li2022codereviewer
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.09095"}
 tags: ["review"]

@@ -4,7 +4,6 @@ title: "Copy that! Editing Sequences by Copying Spans"
 authors: Sheena Panthaplackel, Miltiadis Allamanis, Marc Brockschmidt
 conference:
 year: 2020
-bibkey: panthaplackel2020copy
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2006.04771"}
 tags: ["edit"]

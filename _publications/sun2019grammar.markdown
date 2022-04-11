@@ -4,7 +4,6 @@ title: "A Grammar-Based Structural CNN Decoder for Code Generation"
 authors: Zeyu Sun, Qihao Zhu, Lili Mou, Yingfei Xiong, Ge Li, Lu Zhang
 conference: AAAI
 year: 2019
-bibkey: sun2019grammar
 tags: ["code generation", "grammar"]
 ---
 Code  generation  maps  a  program  description  to  executable

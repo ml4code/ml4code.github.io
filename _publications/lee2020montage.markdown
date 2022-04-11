@@ -4,7 +4,6 @@ title: "Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer
 authors: Suyoung Lee, HyungSeok Han, Sang Kil Cha, Sooel Son
 conference: USENIX
 year: 2020
-bibkey: lee2020montage
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2001.04107"}
 tags: ["fuzzing", "language model"]

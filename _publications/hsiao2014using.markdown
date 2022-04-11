@@ -4,7 +4,6 @@ title: "Using Web Corpus Statistics for Program Analysis"
 authors: Chun-Hung Hsiao, Michael Cafarella, Satish Narayanasamy
 conference: OOPSLA
 year: 2014
-bibkey: hsiao2014using
 tags: ["defect"]
 ---
 Several program analysis tools—such as plagiarism detection and bug finding—rely on knowing a piece of code’s

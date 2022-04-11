@@ -4,7 +4,6 @@ title: "Modeling Functional Similarity in Source Code with Graph-Based Siamese N
 authors: Nikita Mehrotra, Navdha Agarwal, Piyush Gupta, Saket Anand, David Lo, Rahul Purandare
 conference:
 year: 2020
-bibkey: mehrotra2020modeling
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2011.11228"}
 tags: ["clone", "GNN"]

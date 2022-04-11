@@ -4,7 +4,6 @@ title: "Deep Code Search"
 authors: Xiaodong Gu, Hongyu Zhang, Sunghun Kim.
 conference: ICSE
 year: 2018
-bibkey: gu2018deep
 tags: ["search"]
 ---
 To implement a program functionality, developers can reuse previously written code snippets by searching through a large-scale codebase. Over the years, many code search tools have been proposed to help developers. The existing approaches often treat source code as textual documents and utilize information retrieval models to retrieve relevant code snippets that match a given query. These approaches mainly rely on the textual similarity between source code and natural language query. They lack a deep understanding of the semantics of queries and source code.

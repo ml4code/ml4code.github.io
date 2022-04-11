@@ -4,7 +4,6 @@ title: "Sorting and Transforming Program Repair Ingredients via Deep Learning Co
 authors: Martin White, Michele Tufano, Matias Martinez, Martin Monperrus, Denys Poshyvanyk
 conference: SANER
 year: 2017
-bibkey: white2017sorting
 tags: ["repair"]
 ---
 In  the  field  of  automated  program  repair,  the  redundancy  assumption  claims  large  programs  contain  the  seeds

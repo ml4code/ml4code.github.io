@@ -4,7 +4,6 @@ title: "Co-Training for Commit Classification"
 authors: Jian Yi, David Lee, Hai Leong Chieu
 conference: EMNLP WNUT
 year: 2021
-bibkey: lee2021cotraining
 additional_links:
    - {name: "website", url: "https://aclanthology.org/2021.wnut-1.43/"}
    - {name: "code", url: "https://github.com/davidleejy/wnut21-cotrain"}

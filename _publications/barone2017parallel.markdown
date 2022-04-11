@@ -4,7 +4,6 @@ title: "A parallel corpus of Python functions and documentation strings for auto
 authors: Antonio Valerio Miceli Barone, Rico Sennrich
 conference:
 year: 2017
-bibkey: barone2017parallel
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1707.02275"}
    - {name: "code", url: "https://github.com/EdinburghNLP/code-docstring-corpus"}

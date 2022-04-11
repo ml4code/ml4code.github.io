@@ -4,7 +4,6 @@ title: "Irish: A Hidden Markov Model to detect coded information islands in free
 authors: Luigi Cerulo, Michele Ceccarelli, Massimiliano Di Penta, Gerardo Canfora
 conference: Science of Computer Programming
 year: 2015
-bibkey: cerulo2015irish
 tags: ["information extraction"]
 ---
 Developers’ communication, as contained in emails, issue trackers, and forums, is a precious source of information to support the development process. For example, it can

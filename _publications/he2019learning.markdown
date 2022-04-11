@@ -4,7 +4,6 @@ title: "Learning to Fuzz from Symbolic Execution with Application to Smart Contr
 authors: Jingxuan He, Mislav Balunović, Nodar Ambroladze, Petar Tsankov, Martin Vechev
 conference: CCS
 year: 2019
-bibkey: he2019learning
 additional_links:
    - {name: "Preprint", url: "https://files.sri.inf.ethz.ch/website/papers/ccs19-ilf.pdf"}
 tags: ["fuzzing", "GNN"]

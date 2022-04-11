@@ -4,7 +4,6 @@ title: "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair"
 authors: Zimin Chen, Steve Kommrusch, Michele Tufano, Louis-Noël Pouchet, Denys Poshyvanyk, Martin Monperrus
 conference: 
 year: 2019
-bibkey: chen2019sequencer
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1901.01808"}
 tags: ["repair", "code generation"]

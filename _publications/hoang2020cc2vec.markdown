@@ -4,7 +4,6 @@ title: "CC2Vec: Distributed Representations of Code Changes"
 authors: Thong Hoang, Hong Jin Kang, Julia Lawall, David Lo
 conference: ICSE
 year: 2020
-bibkey: hoang2020cc2vec
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2003.05620"}
    - {name: "code", url: "https://github.com/CC2Vec/CC2Vec"}

@@ -4,7 +4,6 @@ title: "Unsupervised Learning of API Aliasing Specifications"
 authors: Jan Eberhardt, Samuel Steffen, Veselin Raychev, Martin Vechev
 conference: PLDI
 year: 2019
-bibkey: ederhardt2019unsupervised
 tags: ["API", "program analysis"]
 ---
 Real world applications make heavy use of powerful libraries

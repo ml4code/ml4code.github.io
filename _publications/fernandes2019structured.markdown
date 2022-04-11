@@ -4,7 +4,6 @@ title: "Structured Neural Summarization"
 authors: Patrick Fernandes, Miltiadis Allamanis, Marc Brockschmidt
 conference: ICLR
 year: 2019
-bibkey: fernandes2019structured
 additional_links:
    - {name: "OpenReview", url: "https://openreview.net/forum?id=H1ersoRqtm"}
    - {name: "ArXiV", url: "https://arxiv.org/abs/1811.01824"}

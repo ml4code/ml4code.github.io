@@ -4,7 +4,6 @@ title: "Toward Deep Learning Software Repositories"
 authors: Martin White, Christopher Vendome, Mario Linares-Vasquez, Denys Poshyvanyk
 conference: MSR
 year: 2015
-bibkey: white2015toward
 tags: ["representation"]
 ---
 Deep learning subsumes algorithms that automatically learn compositional representations. The ability of these

@@ -4,7 +4,6 @@ title: "Deep Learning Code Fragments for Code Clone Detection"
 authors: Martin White, Michele Tufano, Christopher Vendome, Denys Poshyvanyk.
 conference: ASE
 year: 2016
-bibkey: white2016deep
 tags: ["clone"]
 ---
 Code clone detection is an important problem for software

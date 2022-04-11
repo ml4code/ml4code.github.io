@@ -4,7 +4,6 @@ title: "Topic modeling of public repositories at scale using names in source cod
 authors: Vadim Markovtsev, Eiso Kant
 conference:
 year: 2017
-bibkey: markovtsev2017topic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1704.00135"}
    - {name: "website", url: "https://blog.sourced.tech/post/github_topic_modeling"}

@@ -4,7 +4,6 @@ title: "Generating Adversarial Examples for Holding Robustness of Source Code Pr
 authors: Huangzhao Zhang, Zhuo Li, Ge Li, Lei Ma, Yang Liu, Zhi Jin
 conference: AAAI
 year: 2020
-bibkey: zhang2020generating
 additional_links:
    - {name: "Proceedings", url: "https://ojs.aaai.org/index.php/AAAI/article/view/5469"}
 tags: ["adversarial"]

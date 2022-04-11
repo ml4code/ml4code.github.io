@@ -4,7 +4,6 @@ title: "Learning Technical Correspondences in Technical Documentation"
 authors: Kyle Richardson, Jonas Kuhn
 conference: ACL
 year: 2017
-bibkey: richardson2017learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1705.04815"}
 tags: ["documentation", "API", "bimodal"]

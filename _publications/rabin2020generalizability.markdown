@@ -4,7 +4,6 @@ title: "On the Generalizability of Neural Program Analyzers with respect to Sema
 authors: Md. Rafiqul Islam Rabin, Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang, Mohammad Amin Alipour
 conference:
 year: 2020
-bibkey: rabin2020generalizability
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2008.01566"}
 tags: ["adversarial", "GNN", "grammar"]

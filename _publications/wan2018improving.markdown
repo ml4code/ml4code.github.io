@@ -4,7 +4,6 @@ title: "Improving Automatic Source Code Summarization via Deep Reinforcement Lea
 authors: Yao Wan, Zhou Zhao, Min Yang, Guandong Xu, Haochao Ying, Jian Wu, Philip S. Yu
 conference: ASE
 year: 2018
-bibkey: wan2018improving
 additional_links:
    - {name: "ACM", url: "https://dl.acm.org/citation.cfm?id=3238206"}
 tags: ["summarization", "documentation"]

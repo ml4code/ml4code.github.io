@@ -4,7 +4,6 @@ title: Suggesting Accurate Method and Class Names
 authors: Miltiadis Allamanis, Earl T. Barr, Christian Bird, Charles Sutton
 conference: FSE
 year: 2015
-bibkey: allamanis2015suggesting
 additional_links:
    - {name: "PDF", url: "http://homepages.inf.ed.ac.uk/csutton/publications/accurate-method-and-class.pdf"}
    - {name: "website", url: "http://groups.inf.ed.ac.uk/cup/naturalize"}

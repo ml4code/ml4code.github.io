@@ -4,7 +4,6 @@ title: "Are the Code Snippets What We Are Searching for? A Benchmark and an Empi
 authors: Shuhan Yan, Hang Yu, Yuting Chen, Beijun Shen, Lingxiao Jiang
 conference: SANER
 year: 2020
-bibkey: yan2020are
 additional_links:
   - { name: "IEEE", url: "https://ieeexplore.ieee.org/document/9054840" }
 tags: ["search"]

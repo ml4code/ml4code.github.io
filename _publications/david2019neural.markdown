@@ -4,7 +4,6 @@ title: "Neural Reverse Engineering of Stripped Binaries"
 authors: Yaniv David, Uri Alon, Eran Yahav
 conference: ICLR
 year: 2019
-bibkey: david2019neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1902.09122"}
 tags: ["naming", "deobfuscation", "GNN"]

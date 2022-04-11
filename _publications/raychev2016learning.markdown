@@ -4,7 +4,6 @@ title: "Learning Programs from Noisy Data"
 authors: Veselin Raychev, Pavol lBielik, Martin Vechev, Andreas Krause
 conference: POPL
 year: 2016
-bibkey: raychev2016learning
 tags: ["code generation", "grammar"]
 ---
 We present a new approach for learning programs from noisy

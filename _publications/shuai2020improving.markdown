@@ -4,7 +4,6 @@ title: "Improving Code Search with Co-Attentive Representation Learning"
 authors: Jianhang Shuai, Ling Xu, Chao Liu, Meng Yan, Xin Xia, Yan Lei
 conference: ICPC
 year: 2020
-bibkey: shuai2020improving
 additional_links:
   - { name: "ACM", url: "https://dl.acm.org/doi/abs/10.1145/3387904.3389269" }
 tags: ["search"]

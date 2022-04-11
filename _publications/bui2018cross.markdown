@@ -4,7 +4,6 @@ title: "Cross-Language Learning for Program Classification using Bilateral Tree-
 authors: Nghi D. Q. Bui, Lingxiao Jiang, Yijun Yu
 conference: NLSE
 year: 2018
-bibkey: bui2018cross
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1710.06159"}
 tags: ["representation", "grammar"]

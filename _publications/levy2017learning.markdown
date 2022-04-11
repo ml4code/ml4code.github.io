@@ -4,7 +4,6 @@ title: "Learning to Align the Source Code to the Compiled Object Code"
 authors: Dor Levy, Lior Wolf
 conference: ICML
 year: 2017
-bibkey: levy2017learning
 tags: ["decompilation"]
 ---
 We propose a new neural network architecture

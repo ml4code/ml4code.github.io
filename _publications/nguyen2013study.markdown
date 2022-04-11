@@ -4,7 +4,6 @@ title: "A Study of Repetitiveness of Code Changes in Software Evolution"
 authors: Hoan Anh Nguyen, Anh Tuan Nguyen, Tung Thanh Nguyen, Tien N. Nguyen, and Hridesh Rajan
 conference: ASE
 year: 2013
-bibkey: nguyen2013study
 tags: ["edit"]
 ---
 In this paper, we present a large-scale study of

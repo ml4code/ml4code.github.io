@@ -4,7 +4,6 @@ title: "Neural Code Search Evaluation Dataset"
 authors: Hongyu Li, Seohyun Kim, Satish Chandra
 conference:
 year: 2019
-bibkey: li2019neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1908.09804"}
    - {name: "Dataset", url: "https://github.com/facebookresearch/Neural-Code-Search-Evaluation-Dataset"}

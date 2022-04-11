@@ -4,7 +4,6 @@ title: "Program Synthesis from Natural Language Using Recurrent Neural Networks"
 authors: Xi Victoria Lin, Chenglong Wang, Deric Pang, Kevin Vu, Michael D. Ernst
 conference: Technical Report UW-CSE-17-03-01, University of Washington Department of Computer Science and Engineering
 year: 2017
-bibkey: lin2017program
 additional_links:
    - {name: "PDF", url: "http://victorialin.net/pubs/tellina_tr180201.pdf"}
    - {name: "Tool", url: "http://tellina.rocks/"}

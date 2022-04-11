@@ -4,7 +4,6 @@ title: "Automated Correction for Syntax Errors in Programming Assignments using 
 authors: Sahil Bhatia, Rishabh Singh
 conference: 
 year: 2016
-bibkey: bhatia2016automated
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1603.06129"}
 tags: ["repair"]

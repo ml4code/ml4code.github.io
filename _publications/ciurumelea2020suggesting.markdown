@@ -4,7 +4,6 @@ title: "Suggesting Comment Completions for Python using Neural Language Models"
 authors: Adelina Ciurumelea; Sebastian Proksch; Harald C. Gall
 conference: SANER
 year: 2020
-bibkey: ciurumelea2020suggesting
 additional_links:
    - {name: "IEEE Xplore", url: "https://ieeexplore.ieee.org/abstract/document/9054866"}
 tags: ["bimodal", "autocomplete", "documentation"]

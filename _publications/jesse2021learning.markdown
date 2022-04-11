@@ -4,7 +4,6 @@ title: "Learning Type Annotation: Is Big Data Enough?"
 authors: Kevin Jesse, Premkumar Devanbu, Toufique Ahmed
 conference: FSE
 year: 2021
-bibkey: jesse2021learning
 tags: ["Transformer", "types"]
 ---
 TypeScript is a widely used optionally-typed language where developers can adopt “pay as you go” typing: they can add types as

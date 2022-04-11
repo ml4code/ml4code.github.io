@@ -6,7 +6,6 @@ conference:
 year: 2015
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1506.02078"}
-bibkey: karpathy2015visualizing
 tags: ["language model", "code generation"]
 ---
 Recurrent Neural Networks (RNNs), and specifically a variant with Long Short-Term Memory (LSTM), are enjoying renewed interest as a result of successful

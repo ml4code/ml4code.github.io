@@ -4,7 +4,6 @@ title: "code2seq: Generating Sequences from Structured Representations of Code"
 authors: Uri Alon, Omer Levy, Eran Yahav
 conference: ICLR
 year: 2019
-bibkey: alon2018code2seq
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1808.01400"}
 tags: ["naming", "summarization", "representation"]

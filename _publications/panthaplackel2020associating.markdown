@@ -4,7 +4,6 @@ title: "Associating Natural Language Comment and Source Code Entities"
 authors: Sheena Panthaplackel, Milos Gligoric, Raymond J. Mooney, Junyi Jessy Li
 conference: AAAI
 year: 2020
-bibkey: panthaplackel2020associating
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1912.06728"}
 tags: ["dataset", "bimodal"]

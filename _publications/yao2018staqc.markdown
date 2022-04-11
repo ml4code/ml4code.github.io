@@ -4,7 +4,6 @@ title: "StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow"
 authors: Ziyu Yao, Daniel S. Weld, Wei-Peng Chen, Huan Sun
 conference: WWW 2018
 year: 2018
-bibkey: yao2018staqc
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1803.09371"}
    - {name: "code", url: "https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset"}

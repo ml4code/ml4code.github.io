@@ -4,7 +4,6 @@ title: "On the Embeddings of Variables in Recurrent Neural Networks for Source C
 authors: Nadezhda Chirkova
 conference: NAACL
 year: 2021
-bibkey: chirkova2021embeddings
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2010.12693"}
    - {name: "Code", url: "https://github.com/nadiinchi/dynamic_embeddings"}

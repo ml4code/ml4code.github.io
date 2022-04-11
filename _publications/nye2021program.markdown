@@ -4,7 +4,6 @@ title: "Program Synthesis with Large Language Models"
 authors: Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le, Charles Sutton
 conference:
 year: 2021
-bibkey: nye2021program
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.07732"}
 tags: ["Transformer", "synthesis"]

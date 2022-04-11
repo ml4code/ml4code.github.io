@@ -4,7 +4,6 @@ title: "Generating Regular Expressions from Natural Language Specifications: Are
 authors: Zexuan Zhong, Jiaqi Guo, Wei Yang, Tao Xie, Jian-Guang Lou, Ting Liu, Dongmei Zhang
 conference: NLSE 
 year: 2018
-bibkey: zhong2018generating
 additional_links:
    - {name: "PDF", url: "http://taoxie.cs.illinois.edu/publications/nl4se18-regex.pdf"}
 tags: ["bimodal", "code generation"]

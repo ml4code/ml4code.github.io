@@ -4,7 +4,6 @@ title: "Learning a Classifier for False Positive Error Reports Emitted by Static
 authors: Ugur Koc, Parsa Saadatpanah, Jeffrey S. Foster, Adam A. Porter.
 conference: MAPL
 year: 2017
-bibkey: koc2017learning
 tags: ["static analysis"]
 ---
 The large scale and high complexity of modern software systems

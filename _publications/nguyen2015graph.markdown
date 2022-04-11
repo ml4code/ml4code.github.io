@@ -4,7 +4,6 @@ title: "Graph-based Statistical Language Model for Code"
 authors: Anh Tuan Nguyen, Tien N. Nguyen
 conference: ICSE
 year: 2015
-bibkey: nguyen2015graph
 tags: ["representation", "language model", "autocomplete"]
 ---
 n-gram statistical language model has been successfully applied to capture programming patterns to support code

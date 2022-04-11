@@ -4,7 +4,6 @@ title: "Bilateral Dependency Neural Networks for Cross-Language Algorithm Classi
 authors: Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang
 conference: SANER
 year: 2018
-bibkey: bui2018bilateral
 additional_links:
    - {name: "TR", url: "http://oro.open.ac.uk/58410/1/bui19saner.pdf"}
 tags: ["representation"]

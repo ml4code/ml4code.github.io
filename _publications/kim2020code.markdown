@@ -4,7 +4,6 @@ title: "Code Prediction by Feeding Trees to Transformers"
 authors: Seohyun Kim, Jinman Zhao, Yuchi Tian, Satish Chandra
 conference: 
 year: 2020
-bibkey: kim2020code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2003.13848"}
    - {name: "Code", url: "https://github.com/facebookresearch/code-prediction-transformer"}

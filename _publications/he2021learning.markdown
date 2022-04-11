@@ -4,7 +4,6 @@ title: "Learning to Find Naming Issues with Big Code and Small Supervision"
 authors: Jingxuan He, Cheng-Chun Lee, Veselin Raychev, Martin Vechev
 conference: PLDI
 year: 2021
-bibkey: he2021learning
 tags: ["repair"]
 ---
 We introduce a new approach for finding and fixing naming

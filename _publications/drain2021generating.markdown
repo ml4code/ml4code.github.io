@@ -4,7 +4,6 @@ title: "Generating Bug-Fixes Using Pretrained Transformers"
 authors: Dawn Drain, Chen Wu, Alexey Svyatkovskiy, Neel Sundaresan
 conference: 
 year: 2021
-bibkey: drain2021generating
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2104.07896"}
 tags: ["Transformer", "repair"]

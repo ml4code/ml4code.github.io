@@ -4,7 +4,6 @@ title: "Unified Pre-training for Program Understanding and Generation"
 authors: Wasi Uddin Ahmad, Saikat Chakraborty, Baishakhi Ray, Kai-Wei Chang
 conference: NAACL
 year: 2021
-bibkey: ahmad2021unified
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2103.06333"}
 tags: ["pretraining", "Transformer"]

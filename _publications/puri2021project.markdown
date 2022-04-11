@@ -4,7 +4,6 @@ title: "Project CodeNet: A Large-Scale AI for Code Dataset for Learning a Divers
 authors: Ruchir Puri, David S. Kung, Geert Janssen, Wei Zhang, Giacomo Domeniconi, Vladmir Zolotov, Julian Dolby, Jie Chen, Mihir Choudhury, Lindsey Decker, Veronika Thost, Luca Buratti, Saurabh Pujar, Ulrich Finkler
 conference:
 year: 2021
-bibkey: puri2021project
 additional_links:
    - {name: "GitHub", url: "https://github.com/IBM/Project_CodeNet"}
 tags: ["dataset"]

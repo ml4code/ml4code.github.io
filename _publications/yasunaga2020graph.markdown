@@ -4,7 +4,6 @@ title: "Graph-based, Self-Supervised Program Repair from Diagnostic Feedback"
 authors: Michihiro Yasunaga, Percy Liang
 conference: 
 year: 2020
-bibkey: yasunaga2020graph
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.10636"}
 tags: ["repair", "edit", "GNN"]

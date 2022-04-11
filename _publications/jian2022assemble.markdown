@@ -4,7 +4,6 @@ title: Assemble Foundation Models for Automatic Code Summarization
 authors: Jian Gu, Pasquale Salza, Harald C. Gall
 conference: SANER
 year: 2022
-bibkey: jian2022assemble
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2201.05222"}
    - {name: "code", url: "https://github.com/jianguda/afm4acs"}

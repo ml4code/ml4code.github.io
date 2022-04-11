@@ -4,7 +4,6 @@ title: "ProtoTransformer: A Meta-Learning Approach to Providing Student Feedback
 authors: Mike Wu, Noah D. Goodman, Chris Piech, Chelsea Finn
 conference:
 year: 2021
-bibkey: wu2021prototransformer
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2107.14035"}
 tags: ["Transformer", "education"]

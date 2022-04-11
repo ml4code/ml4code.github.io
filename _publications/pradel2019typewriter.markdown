@@ -4,7 +4,6 @@ title: "TypeWriter: Neural Type Prediction with Search-based Validation"
 authors: Michael Pradel, Georgios Gousios, Jason Liu, Satish Chandra.
 conference:
 year: 2019
-bibkey: pradel2019typewriter
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1912.03768"}
 tags: ["types", "bimodal"]

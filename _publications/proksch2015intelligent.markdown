@@ -4,7 +4,6 @@ title: "Intelligent Code Completion with Bayesian Networks"
 authors: Sebastian Proksch, Johannes Lerch, Mira Mezini
 conference: TSE
 year: 2015
-bibkey: proksch2015intelligent
 tags: ["autocomplete"]
 ---
 Code completion is an integral part of modern Integrated Development Environments (IDEs). Developers

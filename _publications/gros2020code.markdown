@@ -4,7 +4,6 @@ title: "Code to Comment \"Translation\": Data, Metrics, Baselining & Evaluation"
 authors: David Gros, Hariharan Sezhiyan, Premkumar Devanbu, Zhou Yu
 conference:
 year: 2020
-bibkey: gros2020code
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2010.01410"}
 tags: ["bimodal", "documentation"]

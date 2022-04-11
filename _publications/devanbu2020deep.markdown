@@ -4,7 +4,6 @@ title: "Deep Learning & Software Engineering: State of Research and Future Direc
 authors: Prem Devanbu, Matthew Dwyer, Sebastian Elbaum, Michael Lowry, Kevin Moran, Denys Poshyvanyk, Baishakhi Ray, Rishabh Singh, Xiangyu Zhang
 conference:
 year: 2020
-bibkey: devanbu2020deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2009.08525"}
 tags: ["survey"]

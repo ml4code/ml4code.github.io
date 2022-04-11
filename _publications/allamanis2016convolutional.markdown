@@ -4,7 +4,6 @@ title: A Convolutional Attention Network for Extreme Summarization of Source Cod
 authors: Miltiadis Allamanis, Hao Peng, Charles Sutton
 conference: ICML
 year: 2016
-bibkey: allamanis2016convolutional
 additional_links:
    - {name: "website", url: "http://groups.inf.ed.ac.uk/cup/codeattention/"}
    - {name: "code", url: "https://github.com/mast-group/convolutional-attention"}

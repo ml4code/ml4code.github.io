@@ -4,7 +4,6 @@ title: "Automated Vulnerability Detection in Source Code Using Deep Representati
 authors: Rebecca L. Russell, Louis Kim, Lei H. Hamilton, Tomo Lazovich, Jacob A. Harer, Onur Ozdemir, Paul M. Ellingwood, Marc W. McConley
 conference: 
 year: 2018
-bibkey: russell2018automated
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1807.04320"}
 tags: ["program analysis"]

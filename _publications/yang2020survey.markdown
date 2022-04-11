@@ -4,7 +4,6 @@ title: "A Survey on Deep Learning for Software Engineering"
 authors: Yanming Yang, Xin Xia, David Lo, John Grundy
 conference:
 year: 2020
-bibkey: yang2020survey
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2011.14597"}
 tags: ["survey"]

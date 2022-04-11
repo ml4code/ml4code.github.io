@@ -4,7 +4,6 @@ title: "User-guided program reasoning using Bayesian inference"
 authors: Mukund Raghothaman, Sulekha Kulkarni, Kihong Heo, Mayur Naik
 conference: PLDI
 year: 2018
-bibkey: raghothaman2018user
 additional_links:
    - {name: "Paper", url: "https://www.cis.upenn.edu/~kheo/paper/pldi18-rakuhena.pdf"}
 tags: ["program analysis"]

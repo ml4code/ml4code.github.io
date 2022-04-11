@@ -4,7 +4,6 @@ title: "Neural-Augumented Static Analysis of Android Communication"
 authors: Jinman Zhao, Aws Albarghouthi, Vaibhav Rastogi, Somesh Jha, Damien Octeau
 conference: FSE
 year: 2018
-bibkey: zhao2018neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1809.04059"}
 tags: ["program analysis"]

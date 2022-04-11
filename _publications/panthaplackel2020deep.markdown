@@ -4,7 +4,6 @@ title: "Deep Just-In-Time Inconsistency Detection Between Comments and Source Co
 authors: Sheena Panthaplackel, Junyi Jessy Li, Milos Gligoric, Raymond J. Mooney
 conference:
 year: 2020
-bibkey: panthaplackel2020deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2010.01625"}
 tags: ["edit", "bimodal", "documentation"]

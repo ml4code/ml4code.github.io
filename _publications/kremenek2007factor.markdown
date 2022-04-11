@@ -4,7 +4,6 @@ title: "A Factor Graph Model for Software Bug Finding"
 authors: Ted Kremenek, Andrew Y. Ng, Dawson R. Engler. 
 conference: IJCAI
 year: 2007
-bibkey: kremenek2007factor
 tags: ["program analysis"]
 ---
 Automatic tools for finding software errors require

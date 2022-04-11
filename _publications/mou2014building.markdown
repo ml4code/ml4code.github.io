@@ -4,7 +4,6 @@ title: "Building Program Vector Representations for Deep Learning"
 authors: Hao Peng, Lili Mou, Ge Li, Yuxuan Liu, Lu Zhang, Zhi Jin. 
 conference: International Conference on Knowledge Science, Engineering and Management
 year: 2014
-bibkey: mou2014building
 tags: ["representation", "grammar"]
 ---
 Deep learning has made significant breakthroughs

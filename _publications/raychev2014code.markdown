@@ -4,7 +4,6 @@ title: "Code Completion with Statistical Language Models"
 authors: Veselin Raychev, Martin Vechev, Eran Yahav
 conference: PLDI
 year: 2014
-bibkey: raychev2014code
 tags: ["language model", "autocomplete", "code generation"]
 ---
 We address the problem of synthesizing code completions for programs using APIs. Given a program with holes, we synthesize completions for holes with the most likely sequences of method calls.

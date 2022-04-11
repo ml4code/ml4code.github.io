@@ -4,7 +4,6 @@ title: "CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding a
 authors: Shuai Lu, Daya Guo, Shuo Ren, Junjie Huang, Alexey Svyatkovskiy, Ambrosio Blanco, Colin Clement, Dawn Drain, Daxin Jiang, Duyu Tang, Ge Li, Lidong Zhou, Linjun Shou, Long Zhou, Michele Tufano, Ming Gong, Ming Zhou, Nan Duan, Neel Sundaresan, Shao Kun Deng, Shengyu Fu, Shujie Liu
 conference: 
 year: 2021
-bibkey: lu2021codexglue
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2102.04664"}
 tags: ["benchmark", "Transformer"]

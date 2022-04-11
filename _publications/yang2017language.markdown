@@ -4,7 +4,6 @@ title: A Language Model for Statements of Software Code
 authors: Yixiao Yang, Yu Jiang, Ming Gu, Jiaguang Sun, Jian Gao, Han Liu
 conference: ASE
 year: 2017
-bibkey: yang2017language
 additional_links:
    - {name: "ACM", url: "https://dl.acm.org/citation.cfm?id=3155647"}
 tags: ["language model"]

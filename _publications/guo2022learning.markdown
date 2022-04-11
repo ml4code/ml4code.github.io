@@ -4,7 +4,6 @@ title: "Learning to Complete Code with Sketches"
 authors: Daya Guo, Alexey Svyatkovskiy, Jian Yin, Nan Duan, Marc Brockschmidt, Miltiadis Allamanis
 conference: ICLR
 year: 2022
-bibkey: guo2022learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2106.10158"}
 tags: ["Transformer", "language model", "grammar"]

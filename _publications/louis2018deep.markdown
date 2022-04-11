@@ -4,7 +4,6 @@ title: "Deep Learning to Detect Redundant Method Comments"
 authors: Annie Louis, Santanu Kumar Dash, Earl T. Barr, Charles Sutton
 conference: 
 year: 2018
-bibkey: louis2018deep
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1806.04616"}
 tags: ["bimodal", "documentation"]

@@ -4,7 +4,6 @@ title: "Time-Efficient Code Completion Model for the R Programming Language"
 authors: Artem Popov, Dmitrii Orekhov, Denis Litvinov, Nikolay Korolev, Gleb Morgachev
 conference: NLP4Prog
 year: 2021
-bibkey: popov2021time
 additional_links:
    - {name: "PDF", url: "https://aclanthology.org/2021.nlp4prog-1.4.pdf"}
 tags: ["dataset", "language model", "code generation", "Transformer"]

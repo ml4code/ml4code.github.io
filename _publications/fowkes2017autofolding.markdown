@@ -4,7 +4,6 @@ title: "Autofolding for Source Code Summarization"
 authors: Jaroslav Fowkes, Razan Ranca, Miltiadis Allamanis, Mirella Lapata, Charles Sutton
 conference: TSE
 year: 2017
-bibkey: fowkes2017autofolding
 tags: ["summarization"]
 ---
 Developers spend much of their time reading and browsing source code, raising new opportunities for summarization methods. Indeed, modern code editors provide code folding, which allows one to selectively hide blocks of code. However this is impractical to use as folding decisions must be made manually or based on simple rules. We introduce the

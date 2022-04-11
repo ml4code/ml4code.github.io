@@ -4,7 +4,6 @@ title: "Using Deep Learning to Generate Complete Log Statements"
 authors: Antonio Mastropaolo, Luca Pascarella, Gabriele Bavota
 conference:
 year: 2022
-bibkey: mastropaolo2022using
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2201.04837"}
 tags: ["Transformer", "logging"]

@@ -4,7 +4,6 @@ title: "Learning from Examples to Improve Code Completion Systems"
 authors: Marcel Bruch, Martin Monperrus, Mira Mezini.
 conference: ESEC/FSE 
 year: 2009
-bibkey: bruch2009learning
 tags: ["autocomplete"]
 ---
 The suggestions made by current IDE’s code completion features are based exclusively on static type system of the programming language. As a result, often proposals are made which are irrelevant for a particular working context. Also, these suggestions are ordered alphabetically rather than by their relevance in a particular context. In this paper, we present intelligent code completion systems that learn from existing code repositories. We have implemented three such systems, each using the information contained in

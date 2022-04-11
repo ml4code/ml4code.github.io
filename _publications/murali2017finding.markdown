@@ -6,7 +6,6 @@ conference:
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1703.01370"}
 year: 2017
-bibkey: murali2017finding
 tags: ["program analysis", "API"]
 ---
 We present a Bayesian framework for learning probabilistic specifications from large, unstructured code corpora, and

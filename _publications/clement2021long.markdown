@@ -4,7 +4,6 @@ title: "Long-Range Modeling of Source Code Files with eWASH: Extended Window Acc
 authors: Colin B. Clement, Shuai Lu, Xiaoyu Liu, Michele Tufano, Dawn Drain, Nan Duan, Neel Sundaresan, Alexey Svyatkovskiy
 conference: 
 year: 2021
-bibkey: clement2021long
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2109.08780"}
 tags: ["Transformer", "language model", "code generation"]

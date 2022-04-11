@@ -4,7 +4,6 @@ title: "Energy-Based Models for Code Generation under Compilability Constraints"
 authors: Tomasz Korbak, Hady Elsahar, Marc Dymetman, Germán Kruszewski
 conference: ACL
 year: 2021
-bibkey: korbak2021energy
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2106.04985"}
 tags: ["code generation"]

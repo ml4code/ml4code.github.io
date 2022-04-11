@@ -4,7 +4,6 @@ title: "Semantic Scaffolds for Pseudocode-to-Code Generation"
 authors: Ruiqi Zhong, Mitchell Stern, Dan Klein
 conference:
 year: 2020
-bibkey: zhong2020semantic
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.05927"}
 tags: ["code generation", "synthesis"]

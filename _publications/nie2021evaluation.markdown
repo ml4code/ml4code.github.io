@@ -4,7 +4,6 @@ title: "Evaluation Methodologies for Code Learning Tasks"
 authors: Pengyu Nie, Jiyang Zhang, Junyi Jessy Li, Raymond J. Mooney, Milos Gligoric
 conference:
 year: 2021
-bibkey: nie2021evaluation
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.09619"}
 tags: ["evaluation", "dataset"]

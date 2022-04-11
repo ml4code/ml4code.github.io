@@ -4,7 +4,6 @@ title: "MISIM: An End-to-End Neural Code Similarity System"
 authors: Fangke Ye, Shengtian Zhou, Anand Venkat, Ryan Marcus, Nesime Tatbul, Jesmin Jahan Tithi, Paul Petersen, Timothy Mattson, Tim Kraska, Pradeep Dubey, Vivek Sarkar, Justin Gottschlich
 conference:
 year: 2020
-bibkey: ye2020misim 
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2006.05265"}
 tags: ["code similarity"]

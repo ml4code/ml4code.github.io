@@ -4,7 +4,6 @@ title: "Learning to Represent Programs with Heterogeneous Graphs"
 authors: Wenhan Wang, Kechi Zhang, Ge Li, Zhi Jin
 conference:
 year: 2020
-bibkey: wang2020learning2
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2012.04188"}
 tags: ["GNN", "summarization"]

@@ -4,7 +4,6 @@ title: "Leveraging Automated Unit Tests for Unsupervised Code Translation"
 authors: Baptiste Roziere, Jie M. Zhang, Francois Charton, Mark Harman, Gabriel Synnaeve, Guillaume Lample
 conference: 
 year: 2021
-bibkey: roziere2021leveraging
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2110.06773"}
 tags: ["migration"]

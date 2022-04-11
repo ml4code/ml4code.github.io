@@ -4,7 +4,6 @@ title: "Learning Graph Structure With A Finite-State Automaton Layer"
 authors: Daniel D. Johnson, Hugo Larochelle, Daniel Tarlow
 conference:
 year: 2020
-bibkey: johnson2020learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2007.04929"}
 tags: ["GNN", "program analysis"]

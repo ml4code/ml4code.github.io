@@ -4,7 +4,6 @@ title: "Statistical Learning Approach for Mining API Usage Mappings for Code Mig
 authors: Anh Tuan Nguyen, Hoan Anh Nguyen, Tung Thanh Nguyen, Tien N. Nguyen
 conference: ASE
 year: 2014
-bibkey: nguyen2014statistical
 tags: ["migration", "API"]
 ---
 The same software product nowadays could appear in multiple platforms and devices. To address business needs, software companies

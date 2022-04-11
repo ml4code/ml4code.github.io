@@ -4,7 +4,6 @@ title: "Software Defect Prediction via Convolutional Neural Network"
 authors: Jian Li, Pinjia He, Jieming Zhu, Michael R. Lyu
 conference: QRS
 year: 2017
-bibkey: li2017software
 tags: ["defect"]
 ---
 To improve software reliability, software defect prediction is utilized to assist developers in finding potential bugs

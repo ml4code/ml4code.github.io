@@ -4,7 +4,6 @@ title: "A User-Guided Approach to Program Analysis"
 authors: Ravi Mangal, Xin Zhang, Aditya V. Nori, Mayur Naik
 conference: FSE
 year: 2015
-bibkey: mangal2015user
 tags: ["program analysis"]
 ---
 Program analysis tools often produce undesirable output

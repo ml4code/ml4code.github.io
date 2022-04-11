@@ -4,7 +4,6 @@ title: "Text-to-SQL in the Wild: A Naturally-Occurring Dataset Based on Stack Ex
 authors: Moshe Hazoom, Vibhor Malik, Ben Bogin
 conference: NLP4Prog
 year: 2021
-bibkey: hazoom2021text
 additional_links:
    - {name: "PDF", url: "https://aclanthology.org/2021.nlp4prog-1.9.pdf"}
 tags: ["dataset"]

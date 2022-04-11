@@ -4,7 +4,6 @@ title: Predicting Vulnerability in Large Codebases With Deep Code Representation
 authors: Anshul Tanwar, Krishna Sundaresan, Parmesh Ashwath, Prasanna Ganesan, Sathish Kumar Chandrasekaran, Sriram Ravi 
 conference: 
 year: 2020
-bibkey: ashwath2020predicting
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.12783"}
 tags: ["grammar", "program analysis", "static analysis"]

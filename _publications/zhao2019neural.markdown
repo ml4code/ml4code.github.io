@@ -4,7 +4,6 @@ title: "Neural Networks for Modeling Source Code Edits"
 authors: Rui Zhao, David Bieber, Kevin Swersky, Daniel Tarlow
 conference: 
 year: 2019
-bibkey: zhao2019neural
 additional_links:
    - {name: "OpenReview", url: "https://openreview.net/forum?id=Sklr9i09KQ"}
    - {name: "ArXiV", url: "https://arxiv.org/abs/1904.02818"}

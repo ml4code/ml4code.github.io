@@ -4,7 +4,6 @@ title: "CORE: Automating Review Recommendation for Code Changes"
 authors: JingKai Siow, Cuiyun Gao, Lingling Fan, Sen Chen, Yang Liu
 conference: SANER
 year: 2019
-bibkey: siow2019core
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1912.09652"}
 tags: ["review"]

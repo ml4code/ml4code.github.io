@@ -4,7 +4,6 @@ title: "TAG : Type Auxiliary Guiding for Code Comment Generation"
 authors: Ruichu Cai, Zhihao Liang, Boyan Xu, Zijian Li, Yuexing Hao, Yao Chen
 conference: ACL
 year: 2020
-bibkey: cai2020tag
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.02835"}
 tags: ["bimodal", "documentation"]

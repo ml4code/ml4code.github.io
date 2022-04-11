@@ -4,7 +4,6 @@ title: "Commit2Vec: Learning Distributed Representations of Code Changes"
 authors: Adelina Ciurumelea; Sebastian Proksch; Harald C. Gall
 conference: 
 year: 2019
-bibkey: commit2vec2019lozoya
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1911.07605"}
 tags: ["edit"]

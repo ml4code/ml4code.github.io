@@ -4,7 +4,6 @@ title: "DeepDebug: Fixing Python Bugs Using Stack Traces, Backtranslation, and C
 authors: Dawn Drain, Colin B. Clement, Guillermo Serrato, Neel Sundaresan
 conference: 
 year: 2021
-bibkey: drain2021deepdebug
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.09352"}
 tags: ["repair", "Transformer"]

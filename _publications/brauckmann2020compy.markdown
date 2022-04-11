@@ -4,7 +4,6 @@ title: "ComPy-Learn: A toolbox for exploring machine learning representations fo
 authors: Alexander Brauckmann, Andrés Goens, Jeronimo Castrillon
 conference: FDL
 year: 2020
-bibkey: brauckmann2020compy
 additional_links:
    - {name: "IEEE", url: "https://ieeexplore.ieee.org/abstract/document/9232946"}
    - {name: "Code", url: "https://github.com/tud-ccc/compy-learn"}

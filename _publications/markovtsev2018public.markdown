@@ -4,7 +4,6 @@ title: "Public Git Archive: a Big Code dataset for all"
 authors: Vadim Markovtsev, Waren Long
 conference: MSR
 year: 2018
-bibkey: markovtsev2018public
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1803.10144"}
    - {name: "GitHub", url: "https://github.com/src-d/datasets/tree/master/PublicGitArchive"}

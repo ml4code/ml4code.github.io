@@ -4,7 +4,6 @@ title: "CoaCor: Code Annotation for Code Retrieval with Reinforcement Learning"
 authors: Ziyu Yao, Jayavardhan Reddy Peddamail, Huan Sun
 conference: 
 year: 2019
-bibkey: yao2019coacor
 tags: ["search"]
 ---
 To accelerate software development, much research has been performed

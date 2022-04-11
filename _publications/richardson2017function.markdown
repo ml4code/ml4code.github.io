@@ -4,7 +4,6 @@ title: "Function Assistant: A Tool for NL Querying of APIs"
 authors: Kyle Richardson, Jonas Kuhn
 conference: EMNLP
 year: 2017
-bibkey: richardson2017function
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1706.00468"}
 tags: ["bimodal", "API"]

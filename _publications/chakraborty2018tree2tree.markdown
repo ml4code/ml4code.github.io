@@ -4,7 +4,6 @@ title: "CODIT: Code Editing with Tree-Based Neural Machine Translation"
 authors: Saikat Chakraborty, Miltiadis Allamanis, Baishakhi Ray
 conference: 
 year: 2018
-bibkey: chakraborty2018tree2tree
 additional_links:
 - {name: "ArXiV", url: "https://arxiv.org/abs/1810.00314"}
 tags: ["grammar", "grammar", "repair", "code generation"]

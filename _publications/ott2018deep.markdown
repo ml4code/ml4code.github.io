@@ -4,7 +4,6 @@ title: "A Deep Learning Approach to Identifying Source Code in Images and Video"
 authors: Jordan Ott, Abigail Atchison, Paul Harnack, Adrienne Bergh, Erik Linstead.
 conference: MSR
 year: 2018
-bibkey: ott2018deep
 tags: ["information extraction"]
 ---
 While substantial progress has been made in mining code on an

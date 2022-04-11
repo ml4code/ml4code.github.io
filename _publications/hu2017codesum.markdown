@@ -4,7 +4,6 @@ title: "CodeSum: Translate Program Language to Natural Language"
 authors: Xing Hu, Yuhan Wei, Ge Li, Zhi Jin
 conference: 
 year: 2017
-bibkey: hu2017codesum
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1708.01837"}
 tags: ["bimodal", "summarization"]

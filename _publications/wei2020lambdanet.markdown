@@ -4,7 +4,6 @@ title: "LambdaNet: Probabilistic Type Inference using Graph Neural Networks"
 authors: Jiayi Wei, Maruth Goyal, Greg Durrett, Isil Dillig
 conference: ICLR
 year: 2020
-bibkey: wei2020lambdanet
 additional_links:
    - {name: "OpenReview", url: "https://openreview.net/forum?id=Hkx6hANtwH&noteId=Hkx6hANtwH"}
    - {name: "ArXiV", url: "https://arxiv.org/abs/2005.02161"}

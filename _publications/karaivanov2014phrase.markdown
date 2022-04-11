@@ -4,7 +4,6 @@ title: "Phrase-Based Statistical Translation of Programming Languages"
 authors: S. Karaivanov, Veselin Raychev, Martin Vechev
 conference: Onward
 year: 2014
-bibkey: karaivanov2014phrase
 tags: ["migration", "code generation"]
 ---
 Phrase-based statistical machine translation approaches have been

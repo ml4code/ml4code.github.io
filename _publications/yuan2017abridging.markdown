@@ -4,7 +4,6 @@ title: Abridging Source Code
 authors: Binhang Yuan, Vijayaraghavan Murali, Christopher Jermaine
 conference: OOPSLA
 year: 2017
-bibkey: yuan2017abridging
 additional_links:
    - {name: "ACM", url: "https://dl.acm.org/citation.cfm?id=3133882"}
 tags: ["summarization"]

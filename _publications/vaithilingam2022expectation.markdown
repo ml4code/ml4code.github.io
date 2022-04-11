@@ -4,7 +4,6 @@ title: "Expectation vs. Experience: Evaluating the Usability of Code Generation 
 authors: Priyan Vaithilingam, Tianyi Zhang, Elena Glassman
 conference: CHI
 year: 2022
-bibkey: vaithilingam2022expectation
 additional_links:
    - {name: "Preprint", url: "https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf"}
 tags: ["human evaluation", "code generation", "language model"]

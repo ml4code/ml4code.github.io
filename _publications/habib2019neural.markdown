@@ -4,7 +4,6 @@ title: "Neural Bug Finding: A Study of Opportunities and Challenges"
 authors: Andrew Habib, Michael Pradel
 conference: 
 year: 2019
-bibkey: habib2019neural
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1906.00307"}
 tags: ["program analysis"]

@@ -4,7 +4,6 @@ title: "Retrieval Augmented Code Generation and Summarization"
 authors: Md Rizwan Parvez, Wasi Uddin Ahmad, Saikat Chakraborty, Baishakhi Ray, Kai-Wei Chang
 conference: EMNLP-Findings
 year: 2021
-bibkey: parvez2021retrieval
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2108.11601"}
 tags: ["Transformer", "summarization", "code generation"]

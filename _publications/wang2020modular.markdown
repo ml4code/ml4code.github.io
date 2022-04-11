@@ -4,7 +4,6 @@ title: "Modular Tree Network for Source Code Representation Learning"
 authors: Wenhan Wang, Ge Li, Sijie Shen, Xin Xia, Zhi Jin
 conference: TOSEM
 year: 2020
-bibkey: wang2020modular
 additional_links:
    - {name: "ACM", url: "https://dl.acm.org/doi/10.1145/3409331"}
 tags: ["grammar", "representation"]

@@ -4,7 +4,6 @@ title: "Hoppity: Learning Bug Detection and Repair"
 authors: Elizabeth Dinella, Hanjun Dai, Ziyang Li, Mayur Naik, Le Song, Ke Wang
 conference: ICLR
 year: 2020
-bibkey: dinella2020hoppity
 additional_links:
    - {name: "OpenReview", url: "https://openreview.net/forum?id=SJeqs6EFvB&noteId=SJeqs6EFvB"}
    - {name: "Demo", url: "https://hoppity.seas.upenn.edu/demo"}

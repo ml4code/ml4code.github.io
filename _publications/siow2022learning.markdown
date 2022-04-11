@@ -4,7 +4,6 @@ title: "Learning Program Semantics with Code Representations: An Empirical Study
 authors: Jing Kai Siow, Shangqing Liu, Xiaofei Xie, Guozhu Meng, Yang Liu
 conference: SANER
 year: 2022
-bibkey: siow2022learning
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2203.11790"}
 tags: ["representation"]

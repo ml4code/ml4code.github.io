@@ -4,7 +4,6 @@ title: "CodeBERT: A Pre-Trained Model for Programming and Natural Languages"
 authors: Zhangyin Feng, Daya Guo, Duyu Tang, Nan Duan, Xiaocheng Feng, Ming Gong, Linjun Shou, Bing Qin, Ting Liu, Daxin Jiang, Ming Zhou
 conference: 
 year: 2020
-bibkey: feng2020codebert
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.08155"}
 tags: ["pretraining"]

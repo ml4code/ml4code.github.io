@@ -4,7 +4,6 @@ title: "Towards Learning Representations of Binary Executable Files for Security
 authors: Shushan Arakelyan, Sima Arasteh, Christophe Hauser, Erik Kline, Aram Galstyan
 conference: AAAI
 year: 2020
-bibkey: arakelyan2020towards
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.03388"}
 tags: ["GNN", "representation"]

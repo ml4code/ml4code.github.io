@@ -4,7 +4,6 @@ title: "Improved Code Summarization via a Graph Neural Network"
 authors: Alexander LeClair, Sakib Haque, Lingfei Wu, Collin McMillan
 conference:
 year: 2020
-bibkey: leclair2020improved
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2004.02843"}
 tags: ["summarization"]

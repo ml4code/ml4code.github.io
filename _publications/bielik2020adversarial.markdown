@@ -4,7 +4,6 @@ title: "Adversarial Robustness for Code"
 authors: Pavol Bielik, Martin Vechev
 conference:
 year: 2020
-bibkey: bielik2020adversarial 
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.04694"}
 tags: ["adversarial", "types"]

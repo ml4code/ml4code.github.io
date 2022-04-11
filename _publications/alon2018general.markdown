@@ -4,7 +4,6 @@ title: "A General Path-Based Representation for Predicting Program Properties"
 authors: Uri Alon, Meital Zilberstein, Omer Levy, Eran Yahav
 conference: PLDI
 year: 2018
-bibkey: alon2018general
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1803.09544"}
 tags: ["naming", "representation"]

@@ -4,7 +4,6 @@ title: "NEUZZ: Efficient Fuzzing with Neural Program Smoothing"
 authors: Dongdong She, Kexin Pei, Dave Epstein, Junfeng Yang, Baishakhi Ray, Suman Jana
 conference: "IEEE S&P"
 year: 2019
-bibkey: she2019neuzz
 additional_links:
    - {name: "Code", url: "https://github.com/Dongdongshe/neuzz"}
 tags: ["fuzzing"]

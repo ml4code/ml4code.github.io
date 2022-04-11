@@ -4,7 +4,6 @@ title: "JuICe: A Large Scale Distantly Supervised Dataset for Open Domain Contex
 authors: Rajas Agashe, Srinivasan Iyer, Luke Zettlemoyer
 conference:
 year: 2019
-bibkey: agashe2019julce
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/1910.02216"}
    - {name: "Dataset", url: "https://drive.google.com/file/d/1xWDV__5hjTWVuJlXD42Ar7nkjU2hRTic/view?usp=sharing"}

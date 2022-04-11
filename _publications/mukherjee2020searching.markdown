@@ -4,7 +4,6 @@ title: "Searching a Database of Source Codes Using Contextualized Code Search"
 authors: Rohan Mukherjee, Swarat Chaudhuri, Chris Jermaine
 conference: 
 year: 2020
-bibkey: mukherjee2020searching
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2001.03277"}
 tags: ["search", "representation"]

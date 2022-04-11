@@ -4,7 +4,6 @@ title: "Improving Code Autocompletion with Transfer Learning"
 authors: Wen Zhou, Seohyun Kim, Vijayaraghavan Murali, Gareth Ari Aye
 conference:
 year: 2021
-bibkey: zhou2021improving
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2105.05991"}
 tags: ["autocomplete", "Transformer"]

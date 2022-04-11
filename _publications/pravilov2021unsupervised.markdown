@@ -4,7 +4,6 @@ title: "Unsupervised Learning of General-Purpose Embeddings for Code Changes"
 authors: Mikhail Pravilov, Egor Bogomolov, Yaroslav Golubev, Timofey Bryksin
 conference: 
 year: 2021
-ibkey: pravilov2021unsupervised
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2106.02087"}
 tags: ["edit", "representation"]
