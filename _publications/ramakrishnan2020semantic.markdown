@@ -5,6 +5,7 @@ authors: Jordan Henkel, Goutham Ramakrishnan, Zi Wang, Aws Albarghouthi, Somesh 
 conference: SANER
 year: 2022
 additional_links:
+   - {name: "PDF", url: "https://pages.cs.wisc.edu/~jjhenkel/papers/saner22-semantic-robustness.pdf"}
    - {name: "IEEE", url: "https://ieeexplore.ieee.org/document/9825895"}
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.03043"}
    - {name: "Code", url: "https://github.com/jjhenkel/averloc"}
