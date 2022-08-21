@@ -1,13 +1,13 @@
 ---
 layout: publication
 title: "Semantic Robustness of Models of Source Code"
-authors: Goutham Ramakrishnan, Jordan Henkel, Zi Wang, Aws Albarghouthi, Somesh Jha, Thomas Reps
-conference:
-year: 2020
+authors: Jordan Henkel, Goutham Ramakrishnan, Zi Wang, Aws Albarghouthi, Somesh Jha, Thomas Reps
+conference: SANER
+year: 2022
 additional_links:
+   - {name: "IEEE", url: "https://ieeexplore.ieee.org/document/9825895"}
    - {name: "ArXiV", url: "https://arxiv.org/abs/2002.03043"}
+   - {name: "Code", url: "https://github.com/jjhenkel/averloc"}
 tags: ["adversarial", "naming"]
 ---
-Deep neural networks are vulnerable to adversarial examples - small input perturbations that result in incorrect predictions. We study this problem in the context of models of source code, where we want the network to be robust to source-code modifications that preserve code functionality. We define a natural notion of robustness, k-transformation robustness, in which an adversary performs up to k semantics-preserving transformations to an input program. We show how to train robust models using an adversarial training objective inspired by that of Madry et al. (2018) for continuous domains.
-
-We implement an extensible framework for adversarial training over source code, and conduct a thorough evaluation on a number of datasets and two different architectures. Our results show (1) the increase in robustness following adversarial training, (2) the ability of training on weak adversaries to provide robustness to attacks by stronger adversaries, and (3) the shift in attribution focus of adversarially trained models towards semantic vs. syntactic features. 
+Deep neural networks are vulnerable to adversarial examples-small input perturbations that result in incorrect predictions. We study this problem for models of source code, where we want the neural network to be robust to source-code modifications that preserve code functionality. To facilitate training robust models, we define a powerful and generic adversary that can employ sequences of parametric, semantics-preserving program transformations. We then explore how, with such an adversary, one can train models that are robust to adversarial program transformations. We conduct a thorough evaluation of our approach and find several surprising facts: we find robust training to beat dataset augmentation in every evaluation we performed; we find that a state-of-the-art architecture (code2seq) for models of code is harder to make robust than a simpler baseline; additionally, we find code2seq to have surprising weaknesses not present in our simpler baseline model; finally, we find that robust models perform better against unseen data from different sources (as one might hope)-however, we also find that robust models are not clearly better in the cross-language transfer task. To the best of our knowledge, we are the first to study the interplay between robustness of models of code and the domain-adaptation and cross-language- transfer tasks.
