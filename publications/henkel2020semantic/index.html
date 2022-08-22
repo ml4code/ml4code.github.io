@@ -100,10 +100,16 @@ function search() {
     <div class="content container">
       <div class="page">
   <h1 class="page-title">Semantic Robustness of Models of Source Code</h1>
-  <h5>Goutham Ramakrishnan, Jordan Henkel, Zi Wang, Aws Albarghouthi, Somesh Jha, Thomas Reps.  2020</h5>
+  <h5>Jordan Henkel, Goutham Ramakrishnan, Zi Wang, Aws Albarghouthi, Somesh Jha, Thomas Reps. SANER 2022</h5>
   <p>
     
+      [<a href="https://pages.cs.wisc.edu/~jjhenkel/papers/saner22-semantic-robustness.pdf" target="_blank">PDF</a>]
+    
+      [<a href="https://ieeexplore.ieee.org/document/9825895" target="_blank">IEEE</a>]
+    
       [<a href="https://arxiv.org/abs/2002.03043" target="_blank">ArXiV</a>]
+    
+      [<a href="https://github.com/jjhenkel/averloc" target="_blank">Code</a>]
     
     &nbsp;<a href='http://scholar.google.com/scholar?q=Semantic Robustness of Models of Source Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
     &nbsp;<a href='https://www.semanticscholar.org/search?q=Semantic Robustness of Models of Source Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
@@ -114,9 +120,7 @@ function search() {
       <tag><a href="/tags.html#naming">naming</a></tag>
     
   </p>
-  <p><p>Deep neural networks are vulnerable to adversarial examples - small input perturbations that result in incorrect predictions. We study this problem in the context of models of source code, where we want the network to be robust to source-code modifications that preserve code functionality. We define a natural notion of robustness, k-transformation robustness, in which an adversary performs up to k semantics-preserving transformations to an input program. We show how to train robust models using an adversarial training objective inspired by that of Madry et al. (2018) for continuous domains.</p>
-
-<p>We implement an extensible framework for adversarial training over source code, and conduct a thorough evaluation on a number of datasets and two different architectures. Our results show (1) the increase in robustness following adversarial training, (2) the ability of training on weak adversaries to provide robustness to attacks by stronger adversaries, and (3) the shift in attribution focus of adversarially trained models towards semantic vs. syntactic features.</p>
+  <p><p>Deep neural networks are vulnerable to adversarial examples - small input perturbations that result in incorrect predictions. We study this problem for models of source code, where we want the neural network to be robust to source-code modifications that preserve code functionality. To facilitate training robust models, we define a powerful and generic adversary that can employ sequences of parametric, semantics-preserving program transformations. We then explore how, with such an adversary, one can train models that are robust to adversarial program transformations. We conduct a thorough evaluation of our approach and find several surprising facts: we find robust training to beat dataset augmentation in every evaluation we performed; we find that a state-of-the-art architecture (code2seq) for models of code is harder to make robust than a simpler baseline; additionally, we find code2seq to have surprising weaknesses not present in our simpler baseline model; finally, we find that robust models perform better against unseen data from different sources (as one might hope) - however, we also find that robust models are not clearly better in the cross-language transfer task. To the best of our knowledge, we are the first to study the interplay between robustness of models of code and the domain-adaptation and cross-language transfer tasks.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -129,7 +133,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/ramakrishnan2020semantic.json", function(data) {
+        $.getJSON("/publications-metadata/henkel2020semantic.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
