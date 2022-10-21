@@ -5,7 +5,7 @@ authors: Aryaz Eghbali, Michael Pradel
 conference: ASE
 year: 2022
 additional_links:
-   - {name: "Preprint", url: "https://arxiv.org/abs/xxxx.xxxxxx"}
+   - {name: "Preprint", url: "https://www.software-lab.org/publications/ase2022_CrystalBLEU.pdf"}
 tags: ["evaluation"]
 ---
 Recent years have brought a surge of work on predicting pieces
