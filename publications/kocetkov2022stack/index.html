@@ -18,7 +18,7 @@
 
   <title>
     
-      CrystalBLEU: Precisely and Efficiently Measuring the Similarity of Code &middot; Machine Learning for Big Code and Naturalness
+      The Stack: 3TB of permissively licensed source code &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,43 +99,32 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">CrystalBLEU: Precisely and Efficiently Measuring the Similarity of Code</h1>
-  <h5>Aryaz Eghbali, Michael Pradel. ASE 2022</h5>
+  <h1 class="page-title">The Stack: 3TB of permissively licensed source code</h1>
+  <h5>Denis Kocetkov, Raymond Li, Loubna Ben Allal, Jia Li, Chenghao Mou, Carlos Muñoz Ferrandis, Sean Hughes, Thomas Wolf, Dzmitry Bahdanau, Leandro von Werra, Harm de Vries.  2022</h5>
   <p>
     
-      [<a href="https://www.software-lab.org/publications/ase2022_CrystalBLEU.pdf" target="_blank">Preprint</a>]
+      [<a href="https://drive.google.com/file/d/17J-0KXTDzY9Esp-JqXYHIcy--i_7G5Bb/view" target="_blank">Preprint</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=CrystalBLEU: Precisely and Efficiently Measuring the Similarity of Code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=CrystalBLEU: Precisely and Efficiently Measuring the Similarity of Code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=The Stack: 3TB of permissively licensed source code' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=The Stack: 3TB of permissively licensed source code' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#evaluation">evaluation</a></tag>
+      <tag><a href="/tags.html#dataset">dataset</a></tag>
     
   </p>
-  <p><p>Recent years have brought a surge of work on predicting pieces
-of source code, e.g., for code completion, code migration, program
-repair, or translating natural language into code. All this work faces
-the challenge of evaluating the quality of a prediction w.r.t. some
-oracle, typically in the form of a reference solution. A common
-evaluation metric is the BLEU score, an n-gram-based metric originally proposed for evaluating natural language translation, but
-adopted in software engineering because it can be easily computed
-on any programming language and enables automated evaluation at
-scale. However, a key difference between natural and programming
-languages is that in the latter, completely unrelated pieces of code
-may have many common n-grams simply because of the syntactic
-verbosity and coding conventions of programming languages. We
-observe that these trivially shared n-grams hamper the ability of
-the metric to distinguish between truly similar code examples and
-code examples that are merely written in the same language. This
-paper presents CrystalBLEU, an evaluation metric based on BLEU,
-that allows for precisely and efficiently measuring the similarity of
-code. Our metric preserves the desirable properties of BLEU, such
-as being language-agnostic, able to handle incomplete or partially
-incorrect code, and efficient, while reducing the noise caused by
-trivially shared n-grams. We evaluate CrystalBLEU on two datasets
-from prior work and on a new, labeled dataset of semantically equivalent programs. Our results show that CrystalBLEU can distinguish
-similar from dissimilar code examples 1.9–4.5 times more effectively, when compared to the original BLEU score and a previously
-proposed variant of BLEU for code.</p>
+  <p><p>Large Language Models (LLMs) play an ever-increasing role in the field of
+Artificial Intelligence (AI)–not only for natural language processing but also
+for code understanding and generation. To stimulate open and responsible
+research on LLMs for code, we introduce The Stack, a 3.1 TB dataset
+consisting of permissively licensed source code in 30 programming languages.
+We describe how we collect the full dataset, construct a permissively licensed
+subset, and present promising results on text2code benchmarks by training 350M-parameter decoders on different Python subsets. We find that
+(1) near-deduplicating the data significantly boosts performance across all
+experiments, and (2) it is possible to match previously reported HumanEval
+and MBPP performance using only permissively licensed data. We make the
+dataset available at https://hf.co/BigCode and give developers the possi-
+bility to have their code removed from the dataset by following the instruc-
+tions at https://www.bigcode-project.org/docs/about/the-stack/.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -148,7 +137,7 @@ proposed variant of BLEU for code.</p>
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/eghbali2022crystalbleu.json", function(data) {
+        $.getJSON("/publications-metadata/kocetkov2022stack.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
