@@ -18,7 +18,7 @@
 
   <title>
     
-      Open-ended Knowledge Tracing &middot; Machine Learning for Big Code and Naturalness
+      SPT-Code: Sequence-to-Sequence Pre-Training for Learning Source Code Representations &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,24 +99,24 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Open-ended Knowledge Tracing</h1>
-  <h5>Naiming Liu, Zichao Wang, Richard G. Baraniuk, Andrew Lan.  2022</h5>
+  <h1 class="page-title">SPT-Code: Sequence-to-Sequence Pre-Training for Learning Source Code Representations</h1>
+  <h5>Changan Niu, Chuanyi Li, Vincent Ng, Jidong Ge, Liguo Huang, Bin Luo. ICSE 2022</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2203.03716" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2201.01549" target="_blank">ArXiV</a>]
     
-      [<a href="https://github.com/lucy66666/OKT" target="_blank">code</a>]
+      [<a href="https://github.com/NougatCA/SPT-Code" target="_blank">code</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Open-ended Knowledge Tracing' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Open-ended Knowledge Tracing' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=SPT-Code: Sequence-to-Sequence Pre-Training for Learning Source Code Representations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=SPT-Code: Sequence-to-Sequence Pre-Training for Learning Source Code Representations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#education">education</a></tag>
+      <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
-      <tag><a href="/tags.html#code generation">code generation</a></tag>
+      <tag><a href="/tags.html#representation">representation</a></tag>
     
   </p>
-  <p><p>In education applications, knowledge tracing refers to the problem of estimating students’ time-varying concept/skill mastery level from their past responses to questions and predicting their future performance. One key limitation of most existing knowledge tracing methods is that they treat student responses to questions as binary-valued, i.e., whether they are correct or incorrect. Response correctness analysis/prediction ignores important information on student knowledge contained in the exact content of the responses, especially for open-ended questions. In this paper, we conduct the first exploration into open-ended knowledge tracing (OKT) by studying the new task of predicting students’ exact open-ended responses to questions. Our work is grounded in the domain of computer science education with programming questions. We develop an initial solution to the OKT problem, a student knowledge-guided code generation approach, that combines program synthesis methods using language models with student knowledge tracing methods. We also conduct a series of quantitative and qualitative experiments on a real-world student code dataset to validate OKT and demonstrate its promise in educational applications.</p>
+  <p><p>Recent years have seen the successful application of large pre-trained modelsto code representation learning, resulting in substantial improvements on many code-related downstream tasks. But there are issues surrounding theirapplication to SE tasks. First, the majority of the pre-trained models focus on pre-training only the encoder of the Transformer. For generation tasks that are addressed using models with the encoder-decoder architecture, however, there is no reason why the decoder should be left out during pre-training. Second, many existing pre-trained models, including state-of-the-art models such as T5-learning, simply reuse the pre-training tasks designed for natural languages. Moreover, to learn the natural language description of source code needed eventually for code-related tasks such as code summarization, existingpre-training tasks require a bilingual corpus composed of source code and the associated natural language description, which severely limits the amount of data for pre-training. To this end, we propose SPT-Code, a sequence-to-sequence pre-trained model for source code. In order to pre-train SPT-Code in a sequence-to-sequence manner and address the aforementioned weaknesses associated with existing pre-training tasks, we introduce three pre-training tasks that are specifically designed to enable SPT-Code to learn knowledge of source code, the corresponding code structure, as well as a natural language description of the code without relying on any bilingual corpus, and eventually exploit these three sources of information when it is applied to downstreamt asks. Experimental results demonstrate that SPT-Code achieves state-of-the-artperformance on five code-related downstream tasks after fine-tuning.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -129,7 +129,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/liu2022open.json", function(data) {
+        $.getJSON("/publications-metadata/niu2022spt-code.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
