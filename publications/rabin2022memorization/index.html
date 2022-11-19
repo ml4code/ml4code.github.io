@@ -18,7 +18,7 @@
 
   <title>
     
-      On the Generalizability of Neural Program Analyzers with respect to Semantic-Preserving Program Transformations &middot; Machine Learning for Big Code and Naturalness
+      Memorization and Generalization in Neural Code Intelligence Models &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,24 +99,30 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">On the Generalizability of Neural Program Analyzers with respect to Semantic-Preserving Program Transformations</h1>
-  <h5>Md. Rafiqul Islam Rabin, Nghi D. Q. Bui, Yijun Yu, Lingxiao Jiang, Mohammad Amin Alipour.  2020</h5>
+  <h1 class="page-title">Memorization and Generalization in Neural Code Intelligence Models</h1>
+  <h5>Md Rafiqul Islam Rabin, Aftab Hussain, Mohammad Amin Alipour, Vincent J. Hellendoorn. IST 2022</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2008.01566" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2106.08704" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=On the Generalizability of Neural Program Analyzers with respect to Semantic-Preserving Program Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=On the Generalizability of Neural Program Analyzers with respect to Semantic-Preserving Program Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+      [<a href="https://github.com/mdrafiqulrabin/CI-Memorization" target="_blank">code</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Memorization and Generalization in Neural Code Intelligence Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Memorization and Generalization in Neural Code Intelligence Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#adversarial">adversarial</a></tag>
+      <tag><a href="/tags.html#memorization">memorization</a></tag>
     
-      <tag><a href="/tags.html#GNN">GNN</a></tag>
+      <tag><a href="/tags.html#generalization">generalization</a></tag>
     
-      <tag><a href="/tags.html#grammar">grammar</a></tag>
+      <tag><a href="/tags.html#noise">noise</a></tag>
+    
+      <tag><a href="/tags.html#capacity">capacity</a></tag>
+    
+      <tag><a href="/tags.html#language model">language model</a></tag>
     
   </p>
-  <p><p>With the prevalence of publicly available source code repositories to train deep neural network models, neural program analyzers can do well in source code analysis tasks such as predicting method names in given programs that cannot be easily done by traditional program analyzers. Although such analyzers have been tested on various existing datasets, the extent in which they generalize to unforeseen source code is largely unknown. Since it is impossible to test neural program analyzers on all unforeseen programs, in this paper, we propose to evaluate the generalizability of neural program analyzers with respect to semantic-preserving transformations: a generalizable neural program analyzer should perform equally well on programs that are of the same semantics but of different lexical appearances and syntactical structures. More specifically, we compare the results of various neural program analyzers for the method name prediction task on programs before and after automated semantic-preserving transformations. We use three Java datasets of different sizes and three state-of-the-art neural network models for code, namely code2vec, code2seq, and Gated Graph Neural Networks (GGNN), to build nine such neural program analyzers for evaluation. Our results show that even with small semantically preserving changes to the programs, these neural program analyzers often fail to generalize their performance. Our results also suggest that neural program analyzers based on data and control dependencies in programs generalize better than neural program analyzers based only on abstract syntax trees. On the positive side, we observe that as the size of training dataset grows and diversifies the generalizability of correct predictions produced by the analyzers can be improved too.</p>
+  <p><p>Deep Neural Networks (DNNs) are increasingly being used in software engineering and code intelligence tasks. These are powerful tools that are capable of learning highly generalizable patterns from large datasets through millions of parameters. At the same time, their large capacity can render them prone to memorizing data points. Recent work suggests that the memorization risk manifests especially strongly when the training dataset is noisy, involving many ambiguous or questionable samples, and memorization is the only recourse. The goal of this paper is to evaluate and compare the extent of memorization and generalization in neural code intelligence models. It aims to provide insights on how memorization may impact the learning behavior of neural models in code intelligence systems. To observe the extent of memorization in models, we add random noise to the original training dataset and use various metrics to quantify the impact of noise on various aspects of training and testing. We evaluate several state-of-the-art neural code intelligence models and benchmarks based on Java, Python, and Ruby codebases. Our results highlight important risks: millions of trainable parameters allow the neural networks to memorize anything, including noisy data, and provide a false sense of generalization. We observed all models manifest some forms of memorization. This can be potentially troublesome in most code intelligence tasks where they rely on rather noise-prone and repetitive data sources, such as code from GitHub. To the best of our knowledge, we provide the first study to quantify memorization effects in the domain of software engineering and code intelligence systems. This work raises awareness and provides new insights into important issues of training neural models in code intelligence systems that are usually overlooked by software engineering researchers.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -129,7 +135,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/rabin2020generalizability.json", function(data) {
+        $.getJSON("/publications-metadata/rabin2022memorization.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

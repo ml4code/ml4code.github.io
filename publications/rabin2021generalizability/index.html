@@ -18,7 +18,7 @@
 
   <title>
     
-      Memorization and Generalization in Neural Code Intelligence Models &middot; Machine Learning for Big Code and Naturalness
+      On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,20 +99,32 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Memorization and Generalization in Neural Code Intelligence Models</h1>
-  <h5>Md Rafiqul Islam Rabin, Aftab Hussain, Vincent J. Hellendoorn, Mohammad Amin Alipour. FSE 2021</h5>
+  <h1 class="page-title">On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations</h1>
+  <h5>Md Rafiqul Islam Rabin, Nghi D. Q. Bui, Ke Wang, Yijun Yu, Lingxiao Jiang, Mohammad Amin Alipour. IST 2021</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2106.08704" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2008.01566" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Memorization and Generalization in Neural Code Intelligence Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Memorization and Generalization in Neural Code Intelligence Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+      [<a href="https://github.com/mdrafiqulrabin/tnpa-generalizability" target="_blank">code</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
-      <tag><a href="/tags.html#summarization">summarization</a></tag>
+      <tag><a href="/tags.html#adversarial">adversarial</a></tag>
+    
+      <tag><a href="/tags.html#generalizability">generalizability</a></tag>
+    
+      <tag><a href="/tags.html#robustness">robustness</a></tag>
+    
+      <tag><a href="/tags.html#transformation">transformation</a></tag>
+    
+      <tag><a href="/tags.html#AST">AST</a></tag>
+    
+      <tag><a href="/tags.html#GNN">GNN</a></tag>
     
   </p>
-  <p><p>Deep Neural Networks (DNN) are increasingly commonly used in software engineering and code intelligence tasks. These are powerful tools that are capable of learning highly generalizable patterns from large datasets through millions of parameters. At the same time, training DNNs means walking a knife’s edges, because their large capacity also renders them prone to memorizing data points. While traditionally thought of as an aspect of over-training, recent work suggests that the memorization risk manifests especially strongly when the training datasets are noisy and memorization is the only recourse. Unfortunately, most code intelligence tasks rely on rather noise-prone and repetitive data sources, such as GitHub, which, due to their sheer size, cannot be manually inspected and evaluated. We evaluate the memorization and generalization tendencies in neural code intelligence models through a case study across several benchmarks and model families by leveraging established approaches from other fields that use DNNs, such as introducing targeted noise into the training dataset. In addition to reinforcing prior general findings about the extent of memorization in DNNs, our results shed light on the impact of noisy dataset in training.</p>
+  <p><p>With the prevalence of publicly available source code repositories to train deep neural network models, neural program models can do well in source code analysis tasks such as predicting method names in given programs that cannot be easily done by traditional program analysis techniques. Although such neural program models have been tested on various existing datasets, the extent to which they generalize to unforeseen source code is largely unknown. Since it is very challenging to test neural program models on all unforeseen programs, in this paper, we propose to evaluate the generalizability of neural program models with respect to semantic-preserving transformations: a generalizable neural program model should perform equally well on programs that are of the same semantics but of different lexical appearances and syntactical structures. We compare the results of various neural program models for the method name prediction task on programs before and after automated semantic-preserving transformations. We use three Java datasets of different sizes and three state-of-the-art neural network models for code, namely code2vec, code2seq, and GGNN, to build nine such neural program models for evaluation. Our results show that even with small semantically preserving changes to the programs, these neural program models often fail to generalize their performance. Our results also suggest that neural program models based on data and control dependencies in programs generalize better than neural program models based only on abstract syntax trees. On the positive side, we observe that as the size of the training dataset grows and diversifies the generalizability of correct predictions produced by the neural program models can be improved too. Our results on the generalizability of neural program models provide insights to measure their limitations and provide a stepping stone for their improvement.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -125,7 +137,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/rabin2021memorization.json", function(data) {
+        $.getJSON("/publications-metadata/rabin2021generalizability.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
