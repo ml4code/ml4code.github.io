@@ -18,7 +18,7 @@
 
   <title>
     
-      On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations &middot; Machine Learning for Big Code and Naturalness
+      Testing Neural Program Analyzers &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,30 +99,24 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations</h1>
-  <h5>Md Rafiqul Islam Rabin, Nghi D. Q. Bui, Ke Wang, Yijun Yu, Lingxiao Jiang, Mohammad Amin Alipour. IST 2021</h5>
+  <h1 class="page-title">Testing Neural Program Analyzers</h1>
+  <h5>Md Rafiqul Islam Rabin, Ke Wang, Mohammad Amin Alipour. ASE (LBR-Track) 2019</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2008.01566" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/1908.10711" target="_blank">ArXiV</a>]
     
-      [<a href="https://github.com/mdrafiqulrabin/tnpa-generalizability" target="_blank">code</a>]
+      [<a href="https://github.com/mdrafiqulrabin/tnpa-framework" target="_blank">code</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Testing Neural Program Analyzers' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Testing Neural Program Analyzers' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#evaluation">evaluation</a></tag>
     
-      <tag><a href="/tags.html#adversarial">adversarial</a></tag>
-    
-      <tag><a href="/tags.html#generalizability">generalizability</a></tag>
-    
       <tag><a href="/tags.html#refactoring">refactoring</a></tag>
     
-      <tag><a href="/tags.html#summarization">summarization</a></tag>
-    
   </p>
-  <p><p>With the prevalence of publicly available source code repositories to train deep neural network models, neural program models can do well in source code analysis tasks such as predicting method names in given programs that cannot be easily done by traditional program analysis techniques. Although such neural program models have been tested on various existing datasets, the extent to which they generalize to unforeseen source code is largely unknown. Since it is very challenging to test neural program models on all unforeseen programs, in this paper, we propose to evaluate the generalizability of neural program models with respect to semantic-preserving transformations: a generalizable neural program model should perform equally well on programs that are of the same semantics but of different lexical appearances and syntactical structures. We compare the results of various neural program models for the method name prediction task on programs before and after automated semantic-preserving transformations. We use three Java datasets of different sizes and three state-of-the-art neural network models for code, namely code2vec, code2seq, and GGNN, to build nine such neural program models for evaluation. Our results show that even with small semantically preserving changes to the programs, these neural program models often fail to generalize their performance. Our results also suggest that neural program models based on data and control dependencies in programs generalize better than neural program models based only on abstract syntax trees. On the positive side, we observe that as the size of the training dataset grows and diversifies the generalizability of correct predictions produced by the neural program models can be improved too. Our results on the generalizability of neural program models provide insights to measure their limitations and provide a stepping stone for their improvement.</p>
+  <p><p>Deep neural networks have been increasingly used in software engineering and program analysis tasks. They usually take a program and make some predictions about it, e.g., bug prediction. We call these models neural program analyzers. The reliability of neural programs can impact the reliability of the encompassing analyses. In this paper, we describe our ongoing efforts to develop effective techniques for testing neural programs. We discuss the challenges involved in developing such tools and our future plans. In our preliminary experiment on a neural model recently proposed in the literature, we found that the model is very brittle, and simple perturbations in the input can cause the model to make mistakes in its prediction.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -135,7 +129,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/rabin2021generalizability.json", function(data) {
+        $.getJSON("/publications-metadata/rabin2019testing.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {

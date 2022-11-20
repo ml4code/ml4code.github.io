@@ -18,7 +18,7 @@
 
   <title>
     
-      On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations &middot; Machine Learning for Big Code and Naturalness
+      Towards Demystifying Dimensions of Source Code Embeddings &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,30 +99,28 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations</h1>
-  <h5>Md Rafiqul Islam Rabin, Nghi D. Q. Bui, Ke Wang, Yijun Yu, Lingxiao Jiang, Mohammad Amin Alipour. IST 2021</h5>
+  <h1 class="page-title">Towards Demystifying Dimensions of Source Code Embeddings</h1>
+  <h5>Md Rafiqul Islam Rabin, Arjun Mukherjee, Omprakash Gnawali, Mohammad Amin Alipour. RL+SE&PL (Co-located with ESEC/FSE) 2020</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2008.01566" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2008.13064" target="_blank">ArXiV</a>]
     
-      [<a href="https://github.com/mdrafiqulrabin/tnpa-generalizability" target="_blank">code</a>]
+      [<a href="https://github.com/mdrafiqulrabin/handcrafted-embeddings" target="_blank">code</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Towards Demystifying Dimensions of Source Code Embeddings' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Towards Demystifying Dimensions of Source Code Embeddings' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#evaluation">evaluation</a></tag>
     
-      <tag><a href="/tags.html#adversarial">adversarial</a></tag>
+      <tag><a href="/tags.html#representation">representation</a></tag>
     
-      <tag><a href="/tags.html#generalizability">generalizability</a></tag>
+      <tag><a href="/tags.html#naming">naming</a></tag>
     
-      <tag><a href="/tags.html#refactoring">refactoring</a></tag>
-    
-      <tag><a href="/tags.html#summarization">summarization</a></tag>
+      <tag><a href="/tags.html#interpretability">interpretability</a></tag>
     
   </p>
-  <p><p>With the prevalence of publicly available source code repositories to train deep neural network models, neural program models can do well in source code analysis tasks such as predicting method names in given programs that cannot be easily done by traditional program analysis techniques. Although such neural program models have been tested on various existing datasets, the extent to which they generalize to unforeseen source code is largely unknown. Since it is very challenging to test neural program models on all unforeseen programs, in this paper, we propose to evaluate the generalizability of neural program models with respect to semantic-preserving transformations: a generalizable neural program model should perform equally well on programs that are of the same semantics but of different lexical appearances and syntactical structures. We compare the results of various neural program models for the method name prediction task on programs before and after automated semantic-preserving transformations. We use three Java datasets of different sizes and three state-of-the-art neural network models for code, namely code2vec, code2seq, and GGNN, to build nine such neural program models for evaluation. Our results show that even with small semantically preserving changes to the programs, these neural program models often fail to generalize their performance. Our results also suggest that neural program models based on data and control dependencies in programs generalize better than neural program models based only on abstract syntax trees. On the positive side, we observe that as the size of the training dataset grows and diversifies the generalizability of correct predictions produced by the neural program models can be improved too. Our results on the generalizability of neural program models provide insights to measure their limitations and provide a stepping stone for their improvement.</p>
+  <p><p>Source code representations are key in applying machine learning techniques for processing and analyzing programs. A popular approach in representing source code is neural source code embeddings that represents programs with high-dimensional vectors computed by training deep neural networks on a large volume of programs. Although successful, there is little known about the contents of these vectors and their characteristics. In this paper, we present our preliminary results towards better understanding the contents of code2vec neural source code embeddings. In particular, in a small case study, we use the code2vec embeddings to create binary SVM classifiers and compare their performance with the handcrafted features. Our results suggest that the handcrafted features can perform very close to the highly-dimensional code2vec embeddings, and the information gains are more evenly distributed in the code2vec embeddings compared to the handcrafted features. We also find that the code2vec embeddings are more resilient to the removal of dimensions with low information gains than the handcrafted features. We hope our results serve a stepping stone toward principled analysis and evaluation of these code representations.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -135,7 +133,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/rabin2021generalizability.json", function(data) {
+        $.getJSON("/publications-metadata/rabin2020demystifying.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
