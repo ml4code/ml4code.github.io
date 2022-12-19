@@ -2,9 +2,10 @@
 layout: publication
 title: "Backdoors in Neural Models of Source Code"
 authors: Goutham Ramakrishnan, Aws Albarghouthi
-conference: 
-year: 2020
+conference: ICPR
+year: 2022
 additional_links:
+    - {name: "IEEE", url: "https://ieeexplore.ieee.org/document/9956690"}
     - {name: "ArXiV", url: "https://arxiv.org/abs/2006.06841"}
     - {name: "Code", url: "https://github.com/goutham7r/backdoors-for-code"}
 tags: ["adversarial"]
