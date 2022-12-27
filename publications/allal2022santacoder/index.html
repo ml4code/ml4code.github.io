@@ -18,7 +18,7 @@
 
   <title>
     
-      CodeT: Code Generation with Generated Tests &middot; Machine Learning for Big Code and Naturalness
+      SantaCoder: don’t reach for the stars! &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,24 +99,28 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">CodeT: Code Generation with Generated Tests</h1>
-  <h5>Bei Chen, Fengji Zhang, Anh Nguyen, Daoguang Zan, Zeqi Lin, Jian-Guang Lou, Weizhu Chen.  2022</h5>
+  <h1 class="page-title">SantaCoder: don’t reach for the stars!</h1>
+  <h5>Loubna Ben Allal, Raymond Li, Denis Kocetkov, Chenghao Mou, Christopher Akiki, Carlos Munoz Ferrandis, Niklas Muenninghoff, Mayank Mishra, Alex Gu, Manan Den, Longesh Kumar Umapathi, Carolyn Jane Anderson, Yangtian Zi, Joel Lamy Poirier, Hailey Schoelkopf, Sergey Troshin, Dmitry Abulkhanov, Manuel Romero, Terry Yue Zhuo, Francesco De Toni, Bernanrdo Garcia del Rio, Qian Liu, Shamik Bose, Urvashi Bhattacharyya, Michael Lappert, Ian Yu, Paulo Villegas, Jia Li, David Lansy, Huu Nguyen, Danish Contractor, Luis Villa, Daniel Fried, Dzmitry Bahdanau, Yacine Jernite, Sean Hughes, Arjun Guha, Harm de Vries, Leonadro von Werra.  2022</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2207.10397" target="_blank">ArXiV</a>]
-    
-    &nbsp;<a href='http://scholar.google.com/scholar?q=CodeT: Code Generation with Generated Tests' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=CodeT: Code Generation with Generated Tests' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=SantaCoder: don’t reach for the stars!' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=SantaCoder: don’t reach for the stars!' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
-    
-      <tag><a href="/tags.html#synthesis">synthesis</a></tag>
     
       <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
-      <tag><a href="/tags.html#execution">execution</a></tag>
-    
   </p>
-  <p><p>Given a programming problem, pre-trained language models such as Codex have demonstrated the ability to generate multiple different code solutions via sampling. However, selecting a correct or best solution from those samples still remains a challenge. While an easy way to verify the correctness of a code solution is through executing test cases, producing high-quality test cases is prohibitively expensive. In this paper, we explore the use of pre-trained language models to automatically generate test cases, calling our method CodeT: Code generation with generated Tests. CodeT executes the code solutions using the generated test cases, and then chooses the best solution based on a dual execution agreement with both the generated test cases and other generated solutions. We evaluate CodeT on five different pre-trained models with both HumanEval and MBPP benchmarks. Extensive experimental results demonstrate CodeT can achieve significant, consistent, and surprising improvements over previous methods. For example, CodeT improves the pass@1 on HumanEval to 65.8%, an increase of absolute 18.8% on the code-davinci-002 model, and an absolute 20+% improvement over previous state-of-the-art results.</p>
+  <p><p>The BigCode project is an open-scientific collaboration working on the responsible development of large language models for code.1 This tech report describes the progress of the collaboration until December 2022, outlining the current state of the Personally Identifiable Information (PII)
+redaction pipeline, the experiments conducted to de-risk the model architecture, and the experiments investigating better preprocessing methods for the training data. We train 1.1B parameter models on the Java,
+JavaScript, and Python subsets of The Stack (Kocetkov et al., 2022) and
+evaluate the models on MultiPL-E (Cassano et al., 2022), a text2code
+benchmark available in 18 programming languages. We find that more
+aggressive filtering of near-duplicates can further boost performance and,
+surprisingly, that selecting files from repositories with 5+ GitHub stars
+deteriorates performance significantly. Our best model outperforms previous open-source multilingual code generation models (InCoder-6.7B and
+CodeGen-Multi-2.7B) in both left-to-right generation and infilling on the
+Java, JavaScript, and Python portions of MultiPL-E, despite being a substantially smaller model. All models are released under an OpenRAIL
+license at https://hf.co/bigcode</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -129,7 +133,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/chen2022codet.json", function(data) {
+        $.getJSON("/publications-metadata/allal2022santacoder.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
