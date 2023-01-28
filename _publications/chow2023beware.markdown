@@ -2,7 +2,7 @@
 layout: publication
 title: "Beware of the Unexpected: Bimodal Taint Analysis"
 authors: Yiu Wai Chow, Max Schäfer, Michael Pradel
-conference:
+conference: ISSTA
 year: 2023
 additional_links:
    - {name: "ArXiV", url: "https://arxiv.org/abs/2301.10545"}
