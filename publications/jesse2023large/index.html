@@ -18,7 +18,7 @@
 
   <title>
     
-      Model-Agnostic Syntactical Information for Pre-Trained Programming Language Models &middot; Machine Learning for Big Code and Naturalness
+      Large Language Models and Simple, Stupid Bugs &middot; Machine Learning for Big Code and Naturalness
     
   </title>
 
@@ -99,24 +99,22 @@ function search() {
 
     <div class="content container">
       <div class="page">
-  <h1 class="page-title">Model-Agnostic Syntactical Information for Pre-Trained Programming Language Models</h1>
-  <h5>Iman Saberi, Fateme H. Fard. MSR 2023</h5>
+  <h1 class="page-title">Large Language Models and Simple, Stupid Bugs</h1>
+  <h5>Kevin Jesse, Toufique Ahmed, Premkumar T. Devanbu, Emily Morgan.  2023</h5>
   <p>
     
-      [<a href="https://arxiv.org/abs/2303.06233" target="_blank">ArXiV</a>]
+      [<a href="https://arxiv.org/abs/2303.11455" target="_blank">ArXiV</a>]
     
-    &nbsp;<a href='http://scholar.google.com/scholar?q=Model-Agnostic Syntactical Information for Pre-Trained Programming Language Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
-    &nbsp;<a href='https://www.semanticscholar.org/search?q=Model-Agnostic Syntactical Information for Pre-Trained Programming Language Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Large Language Models and Simple, Stupid Bugs' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Large Language Models and Simple, Stupid Bugs' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
     <br/>
     
       <tag><a href="/tags.html#Transformer">Transformer</a></tag>
     
-      <tag><a href="/tags.html#repair">repair</a></tag>
-    
-      <tag><a href="/tags.html#summarization">summarization</a></tag>
+      <tag><a href="/tags.html#defect">defect</a></tag>
     
   </p>
-  <p><p>Pre-trained Programming Language Models (PPLMs) achieved many recent states of the art results for many code-related software engineering tasks. Though some studies use data flow or propose tree-based models that utilize Abstract Syntax Tree (AST), most PPLMs do not fully utilize the rich syntactical information in source code. Still, the input is considered a sequence of tokens. There are two issues; the first is computational inefficiency due to the quadratic relationship between input length and attention complexity. Second, any syntactical information, when needed as an extra input to the current PPLMs, requires the model to be pre-trained from scratch, wasting all the computational resources already used for pre-training the current models. In this work, we propose Named Entity Recognition (NER) adapters, lightweight modules that can be inserted into Transformer blocks to learn type information extracted from the AST. These adapters can be used with current PPLMs such as CodeBERT, GraphCodeBERT, and CodeT5. We train the NER adapters using a novel Token Type Classification objective function (TTC). We insert our proposed work in CodeBERT, building CodeBERTER, and evaluate the performance on two tasks of code refinement and code summarization. CodeBERTER improves the accuracy of code refinement from 16.4 to 17.8 while using 20% of training parameter budget compared to the fully fine-tuning approach, and the BLEU score of code summarization from 14.75 to 15.90 while reducing 77% of training parameters compared to the fully fine-tuning approach.</p>
+  <p><p>With the advent of powerful neural language models, AI-based systems to assist developers in coding tasks are becoming widely available; Copilot is one such system. Copilot uses Codex, a large language model (LLM), to complete code conditioned on a preceding “prompt”. Codex, however, is trained on public GitHub repositories, viz., on code that may include bugs and vulnerabilities. Previous studies [1], [2] show Codex reproduces vulnerabilities seen in training. In this study, we examine how prone Codex is to generate an interesting bug category, single statement bugs, commonly referred to as simple, stupid bugs or SStuBs in the MSR community. We find that Codex and similar LLMs do help avoid some SStuBs, but do produce known, verbatim SStuBs as much as 2x as likely than known, verbatim correct code. We explore the consequences of the Codex generated SStuBs and propose avoidance strategies that suggest the possibility of reducing the production of known, verbatim SStubs, and increase the possibility of producing known, verbatim fixes.</p>
 </p>
 
   <h6>Similar Work</h6>
@@ -129,7 +127,7 @@ function search() {
   <script>  
     $(document).ready(
       function() {
-        $.getJSON("/publications-metadata/saberi2023model.json", function(data) {
+        $.getJSON("/publications-metadata/jesse2023large.json", function(data) {
           num_papers = data.length;
           html = "";
           for (let i=0; i < num_papers; i++) {
