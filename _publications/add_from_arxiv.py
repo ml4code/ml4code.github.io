@@ -49,7 +49,8 @@ def get_info(paper_id: str, out_dir: str) -> None:
     with open(os.path.join(out_dir, filename), "w") as f:
         f.write(tmpl)
 
-    print(f'Output at: {filename}')
+    print(f"Output at: {filename}")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
