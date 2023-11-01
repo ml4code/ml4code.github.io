@@ -74,4 +74,4 @@ website. A comprehensive list can be found [here](https://github.com/ml4code/ml4
 * [Uri Alon](http://www.cs.technion.ac.il/~urialon/) Technion, Israel
 * [Shaked Brody](https://shakedbr.cswp.cs.technion.ac.il/) Technion, Israel
 * [Nghi D. Q. Bui](https://bdqnghi.github.io/) Singapore Management University, Singapore
-* [Rajaswa Patil](https://rajaswa.github.io/) TCS Research, India
+* [Rajaswa Patil](https://rajaswa.github.io/) Microsoft PROSE
