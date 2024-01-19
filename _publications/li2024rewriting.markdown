@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Rewriting the Code: A Simple Method for Large Language Model Augmented Code Search
+title: "Rewriting the Code: A Simple Method for Large Language Model Augmented Code Search"
 authors: Haochen Li, Xin Zhou, Zhiqi Shen
 conference: 
 year: 2024
