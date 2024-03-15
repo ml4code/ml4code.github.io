@@ -20,8 +20,9 @@ def _author_lastname(author_name: str) -> str:
 
 
 def get_info(paper_id: str, out_dir: str) -> None:
+    client = arxiv.Client()
     search = arxiv.Search(id_list=[paper_id])
-    paper = next(search.results())
+    paper = next(client.results(search))
 
     summary = (
         paper.summary.replace("\n\n", "@@--@@")
