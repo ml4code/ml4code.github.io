@@ -1,0 +1,11 @@
+---
+layout: publication
+title: "DeepCode AI Fix: Fixing Security Vulnerabilities with Large Language Models"
+authors: Berkay Berabi, Alexey Gronskiy, Veselin Raychev, Gishor Sivanrupan, Victor Chibotaru, Martin Vechev
+conference:
+year: 2024
+additional_links:
+  - {name: "ArXiV", url: "https://arxiv.org/abs/2402.13291"}
+tags: ["repair", "vulnerability"]
+---
+The automated program repair field has attracted substantial interest over the years, but despite significant research efforts, creating a system that works well for complex semantic bugs such as security vulnerabilities has proven difficult. A promising direction to solve this challenge is by leveraging large language models (LLMs), which are increasingly used to solve various programming tasks. In this paper, we investigate the effectiveness of LLMs for solving code-repair task. We show that the task is difficult as it requires the model to learn long-range code relationships, a task that inherently relies on extensive amounts of training data. At the same time, creating a large, clean dataset for complex program bugs and their corresponding fixes is non-trivial. We propose a technique to address these challenges with a new approach for querying and fine-tuning LLMs. The idea is to use program analysis to limit the LLM's attention mechanism on the portions of code needed to perform the fix, drastically reducing the amount of required training data. Concretely, for training and inference, rather than feeding the entire program to the LLM, we reduce its code to a much shorter snippet that contains the reported defect together with the necessary context - and use that instead. Our evaluation shows that this code reduction approach substantially improves available models such as GPT-4 using few-shot learning, as well as fine-tuning models. To train and evaluate our system, we created a comprehensive code fixing dataset by extensively labeling 156 bug patterns (including 40 security rules), requiring complex interprocedural dataflow to discover. Our best system with Mixtral-8x7B can remove more than 80% of the reported defects while exactly matching the human fix in between 10 and 50% of cases, outperforming baselines based on GPT-3.5 and GPT-4, or based on window-based models like TFix.
