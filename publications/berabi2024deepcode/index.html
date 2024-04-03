@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="machine learning, source code, big code, naturalness, software engineering, programming languages">
+
+  <title>
+    
+      DeepCode AI Fix: Fixing Security Vulnerabilities with Large Language Models &middot; Machine Learning for Big Code and Naturalness
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0d layout-reverse">
+
+    <a href='/contributing.html' class='ribbon'>Contribute to ML4Code</a>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Machine Learning for Big Code and Naturalness
+        </a>
+      </h1>
+      <p class="lead">Research on machine learning for source code.</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a>
+   <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a>
+
+
+  <a class="sidebar-nav-item" href="/resources.html">Resources, Courses &#38; Events</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
+    <span style="font-size: 9px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">DeepCode AI Fix: Fixing Security Vulnerabilities with Large Language Models</h1>
+  <h5>Berkay Berabi, Alexey Gronskiy, Veselin Raychev, Gishor Sivanrupan, Victor Chibotaru, Martin Vechev.  2024</h5>
+  <p>
+    
+      [<a href="https://arxiv.org/abs/2402.13291" target="_blank">ArXiV</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=DeepCode AI Fix: Fixing Security Vulnerabilities with Large Language Models' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=DeepCode AI Fix: Fixing Security Vulnerabilities with Large Language Models' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    <br/>
+    
+      <tag><a href="/tags.html#repair">repair</a></tag>
+    
+      <tag><a href="/tags.html#vulnerability">vulnerability</a></tag>
+    
+  </p>
+  <p><p>The automated program repair field has attracted substantial interest over the years, but despite significant research efforts, creating a system that works well for complex semantic bugs such as security vulnerabilities has proven difficult. A promising direction to solve this challenge is by leveraging large language models (LLMs), which are increasingly used to solve various programming tasks. In this paper, we investigate the effectiveness of LLMs for solving code-repair task. We show that the task is difficult as it requires the model to learn long-range code relationships, a task that inherently relies on extensive amounts of training data. At the same time, creating a large, clean dataset for complex program bugs and their corresponding fixes is non-trivial. We propose a technique to address these challenges with a new approach for querying and fine-tuning LLMs. The idea is to use program analysis to limit the LLM’s attention mechanism on the portions of code needed to perform the fix, drastically reducing the amount of required training data. Concretely, for training and inference, rather than feeding the entire program to the LLM, we reduce its code to a much shorter snippet that contains the reported defect together with the necessary context - and use that instead. Our evaluation shows that this code reduction approach substantially improves available models such as GPT-4 using few-shot learning, as well as fine-tuning models. To train and evaluate our system, we created a comprehensive code fixing dataset by extensively labeling 156 bug patterns (including 40 security rules), requiring complex interprocedural dataflow to discover. Our best system with Mixtral-8x7B can remove more than 80% of the reported defects while exactly matching the human fix in between 10 and 50% of cases, outperforming baselines based on GPT-3.5 and GPT-4, or based on window-based models like TFix.</p>
+</p>
+
+  <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON("/publications-metadata/berabi2024deepcode.json", function(data) {
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script>
+
+</div>
+
+    </div>
+
+  </body>
+</html>
