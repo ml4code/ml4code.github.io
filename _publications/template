@@ -2,11 +2,11 @@
 layout: publication
 title: "Add title here"
 authors: FirstName LastName, FirstName LastName
-conference: Optional
+conference: Optional  # OR journal
 year: 2000
 additional_links:
-   - {name: "ArXiV", url: "https://arxiv.org/abs/xxxx.xxxxxx"}
-   - {name: "Dataset", url: "https://blah/blah"}
+  - {name: "ArXiV", url: "https://arxiv.org/abs/xxxx.xxxxxx"}
+  - {name: "Dataset", url: "https://blah/blah"}
 tags: ["dataset"]
 ---
 Abstract here

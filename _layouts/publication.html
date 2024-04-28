@@ -4,7 +4,7 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
-  <h5>{{ page.authors }}. {{ page.conference }} {{ page.year }}</h5>
+  <h5>{{ page.authors }}. {{ page.conference | default: page.journal }} {{ page.year }}</h5>
   <p>
     {% for additional_link in page.additional_links %}
       [<a href="{{ additional_link.url }}" target="_blank">{{ additional_link.name }}</a>]
